@@ -1,0 +1,61 @@
+# =====================================================================
+# Política: WHITELIST estrita — só vai pro GitHub o que dashboard precisa
+# Reorganizado em 2026-05-02 após detecção de leak operacional via watcher
+# =====================================================================
+
+# Tudo bloqueado por default
+*
+
+# WHITELIST — únicos arquivos publicados (consumidos pelo dashboard.html):
+!.gitignore
+!index.html
+!dashboard.html
+!fenix.png
+!fenix_state.json
+!cost_log.json
+!README.md
+!LICENSE
+
+# Reforço explícito de bloqueios sensíveis (defesa em profundidade):
+.env
+.env.*
+*.key
+*.pem
+*.log
+*.tmp
+*.temp
+*.bak
+*.bak.*
+*.swp
+*.swo
+.DS_Store
+.claude/
+.cowork/
+.mcp.json
+.vscode/
+.idea/
+node_modules/
+package-lock.json
+package.json
+src/
+scripts/
+agents/
+skills/
+tests/
+screenshots/
+temp/
+tmp/
+fenix_journal.md
+fenix_watcher.py
+fenix_watcher*.json
+fenix_watcher*.log
+fenix_dashboard_sync.json
+*.sh
+*.py
+ai_strategy.txt
+cron.log
+CLAUDE.md
+CONTRIBUTING.md
+RESEARCH.md
+SECURITY.md
+SETUP_GUIDE.md

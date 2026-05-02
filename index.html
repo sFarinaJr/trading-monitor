@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Monitor - Operação Virada</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body {
+            background: #0f172a;
+            color: #e2e8f0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            color: white;
+        }
+        h1 { font-size: 28px; margin: 0 0 5px 0; }
+        .status { font-size: 14px; opacity: 0.9; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+        }
+        .card-title {
+            font-size: 12px;
+            color: #94a3b8;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+        .card-value {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .positive { color: #10b981; }
+        .negative { color: #ef4444; }
+        .neutral { color: #3b82f6; }
+        .card-label {
+            font-size: 12px;
+            color: #64748b;
+            margin-top: 5px;
+        }
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #334155;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            transition: width 0.3s;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #1e293b;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        th {
+            background: #334155;
+            padding: 12px;
+            text-align: left;
+            font-size: 12px;
+            font-weight: 600;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #334155;
+            font-size: 13px;
+        }
+        tr:hover { background: #293548; }
+        tr:last-child td { border-bottom: none; }
+        .badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .badge-long { background: #065f46; color: #10b981; }
+        .badge-short { background: #7f1d1d; color: #ef4444; }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #f1f5f9;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+        }
+        .metric-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            font-size: 13px;
+            border-bottom: 1px solid #334155;
+        }
+        .metric-row:last-child { border-bottom: none; }
+        .metric-label { color: #94a3b8; }
+        .metric-value { font-weight: 600; color: #f1f5f9; }
+        .last-update {
+            text-align: center;
+            color: #64748b;
+            font-size: 12px;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #334155;
+        }
+        .empty { text-align: center; color: #94a3b8; padding: 20px; }
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .summary-card {
+            background: #293548;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        .summary-label { font-size: 12px; color: #94a3b8; margin-bottom: 5px; }
+        .summary-value { font-size: 24px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 Trading Monitor - Operação Virada</h1>
+            <div class="status" id="status">⏳ Carregando dados...</div>
+        </header>
+
+        <!-- KPIs Principais -->
+        <div class="grid">
+            <div class="card">
+                <div class="card-title">💰 PnL Líquido</div>
+                <div class="card-value" id="netPnL">$0.00</div>
+                <div class="card-label" id="pnlStatus">--</div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">💳 Custos Acumulados</div>
+                <div class="card-value" id="totalCosts">$0.00</div>
+                <div class="card-label">IA + Taxas</div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="costBar"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">📈 Taxa de Acerto</div>
+                <div class="card-value" id="winRate">0%</div>
+                <div class="card-label" id="winRateDetail">0W / 0L</div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">✅ Viabilidade</div>
+                <div class="card-value" id="viability">--</div>
+                <div class="card-label" id="viabilityDesc">Carregando...</div>
+            </div>
+        </div>
+
+        <!-- Seção de Trades -->
+        <div class="section">
+            <div class="section-title">📋 Trades (Últimos 10 - Mais Recentes Primeiro)</div>
+            <table id="tradesTable">
+                <thead>
+                    <tr>
+                        <th>Hora</th>
+                        <th>Símbolo</th>
+                        <th>Tipo</th>
+                        <th>Entrada</th>
+                        <th>Saída</th>
+                        <th>PnL USD</th>
+                        <th>% Return</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="tradesList">
+                    <tr><td colspan="8" class="empty">Nenhum trade ainda</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Resumo do Dia -->
+        <div class="section">
+            <div class="section-title">📊 Resumo do Dia (Acumulado)</div>
+            <div class="summary-grid">
+                <div class="summary-card">
+                    <div class="summary-label">Total de Trades</div>
+                    <div class="summary-value" id="totalTrades">0</div>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-label">Trades Ganhos</div>
+                    <div class="summary-value positive" id="wonTrades">0</div>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-label">Trades Perdidos</div>
+                    <div class="summary-value negative" id="lostTrades">0</div>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-label">Ciclos de Monitoramento</div>
+                    <div class="summary-value" id="cycleCount">0</div>
+                </div>
+            </div>
+
+            <div class="card" style="margin-top: 15px;">
+                <div class="metric-row">
+                    <span class="metric-label">📈 PnL Bruto (Trades):</span>
+                    <span class="metric-value" id="grossPnL">$0.00</span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label">💳 Custos IA:</span>
+                    <span class="metric-value" id="costIA">$0.00</span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label">🏦 Taxas de Trading:</span>
+                    <span class="metric-value" id="tradingFees">$0.00</span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label">💰 Total de Gastos:</span>
+                    <span class="metric-value" id="totalExpenses">$0.00</span>
+                </div>
+                <div class="metric-row" style="border-top: 2px solid #667eea; padding-top: 12px; margin-top: 12px;">
+                    <span class="metric-label" style="font-weight: bold; font-size: 14px;">🎯 PnL LÍQUIDO FINAL:</span>
+                    <span class="metric-value" id="finalNetPnL" style="font-size: 20px;">$0.00</span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label">📊 ROI (sobre gastos):</span>
+                    <span class="metric-value" id="roi">0%</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="last-update">
+            Atualizado: <span id="lastUpdate">--</span> | Status: <span id="finalStatus">Carregando...</span>
+        </div>
+    </div>
+
+    <script>
+        const GITHUB_RAW = 'https://raw.githubusercontent.com/sfarinajr/trading-monitor/main/cost_log.json';
+        const UPDATE_INTERVAL = 30000;
+
+        async function loadData() {
+            try {
+                const response = await fetch(GITHUB_RAW + '?t=' + Date.now());
+                if (!response.ok) throw new Error('Erro ao carregar');
+
+                const data = await response.json();
+                updateDashboard(data);
+            } catch (error) {
+                document.getElementById('status').textContent = '⚠️ Erro ao carregar dados';
+                document.getElementById('status').style.color = '#ef4444';
+            }
+        }
+
+        function updateDashboard(data) {
+            const costs = data.costs || [];
+            const trades = data.trades || [];
+            const today = new Date().toDateString();
+
+            const todayCosts = costs.filter(c => new Date(c.timestamp).toDateString() === today);
+            const todayTrades = trades.filter(t => new Date(t.timestamp).toDateString() === today);
+
+            // Cálculos
+            const costIA = todayCosts.reduce((sum, c) => sum + (c.total_cost || 0), 0);
+            const grossPnL = todayTrades.reduce((sum, t) => sum + (t.pnl_usd || 0), 0);
+
+            // Estimar taxas de trading (assumindo ~0.1% por side, 0.2% ida e volta)
+            const tradingFees = todayTrades.reduce((sum, t) => {
+                const fees = ((t.entry_price || 0) * (t.quantity || 0) * 0.002); // 0.2% aproximado
+                return sum + fees;
+            }, 0);
+
+            const totalExpenses = costIA + tradingFees;
+            const finalNetPnL = grossPnL - totalExpenses;
+
+            const wonTrades = todayTrades.filter(t => (t.pnl_usd || 0) > 0).length;
+            const lostTrades = todayTrades.filter(t => (t.pnl_usd || 0) < 0).length;
+            const winRate = todayTrades.length > 0 ? ((wonTrades / todayTrades.length) * 100).toFixed(1) : 0;
+            const roi = totalExpenses > 0 ? ((finalNetPnL / totalExpenses) * 100).toFixed(1) : 0;
+
+            // Atualizar KPIs principais
+            document.getElementById('netPnL').textContent = `$${finalNetPnL.toFixed(2)}`;
+            document.getElementById('netPnL').className = 'card-value ' + (finalNetPnL > 0 ? 'positive' : finalNetPnL < 0 ? 'negative' : 'neutral');
+            document.getElementById('pnlStatus').textContent = `${todayTrades.length} trades | ${winRate}% taxa de acerto`;
+
+            document.getElementById('totalCosts').textContent = `$${totalExpenses.toFixed(4)}`;
+            document.getElementById('costBar').style.width = Math.min((totalExpenses / 50) * 100, 100) + '%';
+
+            document.getElementById('winRate').textContent = `${winRate}%`;
+            document.getElementById('winRateDetail').textContent = `${wonTrades}W / ${lostTrades}L`;
+
+            // Viabilidade
+            if (finalNetPnL > totalExpenses && totalExpenses > 0) {
+                document.getElementById('viability').textContent = '✅ VIÁVEL';
+                document.getElementById('viability').className = 'card-value positive';
+                document.getElementById('viabilityDesc').textContent = `ROI: ${roi}%`;
+            } else if (finalNetPnL > 0) {
+                document.getElementById('viability').textContent = '⚠️ MARGINAL';
+                document.getElementById('viability').className = 'card-value neutral';
+                document.getElementById('viabilityDesc').textContent = `ROI: ${roi}%`;
+            } else {
+                document.getElementById('viability').textContent = '❌ INVIÁVEL';
+                document.getElementById('viability').className = 'card-value negative';
+                document.getElementById('viabilityDesc').textContent = `ROI: ${roi}%`;
+            }
+
+            // Tabela de Trades - TODOS (máximo 10, mais recente primeiro)
+            const tradesList = document.getElementById('tradesList');
+            if (todayTrades.length > 0) {
+                // Ordenar por mais recente primeiro
+                const sortedTrades = [...todayTrades].sort((a, b) =>
+                    new Date(b.timestamp) - new Date(a.timestamp)
+                ).slice(0, 10); // Pegar apenas os 10 últimos
+
+                tradesList.innerHTML = sortedTrades.map(t => `
+                    <tr>
+                        <td>${new Date(t.timestamp).toLocaleTimeString('pt-BR', {hour: '2-digit', minute:'2-digit', second: '2-digit'})}</td>
+                        <td>${t.symbol}</td>
+                        <td><span class="badge ${t.side === 'LONG' ? 'badge-long' : 'badge-short'}">${t.side}</span></td>
+                        <td>$${(t.entry_price || 0).toFixed(0)}</td>
+                        <td>$${(t.exit_price || 0).toFixed(0)}</td>
+                        <td style="color: ${(t.pnl_usd || 0) > 0 ? '#10b981' : '#ef4444'}; font-weight: bold;">$${(t.pnl_usd || 0).toFixed(2)}</td>
+                        <td style="color: ${(t.pnl_percent || 0) > 0 ? '#10b981' : '#ef4444'};">${(t.pnl_percent || 0).toFixed(2)}%</td>
+                        <td>${(t.pnl_usd || 0) > 0 ? '✅' : (t.pnl_usd || 0) < 0 ? '❌' : '⚪'}</td>
+                    </tr>
+                `).join('');
+            } else {
+                tradesList.innerHTML = '<tr><td colspan="8" class="empty">Nenhum trade realizado ainda</td></tr>';
+            }
+
+            // Resumo
+            document.getElementById('totalTrades').textContent = todayTrades.length;
+            document.getElementById('wonTrades').textContent = wonTrades;
+            document.getElementById('lostTrades').textContent = lostTrades;
+            document.getElementById('cycleCount').textContent = todayCosts.length;
+
+            document.getElementById('grossPnL').textContent = `$${grossPnL.toFixed(2)}`;
+            document.getElementById('grossPnL').className = 'metric-value ' + (grossPnL > 0 ? 'positive' : 'negative');
+
+            document.getElementById('costIA').textContent = `$${costIA.toFixed(4)}`;
+            document.getElementById('tradingFees').textContent = `$${tradingFees.toFixed(4)}`;
+
+            document.getElementById('totalExpenses').textContent = `$${totalExpenses.toFixed(4)}`;
+
+            document.getElementById('finalNetPnL').textContent = `$${finalNetPnL.toFixed(2)}`;
+            document.getElementById('finalNetPnL').className = finalNetPnL > 0 ? 'positive' : finalNetPnL < 0 ? 'negative' : 'neutral';
+
+            document.getElementById('roi').textContent = `${roi}%`;
+            document.getElementById('roi').className = 'metric-value ' + (roi > 0 ? 'positive' : 'negative');
+
+            document.getElementById('lastUpdate').textContent = new Date().toLocaleTimeString('pt-BR');
+            document.getElementById('finalStatus').textContent = '✅ Online';
+            document.getElementById('status').textContent = '✅ Dados atualizados em tempo real';
+            document.getElementById('status').style.color = '#10b981';
+        }
+
+        // Carregar dados inicialmente e atualizar periodicamente
+        loadData();
+        setInterval(loadData, UPDATE_INTERVAL);
+    </script>
+</body>
+</html>

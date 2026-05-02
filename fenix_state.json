@@ -1,0 +1,546 @@
+{
+  "_doc": "Estado dinâmico da Operação Virada. Atualizado pela FÊNIX a cada ciclo. Baseline imutável vive em ~/.claude/projects/.../memory/project_operacao_virada.md",
+  "missao": "Operação Virada",
+  "baseline": {
+    "data": "2026-04-27",
+    "pnl_acumulado": -6124.0,
+    "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
+  },
+  "ultimo_update": "2026-05-02 19:03",
+  "last_session_start": "2026-05-02T17:51:00",
+  "dna_version": "v3.0 (2026-05-02 — 3 sinais iniciativos + Override Breakout + tipografia obrigatória)",
+  "current_thesis": {
+    "_doc": "Tese ATUAL pós-close 1H 17:00. Bull trap D+4H rejeitado em 79182 — virou setup SHORT premium.",
+    "boot_ts": "2026-05-02T18:03:00",
+    "boot_model": "OPUS",
+    "bias_macro": "bear-corretivo curto prazo (failed breakout D+4H em 79182 acima resistência 78900 com vol 9.7×)",
+    "bias_1h": "bearish — candle 17:00 expansão violenta 78415→79182 e devolução pra 78693 = bull trap clássico",
+    "score_multi_tf": {
+      "SHORT": "6/6 (cap)",
+      "LONG": "0/6 + VETO macro"
+    },
+    "vetos_ativos": [
+      "VETO LONG — falha de breakout invalida tese bull continuation curto prazo até reteste do nível 79000+"
+    ],
+    "chart_patterns": [
+      {
+        "type": "failed_breakout",
+        "tf": "D",
+        "level": 79182,
+        "rejection_wick": 525,
+        "weight": 1.5
+      },
+      {
+        "type": "shooting_star",
+        "tf": "4H",
+        "wick_top": 526,
+        "body": 210,
+        "weight": 1.5
+      },
+      {
+        "type": "bull_trap",
+        "tf": "1H",
+        "candle_17h": "open 78415 high 79182 close 78693",
+        "weight": 1.0
+      }
+    ],
+    "elliott": null,
+    "fib_levels": {
+      "swing_low_high": "75272→79182 = 3910pts",
+      "0.382": 77686,
+      "0.5": 77227,
+      "0.618": 76764
+    },
+    "key_zones": {
+      "support_d": 75272,
+      "support_4h": 77703,
+      "support_1h_anterior": 78110,
+      "resistance_d_quebrada": 78900,
+      "topo_rejeitado": 79182,
+      "ema_1h": 78420
+    },
+    "tier_setup": "SENTINELA_SHORT_2_LIMITS_HYBRID_OCO",
+    "watcher_state": {
+      "score_atual": 6.0,
+      "tier": "sonnet",
+      "bias_atual": "bearish",
+      "persistencia_15": "60% bearish / 40% neutral / 0% bullish — bias bearish dominante e estável pós-rejeição"
+    },
+    "next_action": "aguardar fill limit 1 (78850) ou limit 2 (79000); se algum fillar — set_trading_stop tpslMode=Partial (TP1 78400 30% / TP2 77703 70%) + SL 79280 reduceOnly imediato",
+    "trigger_long_obsoleto": "OBSOLETO — bull trap invalida tese LONG breakout até nova base ser construída acima de 79000",
+    "trigger_short_ativo": "Setup re-armado 19:03 pós-cancelamento externo: 2 limit orders SHORT @ 78870 (qty 0.003, orderId 6f14100c) + 79050 (qty 0.002, orderId d01eadb3) | SL pós-fill 79280 | TP1 78400 (30%) | TP2 77703 (70% estrutural HL 4H) | R:R TP2 esperado 3.0",
+    "current_drawings": [
+      {
+        "id": "2jIthj",
+        "type": "horizontal_line",
+        "label": "[F] TOPO REJEITADO 79182 (4H+D wick)",
+        "price": 79182
+      },
+      {
+        "id": "9W6zhN",
+        "type": "horizontal_line",
+        "label": "[F] SL 79280 (acima topo+buffer)",
+        "price": 79280,
+        "style": "dashed"
+      },
+      {
+        "id": "sUU5j7",
+        "type": "horizontal_line",
+        "label": "[F] LIMIT SHORT 2 @ 79000 qty 0.002",
+        "price": 79000
+      },
+      {
+        "id": "jBmRMK",
+        "type": "horizontal_line",
+        "label": "[F] LIMIT SHORT 1 @ 78850 qty 0.003",
+        "price": 78850
+      },
+      {
+        "id": "ILgLJv",
+        "type": "horizontal_line",
+        "label": "[F] TP1 78400 (30% cobertura)",
+        "price": 78400
+      },
+      {
+        "id": "buhLd4",
+        "type": "horizontal_line",
+        "label": "[F] TP2 77703 (70% estrutural HL 4H)",
+        "price": 77703
+      },
+      {
+        "id": "hPAnLv",
+        "type": "text",
+        "label": "[F] SETUP 18:00 — SENTINELA SHORT 2-limits",
+        "price": 79350
+      },
+      {
+        "id": "ASj2Be",
+        "type": "horizontal_line",
+        "label": "[F] R D 78900 (rompida 17:30, virou ZONA)",
+        "price": 78900,
+        "style": "dashed",
+        "status": "obsoleto_a_reposicionar"
+      },
+      {
+        "id": "PhULyd",
+        "type": "horizontal_line",
+        "label": "[F] HL 1H 78265",
+        "price": 78265,
+        "status": "ativo_baixo_relevancia_pos_breakout"
+      },
+      {
+        "id": "dOK2pG",
+        "type": "horizontal_line",
+        "label": "[F] HL 4H 77703 (TP2)",
+        "price": 77703,
+        "status": "ativo_dual_purpose"
+      },
+      {
+        "id": "VyfFxN",
+        "type": "horizontal_line",
+        "label": "[F] HL D 75272 (LTA macro)",
+        "price": 75272,
+        "style": "dashed",
+        "status": "ativo"
+      }
+    ],
+    "drawings_obsoletos_a_remover_proxima_sessao": [
+      "ony1Ii (compression 78265-78569 invalidada)",
+      "zlP9S4 (texto BOOT 17:18 NO TRADE)",
+      "qOylvq (R 1H/D 78569 superada por 79182)"
+    ]
+  },
+  "saldo": {
+    "cumRealisedPnl_unified_usdt": -6246.25498545,
+    "totalEquity": 432.57982642,
+    "walletBalance_usdt": 432.27586408,
+    "locked": 0.0,
+    "unrealisedPnl": 0
+  },
+  "progresso_vs_baseline": {
+    "diferenca": -122.25,
+    "interpretacao": "PIOROU em $122.25 desde início FÊNIX"
+  },
+  "posicao_atual": {
+    "size": 0,
+    "side": null,
+    "avgPrice": null,
+    "stopLoss": null,
+    "takeProfit": null
+  },
+  "ordens_pendentes": [
+    {
+      "orderId": "6f14100c-6fa0-4fbe-98b9-32510b6e93dc",
+      "orderLinkId": "fenix_sent_short_1_1903",
+      "side": "Sell",
+      "qty": 0.003,
+      "price": 78870.0,
+      "stopLoss": null,
+      "takeProfit": null,
+      "status": "New",
+      "criada_em": "2026-05-02T19:03"
+    },
+    {
+      "orderId": "d01eadb3-b8e1-4f91-9162-2786d765d399",
+      "orderLinkId": "fenix_sent_short_2_1903",
+      "side": "Sell",
+      "qty": 0.002,
+      "price": 79050.0,
+      "stopLoss": null,
+      "takeProfit": null,
+      "status": "New",
+      "criada_em": "2026-05-02T19:03"
+    }
+  ],
+  "rearmamento_19_03": {
+    "evento": "Re-armamento Sentinela após cancelamento externo das limits 18:25 (78850/79000) detectado em 19:00. Posição estava FLAT, sem ordens. Tese SHORT do BOOT 18:03 mantida — failed breakout 79182 + rejeição 79.000 segue válida.",
+    "ajuste_de_preco": "Limit 1 movida 78850→78870 (acima da última rejeição 78.843 do candle 1H 18:00) e Limit 2 79000→79050 (abaixo do high real 79182 com mais espaço pra captura).",
+    "limit_1_anterior_cancelada": "fenix_sent_short_1_1809 (78850, 0.003)",
+    "limit_2_anterior_cancelada": "fenix_sent_short_2_1809 (79000, 0.002)",
+    "validacao_anti_dup_v3_1": "Cada place_order foi seguida de get_open_closed_orders FILTRANDO por orderLinkId específico. Ambas confirmadas status=New antes de gravar."
+  },
+  "bug_corrigido_18_20": {
+    "evento": "DUPLICAÇÃO de ordens detectada pelo user — 4 SHORT limits abertas (2 do BOOT 18:03 + 2 do SONNET 18:09) ao invés de 2.",
+    "causa_raiz": "Ciclo SONNET 18:09 chamou get_open_closed_orders com openOnly=1 e o filtro retornou histórico misturado (Filled/Cancelled/Deactivated) sem mostrar nenhum status 'New' na primeira página de 50 itens. SONNET concluiu (errado) que as ordens do BOOT 18:03 não existiam e re-armou 2 limits idênticas, dobrando exposição.",
+    "evidencia_real": "Query sem filtro openOnly + limit=10 retornou as 4 ordens com status 'New' (3aaf3480 78850, 1f694727 79000, 43bf8a80 78850, a9a8b675 79000). Posição size=0 explica por que nenhuma fillou — preço $79.077 às 21:38 não atingiu o pré-fill por ordem de prioridade no book cheio.",
+    "acao_corretiva_executada_18_20": "Cancelados orderIds 43bf8a80 + a9a8b675 (par SONNET 1809 — duplicado). Mantidos 3aaf3480 + 1f694727 (par BOOT 1800 — original). Exposição corrigida pra 0.005 BTC (não 0.010). Capital travado: $15.78 IM + risco real $1.85 (0.43% equity) — dentro do tier conservador.",
+    "fix_dna_pendente": "Adicionar regra ao módulo 07_modo_sentinela: TODA chamada place_order DEVE ser seguida por get_open_closed_orders FILTRANDO por orderLinkId específico (não openOnly genérico) ANTES de salvar em fenix_state.json. Sem essa verificação, race conditions e false negatives causam duplicação."
+  },
+  "ordens_canceladas_ciclo": [
+    {
+      "tipo": "trigger_stop_short_obsoleto",
+      "orderLinkId": "fenix_short_breakdown_1751",
+      "motivo": "Premissa invalidada — preço NÃO caiu abaixo de 78500 trigger. Pelo contrário, fez breakout violento pra 79182 antes de devolver. Tese mudou de SHORT por breakdown pra SHORT por bull trap."
+    }
+  ],
+  "ultimo_ciclo_relatorio": {
+    "horario": "19:02",
+    "preco": 78741.3,
+    "candle_15m_recente": {
+      "open": 78799.3,
+      "high": 78799.3,
+      "low": 78709.6,
+      "close": 78741.3,
+      "vol": 30.9
+    },
+    "indicadores_local": {
+      "rsi_15m": 63.07,
+      "rsi_1h": 66.6,
+      "macd_15m_hist": 25.99,
+      "macd_1h_hist": 13.73,
+      "ema9_15m": 78650.44,
+      "ema21_15m": 78548.85,
+      "ema9_1h": 78557.24,
+      "ema21_1h": 78381.01
+    },
+    "score_multi_tf": {
+      "SHORT": {
+        "pontos": "6/6 (cap)",
+        "detalhes": "D failed breakout 79182 wick 525pts (+1.5) | 4H shooting star wick 526pts (+1.5) | 1H bull trap candle 17:00 (+1) | 15m rejeição mantida 17:30→18:00 (+1) | Watcher 60% bearish persistente + sinais sell agressivos (+1.5) | Failed breakout pattern (+1)",
+        "veto_ativo": "Nenhum — veto 1H HH+HL invalidado por wick rejection no novo HH 79182 (regra 02)"
+      },
+      "LONG": {
+        "pontos": "0/6",
+        "detalhes": "Falha de breakout invalida tese bull no curto prazo. Sem confluência LONG ativa.",
+        "veto_ativo": "VETO LONG — failed breakout pattern + watcher bearish persistente"
+      }
+    },
+    "tese_atual": "BULL_TRAP_FADE_SHORT",
+    "decisao": "EXECUTADO setup Sentinela SHORT 2-limits Hybrid OCO @ 78850/79000 com qty 0.003 + 0.002 (total 0.005, sizing conservador pós-perda v4 dentro do tier 1% risco). TP/SL serão setados via set_trading_stop tpslMode=Partial assim que primeiro limit fillar. Reduce_only obrigatório nos TPs.",
+    "trigger_aguardado": "Fill de qualquer um dos 2 limits → set_trading_stop imediato com SL 79280 + TP1 78400 (qty 0.0015) + TP2 77703 (qty 0.0035) reduce_only=true",
+    "proximo_marco": "Wakeup em fill (watcher push) OU em close 1H 19:00 caso nenhum fill. Confluência mantida = aguardar pacientemente.",
+    "indicadores_tv": {
+      "preco_atual": 78676.0,
+      "1h_close_17h": {
+        "open": 78415.3,
+        "high": 79182.5,
+        "low": 78395.2,
+        "close": 78693,
+        "vol": 4858,
+        "vol_vs_media": "9.7x"
+      },
+      "4h_em_formacao": {
+        "open": 78445.8,
+        "high": 79182.5,
+        "low": 78367,
+        "close_atual": 78655.9,
+        "vol": 5124
+      },
+      "d_em_formacao": {
+        "open": 78189.3,
+        "high": 79182.5,
+        "low": 77992.6,
+        "close_atual": 78656.7,
+        "vol": 19810
+      }
+    }
+  },
+  "contexto_macro_observado": {
+    "evento_chave": "Bull trap D+4H em 79182 — preço rompeu resistência D 78900 com vol 9.7× pra 79182 e devolveu 489pts em 30min, fechando 1H 17:00 em 78693. Configura padrão clássico de exhaustion em topo / armadilha pra compradores tardios.",
+    "topo_recente": 79182,
+    "fundo_recente_1h": 78395,
+    "resistencia_quebrada_e_rejeitada": "$78.900 D (quebrada por 282pts até 79182 e devolvida)",
+    "suporte_proximo_intraday": "$78.367 (low 4H 17:00) → $78.110 (HL 1H anterior) → $77.703 (HL 4H estrutural = TP2)",
+    "veto_short_ativo": "Nenhum (estrutura ascendente curto prazo invalidada por wick rejection no novo HH)",
+    "veto_long_ativo": "ATIVO — failed breakout invalida bull continuation"
+  },
+  "trades_sessao_atual": [
+    {
+      "id": "v3",
+      "data": "2026-05-01",
+      "side": "SHORT",
+      "qty_total": 0.02,
+      "entry_avg": 78600.0,
+      "pnl_total_estimado": 3.04,
+      "fechado": true,
+      "auto_avaliacao_resumo": "Modelo 70/30 funcionou. Partial em zona certa. SL apertado pós-TP1 capturou ganho extra antes do bull retomar."
+    },
+    {
+      "id": "v4",
+      "data": "2026-05-02",
+      "side": "LONG",
+      "qty_total": 0.005,
+      "entry_avg": 78442.0,
+      "exit_avg": 78380.0,
+      "stopLoss": 78380.0,
+      "tp1": 78560.0,
+      "tp2": 78700.0,
+      "fechado": true,
+      "pnl_total_estimado": -0.53,
+      "tese": "Pullback no breakout 78450. D+4H+1H todos bull confirmado. Watcher AT_LEVEL bullish 7.0.",
+      "auto_avaliacao_resumo": "SL fillou em $78.380 (close 1H 13:00 falhou gatilho, wick top 150pts no 78569 = exhaustion sign que score multi-TF não pesou suficientemente). TP1/TP2 ficaram dangling sem reduce_only — bug de execução detectado pelo user via diálogo, canceladas manualmente. Lição: TODA ordem TP/SL deve ter reduce_only=true."
+    }
+  ],
+  "estatisticas_sessao": {
+    "trades_executados_hoje": 1,
+    "trades_ganhadores": 0,
+    "trades_perdedores": 1,
+    "perdas_consecutivas": 1,
+    "pausa_ativa": false,
+    "pnl_realizado_sessao": -0.53,
+    "trade_aberto": null,
+    "setup_armado_pendente_fill": "SENTINELA SHORT 2-limits 78870/79050 (re-armadas 19:03) — R:R TP2 3.0"
+  },
+  "watchlist_proximos_eventos": [
+    {
+      "evento": "Fill limit 1 (78850) — primeiro ponto Sentinela. Ao detectar fill: set_trading_stop tpslMode=Partial com SL 79280, TP1 78400 qty 0.0015, TP2 77703 qty 0.0035, todos reduce_only=true.",
+      "horario": "rolling — qualquer momento se preço subir testar 78850"
+    },
+    {
+      "evento": "Fill limit 2 (79000) — segundo ponto Sentinela mais agressivo. Recalcular avg entry caso ambos fillem (78910 ponderado).",
+      "horario": "rolling"
+    },
+    {
+      "evento": "Close 1H 19:00 — gatilho de reavaliação caso nenhum fill ainda. Validar se watcher mantém bearish persistente.",
+      "horario": "19:00"
+    },
+    {
+      "evento": "Watcher monitor: bias bearish dominante 60% últimas 15 leituras. Se virar bullish persistente 3+ leituras = sinal de retomada bull e setup deve ser cancelado.",
+      "horario": "rolling"
+    }
+  ],
+  "trades_recentes": [
+    {
+      "timestamp": "2026-05-02T13:06:27",
+      "symbol": "BTCUSDT",
+      "side": "LONG",
+      "entry_price": 78442.0,
+      "exit_price": 78380.0,
+      "quantity": 0.005,
+      "pnl_usd": -0.74,
+      "pnl_percent": -0.19
+    },
+    {
+      "timestamp": "2026-05-01T22:52:16",
+      "symbol": "BTCUSDT",
+      "side": "SHORT",
+      "entry_price": 78600.0,
+      "exit_price": 78472.3,
+      "quantity": 0.014,
+      "pnl_usd": 0.85,
+      "pnl_percent": 0.08
+    },
+    {
+      "timestamp": "2026-05-01T12:25:04",
+      "symbol": "BTCUSDT",
+      "side": "SHORT",
+      "entry_price": 78600.0,
+      "exit_price": 78200.0,
+      "quantity": 0.006,
+      "pnl_usd": 2.2,
+      "pnl_percent": 0.47
+    },
+    {
+      "timestamp": "2026-05-01T07:21:26",
+      "symbol": "BTCUSDT",
+      "side": "SHORT",
+      "entry_price": 77100.0,
+      "exit_price": 77552.5,
+      "quantity": 0.02,
+      "pnl_usd": -10.23,
+      "pnl_percent": -0.66
+    },
+    {
+      "timestamp": "2026-04-30T15:11:26",
+      "symbol": "BTCUSDT",
+      "side": "SHORT",
+      "entry_price": 76200.0,
+      "exit_price": 76455.2,
+      "quantity": 0.03,
+      "pnl_usd": -9.37,
+      "pnl_percent": -0.41
+    },
+    {
+      "timestamp": "2026-04-30T08:19:35",
+      "symbol": "BTCUSDT",
+      "side": "SHORT",
+      "entry_price": 76038.3,
+      "exit_price": 76200.0,
+      "quantity": 0.045,
+      "pnl_usd": -11.04,
+      "pnl_percent": -0.32
+    },
+    {
+      "timestamp": "2026-04-30T03:33:45",
+      "symbol": "BTCUSDT",
+      "side": "SHORT",
+      "entry_price": 75940.0,
+      "exit_price": 75943.5,
+      "quantity": 0.021,
+      "pnl_usd": -1.27,
+      "pnl_percent": -0.08
+    },
+    {
+      "timestamp": "2026-04-30T00:33:21",
+      "symbol": "BTCUSDT",
+      "side": "SHORT",
+      "entry_price": 75940.0,
+      "exit_price": 75508.1,
+      "quantity": 0.009,
+      "pnl_usd": 3.38,
+      "pnl_percent": 0.49
+    },
+    {
+      "timestamp": "2026-04-29T20:48:22",
+      "symbol": "BTCUSDT",
+      "side": "SHORT",
+      "entry_price": 75875.9,
+      "exit_price": 76215.5,
+      "quantity": 0.025,
+      "pnl_usd": -10.59,
+      "pnl_percent": -0.56
+    },
+    {
+      "timestamp": "2026-04-29T14:20:15",
+      "symbol": "BTCUSDT",
+      "side": "LONG",
+      "entry_price": 75212.9,
+      "exit_price": 75080.0,
+      "quantity": 0.05,
+      "pnl_usd": -10.78,
+      "pnl_percent": -0.29
+    },
+    {
+      "timestamp": "2026-04-29T14:09:47",
+      "symbol": "BTCUSDT",
+      "side": "SHORT",
+      "entry_price": 75369.0,
+      "exit_price": 75185.1,
+      "quantity": 0.04,
+      "pnl_usd": 4.04,
+      "pnl_percent": 0.13
+    },
+    {
+      "timestamp": "2026-04-29T07:02:28",
+      "symbol": "BTCUSDT",
+      "side": "LONG",
+      "entry_price": 77573.6,
+      "exit_price": 77485.0,
+      "quantity": 0.04,
+      "pnl_usd": -6.96,
+      "pnl_percent": -0.22
+    },
+    {
+      "timestamp": "2026-04-28T21:48:24",
+      "symbol": "BTCUSDT",
+      "side": "SHORT",
+      "entry_price": 76234.3,
+      "exit_price": 76588.7,
+      "quantity": 0.04,
+      "pnl_usd": -17.54,
+      "pnl_percent": -0.58
+    },
+    {
+      "timestamp": "2026-04-28T20:54:12",
+      "symbol": "BTCUSDT",
+      "side": "SHORT",
+      "entry_price": 76240.5,
+      "exit_price": 76511.6,
+      "quantity": 0.045,
+      "pnl_usd": -15.99,
+      "pnl_percent": -0.47
+    },
+    {
+      "timestamp": "2026-04-28T19:21:14",
+      "symbol": "BTCUSDT",
+      "side": "SHORT",
+      "entry_price": 76199.4,
+      "exit_price": 76266.5,
+      "quantity": 0.05,
+      "pnl_usd": -7.55,
+      "pnl_percent": -0.2
+    },
+    {
+      "timestamp": "2026-04-28T17:21:45",
+      "symbol": "BTCUSDT",
+      "side": "LONG",
+      "entry_price": 75948.7,
+      "exit_price": 76317.7,
+      "quantity": 0.047,
+      "pnl_usd": 13.41,
+      "pnl_percent": 0.38
+    },
+    {
+      "timestamp": "2026-04-28T14:54:57",
+      "symbol": "BTCUSDT",
+      "side": "LONG",
+      "entry_price": 75948.7,
+      "exit_price": 76183.21,
+      "quantity": 0.02,
+      "pnl_usd": 3.02,
+      "pnl_percent": 0.2
+    },
+    {
+      "timestamp": "2026-04-28T09:33:44",
+      "symbol": "BTCUSDT",
+      "side": "LONG",
+      "entry_price": 76148.4,
+      "exit_price": 76127.0,
+      "quantity": 0.067,
+      "pnl_usd": -7.05,
+      "pnl_percent": -0.14
+    },
+    {
+      "timestamp": "2026-04-28T05:19:13",
+      "symbol": "BTCUSDT",
+      "side": "SHORT",
+      "entry_price": 76463.0,
+      "exit_price": 76774.7,
+      "quantity": 0.05,
+      "pnl_usd": -20.08,
+      "pnl_percent": -0.53
+    },
+    {
+      "timestamp": "2026-04-28T00:22:25",
+      "symbol": "BTCUSDT",
+      "side": "SHORT",
+      "entry_price": 77335.7,
+      "exit_price": 76779.8,
+      "quantity": 0.035,
+      "pnl_usd": 16.49,
+      "pnl_percent": 0.61
+    }
+  ],
+  "last_github_push_ts": 1777762949.661254,
+  "last_github_push": "2026-05-02 19:02"
+}
