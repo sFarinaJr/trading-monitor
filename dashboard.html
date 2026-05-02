@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥 FÊNIX — Operação Virada</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-primary: #0f172a;
+            --bg-secondary: #1e293b;
+            --bg-card: #1e293b;
+            --border: #334155;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --accent-blue: #3b82f6;
+            --positive: #10b981;
+            --negative: #ef4444;
+            --warning: #f59e0b;
+            --neutral: #6b7280;
+            color-scheme: dark;
+        }
+        body {
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace;
+            padding: 16px;
+            min-height: 100vh;
+            line-height: 1.5;
+        }
+        .container { max-width: 1100px; margin: 0 auto; }
+        header {
+            background: var(--bg-card);
+            padding: 20px 24px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .logo {
+            width: 56px;
+            height: 56px;
+            border-radius: 8px;
+            object-fit: contain;
+            background: var(--bg-primary);
+            padding: 4px;
+            border: 1px solid var(--border);
+        }
+        h1 {
+            font-size: 22px;
+            color: var(--text-primary);
+            line-height: 1.2;
+        }
+        h1 .subtitle {
+            display: block;
+            font-size: 12px;
+            font-weight: 400;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+        .header-meta {
+            font-size: 12px;
+            color: var(--text-secondary);
+            text-align: right;
+        }
+        .header-meta .status {
+            color: var(--positive);
+            font-weight: 600;
+        }
+        .header-meta .status.error { color: var(--negative); }
+        .header-meta .status.loading { color: var(--warning); }
+
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-bottom: 16px;
+        }
+        .card-title {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .mission { padding: 24px 28px; }
+        .mission-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 24px;
+            margin-bottom: 16px;
+        }
+        .mission-stat .label {
+            font-size: 11px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .mission-stat .value {
+            font-size: 28px;
+            font-weight: 700;
+            margin-top: 4px;
+        }
+        .progress-track {
+            height: 14px;
+            background: var(--bg-primary);
+            border-radius: 7px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            margin-top: 8px;
+        }
+        .progress-fill {
+            height: 100%;
+            transition: width 0.6s ease, background 0.3s ease;
+            border-radius: 7px;
+        }
+        .progress-meta {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-top: 6px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .stat-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid var(--border); font-size: 14px; }
+        .stat-row:last-child { border-bottom: none; }
+        .stat-row .key { color: var(--text-secondary); }
+        .stat-row .val { color: var(--text-primary); font-weight: 600; font-variant-numeric: tabular-nums; }
+
+        /* TRADES — tabela compacta */
+        table.trades-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+        table.trades-table th {
+            text-align: left;
+            padding: 8px 10px;
+            color: var(--text-muted);
+            font-weight: 600;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 2px solid var(--border);
+        }
+        table.trades-table td {
+            padding: 10px;
+            border-bottom: 1px solid var(--border);
+            font-variant-numeric: tabular-nums;
+        }
+        table.trades-table tr:last-child td { border-bottom: none; }
+        table.trades-table tr:hover td { background: var(--bg-primary); }
+        .trade-side-badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        .trade-side-badge.SHORT { background: rgba(239,68,68,0.15); color: var(--negative); }
+        .trade-side-badge.LONG { background: rgba(16,185,129,0.15); color: var(--positive); }
+        .trade-pnl-cell {
+            font-weight: 700;
+        }
+
+        .positive { color: var(--positive); }
+        .negative { color: var(--negative); }
+        .warning  { color: var(--warning); }
+        .neutral  { color: var(--text-secondary); }
+
+        .indicators {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+            margin-top: 12px;
+        }
+        .indicator {
+            background: var(--bg-primary);
+            padding: 10px 12px;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+        }
+        .indicator .name {
+            font-size: 10px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+        .indicator .val {
+            font-size: 16px;
+            font-weight: 700;
+            margin-top: 2px;
+            font-variant-numeric: tabular-nums;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 11px;
+            margin-top: 24px;
+            padding: 16px;
+        }
+
+        @media (max-width: 640px) {
+            body { padding: 10px; }
+            .card, .mission { padding: 16px 18px; }
+            h1 { font-size: 18px; }
+            .logo { width: 44px; height: 44px; }
+            .mission-row { grid-template-columns: 1fr; gap: 14px; }
+            .mission-stat .value { font-size: 22px; }
+            table.trades-table { font-size: 11px; }
+            table.trades-table th, table.trades-table td { padding: 6px 4px; }
+            /* Esconde colunas menos importantes em mobile */
+            table.trades-table .col-mobile-hide { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <div class="header-left">
+                <img src="fenix.png"
+                     alt="FÊNIX" class="logo"
+                     onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/sFarinaJr/trading-monitor/main/fenix.png'; this.onerror=()=>{this.style.display='none';};">
+                <h1>
+                    FÊNIX
+                    <span class="subtitle">Operação Virada — BTC/USDT Perpetual</span>
+                </h1>
+            </div>
+            <div class="header-meta">
+                <div class="status loading" id="status">⏳ Carregando…</div>
+                <div id="lastUpdate">--</div>
+                <div id="nextUpdate" style="opacity: 0.6;">próximo refresh em 5min</div>
+            </div>
+        </header>
+
+        <!-- 🎯 PROGRESSO DA MISSÃO -->
+        <div class="card mission">
+            <div class="card-title">🎯 Progresso da Missão</div>
+            <div class="mission-row">
+                <div class="mission-stat">
+                    <div class="label">Baseline (27/04)</div>
+                    <div class="value neutral" id="baseline">--</div>
+                </div>
+                <div class="mission-stat">
+                    <div class="label">PnL Acumulado Atual</div>
+                    <div class="value" id="cumPnl">--</div>
+                </div>
+                <div class="mission-stat">
+                    <div class="label">Variação vs Baseline</div>
+                    <div class="value" id="diff">--</div>
+                </div>
+            </div>
+            <div class="progress-track">
+                <div class="progress-fill" id="progressBar" style="width: 0%; background: var(--negative);"></div>
+            </div>
+            <div class="progress-meta">
+                <span>Falta para zerar: <strong id="gap">--</strong></span>
+                <span id="interpretation">--</span>
+            </div>
+        </div>
+
+        <!-- 📓 HISTÓRICO DE TRADES (logo abaixo da missão, últimos 10) -->
+        <div class="card">
+            <div class="card-title">📓 Histórico de Trades (últimos 10)</div>
+            <div style="overflow-x: auto;">
+                <table class="trades-table">
+                    <thead>
+                        <tr>
+                            <th>Data/Hora</th>
+                            <th>Side</th>
+                            <th>Entry</th>
+                            <th>Exit</th>
+                            <th class="col-mobile-hide">Qty</th>
+                            <th>PnL ($)</th>
+                            <th class="col-mobile-hide">PnL %</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tradesBody">
+                        <tr><td colspan="7" style="text-align: center; color: var(--text-muted); padding: 30px;">Carregando…</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="stat-row" style="margin-top: 12px; padding-top: 12px; border-top: 2px solid var(--border);">
+                <span class="key">Total PnL desses trades</span>
+                <span class="val" id="totalTradesPnl">--</span>
+            </div>
+        </div>
+
+        <!-- 📊 POSIÇÃO ATUAL -->
+        <div class="card">
+            <div class="card-title">📊 Posição Atual</div>
+            <div id="positionContent">
+                <div style="text-align: center; padding: 20px; color: var(--text-muted);">Carregando…</div>
+            </div>
+        </div>
+
+        <!-- 🧠 ÚLTIMO CICLO FÊNIX (só indicadores) -->
+        <div class="card">
+            <div class="card-title">🧠 Último Ciclo FÊNIX <span id="cycleTime" style="color: var(--accent-blue); margin-left: auto;">--</span></div>
+            <div class="indicators">
+                <div class="indicator"><div class="name">Preço</div><div class="val" id="indPrice">--</div></div>
+                <div class="indicator"><div class="name">Score Multi-TF</div><div class="val" id="indScore">--</div></div>
+                <div class="indicator"><div class="name">RSI 15m</div><div class="val" id="indRsi15">--</div></div>
+                <div class="indicator"><div class="name">RSI 1H</div><div class="val" id="indRsi1h">--</div></div>
+                <div class="indicator"><div class="name">MACD 1H Hist</div><div class="val" id="indMacd1h">--</div></div>
+                <div class="indicator"><div class="name">EMA 9 / 21 (15m)</div><div class="val" id="indEma" style="font-size: 12px;">--</div></div>
+            </div>
+        </div>
+
+        <!-- 📈 ÚLTIMO CANDLE 15m -->
+        <div class="card">
+            <div class="card-title">📈 Último Candle 15m</div>
+            <div id="candleContent" style="font-family: 'SF Mono', Monaco, monospace; font-size: 13px;">
+                <div style="text-align: center; padding: 20px; color: var(--text-muted);">Carregando…</div>
+            </div>
+        </div>
+
+        <footer>
+            FÊNIX Dashboard — dados de <a href="https://github.com/sFarinaJr/trading-monitor" style="color: var(--accent-blue);">trading-monitor</a>
+            • <span id="lastSync">--</span>
+        </footer>
+
+    </div>
+
+    <script>
+        const GH_BASE = 'https://raw.githubusercontent.com/sFarinaJr/trading-monitor/main';
+        const STATE_URL = `${GH_BASE}/fenix_state.json`;
+        const COSTS_URL = `${GH_BASE}/cost_log.json`;
+        const REFRESH_MS = 5 * 60 * 1000;
+
+        const fmtMoney = (v, sign = false) => {
+            if (v === null || v === undefined || isNaN(v)) return '--';
+            const abs = Math.abs(Number(v));
+            const formatted = abs.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+            const prefix = v < 0 ? '-$' : (sign && v > 0 ? '+$' : '$');
+            return `${prefix}${formatted}`;
+        };
+        const fmtNum = (v, dec = 2) => {
+            if (v === null || v === undefined || isNaN(v)) return '--';
+            return Number(v).toLocaleString('en-US', { minimumFractionDigits: dec, maximumFractionDigits: dec });
+        };
+        const colorOf = v => (v == null) ? 'neutral' : (v > 0 ? 'positive' : (v < 0 ? 'negative' : 'neutral'));
+
+        const fmtDateTime = (iso) => {
+            if (!iso) return '--';
+            try {
+                const d = new Date(iso);
+                const day = String(d.getDate()).padStart(2, '0');
+                const mon = String(d.getMonth() + 1).padStart(2, '0');
+                const hh = String(d.getHours()).padStart(2, '0');
+                const mm = String(d.getMinutes()).padStart(2, '0');
+                return `${day}/${mon} ${hh}:${mm}`;
+            } catch { return iso; }
+        };
+
+        async function loadState() {
+            try {
+                const r = await fetch(`${STATE_URL}?t=${Date.now()}`);
+                if (!r.ok) throw new Error(`HTTP ${r.status}`);
+                return await r.json();
+            } catch (e) {
+                console.error('Erro carregando state:', e);
+                return null;
+            }
+        }
+        async function loadCosts() {
+            try {
+                const r = await fetch(`${COSTS_URL}?t=${Date.now()}`);
+                if (!r.ok) return null;
+                return await r.json();
+            } catch (e) { return null; }
+        }
+
+        function renderState(s) {
+            if (!s) {
+                document.getElementById('status').textContent = '❌ Erro ao carregar';
+                document.getElementById('status').className = 'status error';
+                return;
+            }
+
+            // 🎯 Missão
+            const baseline = s.baseline?.pnl_acumulado ?? -6124;
+            const cumPnl = s.saldo?.cumRealisedPnl_unified_usdt ?? 0;
+            const diff = s.progresso_vs_baseline?.diferenca ?? (cumPnl - baseline);
+            document.getElementById('baseline').textContent = fmtMoney(baseline);
+            document.getElementById('cumPnl').textContent = fmtMoney(cumPnl);
+            document.getElementById('cumPnl').className = `value ${colorOf(cumPnl)}`;
+            document.getElementById('diff').textContent = fmtMoney(diff, true);
+            document.getElementById('diff').className = `value ${colorOf(diff)}`;
+            document.getElementById('gap').textContent = fmtMoney(Math.abs(cumPnl));
+            document.getElementById('interpretation').textContent = s.progresso_vs_baseline?.interpretacao || '';
+
+            const progress = Math.max(0, Math.min(100, ((cumPnl - baseline) / -baseline) * 100));
+            const bar = document.getElementById('progressBar');
+            bar.style.width = `${Math.max(2, progress)}%`;
+            bar.style.background = diff > 0 ? 'linear-gradient(90deg, var(--negative), var(--positive))' : 'var(--negative)';
+
+            // 📊 Posição
+            const pos = s.posicao_atual;
+            const posDiv = document.getElementById('positionContent');
+            if (pos && pos.size > 0) {
+                posDiv.innerHTML = `
+                    <div class="stat-row"><span class="key">Side</span> <span class="val ${pos.side === 'Sell' ? 'negative' : 'positive'}">${pos.side === 'Sell' ? '🔴 SHORT' : '🟢 LONG'}</span></div>
+                    <div class="stat-row"><span class="key">Size</span> <span class="val">${fmtNum(pos.size, 4)} BTC</span></div>
+                    <div class="stat-row"><span class="key">Avg Price</span> <span class="val">${fmtMoney(pos.avgPrice)}</span></div>
+                    <div class="stat-row"><span class="key">PnL Flutuante</span> <span class="val ${colorOf(pos.unrealisedPnl)}">${fmtMoney(pos.unrealisedPnl, true)}</span></div>
+                    <div class="stat-row"><span class="key">Stop Loss</span> <span class="val negative">${pos.stopLoss ? fmtMoney(pos.stopLoss) : '⚠️ sem SL'}</span></div>
+                    <div class="stat-row"><span class="key">Take Profit</span> <span class="val positive">${pos.takeProfit ? fmtMoney(pos.takeProfit) : '— (livre)'}</span></div>
+                `;
+            } else {
+                posDiv.innerHTML = `<div style="text-align: center; padding: 30px 20px;"><div style="font-size: 32px;">💤</div><div style="margin-top: 8px; color: var(--text-secondary); font-weight: 600;">ZERADA</div><div style="margin-top: 4px; font-size: 12px; color: var(--text-muted);">Sem ordens pendentes</div></div>`;
+            }
+
+            // 🧠 Último ciclo (só indicadores)
+            const c = s.ultimo_ciclo_relatorio || {};
+            const ind = c.indicadores_local || {};
+            document.getElementById('cycleTime').textContent = c.horario || '--';
+            document.getElementById('indPrice').textContent = fmtMoney(c.preco);
+            document.getElementById('indScore').textContent = c.score_multi_tf || '--';
+            document.getElementById('indRsi15').textContent = fmtNum(ind.rsi_15m, 1);
+            document.getElementById('indRsi1h').textContent = fmtNum(ind.rsi_1h, 1);
+            const macdEl = document.getElementById('indMacd1h');
+            macdEl.textContent = fmtNum(ind.macd_1h_hist, 1);
+            macdEl.className = `val ${colorOf(ind.macd_1h_hist)}`;
+            document.getElementById('indEma').textContent = `${fmtNum(ind.ema9_15m, 0)} / ${fmtNum(ind.ema21_15m, 0)}`;
+
+            // 📈 Candle
+            const k = c.candle_15m_recente;
+            const candDiv = document.getElementById('candleContent');
+            if (k) {
+                const dir = k.close >= k.open ? 'positive' : 'negative';
+                const sym = k.close >= k.open ? '🟢' : '🔴';
+                candDiv.innerHTML = `
+                    <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 16px;">
+                        <div><div style="color: var(--text-muted); font-size: 10px;">OPEN</div><div style="font-size: 18px;">${fmtMoney(k.open)}</div></div>
+                        <div><div style="color: var(--text-muted); font-size: 10px;">HIGH</div><div style="font-size: 18px; color: var(--positive);">${fmtMoney(k.high)}</div></div>
+                        <div><div style="color: var(--text-muted); font-size: 10px;">LOW</div><div style="font-size: 18px; color: var(--negative);">${fmtMoney(k.low)}</div></div>
+                        <div><div style="color: var(--text-muted); font-size: 10px;">CLOSE</div><div style="font-size: 18px;" class="${dir}">${sym} ${fmtMoney(k.close)}</div></div>
+                        <div><div style="color: var(--text-muted); font-size: 10px;">VOL</div><div style="font-size: 18px;">${fmtNum(k.vol, 1)}</div></div>
+                    </div>
+                `;
+            } else candDiv.innerHTML = '<div style="text-align: center; padding: 20px; color: var(--text-muted);">Sem dados</div>';
+
+            // Header status
+            document.getElementById('status').textContent = '✅ Ao vivo';
+            document.getElementById('status').className = 'status';
+            document.getElementById('lastUpdate').textContent = `Snapshot: ${s.ultimo_update || '--'}`;
+            document.getElementById('lastSync').textContent = `Último push GitHub: ${s.last_github_push || '—'}`;
+        }
+
+        function renderTrades(state) {
+            const tbody = document.getElementById('tradesBody');
+            // Fonte primária: state.trades_recentes (Bybit em tempo real, atualizado a cada ciclo)
+            const allTrades = state?.trades_recentes || [];
+
+            if (allTrades.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="7" style="text-align: center; color: var(--text-muted); padding: 30px;">Nenhum trade registrado na Bybit</td></tr>';
+                document.getElementById('totalTradesPnl').textContent = '--';
+                return;
+            }
+            // Bybit já retorna do mais recente pro mais antigo. Pega só os 10 primeiros.
+            const trades = allTrades.slice(0, 10);
+            tbody.innerHTML = trades.map(t => {
+                const pnl = t.pnl_usd || 0;
+                const pct = t.pnl_percent || 0;
+                const cls = pnl > 0 ? 'positive' : (pnl < 0 ? 'negative' : 'neutral');
+                return `
+                    <tr>
+                        <td>${fmtDateTime(t.timestamp)}</td>
+                        <td><span class="trade-side-badge ${t.side}">${t.side}</span></td>
+                        <td>${fmtMoney(t.entry_price)}</td>
+                        <td>${fmtMoney(t.exit_price)}</td>
+                        <td class="col-mobile-hide">${fmtNum(t.quantity, 4)}</td>
+                        <td class="trade-pnl-cell ${cls}">${fmtMoney(pnl, true)}</td>
+                        <td class="col-mobile-hide ${cls}">${pct > 0 ? '+' : ''}${fmtNum(pct, 2)}%</td>
+                    </tr>
+                `;
+            }).join('');
+
+            const total = trades.reduce((s, t) => s + (t.pnl_usd || 0), 0);
+            const tEl = document.getElementById('totalTradesPnl');
+            tEl.textContent = fmtMoney(total, true);
+            tEl.className = `val ${colorOf(total)}`;
+        }
+
+        async function refresh() {
+            const state = await loadState();
+            renderState(state);
+            renderTrades(state);
+        }
+
+        refresh();
+        setInterval(refresh, REFRESH_MS);
+    </script>
+</body>
+</html>
