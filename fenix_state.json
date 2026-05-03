@@ -6,7 +6,89 @@
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
-  "ultimo_update": "2026-05-03T18:12-04:00",
+  "ultimo_update": "2026-05-03T19:02-04:00",
+  "ciclo_delta_19_02": {
+    "_doc": "Ciclo OPUS escalado pelo watcher (score 8.0 NEUTRAL @ $79.169). Validação mecânica close 1H 18:00 + 4H 16:00 em formação + 15m últimos 8 candles. Score multi-TF LONG 3,5/6 e SHORT 3,0/6 — ambos abaixo de 4/6. HOLD ZERADO confirmado. Próximo gatilho: close duplo 1H 19:00 + 4H 16:00 às 20:00 UTC-4.",
+    "ts": "2026-05-03T19:02-04:00",
+    "preco_at_check": 79195.1,
+    "mark_price": 79195.87,
+    "watcher_trigger": {
+      "score": 8.0,
+      "tier": "opus",
+      "bias": "neutral",
+      "fired_signals": [
+        "orderbook_imbalance(2.0:sell_pressure ratio 0.448 — ASK 4.96 vs BID 2.22)",
+        "funding_flip(2.0:short_squeeze rates [6.2e-05,-3.1e-05,2.3e-05,-3.7e-05])",
+        "volume_delta(2.0:aggressive_buying delta 22.98% — BUY 10.374 vs SELL 6.497)",
+        "distance_to_level(2.0:AT_LEVEL high $79.179 do ciclo_18_12)"
+      ],
+      "vibe_history_6_leituras": "22:59→23:02 todas neutral, scores 4-8, preços $79.087-$79.169 — SEM bias direcional, alerta de volatilidade não sinal",
+      "_obs": "Watcher capturando sinais conflitantes: orderbook sell + volume_delta buy + funding short_squeeze. Score alto 8.0 mas bias=neutral por sinais opostos. NÃO substitui análise multi-TF rigorosa."
+    },
+    "posicao": {
+      "size": 0,
+      "side": "",
+      "_obs": "Posição zerada. cumRealisedPnl Bybit -$4.427,25 (sem mudança vs ciclo 18:12)."
+    },
+    "ordens_abertas": "ZERO — list vazia confirmada (openOnly=0)",
+    "candle_1h_18_00_FECHADO": {
+      "open": 78799.8,
+      "high": 79421,
+      "low": 78799.8,
+      "close": 79137.3,
+      "vol": 4261.685,
+      "_obs": "MARUBOZU BULL CONFIRMADO: open=low $78.799,8, close $79.137,3 = +$338 (+0,43%), vol 4.262 (forte, acima 1.500). High $79.421 = NOVO HIGH DO DIA furou MACRO_INVALIDATION $79.182 e topo D anterior. Upper wick $284 (range $621, wick = 46% do close-high). Close $79.137 < cabeça H&S morta $79.182 mas > $79.000 = CONTINUATION BULL setup, NÃO failed breakout."
+    },
+    "candle_1h_19_00_em_formacao_5pct": {
+      "open": 79137.3,
+      "high": 79200,
+      "low": 79083,
+      "close_atual": 79195.1,
+      "vol_parcial_3min": 80.029,
+      "_obs": "Bar acabou de abrir (3 min consumidos). Continuação suave bull, sem volatilidade. Range $117 = compressão. Bar fecha 20:00."
+    },
+    "candle_4h_16_00_em_formacao_75pct": {
+      "open": 78733.5,
+      "high": 79421,
+      "low": 78610,
+      "close_atual": 79195.1,
+      "vol_acumulado": 10354.723,
+      "_obs": "Em formação 75% (3h dos 4h). Range $811, vol institucional 10.355 (3,8× maior que 4H 12:00 vol 2.747). High $79.421 furou MACRO_INVALIDATION mas ainda em formação. Wick top $284 sugere rejection parcial. Bar fecha 20:00 UTC-4."
+    },
+    "candles_15m_ultimos_8": {
+      "14_30": "$78.978→$78.895 down vol 316",
+      "14_45": "$78.895→$78.675 down vol 780",
+      "15_00": "$78.675→$78.799 recover vol 463",
+      "15_15": "$78.799→$79.233 BULL EXPLOSIVO +$434 vol 1.919 — gatilho do movimento",
+      "15_30": "$79.233→$79.047 pullback vol 1.359",
+      "15_45": "$79.047→$79.232 recover vol 528",
+      "16_00": "$79.232→$79.137 consolidação vol 454",
+      "16_15": "$79.137→$79.190 continuação suave vol 81 (em formação)",
+      "_obs": "Movimento bull começou 15:15. Atualmente em consolidação $79.080-$79.230 últimas 4 barras = compressão pós-explosão. Vol decrescente 1919→1359→528→454→81 = exhaustion vol parcial mas sem reversão de preço."
+    },
+    "score_multi_tf": {
+      "LONG": "3,5/6",
+      "SHORT": "3,0/6",
+      "_decomposicao_long": "D 0,5 (rompendo $79K mas topo D rejeitado). 4H 0,5 (marubozu bull em formação 75% sem close). 1H 1 (close $79.137 vol 4.262 + 19:00 continuation). 15m 0,5 (lateral consolidação sem novo high). Vol 1 (4H 10K + 1H 4.262). Estrutura 0 (orderbook ratio 0.448 ASK 2,2× BID = sell_pressure ativo). Total: 3,5/6.",
+      "_decomposicao_short": "D 0,5 (high $79.421 rejeitado close $79.195 = -$226). 4H 0 (em formação bull). 1H 0 (sem exhaustion 1H, sem bearish engulf). 15m 0,5 (lateral compressão). Vol 0,5 (decrescente 1919→81 pode ser exhaustion). Estrutura 1,5 (orderbook sell + funding short_squeeze + AT_LEVEL high D rejeitado). Total: 3,0/6."
+    },
+    "decisao": "HOLD ZERADO — sem entrada LONG (3,5/6 < 4/6 + chase de movimento já consumado), sem entrada SHORT (3,0/6 < 4/6 + sem failed breakout confirmado em close 1H). Tese H&S 1249 MORTA — todos 6 levels críticos breached (LEFT_SHOULDER, RIGHT_SHOULDER, HEAD_HS, INVALIDATION_TOTAL, MACRO_INVALIDATION, POSITION_SL). Strategic levels OBSOLETOS — refazer setup exige novo BOOT Opus, não pode ser feito mid-loop. Watcher score 8.0 NEUTRAL é alerta de volatilidade, não sinal direcional. Aguardar close duplo 1H 19:00 + 4H 16:00 às 20:00 UTC-4 (próximo gatilho mecânico estrutural).",
+    "anti_padroes_aplicados": [
+      "NÃO chase de movimento bull já consumado ($504 desde 17:55 + $338 close 1H 18:00 fechado)",
+      "NÃO refazer H&S sem novo BOOT Opus (tese 1249 morta, regra usuário)",
+      "NÃO score limítrofe — LONG 3,5/6 e SHORT 3,0/6 ambos abaixo de 4/6",
+      "NÃO confiar em watcher score isolado bias=neutral (sinais conflitantes)",
+      "NÃO armar nova com strategic levels obsoletos (todos queimados)",
+      "NÃO SHORT contra continuation 1H sem failed breakout em close 1H confirmado"
+    ],
+    "proximos_gatilhos_mecanicos": [
+      "CLOSE_1H_19_00 + CLOSE_4H_16_00 (20:00 UTC-4 — ~58min): EVENTO ESTRUTURAL DUPLO. Se 4H close > $79.200 + vol > 8.000 = continuation 4H confirmada, BOOT Opus pra setup LONG em pullback. Se 4H close < $78.800 com upper wick > 50% = exhaustion 4H confirmada, gatilho SHORT failed-breakout real com BOOT Opus.",
+      "WATCHER_INICIATIVOS_BEAR: price_velocity + volume_surge + range_expansion firing bear simultâneos = OPUS reavalia failed breakout intra-bar (Override de Breakout v3).",
+      "WATCHER_INICIATIVOS_BULL: mesmos 3 firing bull = OPUS reavalia continuation só com pullback profundo (não topping/AT_LEVEL).",
+      "BOOT_NOVO_OPUS: dispara automaticamente em (a) close 1H 19:00 + close 4H 16:00 às 20:00, (b) breach de level estratégico novo após BOOT redefinir levels."
+    ],
+    "vibe_aggregate_v6_alinhamento": "HOLD ZERADO compatível com vibe watcher neutral persistente (6 leituras consecutivas). Sem posição = sem vibe_conflict possível. Disciplina tier 1 autonomy_mode preservada — score multi-TF rigoroso ≥4/6 respeitado sem exceção."
+  },
   "ciclo_delta_18_12": {
     "_doc": "Ciclo OPUS escalado pelo watcher (score 8.5 bearish @ $79.148). Análise multi-TF rejeitou tese de failed breakout SHORT. Score multi-TF SHORT 0,5/6 (contradição completa: 1H em explosão bull intra-bar de $504/13min). Watcher bearish lendo flip 18:10 já consumado/revertido. Decisão: HOLD ZERADO — tier 1 autonomy_mode respeitado, sem entrada.",
     "ts": "2026-05-03T18:12-04:00",
