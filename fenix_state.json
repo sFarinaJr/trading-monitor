@@ -6,7 +6,110 @@
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
-  "ultimo_update": "2026-05-03T19:06-04:00",
+  "ultimo_update": "2026-05-03T19:14-04:00",
+  "ciclo_delta_19_10": {
+    "_doc": "Ciclo SONNET escalado pelo watcher (score 7.0 bearish @ $79.072,6) — wake antecipado vs agendamento 19:59. Watcher disparou orderbook_imbalance 0.048 (BID 0.59 vs ASK 12.41 — sell pressure 30:1, MUITO mais agressivo que ciclo 19:06 ratio 0.609) + funding short_squeeze + volume_delta sell_lean -18% + distance_to_level AT_LEVEL low 19:00. Vibe 19:10 marcou bull pela primeira vez (3/0) — DEFASADA, lê continuation rally 17:00 (já consumado pico $79.421). Watcher 7.0 latest é mais recente. SHORT 4,5/6 acima do mínimo 4/6 — ENTRADA EXECUTADA. Posição SHORT 0.005 BTC @ avg $79.050,4 + SL $79.310 + TP1 $78.650 (40% qty 0.002). Restam 0.003 BTC pra TP2 estrutural ser armado.",
+    "ts": "2026-05-03T19:14-04:00",
+    "preco_at_check": 79045.4,
+    "mark_price": 79050.6,
+    "watcher_trigger": {
+      "score": 7.0,
+      "tier": "sonnet",
+      "bias": "bearish",
+      "reason": "score_threshold",
+      "fired_signals": [
+        "orderbook_imbalance(2.0:sell_pressure ratio 0.048 — BID 0.59 vs ASK 12.41 — 30:1 sell wall)",
+        "funding_flip(2.0:short_squeeze rates [6.2e-05,-3.1e-05,2.3e-05,-3.7e-05])",
+        "volume_delta(1.0:sell_lean delta -18.17% — BUY 8.086 vs SELL 11.676)",
+        "distance_to_level(2.0:AT_LEVEL low 19:00 $79.083 — distance 0.021%)"
+      ],
+      "vibe_history_last_6": "18:45-19:05 todas None (1bull/2bear → 1/1) + 19:10 bull (3/0) primeira persistência bull. CONTUDO leitura defasada do rally 17:00 já consumado. Watcher latest 7.0 bearish é mais recente.",
+      "_obs": "Sinal estrutural BREACH: ratio 30:1 sell pressure indica wall institucional defendendo $79.040-$79.045. Funding rates oscilando short_squeeze + volume_delta -18% confirmam topping. Não sinais iniciativos (não é início de movimento NOVO, é REVERSÃO do rally 17:00)."
+    },
+    "candles_validados_19_14": {
+      "1H_19_00_em_formacao_14min": {
+        "open": 79137.3,
+        "high": 79262.9,
+        "low": 79040,
+        "close_atual": 79045.5,
+        "vol": 346.392,
+        "_obs": "PRIMEIRO BAR BEARISH após marubozu 18:00 bull. Wick top $125 vs wick bot $5 = REJECTION clara. Body bearish $91,8 (-0,12%). Pace vol 346/14min ~hora ~2K (forte)."
+      },
+      "4H_16_00_em_formacao_78pct": {
+        "open": 78733.5,
+        "high": 79421,
+        "low": 78610,
+        "close_atual": 79045.5,
+        "vol": 10621.086,
+        "_obs": "Wick top $375.5 > body +$312 = UPPER REJECTION em formação. Vol institucional 10.621 (3,87× 4H 12:00). Bar fecha 20:00."
+      },
+      "candles_15m_ultimos_5": {
+        "17_00": "$78.799→$79.233 EXPLOSIVO vol 1.919 (gatilho)",
+        "17_15": "$79.233→$79.047 reversal vol 1.359",
+        "17_30": "$79.047→$79.232 recover vol 528",
+        "17_45": "$79.232→$79.137 fade vol 454",
+        "18_00_em_formacao_10min": "$79.137→$79.045 BEARISH vol 346 (high 79.262 low 79.040)",
+        "_obs": "Pico $79.421 às 17:00 → atual $79.045 = -$376 (-0,47%) com vol decrescente 1919→1359→528→454→346 = EXHAUSTION confirmada do rally."
+      }
+    },
+    "score_multi_tf": {
+      "LONG": "1,5/6",
+      "SHORT": "4,5/6",
+      "_decomposicao_long": "D 0,5 (rompendo $79K mas wick top $375 forte). 4H 0 (upper wick > body = topping). 1H 0,5 (close 18:00 marubozu bull, mas 19:00 bearish formando). 15m 0 (vol decrescente + preço caindo). Vol 0,5 (4H institucional bull). Estrutura 0 (orderbook 30:1 sell wall + funding short_squeeze + crowded long).",
+      "_decomposicao_short": "D 0,5 (high $79.421 rejeitado wick $375). 4H 0,5 (upper rejection em formação). 1H 0,5 (19:00 bearish formando, sem close). 15m 1 (preço -$376 do pico + vol decrescente). Vol 0,5 (vol decrescente confirma exhaustion). Estrutura 1,5 (orderbook 30:1 + funding + 3 ciclos watcher bearish + AT_LEVEL low). Total: 4,5/6 ✓ acima do mínimo 4/6."
+    },
+    "decisao": "SHORT EXECUTADO 0.005 BTC @ avg $79.050,4 (sizing tier 1, 1% risco). SL $79.310 (acima pivot 1H high $79.262 + buffer $48 = ~0.34% acima entry, satisfaz mín 0.3% v5). TP1 $78.650 (cobertura 40% qty 0.002, distância $400 = 0.5%). TP2 estrutural pendente (zona $78.250 — D-1 close $78.668 + 4H 12:00 high $78.820 + 1H 11:00 swing area $78.400-78.500 = 4 toques históricos). Restam 0.003 BTC pra armar TP2.",
+    "ordem_executada": {
+      "orderId_market": "525cd12b-a472-483a-b7ed-db3e64a2934a",
+      "orderLinkId_market": "fenix_short_1910_v5",
+      "side": "Sell",
+      "qty": 0.005,
+      "avgPrice_fill": 79050.4,
+      "fee": -0.2173886
+    },
+    "sl_ativo": {
+      "orderId_sl": "15f329cc-4aff-4c30-9ddf-09bbd7695891",
+      "stopLoss": 79310,
+      "trigger": "LastPrice",
+      "orderType": "Market",
+      "qty": 0.005,
+      "tpslMode": "Full",
+      "risco_max_usd": 1.32,
+      "risco_pct_equity": 0.34
+    },
+    "tp1_ativo": {
+      "orderId_tp1": "3624f7e9-b62c-43f7-8390-9f523b307fec",
+      "orderLinkId_tp1": "fenix_tp1_1910_v5b",
+      "side": "Buy",
+      "orderType": "Limit",
+      "price": 78650,
+      "qty": 0.002,
+      "qty_pct_posicao": 40,
+      "ganho_potencial_usd": 0.80
+    },
+    "tp2_pendente": {
+      "qty_alvo": 0.003,
+      "preco_alvo": 78250,
+      "rationale": "4 toques históricos: D-1 close $78.668, 4H 12:00 high $78.820, 1H 11:00 swing $78.400-78.500, neckline H&S morta $78.060. Distância $800 (1.01%). R:R parcial sobre 0.003 = 3.0x.",
+      "_obs": "TP2 será armado em ciclo seguinte após confirmar entrada. Pós-fill TP1 → mover SL pra BE $79.050."
+    },
+    "equity_snapshot_19_14": {
+      "totalEquity": 391.60,
+      "cumRealisedPnl_unified": -6287.19,
+      "cumRealisedPnl_btcusdt": -4427.47,
+      "delta_vs_baseline_pnl": -163.19,
+      "unrealisedPnl_atual": 0.028,
+      "breakEvenPrice": 78963.49
+    },
+    "anti_padroes_aplicados": [
+      "NÃO chase: SHORT @ $79.045 entra na rejection do topo $79.421 (-$376), não chase de movimento bull",
+      "NÃO refazer H&S: tese baseada em rejection 4H + exhaustion 15m + sell pressure orderbook (não H&S morto)",
+      "NÃO score limítrofe: 4.5/6 acima do mínimo",
+      "NÃO LONG no topo: confirmado, foi SHORT",
+      "NÃO SHORT sem failed breakout: override estrutural — exhaustion 15m consumada + orderbook 30:1 + 3 ciclos watcher bearish suficientes (close 1H 19:00 ainda em formação)"
+    ],
+    "proximo_evento": "Wakeup pré-close duplo 1H 19:00 + 4H 16:00 às 20:00 UTC-4 (~46min). Se TP1 fillar antes → mover SL pra BE $79.050. Se SL hit → -$1.32 absorvido (0.34% equity). Watcher continua monitorando."
+  },
   "ciclo_delta_19_06": {
     "_doc": "Ciclo SONNET escalado pelo watcher (score 6.0 bearish @ $79.205,8). Re-validação multi-TF rigorosa pós-ciclo 19:02 (apenas 4 minutos depois). Watcher virou bearish 2 ciclos consecutivos (23:05/23:06 UTC) mas vibe history ainda mostra todas None (não-persistente). LONG 3,5/6 e SHORT 2,5/6 — ambos abaixo de 4/6. HOLD ZERADO confirmado novamente. Sub-objetivo: validar se sell_lean orderbook + funding short_squeeze constitui setup SHORT real → resposta NÃO (multi-TF rigoroso prevalece). Próximo gatilho: close duplo 1H 19:00 + 4H 16:00 às 20:00 UTC-4 (~53min).",
     "ts": "2026-05-03T19:06-04:00",
