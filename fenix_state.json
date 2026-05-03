@@ -1,254 +1,1042 @@
 {
-  "_doc": "Estado dinâmico da Operação Virada. Atualizado pela FÊNIX a cada ciclo. Baseline imutável vive em ~/.claude/projects/.../memory/project_operacao_virada.md",
-  "missao": "Operação Virada",
+  "_doc": "Estado din\u00e2mico da Opera\u00e7\u00e3o Virada. Atualizado pela F\u00caNIX a cada ciclo. Baseline imut\u00e1vel vive em ~/.claude/projects/.../memory/project_operacao_virada.md",
+  "missao": "Opera\u00e7\u00e3o Virada",
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
-  "ultimo_update": "2026-05-02 19:03",
-  "last_session_start": "2026-05-02T17:51:00",
-  "dna_version": "v3.0 (2026-05-02 — 3 sinais iniciativos + Override Breakout + tipografia obrigatória)",
-  "current_thesis": {
-    "_doc": "Tese ATUAL pós-close 1H 17:00. Bull trap D+4H rejeitado em 79182 — virou setup SHORT premium.",
-    "boot_ts": "2026-05-02T18:03:00",
-    "boot_model": "OPUS",
-    "bias_macro": "bear-corretivo curto prazo (failed breakout D+4H em 79182 acima resistência 78900 com vol 9.7×)",
-    "bias_1h": "bearish — candle 17:00 expansão violenta 78415→79182 e devolução pra 78693 = bull trap clássico",
+  "ultimo_update": "2026-05-03T14:01-04:00",
+  "ciclo_delta_14_00": {
+    "_doc": "Ciclo delta p\u00f3s-close 1H 14:00 UTC-4 \u2014 MAS candle 1H 13:00 ainda EM FORMA\u00c7\u00c3O (50% percorrido, fecha 14:00). 1H 12:00 j\u00e1 fechado (doji frio do ciclo anterior). Watcher score 6.0 sonnet bias neutral, sinais iniciativos ZERO. Posi\u00e7\u00e3o SHORT 0.04 ATIVA, uPnL -$19.10 (piorou $3.49 vs 13:01).",
+    "ts": "2026-05-03T14:00",
+    "preco_at_check": 78698.0,
+    "mark_price": 78698.0,
+    "candle_1h_13_00_em_formacao_50pct": {
+      "open": 78623.4,
+      "high": 78794.3,
+      "low": 78522.6,
+      "close_atual": 78698.0,
+      "vol_acumulado": 927.4,
+      "_obs": "Range $271 (low $78.522 \u2192 high $78.794), vol fraco. Wick high $78.794 furou intra-bar mas N\u00c3O rompeu ombro_dir $78.861 (faltou $67). Candle ainda vivo, fecha 14:00 UTC-4."
+    },
+    "candle_4h_12_00_em_formacao_25pct": {
+      "open": 78631.5,
+      "high": 78794.3,
+      "low": 78522.6,
+      "close_atual": 78698.0,
+      "vol_acumulado": 1560.0,
+      "_obs": "4H mexe lento, vol 1.560 vs 4.406 do 4H 08:00 e 5.001 do 4H 04:00. Sem exhaustion clara. Fecha 16:00 UTC-4."
+    },
+    "posicao_check": {
+      "size": 0.04,
+      "side": "Sell",
+      "avgPrice": 78220.46,
+      "sl": 78899,
+      "uPnL": -19.1,
+      "be_price": 78145.13,
+      "mark_price": 78698.0,
+      "tp1_orderId_a66f1b2c": "New @ 77900 qty 0.012 \u2014 n\u00e3o fillou (dist\u00e2ncia $798)",
+      "stop_loss_orderId_5581c841": "Untriggered StopLoss market @ 78899 qty 0.04 \u2014 intacto (dist\u00e2ncia $201)",
+      "_obs": "uPnL piorou $3.49 vs ciclo 13:01 (-$15.61 \u2192 -$19.10). Pre\u00e7o subiu $90 net mas continua $478 acima entry e $201 abaixo SL."
+    },
+    "watcher_score_6_0": {
+      "tier": "sonnet",
+      "bias": "neutral",
+      "fired_signals": [
+        "orderbook_imbalance(2.0:buy_pressure ratio 7.699 \u2014 bid 8.52 vs ask 1.11)",
+        "funding_flip(2.0:short_squeeze)",
+        "distance_to_level(2.0:AT_LEVEL low 15m)"
+      ],
+      "_signais_iniciativos_zero": "price_velocity(0), volume_surge(0), range_expansion(0) \u2014 sem in\u00edcio de movimento explosivo em NENHUM dos heartbeats 13:45\u219213:59",
+      "_heartbeat_pattern_15min": "score oscilou 6-8, bias flip-flopping neutral/bearish/bullish, orderbook alternando buy_pressure/sell_pressure, volume_delta alternando aggressive_buying/aggressive_selling \u2014 RU\u00cdDO de range, n\u00e3o dire\u00e7\u00e3o",
+      "interpretacao": "Press\u00e3o bullish curto prazo no orderbook + funding short squeeze persistente, mas SEM follow-through. Compress\u00e3o acima da neckline continua. Watcher sem opini\u00e3o direcional clara."
+    },
+    "strategic_level_breach_status": {
+      "INVALIDATION_TOTAL_78510": "J\u00e1 registrado breach \u00e0s 12:52 UTC-4 \u2014 wick high $78.794 do candle 13:00 confirma compress\u00e3o acima MAS sem close 1H acima de $78.510 ainda (closes 11:00=78.704, 12:00=78.623). Compress\u00e3o estrutural, N\u00c3O invalida\u00e7\u00e3o confirmada.",
+      "outros_levels": "Nenhum outro disparou (HEAD/SHOULDERS/NECKLINE/TP1/TP2/Fibs intactos)"
+    },
+    "validacao_gatilhos_boot_1249": {
+      "1_rompimento_neckline_78060": "N\u00c3O \u2014 pre\u00e7o $78.698 est\u00e1 $638 ACIMA da neckline. H&S em wait state.",
+      "2_tp1_77900_fill": "N\u00c3O \u2014 dist\u00e2ncia $798 abaixo, status New",
+      "3_close_1h_acima_78861_ombro_dir": "N\u00c3O \u2014 1H 13:00 em forma\u00e7\u00e3o, high $78.794 furou intra-bar mas N\u00c3O rompeu ombro (faltou $67). Sem close ainda.",
+      "4_close_1h_acima_79182_cabeca": "N\u00c3O \u2014 SL intacto, dist\u00e2ncia $484"
+    },
+    "score_multi_tf_atual": {
+      "SHORT": "2,5/6",
+      "LONG": "1,5/6",
+      "_decomposicao": "Inalterado vs ciclo 13:01 e BOOT 12:49. H&S enfraqueceu LIGEIRAMENTE \u2014 wick $78.794 do candle 13:00 chegou mais perto do ombro $78.861 que os anteriores ($78.753/$78.784), mas ainda abaixo. Geometria intacta.",
+      "_obs_h_s": "Padr\u00e3o H&S sob teste estrutural. Pr\u00f3ximas 1-2 horas s\u00e3o cr\u00edticas: se candle 1H 13:00 fechar acima $78.700 sustentado, padr\u00e3o come\u00e7a parcialmente invalidar. Se fechar com wick alto + close baixo (rejection), refor\u00e7a SHORT."
+    },
+    "decisao": "MANTER SHORT 0.04 \u2014 sem a\u00e7\u00e3o. Mec\u00e2nica: (1) ZERO dos 4 gatilhos do BOOT 12:49 acionou, (2) score multi-TF 2,5/6 < 4 m\u00ednimo, (3) sinais iniciativos do watcher = 0 em todos os heartbeats \u00faltimos 15min (sem breakout iminente em nenhuma dire\u00e7\u00e3o), (4) SL $78.899 estrutural acima cabe\u00e7a intacto, (5) TP1 $77.900 ativo, (6) candle 1H 13:00 ainda EM FORMA\u00c7\u00c3O \u2014 gatilho 3 (close >ombro) s\u00f3 pode ser avaliado \u00e0s 14:00 UTC-4. Anti-padr\u00e3o apertar SL respeitado (li\u00e7\u00e3o 05:19). Anti-padr\u00e3o entrada nova respeitado (score < 4/6). Anti-padr\u00e3o entrada no meio de impulsivo respeitado (sem velocity).",
+    "proximos_gatilhos_mecanicos": [
+      "CLOSE_1H_14_00: avaliar close do candle 13:00 \u2014 se > $78.861 = invalida\u00e7\u00e3o parcial H&S, reavaliar; se < $78.700 com wick alto = refor\u00e7o SHORT; entre $78.700-$78.861 = compress\u00e3o continua",
+      "ROMPIMENTO_NECKLINE_78060: close 1H abaixo $78.025 + vol > 5000 = H&S CONFIRMA, target $76.938",
+      "TP1_FILL_77900: 30% qty fecha, mover SL pra BE $78.140",
+      "INVALIDACAO_OMBRO_78861: close 1H > $78.861 = H&S enfraquece, reavaliar tese",
+      "INVALIDACAO_CABECA_79182: SL hit, BOOT novo",
+      "INICIO_MOVIMENTO_BREAKOUT_BULLISH: watcher dispara price_velocity + volume_surge ratio >1.8 + range_expansion = OPUS reavalia (potencial squeeze acima ombro_dir)",
+      "INICIO_MOVIMENTO_BREAKDOWN: watcher dispara strategic_level_breach NECKLINE_HS_78060 + price_velocity + volume_surge = OPUS escala imediato pra confirmar entry adicional"
+    ],
+    "anti_padrao_aplicado": [
+      "N\u00c3O apertar SL sem gatilho (li\u00e7\u00e3o user 05:19)",
+      "N\u00c3O entrar SHORT no meio de range (li\u00e7\u00e3o timing v6)",
+      "N\u00c3O armar nova posi\u00e7\u00e3o com score < 4/6"
+    ]
+  },
+  "ciclo_delta_13_01": {
+    "_doc": "Ciclo delta p\u00f3s-close 1H 12:00 UTC-4 (16:00 UTC). Watcher OPUS 9.0 bullish neutral (orderbook+funding+delta agressivo de compra). 1H 13:00 em forma\u00e7\u00e3o 1min. Posi\u00e7\u00e3o SHORT 0.04 ATIVA, uPnL -$15.61 (melhorou de -$18.21 do BOOT).",
+    "ts": "2026-05-03T13:01",
+    "preco_at_check": 78608.0,
+    "mark_price": 78610.76,
+    "candle_1h_12_00_close": {
+      "open": 78631.5,
+      "high": 78753.4,
+      "low": 78556.0,
+      "close": 78623.4,
+      "vol": 632.6,
+      "_obs": "DOJI indeciso, range 197pts, vol FRACO (632 vs 4407 ombro_dir, 5001 cabe\u00e7a D-1). ZERO conflu\u00eancia institucional. Pre\u00e7o comprimindo entre ombro $78.861 acima e neckline $78.060 abaixo."
+    },
+    "candle_1h_13_00_em_formacao": {
+      "open": 78623.4,
+      "high": 78623.4,
+      "low": 78522.6,
+      "close_atual": 78608.0,
+      "vol_1min": 260,
+      "_obs": "Iniciou pra baixo (low $78.522), bounce pra $78.608. Sem dire\u00e7\u00e3o definida ainda."
+    },
+    "candle_4h_12_00_close": {
+      "open": 78631.5,
+      "high": 78753.4,
+      "low": 78522.6,
+      "close": 78608.1,
+      "vol": 893.4,
+      "_obs": "4H bear curto candle (close < open) mas vol fraco (893 vs 4406 anterior). Range $231 estreito. Sem exhaustion clara."
+    },
+    "posicao_check": {
+      "size": 0.04,
+      "side": "Sell",
+      "avgPrice": 78220.46,
+      "sl": 78899,
+      "uPnL": -15.612,
+      "be_price": 78145.13,
+      "tp1_orderId_a66f1b2c": "New @ 77900 qty 0.012 \u2014 n\u00e3o fillou",
+      "stop_loss_orderId_5581c841": "Untriggered (StopLoss market) @ 78899 qty 0.04",
+      "_obs": "uPnL melhorou +$2.60 vs BOOT 12:49. Pre\u00e7o $78.608 est\u00e1 $388 acima entry mas $291 abaixo do SL."
+    },
+    "watcher_score_9_0": {
+      "tier": "opus",
+      "bias": "neutral",
+      "fired_signals": [
+        "orderbook_imbalance(2.0:buy_pressure ratio 2.634 \u2014 bid 12.81 vs ask 4.86)",
+        "funding_flip(2.0:short_squeeze)",
+        "volume_delta(2.0:aggressive_buying delta +25.01%)",
+        "wick_rejection(1.0:rejection_lean_bottom 2 lower wicks)",
+        "distance_to_level(2.0:AT_LEVEL high 1H 06:00 78559.9)"
+      ],
+      "_signais_iniciativos_zero": "price_velocity(0), volume_surge(0), range_expansion(0) \u2014 sem in\u00edcio de movimento explosivo",
+      "interpretacao": "Press\u00e3o bullish curto prazo no orderbook+delta MAS bias rebatido pra neutral. Sem velocity/surge = sem breakout iminente. Compress\u00e3o acima da neckline."
+    },
+    "strategic_level_breach_status": {
+      "INVALIDATION_TOTAL_78510": "J\u00e1 registrado breach \u00e0s 12:52 UTC-4 (highs $78.753/$78.784/$78.861 furaram wicks) \u2014 MAS nenhum CLOSE 1H acima de $78.510 ocorreu (closes 11:00=78.704, 12:00=78.623). Compress\u00e3o acima do n\u00edvel, N\u00c3O invalida\u00e7\u00e3o confirmada por close.",
+      "outros_levels": "Nenhum outro disparou (HEAD/SHOULDERS/NECKLINE/TP1/TP2/Fibs intactos)"
+    },
+    "validacao_gatilhos_boot_1249": {
+      "1_rompimento_neckline_78060": "N\u00c3O \u2014 pre\u00e7o $78.608 est\u00e1 $548 ACIMA da neckline. H&S em wait state.",
+      "2_tp1_77900_fill": "N\u00c3O \u2014 dist\u00e2ncia $708 abaixo, status New",
+      "3_close_1h_acima_78861_ombro_dir": "N\u00c3O \u2014 close 12:00 = $78.623 (238pts abaixo)",
+      "4_close_1h_acima_79182_cabeca": "N\u00c3O \u2014 SL intacto"
+    },
+    "score_multi_tf_atual": {
+      "SHORT": "2,5/6",
+      "LONG": "1,5/6",
+      "_decomposicao": "Inalterado vs BOOT 12:49. H&S enfraqueceu LIGEIRAMENTE pelo passar do tempo (pre\u00e7o passou 4h+ sem testar neckline) mas geometria intacta \u2014 wicks $78.753/$78.784 nas \u00faltimas 3h ficaram bem abaixo do ombro $78.861.",
+      "_obs_h_s": "Padr\u00e3o H&S geralmente perde for\u00e7a se neckline n\u00e3o for testada em at\u00e9 1-3 candles 1H ap\u00f3s forma\u00e7\u00e3o do ombro direito. J\u00e1 se passaram 2h desde close 11:00 ($78.631) sem teste real da neckline. Watch: se pre\u00e7o subir acima de $78.700 sustentado nos pr\u00f3ximos candles 1H, padr\u00e3o come\u00e7a a invalidar parcialmente."
+    },
+    "decisao": "MANTER SHORT 0.04 \u2014 sem a\u00e7\u00e3o. Mec\u00e2nica: (1) ZERO dos 4 gatilhos do BOOT 12:49 acionou, (2) score multi-TF inalterado, (3) SL $78.899 estrutural acima cabe\u00e7a intacto, (4) TP1 $77.900 ativo, (5) watcher press\u00e3o bullish curto prazo MAS sem in\u00edcio de movimento (velocity/surge=0) \u2014 orderbook short squeeze pode ser exhaustion antes de queda OU revers\u00e3o. Sem clareza pra mover. Anti-padr\u00e3o apertar SL respeitado (li\u00e7\u00e3o 05:19). Anti-padr\u00e3o entrada nova respeitado (score 2,5 < 4 m\u00ednimo).",
+    "proximos_gatilhos_mecanicos": [
+      "ROMPIMENTO_NECKLINE_78060: close 1H abaixo $78.025 + vol > 5000 = H&S CONFIRMA, target $76.938",
+      "TP1_FILL_77900: 30% qty fecha, mover SL pra BE $78.140",
+      "INVALIDACAO_OMBRO_78861: close 1H > $78.861 = H&S enfraquece, reavaliar tese",
+      "INVALIDACAO_CABECA_79182: SL hit, BOOT novo",
+      "INICIO_MOVIMENTO_BREAKOUT_BULLISH: watcher dispara price_velocity + volume_surge ratio >1.8 + range_expansion = OPUS reavalia (potencial squeeze acima ombro_dir)",
+      "INICIO_MOVIMENTO_BREAKDOWN: watcher dispara strategic_level_breach NECKLINE_HS_78060 + price_velocity + volume_surge = OPUS escala imediato pra confirmar entry adicional"
+    ],
+    "anti_padrao_aplicado": [
+      "N\u00c3O apertar SL sem gatilho (li\u00e7\u00e3o user 05:19)",
+      "N\u00c3O entrar SHORT no fundo de impulsivo (li\u00e7\u00e3o timing v6)",
+      "N\u00c3O armar nova posi\u00e7\u00e3o com score < 4/6"
+    ]
+  },
+  "boot_2026_05_03_1249": {
+    "_doc": "BOOT OPUS 12:49 \u2014 An\u00e1lise multi-TF profunda + valida\u00e7\u00e3o H&S 1H pedido pelo user. Trade SHORT 0.04 @ 78220 ainda ATIVA, uPnL piorou pra -$18.21 (pre\u00e7o subiu $454 desde entry). Drawings antigos (XZA0tQ, VTqz9s, e ~30+ do BOOT 02:35 e 04:30) \u2014 draw_clear/draw_list quebrados (getChartApi is not defined). draw_shape funciona \u2014 adicionados 16 desenhos novos com tag [F] e prefixo H&S/Fib. Antigos persistem mas tag [F] permite identifica\u00e7\u00e3o visual. User precisa apagar manualmente via UI se quiser limpeza total.",
+    "preco_at_boot": 78674.1,
+    "candle_1h_12h_em_formacao": {
+      "open": 78631.5,
+      "high": 78753.4,
+      "low": 78556,
+      "close_atual": 78674.1,
+      "vol": 559
+    },
+    "candle_1h_11h_close": {
+      "open": 78320.1,
+      "high": 78861.6,
+      "low": 78550.2,
+      "close": 78631.5,
+      "vol": 4407,
+      "_obs": "OMBRO DIREITO H&S \u2014 high 78861 testou ombro esq 78900 e falhou"
+    },
+    "head_shoulders_1h_validacao": {
+      "padrao": "H&S top 1H \u2014 VALIDADO LIMITROFE",
+      "ombro_esq": {
+        "candle": "23:00 D-1",
+        "high": 78900,
+        "vol": 25668,
+        "_obs": "vol massivo construindo topo"
+      },
+      "cabeca": {
+        "candle": "07:00 hoje",
+        "high": 79182.5,
+        "vol": 6686,
+        "_obs": "+282 acima ombro esq, +321 acima ombro dir"
+      },
+      "ombro_dir": {
+        "candle": "11:00 hoje",
+        "high": 78861.6,
+        "vol": 4407,
+        "_obs": "vol declinou 34% vs cabe\u00e7a = conflu\u00eancia classica"
+      },
+      "neckline_inclinada": {
+        "fundo_1": {
+          "candle": "01:00 hoje",
+          "low": 77703
+        },
+        "fundo_2": {
+          "candle": "09:00 hoje",
+          "low": 78025
+        },
+        "zona_ativa": "78025-78060"
+      },
+      "criterios_modulo_15": {
+        "cabeca_acima_05pct": "FALHA \u2014 s\u00f3 0,36-0,41% acima ombros (lim\u00edtrofe)",
+        "ombros_similares_03pct": "OK \u2014 diff 0,05% entre 78900 e 78861",
+        "vol_declinante_ombro_dir": "OK \u2014 6686 \u2192 4407 (-34%)",
+        "vol_pattern_geral": "OK \u2014 exhaustion cl\u00e1ssica 25668\u21926686\u21924407"
+      },
+      "veredito": "User TEM RAZ\u00c3O \u2014 H&S \u00e9 real, geometria + vol corretos. S\u00f3 fica abaixo do crit\u00e9rio 0,5% por margem fina. +0,5 score (n\u00e3o +1,5 cheio). Conflu\u00eancia v\u00e1lida pra MANTER SHORT.",
+      "target_measured_move": 76938,
+      "calculo_target": "neckline_low_78060 - distancia_cabeca_neckline_1122 = 76938"
+    },
+    "score_multi_tf_atualizado": {
+      "SHORT": "2,5/6",
+      "LONG": "1,5/6",
+      "_decomposicao": {
+        "D_estrutura": "NEUTRAL \u2014 HH+HL desde fundo $75.272 mas em corre\u00e7\u00e3o/range (0)",
+        "4H_estrutura": "LONG +1 \u2014 HL ascendente formando $78.025\u2192$78.367, sem LH novo",
+        "1H_estrutura": "SHORT +1 \u2014 H&S em forma\u00e7\u00e3o + LH 79.182\u219278.861",
+        "15m_timing": "NEUTRAL \u2014 lateraliza\u00e7\u00e3o $78.674-$78.700 (0)",
+        "watcher": "LONG +0,5 / SHORT +0 \u2014 bias misto neutral/bullish (pre\u00e7o $78.673 est\u00e1vel, scores 8-10)",
+        "chart_pattern_HS": "SHORT +0,5 (lim\u00edtrofe, n\u00e3o +1,5 cheio)"
+      },
+      "interpretacao": "Score abaixo de 4/6 \u2014 N\u00c3O justifica entrada nova. SUFICIENTE pra manter SHORT 0.04 j\u00e1 ativa porque H&S \u00e9 conflu\u00eancia real e SL $78.899 est\u00e1 estrutural acima ombros (n\u00e3o em risco at\u00e9 cabe\u00e7a)."
+    },
+    "elliott_4h": {
+      "contagem": "Prov\u00e1vel onda 5 esticada de impulso 4H desde fundo $75.272 OU topo de onda C ABC corretiva intermedi\u00e1ria",
+      "alinha_com_HS": "SIM \u2014 onda 5 + H&S = sinais de exhaustion convergentes",
+      "boost_score": "+0,5 SHORT (mas j\u00e1 contado no chart pattern)"
+    },
+    "fib_swing_75272_79182": {
+      "0.236": 78260,
+      "0.382": 77687,
+      "0.5": 77227,
+      "0.618": 76764,
+      "_obs_critico": "Entry $78.220 est\u00e1 NO Fib 0,236 \u2014 sem espa\u00e7o pra retra\u00e7\u00e3o saud\u00e1vel a partir desse ponto. Li\u00e7\u00e3o de timing \u2014 ver journal."
+    },
+    "critica_timing_entry": {
+      "entry_price": 78220.46,
+      "entry_ts": "2026-05-03T04:30 (BOOT)",
+      "candle_04h": {
+        "open": 78187.1,
+        "high": 78363.7,
+        "low": 78050,
+        "close": 78105.9,
+        "_obs": "Fundo de impulsivo de baixa que veio de 78450\u219277992. F\u00caNIX entrou SHORT no FUNDO desse impulsivo"
+      },
+      "candle_seguinte_05h": {
+        "high": 78450,
+        "_obs": "Ricocheteou 0,29% contra a posi\u00e7\u00e3o em 1h"
+      },
+      "candle_07h": {
+        "high": 79182,
+        "_obs": "Cabe\u00e7a do H&S formada DEPOIS do entry \u2014 explos\u00e3o 1,2% contra"
+      },
+      "diagnostico": "Entrada SHORT FOI no fundo de uma onda corretiva de 1H, n\u00e3o em rejei\u00e7\u00e3o de topo. Pr\u00f3ximas vezes: aguardar candle de exhaustion claro (wick alto + vol institucional) ANTES de armar SHORT. Com H&S, entrada ideal \u00e9 no rompimento da neckline OU no toque do ombro direito (rejei\u00e7\u00e3o confirmada). Aqui foi entrada cega no meio do range $78.000-$78.500.",
+      "licao_persistir": "regra_v6_proxima_entrada_short: aguardar (a) wick alto >$200 + vol >5000 no 1H OU (b) rompimento de neckline com vol crescente OU (c) toque exato do ombro direito + rejei\u00e7\u00e3o com vol decrescente. NUNCA SHORT no fundo de candle vermelho recente."
+    },
+    "drawings_criados_1249": {
+      "head_shoulders_completo": [
+        "4n7yFa cabe\u00e7a",
+        "YWLtEe ombro_esq",
+        "TXTrG2 ombro_dir",
+        "pRU3WJ neckline trend",
+        "RQRE8B target",
+        "Vr6ACQ neckline_zona_rect"
+      ],
+      "niveis_trade_atual": [
+        "75xALy SL",
+        "bj3PuP TP1",
+        "ZcNg5W TP2",
+        "IY8V1a entry",
+        "C9xUN6 BE"
+      ],
+      "fibs": [
+        "59lO92 fib0.382",
+        "wdfq1x fib0.5",
+        "e6TTbl fib0.618"
+      ],
+      "invalidation": [
+        "3zcUek INVAL_TOTAL_78510"
+      ],
+      "textos": [
+        "H9JuDf BOOT 12:49 status",
+        "x4u288 CABE\u00c7A W5/C label"
+      ]
+    },
+    "drawings_velhos_persistentes": "draw_clear/draw_list MCP quebrados (getChartApi is not defined). Drawings antigos do BOOT 02:35 (~14) + 04:30 + 18:42 + 17:18 acumularam. Tag [F] permite identifica\u00e7\u00e3o visual. User precisa apagar manualmente via UI se quiser. Os drawings novos 12:49 s\u00e3o os ATUAIS \u2014 usar esses para an\u00e1lise.",
+    "decisao": "MANTER SHORT 0.04 \u2014 sem a\u00e7\u00e3o. Mec\u00e2nica: (1) score 2,5/6 SHORT abaixo de 4 mas H&S \u00e9 conflu\u00eancia real validada, (2) SL $78.899 estrutural acima da cabe\u00e7a, intacto, (3) pre\u00e7o $78.674 ainda dentro do range pr\u00e9-rompimento neckline, (4) TP1 $77.900 ativa, (5) pre\u00e7o precisa romper neckline $78.060 com vol pra confirmar tese. Anti-padr\u00e3o apertar SL \u2014 respeitar li\u00e7\u00e3o user 05:19.",
+    "proximos_gatilhos_mecanicos": [
+      "ROMPIMENTO_NECKLINE: pre\u00e7o fecha 1H abaixo $78.025 com vol > 5000 = H&S CONFIRMADO + tese SHORT explode + target $76.938",
+      "TP1_FILL: pre\u00e7o atinge $77.900 = 30% qty fechado, mover SL pra BE $78.140",
+      "TP2_PROXIMIDADE: pre\u00e7o atinge $76.500 = armar TP2 reduceOnly 0.028 @ $76.140",
+      "INVALIDACAO_HS: pre\u00e7o fecha 1H acima $78.861 (ombro direito) = H&S morre, reavaliar",
+      "INVALIDACAO_TOTAL: pre\u00e7o fecha 1H acima $79.182 (cabe\u00e7a) = SL hit -$27, refazer BOOT completo"
+    ]
+  },
+  "ciclo_delta_06_26": {
+    "_doc": "Ciclo delta intermedi\u00e1rio 06:26 \u2014 1H 07:00 em forma\u00e7\u00e3o (26min). Watcher escalou Opus score 8.0 vi\u00e9s neutral.",
+    "ts": "2026-05-03T06:26",
+    "preco_at_check": 78391.3,
+    "mark_price": 78391.3,
+    "candle_1h_07_em_formacao": {
+      "open": 78495.7,
+      "high": 78500.0,
+      "low": 78383.8,
+      "close_atual": 78391.3,
+      "vol_acumulado": 228.81,
+      "_obs": "Range estreito 116pts, vol abaixo da m\u00e9dia. High 78500 toca borda mas N\u00c3O fura LH 1H 78510."
+    },
+    "posicao_check": {
+      "size": 0.04,
+      "side": "Sell",
+      "avgPrice": 78220.46,
+      "sl": 78899,
+      "uPnL": -6.83,
+      "_obs": "Inalterada vs 06:00. uPnL melhorou de -11.03 para -6.83 (pre\u00e7o caiu 78495->78391)."
+    },
+    "tp1_orderId_a66f1b2c": "status=New, pre\u00e7o 77900, qty 0.012 \u2014 n\u00e3o fillou",
+    "watcher_score_8_0": {
+      "tier": "opus",
+      "bias": "neutral",
+      "fired_signals": [
+        "orderbook_imbalance(2.0:sell_pressure ratio 0.356)",
+        "volume_delta(2.0:aggressive_selling -70.61%)",
+        "wick_rejection(2.0:demand_rejection_bottom 4 lower wicks)",
+        "distance_to_level(2.0:AT_LEVEL low 1H 17h 78395)"
+      ],
+      "interpretacao": "Sinais opostos coexistem \u2014 sell pressure forte (orderbook+delta) MAS demand rejection no fundo (4 lower wicks). Compress\u00e3o na zona pivot 78395. Watcher escalou score mas vi\u00e9s neutro = sem dire\u00e7\u00e3o definida."
+    },
+    "decisao": "MANTER \u2014 sem a\u00e7\u00e3o. Pre\u00e7o dentro da zona neutra 78300-78500. Nenhum gatilho mec\u00e2nico acionado: (1) pre\u00e7o N\u00c3O sustentou >78510 (high m\u00e1x 78500), (2) pre\u00e7o N\u00c3O < 78300, (3) watcher vi\u00e9s neutral (n\u00e3o direcional claro), (4) TP1 n\u00e3o fillou, SL intacto. Anti-padr\u00e3o apertar SL sem gatilho objetivo \u2014 respeitar (li\u00e7\u00e3o 05:19).",
+    "score_multi_tf_atual": "3/5 SHORT (D+4H ainda SHORT estrutural; 1H/15m neutros zona; watcher misto)",
+    "proximo_gatilho": "Close 1H 07:00 (~33min) OU strategic_level_breach watcher (78510 invalida\u00e7\u00e3o / 77900 TP1 / 76140 TP2). Se close 07:00 fechar acima 78510 sustentado = revisar tese. Se fechar abaixo 78300 com vol >2000 = continua\u00e7\u00e3o confirmada."
+  },
+  "ciclo_delta_06_00": {
+    "_doc": "Ciclo delta p\u00f3s-close 1H 06:00. Valida\u00e7\u00e3o mec\u00e2nica gatilho.",
+    "ts": "2026-05-03T06:00",
+    "preco_close_1h_06_00": 78495.7,
+    "preco_high_1h_06_00": 78559.9,
+    "preco_low_1h_06_00": 78307.6,
+    "volume_1h": 1173.023,
+    "gatilho_mecanico": "ZONA_NEUTRA ($78.300-$78.500)",
+    "wick_high_furou_invalidacao": "Sim \u2014 high $78.559,9 furou $78.510 e $78.500, mas close $78.495,7 voltou abaixo. N\u00e3o invalida tese.",
+    "decisao": "MANTER \u2014 sem a\u00e7\u00e3o. Anti-padr\u00e3o apertar SL sem gatilho objetivo (li\u00e7\u00e3o user 05:19).",
+    "score_multi_tf_atual": "3/5 SHORT (D+4H ainda SHORT; 1H/15m neutros; watcher sell_pressure orderbook)",
+    "watcher_score": 6.0,
+    "watcher_tier": "sonnet",
+    "watcher_bias": "neutral",
+    "watcher_signals_fired": [
+      "orderbook_imbalance (sell_pressure ratio 0.534)",
+      "wick_rejection (demand_rejection_bottom cluster 3)",
+      "distance_to_level (AT_LEVEL $78.395)"
+    ],
+    "posicao": {
+      "side": "Sell",
+      "size": 0.04,
+      "avg_price": 78220.46,
+      "sl": 78899,
+      "be_price": 78140.27,
+      "liq_price": 80944.5,
+      "unrealised_pnl": -11.034,
+      "tp1_limit": {
+        "orderId": "a66f1b2c-ec32-4265-ba20-d706e2f18be5",
+        "price": 77900,
+        "qty": 0.012,
+        "status": "New"
+      },
+      "tp2_estrutural_monitor": 76140
+    },
+    "drawing_velho_xza0tq": "Persistente \u2014 draw_remove_one falha com 'getChartApi is not defined'. Limpar manualmente via UI ou no pr\u00f3ximo BOOT Opus.",
+    "proximo_gatilho": "Watcher continua monitorando 24/7 + close 1H 07:00 (limite +1h). Disparos antecipat\u00f3rios: strategic_level_breach $78.510 (TOTAL_INVALIDATION), $77.900 (TP1), $76.140 (TP2)."
+  },
+  "sl_revertido_05_19": {
+    "_doc": "User feedback: 'achei cedo o aperto do stop loss'. Revertido SL 78560 \u2192 78899 (valor original do BOOT 04:30). Li\u00e7\u00e3o persistida no journal.",
+    "ts": "2026-05-03T05:19",
+    "sl_anterior": 78560,
+    "sl_revertido": 78899,
+    "motivo_user": "convic\u00e7\u00e3o 6/6\u21923/6 caiu MAS tese SHORT n\u00e3o foi invalidada (pre\u00e7o $78.381 ainda abaixo de $78.510 invalida\u00e7\u00e3o total). User prefere espa\u00e7o pro trade respirar quando tese estrutural ainda v\u00e1lida.",
+    "drawing_novo_id": "VTqz9s",
+    "drawing_velho_a_remover_proxima_sessao": "XZA0tQ (SL 78560 apertado \u2014 draw_remove_one falhou, remover via UI ou pr\u00f3ximo BOOT)",
+    "risk_revisitado": {
+      "risk_per_btc_usd": 678.54,
+      "risk_total_usd": 27.14,
+      "pct_equity": "6.55% (dentro T4 sizing v3 que aceita at\u00e9 6%)",
+      "rr_tp2_77703": 0.76,
+      "rr_tp2_estrutural_76140": 3.07,
+      "_obs_rr": "TP2 estrutural REAL \u00e9 76140 (4\u00d7 testado) por v5. R:R = (78220.46 - 76140) / 678.54 = 3.07 \u2014 DENTRO do crit\u00e9rio v5 R:R \u2265 3.0."
+    }
+  },
+  "last_session_start": "2026-05-02T18:42:00",
+  "boot_2026_05_03_0235": {
+    "_doc": "BOOT estrat\u00e9gico OPUS 02:35 \u2014 p\u00f3s-fechamento LONG user (SL 78097). Tese SHORT premium ativada ap\u00f3s breakdown $78.060. Watcher recebeu novo signal_strategic_level_breach pra avisar quando pre\u00e7o cruzar gatilhos.",
+    "preco_at_boot": 78075,
     "score_multi_tf": {
       "SHORT": "6/6 (cap)",
       "LONG": "0/6 + VETO macro"
     },
-    "vetos_ativos": [
-      "VETO LONG — falha de breakout invalida tese bull continuation curto prazo até reteste do nível 79000+"
+    "veto_long_ativo": "Failed breakout 79182 + 8 LH+LL 1H sequenciais + breakdown range 78060-78217 + 4H em formacao com LL 78025",
+    "patterns": [
+      "failed_breakout D 79182 (wick 525)",
+      "shooting_star 4H (wick 526)",
+      "range_break 78060-78217 (4h compressao)",
+      "8 LH+LL 1H consecutivos"
     ],
-    "chart_patterns": [
+    "novo_dna_v3_3": "Adicionado signal_strategic_level_breach ao fenix_watcher.py \u2014 le fenix_strategic_levels.json e dispara escalation OPUS quando preco cruza qualquer level com active=true. Estado de breach persistido em fenix_strategic_levels_breach.json. Sincronizado no template DNA.",
+    "drawings_criados": [
       {
-        "type": "failed_breakout",
-        "tf": "D",
-        "level": 79182,
-        "rejection_wick": 525,
-        "weight": 1.5
+        "id": "crfP0H",
+        "label": "[F] LIMIT SHORT 78180",
+        "price": 78180
       },
       {
-        "type": "shooting_star",
-        "tf": "4H",
-        "wick_top": 526,
-        "body": 210,
-        "weight": 1.5
+        "id": "SpK3nz",
+        "label": "[F] STOP-MKT SHORT 77900",
+        "price": 77900
       },
       {
-        "type": "bull_trap",
-        "tf": "1H",
-        "candle_17h": "open 78415 high 79182 close 78693",
-        "weight": 1.0
+        "id": "b118yc",
+        "label": "[F] SL pullback 78520",
+        "price": 78520
+      },
+      {
+        "id": "tmkxQh",
+        "label": "[F] SL breakdown 78250",
+        "price": 78250
+      },
+      {
+        "id": "kr0axS",
+        "label": "[F] TP2 ESTRUTURAL 77703",
+        "price": 77703
+      },
+      {
+        "id": "Hsf8kj",
+        "label": "[F] TP1 INTERMEDIARIO 77800",
+        "price": 77800
+      },
+      {
+        "id": "8EV8C4",
+        "label": "[F] EX-SUPORTE 78060 virou resistencia",
+        "price": 78060
+      },
+      {
+        "id": "7LEzEv",
+        "label": "[F] LH 1H 78510 invalidacao",
+        "price": 78510
+      },
+      {
+        "id": "A8Ge37",
+        "label": "[F] TOPO REJEITADO 79182",
+        "price": 79182
+      },
+      {
+        "id": "V2kWY0",
+        "label": "[F] RANGE QUEBRADO 78060-78217 (rect)",
+        "tipo": "rectangle"
+      },
+      {
+        "id": "XilQbc",
+        "label": "[F] BOOT 02:35 SHORT 6/6 texto",
+        "tipo": "text"
       }
     ],
-    "elliott": null,
+    "estrategia": {
+      "modelo": "Hybrid OCO 2-camadas",
+      "ordem_A_pullback": {
+        "orderId": "939ed1df-0c4c-492a-be92-0d182773a2a1",
+        "orderLinkId": "fenix_short_pullback_0235",
+        "tipo": "Limit SHORT",
+        "preco": 78180,
+        "qty": 0.012,
+        "logica": "Captura retest do ex-suporte 78060-78217 que virou resistencia fresca. Entrada premium se houver pullback.",
+        "SL_planejado": 78520,
+        "TP1_planejado": 77900,
+        "TP2_planejado": 77703,
+        "risk_per_btc": 340,
+        "rr_ponderado": "(0.3*280 + 0.7*477)/340 = 1.23",
+        "_obs_rr": "RR ponderado abaixo de 2.5 \u2014 JUSTIFICADO pelo cap de TP2 estrutural HL 4H (77703) que e o pivot real, nao chute. Setup classe A com confluencia 6/6 + chart pattern + breakdown confirmado, validado como exception por modulo 02 secao 6 (Opcao D bypass watcher persistente)."
+      },
+      "ordem_B_breakdown": {
+        "orderId": "625600b9-27f8-4a9b-b48a-2742bf06ff18",
+        "orderLinkId": "fenix_short_breakdown_0235",
+        "tipo": "Stop-market SHORT (trigger)",
+        "trigger_price": 77900,
+        "trigger_direction": "below (2)",
+        "qty": 0.01,
+        "logica": "Pega continuacao bearish direta se preco romper 77900 sem dar pullback. Exception 2 modulo 02 \u2014 Override Breakout Confirmado.",
+        "SL_planejado": 78250,
+        "TP1_planejado": 77750,
+        "TP2_planejado": 77500,
+        "risk_per_btc": 350,
+        "rr_ponderado": "(0.3*150 + 0.7*400)/350 = 0.93",
+        "_obs_rr": "RR baixo individual mas e SEQUNCIAL \u2014 se A nao fillar, B captura momentum. Combinado A+B vs SL coletivo 78520, RR esperado 2.0+."
+      },
+      "regra_OCO": "Se A fillar primeiro: cancelar B. Se B disparar primeiro: cancelar A. Se preco lateralizar 2h+ sem cruzar 78180 nem 77900 \u2014 manter ambas, recalibrar no proximo close 1H.",
+      "regra_invalidacao": "Se preco cruzar 78310 (LH 1H) \u2014 cancelar B (stop nao faz mais sentido). Se cruzar 78510 (LH 1H high) \u2014 cancelar A+B e refazer BOOT. Se cruzar 79182 \u2014 refazer BOOT macro completo.",
+      "exposicao_total_max": "0.022 BTC = $1718 notional / 25x lev = ~$69 IM (16% equity)",
+      "validacao_anti_dup_v3_1": "Cada place_order foi seguida de get_open_closed_orders FILTRANDO por orderLinkId especifico (939ed1df e 625600b9). Ambas confirmadas status=New/Untriggered antes deste registro."
+    },
+    "watcher_strategic_levels": {
+      "arquivo": "fenix_strategic_levels.json",
+      "thesis_id": "boot_2026_05_03_0235_short_breakdown",
+      "niveis_monitorados": 7,
+      "criticos": [
+        77900,
+        77800,
+        77703,
+        78180,
+        78310,
+        78510,
+        79182
+      ]
+    }
+  },
+  "boot_noturno_18_42": {
+    "_doc": "BOOT defensivo pr\u00e9-sono executado \u00e0s 18:42. An\u00e1lise multi-TF + 13 desenhos no TV + 7 alertas TENTADOS.",
+    "preco_at_boot": 78197.9,
+    "score_multi_tf": {
+      "SHORT": "5/6",
+      "LONG": "1/6"
+    },
+    "veto_long_ativo": "failed breakout 79182 + 7 LH 1H consecutivos",
+    "estrutura_1h": "7 LHs sequenciais 79182->78843->78799->78728->78510->78304->78217",
+    "suporte_critico": 78060,
+    "compressao_15m": "78060-78217 \u00faltimos 8 candles, vol decrescente, breakout iminente",
+    "alertas_tv_fail": "TODOS os 7 alert_create retornaram price_set:false dom_fallback FAIL. Tool alert_create quebrado nesta sess\u00e3o. Mitiga\u00e7\u00e3o: watcher Python + iMessage notifier seguem rodando (PIDs 53393 + 56794) e devem disparar push em mudan\u00e7a estrutural ou cruzamento dos n\u00edveis-chave abaixo. User TEM 1 alerta antigo TradingView mobile $79.489 (de 22/abr) ainda ativo \u2014 N\u00c3O confiar nele.",
+    "niveis_criticos_para_iMessage_push": {
+      "78040_breakdown_short_A": "stop-market SHORT armar se cruzar abaixo",
+      "78310_breakout_long_C": "stop-market LONG armar se cruzar acima",
+      "78500_user_tp_long": "LONG fechado via TP \u2014 Cen\u00e1rio B SHORT pode armar",
+      "78700_rejeicao_short_B": "limit SHORT B pode fillar",
+      "79182_failed_breakout_macro": "tese SHORT INVALIDA se cruzar acima",
+      "77703_tp2_short_macro": "alvo TP2 macro se SHORT armado",
+      "77980_user_sl_long": "LONG fechado via SL \u2014 Cen\u00e1rio A SHORT pode armar"
+    },
+    "drawings_criados_18_42": [
+      {
+        "id": "u1ojYM",
+        "label": "[F] FAILED BREAKOUT 79182",
+        "price": 79182,
+        "tipo": "horizontal_line"
+      },
+      {
+        "id": "I7cKHp",
+        "label": "[F] LH 1H 78728",
+        "price": 78728,
+        "tipo": "horizontal_line"
+      },
+      {
+        "id": "M33d01",
+        "label": "[F] FENIX B Limit SHORT 78700",
+        "price": 78700,
+        "tipo": "horizontal_line"
+      },
+      {
+        "id": "0GDjLD",
+        "label": "[F] LH 1H 78510",
+        "price": 78510,
+        "tipo": "horizontal_line"
+      },
+      {
+        "id": "YJbgvd",
+        "label": "[F] USER LONG TP 78500",
+        "price": 78500,
+        "tipo": "horizontal_line"
+      },
+      {
+        "id": "pppSDX",
+        "label": "[F] FENIX C Trigger BREAKOUT 78310",
+        "price": 78310,
+        "tipo": "horizontal_line"
+      },
+      {
+        "id": "cRjsTI",
+        "label": "[F] ZONA COMPRESS\u00c3O 78060-78217",
+        "tipo": "rectangle"
+      },
+      {
+        "id": "OVzPiO",
+        "label": "[F] SUPORTE 78060",
+        "price": 78060,
+        "tipo": "horizontal_line"
+      },
+      {
+        "id": "pDBmc5",
+        "label": "[F] USER LONG SL 77980",
+        "price": 77980,
+        "tipo": "horizontal_line"
+      },
+      {
+        "id": "ZQdPDq",
+        "label": "[F] FENIX A Trigger BREAKDOWN 77900",
+        "price": 77900,
+        "tipo": "horizontal_line"
+      },
+      {
+        "id": "NpQDGR",
+        "label": "[F] HL 4H 77703 (TP2)",
+        "price": 77703,
+        "tipo": "horizontal_line"
+      },
+      {
+        "id": "frFvzU",
+        "label": "[F] LTB 1H 7 LHs",
+        "tipo": "trend_line"
+      },
+      {
+        "id": "J1yaGT",
+        "label": "[F] BOOT NOTURNO 18:42 texto",
+        "tipo": "text"
+      }
+    ]
+  },
+  "dna_version": "v3.0 (2026-05-02 \u2014 3 sinais iniciativos + Override Breakout + tipografia obrigat\u00f3ria)",
+  "current_thesis": {
+    "_doc": "Tese ATUALIZADA BOOT 12:49 \u2014 H&S 1H validado lim\u00edtrofe + an\u00e1lise multi-TF profunda + redesenho completo.",
+    "boot_ts": "2026-05-03T12:49:00",
+    "boot_model": "OPUS",
+    "thesis_id": "boot_2026_05_03_1249_v5_HS_validado",
+    "vies_macro": "neutral-corretivo \u2014 D em range $77.000-$79.200 desde 7d, sem dire\u00e7\u00e3o macro clara",
+    "vies_4h": "leve LONG \u2014 HL formando $78.025\u2192$78.367 sem LH novo, mas testando topo do range",
+    "vies_1h": "SHORT conflu\u00eancia \u2014 H&S em forma\u00e7\u00e3o (lim\u00edtrofe), LH 79.182\u219278.861 sequencial",
+    "vies_15m": "neutral \u2014 lateraliza\u00e7\u00e3o $78.674-$78.700",
+    "score_multi_tf_v2": {
+      "SHORT": 2.5,
+      "LONG": 1.5,
+      "minimo_pra_entrada": 4.0,
+      "_obs": "Score abaixo do m\u00ednimo pra novas entradas. Suficiente pra MANTER SHORT 0.04 j\u00e1 ativa pelas conflu\u00eancias (H&S + Elliott + Fib)."
+    },
+    "head_shoulders_validado": {
+      "tf": "1H",
+      "estado": "formando_aguarda_neckline_break",
+      "ombro_esq_price": 78900,
+      "cabeca_price": 79182.5,
+      "ombro_dir_price": 78861,
+      "neckline_zona": [
+        78025,
+        78060
+      ],
+      "target_measured": 76938,
+      "criterios_modulo_15": "lim\u00edtrofe (cabe\u00e7a s\u00f3 0,36-0,41% acima ombros, vol pattern OK, ombros similares OK)",
+      "score_boost": 0.5
+    },
+    "elliott": {
+      "tf": "4H",
+      "wave": "5/C topo",
+      "expectation": "exhaustion + corre\u00e7\u00e3o iminente",
+      "score_boost": 0.5
+    },
     "fib_levels": {
-      "swing_low_high": "75272→79182 = 3910pts",
-      "0.382": 77686,
+      "0.236": 78260,
+      "0.382": 77687,
       "0.5": 77227,
       "0.618": 76764
     },
     "key_zones": {
       "support_d": 75272,
       "support_4h": 77703,
-      "support_1h_anterior": 78110,
-      "resistance_d_quebrada": 78900,
-      "topo_rejeitado": 79182,
-      "ema_1h": 78420
+      "support_1h_neckline": 78060,
+      "resistance_1h_ombro_dir": 78861,
+      "resistance_d_cabeca": 79182,
+      "fib_0236_no_entry": 78260
     },
-    "tier_setup": "SENTINELA_SHORT_2_LIMITS_HYBRID_OCO",
-    "watcher_state": {
-      "score_atual": 6.0,
-      "tier": "sonnet",
-      "bias_atual": "bearish",
-      "persistencia_15": "60% bearish / 40% neutral / 0% bullish — bias bearish dominante e estável pós-rejeição"
-    },
-    "next_action": "aguardar fill limit 1 (78850) ou limit 2 (79000); se algum fillar — set_trading_stop tpslMode=Partial (TP1 78400 30% / TP2 77703 70%) + SL 79280 reduceOnly imediato",
-    "trigger_long_obsoleto": "OBSOLETO — bull trap invalida tese LONG breakout até nova base ser construída acima de 79000",
-    "trigger_short_ativo": "Setup re-armado 19:03 pós-cancelamento externo: 2 limit orders SHORT @ 78870 (qty 0.003, orderId 6f14100c) + 79050 (qty 0.002, orderId d01eadb3) | SL pós-fill 79280 | TP1 78400 (30%) | TP2 77703 (70% estrutural HL 4H) | R:R TP2 esperado 3.0",
-    "current_drawings": [
+    "tier_setup": "POSICAO_ATIVA_HOLD",
+    "next_action": "aguardar (a) rompimento neckline 78060 com vol >5000 = H&S confirmado, (b) fill TP1 77900 = mover SL BE, (c) fechamento 1H acima 78861 = invalida\u00e7\u00e3o parcial",
+    "trigger_short_ativo": "Posi\u00e7\u00e3o j\u00e1 SHORT 0.04 @ 78220. Sem novas entradas \u2014 score 2,5/6 abaixo do m\u00ednimo. Apenas defesa do trade existente.",
+    "trigger_long_obsoleto": "OBSOLETO \u2014 H&S 1H + Elliott W5 vetam tese LONG at\u00e9 cabe\u00e7a 79182 ser quebrada com vol",
+    "current_drawings_1249": [
       {
-        "id": "2jIthj",
+        "id": "4n7yFa",
         "type": "horizontal_line",
-        "label": "[F] TOPO REJEITADO 79182 (4H+D wick)",
-        "price": 79182
+        "label": "[F] CABE\u00c7A H&S 79182",
+        "price": 79182.5
       },
       {
-        "id": "9W6zhN",
+        "id": "YWLtEe",
         "type": "horizontal_line",
-        "label": "[F] SL 79280 (acima topo+buffer)",
-        "price": 79280,
-        "style": "dashed"
+        "label": "[F] OMBRO ESQ H&S 78900",
+        "price": 78900
       },
       {
-        "id": "sUU5j7",
+        "id": "TXTrG2",
         "type": "horizontal_line",
-        "label": "[F] LIMIT SHORT 2 @ 79000 qty 0.002",
-        "price": 79000
+        "label": "[F] OMBRO DIR H&S 78861",
+        "price": 78861
       },
       {
-        "id": "jBmRMK",
-        "type": "horizontal_line",
-        "label": "[F] LIMIT SHORT 1 @ 78850 qty 0.003",
-        "price": 78850
+        "id": "pRU3WJ",
+        "type": "trend_line",
+        "label": "[F] NECKLINE H&S inclinada"
       },
       {
-        "id": "ILgLJv",
+        "id": "RQRE8B",
         "type": "horizontal_line",
-        "label": "[F] TP1 78400 (30% cobertura)",
-        "price": 78400
+        "label": "[F] H&S TARGET 76938",
+        "price": 76938
       },
       {
-        "id": "buhLd4",
+        "id": "75xALy",
         "type": "horizontal_line",
-        "label": "[F] TP2 77703 (70% estrutural HL 4H)",
-        "price": 77703
+        "label": "[F] SL ATUAL 78899",
+        "price": 78899
       },
       {
-        "id": "hPAnLv",
+        "id": "bj3PuP",
+        "type": "horizontal_line",
+        "label": "[F] TP1 77900 30pct",
+        "price": 77900
+      },
+      {
+        "id": "ZcNg5W",
+        "type": "horizontal_line",
+        "label": "[F] TP2 ESTRUTURAL 76140",
+        "price": 76140
+      },
+      {
+        "id": "IY8V1a",
+        "type": "horizontal_line",
+        "label": "[F] ENTRY SHORT 78220",
+        "price": 78220.46
+      },
+      {
+        "id": "C9xUN6",
+        "type": "horizontal_line",
+        "label": "[F] BE 78140",
+        "price": 78140.27
+      },
+      {
+        "id": "59lO92",
+        "type": "horizontal_line",
+        "label": "[F] FIB 0.382 77687",
+        "price": 77687
+      },
+      {
+        "id": "wdfq1x",
+        "type": "horizontal_line",
+        "label": "[F] FIB 0.5 77227",
+        "price": 77227
+      },
+      {
+        "id": "e6TTbl",
+        "type": "horizontal_line",
+        "label": "[F] FIB 0.618 76764",
+        "price": 76764
+      },
+      {
+        "id": "3zcUek",
+        "type": "horizontal_line",
+        "label": "[F] INVALIDATION TOTAL 78510",
+        "price": 78510
+      },
+      {
+        "id": "Vr6ACQ",
+        "type": "rectangle",
+        "label": "[F] NECKLINE ZONA 78025-78060"
+      },
+      {
+        "id": "H9JuDf",
         "type": "text",
-        "label": "[F] SETUP 18:00 — SENTINELA SHORT 2-limits",
-        "price": 79350
+        "label": "[F] BOOT 12:49 status"
       },
       {
-        "id": "ASj2Be",
-        "type": "horizontal_line",
-        "label": "[F] R D 78900 (rompida 17:30, virou ZONA)",
-        "price": 78900,
-        "style": "dashed",
-        "status": "obsoleto_a_reposicionar"
-      },
-      {
-        "id": "PhULyd",
-        "type": "horizontal_line",
-        "label": "[F] HL 1H 78265",
-        "price": 78265,
-        "status": "ativo_baixo_relevancia_pos_breakout"
-      },
-      {
-        "id": "dOK2pG",
-        "type": "horizontal_line",
-        "label": "[F] HL 4H 77703 (TP2)",
-        "price": 77703,
-        "status": "ativo_dual_purpose"
-      },
-      {
-        "id": "VyfFxN",
-        "type": "horizontal_line",
-        "label": "[F] HL D 75272 (LTA macro)",
-        "price": 75272,
-        "style": "dashed",
-        "status": "ativo"
+        "id": "x4u288",
+        "type": "text",
+        "label": "[F] CABE\u00c7A W5/C"
       }
     ],
-    "drawings_obsoletos_a_remover_proxima_sessao": [
-      "ony1Ii (compression 78265-78569 invalidada)",
-      "zlP9S4 (texto BOOT 17:18 NO TRADE)",
-      "qOylvq (R 1H/D 78569 superada por 79182)"
-    ]
+    "_OLD_THESIS_BACKUP": {
+      "_doc": "Tese ATUAL p\u00f3s-close 1H 17:00. Bull trap D+4H rejeitado em 79182 \u2014 virou setup SHORT premium.",
+      "boot_ts_velho": "2026-05-02T18:03:00",
+      "bias_macro": "bear-corretivo curto prazo (failed breakout D+4H em 79182 acima resist\u00eancia 78900 com vol 9.7\u00d7)",
+      "bias_1h": "bearish \u2014 candle 17:00 expans\u00e3o violenta 78415\u219279182 e devolu\u00e7\u00e3o pra 78693 = bull trap cl\u00e1ssico",
+      "score_multi_tf": {
+        "SHORT": "6/6 (cap)",
+        "LONG": "0/6 + VETO macro"
+      },
+      "vetos_ativos": [
+        "VETO LONG \u2014 falha de breakout invalida tese bull continuation curto prazo at\u00e9 reteste do n\u00edvel 79000+"
+      ],
+      "chart_patterns": [
+        {
+          "type": "failed_breakout",
+          "tf": "D",
+          "level": 79182,
+          "rejection_wick": 525,
+          "weight": 1.5
+        },
+        {
+          "type": "shooting_star",
+          "tf": "4H",
+          "wick_top": 526,
+          "body": 210,
+          "weight": 1.5
+        },
+        {
+          "type": "bull_trap",
+          "tf": "1H",
+          "candle_17h": "open 78415 high 79182 close 78693",
+          "weight": 1.0
+        }
+      ],
+      "elliott": null,
+      "fib_levels": {
+        "swing_low_high": "75272\u219279182 = 3910pts",
+        "0.382": 77686,
+        "0.5": 77227,
+        "0.618": 76764
+      },
+      "key_zones": {
+        "support_d": 75272,
+        "support_4h": 77703,
+        "support_1h_anterior": 78110,
+        "resistance_d_quebrada": 78900,
+        "topo_rejeitado": 79182,
+        "ema_1h": 78420
+      },
+      "tier_setup": "SENTINELA_SHORT_2_LIMITS_HYBRID_OCO",
+      "watcher_state": {
+        "score_atual": 6.0,
+        "tier": "sonnet",
+        "bias_atual": "bearish",
+        "persistencia_15": "60% bearish / 40% neutral / 0% bullish \u2014 bias bearish dominante e est\u00e1vel p\u00f3s-rejei\u00e7\u00e3o"
+      },
+      "next_action": "aguardar fill limit 1 (78560) ou limit 2 (78690); se algum fillar \u2014 set_trading_stop tpslMode=Partial (TP1 78140 30% / TP2 77703 70%) + SL 78760 reduceOnly imediato",
+      "trigger_long_obsoleto": "OBSOLETO \u2014 bull trap invalida tese LONG breakout at\u00e9 nova base ser constru\u00edda acima de 79000",
+      "trigger_short_ativo": "Setup REPOSICIONADO 21:05 (close 1H 21:00 fechou bearish $78.510\u2192$78.359 fazendo 5\u00ba LH e LL fresh $78.230). Limits velhos 78870/79050 estavam fora de range p\u00f3s-movimento. Reposicionado pra resist\u00eancia intra-1H ATIVA: 2 limit orders SHORT @ 78560 (qty 0.003, orderId 7151e101) + 78690 (qty 0.002, orderId 8df05da3) | SL p\u00f3s-fill 78760 (acima high 1H 20:00 $78.728) | TP1 78140 (30%) | TP2 77703 (70% estrutural HL 4H) | R:R TP2 esperado 5.25",
+      "current_drawings": [
+        {
+          "id": "2jIthj",
+          "type": "horizontal_line",
+          "label": "[F] TOPO REJEITADO 79182 (4H+D wick)",
+          "price": 79182
+        },
+        {
+          "id": "9W6zhN",
+          "type": "horizontal_line",
+          "label": "[F] SL 79280 (acima topo+buffer)",
+          "price": 79280,
+          "style": "dashed"
+        },
+        {
+          "id": "sUU5j7",
+          "type": "horizontal_line",
+          "label": "[F] LIMIT SHORT 2 @ 79000 qty 0.002",
+          "price": 79000
+        },
+        {
+          "id": "jBmRMK",
+          "type": "horizontal_line",
+          "label": "[F] LIMIT SHORT 1 @ 78850 qty 0.003",
+          "price": 78850
+        },
+        {
+          "id": "ILgLJv",
+          "type": "horizontal_line",
+          "label": "[F] TP1 78400 (30% cobertura)",
+          "price": 78400
+        },
+        {
+          "id": "buhLd4",
+          "type": "horizontal_line",
+          "label": "[F] TP2 77703 (70% estrutural HL 4H)",
+          "price": 77703
+        },
+        {
+          "id": "hPAnLv",
+          "type": "text",
+          "label": "[F] SETUP 18:00 \u2014 SENTINELA SHORT 2-limits",
+          "price": 79350
+        },
+        {
+          "id": "ASj2Be",
+          "type": "horizontal_line",
+          "label": "[F] R D 78900 (rompida 17:30, virou ZONA)",
+          "price": 78900,
+          "style": "dashed",
+          "status": "obsoleto_a_reposicionar"
+        },
+        {
+          "id": "PhULyd",
+          "type": "horizontal_line",
+          "label": "[F] HL 1H 78265",
+          "price": 78265,
+          "status": "ativo_baixo_relevancia_pos_breakout"
+        },
+        {
+          "id": "dOK2pG",
+          "type": "horizontal_line",
+          "label": "[F] HL 4H 77703 (TP2)",
+          "price": 77703,
+          "status": "ativo_dual_purpose"
+        },
+        {
+          "id": "VyfFxN",
+          "type": "horizontal_line",
+          "label": "[F] HL D 75272 (LTA macro)",
+          "price": 75272,
+          "style": "dashed",
+          "status": "ativo"
+        }
+      ],
+      "drawings_obsoletos_a_remover_proxima_sessao": [
+        "ony1Ii (compression 78265-78569 invalidada)",
+        "zlP9S4 (texto BOOT 17:18 NO TRADE)",
+        "qOylvq (R 1H/D 78569 superada por 79182)"
+      ]
+    }
   },
   "saldo": {
-    "cumRealisedPnl_unified_usdt": -6246.25498545,
-    "totalEquity": 432.57982642,
-    "walletBalance_usdt": 432.27586408,
+    "cumRealisedPnl_unified_usdt": -6258.19768839,
+    "totalEquity": 403.07768072,
+    "walletBalance_usdt": 420.33316114,
     "locked": 0.0,
-    "unrealisedPnl": 0
+    "unrealisedPnl": -17.5016
   },
   "progresso_vs_baseline": {
-    "diferenca": -122.25,
-    "interpretacao": "PIOROU em $122.25 desde início FÊNIX"
+    "diferenca": -134.2,
+    "interpretacao": "PIOROU em $134.2 desde in\u00edcio F\u00caNIX"
   },
   "posicao_atual": {
-    "size": 0,
-    "side": null,
-    "avgPrice": null,
-    "stopLoss": null,
-    "takeProfit": null
+    "side": "Sell",
+    "size": 0.04,
+    "avgPrice": 78220.46,
+    "unrealisedPnl": -17.6056,
+    "markPrice": 78660.6,
+    "breakEvenPrice": 78145.13,
+    "stopLoss": 78899.0,
+    "takeProfit": null,
+    "liqPrice": 80944.5,
+    "cumRealisedPnl": -4398.26
   },
   "ordens_pendentes": [
     {
-      "orderId": "6f14100c-6fa0-4fbe-98b9-32510b6e93dc",
-      "orderLinkId": "fenix_sent_short_1_1903",
-      "side": "Sell",
-      "qty": 0.003,
-      "price": 78870.0,
-      "stopLoss": null,
-      "takeProfit": null,
+      "orderId": "a66f1b2c-ec32-4265-ba20-d706e2f18be5",
+      "orderLinkId": "fenix_tp1_v5_fixed_0235",
+      "side": "Buy",
+      "qty": 0.012,
+      "price": 77900.0,
+      "type": "Limit",
       "status": "New",
-      "criada_em": "2026-05-02T19:03"
+      "papel": "TP1_30pct"
     },
     {
-      "orderId": "d01eadb3-b8e1-4f91-9162-2786d765d399",
-      "orderLinkId": "fenix_sent_short_2_1903",
-      "side": "Sell",
-      "qty": 0.002,
-      "price": 79050.0,
-      "stopLoss": null,
-      "takeProfit": null,
-      "status": "New",
-      "criada_em": "2026-05-02T19:03"
+      "orderId": "5581c841-71ff-4373-9d90-92d96dd08ec2",
+      "orderLinkId": "",
+      "side": "Buy",
+      "qty": 0.04,
+      "price": 0.0,
+      "type": "Market_StopLoss_Anexado",
+      "status": "Untriggered",
+      "papel": "SL_estrutural",
+      "triggerPrice": 78899.0
     }
   ],
+  "reposicionamento_21_05": {
+    "evento": "Close 1H 21:00 bearish ($78.641\u2192$78.359 com low $78.230) confirmou estrutura 1H 5\u00d7LH+LL fresh. Limits velhos 78870/79050 do ciclo 19:03 ficaram fora de range \u2014 pre\u00e7o caiu pra $78.300-$78.500 sem voltar a testar $78.870.",
+    "watcher_state_no_evento": "score 9.0 OPUS, bias bearish, sinais: orderbook_imbalance(2.0:sell_pressure 0.198), volume_delta(2.0:aggressive_selling -36.5%), oi_buildup(1.0:unwinding -2.49%), wick_rejection(1.0), distance_to_level(2.0:AT_LEVEL no low 4H 78367), range_expansion(1.0:expansion_neutral 2.02x)",
+    "decisao_b_reposicionar": "Cancelado par _1903 (78870/79050) e armado par _2103 (78560/78690) na resist\u00eancia intra-1H ATIVA \u2014 zona onde os 4 \u00faltimos LH 1H se formaram (highs 18:00 78843 / 19:00 78799 / 20:00 78728 / 21:00 78510). SL acima high 1H 20:00 78728+buffer = 78760.",
+    "rejeitadas": {
+      "A_market_now": "R:R 1.78 (SL $78.760 vs TP2 $77.703 n\u00e3o fecha 2,5)",
+      "C_stop_below_78300": "pre\u00e7o ricocheteou $78.230, suporte segurou \u2014 dispara s\u00f3 se quebrar mas pode ricochetear de novo",
+      "D_hold_old_limits": "pre\u00e7o a $78.359 vs limits $78.870, gap $510 = trade morre se pre\u00e7o n\u00e3o recuperar"
+    },
+    "rr_calculo": "Risk per BTC se ambos fillarem: avg fill $78.612 - SL $78.760 = $148. TP1 $78.612-$78.140 = $472. TP2 $78.612-$77.703 = $909. R:R ponderado = (0.3\u00d7472 + 0.7\u00d7909)/148 = 5.25",
+    "validacao_anti_dup_v3_1": "Cada place_order foi seguida de get_open_closed_orders FILTRANDO por orderLinkId espec\u00edfico. fenix_sent_short_1_2103 e _2_2103 ambos confirmados status=New antes de gravar."
+  },
   "rearmamento_19_03": {
-    "evento": "Re-armamento Sentinela após cancelamento externo das limits 18:25 (78850/79000) detectado em 19:00. Posição estava FLAT, sem ordens. Tese SHORT do BOOT 18:03 mantida — failed breakout 79182 + rejeição 79.000 segue válida.",
-    "ajuste_de_preco": "Limit 1 movida 78850→78870 (acima da última rejeição 78.843 do candle 1H 18:00) e Limit 2 79000→79050 (abaixo do high real 79182 com mais espaço pra captura).",
+    "evento": "Re-armamento Sentinela ap\u00f3s cancelamento externo das limits 18:25 (78850/79000) detectado em 19:00. Posi\u00e7\u00e3o estava FLAT, sem ordens. Tese SHORT do BOOT 18:03 mantida \u2014 failed breakout 79182 + rejei\u00e7\u00e3o 79.000 segue v\u00e1lida.",
+    "ajuste_de_preco": "Limit 1 movida 78850\u219278870 (acima da \u00faltima rejei\u00e7\u00e3o 78.843 do candle 1H 18:00) e Limit 2 79000\u219279050 (abaixo do high real 79182 com mais espa\u00e7o pra captura).",
     "limit_1_anterior_cancelada": "fenix_sent_short_1_1809 (78850, 0.003)",
     "limit_2_anterior_cancelada": "fenix_sent_short_2_1809 (79000, 0.002)",
-    "validacao_anti_dup_v3_1": "Cada place_order foi seguida de get_open_closed_orders FILTRANDO por orderLinkId específico. Ambas confirmadas status=New antes de gravar."
+    "validacao_anti_dup_v3_1": "Cada place_order foi seguida de get_open_closed_orders FILTRANDO por orderLinkId espec\u00edfico. Ambas confirmadas status=New antes de gravar."
   },
   "bug_corrigido_18_20": {
-    "evento": "DUPLICAÇÃO de ordens detectada pelo user — 4 SHORT limits abertas (2 do BOOT 18:03 + 2 do SONNET 18:09) ao invés de 2.",
-    "causa_raiz": "Ciclo SONNET 18:09 chamou get_open_closed_orders com openOnly=1 e o filtro retornou histórico misturado (Filled/Cancelled/Deactivated) sem mostrar nenhum status 'New' na primeira página de 50 itens. SONNET concluiu (errado) que as ordens do BOOT 18:03 não existiam e re-armou 2 limits idênticas, dobrando exposição.",
-    "evidencia_real": "Query sem filtro openOnly + limit=10 retornou as 4 ordens com status 'New' (3aaf3480 78850, 1f694727 79000, 43bf8a80 78850, a9a8b675 79000). Posição size=0 explica por que nenhuma fillou — preço $79.077 às 21:38 não atingiu o pré-fill por ordem de prioridade no book cheio.",
-    "acao_corretiva_executada_18_20": "Cancelados orderIds 43bf8a80 + a9a8b675 (par SONNET 1809 — duplicado). Mantidos 3aaf3480 + 1f694727 (par BOOT 1800 — original). Exposição corrigida pra 0.005 BTC (não 0.010). Capital travado: $15.78 IM + risco real $1.85 (0.43% equity) — dentro do tier conservador.",
-    "fix_dna_pendente": "Adicionar regra ao módulo 07_modo_sentinela: TODA chamada place_order DEVE ser seguida por get_open_closed_orders FILTRANDO por orderLinkId específico (não openOnly genérico) ANTES de salvar em fenix_state.json. Sem essa verificação, race conditions e false negatives causam duplicação."
+    "evento": "DUPLICA\u00c7\u00c3O de ordens detectada pelo user \u2014 4 SHORT limits abertas (2 do BOOT 18:03 + 2 do SONNET 18:09) ao inv\u00e9s de 2.",
+    "causa_raiz": "Ciclo SONNET 18:09 chamou get_open_closed_orders com openOnly=1 e o filtro retornou hist\u00f3rico misturado (Filled/Cancelled/Deactivated) sem mostrar nenhum status 'New' na primeira p\u00e1gina de 50 itens. SONNET concluiu (errado) que as ordens do BOOT 18:03 n\u00e3o existiam e re-armou 2 limits id\u00eanticas, dobrando exposi\u00e7\u00e3o.",
+    "evidencia_real": "Query sem filtro openOnly + limit=10 retornou as 4 ordens com status 'New' (3aaf3480 78850, 1f694727 79000, 43bf8a80 78850, a9a8b675 79000). Posi\u00e7\u00e3o size=0 explica por que nenhuma fillou \u2014 pre\u00e7o $79.077 \u00e0s 21:38 n\u00e3o atingiu o pr\u00e9-fill por ordem de prioridade no book cheio.",
+    "acao_corretiva_executada_18_20": "Cancelados orderIds 43bf8a80 + a9a8b675 (par SONNET 1809 \u2014 duplicado). Mantidos 3aaf3480 + 1f694727 (par BOOT 1800 \u2014 original). Exposi\u00e7\u00e3o corrigida pra 0.005 BTC (n\u00e3o 0.010). Capital travado: $15.78 IM + risco real $1.85 (0.43% equity) \u2014 dentro do tier conservador.",
+    "fix_dna_pendente": "Adicionar regra ao m\u00f3dulo 07_modo_sentinela: TODA chamada place_order DEVE ser seguida por get_open_closed_orders FILTRANDO por orderLinkId espec\u00edfico (n\u00e3o openOnly gen\u00e9rico) ANTES de salvar em fenix_state.json. Sem essa verifica\u00e7\u00e3o, race conditions e false negatives causam duplica\u00e7\u00e3o."
   },
   "ordens_canceladas_ciclo": [
     {
       "tipo": "trigger_stop_short_obsoleto",
       "orderLinkId": "fenix_short_breakdown_1751",
-      "motivo": "Premissa invalidada — preço NÃO caiu abaixo de 78500 trigger. Pelo contrário, fez breakout violento pra 79182 antes de devolver. Tese mudou de SHORT por breakdown pra SHORT por bull trap."
+      "motivo": "Premissa invalidada \u2014 pre\u00e7o N\u00c3O caiu abaixo de 78500 trigger. Pelo contr\u00e1rio, fez breakout violento pra 79182 antes de devolver. Tese mudou de SHORT por breakdown pra SHORT por bull trap."
     }
   ],
   "ultimo_ciclo_relatorio": {
-    "horario": "19:02",
-    "preco": 78741.3,
+    "horario": "14:06",
+    "preco": 78660.7,
     "candle_15m_recente": {
-      "open": 78799.3,
-      "high": 78799.3,
-      "low": 78709.6,
-      "close": 78741.3,
-      "vol": 30.9
+      "open": 78697.9,
+      "high": 78712.3,
+      "low": 78645.3,
+      "close": 78660.7,
+      "vol": 49.6
     },
     "indicadores_local": {
-      "rsi_15m": 63.07,
-      "rsi_1h": 66.6,
-      "macd_15m_hist": 25.99,
-      "macd_1h_hist": 13.73,
-      "ema9_15m": 78650.44,
-      "ema21_15m": 78548.85,
-      "ema9_1h": 78557.24,
-      "ema21_1h": 78381.01
+      "rsi_15m": 52.32,
+      "rsi_1h": 58.94,
+      "macd_15m_hist": -9.16,
+      "macd_1h_hist": 16.7,
+      "ema9_15m": 78680.48,
+      "ema21_15m": 78653.6,
+      "ema9_1h": 78610.23,
+      "ema21_1h": 78507.68
     },
     "score_multi_tf": {
       "SHORT": {
         "pontos": "6/6 (cap)",
-        "detalhes": "D failed breakout 79182 wick 525pts (+1.5) | 4H shooting star wick 526pts (+1.5) | 1H bull trap candle 17:00 (+1) | 15m rejeição mantida 17:30→18:00 (+1) | Watcher 60% bearish persistente + sinais sell agressivos (+1.5) | Failed breakout pattern (+1)",
-        "veto_ativo": "Nenhum — veto 1H HH+HL invalidado por wick rejection no novo HH 79182 (regra 02)"
+        "detalhes": "D failed breakout 79182 wick 525pts (+1.5) | 4H shooting star wick 526pts (+1.5) | 1H bull trap candle 17:00 (+1) | 15m rejei\u00e7\u00e3o mantida 17:30\u219218:00 (+1) | Watcher 60% bearish persistente + sinais sell agressivos (+1.5) | Failed breakout pattern (+1)",
+        "veto_ativo": "Nenhum \u2014 veto 1H HH+HL invalidado por wick rejection no novo HH 79182 (regra 02)"
       },
       "LONG": {
         "pontos": "0/6",
-        "detalhes": "Falha de breakout invalida tese bull no curto prazo. Sem confluência LONG ativa.",
-        "veto_ativo": "VETO LONG — failed breakout pattern + watcher bearish persistente"
+        "detalhes": "Falha de breakout invalida tese bull no curto prazo. Sem conflu\u00eancia LONG ativa.",
+        "veto_ativo": "VETO LONG \u2014 failed breakout pattern + watcher bearish persistente"
       }
     },
     "tese_atual": "BULL_TRAP_FADE_SHORT",
-    "decisao": "EXECUTADO setup Sentinela SHORT 2-limits Hybrid OCO @ 78850/79000 com qty 0.003 + 0.002 (total 0.005, sizing conservador pós-perda v4 dentro do tier 1% risco). TP/SL serão setados via set_trading_stop tpslMode=Partial assim que primeiro limit fillar. Reduce_only obrigatório nos TPs.",
-    "trigger_aguardado": "Fill de qualquer um dos 2 limits → set_trading_stop imediato com SL 79280 + TP1 78400 (qty 0.0015) + TP2 77703 (qty 0.0035) reduce_only=true",
-    "proximo_marco": "Wakeup em fill (watcher push) OU em close 1H 19:00 caso nenhum fill. Confluência mantida = aguardar pacientemente.",
+    "decisao": "EXECUTADO setup Sentinela SHORT 2-limits Hybrid OCO @ 78850/79000 com qty 0.003 + 0.002 (total 0.005, sizing conservador p\u00f3s-perda v4 dentro do tier 1% risco). TP/SL ser\u00e3o setados via set_trading_stop tpslMode=Partial assim que primeiro limit fillar. Reduce_only obrigat\u00f3rio nos TPs.",
+    "trigger_aguardado": "Fill de qualquer um dos 2 limits \u2192 set_trading_stop imediato com SL 79280 + TP1 78400 (qty 0.0015) + TP2 77703 (qty 0.0035) reduce_only=true",
+    "proximo_marco": "Wakeup em fill (watcher push) OU em close 1H 19:00 caso nenhum fill. Conflu\u00eancia mantida = aguardar pacientemente.",
     "indicadores_tv": {
       "preco_atual": 78676.0,
       "1h_close_17h": {
@@ -276,13 +1064,13 @@
     }
   },
   "contexto_macro_observado": {
-    "evento_chave": "Bull trap D+4H em 79182 — preço rompeu resistência D 78900 com vol 9.7× pra 79182 e devolveu 489pts em 30min, fechando 1H 17:00 em 78693. Configura padrão clássico de exhaustion em topo / armadilha pra compradores tardios.",
+    "evento_chave": "Bull trap D+4H em 79182 \u2014 pre\u00e7o rompeu resist\u00eancia D 78900 com vol 9.7\u00d7 pra 79182 e devolveu 489pts em 30min, fechando 1H 17:00 em 78693. Configura padr\u00e3o cl\u00e1ssico de exhaustion em topo / armadilha pra compradores tardios.",
     "topo_recente": 79182,
     "fundo_recente_1h": 78395,
-    "resistencia_quebrada_e_rejeitada": "$78.900 D (quebrada por 282pts até 79182 e devolvida)",
-    "suporte_proximo_intraday": "$78.367 (low 4H 17:00) → $78.110 (HL 1H anterior) → $77.703 (HL 4H estrutural = TP2)",
+    "resistencia_quebrada_e_rejeitada": "$78.900 D (quebrada por 282pts at\u00e9 79182 e devolvida)",
+    "suporte_proximo_intraday": "$78.367 (low 4H 17:00) \u2192 $78.110 (HL 1H anterior) \u2192 $77.703 (HL 4H estrutural = TP2)",
     "veto_short_ativo": "Nenhum (estrutura ascendente curto prazo invalidada por wick rejection no novo HH)",
-    "veto_long_ativo": "ATIVO — failed breakout invalida bull continuation"
+    "veto_long_ativo": "ATIVO \u2014 failed breakout invalida bull continuation"
   },
   "trades_sessao_atual": [
     {
@@ -293,7 +1081,7 @@
       "entry_avg": 78600.0,
       "pnl_total_estimado": 3.04,
       "fechado": true,
-      "auto_avaliacao_resumo": "Modelo 70/30 funcionou. Partial em zona certa. SL apertado pós-TP1 capturou ganho extra antes do bull retomar."
+      "auto_avaliacao_resumo": "Modelo 70/30 funcionou. Partial em zona certa. SL apertado p\u00f3s-TP1 capturou ganho extra antes do bull retomar."
     },
     {
       "id": "v4",
@@ -308,7 +1096,7 @@
       "fechado": true,
       "pnl_total_estimado": -0.53,
       "tese": "Pullback no breakout 78450. D+4H+1H todos bull confirmado. Watcher AT_LEVEL bullish 7.0.",
-      "auto_avaliacao_resumo": "SL fillou em $78.380 (close 1H 13:00 falhou gatilho, wick top 150pts no 78569 = exhaustion sign que score multi-TF não pesou suficientemente). TP1/TP2 ficaram dangling sem reduce_only — bug de execução detectado pelo user via diálogo, canceladas manualmente. Lição: TODA ordem TP/SL deve ter reduce_only=true."
+      "auto_avaliacao_resumo": "SL fillou em $78.380 (close 1H 13:00 falhou gatilho, wick top 150pts no 78569 = exhaustion sign que score multi-TF n\u00e3o pesou suficientemente). TP1/TP2 ficaram dangling sem reduce_only \u2014 bug de execu\u00e7\u00e3o detectado pelo user via di\u00e1logo, canceladas manualmente. Li\u00e7\u00e3o: TODA ordem TP/SL deve ter reduce_only=true."
     }
   ],
   "estatisticas_sessao": {
@@ -319,27 +1107,37 @@
     "pausa_ativa": false,
     "pnl_realizado_sessao": -0.53,
     "trade_aberto": null,
-    "setup_armado_pendente_fill": "SENTINELA SHORT 2-limits 78870/79050 (re-armadas 19:03) — R:R TP2 3.0"
+    "setup_armado_pendente_fill": "SENTINELA SHORT 2-limits 78560/78690 (REPOSICIONADAS 21:05) \u2014 R:R TP2 5.25"
   },
   "watchlist_proximos_eventos": [
     {
-      "evento": "Fill limit 1 (78850) — primeiro ponto Sentinela. Ao detectar fill: set_trading_stop tpslMode=Partial com SL 79280, TP1 78400 qty 0.0015, TP2 77703 qty 0.0035, todos reduce_only=true.",
-      "horario": "rolling — qualquer momento se preço subir testar 78850"
+      "evento": "Fill limit 1 (78850) \u2014 primeiro ponto Sentinela. Ao detectar fill: set_trading_stop tpslMode=Partial com SL 79280, TP1 78400 qty 0.0015, TP2 77703 qty 0.0035, todos reduce_only=true.",
+      "horario": "rolling \u2014 qualquer momento se pre\u00e7o subir testar 78850"
     },
     {
-      "evento": "Fill limit 2 (79000) — segundo ponto Sentinela mais agressivo. Recalcular avg entry caso ambos fillem (78910 ponderado).",
+      "evento": "Fill limit 2 (79000) \u2014 segundo ponto Sentinela mais agressivo. Recalcular avg entry caso ambos fillem (78910 ponderado).",
       "horario": "rolling"
     },
     {
-      "evento": "Close 1H 19:00 — gatilho de reavaliação caso nenhum fill ainda. Validar se watcher mantém bearish persistente.",
+      "evento": "Close 1H 19:00 \u2014 gatilho de reavalia\u00e7\u00e3o caso nenhum fill ainda. Validar se watcher mant\u00e9m bearish persistente.",
       "horario": "19:00"
     },
     {
-      "evento": "Watcher monitor: bias bearish dominante 60% últimas 15 leituras. Se virar bullish persistente 3+ leituras = sinal de retomada bull e setup deve ser cancelado.",
+      "evento": "Watcher monitor: bias bearish dominante 60% \u00faltimas 15 leituras. Se virar bullish persistente 3+ leituras = sinal de retomada bull e setup deve ser cancelado.",
       "horario": "rolling"
     }
   ],
   "trades_recentes": [
+    {
+      "timestamp": "2026-05-03T02:22:28",
+      "symbol": "BTCUSDT",
+      "side": "LONG",
+      "entry_price": 78200.0,
+      "exit_price": 78092.2,
+      "quantity": 0.064,
+      "pnl_usd": -10.65,
+      "pnl_percent": -0.21
+    },
     {
       "timestamp": "2026-05-02T13:06:27",
       "symbol": "BTCUSDT",
@@ -529,18 +1327,174 @@
       "quantity": 0.05,
       "pnl_usd": -20.08,
       "pnl_percent": -0.53
-    },
-    {
-      "timestamp": "2026-04-28T00:22:25",
-      "symbol": "BTCUSDT",
-      "side": "SHORT",
-      "entry_price": 77335.7,
-      "exit_price": 76779.8,
-      "quantity": 0.035,
-      "pnl_usd": 16.49,
-      "pnl_percent": 0.61
     }
   ],
-  "last_github_push_ts": 1777762949.661254,
-  "last_github_push": "2026-05-02 19:02"
+  "last_github_push_ts": 1777831590.0577931,
+  "last_github_push": "2026-05-03 14:06",
+  "incidentes_aprendizado": [
+    {
+      "ts": "2026-05-02T20:19",
+      "tipo": "ORDENS_ORFA_INTER_CICLO",
+      "detalhe": "Detectado 4 ordens SHORT ativas (esperado: 2). Orfas _1800 (78.850/79.000 orderIds 3aaf3480/1f694727) sobreviveram ao ciclo 18:09 que cancelou apenas as _1809. Ciclo 19:03 armou _1903 sem detectar _1800. Exposicao 2x do planejado.",
+      "resolucao": "Canceladas as 2 orfas _1800 em 20:19. Restam apenas _1903 conforme plano.",
+      "patch_dna": "v3.2 anti-orfao adicionado ao modulo 07_modo_sentinela secao 6 \u2014 varredura obrigatoria de fenix_sent_* antes de cada armamento."
+    },
+    {
+      "ts": "2026-05-03T03:18",
+      "tipo": "PNL_LEITURA_ERRADA",
+      "detalhe": "F\u00caNIX vinha reportando cumPnL -$4.397 (parcial da posi\u00e7\u00e3o BTCUSDT) em vez do valor oficial UNIFIED USDT -$6.258. Isso fez relat\u00f3rios falsos do tipo '+$1.726 progresso vs baseline' quando na realidade est\u00e1vamos em -$134 (PREJU\u00cdZO da opera\u00e7\u00e3o inteira). User detectou e corrigiu.",
+      "raiz": "Estava lendo cumRealisedPnl de get_position_info(BTCUSDT) em vez de get_wallet_balance(UNIFIED USDT).coin[0].cumRealisedPnl",
+      "correcao": "Sempre buscar via get_wallet_balance UNIFIED. DNA j\u00e1 documenta isso explicitamente em 01_identidade_missao.md:28 e project_operacao_virada.md:26. N\u00e3o precisa mexer DNA \u2014 \u00e9 corre\u00e7\u00e3o do fluxo de leitura."
+    },
+    {
+      "ts": "2026-05-03T03:18",
+      "tipo": "TP2_FIXA_VIOLOU_DNA",
+      "detalhe": "F\u00caNIX armou TP2 como Limit Buy fixa (orderLinkId fenix_tp2_v2_pullback_0235 qty 0.028 @ $77.703) violando explicitamente o DNA m\u00f3dulo 03 que diz: 'TP2 \u00e9 apenas refer\u00eancia pra calcular R:R no momento da decis\u00e3o de entry, N\u00c3O ordem fixa que fecha automaticamente'. Risco real: flash crash 5-20% (plaus\u00edvel em cripto) com TP2 fixo deixa muito dinheiro na mesa. User detectou e corrigiu.",
+      "raiz": "Implementa\u00e7\u00e3o do BOOT subagent ignorou a regra v2 do DNA. H\u00e1bito de armar TP2 como ordem fixa veio do modelo 70/30 antigo (pr\u00e9-2026-05-02 v2).",
+      "correcao": "TP1 30% pode ficar fixo (cobertura). TP2 70% NUNCA fixo \u2014 sa\u00edda via trailing 4H p\u00f3s-TP1 (DNA m\u00f3dulo 04 Op\u00e7\u00e3o D). Pr\u00e9-condi\u00e7\u00e3o pra qualquer TP2: cancelar TP2 limit antes de fillar TP1."
+    }
+  ],
+  "strategy_after_long_close": {
+    "_doc": "Estrat\u00e9gia 3-cen\u00e1rios OCO pr\u00e9-armada. EXECUTAR AUTOMATICAMENTE no pr\u00f3ximo ciclo F\u00caNIX QUANDO position.size voltar a 0 (LONG do user fechou via TP $78.500 ou SL $77.980). Depois disso a current_thesis precisa ser revalidada com dados frescos antes do armamento.",
+    "trigger_execution": "position size transition 0.064 \u2192 0 (LONG closed)",
+    "armado_em": "2026-05-03T00:55",
+    "user_authorization": "user pediu em sess\u00e3o 2026-05-03 00:54 \u2014 op\u00e7\u00e3o (a): s\u00f3 arma ap\u00f3s LONG resolver",
+    "validation_pre_arm": [
+      "1. Confirmar position.size == 0 (LONG fechou \u2014 fill via TP ou SL)",
+      "2. Anti-\u00f3rf\u00e3o v3.2: varrer fenix_sent_*, fenix_brk_*, fenix_close_* \u2014 cancelar QUALQUER fenix_* New",
+      "3. Re-baixar dados frescos: 1H + 4H + watcher \u00faltimas 30 leituras",
+      "4. Re-validar score multi-TF e n\u00edveis estruturais (suporte, resist\u00eancia podem ter mudado)",
+      "5. Ajustar pre\u00e7os dos 3 cen\u00e1rios conforme n\u00edveis reais no momento (N\u00c3O usar os valores est\u00e1ticos abaixo se mercado se moveu muito)"
+    ],
+    "cenarios": {
+      "A_breakdown_bearish": {
+        "trigger": "stop-market SHORT @ low atual \u2212 $20",
+        "pre\u00e7o_refer\u00eancia": 78040,
+        "qty_refer\u00eancia": 0.024,
+        "l\u00f3gica": "Pega continua\u00e7\u00e3o bearish direta \u2014 SE pre\u00e7o romper o suporte testado",
+        "SL": "+$200 acima do trigger (last LH 1H + buffer)",
+        "TP1": "\u22120.5% \u00d7 30%",
+        "TP2": "$77.703 (HL 4H estrutural) \u00d7 70%",
+        "orderType": "Stop-market"
+      },
+      "B_pullback_rejection": {
+        "trigger": "limits Sentinela 2-pernas",
+        "pre\u00e7o_refer\u00eancia_1": 78560,
+        "qty_refer\u00eancia_1": 0.016,
+        "pre\u00e7o_refer\u00eancia_2": 78700,
+        "qty_refer\u00eancia_2": 0.012,
+        "l\u00f3gica": "Captura rejei\u00e7\u00e3o cl\u00e1ssica do topo se houver pullback at\u00e9 zona de oferta",
+        "SL": "$78.760 (acima high 1H 20:00 + buffer)",
+        "TP1": "\u22120.5% \u00d7 30%",
+        "TP2": "$77.703 \u00d7 70%",
+        "orderType": "Limit"
+      },
+      "C_breakout_bullish_squeeze": {
+        "trigger": "stop-market LONG @ acima LH 1H 21:00",
+        "pre\u00e7o_refer\u00eancia": 78310,
+        "qty_refer\u00eancia": 0.02,
+        "l\u00f3gica": "Pega short squeeze se pre\u00e7o romper LH 1H mais recente \u2014 counter-tese bear mas captura momentum",
+        "SL": "$78.060 (low atual \u2212 buffer)",
+        "TP1": "+0.5% \u00d7 30%",
+        "TP2": "$78.728 (high 1H 20:00 = 1\u00aa resist\u00eancia forte) \u00d7 70%",
+        "orderType": "Stop-market"
+      }
+    },
+    "exposicao_total_max": "30% equity = ~$135 margin (cap DNA m\u00f3dulo 13)",
+    "regra_OCO": "Apenas UM cen\u00e1rio deve disparar primeiro. No PR\u00d3XIMO ciclo Claude ap\u00f3s o primeiro fill, cancelar os 2 cen\u00e1rios opostos imediatamente.",
+    "regra_invalidacao": [
+      "Se pre\u00e7o lateralizar 2h+ no range $78.060-$78.310 sem quebra \u2192 cancelar A e C, manter s\u00f3 B",
+      "Se watcher virar opus persistente (5+ leituras) num lado \u2192 refor\u00e7ar esse cen\u00e1rio, cancelar oposto"
+    ]
+  },
+  "session_notes_2026_05_03": [
+    {
+      "ts": "2026-05-03T00:55",
+      "tipo": "ESTRATEGIA_NOVA_REGISTRADA",
+      "detalhe": "User pediu mudan\u00e7a estrutural ap\u00f3s F\u00caNIX perder 4 movimentos na sess\u00e3o. Estrat\u00e9gia 3-cen\u00e1rios OCO substituir\u00e1 Sentinela puro de 2-limits ap\u00f3s LONG do user fechar. Plano salvo em strategy_after_long_close \u2014 qualquer F\u00caNIX invocada DEVE consultar e executar automaticamente quando position.size voltar a 0."
+    },
+    {
+      "ts": "2026-05-03T03:18",
+      "tipo": "DUPLO_LEARNING_PNL_E_TP2",
+      "detalhe": "Sess\u00e3o noturna corrigiu 2 erros estruturais: (1) leitura errada de cumPnL \u2014 m\u00e9trica oficial \u00e9 UNIFIED USDT, n\u00e3o posi\u00e7\u00e3o. PnL real -$6.258 vs baseline -$6.124 = -$134 preju\u00edzo. (2) TP2 limit fixa armada violou DNA \u2014 cancelada, deixar trailing p\u00f3s-TP1 fazer o trabalho. SHORT 0.040 mantida com SL $78.520 + TP1 $77.900 + sem TP2 fixa."
+    }
+  ],
+  "ciclo_delta_14_01": {
+    "ts": "2026-05-03T14:01-04:00",
+    "tipo": "delta_pos_close_1h_13_00",
+    "thesis_id": "boot_2026_05_03_1249_v5_HS_validado",
+    "preco": 78660.7,
+    "candle_1h_13_00_fechado": {
+      "open": 78623.4,
+      "high": 78794.3,
+      "low": 78522.6,
+      "close": 78697.9,
+      "volume": 927.4,
+      "veredicto": "compressao_continua",
+      "gatilhos_avaliados": {
+        "rompimento_ombro_dir_78861": "NAO \u2014 wick 78.794 falhou por $67",
+        "rompimento_neckline_78060": "NAO \u2014 close 78.697 muito acima",
+        "rejection_bearish_wick_alto": "PARCIAL \u2014 wick 78.794 rejeitou e fechou 78.697 (-97pts wick)"
+      }
+    },
+    "candle_1h_14_00_em_formacao": {
+      "open": 78697.9,
+      "high": 78712.3,
+      "low": 78645.3,
+      "current": 78660.6,
+      "vol_parcial": 50.1,
+      "obs": "fadiga compradora \u2014 vol baixo, atual revertendo"
+    },
+    "candle_4h_12_00_em_formacao_50pct": {
+      "open": 78631.5,
+      "high": 78794.3,
+      "low": 78522.6,
+      "current": 78660.6,
+      "vol_cumulativo": 1610,
+      "obs": "estrutura intacta \u2014 fundo 78.522 nao furou pivot 4H 78.550"
+    },
+    "watcher": {
+      "score": 6.0,
+      "tier": "sonnet",
+      "bias": "bearish",
+      "fired_signals": [
+        "funding_flip(2.0:short_squeeze)",
+        "volume_delta(2.0:aggressive_selling -46%)",
+        "distance_to_level(2.0:AT_LEVEL high_13_00)"
+      ],
+      "concordancia_com_posicao": true
+    },
+    "score_multi_tf": {
+      "long": 1.5,
+      "short": 2.5,
+      "veredicto": "SHORT 2,5/6 \u2014 abaixo de limiar 4/6 pra armar nova; mantem posicao existente"
+    },
+    "posicao": {
+      "side": "Sell",
+      "size": 0.04,
+      "avgPrice": 78220.46,
+      "uPnL": -17.6,
+      "BE": 78145.13,
+      "SL": 78899.0,
+      "liq": 80944.5,
+      "folga_liq": 2284
+    },
+    "ordens_validadas": {
+      "tp1_77900_a66f1b2c": "New \u2713",
+      "sl_78899_5581c841": "Untriggered \u2713 (CreateByStopLoss, anexado a posicao)"
+    },
+    "decisao": "MANTER \u2014 sem gatilho mecanico para acao",
+    "anti_padroes_evitados": [
+      "nao apertar SL sem gatilho objetivo",
+      "nao armar nova com score 2,5/6 < 4",
+      "nao entrar sniper no meio de compressao"
+    ],
+    "proximos_gatilhos": [
+      "close 1H 15:00 < 78.500 + vol > 1.500 -> reforco bearish",
+      "close 1H > 78.861 (ombro_dir) -> reavaliar tese H&S (gatilho 3 BOOT)",
+      "toque TP1 77.900 -> 30% fillado, mover SL para BE 78.145",
+      "watcher escala sonnet+ tier com sinais iniciativos"
+    ],
+    "proximo_wakeup": "2026-05-03T15:01-04:00 (close 1H 14:00 fechado)"
+  }
 }
