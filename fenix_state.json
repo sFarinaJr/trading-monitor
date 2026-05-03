@@ -85,7 +85,7 @@
       "price": 78650,
       "qty": 0.002,
       "qty_pct_posicao": 40,
-      "ganho_potencial_usd": 0.80
+      "ganho_potencial_usd": 0.8
     },
     "tp2_pendente": {
       "qty_alvo": 0.003,
@@ -94,7 +94,7 @@
       "_obs": "TP2 será armado em ciclo seguinte após confirmar entrada. Pós-fill TP1 → mover SL pra BE $79.050."
     },
     "equity_snapshot_19_14": {
-      "totalEquity": 391.60,
+      "totalEquity": 391.6,
       "cumRealisedPnl_unified": -6287.19,
       "cumRealisedPnl_btcusdt": -4427.47,
       "delta_vs_baseline_pnl": -163.19,
@@ -137,8 +137,8 @@
     },
     "ordens_abertas": "ZERO — list vazia confirmada via get_open_closed_orders openOnly=0",
     "equity_snapshot": {
-      "totalEquity": 391.60,
-      "totalWalletBalance": 391.60,
+      "totalEquity": 391.6,
+      "totalWalletBalance": 391.6,
       "delta_vs_baseline_pnl": -163.19,
       "_obs": "Baseline -$6.124 (2026-04-27). Atual -$6.287,19. Operação Virada: -$163,19 abaixo do baseline (recuo desde abertura). Equity $391,60."
     },
@@ -2256,6 +2256,32 @@
       "NUNCA chase movimento já consumado",
       "NUNCA SHORT contra rompimento sem failed breakout confirmado",
       "Auto-pause humilde após 3 SLs consecutivos = só monitor até user libera"
+    ]
+  },
+  "ciclo_delta_19_26": {
+    "_doc": "TP1 FILLOU intra-bar 1H 19:00. Posição reduziu 0.005→0.003 BTC. Realized +$0,55. SL movido pra BE $79,050 conforme workflow v5 (TP1 fillou → SL pra BE → espera TP2 OU BE-stop).",
+    "ts": "2026-05-03T19:26",
+    "evento": "TP1_FILLED",
+    "tp1_filled_qty": 0.002,
+    "tp1_filled_price": 78650,
+    "realized_usd": 0.55,
+    "sl_anterior": 79310,
+    "sl_novo": 79050,
+    "sl_motivo": "BE workflow v5 — TP1 fill é gatilho objetivo pra mover SL",
+    "posicao_remaining": {
+      "size": 0.003,
+      "side": "Sell",
+      "avg_price": 79050.4,
+      "mark": 78678,
+      "uPnL": 1.12,
+      "be_locked": "$0,55 realized garantido (worst case zero no remaining)"
+    },
+    "tp2_referencia": 78250,
+    "tp2_toques_historicos": 4,
+    "next_actions": [
+      "Aguardar preço chegar TP2 $78,250 (precisa cair $428) → fechar manual em market OU trail",
+      "OU BE-stop $79,050 → exit zero loss no remaining",
+      "Sem trail Opção D (v5 simplificado)"
     ]
   }
 }
