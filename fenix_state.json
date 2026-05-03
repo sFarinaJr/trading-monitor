@@ -6,8 +6,103 @@
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
-  "ultimo_update": "2026-05-03T14:01-04:00",
-  "ciclo_delta_14_00": {
+  "ultimo_update": "2026-05-03T15:08-04:00",
+  "ciclo_delta_15_08": {
+    "_doc": "Ciclo delta p\u00f3s-close 1H 14:00 UTC-4 efetivamente fechado (close $78.705 vol 592 fraco). 1H 15:00 em forma\u00e7\u00e3o 8min. Watcher score 8.5 OPUS oscilando ~1h vi\u00e9s neutro mas pressure de compra dominante; sinais INICIATIVOS price_velocity 0.06 / volume_surge 0.37 / range_expansion 0.53 \u2014 todos ZERO/baixos, sem in\u00edcio de movimento. Posi\u00e7\u00e3o SHORT 0.04 ATIVA, uPnL -$19.26 (estagnado vs 14:01). Watcher reiniciado 15:05 com novo formato heartbeat humanizado.",
+    "ts": "2026-05-03T15:08",
+    "preco_at_check": 78700.7,
+    "mark_price": 78701.95,
+    "candle_1h_14_00_FECHADO": {
+      "open": 78697.9,
+      "high": 78732.9,
+      "low": 78594.0,
+      "close": 78705.1,
+      "vol": 592.7,
+      "_obs": "Range $138 (estreito). Close $78.705 \u2014 dentro da banda compress\u00e3o $78.500-$78.700 (5pts acima do limite). Vol 592 muito fraco (vs 927 do 13:00 e 632 do 12:00). NENHUM dos 4 cen\u00e1rios da matriz extrema disparou (n\u00e3o > $78.861, n\u00e3o < $78.500+vol1500, n\u00e3o < $78.060+vol5K). Caso ativo: COMPRESS\u00c3O SEGUE."
+    },
+    "candle_1h_13_00_FECHADO": {
+      "open": 78623.4,
+      "high": 78794.3,
+      "low": 78522.6,
+      "close": 78697.9,
+      "vol": 927.4,
+      "_obs": "Wick high $78.794 falhou ombro_dir $78.861 por $67. Close $78.697 dentro compress\u00e3o."
+    },
+    "candle_1h_15_00_em_formacao_8min": {
+      "open": 78705.1,
+      "high": 78731.3,
+      "low": 78684.7,
+      "close_atual": 78700.7,
+      "vol_1min": 53.6,
+      "_obs": "Range $46 microsc\u00f3pico, vol 53 ridiculamente fraco. Compress\u00e3o ext.rema continua."
+    },
+    "candle_4h_12_00_em_formacao_75pct": {
+      "open": 78631.5,
+      "high": 78794.3,
+      "low": 78522.6,
+      "close_atual": 78700.7,
+      "vol_acumulado": 2206.4,
+      "_obs": "Vol 2.206 vs 4.406 do 4H 08:00 e 5.001 do 4H 04:00 \u2014 ainda 50% abaixo dos 4H anteriores. Sem exhaustion clara. Fecha 16:00 UTC-4 em ~52min."
+    },
+    "posicao_check": {
+      "size": 0.04,
+      "side": "Sell",
+      "avgPrice": 78220.46,
+      "sl": 78899,
+      "uPnL": -19.26,
+      "be_price": 78145.13,
+      "mark_price": 78701.95,
+      "tp1_orderId_a66f1b2c": "New @ 77900 qty 0.012 \u2014 n\u00e3o fillou (dist\u00e2ncia $801)",
+      "stop_loss_orderId_5581c841": "Untriggered StopLoss market @ 78899 qty 0.04 \u2014 intacto (dist\u00e2ncia $197)",
+      "_obs": "Posi\u00e7\u00e3o estagnada: uPnL -$19.10 (14:01) \u2192 -$19.26 (15:08), pre\u00e7o oscilou $78.698 \u2192 $78.701. Mercado parado em range sem follow-through em nenhuma dire\u00e7\u00e3o."
+    },
+    "watcher_score_8_5_opus_persistente": {
+      "tier_dominante_1h": "opus 8.5 (recorrente em 14:00, 14:15, 14:35, 14:45, 14:50, 15:00) intercalando com sonnet 7.5",
+      "bias": "neutral (com pressure de compra recorrente, mas alternando)",
+      "fired_signals_latest_15_08": [
+        "funding_flip(2.0:short_squeeze) \u2014 PERSISTENTE \u00daltimas 4h, ainda v\u00e1lido",
+        "wick_rejection(1.0:rejection_lean_top) \u2014 BEARISH (2 upper wicks vs 1 lower nas \u00faltimas 6 candles 15m)",
+        "distance_to_level(2.0:AT_LEVEL high 15m $78.712) \u2014 compress\u00e3o no topo da range"
+      ],
+      "_signais_iniciativos_TODOS_ZERO_OU_BAIXOS": "price_velocity 0.06 (precisa >0.7), volume_surge 0.37 (precisa >1.5), range_expansion 0.53 (precisa >1.5). Nenhum in\u00edcio de movimento explosivo \u2014 confirma compress\u00e3o.",
+      "interpretacao": "Watcher detecta press\u00e3o de compra (orderbook flip-flopping) + funding short squeeze persistente, MAS sinais iniciativos zerados confirmam que NADA est\u00e1 explodindo agora. Vi\u00e9s neutro \u00e9 honesto: orderbook alterna buy/sell pressure a cada 5min = ru\u00eddo de range, n\u00e3o dire\u00e7\u00e3o. Wick rejection lean_top \u00e9 LIGEIRAMENTE BEARISH (rejei\u00e7\u00f5es no topo da range)."
+    },
+    "strategic_level_breach_status": {
+      "thesis_id_ativo": "boot_2026_05_03_1249_v5_HS_validado",
+      "monitored_levels": 13,
+      "score_breach_atual": 0.0,
+      "_obs": "Nenhum level cruzado. INVALIDATION_TOTAL_78510 segue marcado breach intra-bar wicks anteriores mas sem close 1H acima ainda \u2014 closes 11:00=78.704, 12:00=78.623, 13:00=78.697, 14:00=78.705. Compress\u00e3o estrutural acima da neckline, INVALIDATION ainda parcial."
+    },
+    "validacao_matriz_close_1h_14_00": {
+      "cen_1_close_acima_78861_invalidacao_omb_dir": "FALSO \u2014 close $78.705 ($156 abaixo)",
+      "cen_2_close_abaixo_78500_vol_1500_reforco_bear": "FALSO \u2014 close $78.705 acima e vol 592 muito fraco",
+      "cen_3_close_abaixo_78060_vol_5K_HS_confirma": "FALSO \u2014 close $78.705 ($645 acima)",
+      "cen_4_compressao_78500_78700": "VERDADEIRO (limite, $5 acima) \u2014 MANTER posi\u00e7\u00e3o intacta"
+    },
+    "score_multi_tf_atual": {
+      "SHORT": "2,5/6",
+      "LONG": "1,5/6",
+      "_decomposicao": "Inalterado vs BOOT 12:49 e ciclos 13:01/14:01. H&S geometria intacta (close 1H 14:00 $78.705 < ombro $78.861), neckline $78.060 intacta. Wick rejection lean_top no 15m \u00e9 micro-bearish (+0.5 SHORT?), mas compensado por compras dominantes orderbook. Net: inalterado.",
+      "_h_s_status": "padr\u00e3o vivo, sob compress\u00e3o. Pr\u00f3ximo gatilho cr\u00edtico = close 1H 15:00 (16:00 UTC-4). Se compress\u00e3o $78.500-$78.700 quebrar pra cima sustentado = revisar. Se quebrar pra baixo com vol = TP1 fica vi\u00e1vel."
+    },
+    "decisao": "MANTER SHORT 0.04 \u2014 sem a\u00e7\u00e3o. Mec\u00e2nica: (1) Close 1H 14:00 caiu no cen\u00e1rio 'compress\u00e3o segue' da matriz (pr\u00f3pria instru\u00e7\u00e3o do user), (2) score multi-TF 2,5/6 < 4 m\u00ednimo \u2014 sem entrada nova, (3) ZERO dos 11 sinais antecipat\u00f3rios disparou breach, (4) sinais iniciativos do watcher TODOS abaixo do threshold (n\u00e3o h\u00e1 in\u00edcio de movimento), (5) SL $78.899 estrutural acima cabe\u00e7a intacto \u2014 sem gatilho objetivo pra apertar (anti-padr\u00e3o respeitado), (6) TP1 $77.900 ativo \u2014 dist\u00e2ncia $801, sem fill iminente, (7) Candle 4H 12:00 ainda em forma\u00e7\u00e3o 75% \u2014 fechamento 16:00 \u00e9 pr\u00f3ximo gatilho de validacao macro.",
+    "proximos_gatilhos_mecanicos": [
+      "CLOSE_1H_15_00 (16:00 UTC-4): se > $78.732 (high atual) com vol > 1500 = comp.quebra bullish, reavaliar; se < $78.594 (low candle 14:00) com wick alto = refor\u00e7o SHORT; entre = compress\u00e3o segue",
+      "CLOSE_4H_12_00 (16:00 UTC-4): vol total $2.206 atual + ~830 do 1H 15:00 + 1H 16:00 esperado. Se vol final 4H > 4.000 + close < $78.500 = bear macro confirma; se vol > 4.000 + close > $78.800 = bull macro fura ombro",
+      "TP1_FILL_77900: 30% qty fecha, mover SL pra BE $78.140 (job autom\u00e1tico)",
+      "ROMPIMENTO_NECKLINE_78025_78060: close 1H abaixo + vol > 5K = H&S CONFIRMA, target $76.938",
+      "INVALIDACAO_OMBRO_78861: close 1H > $78.861 = H&S enfraquece, BOOT revis\u00e3o",
+      "INVALIDACAO_CABECA_79182: SL hit, BOOT novo",
+      "INICIO_MOVIMENTO_breakout: watcher dispara price_velocity > 0.7 + volume_surge > 1.5 + range_expansion > 1.5 simultaneamente = OPUS escala imediato",
+      "STRATEGIC_LEVEL_BREACH: qualquer um dos 13 levels disparar = OPUS imediato"
+    ],
+    "anti_padrao_aplicado": [
+      "N\u00c3O apertar SL sem gatilho objetivo (li\u00e7\u00e3o user 05:19) \u2014 SL $78.899 mantido",
+      "N\u00c3O entrar no meio de impulsivo (timing v6) \u2014 sem impulsivo, mercado parado",
+      "N\u00c3O armar nova posi\u00e7\u00e3o com score < 4/6 \u2014 score 2,5/6, sem Sentinela acima"
+    ]
+  },
+  "ciclo_delta_14_00_arquivado": {
     "_doc": "Ciclo delta p\u00f3s-close 1H 14:00 UTC-4 \u2014 MAS candle 1H 13:00 ainda EM FORMA\u00c7\u00c3O (50% percorrido, fecha 14:00). 1H 12:00 j\u00e1 fechado (doji frio do ciclo anterior). Watcher score 6.0 sonnet bias neutral, sinais iniciativos ZERO. Posi\u00e7\u00e3o SHORT 0.04 ATIVA, uPnL -$19.10 (piorou $3.49 vs 13:01).",
     "ts": "2026-05-03T14:00",
     "preco_at_check": 78698.0,
