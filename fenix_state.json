@@ -6,7 +6,147 @@
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
-  "ultimo_update": "03/05/2026 23:48:58",
+  "ultimo_update": "03/05/2026 23:54:01",
+  "ciclo_delta_23_48": {
+    "_doc": "Ciclo Opus loop dinâmico — POSIÇÃO ZERADA. Watcher disparou OPUS 10.5+ várias vezes em 6min (23:41-23:46) com bias oscilando bull/bear/neutral. Preço subiu de $79,319 (21:55) pra $80,213 (+$894/+1.13% em 1h53min). Análise multi-TF rigorosa v5.1: D MARUBOZU FORTE 75% body bull, 4H explosivo +$1,666 vol 26K, 1H 21+22 marubozus consecutivos vol 9.5K+10.5K, 1H 23 doji-ish saturação topo (upper wick $239 + vol decay 4.2K vs 10.5K + range compression $548 vs $1,469), 15m micro pullback healthy $80,433→$79,885 + bounce $80,188 com vol microscópico (1.5K→741→217). Score LONG 6.0/6 base mas R:R 1.82 (TP2 estrutural ausente acima de $80,433 — só $81k psicológico, sem 3+ toques históricos). Score SHORT 1.0/6 contra macro_bias LONG (precisa 5+/6 mínimo). DECISÃO: HOLD ZERADO. 4 sinais exhaustion topo notados (upper wick + vol decay + funding flip positivo + orderbook 3:1 sell) MAS sem close 1H bear engulfing confirmado — não vira gatilho.",
+    "ts": "2026-05-03T23:48-04:00",
+    "preco_at_check": 80213.77,
+    "mark_price": 80213.77,
+    "last_price": 80210.5,
+    "posicao": "ZERADA",
+    "equity_atual_usd": 392.76,
+    "cumPnL_unified_usd": -6286.0,
+    "cumPnL_delta_dia_usd": 0.0,
+    "cumPnL_vs_baseline_usd": -162.0,
+    "ordens_abertas": 0,
+    "watcher_latest": {
+      "score": 10.5,
+      "tier": "opus",
+      "bias": "neutral",
+      "reason": "score_threshold",
+      "ts_utc": "2026-05-04T03:49:15Z",
+      "price_at_trigger": 80200.0,
+      "fired_signals": [
+        "orderbook_imbalance(2.0:sell_pressure BID 3.86 vs ASK 10.96 ratio 0.352 = 3:1 sell)",
+        "funding_flip(2.0:short_squeeze rates [6.9e-05,6.2e-05,-3.1e-05,2.3e-05]) — flip pra positivo",
+        "oi_buildup(2.0:buildup_long +4.77% recent 54738 vs older 52247)",
+        "volume_delta(2.0:aggressive_buying BUY 23.37 vs SELL 3.99 delta +70.81%)",
+        "compression(0.5:mild_compression vol 1041 vs 2636)",
+        "distance_to_level(2.0:AT_LEVEL high 1H 22 em formacao $80,123)"
+      ],
+      "vibe_history_last_5": "23:25 None(2/1), 23:30 None(1/2 bear), 23:35 None(1/2 bear), 23:40 None(2/1), 23:45 BULL(3/0)",
+      "_obs": "Sinais conflitantes — bid/ask sell_pressure mas volume_delta aggressive_buying. orderbook reflete asks no caminho (resistência), volume_delta reflete trades agressivos comprando. NEUTRAL legítimo."
+    },
+    "analise_multi_tf": {
+      "D_atual": {
+        "open": 78529.9,
+        "high": 80433.0,
+        "low": 78220.0,
+        "close_atual": 80196.0,
+        "vol": 26780,
+        "body": 1666,
+        "range": 2213,
+        "body_range_pct": 75.3,
+        "verdict": "MARUBOZU BULL FORTE — continuation, novo high local $80,433"
+      },
+      "candle_4H_atual_em_formacao": {
+        "obs": "Bar 4H atual mesmo do D — explosivo $1,666 vol 26K (4H anterior 16:00 fechou bear $204 hammer-ish)",
+        "verdict": "BULL FORTE explosivo institucional"
+      },
+      "candle_1H_22_close": {
+        "open": 79759.9,
+        "high": 80123.8,
+        "low": 79500.5,
+        "close": 80142.6,
+        "vol": 10546,
+        "verdict": "BULL CONTINUATION +$382 vol 10.5K"
+      },
+      "candle_1H_23_em_formacao": {
+        "open": 80142.6,
+        "high": 80433.0,
+        "low": 79885.3,
+        "current": 80194.2,
+        "vol": 4194,
+        "upper_wick": 239,
+        "lower_wick": 257,
+        "body": 52,
+        "range": 548,
+        "verdict": "DOJI-ish saturação topo — upper+lower wicks equal, vol decay 60% vs 1H 22, range compression 63%"
+      },
+      "candle_15m_recentes": "22:45 bear -$255 / 23:00 bear -$124 low $79,885 / 23:15 bull +$224 vol 217 microscopic",
+      "OI_15min_trend": "+4.85% em 1h30min ($52,216→$54,738) = buildup_long agressivo",
+      "funding_trend": "Flip de negativo (bears pagando) pra positivo +0.0069% (bulls pagando) = leve sinal topping local"
+    },
+    "score_multi_tf": {
+      "LONG_base": {
+        "D": 1.5,
+        "4H": 1.5,
+        "1H_continuation": 1.0,
+        "15m_pullback_healthy": 0.5,
+        "vol_institucional": 1.0,
+        "OI_buildup_long": 0.5,
+        "subtotal": 6.0
+      },
+      "SHORT_base": {
+        "exhaustion_1H_atual": 0.5,
+        "funding_flip_positive": 0.5,
+        "orderbook_sell_pressure": 0.5,
+        "subtotal": 1.5,
+        "filtro_macro_bias_LONG": "score precisa >=5/6 + close bear confirmado"
+      }
+    },
+    "calculo_RR": {
+      "LONG_hipotetico": {
+        "entry": 80213,
+        "SL_estrutural": 79500,
+        "SL_pts": 713,
+        "TP2_estrutural_disponivel": "AUSENTE — acima $80,433 só $81k psicológico (sem 3+ toques históricos)",
+        "TP2_hipotetico_81500": 1287,
+        "RR": 1.8,
+        "verdict": "REJEITADO — abaixo de 3.0 mínimo v5 + TP2 não estrutural"
+      },
+      "SHORT_hipotetico": {
+        "entry": 80213,
+        "SL_acima_high_buffer": 80580,
+        "SL_pts": 367,
+        "TP2_estrutural": 79182,
+        "TP2_pts": 1031,
+        "RR": 2.81,
+        "verdict": "REJEITADO marginal — score 1.5/6 contra macro_bias LONG (mínimo 5/6) + R:R 2.81 < 3.0"
+      }
+    },
+    "decisao": "SEM ENTRADA — HOLD ZERADO",
+    "razoes_mecanicas": [
+      "LONG score 6.0/6 mas R:R 1.80 e TP2 estrutural ausente (chase no topo)",
+      "SHORT score 1.5/6 contra macro_bias LONG (precisa 5+/6) + R:R 2.81 < 3.0",
+      "1H 23:00 doji saturação topo NÃO confirma reversal sozinho (precisa close 1H bear engulfing)",
+      "Preço NO topo histórico do dia ($80,433) — chase de qualquer lado é tardio",
+      "4 sinais exhaustion notados (upper wick decay + funding flip + orderbook 3:1 sell + 15m vol microscopic) MAS nenhum gatilho disparado"
+    ],
+    "anti_padroes_evitados": [
+      "Chase LONG $80,213 sem TP2 estrutural (preço já correu $1,400/2 candles 1H)",
+      "SHORT marginal contra macro_bias só por exhaustion sem close 1H bear",
+      "Score limítrofe — boost de chart pattern só sobe TIER, não substitui mínimo 4/6"
+    ],
+    "movimento_perdido_21_55_a_23_48": {
+      "delta_pnl_perdido_long": "Sem ação — $79,319→$80,213 = +$894 = +0.5% qty 0.005 = +$4.47 perdido se LONG entry às 21:55 (mas tese SHORT @ 21:55 -6/6)",
+      "lição": "Wake longo (1500s) durante movimento ativo continua sendo gap operacional. Notifier critério D recém-adicionado deve ajudar próximas escaladas",
+      "ação_correta_futura": "Quando watcher score >=10 persistente + macro_bias aligned: avaliar override breakout pra entrada intra-bar"
+    },
+    "proximo_gatilho_oportunidade": {
+      "cenario_A_LONG_pullback": "Pullback pra $79,500-$79,759 (fechamento 1H 21 / abertura 1H 22 = gap fill) com vol decrescente + reversão clara + score LONG >=4/6 + TP2 estrutural $80,800-$81,000 = R:R >=3 ideal",
+      "cenario_B_SHORT_exhaustion_confirmado": "Close 1H 00:00 bear engulfing + vol expansion bear + watcher score 5+ BEARISH persistente + close <$79,759 = SHORT estrutural TP2 $78,500",
+      "cenario_C_LONG_breakout_secundario": "Quebra $80,433 com vol expansion >5K na 1H + close 1H >$80,500 = continuation",
+      "cenario_D_close_4H_00_topping": "Close 4H 00:00 com upper wick $300+ + vol decrescente vs 4H 20:00 = exhaustion 4H verdadeiro"
+    },
+    "proximo_wakeup": "00:05 (5min após close 1H 24:00 + close 4H 00:00 — janela inflexão duplo close)",
+    "auto_avaliacao": {
+      "vies_emocional_check": "Tentação LONG 6/6 base parecia óbvia, mas R:R 1.80 + TP2 ausente acima = chase. Tentação SHORT pelos 4 sinais exhaustion seria contra-trend marginal. Disciplina v5 prevalece.",
+      "custo_se_hold_zerado_e_continuation_LONG": "Oportunidade perdida MAS late entry sem TP2 estrutural não é entrada saudável",
+      "custo_se_hold_zerado_e_topping_real": "ZERO — capital preservado pra setup melhor (close 4H 00:00 confirmado)",
+      "lição_sobre_macro_bias": "Macro_bias LONG dominante NÃO significa LONG em qualquer preço. Significa: pullbacks aligned LONG são prioritários, breakouts aligned LONG são válidos COM R:R >=3, mas chase no topo do bar 4H explosivo é tardio independente de macro"
+    }
+  },
   "ciclo_delta_21_55": {
     "_doc": "Ciclo Opus loop dinâmico — POSIÇÃO ZERADA (SL $78.800 fillou às 21:30 no squeeze). User observou doji D + sugeriu SHORT failed breakout cabeça morta H&S $79.182, deixando decisão pra FÊNIX. ANÁLISE MULTI-TF RIGOROSA: premissa do user FALSA (D NÃO é doji — body bull $793 / range $1.618 = marubozu-ish bull) e cabeça H&S $79.182 já PERFURADA $656 acima ($79.838 high) com vol institucional 11K + breakout 4H 20:00 explosivo + 1H 21:00 parabólico bull range $1.469 vol 8.5K + orderbook 11:1 buy_pressure (BID 26.09 vs ASK 2.34) + watcher latest 13.5 OPUS bullish (volume_surge 11.89× + range_expansion 4.24× direction=expansion_bullish). Tese H&S 1249 MORTA — invalidada estruturalmente. SHORT aqui = chase inverso. Score multi-TF SHORT = -6/6 (oposto). DECISÃO: SEM ENTRADA, HOLD ZERADO. Aguardar pullback estrutural com vol decrescente OU exhaustion 4H verdadeiro (upper wick $300+ + vibe inflexão).",
     "ts": "2026-05-03T21:55-04:00",
@@ -1582,8 +1722,8 @@
       "pnl_percent": 0.38
     }
   ],
-  "last_github_push_ts": 1777866538.5633101,
-  "last_github_push": "03/05 23:48",
+  "last_github_push_ts": 1777866841.498615,
+  "last_github_push": "03/05 23:54",
   "incidentes_aprendizado": [
     {
       "ts": "2026-05-02T20:19",
