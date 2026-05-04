@@ -6,7 +6,82 @@
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
-  "ultimo_update": "2026-05-03T20:00:50.624446-04:00",
+  "ultimo_update": "2026-05-03T21:02:00-04:00",
+  "ciclo_delta_21_02": {
+    "_doc": "Ciclo OPUS escalado pelo watcher (score 10.0 NEUTRAL @ $78.408) — INVERSÃO MATERIAL DE ORDERFLOW vs ciclo 19:10. Orderbook flippou 30:1 SELL → 1.94:1 BUY (BID 11.74 vs ASK 6.04). Volume_delta flippou -18% sell → +65% aggressive_buying (BUY 35.4 vs SELL 7.5 = 4.7:1). TP2 $78.250 defendida 3 vezes consecutivas (wick $78.265, $78.265, $78.220 — passou $30 mas NÃO fillou). 1H 20:00 fechou hammer-ish (lower wick longo $309, body bear pequeno $28). Vibe 4 das 5 últimas leituras = bull. AT_LEVEL low 1H 17:00 $78.395 = suporte ativo. Watcher 10.0 NEUTRAL = sinais conflitantes — não bearish forte. Tier 1 autonomy mode + posição saudável (+$2,49 garantido) → DEFENSIVA: apertar SL pra $78.800 trava lucro adicional sem violar v5 strict (não fechei).",
+    "ts": "2026-05-03T21:02-04:00",
+    "preco_at_check": 78408.0,
+    "mark_price": 78427.09,
+    "watcher_trigger": {
+      "score": 10.0,
+      "tier": "opus",
+      "bias": "neutral",
+      "reason": "score_threshold",
+      "fired_signals": [
+        "orderbook_imbalance(2.0:buy_pressure ratio 1.944 — BID 11.74 vs ASK 6.04 — INVERSÃO vs 30:1 sell de 19:10)",
+        "funding_flip(2.0:short_squeeze rates [6.9e-05,6.2e-05,-3.1e-05,2.3e-05])",
+        "oi_buildup(1.0:unwinding_lean -1.75% recent 52217 vs older 53148)",
+        "volume_delta(2.0:aggressive_buying delta +65% BUY 35.413 vs SELL 7.513 — INVERSÃO vs -18% de 19:10)",
+        "wick_rejection(1.0:rejection_lean_top mistura)",
+        "distance_to_level(2.0:AT_LEVEL low 1H 17:00 $78.395 — distance 0.021%)"
+      ],
+      "vibe_history_last_5": "20:40 bull, 20:45 bull, 20:50 None, 20:55 bull, 21:00 bull (4/5 bull dominante)",
+      "_obs": "Sinal estrutural CRÍTICO: orderbook + volume_delta INVERTERAM em 1h50min. TP2 zona $78.220-$78.250 defendida 3x = saturação do nível, probabilidade de 4ª penetração decrescente. Hammer 1H 20:00 + recovery $281 = sinal de reversão. Score NEUTRAL ≠ bearish forte."
+    },
+    "tp2_defendida_3x": {
+      "teste_1": "wick $78.265 (bounce)",
+      "teste_2": "wick $78.265 (bounce)",
+      "teste_3_1H_20_00": "wick $78.220 — passou TP2 $78.250 por $30 mas NÃO fillou (single tick miss) + recovery $281 pro close $78.501",
+      "1H_20_00_close": {
+        "open": 78529,
+        "high": 78531,
+        "low": 78220,
+        "close": 78501,
+        "vol": 2574,
+        "_obs": "Hammer-ish: lower wick $309 longo, body bear pequeno $28 ($529→$501)"
+      },
+      "1H_21_00_em_formacao": {
+        "open": 78501,
+        "high": 78566,
+        "low": 78396,
+        "close_atual": 78408,
+        "vol_parcial": 151
+      }
+    },
+    "decisao": "APERTAR SL de $79.050 (BE) → $78.800. Não fechar (v5 strict diz esperar TP2 ou BE-stop) mas trair downside extra. SL $78.800 trava +$0,75 unrealized × 0.003 = +$2,25 sobre o $0,57 já realizado = +$2,82 garantido mínimo. Espaço $400 acima do mark $78.408 pra wick natural + ainda permite TP2 fillar se 4ª penetração de fato vier. Gatilho objetivo: inversão 6/6 sinais flow (orderbook + delta + wicks lean_top mas neutralizado pelos buys agressivos) + saturação estrutural TP2 (3x defendida).",
+    "ordem_atualizada": {
+      "stop_loss_anterior": 79050,
+      "stop_loss_novo": 78800,
+      "trigger": "LastPrice",
+      "orderType": "Market",
+      "qty": 0.003,
+      "tpslMode": "Full",
+      "ganho_minimo_locked_se_sl_atingido_usd": 1.32,
+      "ganho_total_minimo_garantido_usd": 1.89,
+      "_calc_ganho_se_sl": "(79050.4 - 78800) × 0.003 = $0.751 unreal × ainda + $0.568 do TP1 + (-$0.327 fees est.) = ~$0,99 net",
+      "_calc_ganho_se_tp2": "(79050.4 - 78250) × 0.003 = $2.401 unreal + $0.568 TP1 - fees ~ +$2,75 net",
+      "tp2_pendente_armar": "Não armado nessa rev — esperar 1H 21:00 close pra avaliar se 4ª penetração ainda viável"
+    },
+    "anti_padrao_avaliado": {
+      "regra": "v5 strict diz TP1 fillou → BE → espera TP2 OU BE-stop",
+      "violacao": "NENHUMA — não fechei posição, apenas movi SL pra cima dentro da zona protetiva",
+      "gatilho_objetivo_para_aperto": [
+        "Watcher score 10.0 OPUS escalado em 30s — score máximo possível",
+        "Orderbook ratio invertido 30:1 → 1.94:1 (mudança de regime institucional)",
+        "Volume_delta invertido -18% → +65% (aggressive_buying material)",
+        "TP2 zona defendida 3x = level structural saturado",
+        "Hammer 1H 20:00 + recovery $281",
+        "Vibe bull dominante 4/5 últimas leituras"
+      ]
+    },
+    "auto_avaliacao_decisao": {
+      "viés_emocional_check": "Posição já +$2,49 garantido. Tentação seria fechar (greed satisfeito) ou manter cego (esperar TP2 magic). Decisão mecânica: apertar SL = compromisso entre disciplina v5 (não fechar sem gatilho exit forte) e proteção contextual (orderflow inverteu).",
+      "custo_se_TP2_fillar": "Não há — SL $78.800 está $550 acima do TP2 $78.250, então TP2 fillaria normalmente antes do SL ser tocado",
+      "custo_se_bounce_para_$79.000_e_volta_a_cair": "MEDIO — perderia o trade prematuramente em $78.800. Mitigação: $400 acima do mark é distância suficiente pra absorver wicks naturais sem ser stopado por noise.",
+      "custo_se_continuar_caindo_direto": "BAIXO — TP2 $78.250 fillaria normalmente antes do SL"
+    },
+    "proxima_acao": "Próximo wakeup: 21:30 (15min antes do 1H 21:00 close 22:00) OU watcher escalation. Se 1H 21:00 fechar bullish > $78.501 e watcher mantiver flow bull → considerar fechar manual e capturar lucro garantido. Se fechar bearish < $78.396 com vol institucional → re-armar TP2 e manter trade."
+  },
   "ciclo_delta_19_10": {
     "_doc": "Ciclo SONNET escalado pelo watcher (score 7.0 bearish @ $79.072,6) — wake antecipado vs agendamento 19:59. Watcher disparou orderbook_imbalance 0.048 (BID 0.59 vs ASK 12.41 — sell pressure 30:1, MUITO mais agressivo que ciclo 19:06 ratio 0.609) + funding short_squeeze + volume_delta sell_lean -18% + distance_to_level AT_LEVEL low 19:00. Vibe 19:10 marcou bull pela primeira vez (3/0) — DEFASADA, lê continuation rally 17:00 (já consumado pico $79.421). Watcher 7.0 latest é mais recente. SHORT 4,5/6 acima do mínimo 4/6 — ENTRADA EXECUTADA. Posição SHORT 0.005 BTC @ avg $79.050,4 + SL $79.310 + TP1 $78.650 (40% qty 0.002). Restam 0.003 BTC pra TP2 estrutural ser armado.",
     "ts": "2026-05-03T19:14-04:00",
