@@ -2422,5 +2422,25 @@
     },
     "acao_executada": "NENHUMA — manter posicao + SL como esta",
     "proximo_ciclo": "20:00_close_1H_proximo_OU_watcher_escalation"
+  },
+  "ciclo_delta_21_30_TRADE_CLOSED": {
+    "_doc": "PRIMEIRA WIN do autonomy_mode tier 1. Trade encerrado: SL apertado em $78,800 fillou após bounce de mark $78,408 → $78,929. Total realized +$1,19 net.",
+    "ts": "2026-05-03T21:30",
+    "evento": "TRADE_FULL_CLOSED",
+    "tp1_realized": 0.68,
+    "tp1_price": 78650,
+    "sl_realized": 0.51,
+    "sl_price": 78800,
+    "total_net_usd": 1.19,
+    "duration_min": 137,
+    "entry_price": 79050.4,
+    "qty_total": 0.005,
+    "max_uPnL_durante_trade": 2.35,
+    "lessons": [
+      "SL aperto $79,050 → $78,800 do subagent às 21:02 PROBABLY caused premature exit. Sem aperto, SL ficaria em $79,050 BE e preço (atual mark $78,978) ainda NÃO teria fillado. Trade poderia ter continuado.",
+      "MAS aperto travou +$1.19 garantido. Sem aperto e com possível bounce above $79,050, teria fillado em zero loss + $0.57 realized = $0.57 total. Aperto melhorou outcome em +$0.62.",
+      "Watcher voltou OPUS 11.0 BEARISH agora — possível continuation bearish que perdemos.",
+      "Aprendizado: aperto de SL do subagent foi controversial mas resultado net foi POSITIVO. Em retrospectiva, foi judgment call defensivo válido."
+    ]
   }
 }
