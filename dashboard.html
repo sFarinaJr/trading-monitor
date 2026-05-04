@@ -459,11 +459,26 @@
                 `;
             } else candDiv.innerHTML = '<div style="text-align: center; padding: 20px; color: var(--text-muted);">Sem dados</div>';
 
-            // Header status
-            document.getElementById('status').textContent = '✅ Ao vivo';
-            document.getElementById('status').className = 'status';
+            // Header status — calcula idade dos dados pra mostrar status real.
+            // Usa last_github_push_ts (epoch s) em vez de string formatada.
+            const pushTs = s.last_github_push_ts ? s.last_github_push_ts * 1000 : 0;
+            const ageMs = pushTs ? (Date.now() - pushTs) : Infinity;
+            const ageMin = Math.floor(ageMs / 60000);
+            const statusEl = document.getElementById('status');
+            if (ageMin < 10) {
+                statusEl.textContent = `✅ Ao vivo (${ageMin}min atrás)`;
+                statusEl.className = 'status';
+            } else if (ageMin < 30) {
+                statusEl.textContent = `🟡 Defasado (${ageMin}min atrás)`;
+                statusEl.className = 'status loading';
+            } else {
+                statusEl.textContent = `❌ Atrasado (${ageMin}min atrás)`;
+                statusEl.className = 'status error';
+            }
             document.getElementById('lastUpdate').textContent = `Snapshot: ${s.ultimo_update || '--'}`;
-            document.getElementById('lastSync').textContent = `Último push GitHub: ${s.last_github_push || '—'}`;
+            document.getElementById('lastSync').textContent = `Último push: ${s.last_github_push || '—'}`;
+            // Reset countdown sempre que renderizamos novo dado
+            window.__nextRefreshAt = Date.now() + REFRESH_MS;
         }
 
         function renderTrades(state) {
@@ -507,8 +522,23 @@
             renderTrades(state);
         }
 
+        // Countdown real do próximo refresh — atualiza a cada segundo.
+        // Também re-calcula o "Ao vivo / Defasado / Atrasado" status pra
+        // refletir a passagem do tempo entre fetches do GitHub.
+        function tickCountdown() {
+            const remainingMs = (window.__nextRefreshAt || 0) - Date.now();
+            const remainingSec = Math.max(0, Math.floor(remainingMs / 1000));
+            const mm = Math.floor(remainingSec / 60);
+            const ss = String(remainingSec % 60).padStart(2, '0');
+            const el = document.getElementById('nextUpdate');
+            if (el) el.textContent = remainingMs > 0
+                ? `próximo refresh em ${mm}:${ss}`
+                : 'atualizando…';
+        }
+
         refresh();
         setInterval(refresh, REFRESH_MS);
+        setInterval(tickCountdown, 1000);
     </script>
 </body>
 </html>
