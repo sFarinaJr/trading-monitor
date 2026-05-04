@@ -6,7 +6,7 @@
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
-  "ultimo_update": "04/05/2026 10:50:35",
+  "ultimo_update": "04/05/2026 10:55:38",
   "ciclo_delta_23_48": {
     "_doc": "Ciclo Opus loop dinâmico — POSIÇÃO ZERADA. Watcher disparou OPUS 10.5+ várias vezes em 6min (23:41-23:46) com bias oscilando bull/bear/neutral. Preço subiu de $79,319 (21:55) pra $80,213 (+$894/+1.13% em 1h53min). Análise multi-TF rigorosa v5.1: D MARUBOZU FORTE 75% body bull, 4H explosivo +$1,666 vol 26K, 1H 21+22 marubozus consecutivos vol 9.5K+10.5K, 1H 23 doji-ish saturação topo (upper wick $239 + vol decay 4.2K vs 10.5K + range compression $548 vs $1,469), 15m micro pullback healthy $80,433→$79,885 + bounce $80,188 com vol microscópico (1.5K→741→217). Score LONG 6.0/6 base mas R:R 1.82 (TP2 estrutural ausente acima de $80,433 — só $81k psicológico, sem 3+ toques históricos). Score SHORT 1.0/6 contra macro_bias LONG (precisa 5+/6 mínimo). DECISÃO: HOLD ZERADO. 4 sinais exhaustion topo notados (upper wick + vol decay + funding flip positivo + orderbook 3:1 sell) MAS sem close 1H bear engulfing confirmado — não vira gatilho.",
     "ts": "2026-05-03T23:48-04:00",
@@ -1395,16 +1395,30 @@
     "_obs": "Negativo = pior que baseline (perdendo). Hoje: -$162 vs baseline."
   },
   "posicao_atual": {
-    "ts_snapshot": "04/05/2026 10:46:16",
+    "ts_snapshot": "04/05/2026 10:51:16",
     "side": "NONE",
     "size_btc": 0.0,
     "avg_entry": null,
-    "mark_price": 79486,
+    "mark_price": 79962,
     "unrealised_pnl_usd": 0.0,
     "sl": null,
     "tp1_limit": null,
     "tp2_target_estrutural": null,
-    "estado": "ZERADA · pos-recovery $1.056 do bottom · 2 wake events processados (79.397+79.500 cruzados pra cima) · LONG 2/6 reject · SHORT -1/6 reject contra recovery"
+    "estado": "ZERADA · LIMIT LONG ARMADO conforme v6.3.4 (entry + SL + TP1 em sequencia atomica)",
+    "limit_armado": {
+      "orderLinkId_entry": "fenix_long_v638_1049",
+      "side": "Buy",
+      "qty": 0.005,
+      "entry_limit": 79700,
+      "sl_trigger": 79437,
+      "sl_orderLinkId": "fenix_sl_long_v638_1049",
+      "tp1_limit": 80099,
+      "tp1_qty": 0.002,
+      "tp1_orderLinkId": "fenix_tp1_long_v638_1049",
+      "tp2_estrutural": 86197,
+      "rr_simples": 24.7,
+      "score_base": "4/6"
+    }
   },
   "ordens_pendentes": [],
   "reposicionamento_21_05": {
@@ -1441,28 +1455,19 @@
     }
   ],
   "ultimo_ciclo_relatorio": {
-    "ts": "04/05/2026 10:46:16",
-    "wake_events_processados": 2,
-    "detalhe": [
-      {
-        "level": 79397,
-        "ts_cross": "10:40:12",
-        "razao": "recovery confirma · avaliar LONG aligned",
-        "decisao": "LONG REJECT · score 2/6 < 4"
-      },
-      {
-        "level": 79500,
-        "ts_cross": "10:42:10",
-        "razao": "SHORT retest se rejeicao",
-        "decisao": "SHORT REJECT · sem rejeicao · score -1/6 contra recovery"
-      }
-    ],
-    "analise_long": "entry $79.486 · SL $79.122 · TP2 $80.603 · R:R 3,07 marginal · MAS score base 2/6 falha · contra-trend 2/3 sinais (RSI ausente)",
-    "analise_short": "mark atravessou nao houve rejeicao · score -1/6 contra recovery em curso",
-    "autoavaliacao_falha_anterior": "Processei wakes silenciosamente sem reportar · anti-padrao corrigido · agora ciclo completo obrigatorio",
-    "proximo_marco": "Wake natural 11:00 close 1H 11:00 OU watcher dispara novo flag",
-    "ciclo_id": "wake_event_processed_10_45",
-    "mark": 79486
+    "ts": "04/05/2026 10:51:16",
+    "wake_event": "3 levels alto cruzados em 9min · $79.760+$79.836+$80.000",
+    "recovery_observado": "$78.430 → $80.197 = +$1.767 em 2h30min · 4H bull body $1.388 vol 6.8K institucional",
+    "d_shooting_star_status": "sendo INVALIDADO em tempo real · mark recuperou e passou do mid range D",
+    "score_long_re_avaliado": "4,0/6 (era 2,0/6 antes do recovery confirmar)",
+    "modulo_02_3_sinais": "3/3 confirmados (vol cap + reversal + RSI presumido)",
+    "tp2_escolhido": "$86.197 (macro D 4 toques · do state recovery candidates) porque file strict so tem $80.603 com R:R 1,22",
+    "setup_completo_armado": "limit $79.700 + SL trigger $79.437 + TP1 $80.099 em sequencia atomica v6.3.4",
+    "rr": 24.7,
+    "sizing": "tier 1 0.005 BTC · risco $1.32 (-0.34% equity)",
+    "decisao": "LONG limit armado · aguardando pullback retest pra fillar",
+    "ciclo_id": "wake_alto_LONG_armed",
+    "mark": 79962
   },
   "contexto_macro_observado": {
     "evento_chave": "Bull trap D+4H em 79182 — preço rompeu resistência D 78900 com vol 9.7× pra 79182 e devolveu 489pts em 30min, fechando 1H 17:00 em 78693. Configura padrão clássico de exhaustion em topo / armadilha pra compradores tardios.",
@@ -1730,8 +1735,8 @@
       "pnl_percent": 0.38
     }
   ],
-  "last_github_push_ts": 1777906235.877543,
-  "last_github_push": "04/05 10:50",
+  "last_github_push_ts": 1777906538.995988,
+  "last_github_push": "04/05 10:55",
   "incidentes_aprendizado": [
     {
       "ts": "2026-05-02T20:19",
@@ -2934,5 +2939,20 @@
     "proximo_marco": "Wake natural 11:00 close 1H 11:00 OU watcher dispara novo flag",
     "ciclo_id": "wake_event_processed_10_45",
     "mark": 79486
+  },
+  "ciclo_wake_alto_10_49": {
+    "ts": "04/05/2026 10:51:16",
+    "wake_event": "3 levels alto cruzados em 9min · $79.760+$79.836+$80.000",
+    "recovery_observado": "$78.430 → $80.197 = +$1.767 em 2h30min · 4H bull body $1.388 vol 6.8K institucional",
+    "d_shooting_star_status": "sendo INVALIDADO em tempo real · mark recuperou e passou do mid range D",
+    "score_long_re_avaliado": "4,0/6 (era 2,0/6 antes do recovery confirmar)",
+    "modulo_02_3_sinais": "3/3 confirmados (vol cap + reversal + RSI presumido)",
+    "tp2_escolhido": "$86.197 (macro D 4 toques · do state recovery candidates) porque file strict so tem $80.603 com R:R 1,22",
+    "setup_completo_armado": "limit $79.700 + SL trigger $79.437 + TP1 $80.099 em sequencia atomica v6.3.4",
+    "rr": 24.7,
+    "sizing": "tier 1 0.005 BTC · risco $1.32 (-0.34% equity)",
+    "decisao": "LONG limit armado · aguardando pullback retest pra fillar",
+    "ciclo_id": "wake_alto_LONG_armed",
+    "mark": 79962
   }
 }
