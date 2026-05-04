@@ -6,7 +6,7 @@
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
-  "ultimo_update": "04/05/2026 05:02:03",
+  "ultimo_update": "04/05/2026 05:07:06",
   "ciclo_delta_23_48": {
     "_doc": "Ciclo Opus loop dinâmico — POSIÇÃO ZERADA. Watcher disparou OPUS 10.5+ várias vezes em 6min (23:41-23:46) com bias oscilando bull/bear/neutral. Preço subiu de $79,319 (21:55) pra $80,213 (+$894/+1.13% em 1h53min). Análise multi-TF rigorosa v5.1: D MARUBOZU FORTE 75% body bull, 4H explosivo +$1,666 vol 26K, 1H 21+22 marubozus consecutivos vol 9.5K+10.5K, 1H 23 doji-ish saturação topo (upper wick $239 + vol decay 4.2K vs 10.5K + range compression $548 vs $1,469), 15m micro pullback healthy $80,433→$79,885 + bounce $80,188 com vol microscópico (1.5K→741→217). Score LONG 6.0/6 base mas R:R 1.82 (TP2 estrutural ausente acima de $80,433 — só $81k psicológico, sem 3+ toques históricos). Score SHORT 1.0/6 contra macro_bias LONG (precisa 5+/6 mínimo). DECISÃO: HOLD ZERADO. 4 sinais exhaustion topo notados (upper wick + vol decay + funding flip positivo + orderbook 3:1 sell) MAS sem close 1H bear engulfing confirmado — não vira gatilho.",
     "ts": "2026-05-03T23:48-04:00",
@@ -1380,12 +1380,12 @@
     "invalidada_em": "2026-05-03T16:00 UTC-4"
   },
   "saldo": {
-    "ts_snapshot": "04/05/2026 04:56:51",
-    "equity_usd": 392.74,
+    "ts_snapshot": "04/05/2026 05:02:12",
+    "equity_usd": 392.27,
     "available_usd": 376.62,
     "cumPnL_unified_usd": -6286.0,
     "baseline_pnl_usd": -6124.0,
-    "delta_vs_baseline_usd": -162.03,
+    "delta_vs_baseline_usd": -162.5,
     "positionIM_usd": 16.16
   },
   "progresso_vs_baseline": {
@@ -1395,12 +1395,12 @@
     "_obs": "Negativo = pior que baseline (perdendo). Hoje: -$162 vs baseline."
   },
   "posicao_atual": {
-    "ts_snapshot": "04/05/2026 04:56:51",
+    "ts_snapshot": "04/05/2026 05:02:12",
     "side": "Buy (LONG)",
     "size_btc": 0.005,
     "avg_entry": 79723.4,
-    "mark_price": 79718.09,
-    "unrealised_pnl_usd": -0.03,
+    "mark_price": 79623.84,
+    "unrealised_pnl_usd": -0.5,
     "sl": 79255,
     "tp1_limit": 80130,
     "tp1_qty": 0.002,
@@ -1410,7 +1410,7 @@
       94370,
       107341
     ],
-    "estado": "LONG quase flat -$0,03 · 1H 04:00 fechando em 4min como bull body $49 lower wick $110 · trigger formal provavelmente nao acionara",
+    "estado": "LONG -$0,50 · 1H 04:00 fechou DOJI body $1,5 vol 1.332 (trigger formal nao acionou) · novo 1H abriu bear · vibe bear dominante voltou",
     "liq_price": 76919.1,
     "breakeven_with_fees": 79813.85
   },
@@ -1449,16 +1449,18 @@
     }
   ],
   "ultimo_ciclo_relatorio": {
-    "ts": "04/05/2026 04:56:51",
-    "ciclo_id": "autonomous_loop_04_56_PRE_1H_CLOSE",
-    "mark": 79718.09,
-    "tese": "LONG aberto · 1H 05:00 fechando em 4min · martelo bull formando",
-    "pos_status": "uPnL -$0,03 quase exato breakeven nominal",
-    "watcher": "vibe oscilante 4 bear/5 neutral/0 bull recentes · score 5-9",
-    "estrutura_1h_em_formacao": "O $79.663 H $79.782 L $79.553 C $79.712 vol 1.256 · BULL body $49 · lower wick $110 · vol < 1500",
-    "trigger_formal_status": "close < $79.700 ✗ + vol > 1500 ✗ · trigger NAO vai acionar nesse 1H",
-    "decisao": "HOLD · 1H bull pequeno em formacao · trade continua plano",
-    "proximo_marco": "Wake 05:01-05:03 · capturar 1H close real 05:00"
+    "ts": "04/05/2026 05:02:12",
+    "ciclo_id": "autonomous_loop_05_01_1H_DOJI_NO_TRIGGER",
+    "mark": 79623.84,
+    "tese": "LONG aberto · 1H 04:00 fechou doji sem trigger formal · trade deteriorando passivo",
+    "pos_status": "uPnL -$0,50 · cada hora aberto = leve queda",
+    "watcher": "vibe bearish dominante voltou 5/10 bear · score 5-9",
+    "estrutura_1h_fechado": "O $79.663 H $79.782 L $79.553 C $79.664 vol 1.332 · DOJI body $1,5 lower wick $110 upper wick $118",
+    "trigger_formal": "close < $79.700 ✓ + vol > 1500 ✗ (1.332) · NAO acionou por vol insuficiente",
+    "distancia_triggers": "TP1 +$506 · trigger manual -$124 · SL -$369 (ratio adverso)",
+    "veto_3_v6_3_3": "componente 2 todos 4 criterios ✓ · componente 1 borderline alternou",
+    "decisao": "HOLD · disciplina mecanica · sem ajustes · monitor breakdown $79.585",
+    "proximo_marco": "Wake 05:08-05:10 · continuacao bear ou nova defesa $79.585"
   },
   "contexto_macro_observado": {
     "evento_chave": "Bull trap D+4H em 79182 — preço rompeu resistência D 78900 com vol 9.7× pra 79182 e devolveu 489pts em 30min, fechando 1H 17:00 em 78693. Configura padrão clássico de exhaustion em topo / armadilha pra compradores tardios.",
@@ -1726,8 +1728,8 @@
       "pnl_percent": 0.38
     }
   ],
-  "last_github_push_ts": 1777885323.479061,
-  "last_github_push": "04/05 05:02",
+  "last_github_push_ts": 1777885626.188213,
+  "last_github_push": "04/05 05:07",
   "incidentes_aprendizado": [
     {
       "ts": "2026-05-02T20:19",
