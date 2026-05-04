@@ -6,7 +6,7 @@
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
-  "ultimo_update": "04/05/2026 11:56:19",
+  "ultimo_update": "04/05/2026 12:01:22",
   "ciclo_delta_23_48": {
     "_doc": "Ciclo Opus loop dinâmico — POSIÇÃO ZERADA. Watcher disparou OPUS 10.5+ várias vezes em 6min (23:41-23:46) com bias oscilando bull/bear/neutral. Preço subiu de $79,319 (21:55) pra $80,213 (+$894/+1.13% em 1h53min). Análise multi-TF rigorosa v5.1: D MARUBOZU FORTE 75% body bull, 4H explosivo +$1,666 vol 26K, 1H 21+22 marubozus consecutivos vol 9.5K+10.5K, 1H 23 doji-ish saturação topo (upper wick $239 + vol decay 4.2K vs 10.5K + range compression $548 vs $1,469), 15m micro pullback healthy $80,433→$79,885 + bounce $80,188 com vol microscópico (1.5K→741→217). Score LONG 6.0/6 base mas R:R 1.82 (TP2 estrutural ausente acima de $80,433 — só $81k psicológico, sem 3+ toques históricos). Score SHORT 1.0/6 contra macro_bias LONG (precisa 5+/6 mínimo). DECISÃO: HOLD ZERADO. 4 sinais exhaustion topo notados (upper wick + vol decay + funding flip positivo + orderbook 3:1 sell) MAS sem close 1H bear engulfing confirmado — não vira gatilho.",
     "ts": "2026-05-03T23:48-04:00",
@@ -1380,12 +1380,13 @@
     "invalidada_em": "2026-05-03T16:00 UTC-4"
   },
   "saldo": {
-    "ts_snapshot": "04/05/2026 10:56:09",
-    "equity_usd": 391.04,
-    "available_usd": 391.04,
-    "cumPnL_unified_usd": -6287.82,
+    "ts_snapshot": "04/05/2026 11:59:37",
+    "equity_usd": 392.21,
+    "available_usd": 382.55,
+    "cumPnL_unified_usd": -6287.39,
     "baseline_pnl_usd": -6124.0,
-    "delta_vs_baseline_usd": -163.82
+    "delta_vs_baseline_usd": -163.39,
+    "positionIM_usd": 9.67
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -1394,33 +1395,22 @@
     "_obs": "Negativo = pior que baseline (perdendo). Hoje: -$162 vs baseline."
   },
   "posicao_atual": {
-    "ts_snapshot": "04/05/2026 11:21:51",
-    "side": "NONE",
-    "size_btc": 0.0,
-    "avg_entry": null,
-    "mark_price": 79545,
-    "unrealised_pnl_usd": 0.0,
-    "sl": null,
-    "tp1_limit": null,
-    "tp2_target_estrutural": null,
-    "estado": "ZERADA · LIMIT LONG armado v640 conforme v6.3.4/v6.3.9 · 3 ordens em sequencia atomica",
-    "limit_armado_v640": {
-      "orderLinkId_entry": "fenix_long_v640_1121",
-      "side": "Buy",
-      "qty": 0.005,
-      "price": 79500,
-      "sl_orderLinkId": "fenix_sl_long_v640_1121",
-      "sl_trigger": 79202,
-      "sl_reduceOnly": true,
-      "tp1_orderLinkId": "fenix_tp1_long_v640_1121",
-      "tp1_trigger": 79798,
-      "tp1_reduceOnly": true,
-      "tp1_qty": 0.002,
-      "tp2_estrutural": 80603,
-      "tp2_macro_alvo": 86197,
-      "rr_simples": 3.7,
-      "score_base": "4/6"
-    }
+    "ts_snapshot": "04/05/2026 11:59:37",
+    "side": "Buy (LONG)",
+    "size_btc": 0.003,
+    "avg_entry": 79500,
+    "mark_price": 79904,
+    "unrealised_pnl_usd": 1.21,
+    "sl": 79500,
+    "sl_orderLinkId": "fenix_sl_long_v640_be_1158",
+    "tp1_filled": true,
+    "tp1_lock_realized": 0.43,
+    "tp2_target_estrutural": 80603,
+    "tp2_alternativos": [
+      86197,
+      90536
+    ],
+    "estado": "LONG ativo pos-TP1 · SL=entry $79.500 (BE workflow v6.1) · uPnL +$1,21 · TP1 lock +$0,43 garantido · proximo · TP2 zone $80.603 dispara aperto SL"
   },
   "ordens_pendentes": [],
   "reposicionamento_21_05": {
@@ -1457,18 +1447,13 @@
     }
   ],
   "ultimo_ciclo_relatorio": {
-    "ts": "04/05/2026 11:21:51",
-    "wake_event": "level $79.800 below cruzado · pullback retest · cenario A confirmado",
-    "mark_no_wake": 79310,
-    "mark_atual": 79545,
-    "movimento": "$80.222 → $79.252 (low) → $79.545 (recovery suave)",
-    "decisao_pre_armada_executada": "LONG limit pullback retest do rompimento",
-    "setup_completo_armado_v6_3_4_v6_3_9": "3 ordens · entry limit + SL trigger reduceOnly + TP1 trigger reduceOnly",
-    "rr": 3.7,
-    "score_base": "4/6",
-    "sizing": "tier 1 0.005 BTC · risco $1.49 (0.38% equity)",
-    "ciclo_id": "wake_alto_LONG_armed_v640",
-    "mark": 79545
+    "ts": "04/05/2026 11:59:37",
+    "ciclo_id": "long_v640_pos_tp1_sl_be",
+    "mark": 79904,
+    "tese": "LONG aberto · TP1 fillou silenciosamente · SL movido pra BE entry conforme v6.1",
+    "workflow_v6_1_status": "TP1 ✅ fillou +$0,43 lock · SL ✅ movido pra entry $79.500 · TP2 zone $80.603 disparara aperto",
+    "gap_detectado": "TP1 fillou sem watcher detectar pq nao tinha level $79.798 above pre-armado · adicionar pro proximo trade",
+    "decisao": "HOLD posicao · workflow v6.1 ativo · aguardar TP2 zone touch ou BE fillar"
   },
   "contexto_macro_observado": {
     "evento_chave": "Bull trap D+4H em 79182 — preço rompeu resistência D 78900 com vol 9.7× pra 79182 e devolveu 489pts em 30min, fechando 1H 17:00 em 78693. Configura padrão clássico de exhaustion em topo / armadilha pra compradores tardios.",
@@ -1736,8 +1721,8 @@
       "pnl_percent": 0.38
     }
   ],
-  "last_github_push_ts": 1777910179.84505,
-  "last_github_push": "04/05 11:56",
+  "last_github_push_ts": 1777910482.9284348,
+  "last_github_push": "04/05 12:01",
   "incidentes_aprendizado": [
     {
       "ts": "2026-05-02T20:19",
