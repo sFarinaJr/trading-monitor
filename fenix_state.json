@@ -6,7 +6,7 @@
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
-  "ultimo_update": "04/05/2026 01:40:03",
+  "ultimo_update": "04/05/2026 01:45:06",
   "ciclo_delta_23_48": {
     "_doc": "Ciclo Opus loop dinâmico — POSIÇÃO ZERADA. Watcher disparou OPUS 10.5+ várias vezes em 6min (23:41-23:46) com bias oscilando bull/bear/neutral. Preço subiu de $79,319 (21:55) pra $80,213 (+$894/+1.13% em 1h53min). Análise multi-TF rigorosa v5.1: D MARUBOZU FORTE 75% body bull, 4H explosivo +$1,666 vol 26K, 1H 21+22 marubozus consecutivos vol 9.5K+10.5K, 1H 23 doji-ish saturação topo (upper wick $239 + vol decay 4.2K vs 10.5K + range compression $548 vs $1,469), 15m micro pullback healthy $80,433→$79,885 + bounce $80,188 com vol microscópico (1.5K→741→217). Score LONG 6.0/6 base mas R:R 1.82 (TP2 estrutural ausente acima de $80,433 — só $81k psicológico, sem 3+ toques históricos). Score SHORT 1.0/6 contra macro_bias LONG (precisa 5+/6 mínimo). DECISÃO: HOLD ZERADO. 4 sinais exhaustion topo notados (upper wick + vol decay + funding flip positivo + orderbook 3:1 sell) MAS sem close 1H bear engulfing confirmado — não vira gatilho.",
     "ts": "2026-05-03T23:48-04:00",
@@ -1387,7 +1387,7 @@
     "locked": 0.0,
     "unrealisedPnl": 0.0,
     "_obs": "Snapshot fresco. Posição zerada desde 21:30. Net dia: -$29.10. Aguardando setup LONG aligned macro com R:R viável.",
-    "ts_snapshot": "2026-05-04 01:35:45"
+    "ts_snapshot": "2026-05-04 01:40:44"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -1406,7 +1406,7 @@
     "tp2_target": 0,
     "uPnL_atual": 0,
     "total_trade_atual": 0,
-    "ts_snapshot": "2026-05-04T01:35:45-04:00"
+    "ts_snapshot": "2026-05-04T01:40:44-04:00"
   },
   "ordens_pendentes": [],
   "reposicionamento_21_05": {
@@ -1443,18 +1443,18 @@
     }
   ],
   "ultimo_ciclo_relatorio": {
-    "horario": "01:35",
-    "preco": 79965,
+    "horario": "01:40",
+    "preco": 80073,
     "score_multi_tf": {
-      "LONG": "3-4/6 pullback raso só",
-      "SHORT": "3-4/6 abaixo de 5/6"
+      "LONG": "3-4/6 reversal sem zona ideal",
+      "SHORT": "2-3/6"
     },
-    "tese_atual": "PULLBACK PAROU $79,920 — não chegou zona ideal · demand_rejection_bottom firing",
-    "decisao": "HOLD — pullback raso ($337 do high) · zona ideal $79,500-$79,800 não atingida · esperar pullback profundo OR reversão clara",
-    "trigger_aguardado": "Continuação pullback até $79,500-$79,800 = LONG · OU reversão $80,300+ = continuation chase",
-    "proximo_marco": "Close 1H 01:00 às 02:00 UTC-4 (~25min)",
+    "tese_atual": "RANGE $79,920-$80,400 — pullback raso reverteu sem chegar zona LONG ideal",
+    "decisao": "HOLD — reversal pra cima mas sem ter tocado zona estrutural · score insuficiente",
+    "trigger_aguardado": "Pullback profundo $79,500-$79,800 com reversal 15m + vibe bull persistente OR breakout secundário >$80,500 vol >1500",
+    "proximo_marco": "Close 1H 01:00 às 02:00 UTC-4 (~20min)",
     "macro_bias": "LONG dominante",
-    "ts_snapshot": "2026-05-04T01:35:45-04:00"
+    "ts_snapshot": "2026-05-04T01:40:44-04:00"
   },
   "contexto_macro_observado": {
     "evento_chave": "Bull trap D+4H em 79182 — preço rompeu resistência D 78900 com vol 9.7× pra 79182 e devolveu 489pts em 30min, fechando 1H 17:00 em 78693. Configura padrão clássico de exhaustion em topo / armadilha pra compradores tardios.",
@@ -1722,8 +1722,8 @@
       "pnl_percent": 0.38
     }
   ],
-  "last_github_push_ts": 1777873203.9566221,
-  "last_github_push": "04/05 01:40",
+  "last_github_push_ts": 1777873506.896123,
+  "last_github_push": "04/05 01:45",
   "incidentes_aprendizado": [
     {
       "ts": "2026-05-02T20:19",
@@ -2727,5 +2727,14 @@
     ],
     "operational_rule": "Em LONG aligned com macro_bias, qualquer um desses TP2 candidates passa R:R simples (TP2/SL) >=3.0 com folga MASSIVA. Mais conservador = $89-90k cluster (mais próximo, R:R ~14-18 com SL estrutural). Mais agressivo = $109k+ (R:R 30+).",
     "licao_2026_05_03": "Análise anterior errou ao reportar 'R:R 1.80' usando TP2 próximo psicológico ($81k sem toques). Em recovery rally aligned com macro, TP2 estrutural fica a 11-37% distance — não 0.86%-1.5% tradicional. Aplicar regra v5.1 do módulo 03 sempre."
+  },
+  "loop_prompt_oficial_v6_2": {
+    "_doc": "Prompt oficial pra /loop dynamic mode — atualizado 2026-05-04 01:42 com regras DNA v6.1 + v6.2. Use este texto quando invocar /loop manualmente no terminal.",
+    "ts": "2026-05-04T01:42",
+    "prompt": "/loop FÊNIX, ciclo autônomo dinâmico — operar conforme DNA + state.autonomy_mode + state.macro_bias_atual + state.tp2_candidates_long_macro_recovery + state.dashboard_refresh_protocol. Aplicar refresh dashboard COMPLETO todo wake (posicao_atual + saldo + ultimo_ciclo_relatorio). Wake interval conforme wake_interval_rules (270-1500s contextual). Validar watcher state, flag, vibe history. Executar conforme score base ≥4/6 sem boosts + R:R simples ≥3.0 + TP2 estrutural 3+ toques. Workflow v6.1 Trail Estrutural Cripto pós-TP1. Reportar 🟦 INÍCIO/FIM. ZERO PERGUNTAS.",
+    "_changelog": [
+      "v6.2 (2026-05-04 01:42): adicionou refs explícitas a state.autonomy_mode + macro_bias_atual + tp2_candidates_long_macro_recovery + dashboard_refresh_protocol; substituiu 60-300s rígido por wake_interval_rules (270-1500s contextual); adicionou Trail Estrutural Cripto v6.1; explicitou score base SEM boosts; explicitou R:R simples ≥3.0 e TP2 3+ toques.",
+      "v1 (original): genérico, '60-300s', score >=4/6, ZERO PERGUNTAS"
+    ]
   }
 }
