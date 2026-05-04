@@ -6,7 +6,7 @@
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
-  "ultimo_update": "04/05/2026 07:43:39",
+  "ultimo_update": "04/05/2026 07:48:42",
   "ciclo_delta_23_48": {
     "_doc": "Ciclo Opus loop dinâmico — POSIÇÃO ZERADA. Watcher disparou OPUS 10.5+ várias vezes em 6min (23:41-23:46) com bias oscilando bull/bear/neutral. Preço subiu de $79,319 (21:55) pra $80,213 (+$894/+1.13% em 1h53min). Análise multi-TF rigorosa v5.1: D MARUBOZU FORTE 75% body bull, 4H explosivo +$1,666 vol 26K, 1H 21+22 marubozus consecutivos vol 9.5K+10.5K, 1H 23 doji-ish saturação topo (upper wick $239 + vol decay 4.2K vs 10.5K + range compression $548 vs $1,469), 15m micro pullback healthy $80,433→$79,885 + bounce $80,188 com vol microscópico (1.5K→741→217). Score LONG 6.0/6 base mas R:R 1.82 (TP2 estrutural ausente acima de $80,433 — só $81k psicológico, sem 3+ toques históricos). Score SHORT 1.0/6 contra macro_bias LONG (precisa 5+/6 mínimo). DECISÃO: HOLD ZERADO. 4 sinais exhaustion topo notados (upper wick + vol decay + funding flip positivo + orderbook 3:1 sell) MAS sem close 1H bear engulfing confirmado — não vira gatilho.",
     "ts": "2026-05-03T23:48-04:00",
@@ -1395,7 +1395,7 @@
     "_obs": "Negativo = pior que baseline (perdendo). Hoje: -$162 vs baseline."
   },
   "posicao_atual": {
-    "ts_snapshot": "04/05/2026 07:39:57",
+    "ts_snapshot": "04/05/2026 07:44:18",
     "side": "NONE",
     "size_btc": 0.0,
     "avg_entry": null,
@@ -1404,7 +1404,19 @@
     "sl": null,
     "tp1_limit": null,
     "tp2_target_estrutural": null,
-    "estado": "ZERADA · range expandiu pra baixo $78.708-$79.093 · 3a rejeicao $79.093 + breakdown leve $78.860 · vol moderado nao institucional"
+    "estado": "ZERADA · SHORT limit armado $79.060 aguardando retest resistencia · setup estrutural pos-crash",
+    "limit_pendente": {
+      "orderLinkId": "fenix_short_limit_v631_0750",
+      "side": "Sell",
+      "qty": 0.005,
+      "price": 79060,
+      "sl_planejado": 79243,
+      "tp1_planejado": 78665,
+      "tp2_estrutural": 78371,
+      "rr": 3.77,
+      "score_base": "4/6",
+      "distancia_do_mark_atual": 270
+    }
   },
   "ordens_pendentes": [],
   "reposicionamento_21_05": {
@@ -1441,16 +1453,18 @@
     }
   ],
   "ultimo_ciclo_relatorio": {
-    "ts": "04/05/2026 07:39:57",
-    "ciclo_id": "autonomous_loop_07_39_RANGE_BREAKDOWN",
+    "ts": "04/05/2026 07:44:18",
+    "ciclo_id": "autonomous_loop_07_50_SHORT_LIMIT_ARMED",
     "mark": 78790,
-    "tese": "ZERADA · range expandiu para baixo · selling pressure moderada sem forca institucional",
-    "estrutura_15m": "07:15 fechou bear $100 com upper wick $84 (3a rejeicao) · 07:30 em formacao bear $141 sem upper wick · low $78.708",
-    "watcher": "vibe 9/12 bear/neutral · score 6,5-8,5 · selling moderado",
-    "score_short_base": "3,5/6 abaixo do minimo 4/6 (D +1, 4H +1, 1H +0,5, 15m +0,5, vol 0, macro +0,5)",
-    "rr_short_hipotetico": "TP $78.170 SL $79.143 = R:R 1,76 < 3,0 INVIAVEL",
-    "decisao": "ZERADA · disciplina v6.3.3 · nao chase do crash consumido",
-    "proximo_marco": "Wake 07:48-07:50 · 15m close 07:45 · breakdown intensifica ou recovery"
+    "tese": "SHORT limit armado pos correcao TP2 calc · setup estrutural valido",
+    "correcao_origem": "User identificou conta TP2 errada · verifiquei e meu calculo R:R inicial usou entry chase $78.790 ao inves de entry estrutural $79.060 (perto resistencia)",
+    "limit_armado": "fenix_short_limit_v631_0750 Sell 0.005 @ $79.060 · NEW",
+    "sl_planejado": "$79.243",
+    "tp2_estrutural": "$78.371 · 8 toques 1H+4H+D · vol max 101K (institucional historico)",
+    "rr": 3.77,
+    "score_base": "4/6",
+    "decisao": "Limit armado aguardando retest resistencia · cancelar se invalidar",
+    "proximo_marco": "Wake 07:55-08:00 · monitorar pullback bull pra retest $79.060 ou breakdown maior"
   },
   "contexto_macro_observado": {
     "evento_chave": "Bull trap D+4H em 79182 — preço rompeu resistência D 78900 com vol 9.7× pra 79182 e devolveu 489pts em 30min, fechando 1H 17:00 em 78693. Configura padrão clássico de exhaustion em topo / armadilha pra compradores tardios.",
@@ -1718,8 +1732,8 @@
       "pnl_percent": 0.38
     }
   ],
-  "last_github_push_ts": 1777895019.217674,
-  "last_github_push": "04/05 07:43",
+  "last_github_push_ts": 1777895322.0378299,
+  "last_github_push": "04/05 07:48",
   "incidentes_aprendizado": [
     {
       "ts": "2026-05-02T20:19",
@@ -2521,7 +2535,14 @@
       "anti_padrao": "NUNCA atualizar só ultimo_ciclo_relatorio — sempre refresh completo dos 4 campos"
     },
     "loop_prompt_canonical_v6_2": "/loop FÊNIX, ciclo autônomo dinâmico — operar conforme DNA + state.autonomy_mode + state.macro_bias_atual + state.tp2_candidates_long_macro_recovery + state.dashboard_refresh_protocol. Aplicar refresh dashboard COMPLETO todo wake (posicao_atual + saldo + ultimo_ciclo_relatorio). Wake interval conforme wake_interval_rules (270-1500s contextual). Validar watcher state, flag, vibe history. Executar conforme score base ≥4/6 sem boosts + R:R simples ≥3.0 + TP2 estrutural 3+ toques. Workflow v6.1 Trail Estrutural Cripto pós-TP1. Reportar 🟦 INÍCIO/FIM. ZERO PERGUNTAS.",
-    "_loop_prompt_note": "Use loop_prompt_canonical_v6_2 ao invocar /loop manualmente. ScheduleWakeup interno já usa este prompt automaticamente desde 2026-05-04 01:42."
+    "_loop_prompt_note": "Use loop_prompt_canonical_v6_2 ao invocar /loop manualmente. ScheduleWakeup interno já usa este prompt automaticamente desde 2026-05-04 01:42.",
+    "wake_interval_rules_override": {
+      "ts": "04/05/2026 07:46:55",
+      "diretriz_user": "Wake no final do candle 1H · mercado descansa · user aciona se algo diferente",
+      "cadencia_padrao": "~55-60min sincronizado com 1H close",
+      "wake_alvo": "5min antes do close 1H (ex: 08:55, 09:55, 10:55)",
+      "override_se": "limit fillar na exchange (Bybit notifica via state) · user invocar manualmente"
+    }
   },
   "ciclo_delta_19_26": {
     "_doc": "TP1 FILLOU intra-bar 1H 19:00. Posição reduziu 0.005→0.003 BTC. Realized +$0,55. SL movido pra BE $79,050 conforme workflow v5 (TP1 fillou → SL pra BE → espera TP2 OU BE-stop).",
@@ -2820,5 +2841,46 @@
       "tp1_orfao_cancelado": "fenix_tp1_v631_0245b · Sell limit $80.130 0.002 cancelado · evitou virar SHORT acidental"
     },
     "proximo": "Aguardar novo setup limpo · score base >=4/6 + R:R >=3,0 + TP2 estrutural com prova de toques · monitor pos-breakdown"
+  },
+  "short_setup_v631_0750": {
+    "ts_armado": "04/05/2026 07:44:18",
+    "tese": "SHORT estrutural pos-crash · D shooting star + 4H bear violento + 1H 06:00 fechou bear $889 vol 16K · entry na resistencia $79.093 testada 3x",
+    "entry_limit": 79060,
+    "sl": 79243,
+    "sl_pts": 183,
+    "tp1_limit": 78665,
+    "tp1_qty": 0.002,
+    "tp2_estrutural": {
+      "price": 78371,
+      "zona": "$78.310-$78.432",
+      "toques": 8,
+      "tfs": "1H+4H+D",
+      "vol_max_toque": 101472,
+      "tp2_pts": 689
+    },
+    "rr_simples": 3.77,
+    "score_multi_tf": 4.0,
+    "sizing": "tier 1 · 0.005 BTC · risk $0.92 (-0.23% equity)",
+    "triggers_pre_armados": {
+      "cancelar_limit_se": "mark > $79.243 antes de fillar (invalidacao por wick acima do SL planejado)",
+      "cancelar_limit_se2": "mark < $78.500 sem fillar (preço foi sem mim, setup obsoleto)",
+      "pos_fill_workflow_v6_1": "TP1 fillou (40% qty) → SL pra BE $79.060 → TP2 zone $78.371 dispara aperto SL → trail estrutural"
+    },
+    "criterios_v6_3_3_atendidos": {
+      "score_base_4_6": true,
+      "rr_simples_3_0": true,
+      "tp2_estrutural_3_toques": true,
+      "tp2_com_prova_toques_explicita": true,
+      "fallback_used": false
+    }
+  },
+  "ultimo_ciclo_relatorio_observacao": {
+    "ts": "04/05/2026 07:46:55",
+    "msg": "User pediu wake longo no final do 1H · mercado deve descansar · limit SHORT $79.060 armado · user aciona se preciso",
+    "limit_armado": "fenix_short_limit_v631_0750 SHORT 0.005 @ $79.060 NEW",
+    "sl_planejado": 79243,
+    "tp2_estrutural": 78371,
+    "rr": 3.77,
+    "proximo_wake": "~08:55 (final candle 1H 09:00)"
   }
 }
