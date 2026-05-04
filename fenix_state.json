@@ -6,7 +6,7 @@
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
-  "ultimo_update": "2026-05-03T19:14-04:00",
+  "ultimo_update": "2026-05-03T20:00:50.624446-04:00",
   "ciclo_delta_19_10": {
     "_doc": "Ciclo SONNET escalado pelo watcher (score 7.0 bearish @ $79.072,6) — wake antecipado vs agendamento 19:59. Watcher disparou orderbook_imbalance 0.048 (BID 0.59 vs ASK 12.41 — sell pressure 30:1, MUITO mais agressivo que ciclo 19:06 ratio 0.609) + funding short_squeeze + volume_delta sell_lean -18% + distance_to_level AT_LEVEL low 19:00. Vibe 19:10 marcou bull pela primeira vez (3/0) — DEFASADA, lê continuation rally 17:00 (já consumado pico $79.421). Watcher 7.0 latest é mais recente. SHORT 4,5/6 acima do mínimo 4/6 — ENTRADA EXECUTADA. Posição SHORT 0.005 BTC @ avg $79.050,4 + SL $79.310 + TP1 $78.650 (40% qty 0.002). Restam 0.003 BTC pra TP2 estrutural ser armado.",
     "ts": "2026-05-03T19:14-04:00",
@@ -1102,17 +1102,17 @@
     "interpretacao": "PIOROU em $163.19 desde início FÊNIX"
   },
   "posicao_atual": {
-    "side": null,
-    "size": 0.0,
-    "avgPrice": 0,
-    "unrealisedPnl": 0,
-    "markPrice": 78935.93,
-    "breakEvenPrice": null,
-    "stopLoss": null,
-    "takeProfit": null,
-    "liqPrice": null,
-    "cumRealisedPnl": -4427.25479627,
-    "_obs": "Posição FECHADA por SL stop hit em 78901.86 (close 1H 16:00 brutal high $79.369 furou cabeça H&S). Realized -$30.29 nesse trade. TP1 órfão $77.900 cancelado por FÊNIX após constatar size=0."
+    "side": "Sell",
+    "size": 0.003,
+    "avg_price": 79050.4,
+    "stop_loss": 79050.0,
+    "stop_loss_tipo": "BE",
+    "tp1_filled": true,
+    "tp1_realized": 0.5519514,
+    "tp2_target": 78250.0,
+    "uPnL_atual": 1.5741,
+    "total_trade_atual": 2.1260514,
+    "ts_snapshot": "2026-05-03T20:00:50.624446-04:00"
   },
   "ordens_pendentes": [],
   "reposicionamento_21_05": {
@@ -2283,5 +2283,69 @@
       "OU BE-stop $79,050 → exit zero loss no remaining",
       "Sem trail Opção D (v5 simplificado)"
     ]
+  },
+  "ciclo_delta_19_59": {
+    "ts": "2026-05-03T20:00:50.624446-04:00",
+    "tipo": "delta_pre_close_duplo_1H_4H",
+    "modelo": "Sonnet/Opus delta — autonomy tier 1",
+    "watcher_score": 9.5,
+    "watcher_bias": "bearish",
+    "watcher_persistence": "5_consec_score_9.5",
+    "close_1h_19_00": {
+      "open": 79137.3,
+      "high": 79262.9,
+      "low": 78444.0,
+      "close": 78520.0,
+      "volume": 3243.064,
+      "verdict": "BEAR_CLOSE_CONFIRMADO_body_617_fechou_fundo_range_818"
+    },
+    "close_4h_16_00": {
+      "open": 78733.5,
+      "high": 79421.0,
+      "low": 78444.0,
+      "close": 78520.1,
+      "volume": 13517.759,
+      "verdict": "BEAR_FORTE_INSTITUCIONAL_vol_13.5K_wick_sup_688_close_no_fundo"
+    },
+    "score_multi_tf": {
+      "D": 0.5,
+      "4H": 1.5,
+      "1H": 1.5,
+      "15m": 1.0,
+      "vol_confirma": 0.5,
+      "total": "5.0/6.0_SHORT_FORTE"
+    },
+    "decisao": "MANTER_SHORT_0.003_SL_BE",
+    "decisao_codigo": "A",
+    "razoes": [
+      "Close 1H + 4H ambos BEAR confirmados com vol institucional 13.5K",
+      "SL ja BE = downside zero, deixar correr pra TP2 78250 (4 toques)",
+      "Apertar SL viola anti-padrao licao 05:19 (vibe oscilando, nao 4-consec)",
+      "Distancia pra TP2 = $270 = 0.34% — proxima ja",
+      "Conflito watcher (orderbook vs volume_delta) NAO e gatilho de exit",
+      "NOVA entrada SHORT descartada — TP2 muito proximo R:R ruim dobrar"
+    ],
+    "posicao": {
+      "side": "Sell",
+      "size": 0.003,
+      "avg_price": 79050.4,
+      "stop_loss": 79050.0,
+      "stop_loss_tipo": "BE",
+      "tp2_referencia": 78250.0,
+      "tp2_toques_historicos": 4,
+      "mark_price": 78525.7,
+      "uPnL": 1.5741,
+      "realized_tp1": 0.5519514,
+      "total_trade": 2.1260514,
+      "cumRealisedPnl": -4426.70284487
+    },
+    "ordens_estado": {
+      "open": 0,
+      "stop_loss_untriggered": 1,
+      "orfas": 0,
+      "validacao": "OK_apenas_SL_protegendo_BE"
+    },
+    "acao_executada": "NENHUMA — manter posicao + SL como esta",
+    "proximo_ciclo": "20:00_close_1H_proximo_OU_watcher_escalation"
   }
 }
