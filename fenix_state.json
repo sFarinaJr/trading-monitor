@@ -6,8 +6,86 @@
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
-  "ultimo_update": "2026-05-03T21:02:00-04:00",
-  "ciclo_delta_21_02": {
+  "ultimo_update": "2026-05-03T21:55:00-04:00",
+  "ciclo_delta_21_55": {
+    "_doc": "Ciclo Opus loop dinâmico — POSIÇÃO ZERADA (SL $78.800 fillou às 21:30 no squeeze). User observou doji D + sugeriu SHORT failed breakout cabeça morta H&S $79.182, deixando decisão pra FÊNIX. ANÁLISE MULTI-TF RIGOROSA: premissa do user FALSA (D NÃO é doji — body bull $793 / range $1.618 = marubozu-ish bull) e cabeça H&S $79.182 já PERFURADA $656 acima ($79.838 high) com vol institucional 11K + breakout 4H 20:00 explosivo + 1H 21:00 parabólico bull range $1.469 vol 8.5K + orderbook 11:1 buy_pressure (BID 26.09 vs ASK 2.34) + watcher latest 13.5 OPUS bullish (volume_surge 11.89× + range_expansion 4.24× direction=expansion_bullish). Tese H&S 1249 MORTA — invalidada estruturalmente. SHORT aqui = chase inverso. Score multi-TF SHORT = -6/6 (oposto). DECISÃO: SEM ENTRADA, HOLD ZERADO. Aguardar pullback estrutural com vol decrescente OU exhaustion 4H verdadeiro (upper wick $300+ + vibe inflexão).",
+    "ts": "2026-05-03T21:55-04:00",
+    "preco_at_check": 79319.8,
+    "mark_price": 79325.84,
+    "posicao": "ZERADA",
+    "equity_atual_usd": 392.76,
+    "cumPnL_unified_usd": -6286.0,
+    "cumPnL_delta_dia_usd": 1.0,
+    "cumPnL_vs_baseline_usd": -162.0,
+    "user_observacao": {
+      "afirmacao": "doji no diário + SHORT pode ter stop curto e R:R bom",
+      "verdade_factual": "D atual NÃO é doji — open $78.529,9 close $79.323,2 body $793 range $1.618 (49% body/range = marubozu-ish bull). Doji exigiria body < 10% range (~$160). Premissa user incorreta.",
+      "decisao_user": "totalmente sua",
+      "respeito_a_disciplina": "user explicitou autonomia FÊNIX — não viesar decisão por respeito social"
+    },
+    "watcher_trigger_latest": {
+      "score": 13.5,
+      "tier": "opus",
+      "bias": "neutral",
+      "ts_utc": "2026-05-04T01:56:13Z",
+      "price_at_trigger": 79829.0,
+      "fired_signals": [
+        "orderbook_imbalance(2.0:buy_pressure ratio 6.974 BID 6.53 vs ASK 0.94)",
+        "funding_flip(2.0:short_squeeze)",
+        "oi_buildup(1.0:unwinding_lean -1.66%)",
+        "volume_delta(2.0:aggressive_selling delta -53.45% — distribuição em topo OU lock-in pós squeeze, ambíguo)",
+        "distance_to_level(2.0:AT_LEVEL high 4H 16:00 $79.421 — level antigo já rompido)",
+        "volume_surge(2.5:explosion_bullish surge 11.89×)",
+        "range_expansion(2.0:expansion_bullish 4.24×)"
+      ],
+      "vies_real": "BULLISH dominante — 3 sinais iniciativos (volume_surge + range_expansion + orderbook buy_pressure) compensam aggressive_selling tardio que é distribuição/profit-taking de quem cobriu short"
+    },
+    "score_multi_tf_short": {
+      "D": "-1 contra SHORT (bull marubozu, rompeu high ontem $79.421)",
+      "4H_20_00": "-1 contra SHORT (breakout explosivo $1.618 vol 11K close 71% no range)",
+      "1H_21_00": "-1 contra SHORT (parabólico bull $1.469 close $79.323 a 4min do final)",
+      "15m": "0 (vol bull persiste, sem upper wick exhaustion confirmado)",
+      "vol_institucional": "-1 contra SHORT (4H 11.076 institucional bull surge 11.89×)",
+      "estrutura_HS_1249": "-1 contra SHORT (cabeça morta $79.182 PERFURADA $656 acima)",
+      "orderbook": "-1 contra SHORT (BID 26.09 vs ASK 2.34 = 11:1 buy_pressure)",
+      "score_final": "-6/6 (oposto do gatilho >=4/6 SHORT)",
+      "regra_v5_rr": "Se entry $79.319 + SL acima $79.838 + buffer = ~$80.000 → SL pts 681 vs TP2 $78.250 = TP2 pts 1.069 → R:R simples 1.57 < 3.0 mínimo v5 = REJEITADO"
+    },
+    "tese_HS_1249_status": "MORTA",
+    "razao_tese_morta": "Cabeça morta $79.182 perfurada $656 ($79.838 high). Breakout estrutural confirmado D + 4H + 1H simultâneos + vol institucional 11K + orderbook 11:1 buy. Padrão H&S triangulado invalidado.",
+    "strategic_levels_status": "OBSOLETOS — não re-armar até novo BOOT",
+    "decisao": "SEM ENTRADA — HOLD ZERADO",
+    "razoes_mecanicas": [
+      "Score multi-TF SHORT -6/6 (oposto)",
+      "Premissa user (doji D) factualmente falsa",
+      "R:R simples 1.57 < 3.0 mínimo v5",
+      "Watcher 13.5 OPUS bullish dominante",
+      "Cabeça H&S morta = tese 1249 invalidada",
+      "Orderbook 11:1 buy = institucional comprando o break",
+      "Sem candle de reversal confirmado, sem upper wick exhaustion, sem vibe inflexão"
+    ],
+    "anti_padrao_evitado": "Chase inverso (vender topo de breakout legítimo) por causa de comentário user. User explicitamente disse 'decisão totalmente sua' — disciplina v5 prevalece sobre cortesia.",
+    "movimento_perdido_21_25_a_21_43": {
+      "razao": "Wake 1500s — dormente durante squeeze",
+      "lição_já_registrada": true,
+      "delta_pnl_perdido": "Conservei capital (SL $78.800 fillou +$0,99 net), mas perdi oportunidade LONG breakout entre 21:25-21:43 quando watcher disparou price_velocity expansion_bullish",
+      "ação_correta_futura": "Quando watcher score >=10 com price_velocity expansion + volume_surge bullish E posição ZERADA: avaliar override breakout LONG, não esperar exaustão"
+    },
+    "proxima_oportunidade_short_real": {
+      "cenario_A_pullback": "Preço pullback estrutural pra $78.800-$78.900 com vol decrescente E vibe bear persistente E close 1H bear engulfing + watcher score >=4 BEARISH",
+      "cenario_B_exhaustion_4H": "4H 20:00 fechar bull alto com upper wick $300+ vol decrescente + close < open dos 2/3 superiores do range = exhaustion 4H verdadeiro",
+      "cenario_C_failed_breakout_real": "Preço voltar abaixo de $79.182 com close 1H bear + retest falho da zona $79.421 que falha + score multi-TF >=4/6 SHORT confirmado"
+    },
+    "proximo_wakeup": "22:05 (close 1H 22:00 + 5min reconciliação) ou watcher escalation",
+    "auto_avaliacao": {
+      "vies_emocional_check": "Tentação de honrar comentário user (parecer atento) seria entrar SHORT marginal. Decisão mecânica: -6/6 + R:R 1.57 = REJECT, independente de quem sugeriu",
+      "custo_se_short_fillar_e_acertar": "Provável $0 — preço não vai cair $1.000 sem reversal estrutural primeiro; a queda viria DEPOIS de pullback, não imediatamente",
+      "custo_se_short_fillar_e_errar": "ALTO — entry $79.319 SL $80.000 = $681 × tier1 0.005 = -$3,40 perdido + fees, em conta de equity $392 = 0,87% queimado em trade contra disciplina",
+      "custo_se_hold_zerado_acertar": "ZERO — capital preservado, próxima oportunidade real virá",
+      "custo_se_hold_zerado_e_short_funciona": "Oportunidade perdida MAS: entry tardio em $79.319 sem reversal seria timing errado mesmo que direção fosse correta — a entrada certa seria SE/QUANDO houver pullback retest"
+    }
+  },
+  "ciclo_delta_21_02_arquivado": {
     "_doc": "Ciclo OPUS escalado pelo watcher (score 10.0 NEUTRAL @ $78.408) — INVERSÃO MATERIAL DE ORDERFLOW vs ciclo 19:10. Orderbook flippou 30:1 SELL → 1.94:1 BUY (BID 11.74 vs ASK 6.04). Volume_delta flippou -18% sell → +65% aggressive_buying (BUY 35.4 vs SELL 7.5 = 4.7:1). TP2 $78.250 defendida 3 vezes consecutivas (wick $78.265, $78.265, $78.220 — passou $30 mas NÃO fillou). 1H 20:00 fechou hammer-ish (lower wick longo $309, body bear pequeno $28). Vibe 4 das 5 últimas leituras = bull. AT_LEVEL low 1H 17:00 $78.395 = suporte ativo. Watcher 10.0 NEUTRAL = sinais conflitantes — não bearish forte. Tier 1 autonomy mode + posição saudável (+$2,49 garantido) → DEFENSIVA: apertar SL pra $78.800 trava lucro adicional sem violar v5 strict (não fechei).",
     "ts": "2026-05-03T21:02-04:00",
     "preco_at_check": 78408.0,
