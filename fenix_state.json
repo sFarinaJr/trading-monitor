@@ -6,7 +6,7 @@
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
-  "ultimo_update": "04/05/2026 09:44:54",
+  "ultimo_update": "04/05/2026 09:49:57",
   "ciclo_delta_23_48": {
     "_doc": "Ciclo Opus loop dinâmico — POSIÇÃO ZERADA. Watcher disparou OPUS 10.5+ várias vezes em 6min (23:41-23:46) com bias oscilando bull/bear/neutral. Preço subiu de $79,319 (21:55) pra $80,213 (+$894/+1.13% em 1h53min). Análise multi-TF rigorosa v5.1: D MARUBOZU FORTE 75% body bull, 4H explosivo +$1,666 vol 26K, 1H 21+22 marubozus consecutivos vol 9.5K+10.5K, 1H 23 doji-ish saturação topo (upper wick $239 + vol decay 4.2K vs 10.5K + range compression $548 vs $1,469), 15m micro pullback healthy $80,433→$79,885 + bounce $80,188 com vol microscópico (1.5K→741→217). Score LONG 6.0/6 base mas R:R 1.82 (TP2 estrutural ausente acima de $80,433 — só $81k psicológico, sem 3+ toques históricos). Score SHORT 1.0/6 contra macro_bias LONG (precisa 5+/6 mínimo). DECISÃO: HOLD ZERADO. 4 sinais exhaustion topo notados (upper wick + vol decay + funding flip positivo + orderbook 3:1 sell) MAS sem close 1H bear engulfing confirmado — não vira gatilho.",
     "ts": "2026-05-03T23:48-04:00",
@@ -1380,13 +1380,13 @@
     "invalidada_em": "2026-05-03T16:00 UTC-4"
   },
   "saldo": {
-    "ts_snapshot": "04/05/2026 06:33:09",
-    "equity_usd": 391.2,
-    "available_usd": 391.2,
-    "cumPnL_unified_usd": -6287.58,
+    "ts_snapshot": "04/05/2026 09:48:09",
+    "equity_usd": 392.32,
+    "available_usd": 376.28,
+    "cumPnL_unified_usd": -6287.66,
     "baseline_pnl_usd": -6124.0,
-    "delta_vs_baseline_usd": -163.58,
-    "positionIM_usd": 0.0
+    "delta_vs_baseline_usd": -163.66,
+    "positionIM_usd": 16.04
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -1395,27 +1395,23 @@
     "_obs": "Negativo = pior que baseline (perdendo). Hoje: -$162 vs baseline."
   },
   "posicao_atual": {
-    "ts_snapshot": "04/05/2026 08:48:06",
-    "side": "NONE",
-    "size_btc": 0.0,
-    "avg_entry": null,
-    "mark_price": 78938,
-    "unrealised_pnl_usd": 0.0,
-    "sl": null,
-    "tp1_limit": null,
-    "tp2_target_estrutural": null,
-    "estado": "ZERADA · limit SHORT $79.060 ativo · mark $78.938 a $122 do limit · pullback bull suave em curso · 1H 08:00 em formacao",
-    "limit_pendente": {
-      "orderLinkId": "fenix_short_limit_v631_0750",
-      "side": "Sell",
-      "qty": 0.005,
-      "price": 79060,
-      "sl_planejado": 79243,
-      "tp2_estrutural": 78371,
-      "rr": 3.77,
-      "distancia_do_mark": 122,
-      "status": "New"
-    }
+    "ts_snapshot": "04/05/2026 09:48:09",
+    "side": "Sell (SHORT)",
+    "size_btc": 0.005,
+    "avg_entry": 79060,
+    "mark_price": 78837,
+    "unrealised_pnl_usd": 1.12,
+    "sl": 79243,
+    "tp1_limit": 78665,
+    "tp1_qty": 0.002,
+    "tp2_target_estrutural": 78371,
+    "tp2_alternativos": [
+      78202,
+      78042
+    ],
+    "estado": "SHORT 0.005 BTC fillou @ $79.060 enquanto loop dormia · SL+TP1 armados retroativamente apos detection · uPnL +$1,12 · DNA v6.3.4 documentou regra ordem completa",
+    "liq_price": 81813.3,
+    "breakeven_with_fees": 79000.74
   },
   "ordens_pendentes": [],
   "reposicionamento_21_05": {
@@ -1452,16 +1448,16 @@
     }
   ],
   "ultimo_ciclo_relatorio": {
-    "ts": "04/05/2026 08:48:06",
-    "ciclo_id": "autonomous_loop_08_47_LIMIT_PENDENTE",
-    "mark": 78938,
-    "tese": "ZERADA · aguardando retest resistencia $79.060 · pullback bull suave",
-    "pullback_status": "mark $78.790 → $78.938 (+$148) · suave · 1H 08:00 em formacao",
-    "watcher": "vibe oscilante 2 bull/4 neutral/4 bear · score 6,5-9,5 · sem persistencia",
-    "limit_status": "fenix_short_limit_v631_0750 NEW · faltam $122 pra fillar",
-    "triggers_pre_armados": "mark > $79.243 cancelar (-$305 acima) · mark < $78.500 cancelar (-$438 abaixo)",
-    "decisao": "HOLD limit · disciplina mecanica · aguardar retest",
-    "proximo_marco": "Wake 09:55-10:00 final 1H 10:00 conforme diretriz user"
+    "ts": "04/05/2026 09:48:09",
+    "ciclo_id": "autonomous_loop_13_47_SHORT_FILLED_LATE_PROTECTION",
+    "mark": 78837,
+    "side": "SHORT 0.005 @ $79.060",
+    "tese": "SHORT estrutural fillou durante wake · regra DNA v6.3.4 implementada retroativo",
+    "pos_status": "uPnL +$1,12 · SL $79.243 + TP1 $78.665 (reduce-only one-way mode) ARMADOS",
+    "dna_correction": "User identificou anti-padrao · regra ordem completa formalizada · modulo 14 v2.1",
+    "workflow_v6_1": "TP1 fillou (40% qty) → SL pra BE $79.060 → TP2 zone $78.371 dispara aperto SL → trail estrutural",
+    "decisao": "HOLD posicao com protecao completa armada",
+    "proximo_marco": "Wake 14:55-15:00 (final 1H 15:00 conforme diretriz user) · monitorar TP1 fill em $78.665 ou trigger SL"
   },
   "contexto_macro_observado": {
     "evento_chave": "Bull trap D+4H em 79182 — preço rompeu resistência D 78900 com vol 9.7× pra 79182 e devolveu 489pts em 30min, fechando 1H 17:00 em 78693. Configura padrão clássico de exhaustion em topo / armadilha pra compradores tardios.",
@@ -1729,8 +1725,8 @@
       "pnl_percent": 0.38
     }
   ],
-  "last_github_push_ts": 1777902294.386206,
-  "last_github_push": "04/05 09:44",
+  "last_github_push_ts": 1777902597.565613,
+  "last_github_push": "04/05 09:49",
   "incidentes_aprendizado": [
     {
       "ts": "2026-05-02T20:19",
@@ -2879,5 +2875,15 @@
     "tp2_estrutural": 78371,
     "rr": 3.77,
     "proximo_wake": "~08:55 (final candle 1H 09:00)"
+  },
+  "licao_v6_3_4": {
+    "ts": "04/05/2026 09:48:09",
+    "evento": "SHORT limit $79.060 armado 07:50 SEM SL/TP1 anexados · fillou ~13:40 durante wake longo · posicao orphan ate detection ~13:46",
+    "janela_exposicao_min": 6,
+    "mark_no_fill": 79060,
+    "mark_atual_apos_armar_sl": 78837,
+    "sorte": "Felizmente preco caiu apos fill (favorecendo SHORT) · poderia ter subido pra $79.243 sem proteccao = liquidacao parcial",
+    "dna_update_v6_3_4": "Modulo 14 + MEMORY documentados · regra ordem completa OBRIGATORIA",
+    "pendencias_implementacao": "Para futuras LIMIT entries · usar place_trigger_order para SL conditional pre-armado em paralelo ao place_order entry · place_order TP1 limit reduce-only no mesmo turn"
   }
 }
