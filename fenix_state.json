@@ -6,7 +6,7 @@
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
-  "ultimo_update": "04/05/2026 06:17:48",
+  "ultimo_update": "04/05/2026 06:22:51",
   "ciclo_delta_23_48": {
     "_doc": "Ciclo Opus loop dinâmico — POSIÇÃO ZERADA. Watcher disparou OPUS 10.5+ várias vezes em 6min (23:41-23:46) com bias oscilando bull/bear/neutral. Preço subiu de $79,319 (21:55) pra $80,213 (+$894/+1.13% em 1h53min). Análise multi-TF rigorosa v5.1: D MARUBOZU FORTE 75% body bull, 4H explosivo +$1,666 vol 26K, 1H 21+22 marubozus consecutivos vol 9.5K+10.5K, 1H 23 doji-ish saturação topo (upper wick $239 + vol decay 4.2K vs 10.5K + range compression $548 vs $1,469), 15m micro pullback healthy $80,433→$79,885 + bounce $80,188 com vol microscópico (1.5K→741→217). Score LONG 6.0/6 base mas R:R 1.82 (TP2 estrutural ausente acima de $80,433 — só $81k psicológico, sem 3+ toques históricos). Score SHORT 1.0/6 contra macro_bias LONG (precisa 5+/6 mínimo). DECISÃO: HOLD ZERADO. 4 sinais exhaustion topo notados (upper wick + vol decay + funding flip positivo + orderbook 3:1 sell) MAS sem close 1H bear engulfing confirmado — não vira gatilho.",
     "ts": "2026-05-03T23:48-04:00",
@@ -1380,7 +1380,7 @@
     "invalidada_em": "2026-05-03T16:00 UTC-4"
   },
   "saldo": {
-    "ts_snapshot": "04/05/2026 06:04:50",
+    "ts_snapshot": "04/05/2026 06:19:15",
     "equity_usd": 391.2,
     "available_usd": 391.2,
     "cumPnL_unified_usd": -6287.58,
@@ -1395,16 +1395,16 @@
     "_obs": "Negativo = pior que baseline (perdendo). Hoje: -$162 vs baseline."
   },
   "posicao_atual": {
-    "ts_snapshot": "04/05/2026 06:04:50",
+    "ts_snapshot": "04/05/2026 06:19:15",
     "side": "NONE",
     "size_btc": 0.0,
     "avg_entry": null,
-    "mark_price": 79408,
+    "mark_price": 78545,
     "unrealised_pnl_usd": 0.0,
     "sl": null,
     "tp1_limit": null,
     "tp2_target_estrutural": null,
-    "estado": "ZERADA · trade LONG fechado por trigger acelerado em $79.408 · loss net -$1,58 · capital preservado vs SL automatico"
+    "estado": "ZERADA · crash continuou $863 pos-exit · 1H 06:00 fechou bear $1.074 vol 5.5K (11x) · disciplina mecanica preservou capital de slippage maior"
   },
   "ordens_pendentes": [],
   "reposicionamento_21_05": {
@@ -1441,16 +1441,16 @@
     }
   ],
   "ultimo_ciclo_relatorio": {
-    "ts": "04/05/2026 06:04:50",
-    "ciclo_id": "autonomous_loop_06_03_TRIGGER_FIRED",
-    "mark": 79408,
-    "tese": "Trade fechado por trigger acelerado · ZERADA",
-    "pos_status": "NONE · loss net -$1,58 (-0,40% equity)",
-    "watcher": "sera atualizado proximo ciclo",
-    "estrutura_1h": "1H 06:00 abriu bear body $405 vol 506 em 3min · breakdown violento",
-    "trigger_acionado": "mark < $79.500 (mark $79.380) = FECHAR TOTAL · executado",
-    "decisao": "ZERADA · esperar setup limpo",
-    "proximo_marco": "Wake 06:15 · monitor pos-breakdown · novo setup so com criterios v6.3.3 cumpridos"
+    "ts": "04/05/2026 06:22:12",
+    "ciclo_id": "autonomous_loop_06_18_DIARIO_VIROU_BEAR_OBS",
+    "mark": 78348.6,
+    "tese": "D atual SHOOTING STAR rejeitou $80.6k · macro_bias com asterisco · cautela elevada",
+    "observacao_user": "D virou bear, rejeitou forte os $80k · CONFIRMADO",
+    "analise_d": "Upper wick $2.071 (87% range) · body bear $182 · vol 48,992 · rejeicao institucional massiva",
+    "macro_status": "LONG dominante COM asterisco · topo intermediario · rally em pausa/correcao · NAO invalidacao completa ainda",
+    "criterios_macro_virar_bear": "D fecha bear close < $78.655 + vol > 50K + follow-through dia seguinte",
+    "decisao": "ZERADA · cautela elevada · aguardar D close + setup limpo · sem chase do crash atual",
+    "proximo_marco": "Wake 06:30-06:32 · 1H 07:00 close · monitor estabilizacao ou continuacao bear"
   },
   "contexto_macro_observado": {
     "evento_chave": "Bull trap D+4H em 79182 — preço rompeu resistência D 78900 com vol 9.7× pra 79182 e devolveu 489pts em 30min, fechando 1H 17:00 em 78693. Configura padrão clássico de exhaustion em topo / armadilha pra compradores tardios.",
@@ -1718,8 +1718,8 @@
       "pnl_percent": 0.38
     }
   ],
-  "last_github_push_ts": 1777889868.269066,
-  "last_github_push": "04/05 06:17",
+  "last_github_push_ts": 1777890171.0916722,
+  "last_github_push": "04/05 06:22",
   "incidentes_aprendizado": [
     {
       "ts": "2026-05-02T20:19",
@@ -2665,27 +2665,33 @@
     }
   },
   "macro_bias_atual": {
-    "_doc": "Mudança estrutural de viés long-term registrada em 2026-05-03 22:25 após análise D + W + M solicitada pelo user. Recovery rally legítimo desde fundo $59,888 há 3 meses. Hoje (D) rompeu cluster $79,182-$79,457 e tocou $80,124. Semanal está em 6ª semana bull consecutiva. Mensal testando high do mês passado ($79,457).",
-    "ts": "2026-05-03T22:25",
-    "vies_oficial": "LONG dominante",
-    "fase": "Recovery rally do crash $59k",
-    "ainda_nao_eh": "Bull market reconfirmado (precisaria break+hold acima de $87k cluster)",
-    "niveis_chave": {
-      "resistance_atual": "$80,000 psicológico (em teste)",
-      "next_major_resistance": "$87,000-$90,000 cluster bear pivot anterior",
-      "ath_distante": "$97,963 (4 meses atrás)",
-      "support_proximo": "$78,500 (low do dia, possível pullback)",
-      "support_estrutural": "$76,300 (low mensal)",
-      "support_macro": "$74,900 (low semanal recente)",
-      "invalidation_long_term": "Close mensal abaixo $74,000 = recovery falhada"
+    "ts_atualizacao": "04/05/2026 06:22:12",
+    "fase_anterior": "LONG dominante (recovery rally desde $59.888 → $80.601 = +35% em 5 dias)",
+    "fase_atual": "LONG dominante COM ASTERISCO · topo intermediario formado em $80.601 · D atual shooting star bear rejeitou zona psicologica $80k",
+    "evidencia_topo_intermediario": {
+      "D_atual_pattern": "SHOOTING STAR · O $78.530 H $80.601 L $78.220 C $78.349 (formando)",
+      "upper_wick_pct_range": 87,
+      "rejeicao_pts": 2071,
+      "rejeicao_pct": 2.6,
+      "body_bear": 182,
+      "vol_acumulado": 48992,
+      "sinal": "rejeicao institucional massiva da zona $80k · padrao classico de topo"
     },
-    "implicacao_operacional": {
-      "vies_pra_proximos_dias": "LONG dominante",
-      "shorts_validos_quando": "exhaustion clara intra-day + score >=5/6 mínimo + vol exhaustion + close 1H bear forte (filtro extra contratendência)",
-      "longs_preferenciais": "pullbacks pra zona $77,500-$78,500 com score >=4/6 + vol baixo no pullback + reversão clara",
-      "evitar": "shorts contra continuation, chase longs no topo de breakout"
+    "macro_long_invalidado": false,
+    "razao_nao_invalidado": "recovery rally semanal desde $59.888 mantem estrutura. Single D shooting star = topo intermediario, nao virada estrutural completa. Precisa confirmacao com close D bear forte + follow-through dia seguinte.",
+    "criterios_para_macro_virar_bear": [
+      "D fecha bear com close < $78.655 (open D anterior) E vol institucional > 50K",
+      "D seguinte abre/fecha bear continuation com close < $77.992 (low D-2)",
+      "4H consecutivos fecham bear vol crescente",
+      "Suporte $76.270-$76.301 (low D-3 e D-4) perfurado"
+    ],
+    "implicacoes_proximos_trades": {
+      "LONG_aligned_macro": "CAUTELA elevada · entry so em pullback profundo + reversal confirmado + suporte estrutural com 3+ toques · NAO chase rebound em recovery",
+      "SHORT_contra_trend": "modulo 02 ainda exige 3 sinais simultaneos · MAS contra-trend agora e mais fraco (D virou hostil temporariamente)",
+      "SHORT_aligned_novo_bias_bear": "SO se D fechar bear estrutural confirmado + follow-through dia seguinte + close abaixo $77.992",
+      "tier_sizing": "Manter tier 1 (0,005 BTC) ate definicao macro clara"
     },
-    "review_em": "Close mensal (final do mês) — se fechar acima $80k, viés bull confirmado mais um nível"
+    "tp2_candidates_long_macro_recovery_status": "Permanecem válidos como estrutura semanal MAS distância maior agora (precisa $89-112k requer break novo high $80.601 antes)"
   },
   "tp2_candidates_long_macro_recovery": {
     "_doc": "TP2 candidates LONG VÁLIDOS identificados em busca exaustiva 200 candles diários (2026-05-04 00:00 UTC-4). Aplicar quando setup LONG aligned com macro_bias_atual em recovery rally pós-crash $59k. Referência permanente — não recalcular toda vez. Atualizar quando macro mudar.",
