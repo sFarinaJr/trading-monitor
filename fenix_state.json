@@ -2520,5 +2520,36 @@
       "Watcher voltou OPUS 11.0 BEARISH agora — possível continuation bearish que perdemos.",
       "Aprendizado: aperto de SL do subagent foi controversial mas resultado net foi POSITIVO. Em retrospectiva, foi judgment call defensivo válido."
     ]
+  },
+  "ciclo_delta_22_09": {
+    "_doc": "Pós-close 1H 21:00. Marubozu bull confirmou continuation bull. Sem score multi-TF >=4 pra SHORT nem LONG. HOLD zerado.",
+    "ts": "2026-05-03T22:09",
+    "candle_1h_21_close": {
+      "open": 78501.7,
+      "high": 79838.0,
+      "low": 78368.6,
+      "close": 79759.9,
+      "vol": 9468.1,
+      "body_bull": 1258.2,
+      "body_range_pct": 85.6,
+      "interpretacao": "MARUBOZU BULL — continuation, não exhaustion"
+    },
+    "candle_1h_22_em_formacao": {
+      "open": 79759.9,
+      "high": 80123.8,
+      "low": 79500.5,
+      "current": 79782,
+      "vol_parcial": 3620,
+      "obs": "high $80,123 quebrou nível psicológico $80k, mas recuperação pra $79,782"
+    },
+    "watcher_now": "8.0 OPUS NEUTRAL (era 13.5, degradou). volume_delta aggressive_selling no topo mas bias neutral.",
+    "score_multi_tf": "SHORT 1/6 + LONG 2/6 — ambos abaixo de 4",
+    "decisao": "HOLD ZERADO. Sem entrada. Sem chase de bull explosivo já consumado, sem SHORT contra continuation institucional confirmada.",
+    "user_observation_doji_diario": "REFUTADA por dados (D body 49% range = bull marubozu-ish, não doji)",
+    "trade_dia_resumo": {
+      "trade_1": "SHORT 02:35 → SL 16:35 = -$30,29",
+      "trade_2": "SHORT 19:14 → SL 21:30 = +$1,19 net (TP1 +0.68 + SL +0.51)",
+      "net_dia": -29.1
+    }
   }
 }
