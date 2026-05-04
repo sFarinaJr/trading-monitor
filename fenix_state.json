@@ -6,7 +6,7 @@
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
-  "ultimo_update": "04/05/2026 02:40:40",
+  "ultimo_update": "04/05/2026 02:45:42",
   "ciclo_delta_23_48": {
     "_doc": "Ciclo Opus loop dinâmico — POSIÇÃO ZERADA. Watcher disparou OPUS 10.5+ várias vezes em 6min (23:41-23:46) com bias oscilando bull/bear/neutral. Preço subiu de $79,319 (21:55) pra $80,213 (+$894/+1.13% em 1h53min). Análise multi-TF rigorosa v5.1: D MARUBOZU FORTE 75% body bull, 4H explosivo +$1,666 vol 26K, 1H 21+22 marubozus consecutivos vol 9.5K+10.5K, 1H 23 doji-ish saturação topo (upper wick $239 + vol decay 4.2K vs 10.5K + range compression $548 vs $1,469), 15m micro pullback healthy $80,433→$79,885 + bounce $80,188 com vol microscópico (1.5K→741→217). Score LONG 6.0/6 base mas R:R 1.82 (TP2 estrutural ausente acima de $80,433 — só $81k psicológico, sem 3+ toques históricos). Score SHORT 1.0/6 contra macro_bias LONG (precisa 5+/6 mínimo). DECISÃO: HOLD ZERADO. 4 sinais exhaustion topo notados (upper wick + vol decay + funding flip positivo + orderbook 3:1 sell) MAS sem close 1H bear engulfing confirmado — não vira gatilho.",
     "ts": "2026-05-03T23:48-04:00",
@@ -1380,12 +1380,13 @@
     "invalidada_em": "2026-05-03T16:00 UTC-4"
   },
   "saldo": {
-    "ts_snapshot": "04/05/2026 02:32:24",
+    "ts_snapshot": "04/05/2026 02:40:59",
     "equity_usd": 392.77,
-    "available_usd": 392.53,
+    "available_usd": 376.62,
     "cumPnL_unified_usd": -6286.0,
     "baseline_pnl_usd": -6124.0,
-    "delta_vs_baseline_usd": -162.0
+    "delta_vs_baseline_usd": -162.0,
+    "positionIM_usd": 16.16
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -1394,16 +1395,23 @@
     "_obs": "Negativo = pior que baseline (perdendo). Hoje: -$162 vs baseline."
   },
   "posicao_atual": {
-    "ts_snapshot": "04/05/2026 02:32:24",
-    "side": "NONE",
-    "size_btc": 0.0,
-    "avg_entry": null,
-    "mark_price": 79662.5,
-    "unrealised_pnl_usd": 0.0,
-    "sl": null,
-    "tp1": null,
-    "tp2": null,
-    "estado": "ZERADA — preco entrou zona ideal LONG $79.500-$79.800 (low $79.455) mas sem reversal 15m confirmado"
+    "ts_snapshot": "04/05/2026 02:40:59",
+    "side": "Buy (LONG)",
+    "size_btc": 0.005,
+    "avg_entry": 79723.4,
+    "mark_price": 79733,
+    "unrealised_pnl_usd": -0.05,
+    "sl": 79255,
+    "tp1_limit": 80130,
+    "tp1_qty": 0.002,
+    "tp2_target_estrutural": 86197,
+    "tp2_alternativos": [
+      90536,
+      94370,
+      107341
+    ],
+    "estado": "LONG aligned macro aberto v6.3.1 — pullback pra zona ideal $79.500-$79.800 com martelo 5m em $79.455 vol 4× + 2 candles continuation bull. SL abaixo martelo + buffer $200 vol alto. TP1 cobertura @ +0.5%. TP2 estrutural com fallback 2 toques D vol institucional.",
+    "liq_price": 76919.1
   },
   "ordens_pendentes": [],
   "reposicionamento_21_05": {
@@ -1440,25 +1448,30 @@
     }
   ],
   "ultimo_ciclo_relatorio": {
-    "ts": "04/05/2026 02:32:24",
-    "ciclo_id": "autonomous_loop_02_31_v6_3_strict",
-    "mark": 79662.5,
-    "watcher": "score 11.0 OPUS bearish persistente 10/12 leituras · vibe bear dominante",
-    "pullback_status": "$80.600 → $79.455 (low) = -$1.145 / -1,42% · DENTRO zona ideal LONG ($79.500-$79.800) · martelo 5m em $79.455 com vol 4x media + lower wick $221 (sinal de defesa)",
-    "short_v6_3_check": {
-      "TP2_estrutural_distante": "$78.376 (zona $78.310-$78.432) toques=7 (vol 17K em um)",
-      "SL_apertado": "$80.167 (acima 1H atual + buffer)",
-      "RR": 2.55,
-      "verdict": "REJECT < 3,0 mesmo com TP2 mais distante e SL apertado"
+    "ts": "04/05/2026 02:40:59",
+    "ciclo_id": "autonomous_loop_02_38_LONG_OPEN",
+    "mark": 79733,
+    "tese": "Pullback healthy 4H rally + martelo 5m em $79.455 zona ideal LONG aligned macro_bias",
+    "score_long_base": "4.5/6 — D bull(1) + 4H explosivo(1) + 1H pullback healthy(0.5) + 15m martelo(0.5) + vol 4x institucional(1) + macro aligned(0.5)",
+    "rr_v6_3_1": {
+      "entry": 79733,
+      "sl": 79255,
+      "sl_pts": 478,
+      "tp2_estrutural_escolhido": "$86.197 (toques=2 D fallback) — distância 8.1% conservadora",
+      "tp2_pts": 6464,
+      "rr_simples": 13.5,
+      "tp2_alternativos_aligned_macro": "$90.536 (3 toques D strict R:R 22.6) / $94.370 (R:R 30.6) / $107.341 (R:R 57.8)",
+      "verdict": "APROVADO ≥ 3.0 com larga folga"
     },
-    "long_check": {
-      "zona_ideal_alcancada": true,
-      "reversal_15m_confirmado": false,
-      "long_targets_em_arquivo": 0,
-      "note": "TP2 LONG estrutural exige expansao Fibo/Volume Profile/macro recovery $89-112k (state.tp2_candidates_long_macro_recovery)"
-    },
-    "decisao": "HOLD ZERADO — esperar 15m close 02:45 confirmar reversal",
-    "proximo_marco": "Wake 02:45 — close 15m 02:30 + verificar se martelo 5m foi seguido de continuation bull (engolfo bullish 15m + vol expansao + watcher vibe inflexao)"
+    "sizing": "tier 1 base 0.005 BTC (2% risk model B). Risco real: $2.39 = 0.61% equity",
+    "ordens_armadas": [
+      "Market Buy 0.005 BTC fillou @ avg $79.723 (orderLinkId=fenix_long_v631_0245)",
+      "SL stop market $79.255 via set_trading_stop (Full mode, LastPrice trigger)",
+      "TP1 limit Sell 0.002 BTC @ $80.130 (orderLinkId=fenix_tp1_v631_0245b) — one-way mode = implicit reduce-only"
+    ],
+    "workflow_v6_1": "TP1 fillou (40% qty 0.002) → SL move pra BE → TP2 zone $86.197 dispara aperto SL → Trail Estrutural Cripto 4H + buffer $150-200",
+    "decisao": "EXECUTADO — primeiro trade v6.3.1 aproveitando candidates LONG do fallback macro D",
+    "proximo_marco": "Wake 02:50 monitorar continuation bull confirmada + status TP1 + score watcher"
   },
   "contexto_macro_observado": {
     "evento_chave": "Bull trap D+4H em 79182 — preço rompeu resistência D 78900 com vol 9.7× pra 79182 e devolveu 489pts em 30min, fechando 1H 17:00 em 78693. Configura padrão clássico de exhaustion em topo / armadilha pra compradores tardios.",
@@ -1726,8 +1739,8 @@
       "pnl_percent": 0.38
     }
   ],
-  "last_github_push_ts": 1777876840.162977,
-  "last_github_push": "04/05 02:40",
+  "last_github_push_ts": 1777877142.997368,
+  "last_github_push": "04/05 02:45",
   "incidentes_aprendizado": [
     {
       "ts": "2026-05-02T20:19",
