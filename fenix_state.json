@@ -6,7 +6,7 @@
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
-  "ultimo_update": "04/05/2026 10:45:32",
+  "ultimo_update": "04/05/2026 10:50:35",
   "ciclo_delta_23_48": {
     "_doc": "Ciclo Opus loop dinâmico — POSIÇÃO ZERADA. Watcher disparou OPUS 10.5+ várias vezes em 6min (23:41-23:46) com bias oscilando bull/bear/neutral. Preço subiu de $79,319 (21:55) pra $80,213 (+$894/+1.13% em 1h53min). Análise multi-TF rigorosa v5.1: D MARUBOZU FORTE 75% body bull, 4H explosivo +$1,666 vol 26K, 1H 21+22 marubozus consecutivos vol 9.5K+10.5K, 1H 23 doji-ish saturação topo (upper wick $239 + vol decay 4.2K vs 10.5K + range compression $548 vs $1,469), 15m micro pullback healthy $80,433→$79,885 + bounce $80,188 com vol microscópico (1.5K→741→217). Score LONG 6.0/6 base mas R:R 1.82 (TP2 estrutural ausente acima de $80,433 — só $81k psicológico, sem 3+ toques históricos). Score SHORT 1.0/6 contra macro_bias LONG (precisa 5+/6 mínimo). DECISÃO: HOLD ZERADO. 4 sinais exhaustion topo notados (upper wick + vol decay + funding flip positivo + orderbook 3:1 sell) MAS sem close 1H bear engulfing confirmado — não vira gatilho.",
     "ts": "2026-05-03T23:48-04:00",
@@ -1395,16 +1395,16 @@
     "_obs": "Negativo = pior que baseline (perdendo). Hoje: -$162 vs baseline."
   },
   "posicao_atual": {
-    "ts_snapshot": "04/05/2026 10:29:53",
+    "ts_snapshot": "04/05/2026 10:46:16",
     "side": "NONE",
     "size_btc": 0.0,
     "avg_entry": null,
-    "mark_price": 79299,
+    "mark_price": 79486,
     "unrealised_pnl_usd": 0.0,
     "sl": null,
     "tp1_limit": null,
     "tp2_target_estrutural": null,
-    "estado": "ZERADA · SHORT fechado +$0,56 net (TP1 + SL=entry workflow v6.1) · recovery $967 do bottom · LONG ainda nao atende 4/6"
+    "estado": "ZERADA · pos-recovery $1.056 do bottom · 2 wake events processados (79.397+79.500 cruzados pra cima) · LONG 2/6 reject · SHORT -1/6 reject contra recovery"
   },
   "ordens_pendentes": [],
   "reposicionamento_21_05": {
@@ -1441,16 +1441,28 @@
     }
   ],
   "ultimo_ciclo_relatorio": {
-    "ts": "04/05/2026 09:48:09",
-    "ciclo_id": "autonomous_loop_13_47_SHORT_FILLED_LATE_PROTECTION",
-    "mark": 78837,
-    "side": "SHORT 0.005 @ $79.060",
-    "tese": "SHORT estrutural fillou durante wake · regra DNA v6.3.4 implementada retroativo",
-    "pos_status": "uPnL +$1,12 · SL $79.243 + TP1 $78.665 (reduce-only one-way mode) ARMADOS",
-    "dna_correction": "User identificou anti-padrao · regra ordem completa formalizada · modulo 14 v2.1",
-    "workflow_v6_1": "TP1 fillou (40% qty) → SL pra BE $79.060 → TP2 zone $78.371 dispara aperto SL → trail estrutural",
-    "decisao": "HOLD posicao com protecao completa armada",
-    "proximo_marco": "Wake 14:55-15:00 (final 1H 15:00 conforme diretriz user) · monitorar TP1 fill em $78.665 ou trigger SL"
+    "ts": "04/05/2026 10:46:16",
+    "wake_events_processados": 2,
+    "detalhe": [
+      {
+        "level": 79397,
+        "ts_cross": "10:40:12",
+        "razao": "recovery confirma · avaliar LONG aligned",
+        "decisao": "LONG REJECT · score 2/6 < 4"
+      },
+      {
+        "level": 79500,
+        "ts_cross": "10:42:10",
+        "razao": "SHORT retest se rejeicao",
+        "decisao": "SHORT REJECT · sem rejeicao · score -1/6 contra recovery"
+      }
+    ],
+    "analise_long": "entry $79.486 · SL $79.122 · TP2 $80.603 · R:R 3,07 marginal · MAS score base 2/6 falha · contra-trend 2/3 sinais (RSI ausente)",
+    "analise_short": "mark atravessou nao houve rejeicao · score -1/6 contra recovery em curso",
+    "autoavaliacao_falha_anterior": "Processei wakes silenciosamente sem reportar · anti-padrao corrigido · agora ciclo completo obrigatorio",
+    "proximo_marco": "Wake natural 11:00 close 1H 11:00 OU watcher dispara novo flag",
+    "ciclo_id": "wake_event_processed_10_45",
+    "mark": 79486
   },
   "contexto_macro_observado": {
     "evento_chave": "Bull trap D+4H em 79182 — preço rompeu resistência D 78900 com vol 9.7× pra 79182 e devolveu 489pts em 30min, fechando 1H 17:00 em 78693. Configura padrão clássico de exhaustion em topo / armadilha pra compradores tardios.",
@@ -1718,8 +1730,8 @@
       "pnl_percent": 0.38
     }
   ],
-  "last_github_push_ts": 1777905932.490099,
-  "last_github_push": "04/05 10:45",
+  "last_github_push_ts": 1777906235.877543,
+  "last_github_push": "04/05 10:50",
   "incidentes_aprendizado": [
     {
       "ts": "2026-05-02T20:19",
@@ -2898,5 +2910,29 @@
     ],
     "decisao": "ZERADA · disciplina v6.3.x · paciencia",
     "proximo_marco": "Wake 14:55 antes 1H 15:00 close (decisivo curto prazo)"
+  },
+  "ciclo_wake_event_10_45": {
+    "ts": "04/05/2026 10:46:16",
+    "wake_events_processados": 2,
+    "detalhe": [
+      {
+        "level": 79397,
+        "ts_cross": "10:40:12",
+        "razao": "recovery confirma · avaliar LONG aligned",
+        "decisao": "LONG REJECT · score 2/6 < 4"
+      },
+      {
+        "level": 79500,
+        "ts_cross": "10:42:10",
+        "razao": "SHORT retest se rejeicao",
+        "decisao": "SHORT REJECT · sem rejeicao · score -1/6 contra recovery"
+      }
+    ],
+    "analise_long": "entry $79.486 · SL $79.122 · TP2 $80.603 · R:R 3,07 marginal · MAS score base 2/6 falha · contra-trend 2/3 sinais (RSI ausente)",
+    "analise_short": "mark atravessou nao houve rejeicao · score -1/6 contra recovery em curso",
+    "autoavaliacao_falha_anterior": "Processei wakes silenciosamente sem reportar · anti-padrao corrigido · agora ciclo completo obrigatorio",
+    "proximo_marco": "Wake natural 11:00 close 1H 11:00 OU watcher dispara novo flag",
+    "ciclo_id": "wake_event_processed_10_45",
+    "mark": 79486
   }
 }
