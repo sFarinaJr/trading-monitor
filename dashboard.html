@@ -398,43 +398,70 @@
 
             // 🎯 Missão
             const baseline = s.baseline?.pnl_acumulado ?? -6124;
-            const cumPnl = s.saldo?.cumRealisedPnl_unified_usdt ?? 0;
-            const diff = s.progresso_vs_baseline?.diferenca ?? (cumPnl - baseline);
+            const cumPnl = s.saldo?.cumPnL_unified_usd ?? s.saldo?.cumRealisedPnl_unified_usdt ?? 0;
+            const diff = s.progresso_vs_baseline?.diff_usd ?? s.progresso_vs_baseline?.diferenca ?? (cumPnl - baseline);
             document.getElementById('baseline').textContent = fmtMoney(baseline);
             document.getElementById('cumPnl').textContent = fmtMoney(cumPnl);
             document.getElementById('cumPnl').className = `value ${colorOf(cumPnl)}`;
             document.getElementById('diff').textContent = fmtMoney(diff, true);
             document.getElementById('diff').className = `value ${colorOf(diff)}`;
             document.getElementById('gap').textContent = fmtMoney(Math.abs(cumPnl));
-            document.getElementById('interpretation').textContent = s.progresso_vs_baseline?.interpretacao || '';
+            document.getElementById('interpretation').textContent = s.progresso_vs_baseline?._obs ?? s.progresso_vs_baseline?.interpretacao ?? '';
 
             const progress = Math.max(0, Math.min(100, ((cumPnl - baseline) / -baseline) * 100));
             const bar = document.getElementById('progressBar');
             bar.style.width = `${Math.max(2, progress)}%`;
             bar.style.background = diff > 0 ? 'linear-gradient(90deg, var(--negative), var(--positive))' : 'var(--negative)';
 
-            // 📊 Posição
+            // 📊 Posição — aceita ambos formatos (snake_case PT-BR atual + camelCase Bybit antigo)
             const pos = s.posicao_atual;
             const posDiv = document.getElementById('positionContent');
-            if (pos && pos.size > 0) {
+            const posSize = pos?.size_btc ?? pos?.size ?? 0;
+            const posSide = pos?.side ?? '';
+            const isShort = posSide.toLowerCase().includes('sell') || posSide.toLowerCase().includes('short');
+            const isLong = posSide.toLowerCase().includes('buy') || posSide.toLowerCase().includes('long');
+            const avgPrice = pos?.avg_entry ?? pos?.avgPrice;
+            const uPnl = pos?.unrealised_pnl_usd ?? pos?.unrealisedPnl;
+            const stopLoss = pos?.sl ?? pos?.stopLoss;
+            const tp1 = pos?.tp1_limit;
+            const tp2 = pos?.tp2_target_estrutural ?? pos?.takeProfit;
+            if (pos && posSize > 0) {
+                const sideLabel = isShort ? '🔴 SHORT' : (isLong ? '🟢 LONG' : posSide);
+                const sideClass = isShort ? 'negative' : 'positive';
+                let tpRow;
+                if (tp1 && tp2) {
+                    tpRow = `<div class="stat-row"><span class="key">TP1 / TP2</span> <span class="val positive">${fmtMoney(tp1)} / ${fmtMoney(tp2)}</span></div>`;
+                } else if (tp2) {
+                    tpRow = `<div class="stat-row"><span class="key">Take Profit</span> <span class="val positive">${fmtMoney(tp2)}</span></div>`;
+                } else if (tp1) {
+                    tpRow = `<div class="stat-row"><span class="key">Take Profit</span> <span class="val positive">${fmtMoney(tp1)}</span></div>`;
+                } else {
+                    tpRow = `<div class="stat-row"><span class="key">Take Profit</span> <span class="val positive">— (livre)</span></div>`;
+                }
                 posDiv.innerHTML = `
-                    <div class="stat-row"><span class="key">Side</span> <span class="val ${pos.side === 'Sell' ? 'negative' : 'positive'}">${pos.side === 'Sell' ? '🔴 SHORT' : '🟢 LONG'}</span></div>
-                    <div class="stat-row"><span class="key">Size</span> <span class="val">${fmtNum(pos.size, 4)} BTC</span></div>
-                    <div class="stat-row"><span class="key">Avg Price</span> <span class="val">${fmtMoney(pos.avgPrice)}</span></div>
-                    <div class="stat-row"><span class="key">PnL Flutuante</span> <span class="val ${colorOf(pos.unrealisedPnl)}">${fmtMoney(pos.unrealisedPnl, true)}</span></div>
-                    <div class="stat-row"><span class="key">Stop Loss</span> <span class="val negative">${pos.stopLoss ? fmtMoney(pos.stopLoss) : '⚠️ sem SL'}</span></div>
-                    <div class="stat-row"><span class="key">Take Profit</span> <span class="val positive">${pos.takeProfit ? fmtMoney(pos.takeProfit) : '— (livre)'}</span></div>
+                    <div class="stat-row"><span class="key">Side</span> <span class="val ${sideClass}">${sideLabel}</span></div>
+                    <div class="stat-row"><span class="key">Size</span> <span class="val">${fmtNum(posSize, 4)} BTC</span></div>
+                    <div class="stat-row"><span class="key">Avg Price</span> <span class="val">${fmtMoney(avgPrice)}</span></div>
+                    <div class="stat-row"><span class="key">PnL Flutuante</span> <span class="val ${colorOf(uPnl)}">${fmtMoney(uPnl, true)}</span></div>
+                    <div class="stat-row"><span class="key">Stop Loss</span> <span class="val negative">${stopLoss ? fmtMoney(stopLoss) : '⚠️ sem SL'}</span></div>
+                    ${tpRow}
                 `;
             } else {
                 posDiv.innerHTML = `<div style="text-align: center; padding: 30px 20px;"><div style="font-size: 32px;">💤</div><div style="margin-top: 8px; color: var(--text-secondary); font-weight: 600;">ZERADA</div><div style="margin-top: 4px; font-size: 12px; color: var(--text-muted);">Sem ordens pendentes</div></div>`;
             }
 
-            // 🧠 Último ciclo (só indicadores)
+            // 🧠 Último ciclo (só indicadores) — aceita formato novo (ts/mark/score_long_base) e legado
             const c = s.ultimo_ciclo_relatorio || {};
             const ind = c.indicadores_local || {};
-            document.getElementById('cycleTime').textContent = c.horario || '--';
-            document.getElementById('indPrice').textContent = fmtMoney(c.preco);
-            document.getElementById('indScore').textContent = c.score_multi_tf || '--';
+            // c.ts é "04/05/2026 02:40:59" — extrai HH:MM. c.horario é o formato antigo.
+            let cycleTime = c.horario || '--';
+            if (c.ts && typeof c.ts === 'string') {
+                const m = c.ts.match(/(\d{2}:\d{2})/);
+                if (m) cycleTime = m[1];
+            }
+            document.getElementById('cycleTime').textContent = cycleTime;
+            document.getElementById('indPrice').textContent = fmtMoney(c.mark ?? c.preco);
+            document.getElementById('indScore').textContent = c.score_multi_tf || c.score_long_base || c.score_short_base || '--';
             document.getElementById('indRsi15').textContent = fmtNum(ind.rsi_15m, 1);
             document.getElementById('indRsi1h').textContent = fmtNum(ind.rsi_1h, 1);
             const macdEl = document.getElementById('indMacd1h');
