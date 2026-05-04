@@ -6,7 +6,7 @@
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
-  "ultimo_update": "04/05/2026 06:48:06",
+  "ultimo_update": "04/05/2026 06:53:09",
   "ciclo_delta_23_48": {
     "_doc": "Ciclo Opus loop dinâmico — POSIÇÃO ZERADA. Watcher disparou OPUS 10.5+ várias vezes em 6min (23:41-23:46) com bias oscilando bull/bear/neutral. Preço subiu de $79,319 (21:55) pra $80,213 (+$894/+1.13% em 1h53min). Análise multi-TF rigorosa v5.1: D MARUBOZU FORTE 75% body bull, 4H explosivo +$1,666 vol 26K, 1H 21+22 marubozus consecutivos vol 9.5K+10.5K, 1H 23 doji-ish saturação topo (upper wick $239 + vol decay 4.2K vs 10.5K + range compression $548 vs $1,469), 15m micro pullback healthy $80,433→$79,885 + bounce $80,188 com vol microscópico (1.5K→741→217). Score LONG 6.0/6 base mas R:R 1.82 (TP2 estrutural ausente acima de $80,433 — só $81k psicológico, sem 3+ toques históricos). Score SHORT 1.0/6 contra macro_bias LONG (precisa 5+/6 mínimo). DECISÃO: HOLD ZERADO. 4 sinais exhaustion topo notados (upper wick + vol decay + funding flip positivo + orderbook 3:1 sell) MAS sem close 1H bear engulfing confirmado — não vira gatilho.",
     "ts": "2026-05-03T23:48-04:00",
@@ -1395,16 +1395,16 @@
     "_obs": "Negativo = pior que baseline (perdendo). Hoje: -$162 vs baseline."
   },
   "posicao_atual": {
-    "ts_snapshot": "04/05/2026 06:44:12",
+    "ts_snapshot": "04/05/2026 06:50:07",
     "side": "NONE",
     "size_btc": 0.0,
     "avg_entry": null,
-    "mark_price": 78946,
+    "mark_price": 79026,
     "unrealised_pnl_usd": 0.0,
     "sl": null,
     "tp1_limit": null,
     "tp2_target_estrutural": null,
-    "estado": "ZERADA · recovery forte +$776 do bottom · 15m em formacao bull $471 vol 3.9K · setup incipient mas score 0/6 reject · disciplina mecanica"
+    "estado": "ZERADA · recovery $856 do bottom · 15m bull $415 vol 4K confirmado · score base 0/6 + R:R scalp 0,47 inviabilizam · disciplina mecanica"
   },
   "ordens_pendentes": [],
   "reposicionamento_21_05": {
@@ -1441,17 +1441,17 @@
     }
   ],
   "ultimo_ciclo_relatorio": {
-    "ts": "04/05/2026 06:44:12",
-    "ciclo_id": "autonomous_loop_06_43_RECOVERY_INSUFFICIENT_SCORE",
-    "mark": 78946,
-    "tese": "ZERADA · recovery em curso mas score multi-TF insuficiente",
-    "recovery_status": "+$776 do bottom em 30min · 15m bull $471 vol 3.9K institucional",
-    "score_base_long": "0/6 abaixo do minimo 4/6 (D shooting star -1 + 4H bear -1 + 15m bull +1 + vol +1 + macro neutral 0 + 1H formando 0)",
-    "modulo_02_3_sinais": "Vol cap ✓ · RSI nao checado · Reversal candle incipient mas nao fechou",
-    "rr_hipotetico": "TP2 macro $86.197 R:R 9.3 OK · TP2 imediato $80.601 R:R 2.1 < 3.0",
-    "tentacao_humana": "comprar o crash com D shooting star ativo seria chase reversao · anti-padrao",
-    "decisao": "ZERADA · disciplina v6.3.3 · setup incipient",
-    "proximo_marco": "Wake 06:48-06:50 · 15m close 06:45 · recovery sustentada ou exhaustion"
+    "ts": "04/05/2026 06:50:07",
+    "ciclo_id": "autonomous_loop_06_49_RECOVERY_RR_INVIABLE",
+    "mark": 79026,
+    "tese": "ZERADA · recovery confirmada mas R:R scalp inviavel + score base 0/6",
+    "recovery_summary": "+$856 do bottom em 50min · 15m bull $415 vol 4K + 15m atual continuation",
+    "score_base": "0/6 (D shooting star + 1H bear extremo anteriores ainda pesam)",
+    "modulo_02_trade_contra_trend": "2/3 sinais (vol cap ✓ + reversal candle ✓ · RSI nao checado)",
+    "rr_scalp_hipotetico": "TP $79.500 / SL $78.020 = R:R 0,47 INVIAVEL",
+    "tentacao_humana": "comprar reversal MAS estrutura D shooting star + RR inviavel = anti-padrao chase",
+    "decisao": "ZERADA · disciplina v6.3.3 · paciencia preserva capital",
+    "proximo_marco": "Wake 06:57-07:00 · 1H 07:00 close · pode ser 1o 1H bull pos-crash ou rejeicao"
   },
   "contexto_macro_observado": {
     "evento_chave": "Bull trap D+4H em 79182 — preço rompeu resistência D 78900 com vol 9.7× pra 79182 e devolveu 489pts em 30min, fechando 1H 17:00 em 78693. Configura padrão clássico de exhaustion em topo / armadilha pra compradores tardios.",
@@ -1719,8 +1719,8 @@
       "pnl_percent": 0.38
     }
   ],
-  "last_github_push_ts": 1777891686.112884,
-  "last_github_push": "04/05 06:48",
+  "last_github_push_ts": 1777891989.131895,
+  "last_github_push": "04/05 06:53",
   "incidentes_aprendizado": [
     {
       "ts": "2026-05-02T20:19",
