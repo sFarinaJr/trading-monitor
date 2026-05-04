@@ -6,7 +6,7 @@
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
-  "ultimo_update": "04/05/2026 07:38:36",
+  "ultimo_update": "04/05/2026 07:43:39",
   "ciclo_delta_23_48": {
     "_doc": "Ciclo Opus loop dinâmico — POSIÇÃO ZERADA. Watcher disparou OPUS 10.5+ várias vezes em 6min (23:41-23:46) com bias oscilando bull/bear/neutral. Preço subiu de $79,319 (21:55) pra $80,213 (+$894/+1.13% em 1h53min). Análise multi-TF rigorosa v5.1: D MARUBOZU FORTE 75% body bull, 4H explosivo +$1,666 vol 26K, 1H 21+22 marubozus consecutivos vol 9.5K+10.5K, 1H 23 doji-ish saturação topo (upper wick $239 + vol decay 4.2K vs 10.5K + range compression $548 vs $1,469), 15m micro pullback healthy $80,433→$79,885 + bounce $80,188 com vol microscópico (1.5K→741→217). Score LONG 6.0/6 base mas R:R 1.82 (TP2 estrutural ausente acima de $80,433 — só $81k psicológico, sem 3+ toques históricos). Score SHORT 1.0/6 contra macro_bias LONG (precisa 5+/6 mínimo). DECISÃO: HOLD ZERADO. 4 sinais exhaustion topo notados (upper wick + vol decay + funding flip positivo + orderbook 3:1 sell) MAS sem close 1H bear engulfing confirmado — não vira gatilho.",
     "ts": "2026-05-03T23:48-04:00",
@@ -1395,16 +1395,16 @@
     "_obs": "Negativo = pior que baseline (perdendo). Hoje: -$162 vs baseline."
   },
   "posicao_atual": {
-    "ts_snapshot": "04/05/2026 07:26:52",
+    "ts_snapshot": "04/05/2026 07:39:57",
     "side": "NONE",
     "size_btc": 0.0,
     "avg_entry": null,
-    "mark_price": 78941,
+    "mark_price": 78790,
     "unrealised_pnl_usd": 0.0,
     "sl": null,
     "tp1_limit": null,
     "tp2_target_estrutural": null,
-    "estado": "ZERADA · range continua $78.860-$79.093 (~$233) · 15m bull $108 + 15m bear $68 = consolidacao · score 0/6"
+    "estado": "ZERADA · range expandiu pra baixo $78.708-$79.093 · 3a rejeicao $79.093 + breakdown leve $78.860 · vol moderado nao institucional"
   },
   "ordens_pendentes": [],
   "reposicionamento_21_05": {
@@ -1441,17 +1441,16 @@
     }
   ],
   "ultimo_ciclo_relatorio": {
-    "ts": "04/05/2026 07:26:52",
-    "ciclo_id": "autonomous_loop_07_26_RANGE_CONTINUA",
-    "mark": 78941,
-    "tese": "ZERADA · range mantem · processando crash · D close decisivo em ~12h",
-    "estrutura_15m": "07:00 fechou bull $108 · 07:15 fechou bear small $68 com upper wick rejeitando $79.093",
-    "watcher": "vibe oscilando · score 5,5-9,5 · sem direcao persistente",
-    "score_base": "0/6 mantem",
-    "d_status": "shooting star ainda CLARO · upper wick $1.660 (88% range) · close em ~12h decisivo",
-    "triggers_informativos": "bull > $79.100 vol > 1K · bear < $78.800 vol > 1K · D close < $78.530 = bear estrutural",
-    "decisao": "ZERADA · paciencia · sem trade",
-    "proximo_marco": "Wake 07:38-07:40 · 15m close 07:45 · range mantem ou quebra"
+    "ts": "04/05/2026 07:39:57",
+    "ciclo_id": "autonomous_loop_07_39_RANGE_BREAKDOWN",
+    "mark": 78790,
+    "tese": "ZERADA · range expandiu para baixo · selling pressure moderada sem forca institucional",
+    "estrutura_15m": "07:15 fechou bear $100 com upper wick $84 (3a rejeicao) · 07:30 em formacao bear $141 sem upper wick · low $78.708",
+    "watcher": "vibe 9/12 bear/neutral · score 6,5-8,5 · selling moderado",
+    "score_short_base": "3,5/6 abaixo do minimo 4/6 (D +1, 4H +1, 1H +0,5, 15m +0,5, vol 0, macro +0,5)",
+    "rr_short_hipotetico": "TP $78.170 SL $79.143 = R:R 1,76 < 3,0 INVIAVEL",
+    "decisao": "ZERADA · disciplina v6.3.3 · nao chase do crash consumido",
+    "proximo_marco": "Wake 07:48-07:50 · 15m close 07:45 · breakdown intensifica ou recovery"
   },
   "contexto_macro_observado": {
     "evento_chave": "Bull trap D+4H em 79182 — preço rompeu resistência D 78900 com vol 9.7× pra 79182 e devolveu 489pts em 30min, fechando 1H 17:00 em 78693. Configura padrão clássico de exhaustion em topo / armadilha pra compradores tardios.",
@@ -1719,8 +1718,8 @@
       "pnl_percent": 0.38
     }
   ],
-  "last_github_push_ts": 1777894716.358704,
-  "last_github_push": "04/05 07:38",
+  "last_github_push_ts": 1777895019.217674,
+  "last_github_push": "04/05 07:43",
   "incidentes_aprendizado": [
     {
       "ts": "2026-05-02T20:19",
