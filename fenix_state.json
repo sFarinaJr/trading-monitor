@@ -6,7 +6,7 @@
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
-  "ultimo_update": "04/05/2026 04:26:43",
+  "ultimo_update": "04/05/2026 04:31:46",
   "ciclo_delta_23_48": {
     "_doc": "Ciclo Opus loop dinâmico — POSIÇÃO ZERADA. Watcher disparou OPUS 10.5+ várias vezes em 6min (23:41-23:46) com bias oscilando bull/bear/neutral. Preço subiu de $79,319 (21:55) pra $80,213 (+$894/+1.13% em 1h53min). Análise multi-TF rigorosa v5.1: D MARUBOZU FORTE 75% body bull, 4H explosivo +$1,666 vol 26K, 1H 21+22 marubozus consecutivos vol 9.5K+10.5K, 1H 23 doji-ish saturação topo (upper wick $239 + vol decay 4.2K vs 10.5K + range compression $548 vs $1,469), 15m micro pullback healthy $80,433→$79,885 + bounce $80,188 com vol microscópico (1.5K→741→217). Score LONG 6.0/6 base mas R:R 1.82 (TP2 estrutural ausente acima de $80,433 — só $81k psicológico, sem 3+ toques históricos). Score SHORT 1.0/6 contra macro_bias LONG (precisa 5+/6 mínimo). DECISÃO: HOLD ZERADO. 4 sinais exhaustion topo notados (upper wick + vol decay + funding flip positivo + orderbook 3:1 sell) MAS sem close 1H bear engulfing confirmado — não vira gatilho.",
     "ts": "2026-05-03T23:48-04:00",
@@ -1380,12 +1380,12 @@
     "invalidada_em": "2026-05-03T16:00 UTC-4"
   },
   "saldo": {
-    "ts_snapshot": "04/05/2026 04:20:57",
-    "equity_usd": 392.82,
+    "ts_snapshot": "04/05/2026 04:29:55",
+    "equity_usd": 392.65,
     "available_usd": 376.62,
     "cumPnL_unified_usd": -6286.0,
     "baseline_pnl_usd": -6124.0,
-    "delta_vs_baseline_usd": -161.95,
+    "delta_vs_baseline_usd": -162.12,
     "positionIM_usd": 16.16
   },
   "progresso_vs_baseline": {
@@ -1395,12 +1395,12 @@
     "_obs": "Negativo = pior que baseline (perdendo). Hoje: -$162 vs baseline."
   },
   "posicao_atual": {
-    "ts_snapshot": "04/05/2026 04:20:57",
+    "ts_snapshot": "04/05/2026 04:29:55",
     "side": "Buy (LONG)",
     "size_btc": 0.005,
     "avg_entry": 79723.4,
-    "mark_price": 79733.64,
-    "unrealised_pnl_usd": 0.05,
+    "mark_price": 79698.8,
+    "unrealised_pnl_usd": -0.12,
     "sl": 79255,
     "tp1_limit": 80130,
     "tp1_qty": 0.002,
@@ -1410,7 +1410,7 @@
       94370,
       107341
     ],
-    "estado": "LONG essencialmente flat +$0,05 · 15m anterior bull $93 vol 589 lower wick $110 confirmou defesa $79.553 · consolidacao saudavel",
+    "estado": "LONG -$0,12 · vibe MUDOU pra bull dominante (6/10 últimas) · novo low $79.585 com lower wick $114 confirmou defesa nivel · range $79.585-$79.756",
     "liq_price": 76919.1,
     "breakeven_with_fees": 79813.85
   },
@@ -1449,16 +1449,17 @@
     }
   ],
   "ultimo_ciclo_relatorio": {
-    "ts": "04/05/2026 04:20:57",
-    "ciclo_id": "autonomous_loop_04_20_HOLD_consolidacao_saudavel",
-    "mark": 79733.64,
-    "tese": "LONG aberto · consolidacao apos defesa do nivel $79.553-$79.500",
-    "pos_status": "uPnL +$0,05 quase flat · trade saiu da pressao imediata",
-    "watcher": "vibe MISTA 4 bull/5 neutral · score 6,5-8,5 · virada em progresso nao confirmada",
-    "estrutura_15m": "04:00 fechou bull $93 vol 589 lower wick $110 · 04:15 em formacao bear small dentro range",
-    "triggers_status": "todos preservados · mark $234 acima trigger $79.500 · 1H em formacao mid-candle",
-    "decisao": "HOLD saudavel · sem ajustes · triggers ativos",
-    "proximo_marco": "Wake 04:27-04:30 · 15m close 04:30 · recovery acelera ou retorna range"
+    "ts": "04/05/2026 04:29:55",
+    "ciclo_id": "autonomous_loop_04_29_VIBE_BULL_DOMINANT",
+    "mark": 79698.8,
+    "tese": "LONG aberto · vibe inflexao bull confirmada · novo low defendido $79.585",
+    "pos_status": "uPnL -$0,12 ainda ligeiro prejuizo · trade dentro plano",
+    "watcher": "vibe BULLISH dominante 6/10 (vs persistente bearish ha 1h) · score caiu 8-10 → 4-7",
+    "estrutura_15m": "04:15 em formacao bear body $57 lower wick $114 · defesa renovada $79.585",
+    "triggers_status": "todos preservados · mark $199 acima $79.500 · 1H em formacao mid",
+    "sinais_positivos": "15m anterior bull $93 + 15m atual lower wick · vibe virou bull · selling pressure exausto",
+    "decisao": "HOLD · sinais tecnicos favoraveis · disciplina continua",
+    "proximo_marco": "Wake 04:35-04:38 · 15m close 04:30 · continuacao bull > $79.756 ou rejeicao"
   },
   "contexto_macro_observado": {
     "evento_chave": "Bull trap D+4H em 79182 — preço rompeu resistência D 78900 com vol 9.7× pra 79182 e devolveu 489pts em 30min, fechando 1H 17:00 em 78693. Configura padrão clássico de exhaustion em topo / armadilha pra compradores tardios.",
@@ -1726,8 +1727,8 @@
       "pnl_percent": 0.38
     }
   ],
-  "last_github_push_ts": 1777883203.097225,
-  "last_github_push": "04/05 04:26",
+  "last_github_push_ts": 1777883506.119415,
+  "last_github_push": "04/05 04:31",
   "incidentes_aprendizado": [
     {
       "ts": "2026-05-02T20:19",
