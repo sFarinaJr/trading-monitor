@@ -6,7 +6,7 @@
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
-  "ultimo_update": "04/05/2026 01:29:58",
+  "ultimo_update": "04/05/2026 01:35:01",
   "ciclo_delta_23_48": {
     "_doc": "Ciclo Opus loop dinâmico — POSIÇÃO ZERADA. Watcher disparou OPUS 10.5+ várias vezes em 6min (23:41-23:46) com bias oscilando bull/bear/neutral. Preço subiu de $79,319 (21:55) pra $80,213 (+$894/+1.13% em 1h53min). Análise multi-TF rigorosa v5.1: D MARUBOZU FORTE 75% body bull, 4H explosivo +$1,666 vol 26K, 1H 21+22 marubozus consecutivos vol 9.5K+10.5K, 1H 23 doji-ish saturação topo (upper wick $239 + vol decay 4.2K vs 10.5K + range compression $548 vs $1,469), 15m micro pullback healthy $80,433→$79,885 + bounce $80,188 com vol microscópico (1.5K→741→217). Score LONG 6.0/6 base mas R:R 1.82 (TP2 estrutural ausente acima de $80,433 — só $81k psicológico, sem 3+ toques históricos). Score SHORT 1.0/6 contra macro_bias LONG (precisa 5+/6 mínimo). DECISÃO: HOLD ZERADO. 4 sinais exhaustion topo notados (upper wick + vol decay + funding flip positivo + orderbook 3:1 sell) MAS sem close 1H bear engulfing confirmado — não vira gatilho.",
     "ts": "2026-05-03T23:48-04:00",
@@ -1387,7 +1387,7 @@
     "locked": 0.0,
     "unrealisedPnl": 0.0,
     "_obs": "Snapshot fresco. Posição zerada desde 21:30. Net dia: -$29.10. Aguardando setup LONG aligned macro com R:R viável.",
-    "ts_snapshot": "2026-05-04 01:04:46"
+    "ts_snapshot": "2026-05-04 01:30:53"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -1406,7 +1406,7 @@
     "tp2_target": 0,
     "uPnL_atual": 0,
     "total_trade_atual": 0,
-    "ts_snapshot": "2026-05-04T01:04:46-04:00"
+    "ts_snapshot": "2026-05-04T01:30:53-04:00"
   },
   "ordens_pendentes": [],
   "reposicionamento_21_05": {
@@ -1443,19 +1443,18 @@
     }
   ],
   "ultimo_ciclo_relatorio": {
-    "horario": "01:04",
-    "preco": 80310,
+    "horario": "01:30",
+    "preco": 79963,
     "score_multi_tf": {
-      "LONG": "3-4/6",
-      "SHORT": "2-3/6 contra macro"
+      "LONG": "3/6 esperando pullback profundo",
+      "SHORT": "3-4/6 abaixo de 5/6 contra-trend"
     },
-    "tese_atual": "HOLD ZERADO — 1H 00 doji confirmado mas sem follow-through bear",
-    "decisao": "HOLD — doji sozinho não dispara · vibe bear C1 quebrou · esperar 1H 01:00 confirmar bear engulfing OU não",
-    "candle_1h_00_close": "O 80,279 / H 80,600 / L 80,199 / C 80,299 / vol 3,819 · body 5% range = doji clássico · upper wick $301",
-    "trigger_aguardado": "1H 01:00 fechar bear engulfing + vol >5K = SHORT contra-trend válido OU pullback $79,800 = LONG aligned",
-    "proximo_marco": "Close 1H 01:00 às 02:00 UTC-4 (~55min)",
+    "tese_atual": "PULLBACK INICIADO — esperando zona ideal $79,500-$79,800",
+    "decisao": "HOLD — 1H 01 em formação bear $341 mas ainda não fechou · score insuficiente em ambos os lados · esperando cenário se firmar",
+    "trigger_aguardado": "Pullback profundo $79,500-$79,800 + reversal candle = LONG aligned · OU close 1H 01 bear engulfing + vol >5K = SHORT contra-trend válido",
+    "proximo_marco": "Close 1H 01:00 às 02:00 UTC-4 (~30min)",
     "macro_bias": "LONG dominante",
-    "ts_snapshot": "2026-05-04T01:04:46-04:00"
+    "ts_snapshot": "2026-05-04T01:30:53-04:00"
   },
   "contexto_macro_observado": {
     "evento_chave": "Bull trap D+4H em 79182 — preço rompeu resistência D 78900 com vol 9.7× pra 79182 e devolveu 489pts em 30min, fechando 1H 17:00 em 78693. Configura padrão clássico de exhaustion em topo / armadilha pra compradores tardios.",
@@ -1723,8 +1722,8 @@
       "pnl_percent": 0.38
     }
   ],
-  "last_github_push_ts": 1777872598.081533,
-  "last_github_push": "04/05 01:29",
+  "last_github_push_ts": 1777872901.087679,
+  "last_github_push": "04/05 01:35",
   "incidentes_aprendizado": [
     {
       "ts": "2026-05-02T20:19",
