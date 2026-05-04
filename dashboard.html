@@ -312,27 +312,6 @@
             </div>
         </div>
 
-        <!-- 🧠 ÚLTIMO CICLO FÊNIX (só indicadores) -->
-        <div class="card">
-            <div class="card-title">🧠 Último Ciclo FÊNIX <span id="cycleTime" style="color: var(--accent-blue); margin-left: auto;">--</span></div>
-            <div class="indicators">
-                <div class="indicator"><div class="name">Preço</div><div class="val" id="indPrice">--</div></div>
-                <div class="indicator"><div class="name">Score Multi-TF</div><div class="val" id="indScore">--</div></div>
-                <div class="indicator"><div class="name">RSI 15m</div><div class="val" id="indRsi15">--</div></div>
-                <div class="indicator"><div class="name">RSI 1H</div><div class="val" id="indRsi1h">--</div></div>
-                <div class="indicator"><div class="name">MACD 1H Hist</div><div class="val" id="indMacd1h">--</div></div>
-                <div class="indicator"><div class="name">EMA 9 / 21 (15m)</div><div class="val" id="indEma" style="font-size: 12px;">--</div></div>
-            </div>
-        </div>
-
-        <!-- 📈 ÚLTIMO CANDLE 15m -->
-        <div class="card">
-            <div class="card-title">📈 Último Candle 15m</div>
-            <div id="candleContent" style="font-family: 'SF Mono', Monaco, monospace; font-size: 13px;">
-                <div style="text-align: center; padding: 20px; color: var(--text-muted);">Carregando…</div>
-            </div>
-        </div>
-
         <footer>
             FÊNIX Dashboard — dados de <a href="https://github.com/sFarinaJr/trading-monitor" style="color: var(--accent-blue);">trading-monitor</a>
             • <span id="lastSync">--</span>
@@ -449,42 +428,6 @@
             } else {
                 posDiv.innerHTML = `<div style="text-align: center; padding: 30px 20px;"><div style="font-size: 32px;">💤</div><div style="margin-top: 8px; color: var(--text-secondary); font-weight: 600;">ZERADA</div><div style="margin-top: 4px; font-size: 12px; color: var(--text-muted);">Sem ordens pendentes</div></div>`;
             }
-
-            // 🧠 Último ciclo (só indicadores) — aceita formato novo (ts/mark/score_long_base) e legado
-            const c = s.ultimo_ciclo_relatorio || {};
-            const ind = c.indicadores_local || {};
-            // c.ts é "04/05/2026 02:40:59" — extrai HH:MM. c.horario é o formato antigo.
-            let cycleTime = c.horario || '--';
-            if (c.ts && typeof c.ts === 'string') {
-                const m = c.ts.match(/(\d{2}:\d{2})/);
-                if (m) cycleTime = m[1];
-            }
-            document.getElementById('cycleTime').textContent = cycleTime;
-            document.getElementById('indPrice').textContent = fmtMoney(c.mark ?? c.preco);
-            document.getElementById('indScore').textContent = c.score_multi_tf || c.score_long_base || c.score_short_base || '--';
-            document.getElementById('indRsi15').textContent = fmtNum(ind.rsi_15m, 1);
-            document.getElementById('indRsi1h').textContent = fmtNum(ind.rsi_1h, 1);
-            const macdEl = document.getElementById('indMacd1h');
-            macdEl.textContent = fmtNum(ind.macd_1h_hist, 1);
-            macdEl.className = `val ${colorOf(ind.macd_1h_hist)}`;
-            document.getElementById('indEma').textContent = `${fmtNum(ind.ema9_15m, 0)} / ${fmtNum(ind.ema21_15m, 0)}`;
-
-            // 📈 Candle
-            const k = c.candle_15m_recente;
-            const candDiv = document.getElementById('candleContent');
-            if (k) {
-                const dir = k.close >= k.open ? 'positive' : 'negative';
-                const sym = k.close >= k.open ? '🟢' : '🔴';
-                candDiv.innerHTML = `
-                    <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 16px;">
-                        <div><div style="color: var(--text-muted); font-size: 10px;">OPEN</div><div style="font-size: 18px;">${fmtMoney(k.open)}</div></div>
-                        <div><div style="color: var(--text-muted); font-size: 10px;">HIGH</div><div style="font-size: 18px; color: var(--positive);">${fmtMoney(k.high)}</div></div>
-                        <div><div style="color: var(--text-muted); font-size: 10px;">LOW</div><div style="font-size: 18px; color: var(--negative);">${fmtMoney(k.low)}</div></div>
-                        <div><div style="color: var(--text-muted); font-size: 10px;">CLOSE</div><div style="font-size: 18px;" class="${dir}">${sym} ${fmtMoney(k.close)}</div></div>
-                        <div><div style="color: var(--text-muted); font-size: 10px;">VOL</div><div style="font-size: 18px;">${fmtNum(k.vol, 1)}</div></div>
-                    </div>
-                `;
-            } else candDiv.innerHTML = '<div style="text-align: center; padding: 20px; color: var(--text-muted);">Sem dados</div>';
 
             // Header status — calcula idade dos dados pra mostrar status real.
             // Usa last_github_push_ts (epoch s) em vez de string formatada.
