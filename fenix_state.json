@@ -6,7 +6,7 @@
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
-  "ultimo_update": "04/05/2026 06:02:39",
+  "ultimo_update": "04/05/2026 06:07:42",
   "ciclo_delta_23_48": {
     "_doc": "Ciclo Opus loop dinâmico — POSIÇÃO ZERADA. Watcher disparou OPUS 10.5+ várias vezes em 6min (23:41-23:46) com bias oscilando bull/bear/neutral. Preço subiu de $79,319 (21:55) pra $80,213 (+$894/+1.13% em 1h53min). Análise multi-TF rigorosa v5.1: D MARUBOZU FORTE 75% body bull, 4H explosivo +$1,666 vol 26K, 1H 21+22 marubozus consecutivos vol 9.5K+10.5K, 1H 23 doji-ish saturação topo (upper wick $239 + vol decay 4.2K vs 10.5K + range compression $548 vs $1,469), 15m micro pullback healthy $80,433→$79,885 + bounce $80,188 com vol microscópico (1.5K→741→217). Score LONG 6.0/6 base mas R:R 1.82 (TP2 estrutural ausente acima de $80,433 — só $81k psicológico, sem 3+ toques históricos). Score SHORT 1.0/6 contra macro_bias LONG (precisa 5+/6 mínimo). DECISÃO: HOLD ZERADO. 4 sinais exhaustion topo notados (upper wick + vol decay + funding flip positivo + orderbook 3:1 sell) MAS sem close 1H bear engulfing confirmado — não vira gatilho.",
     "ts": "2026-05-03T23:48-04:00",
@@ -1380,13 +1380,13 @@
     "invalidada_em": "2026-05-03T16:00 UTC-4"
   },
   "saldo": {
-    "ts_snapshot": "04/05/2026 05:58:52",
-    "equity_usd": 393.26,
-    "available_usd": 376.62,
-    "cumPnL_unified_usd": -6286.0,
+    "ts_snapshot": "04/05/2026 06:04:50",
+    "equity_usd": 391.2,
+    "available_usd": 391.2,
+    "cumPnL_unified_usd": -6287.58,
     "baseline_pnl_usd": -6124.0,
-    "delta_vs_baseline_usd": -161.51,
-    "positionIM_usd": 16.16
+    "delta_vs_baseline_usd": -163.58,
+    "positionIM_usd": 0.0
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -1395,24 +1395,16 @@
     "_obs": "Negativo = pior que baseline (perdendo). Hoje: -$162 vs baseline."
   },
   "posicao_atual": {
-    "ts_snapshot": "04/05/2026 05:58:52",
-    "side": "Buy (LONG)",
-    "size_btc": 0.005,
-    "avg_entry": 79723.4,
-    "mark_price": 79821.1,
-    "unrealised_pnl_usd": 0.49,
-    "sl": 79255,
-    "tp1_limit": 80130,
-    "tp1_qty": 0.002,
-    "tp2_target_estrutural": 86197,
-    "tp2_alternativos": [
-      90536,
-      94370,
-      107341
-    ],
-    "estado": "LONG +$0,49 POSITIVO REAL · mark $79.821 ACIMA do BE c/fees $79.814 · 1H 05:00 fechando BULL body $156 vol 1.404 · 8 ciclos recovery (-$0,79 → +$0,49)",
-    "liq_price": 76919.1,
-    "breakeven_with_fees": 79813.85
+    "ts_snapshot": "04/05/2026 06:04:50",
+    "side": "NONE",
+    "size_btc": 0.0,
+    "avg_entry": null,
+    "mark_price": 79408,
+    "unrealised_pnl_usd": 0.0,
+    "sl": null,
+    "tp1_limit": null,
+    "tp2_target_estrutural": null,
+    "estado": "ZERADA · trade LONG fechado por trigger acelerado em $79.408 · loss net -$1,58 · capital preservado vs SL automatico"
   },
   "ordens_pendentes": [],
   "reposicionamento_21_05": {
@@ -1449,17 +1441,16 @@
     }
   ],
   "ultimo_ciclo_relatorio": {
-    "ts": "04/05/2026 05:58:52",
-    "ciclo_id": "autonomous_loop_05_58_POSITIVE_REAL",
-    "mark": 79821.1,
-    "tese": "LONG aberto · trade voltou positivo REAL acima BE · 1H bull confirmando",
-    "pos_status": "uPnL +$0,49 · 8 ciclos recovery · primeiro positivo real desde entrada",
-    "watcher": "vibe NEUTRAL dominante 8/12 · score 5-8 · sem direcao clara mas bear sumiu",
-    "estrutura_1h": "1H 05:00 em formacao bull body $156 vol 1.404 lower wick $61 upper wick $66 · fechando bull em ~2min",
-    "momentum": "TP1 $80.130 a $309 acima · alcancavel com continuation",
-    "licao_disciplina": "Disciplina mecanica preservou setup quando trade parecia morto · 8 ciclos de HOLD vindicados",
-    "decisao": "HOLD · momentum bull · TP1 viable",
-    "proximo_marco": "Wake 06:03-06:05 · 1H close 06:00 real + comeco 1H 06:00→07:00"
+    "ts": "04/05/2026 06:04:50",
+    "ciclo_id": "autonomous_loop_06_03_TRIGGER_FIRED",
+    "mark": 79408,
+    "tese": "Trade fechado por trigger acelerado · ZERADA",
+    "pos_status": "NONE · loss net -$1,58 (-0,40% equity)",
+    "watcher": "sera atualizado proximo ciclo",
+    "estrutura_1h": "1H 06:00 abriu bear body $405 vol 506 em 3min · breakdown violento",
+    "trigger_acionado": "mark < $79.500 (mark $79.380) = FECHAR TOTAL · executado",
+    "decisao": "ZERADA · esperar setup limpo",
+    "proximo_marco": "Wake 06:15 · monitor pos-breakdown · novo setup so com criterios v6.3.3 cumpridos"
   },
   "contexto_macro_observado": {
     "evento_chave": "Bull trap D+4H em 79182 — preço rompeu resistência D 78900 com vol 9.7× pra 79182 e devolveu 489pts em 30min, fechando 1H 17:00 em 78693. Configura padrão clássico de exhaustion em topo / armadilha pra compradores tardios.",
@@ -1727,8 +1718,8 @@
       "pnl_percent": 0.38
     }
   ],
-  "last_github_push_ts": 1777888959.3701088,
-  "last_github_push": "04/05 06:02",
+  "last_github_push_ts": 1777889262.207417,
+  "last_github_push": "04/05 06:07",
   "incidentes_aprendizado": [
     {
       "ts": "2026-05-02T20:19",
@@ -2797,5 +2788,31 @@
     "se_tivesse_fechado_emocional": "perda real -$1,11 desnecessaria",
     "preservacao_disciplina": "evitou perda de $1,09 (-$1,11 vs -$0,02 atual)",
     "principio_validado": "Anti-padrao fechar antes do trigger formal é caro. Triggers pre-armados existem para resistir tentacao emocional. Recovery valida disciplina."
+  },
+  "ciclo_delta_06_03_TRADE_CLOSED_TRIGGER": {
+    "ts": "04/05/2026 06:04:50",
+    "evento": "TRIGGER ACELERADO mark < $79.500 ACIONOU · FECHAR TOTAL executado",
+    "movimento_que_disparou": "mark $79.821 → $79.380 em 5min (-$441) · 1H 06:00 abriu bear body $405",
+    "trade_resumo": {
+      "side": "LONG",
+      "qty": 0.005,
+      "entry": 79723.4,
+      "exit_avg": 79408,
+      "tempo_aberto": "3h24min",
+      "unrealised_pnl_no_exit": -1.65,
+      "loss_net_realizado_usd": -1.58,
+      "pct_equity": -0.4,
+      "cumPnL_antes": -6286.0,
+      "cumPnL_depois": -6287.58,
+      "vs_sl_automatico_economia": 1.35
+    },
+    "disciplina_validada": "trigger pre-armado em $79.500 antecipou exit · evitou stop hunt $79.255 · 9 ciclos de HOLD preservaram setup que oscilou +$0,49 → -$1,65",
+    "dna_aplicado": "v6.3.3 VETO #3 refinado correto · v6.3.1 TP2 fallback macro gerou candidates · v6.3 prova de toques disciplina",
+    "licao_estrutural": "Trigger acelerado pre-definido = contrato com disciplina futura. Define linha vermelha quando frio, executa quando esquenta. NAO mexe enquanto aberto.",
+    "ordens": {
+      "close_long": "fenix_close_long_trigger_0603 · Market Sell 0.005 fillou",
+      "tp1_orfao_cancelado": "fenix_tp1_v631_0245b · Sell limit $80.130 0.002 cancelado · evitou virar SHORT acidental"
+    },
+    "proximo": "Aguardar novo setup limpo · score base >=4/6 + R:R >=3,0 + TP2 estrutural com prova de toques · monitor pos-breakdown"
   }
 }
