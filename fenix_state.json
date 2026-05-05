@@ -6,7 +6,7 @@
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
-  "ultimo_update": "05/05/2026 03:53:31",
+  "ultimo_update": "05/05/2026 03:58:34",
   "ciclo_delta_23_48": {
     "_doc": "Ciclo Opus loop dinâmico — POSIÇÃO ZERADA. Watcher disparou OPUS 10.5+ várias vezes em 6min (23:41-23:46) com bias oscilando bull/bear/neutral. Preço subiu de $79,319 (21:55) pra $80,213 (+$894/+1.13% em 1h53min). Análise multi-TF rigorosa v5.1: D MARUBOZU FORTE 75% body bull, 4H explosivo +$1,666 vol 26K, 1H 21+22 marubozus consecutivos vol 9.5K+10.5K, 1H 23 doji-ish saturação topo (upper wick $239 + vol decay 4.2K vs 10.5K + range compression $548 vs $1,469), 15m micro pullback healthy $80,433→$79,885 + bounce $80,188 com vol microscópico (1.5K→741→217). Score LONG 6.0/6 base mas R:R 1.82 (TP2 estrutural ausente acima de $80,433 — só $81k psicológico, sem 3+ toques históricos). Score SHORT 1.0/6 contra macro_bias LONG (precisa 5+/6 mínimo). DECISÃO: HOLD ZERADO. 4 sinais exhaustion topo notados (upper wick + vol decay + funding flip positivo + orderbook 3:1 sell) MAS sem close 1H bear engulfing confirmado — não vira gatilho.",
     "ts": "2026-05-03T23:48-04:00",
@@ -1403,19 +1403,19 @@
     "stopLoss": 80725,
     "takeProfit": "",
     "tpslMode": "Full",
-    "uPnL_at_save": 6.68,
-    "markPrice_at_save": 81095.4,
+    "uPnL_at_save": 4.76,
+    "markPrice_at_save": 80820.6,
     "liqPrice": 77322,
-    "ts": "2026-05-05T03:40:00-04:00",
+    "ts": "2026-05-05T03:57:00-04:00",
     "orderLinkId_entry": "fenix_long_v65_2110",
     "tp1_fillado": true,
     "tp1_pnl_lock": 1.02,
     "tp2_estrutural_macro": 89230,
-    "workflow_stage": "pos_TP1 · SL APERTADO $80.725 (TP1 $1,02 + SL $4,09 = $5,11 garantido) · trigger trail $81.343 dist +0,31% · mark $81.095 vigília curta",
-    "nota": "ciclo 03:40 wake score 4.0 haiku neutral · atenuação progressiva 11.5→7.0→4.0 (saturação topo) · 3 sinais residuais · uPnL +$6,68 (+$0,11 vs ciclo anterior) · mark subindo lento · checklist módulo 04 aguarda cruzamento $81.343",
-    "unrealised_pnl_usd": 6.68,
-    "coracao_estado_at_save": "expectante",
-    "vibe_conflict_status": "desfeito · sem 4+ bear consecutivos · score atenuando mas bias neutral · SL apertado mantém"
+    "workflow_stage": "pos_TP1 · SL APERTADO $80.725 (TP1 $1,02 + SL $4,09 = $5,11 garantido) · mark $80.821 folga $96 acima SL · MANTER · vigília 10min",
+    "nota": "ciclo 03:57 ALERTA INTENSIFICOU · score 7.0→9.0 OPUS BEARISH FORTE · 4 sinais bear vs 1 lean bull · 6 hbs bear consecutivos · mark $80.821 (-$19) · folga apertando ($115→$96 acima SL) · NÃO re-apertar (stop hunt risk) · deixar SL mecânico agir",
+    "unrealised_pnl_usd": 4.76,
+    "coracao_estado_at_save": "amedrontado",
+    "vibe_conflict_status": "FORMAL ATIVO · 6 hbs consecutivos · score 9.0 opus bearish · próximo wake 10min capturar SL hit ou recuperação"
   },
   "ordens_pendentes": [],
   "reposicionamento_21_05": {
@@ -1676,8 +1676,8 @@
       "pnl_percent": -0.59
     }
   ],
-  "last_github_push_ts": 1777967611.3933928,
-  "last_github_push": "05/05 03:53",
+  "last_github_push_ts": 1777967914.415741,
+  "last_github_push": "05/05 03:58",
   "incidentes_aprendizado": [
     {
       "ts": "2026-05-02T20:19",
