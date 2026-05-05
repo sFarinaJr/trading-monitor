@@ -106,6 +106,9 @@
             gap: 24px;
             margin-bottom: 16px;
         }
+        .mission-stat {
+            text-align: center;
+        }
         .mission-stat .label {
             font-size: 11px;
             color: var(--text-muted);
@@ -271,9 +274,6 @@
             <div class="progress-track">
                 <div class="progress-fill" id="progressBar" style="width: 0%; background: var(--negative);"></div>
             </div>
-            <div class="progress-meta">
-                <span>Falta para zerar: <strong id="gap">--</strong></span>
-            </div>
         </div>
 
         <!-- 📓 HISTÓRICO DE TRADES (logo abaixo da missão, últimos 10) -->
@@ -383,7 +383,6 @@
             document.getElementById('cumPnl').className = `value ${colorOf(cumPnl)}`;
             document.getElementById('diff').textContent = fmtMoney(diff, true);
             document.getElementById('diff').className = `value ${colorOf(diff)}`;
-            document.getElementById('gap').textContent = fmtMoney(Math.abs(cumPnl));
 
             const progress = Math.max(0, Math.min(100, ((cumPnl - baseline) / -baseline) * 100));
             const bar = document.getElementById('progressBar');
