@@ -241,7 +241,7 @@
                      onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/sFarinaJr/trading-monitor/main/fenix.png'; this.onerror=()=>{this.style.display='none';};">
                 <h1>
                     FÊNIX
-                    <span class="subtitle">Especialista em trade alavancado 25× · BTC/USDT Perpetual · Bybit</span>
+                    <span class="subtitle">Especialista em trade alavancado 25× · BTC/USDT Perpetual</span>
                 </h1>
             </div>
             <div class="header-meta">
@@ -392,7 +392,7 @@
             bar.style.width = `${Math.max(2, progress)}%`;
             bar.style.background = diff > 0 ? 'linear-gradient(90deg, var(--negative), var(--positive))' : 'var(--negative)';
 
-            // 📊 Posição — aceita ambos formatos (snake_case PT-BR atual + camelCase Bybit antigo)
+            // 📊 Posição — aceita ambos formatos (snake_case PT-BR atual + camelCase legado)
             const pos = s.posicao_atual;
             const posDiv = document.getElementById('positionContent');
             const posSize = pos?.size_btc ?? pos?.size ?? 0;
@@ -453,15 +453,15 @@
 
         function renderTrades(state) {
             const tbody = document.getElementById('tradesBody');
-            // Fonte primária: state.trades_recentes (Bybit em tempo real, atualizado a cada ciclo)
+            // Fonte primária · state.trades_recentes atualizado a cada ciclo
             const allTrades = state?.trades_recentes || [];
 
             if (allTrades.length === 0) {
-                tbody.innerHTML = '<tr><td colspan="7" style="text-align: center; color: var(--text-muted); padding: 30px;">Nenhum trade registrado na Bybit</td></tr>';
+                tbody.innerHTML = '<tr><td colspan="7" style="text-align: center; color: var(--text-muted); padding: 30px;">Nenhum trade registrado</td></tr>';
                 document.getElementById('totalTradesPnl').textContent = '--';
                 return;
             }
-            // Bybit já retorna do mais recente pro mais antigo. Pega só os 10 primeiros.
+            // Lista vem do mais recente pro mais antigo · pega só os 10 primeiros.
             const trades = allTrades.slice(0, 10);
             tbody.innerHTML = trades.map(t => {
                 const pnl = t.pnl_usd || 0;
@@ -487,6 +487,8 @@
         }
 
         async function refresh() {
+            // Reseta countdown ANTES do fetch · evita travar em "atualizando..." se fetch falhar
+            window.__nextRefreshAt = Date.now() + REFRESH_MS;
             const state = await loadState();
             renderState(state);
             renderTrades(state);
