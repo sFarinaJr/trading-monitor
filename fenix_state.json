@@ -6,7 +6,7 @@
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
-  "ultimo_update": "04/05/2026 21:39:51",
+  "ultimo_update": "04/05/2026 21:44:54",
   "ciclo_delta_23_48": {
     "_doc": "Ciclo Opus loop dinâmico — POSIÇÃO ZERADA. Watcher disparou OPUS 10.5+ várias vezes em 6min (23:41-23:46) com bias oscilando bull/bear/neutral. Preço subiu de $79,319 (21:55) pra $80,213 (+$894/+1.13% em 1h53min). Análise multi-TF rigorosa v5.1: D MARUBOZU FORTE 75% body bull, 4H explosivo +$1,666 vol 26K, 1H 21+22 marubozus consecutivos vol 9.5K+10.5K, 1H 23 doji-ish saturação topo (upper wick $239 + vol decay 4.2K vs 10.5K + range compression $548 vs $1,469), 15m micro pullback healthy $80,433→$79,885 + bounce $80,188 com vol microscópico (1.5K→741→217). Score LONG 6.0/6 base mas R:R 1.82 (TP2 estrutural ausente acima de $80,433 — só $81k psicológico, sem 3+ toques históricos). Score SHORT 1.0/6 contra macro_bias LONG (precisa 5+/6 mínimo). DECISÃO: HOLD ZERADO. 4 sinais exhaustion topo notados (upper wick + vol decay + funding flip positivo + orderbook 3:1 sell) MAS sem close 1H bear engulfing confirmado — não vira gatilho.",
     "ts": "2026-05-03T23:48-04:00",
@@ -1521,14 +1521,24 @@
   ],
   "trades_recentes": [
     {
+      "timestamp": "2026-05-04T12:55:14",
+      "symbol": "BTCUSDT",
+      "side": "LONG",
+      "entry_price": 79500.0,
+      "exit_price": 79850.0,
+      "quantity": 0.003,
+      "pnl_usd": 0.88,
+      "pnl_percent": 0.44
+    },
+    {
       "timestamp": "2026-05-04T11:21:30",
       "symbol": "BTCUSDT",
       "side": "LONG",
-      "entry_price": 79500,
+      "entry_price": 79500.0,
       "exit_price": 79798.2,
       "quantity": 0.002,
       "pnl_usd": 0.48,
-      "pnl_percent": 0.3
+      "pnl_percent": 0.38
     },
     {
       "timestamp": "2026-05-04T10:54:41",
@@ -1538,57 +1548,57 @@
       "exit_price": 80415.3,
       "quantity": 0.002,
       "pnl_usd": -0.73,
-      "pnl_percent": -0.46
+      "pnl_percent": -0.35
     },
     {
       "timestamp": "2026-05-04T09:46:58",
       "symbol": "BTCUSDT",
       "side": "SHORT",
-      "entry_price": 79060,
+      "entry_price": 79060.0,
       "exit_price": 79056.9,
       "quantity": 0.003,
       "pnl_usd": -0.17,
-      "pnl_percent": -0.07
+      "pnl_percent": 0.0
     },
     {
       "timestamp": "2026-05-04T09:46:59",
       "symbol": "BTCUSDT",
       "side": "SHORT",
-      "entry_price": 79060,
-      "exit_price": 78665,
+      "entry_price": 79060.0,
+      "exit_price": 78665.0,
       "quantity": 0.002,
       "pnl_usd": 0.73,
-      "pnl_percent": 0.46
+      "pnl_percent": 0.5
     },
     {
       "timestamp": "2026-05-04T06:03:31",
       "symbol": "BTCUSDT",
       "side": "LONG",
       "entry_price": 79723.4,
-      "exit_price": 79497,
+      "exit_price": 79497.0,
       "quantity": 0.005,
       "pnl_usd": -1.58,
-      "pnl_percent": -0.4
+      "pnl_percent": -0.28
     },
     {
       "timestamp": "2026-05-03T19:12:56",
       "symbol": "BTCUSDT",
       "side": "SHORT",
       "entry_price": 79050.4,
-      "exit_price": 78800,
+      "exit_price": 78800.0,
       "quantity": 0.003,
       "pnl_usd": 0.51,
-      "pnl_percent": 0.21
+      "pnl_percent": 0.32
     },
     {
       "timestamp": "2026-05-03T19:13:10",
       "symbol": "BTCUSDT",
       "side": "SHORT",
       "entry_price": 79050.4,
-      "exit_price": 78650,
+      "exit_price": 78650.0,
       "quantity": 0.002,
       "pnl_usd": 0.68,
-      "pnl_percent": 0.43
+      "pnl_percent": 0.51
     },
     {
       "timestamp": "2026-05-03T02:55:39",
@@ -1598,81 +1608,71 @@
       "exit_price": 78901.8575,
       "quantity": 0.04,
       "pnl_usd": -30.29,
-      "pnl_percent": -0.97
+      "pnl_percent": -0.87
     },
     {
       "timestamp": "2026-05-02T23:23:48",
       "symbol": "BTCUSDT",
       "side": "LONG",
-      "entry_price": 78200,
+      "entry_price": 78200.0,
       "exit_price": 78092.2,
       "quantity": 0.064,
       "pnl_usd": -10.65,
-      "pnl_percent": -0.21
+      "pnl_percent": -0.14
     },
     {
       "timestamp": "2026-05-02T12:42:55",
       "symbol": "BTCUSDT",
       "side": "LONG",
-      "entry_price": 78442,
-      "exit_price": 78380,
+      "entry_price": 78442.0,
+      "exit_price": 78380.0,
       "quantity": 0.005,
       "pnl_usd": -0.74,
-      "pnl_percent": -0.19
+      "pnl_percent": -0.08
     },
     {
       "timestamp": "2026-05-01T11:23:55",
       "symbol": "BTCUSDT",
       "side": "SHORT",
-      "entry_price": 78600,
+      "entry_price": 78600.0,
       "exit_price": 78472.3,
       "quantity": 0.014,
       "pnl_usd": 0.85,
-      "pnl_percent": 0.08
+      "pnl_percent": 0.16
     },
     {
       "timestamp": "2026-05-01T11:52:49",
       "symbol": "BTCUSDT",
       "side": "SHORT",
-      "entry_price": 78600,
-      "exit_price": 78200,
+      "entry_price": 78600.0,
+      "exit_price": 78200.0,
       "quantity": 0.006,
       "pnl_usd": 2.2,
-      "pnl_percent": 0.47
+      "pnl_percent": 0.51
     },
     {
       "timestamp": "2026-05-01T02:56:26",
       "symbol": "BTCUSDT",
       "side": "SHORT",
-      "entry_price": 77100,
+      "entry_price": 77100.0,
       "exit_price": 77552.5,
       "quantity": 0.02,
       "pnl_usd": -10.23,
-      "pnl_percent": -0.66
+      "pnl_percent": -0.59
     },
     {
       "timestamp": "2026-04-30T13:30:43",
       "symbol": "BTCUSDT",
       "side": "SHORT",
-      "entry_price": 76200,
+      "entry_price": 76200.0,
       "exit_price": 76455.2,
       "quantity": 0.03,
-      "pnl_usd": -9.38,
-      "pnl_percent": -0.41
-    },
-    {
-      "timestamp": "2026-04-30T07:49:57",
-      "symbol": "BTCUSDT",
-      "side": "SHORT",
-      "entry_price": 76038.3,
-      "exit_price": 76200,
-      "quantity": 0.045,
-      "pnl_usd": -11.04,
-      "pnl_percent": -0.32
+      "pnl_usd": -9.37,
+      "pnl_percent": -0.33
     }
   ],
-  "last_github_push_ts": 1777945191.860807,
-  "last_github_push": "04/05 21:39",
+  "last_github_push_ts": 1777945494.639241,
+  "last_github_push": "04/05 21:44",
   "incidentes_aprendizado": [
     {
       "ts": "2026-05-02T20:19",
