@@ -6,7 +6,7 @@
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
-  "ultimo_update": "05/05/2026 04:44:01",
+  "ultimo_update": "05/05/2026 04:49:04",
   "ciclo_delta_23_48": {
     "_doc": "Ciclo Opus loop dinâmico — POSIÇÃO ZERADA. Watcher disparou OPUS 10.5+ várias vezes em 6min (23:41-23:46) com bias oscilando bull/bear/neutral. Preço subiu de $79,319 (21:55) pra $80,213 (+$894/+1.13% em 1h53min). Análise multi-TF rigorosa v5.1: D MARUBOZU FORTE 75% body bull, 4H explosivo +$1,666 vol 26K, 1H 21+22 marubozus consecutivos vol 9.5K+10.5K, 1H 23 doji-ish saturação topo (upper wick $239 + vol decay 4.2K vs 10.5K + range compression $548 vs $1,469), 15m micro pullback healthy $80,433→$79,885 + bounce $80,188 com vol microscópico (1.5K→741→217). Score LONG 6.0/6 base mas R:R 1.82 (TP2 estrutural ausente acima de $80,433 — só $81k psicológico, sem 3+ toques históricos). Score SHORT 1.0/6 contra macro_bias LONG (precisa 5+/6 mínimo). DECISÃO: HOLD ZERADO. 4 sinais exhaustion topo notados (upper wick + vol decay + funding flip positivo + orderbook 3:1 sell) MAS sem close 1H bear engulfing confirmado — não vira gatilho.",
     "ts": "2026-05-03T23:48-04:00",
@@ -1397,25 +1397,37 @@
     "_obs": "Atual -6286.40 vs baseline -6124.00 = delta $-162.40"
   },
   "posicao_atual": {
-    "side": "Buy",
-    "size": 0.007,
-    "avgPrice": 80141,
-    "stopLoss": 80725,
+    "side": "ZERADA",
+    "size": 0,
+    "avgPrice": 0,
+    "stopLoss": "",
     "takeProfit": "",
-    "tpslMode": "Full",
-    "uPnL_at_save": 4.57,
-    "markPrice_at_save": 80794.52,
-    "liqPrice": 77322,
-    "ts": "2026-05-05T04:38:00-04:00",
-    "orderLinkId_entry": "fenix_long_v65_2110",
-    "tp1_fillado": true,
-    "tp1_pnl_lock": 1.02,
-    "tp2_estrutural_macro": 89230,
-    "workflow_stage": "pos_TP1 · SL APERTADO $80.725 (TP1 $1,02 + SL $4,09 = $5,11 garantido) · mark $80.795 folga CRÍTICA $70 acima SL · MANTER · vigília curta",
-    "nota": "ciclo 04:38 ALERTA · score 8.0→10.0 OPUS NEUTRAL · 6 sinais conflito 3v2 (sell_pressure + agg_selling vs demand_rejection_bottom defesa low) · mark caiu $37 · folga $107→$70 CRÍTICA · 04:35 vendas (+5) iniciando pressão · NÃO re-apertar SL · vigília 8min curta",
-    "unrealised_pnl_usd": 4.57,
-    "coracao_estado_at_save": "amedrontado",
-    "vibe_conflict_status": "DESFEITO mantém (1 hb bear apenas · 04:35) · cheirinho 🐻 prestes a re-emergir se 4+ consecutivos · próximo wake 8min capturar SL hit ou reversão"
+    "tpslMode": "",
+    "uPnL_at_save": 0,
+    "markPrice_at_save": 80753.4,
+    "liqPrice": "",
+    "ts": "2026-05-05T04:48:00-04:00",
+    "ultimo_trade_fechado": {
+      "side_original": "Buy",
+      "size_original": 0.01,
+      "entry": 80141,
+      "tp1_fill": 80540,
+      "tp1_pnl_net": 1.02,
+      "sl_trigger": 80725,
+      "sl_fill_avg": 80724.14,
+      "sl_pnl_net": 3.46,
+      "total_realizado_net": 4.48,
+      "duracao": "~6h45min (entry 21:13 → exit 04:46)",
+      "motivo_saida": "SL hit · mark $80.702 perfurou SL $80.725 às 04:45-04:46 com slippage $0,86",
+      "trail_estrutural_disparou": false,
+      "trigger_trail_atingido": false,
+      "vibe_conflict_disparou": "01:45 (4 hbs) · desfeito 06:00 · re-formal 03:30-03:55 (6 hbs) · desfeito 04:00",
+      "lock_garantido_executado": "$4,48 net (esperado $5,11 · slippage $0,63 + fees market)",
+      "lições": "trail trigger $81.343 nunca foi atingido · trade respirou +$6,68 max em 03:13 mas reverteu · SL apertado lock garantiu lucro positivo apesar das oscilações"
+    },
+    "unrealised_pnl_usd": 0,
+    "coracao_estado_at_save": "exausto",
+    "vibe_conflict_status": "trade fechado · paz pós-SL · mark recuperou pra $80.753 (demand defense venceu mas tarde demais)"
   },
   "ordens_pendentes": [],
   "reposicionamento_21_05": {
@@ -1676,8 +1688,8 @@
       "pnl_percent": -0.59
     }
   ],
-  "last_github_push_ts": 1777970641.393247,
-  "last_github_push": "05/05 04:44",
+  "last_github_push_ts": 1777970944.2720609,
+  "last_github_push": "05/05 04:49",
   "incidentes_aprendizado": [
     {
       "ts": "2026-05-02T20:19",
