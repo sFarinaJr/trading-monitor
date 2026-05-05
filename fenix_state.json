@@ -6,7 +6,7 @@
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
-  "ultimo_update": "04/05/2026 22:40:26",
+  "ultimo_update": "04/05/2026 22:45:29",
   "ciclo_delta_23_48": {
     "_doc": "Ciclo Opus loop dinâmico — POSIÇÃO ZERADA. Watcher disparou OPUS 10.5+ várias vezes em 6min (23:41-23:46) com bias oscilando bull/bear/neutral. Preço subiu de $79,319 (21:55) pra $80,213 (+$894/+1.13% em 1h53min). Análise multi-TF rigorosa v5.1: D MARUBOZU FORTE 75% body bull, 4H explosivo +$1,666 vol 26K, 1H 21+22 marubozus consecutivos vol 9.5K+10.5K, 1H 23 doji-ish saturação topo (upper wick $239 + vol decay 4.2K vs 10.5K + range compression $548 vs $1,469), 15m micro pullback healthy $80,433→$79,885 + bounce $80,188 com vol microscópico (1.5K→741→217). Score LONG 6.0/6 base mas R:R 1.82 (TP2 estrutural ausente acima de $80,433 — só $81k psicológico, sem 3+ toques históricos). Score SHORT 1.0/6 contra macro_bias LONG (precisa 5+/6 mínimo). DECISÃO: HOLD ZERADO. 4 sinais exhaustion topo notados (upper wick + vol decay + funding flip positivo + orderbook 3:1 sell) MAS sem close 1H bear engulfing confirmado — não vira gatilho.",
     "ts": "2026-05-03T23:48-04:00",
@@ -1403,16 +1403,16 @@
     "stopLoss": 80141,
     "takeProfit": "",
     "tpslMode": "Full",
-    "uPnL_at_save": 2.93,
-    "markPrice_at_save": 80560,
+    "uPnL_at_save": 3.41,
+    "markPrice_at_save": 80628,
     "liqPrice": 77322,
-    "ts": "2026-05-04T22:39:00-04:00",
+    "ts": "2026-05-04T22:50:00-04:00",
     "orderLinkId_entry": "fenix_long_v65_2110",
     "tp1_fillado": true,
     "tp1_pnl_lock": 1.02,
     "tp2_estrutural_macro": 89230,
     "workflow_stage": "pos_TP1 · SL=BE entry · trail estrutural cripto pronto pra disparar quando mark entrar zona $80.601-$80.742",
-    "nota": "TP1 fillou $80.540 às 21:33 local · 30% qty fechada · SL movido pra entry $80.141 (regra v6.3.13) · resta 0.007 BTC com risco zero · trail estrutural cripto opera daqui"
+    "nota": "CORREÇÃO 22:50 · SL re-armado pra BE $80.141 (entry exato) após user remover SL apertado errado · regra módulo 04 passo 2 · não apertar SL antes de mark atingir +1.5% adicional do entry = $81.343"
   },
   "ordens_pendentes": [],
   "reposicionamento_21_05": {
@@ -1673,8 +1673,8 @@
       "pnl_percent": -0.59
     }
   ],
-  "last_github_push_ts": 1777948826.700823,
-  "last_github_push": "04/05 22:40",
+  "last_github_push_ts": 1777949129.659043,
+  "last_github_push": "04/05 22:45",
   "incidentes_aprendizado": [
     {
       "ts": "2026-05-02T20:19",
@@ -3060,5 +3060,25 @@
     "risco_atual": "ZERO (SL=BE entry · qualquer cenário fecha em PnL ≥ $0)",
     "proximo_evento": "mark entrar zona TP2 $80.601-$80.742 (mark $80.560 atual · 0.05% acima) · trail estrutural cripto módulo 04 disparado",
     "ts": "2026-05-04T22:39:00-04:00"
+  },
+  "workflow_evento_22_40_trail": {
+    "tipo": "TRAIL TRIGGER · mark entrou zona TP2 imediata $80.601-$80.742",
+    "mark_at_event": 80704,
+    "sl_movido_de": 80141,
+    "sl_movido_para": 80551,
+    "lucro_min_garantido": 3.89,
+    "regra_aplicada": "v6.5 trail trigger + módulo 04 trail estrutural cripto",
+    "proximo_evento": "continuar trail por candle 4H high - buffer · alvo macro $89.230 OU exhaustion 3+ sinais",
+    "ts": "2026-05-04T22:40:00-04:00"
+  },
+  "workflow_correcao_22_50": {
+    "tipo": "CORREÇÃO ERRO MECÂNICO · SL apertado prematuro foi removido pelo user",
+    "erro_anterior": "Apertou SL pra $80.551 com mark $80.704 (distância 0.19%) baseado em trail trigger zona TP2 imediata",
+    "erro_real": "Trail trigger NÃO autoriza aperto SL · regra módulo 04 passo 2 exige mark atingir +1.5% adicional ANTES de iniciar trail",
+    "sl_correto": 80141,
+    "gatilho_proximo_aperto": 81343,
+    "lucro_min_garantido_atual": 1.02,
+    "patch_dna": "Módulo 04 distinção trail trigger CORRIGIDA · trail trigger é informativo · não dispara aperto SL automatico",
+    "ts": "2026-05-04T22:50:00-04:00"
   }
 }
