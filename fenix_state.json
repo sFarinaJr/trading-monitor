@@ -1392,9 +1392,9 @@
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
-    "current_pnl": -6281.92,
-    "diff_usd": -157.92,
-    "_obs": "Atual -6281.92 vs baseline -6124.00 = delta $-157.92 · trade LONG fechado em 04:46 contribuiu +$4,48 net (TP1 +$1,02 + SL +$3,46) · era -$162,40 antes"
+    "current_pnl": -6278.85,
+    "diff_usd": -154.85,
+    "_obs": "Atual -6278.85 vs baseline -6124.00 = delta $-154.85 · TP1 fillou 08:18 contribuiu +$3,07 net (Sell market 0.009 @ $81151) · era -$157,92 antes · trade LONG ainda ATIVO 0,021 BTC com SL=BE $80721"
   },
   "posicao_atual": {
     "side": "Buy",
@@ -1572,6 +1572,17 @@
     }
   ],
   "trades_recentes": [
+    {
+      "timestamp": "2026-05-05T08:18:18",
+      "symbol": "BTCUSDT",
+      "side": "LONG",
+      "entry_price": 80721.1,
+      "exit_price": 81151.4,
+      "quantity": 0.009,
+      "pnl_usd": 3.07,
+      "pnl_percent": 0.53,
+      "_obs": "TP1 fillou · trigger $81125 · saida $81151,4 com slippage favoravel $26 · entry market 06:37 · duracao 1h41min · trade ainda ATIVO 0,021 BTC remanescente com SL=BE"
+    },
     {
       "timestamp": "2026-05-05T04:46:30",
       "symbol": "BTCUSDT",
