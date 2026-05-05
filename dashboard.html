@@ -273,7 +273,6 @@
             </div>
             <div class="progress-meta">
                 <span>Falta para zerar: <strong id="gap">--</strong></span>
-                <span id="interpretation">--</span>
             </div>
         </div>
 
@@ -385,7 +384,6 @@
             document.getElementById('diff').textContent = fmtMoney(diff, true);
             document.getElementById('diff').className = `value ${colorOf(diff)}`;
             document.getElementById('gap').textContent = fmtMoney(Math.abs(cumPnl));
-            document.getElementById('interpretation').textContent = s.progresso_vs_baseline?._obs ?? s.progresso_vs_baseline?.interpretacao ?? '';
 
             const progress = Math.max(0, Math.min(100, ((cumPnl - baseline) / -baseline) * 100));
             const bar = document.getElementById('progressBar');
