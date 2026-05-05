@@ -1573,6 +1573,17 @@
   ],
   "trades_recentes": [
     {
+      "timestamp": "2026-05-05T04:46:30",
+      "symbol": "BTCUSDT",
+      "side": "LONG",
+      "entry_price": 80141.0,
+      "exit_price": 80724.14,
+      "quantity": 0.007,
+      "pnl_usd": 3.46,
+      "pnl_percent": 0.73,
+      "_obs": "SL hit pos-TP1 · entry 21:13 saida 04:46 · duracao 6h45min"
+    },
+    {
       "timestamp": "2026-05-04T21:33:18",
       "symbol": "BTCUSDT",
       "side": "LONG",
