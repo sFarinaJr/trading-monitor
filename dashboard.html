@@ -321,7 +321,6 @@
     <script>
         const GH_BASE = 'https://raw.githubusercontent.com/sFarinaJr/trading-monitor/main';
         const STATE_URL = `${GH_BASE}/fenix_dashboard.json`;
-        const COSTS_URL = `${GH_BASE}/cost_log.json`;
         const REFRESH_MS = 5 * 60 * 1000;
 
         const fmtMoney = (v, sign = false) => {
@@ -359,14 +358,6 @@
                 return null;
             }
         }
-        async function loadCosts() {
-            try {
-                const r = await fetch(`${COSTS_URL}?t=${Date.now()}`);
-                if (!r.ok) return null;
-                return await r.json();
-            } catch (e) { return null; }
-        }
-
         function renderState(s) {
             if (!s) {
                 document.getElementById('status').textContent = '❌ Erro ao carregar';
