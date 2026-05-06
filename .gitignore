@@ -15,7 +15,6 @@
 !dashboard.html
 !fenix.png
 !fenix_dashboard.json
-!cost_log.json
 !README.md
 !LICENSE
 
@@ -24,6 +23,8 @@ fenix_state.json
 fenix_state.json.*
 fenix_sentidos*.json
 fenix_sentidos*.log
+cost_log.json
+cost_log.json.*
 fenix_position_snapshot.json
 fenix_price_watch.json
 fenix_tp2_candidates.json
