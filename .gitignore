@@ -1,6 +1,9 @@
 # =====================================================================
 # Política: WHITELIST estrita — só vai pro GitHub o que dashboard precisa
 # Reorganizado em 2026-05-02 após detecção de leak operacional via watcher
+# v2 · 2026-05-05 · fenix_state.json REMOVIDO da whitelist · contém análises
+# internas privadas. Substituído por fenix_dashboard.json (subset gerado
+# pelo dashboard_publisher.py · só campos renderizados pelo dashboard.html).
 # =====================================================================
 
 # Tudo bloqueado por default
@@ -11,12 +14,27 @@
 !index.html
 !dashboard.html
 !fenix.png
-!fenix_state.json
+!fenix_dashboard.json
 !cost_log.json
 !README.md
 !LICENSE
 
 # Reforço explícito de bloqueios sensíveis (defesa em profundidade):
+fenix_state.json
+fenix_state.json.*
+fenix_sentidos*.json
+fenix_sentidos*.log
+fenix_position_snapshot.json
+fenix_price_watch.json
+fenix_tp2_candidates.json
+fenix_strategic_levels*.json
+fenix_wake_flag.json
+fenix_coracao.log
+fenix_journal.md
+fenix_watcher.py
+fenix_watcher*.json
+fenix_watcher*.log
+fenix_dashboard_sync.json
 .env
 .env.*
 *.key
@@ -45,11 +63,6 @@ tests/
 screenshots/
 temp/
 tmp/
-fenix_journal.md
-fenix_watcher.py
-fenix_watcher*.json
-fenix_watcher*.log
-fenix_dashboard_sync.json
 *.sh
 *.py
 ai_strategy.txt
