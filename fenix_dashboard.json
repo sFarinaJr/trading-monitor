@@ -1,29 +1,29 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "06/05/2026 14:46:00",
-  "last_github_push": "06/05 14:46",
-  "last_github_push_ts": 1778093160.0,
+  "ultimo_update": "06/05/2026 15:25:53",
+  "last_github_push": "06/05 15:25",
+  "last_github_push_ts": 1778095553.247508,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
   "saldo": {
-    "ts_snapshot": "06/05/2026 14:46:00",
-    "equity_usd": 1361.18,
-    "walletBalance_usd": 1361.18,
-    "cumPnL_unified_usd": -6340.22,
+    "ts_snapshot": "05/05/2026 20:52:00",
+    "equity_usd": 397.31,
+    "walletBalance_usd": 397.31,
+    "cumPnL_unified_usd": -6281.47,
     "baseline_pnl_usd": -6124.0,
-    "delta_vs_baseline_usd": -216.22,
+    "delta_vs_baseline_usd": -157.47,
     "positionIM_usd": 0,
     "unrealisedPnl_usd": 0,
-    "markPrice_btc": 81238
+    "markPrice_btc": 80894
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
-    "current_pnl": -6340.22,
-    "diff_usd": -216.22,
-    "interpretacao": "Operação Virada · $216,22 abaixo do baseline · trade LONG hoje fechou SL $81.241 (loss -$57,22) · capital novo $1.418 injetado · pos-trade equity $1.361 · regra OURO anti-chase + autonomia OPUS implementadas no DNA"
+    "current_pnl": -6281.47,
+    "diff_usd": -157.47,
+    "interpretacao": "Operação Virada · $157,47 abaixo do baseline · trade LONG fechou SL=BE com slippage · TP1 +$3,07 amorteceu · net +$0,45"
   },
   "posicao_atual": {
     "side": "ZERADA",
@@ -37,17 +37,6 @@
     "tp2_target_estrutural": null
   },
   "trades_recentes": [
-    {
-      "timestamp": "2026-05-06T14:18:00",
-      "symbol": "BTCUSDT",
-      "side": "LONG",
-      "entry_price": 81722.8,
-      "exit_price": 81241.9,
-      "quantity": 0.1,
-      "pnl_usd": -57.22,
-      "pnl_percent": -0.59,
-      "_obs": "Pullback Dourado v6.7 entry $81.722 · setup confluente 5/5 mas entry chase pos-bounce $636 do low absorcao $81.086 · OPUS apertou SL 2x ($80.900 → $81.080 → $81.250) reduzindo loss · SL ativou em $81.241 (slippage $9) · auditoria OPUS confirmou erro foi na abertura · regra OURO anti-chase em standby"
-    },
     {
       "timestamp": "2026-05-05T20:52:00",
       "symbol": "BTCUSDT",
