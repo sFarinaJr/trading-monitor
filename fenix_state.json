@@ -6,7 +6,7 @@
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
-  "ultimo_update": "05/05/2026 20:49:05",
+  "ultimo_update": "05/05/2026 20:54:08",
   "ciclo_delta_23_48": {
     "_doc": "Ciclo Opus loop dinâmico — POSIÇÃO ZERADA. Watcher disparou OPUS 10.5+ várias vezes em 6min (23:41-23:46) com bias oscilando bull/bear/neutral. Preço subiu de $79,319 (21:55) pra $80,213 (+$894/+1.13% em 1h53min). Análise multi-TF rigorosa v5.1: D MARUBOZU FORTE 75% body bull, 4H explosivo +$1,666 vol 26K, 1H 21+22 marubozus consecutivos vol 9.5K+10.5K, 1H 23 doji-ish saturação topo (upper wick $239 + vol decay 4.2K vs 10.5K + range compression $548 vs $1,469), 15m micro pullback healthy $80,433→$79,885 + bounce $80,188 com vol microscópico (1.5K→741→217). Score LONG 6.0/6 base mas R:R 1.82 (TP2 estrutural ausente acima de $80,433 — só $81k psicológico, sem 3+ toques históricos). Score SHORT 1.0/6 contra macro_bias LONG (precisa 5+/6 mínimo). DECISÃO: HOLD ZERADO. 4 sinais exhaustion topo notados (upper wick + vol decay + funding flip positivo + orderbook 3:1 sell) MAS sem close 1H bear engulfing confirmado — não vira gatilho.",
     "ts": "2026-05-03T23:48-04:00",
@@ -1380,54 +1380,45 @@
     "invalidada_em": "2026-05-03T16:00 UTC-4"
   },
   "saldo": {
-    "ts_snapshot": "05/05/2026 09:13:00",
-    "equity_usd": 416.17,
-    "walletBalance_usd": 398.75,
-    "cumPnL_unified_usd": -6279.78,
+    "ts_snapshot": "05/05/2026 20:52:00",
+    "equity_usd": 397.31,
+    "walletBalance_usd": 397.31,
+    "cumPnL_unified_usd": -6281.47,
     "baseline_pnl_usd": -6124.0,
-    "delta_vs_baseline_usd": -155.78,
-    "positionIM_usd": 68.7,
-    "unrealisedPnl_usd": 17.42,
-    "markPrice_btc": 81600
+    "delta_vs_baseline_usd": -157.47,
+    "positionIM_usd": 0,
+    "unrealisedPnl_usd": 0,
+    "markPrice_btc": 80894
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
-    "current_pnl": -6279.78,
-    "diff_usd": -155.78,
-    "interpretacao": "Operação Virada · $155,78 abaixo do baseline · trade LONG ativo +$17,42 flutuante"
+    "current_pnl": -6281.47,
+    "diff_usd": -157.47,
+    "interpretacao": "Operação Virada · $157,47 abaixo do baseline · trade LONG fechou SL=BE com slippage · TP1 +$3,07 amorteceu · net +$0,45"
   },
   "posicao_atual": {
-    "side": "Buy",
-    "size": 0.021,
-    "avgPrice": 80721.1,
-    "stopLoss": 80721,
-    "takeProfit": "",
-    "tpslMode": "Full",
-    "uPnL_at_save": 17.42,
-    "markPrice_at_save": 81600,
-    "liqPrice": 77881.7,
-    "ts": "2026-05-05T09:13:00-04:00",
-    "orderLinkId_entry": "fenix_long_mkt_0637",
-    "tp1_orderLinkId": "fenix_tp1_0637",
-    "tp1_trigger": 81125,
-    "tp1_qty": 0.009,
-    "tp1_fillado": true,
-    "tp1_pnl_lock": 3.07,
-    "qty_realizada_divergencia_pendente": 0,
-    "_doc_qty_realizada": "v6.6 · campo do Loop Completo de Exaustão · seta valor quando parcial 50% é realizado em divergência RSI multi-TF · zona dourada add-on consulta e soma na qty do add-on · zera após add-on consumir",
-    "tp1_fill_time": "2026-05-05T08:18:18-04:00",
-    "tp1_fill_avg": 81151.4,
-    "tp2_estrutural_macro": 89230,
-    "tp2_estrutural_conservador": 82500,
-    "trail_trigger": 81343,
-    "trail_full_activation": 81932,
-    "breakEvenPrice": 80663,
-    "tier_sizing": "Tier 3 (4,5% risco)",
-    "workflow_stage": "pos_TP1 · SL=BE $80721 zero risco · trail estrutural cripto módulo 04 ativo · trail trigger $81343 ATINGIDO mas +1,5% adicional $81932 ainda não · aguardar continuação até TP2 macro $89230",
-    "nota": "TP1 fillou 08:18 +$3,07 net (Sell 0,009 @ $81151 com slippage favorável) · SL movido pra BE $80721 · remanescente 0,021 BTC trabalha em direção TP2 macro · uPnL +$17,42 flutuante",
-    "unrealised_pnl_usd": 17.42,
-    "coracao_estado_at_save": "expectante",
-    "vibe_conflict_status": "DESFEITO · score 10.5 OPUS BULLISH · 3 bull consecutivos no Coração · momentum confirmado",
+    "_doc": "Posição ZERADA · trade LONG 06:37 fechou em 20:52 SL=BE com slippage · TP1 +$3,07 + SL -$2,62 = NET +$0,45",
+    "side": "ZERADA",
+    "size": 0,
+    "ultima_posicao_fechada": {
+      "side_original": "Buy",
+      "size_original": 0.03,
+      "entry": 80721.1,
+      "tp1_fill": 81151.4,
+      "tp1_pnl_net": 3.07,
+      "sl_trigger": 80721,
+      "sl_fill_avg": 80675.4,
+      "sl_pnl_net": -2.62,
+      "total_realizado_net": 0.45,
+      "duracao": "~14h15min (entry 06:37 → exit 20:52)",
+      "motivo_saida": "SL=BE hit · mark cruzou $80.721 com slippage até $80.675,4 avg · stop hunt clássico (mark recuperou pra $80.894 logo depois)",
+      "trail_trigger_atingido": true,
+      "trail_full_activation_atingido": false,
+      "pico_apos_tp1": 81660,
+      "vibe_conflict_disparou": "ALTERNANTE bull/bear · sem 4+ bear consecutivos formal",
+      "lock_garantido_executado": "$0,45 net (TP1 $3,07 - SL $2,62) · trade SOBREVIVEU positivo apesar do stop hunt",
+      "lições": "trail trigger $81.343 ATINGIDO · pico $81.660 = +1,16% mas não +1,5% adicional pra apertar SL · regra v6.5 mandou MANTER SL=BE · stop hunt $46 abaixo do BE custou ~$1 vs ficar em zero · trade lock garantido funcionou"
+    },
     "_legacy_ordem_pendente_obsoleta": {
       "_doc": "ordem LIMIT $80580 cancelada às 06:37 · substituída por market entry · mantido como histórico",
       "side": "Buy",
@@ -1575,6 +1566,17 @@
   ],
   "trades_recentes": [
     {
+      "timestamp": "2026-05-05T20:52:00",
+      "symbol": "BTCUSDT",
+      "side": "LONG",
+      "entry_price": 80721.1,
+      "exit_price": 80675.4,
+      "quantity": 0.021,
+      "pnl_usd": -2.62,
+      "pnl_percent": -0.06,
+      "_obs": "SL=BE hit pos-TP1 · slippage $46 abaixo do BE · stop hunt classico (mark recuperou pra $80.894 logo depois) · trade total NET +$0,45 com TP1 amortecendo"
+    },
+    {
       "timestamp": "2026-05-05T08:18:18",
       "symbol": "BTCUSDT",
       "side": "LONG",
@@ -1583,7 +1585,7 @@
       "quantity": 0.009,
       "pnl_usd": 3.07,
       "pnl_percent": 0.53,
-      "_obs": "TP1 fillou · trigger $81125 · saida $81151,4 com slippage favoravel $26 · entry market 06:37 · duracao 1h41min · trade ainda ATIVO 0,021 BTC remanescente com SL=BE"
+      "_obs": "TP1 fillou · trigger $81125 · saida $81151,4 com slippage favoravel $26 · entry market 06:37 · duracao 1h41min"
     },
     {
       "timestamp": "2026-05-05T04:46:30",
@@ -1747,8 +1749,8 @@
       "pnl_percent": -0.59
     }
   ],
-  "last_github_push_ts": 1778028545.920201,
-  "last_github_push": "05/05 20:49",
+  "last_github_push_ts": 1778028848.91602,
+  "last_github_push": "05/05 20:54",
   "incidentes_aprendizado": [
     {
       "ts": "2026-05-02T20:19",
