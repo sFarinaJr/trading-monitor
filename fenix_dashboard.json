@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "07/05/2026 16:47:01",
-  "last_github_push": "07/05 16:47",
-  "last_github_push_ts": 1778186821.096912,
+  "ultimo_update": "07/05/2026 16:52:04",
+  "last_github_push": "07/05 16:52",
+  "last_github_push_ts": 1778187124.852451,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -23,14 +23,14 @@
     "interpretacao": "Operação Virada · $216,22 abaixo do baseline · trade LONG hoje 10:36→14:18 fechou SL $81.241 (loss -$57,22) · capital novo $1.418 injetado hoje · pos-trade equity $1.361,18 · regra OURO anti-chase + autonomia OPUS implementadas no DNA"
   },
   "posicao_atual": {
-    "side": null,
-    "size": null,
+    "side": "SHORT",
+    "size": 0.1,
     "avgPrice": null,
     "stopLoss": null,
     "takeProfit": null,
     "tp1_limit": null,
     "tp1_pnl_lock": null,
-    "unrealised_pnl_usd": 0,
+    "unrealised_pnl_usd": 31.96,
     "tp2_target_estrutural": null
   },
   "trades_recentes": [
