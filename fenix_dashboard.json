@@ -1,29 +1,29 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "07/05/2026 10:37:59",
-  "last_github_push": "07/05 10:37",
-  "last_github_push_ts": 1778164679.678553,
+  "ultimo_update": "07/05/2026 10:42:31",
+  "last_github_push": "07/05 10:42",
+  "last_github_push_ts": 1778164951.634138,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
   "saldo": {
-    "ts_snapshot": "06/05/2026 23:03:00",
-    "equity_usd": 1361.26,
-    "walletBalance_usd": 1361.01,
-    "cumPnL_unified_usd": -6340.22,
+    "ts_snapshot": "07/05/2026 10:41:00",
+    "equity_usd": 1365.05,
+    "walletBalance_usd": 1361.99,
+    "cumPnL_unified_usd": -6339.24,
     "baseline_pnl_usd": -6124.0,
-    "delta_vs_baseline_usd": -216.22,
-    "positionIM_usd": 0,
-    "unrealisedPnl_usd": 0,
-    "markPrice_btc": 81036
+    "delta_vs_baseline_usd": -215.24,
+    "positionIM_usd": 22.86,
+    "unrealisedPnl_usd": 3.06,
+    "markPrice_btc": 80089
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
-    "current_pnl": -6340.22,
-    "diff_usd": -216.22,
-    "interpretacao": "Operação Virada · $216,22 abaixo do baseline · trade LONG hoje 10:36→14:18 fechou SL $81.241 (loss -$57,22) · capital novo $1.418 injetado hoje · pos-trade equity $1.361,18 · regra OURO anti-chase + autonomia OPUS implementadas no DNA"
+    "current_pnl": -6339.24,
+    "diff_usd": -215.24,
+    "interpretacao": "Operação Virada · $215,24 abaixo do baseline · SHORT Cenário B ativo 0.007 BTC @ $80.500 · TP1 fillou +$1.09 · SL=BE · aguardando TP2 $78.116"
   },
   "posicao_atual": {
     "side": "SHORT",
@@ -33,10 +33,19 @@
     "takeProfit": null,
     "tp1_limit": null,
     "tp1_pnl_lock": null,
-    "unrealised_pnl_usd": 0.01,
+    "unrealised_pnl_usd": 3.06,
     "tp2_target_estrutural": null
   },
   "trades_recentes": [
+    {
+      "ts": "2026-05-07T14:41:00",
+      "side": "SHORT TP1 parcial",
+      "entry": 80500.0,
+      "exit": 80075.1,
+      "qty": 0.003,
+      "pnl": 1.09,
+      "nota": "TP1 Cenário B SHORT · limite $80.100 fillou $80.075 · pos restante 0.007 BTC · SL movido pra BE"
+    },
     {
       "ts": "2026-05-07T01:40:11",
       "side": "LONG fechado SL",
