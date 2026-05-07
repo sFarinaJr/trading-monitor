@@ -1,23 +1,20 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "07/05/2026 11:48:46",
-  "last_github_push": "07/05 11:48",
-  "last_github_push_ts": 1778168926.4004219,
+  "ultimo_update": "07/05/2026 11:53:49",
+  "last_github_push": "07/05 11:53",
+  "last_github_push_ts": 1778169229.424022,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
   "saldo": {
-    "ts_snapshot": "06/05/2026 23:03:00",
-    "equity_usd": 1361.26,
-    "walletBalance_usd": 1361.01,
-    "cumPnL_unified_usd": -6340.22,
-    "baseline_pnl_usd": -6124.0,
-    "delta_vs_baseline_usd": -216.22,
-    "positionIM_usd": 0,
-    "unrealisedPnl_usd": 0,
-    "markPrice_btc": 81036
+    "equity_usd": 1365.53,
+    "walletBalance": 1365.43,
+    "cumPnL_unified_usd": -6335.8,
+    "delta_vs_baseline": -211.8,
+    "unrealisedPnl": 0,
+    "markPrice": 79968
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -26,17 +23,26 @@
     "interpretacao": "Operação Virada · $216,22 abaixo do baseline · trade LONG hoje 10:36→14:18 fechou SL $81.241 (loss -$57,22) · capital novo $1.418 injetado hoje · pos-trade equity $1.361,18 · regra OURO anti-chase + autonomia OPUS implementadas no DNA"
   },
   "posicao_atual": {
-    "side": "SHORT",
+    "side": null,
     "size": null,
     "avgPrice": null,
     "stopLoss": null,
     "takeProfit": null,
     "tp1_limit": null,
     "tp1_pnl_lock": null,
-    "unrealised_pnl_usd": 4.08,
+    "unrealised_pnl_usd": 0,
     "tp2_target_estrutural": null
   },
   "trades_recentes": [
+    {
+      "ts": "2026-05-07T11:45:00",
+      "side": "SHORT exit (BUY LIMIT erro protocolo)",
+      "entry": 80500.0,
+      "exit": 79964.0,
+      "qty": 0.007,
+      "pnl": 3.33,
+      "nota": "⚠️ erro: BUY LIMIT @ $80.500 acima do mercado executou imediatamente. Cicatriz v2.2."
+    },
     {
       "ts": "2026-05-07T01:40:11",
       "side": "LONG fechado SL",
