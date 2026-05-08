@@ -1,27 +1,27 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "08/05/2026 13:19:38",
+  "ultimo_update": "08/05/2026 13:19:43",
   "last_github_push": "08/05 13:19",
-  "last_github_push_ts": 1778260778.512346,
+  "last_github_push_ts": 1778260783.06911,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
   "saldo": {
-    "equity_usd": 1401.25,
-    "walletBalance": 1420.72,
+    "equity_usd": 1404.05,
+    "walletBalance": 1420.94,
     "cumPnL_unified_usd": -6280.29,
     "delta_vs_baseline": -156.29,
-    "unrealisedPnl": -19.48,
-    "markPrice": 79943.0
+    "unrealisedPnl": -16.89,
+    "markPrice": 79894.6
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
     "current_pnl": -6280.29,
     "diff_usd": -156.29,
     "soma_ultimos_10_trades": 10.33,
-    "interpretacao": "Operacao Virada · $156.29 abaixo do baseline · equity $1,401.25 · LONG 0.080 BTC @ $80,165 · uPnL $-19.48 · mark $79,943.0 · testando neckline H&S $80,000"
+    "interpretacao": "Operacao Virada · $156.29 abaixo baseline · equity $1,404.05 · LONG 0.080 BTC @ $80,165 · uPnL $-16.89 · mark $79,894.6 · 2× close abaixo neckline H&S · SL $79,400 intacto"
   },
   "posicao_atual": {
     "side": "LONG",
@@ -31,7 +31,7 @@
     "takeProfit": null,
     "tp1_limit": 80566.0,
     "tp1_pnl_lock": null,
-    "unrealised_pnl_usd": -19.48,
+    "unrealised_pnl_usd": -16.89,
     "tp2_target_estrutural": 82811.0
   },
   "trades_recentes": [
