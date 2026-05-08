@@ -1,27 +1,27 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "08/05/2026 15:15:49",
-  "last_github_push": "08/05 15:15",
-  "last_github_push_ts": 1778267749.592746,
+  "ultimo_update": "08/05/2026 15:19:29",
+  "last_github_push": "08/05 15:19",
+  "last_github_push_ts": 1778267969.219746,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
   "saldo": {
-    "equity_usd": 1424.22,
+    "equity_usd": 1413.21,
     "walletBalance": 1420.94,
     "cumPnL_unified_usd": -6280.29,
     "delta_vs_baseline": -156.29,
-    "unrealisedPnl": 3.28,
-    "markPrice": 80201.0
+    "unrealisedPnl": -7.73,
+    "markPrice": 80063.0
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
     "current_pnl": -6280.29,
     "diff_usd": -156.29,
     "soma_ultimos_10_trades": 10.33,
-    "interpretacao": "Operacao Virada · $156.29 abaixo baseline · equity $1,424.22 · LONG 0.080 BTC @ $80,165 · uPnL +$3.28 · mark $80,201.0 · H&S retest neckline completo · tese reafirmada 5/6"
+    "interpretacao": "Operacao Virada · $156.29 abaixo baseline · equity $1,413.21 · LONG 0.080 BTC @ $80,165 · uPnL $-7.73 · mark $80,063.0 · consolidando acima neckline $80K · 4H fecha em 40min"
   },
   "posicao_atual": {
     "side": "LONG",
@@ -31,7 +31,7 @@
     "takeProfit": null,
     "tp1_limit": 80566.0,
     "tp1_pnl_lock": null,
-    "unrealised_pnl_usd": 3.28,
+    "unrealised_pnl_usd": -7.73,
     "tp2_target_estrutural": 82811.0
   },
   "trades_recentes": [
