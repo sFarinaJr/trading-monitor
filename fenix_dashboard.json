@@ -1,27 +1,27 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "09/05/2026 04:08:27",
-  "last_github_push": "09/05 04:08",
-  "last_github_push_ts": 1778314107.600306,
+  "ultimo_update": "09/05/2026 04:13:30",
+  "last_github_push": "09/05 04:13",
+  "last_github_push_ts": 1778314410.3511128,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
   "saldo": {
-    "equity_usd": 1444.09,
+    "equity_usd": 1444.07,
     "walletBalance": 1443.91,
     "cumPnL_unified_usd": -6257.32,
     "delta_vs_baseline": -133.32,
     "unrealisedPnl": 0.0,
-    "markPrice": 80382.26
+    "markPrice": 80324.0
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
     "current_pnl": -6257.32,
     "diff_usd": -133.32,
     "soma_ultimos_10_trades": 23.05,
-    "interpretacao": "Operacao Virada · $133.32 abaixo do baseline · equity $1,444.09 · zerado · soma 10 trades +$23.05"
+    "interpretacao": "Operacao Virada · $133.32 abaixo do baseline · equity $1,444.07 · zerado · ordem limit $80,000 pendente · soma 10 trades +$23.05"
   },
   "posicao_atual": {
     "side": "NONE",
