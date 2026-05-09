@@ -1,27 +1,27 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "08/05/2026 22:15:02",
-  "last_github_push": "08/05 22:15",
-  "last_github_push_ts": 1778292902.183243,
+  "ultimo_update": "08/05/2026 22:19:23",
+  "last_github_push": "08/05 22:19",
+  "last_github_push_ts": 1778293163.4577239,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
   "saldo": {
-    "equity_usd": 1397.89,
-    "walletBalance": 1420.97,
-    "cumPnL_unified_usd": -6280.1,
-    "delta_vs_baseline": -156.1,
-    "unrealisedPnl": -23.09,
-    "markPrice": 79876.9
+    "equity_usd": 1438.36,
+    "walletBalance": 1420.78,
+    "cumPnL_unified_usd": -6280.45,
+    "delta_vs_baseline": -156.45,
+    "unrealisedPnl": 17.58,
+    "markPrice": 80385.0
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
-    "current_pnl": -6280.1,
-    "diff_usd": -156.1,
+    "current_pnl": -6280.45,
+    "diff_usd": -156.45,
     "soma_ultimos_10_trades": 10.33,
-    "interpretacao": "Operacao Virada · $156.10 abaixo do baseline · equity $1,397.89 · LONG 0.080 BTC @ $80,165 · uPnL $-23.09 · soma 10 trades: +10.33"
+    "interpretacao": "Operacao Virada · $156.45 abaixo baseline · equity $1,438.36 · LONG 0.080 BTC @ $80,165 · uPnL +$17.58 · mark $80,385.0 · SCORE 6/6 · EMA 4H rompida · TP1 $80,566 a $181"
   },
   "posicao_atual": {
     "side": "LONG",
@@ -31,7 +31,7 @@
     "takeProfit": null,
     "tp1_limit": 80566.0,
     "tp1_pnl_lock": null,
-    "unrealised_pnl_usd": -23.09,
+    "unrealised_pnl_usd": 17.58,
     "tp2_target_estrutural": 82811.0
   },
   "trades_recentes": [
