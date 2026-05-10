@@ -1,40 +1,35 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "10/05/2026 18:41:17",
-  "last_github_push": "10/05 18:41",
-  "last_github_push_ts": 1778452877.423543,
+  "ultimo_update": "10/05/2026 18:46:18",
+  "last_github_push": "10/05 18:46",
+  "last_github_push_ts": 1778453178.3389199,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
   "saldo": {
-    "equity_usd": 1449.28,
-    "cumPnL_unified_usd": -6252.32,
-    "delta_vs_baseline": -128.32,
-    "cumRealisedPnl_unified_usdt": -6252.32034067,
-    "totalEquity": 1449.23711813,
-    "walletBalance_usdt": 1448.91050886,
-    "locked": 0.0,
-    "unrealisedPnl": 0
+    "equity_usd": 1477.89,
+    "walletBalance": 1477.89,
+    "cumPnL_unified_usd": -6254.11350441,
+    "delta_vs_baseline": -130.11,
+    "unrealisedPnl": 30.77,
+    "markPrice": 81457.0
   },
   "progresso_vs_baseline": {
-    "baseline_pnl": -6124.0,
-    "current_pnl": -6252.32,
-    "diff_usd": -128.32,
     "diferenca": -128.32,
     "interpretacao": "PIOROU em $128.32 desde início FÊNIX"
   },
   "posicao_atual": {
-    "side": "FLAT",
-    "size": null,
-    "avgPrice": null,
-    "stopLoss": null,
+    "side": "LONG",
+    "size": 0.042,
+    "avgPrice": 80724.36166667,
+    "stopLoss": 80724.3,
     "takeProfit": null,
-    "tp1_limit": null,
-    "tp1_pnl_lock": null,
-    "unrealised_pnl_usd": 0,
-    "tp2_target_estrutural": null
+    "tp1_limit": 81063.0,
+    "tp1_pnl_lock": 5.03,
+    "unrealised_pnl_usd": 30.77,
+    "tp2_target_estrutural": 82811.0
   },
   "trades_recentes": [
     {
