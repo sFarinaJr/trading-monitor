@@ -284,9 +284,9 @@
                     <thead>
                         <tr>
                             <th>Data/Hora</th>
-                            <th>Side</th>
-                            <th>Entry</th>
-                            <th>Exit</th>
+                            <th>Tipo</th>
+                            <th>Entrada</th>
+                            <th>Saída</th>
                             <th class="col-mobile-hide">Qty</th>
                             <th>PnL ($)</th>
                             <th class="col-mobile-hide">PnL %</th>
@@ -455,15 +455,16 @@
                 const pnl = t.pnl_usd || 0;
                 const pct = t.pnl_percent || 0;
                 const cls = pnl > 0 ? 'positive' : (pnl < 0 ? 'negative' : 'neutral');
+                const tipo = t.trade_type || t.side || '?';
                 return `
                     <tr>
                         <td>${fmtDateTime(t.timestamp)}</td>
-                        <td><span class="trade-side-badge ${t.side}">${t.side}</span></td>
+                        <td><span class="trade-side-badge ${tipo}">${tipo}</span></td>
                         <td>${fmtMoney(t.entry_price)}</td>
                         <td>${fmtMoney(t.exit_price)}</td>
-                        <td class="col-mobile-hide">${fmtNum(t.quantity, 4)}</td>
+                        <td class="col-mobile-hide">${fmtNum(t.quantity ?? t.qty, 4)}</td>
                         <td class="trade-pnl-cell ${cls}">${fmtMoney(pnl, true)}</td>
-                        <td class="col-mobile-hide ${cls}">${pct > 0 ? '+' : ''}${fmtNum(pct, 2)}%</td>
+                        <td class="col-mobile-hide ${cls}">${pct >= 0 ? '+' : ''}${fmtNum(pct, 3)}%</td>
                     </tr>
                 `;
             }).join('');
