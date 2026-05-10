@@ -1,20 +1,20 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "10/05/2026 11:07:05",
-  "last_github_push": "10/05 11:07",
-  "last_github_push_ts": 1778425625.186638,
+  "ultimo_update": "10/05/2026 11:10:26",
+  "last_github_push": "10/05 11:10",
+  "last_github_push_ts": 1778425826.0192928,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
   "saldo": {
-    "equity_usd": null,
-    "walletBalance": null,
-    "cumPnL_unified_usd": null,
-    "delta_vs_baseline": null,
-    "unrealisedPnl": 12.52,
-    "markPrice": 80382.26
+    "wallet_balance_usdt": 1447.37,
+    "equity_usd": 1456.3,
+    "unrealised_pnl": 8.93,
+    "cumPnL_unified_usd": -4392.64482142,
+    "delta_vs_baseline": 1731.36,
+    "nota": "1H_close_1108 pos-TP1"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -31,7 +31,7 @@
     "takeProfit": null,
     "tp1_limit": null,
     "tp1_pnl_lock": null,
-    "unrealised_pnl_usd": 12.52,
+    "unrealised_pnl_usd": 8.93,
     "tp2_target_estrutural": null
   },
   "trades_recentes": [
@@ -42,98 +42,18 @@
       "qty": 0.018,
       "entry_price": 80724.36166667,
       "exit_price": 81063.0,
-      "closed_pnl_usd": 5.02580915,
-      "notas": "TP1 fillou Limit @ 81063 | SL movido para BE 80724.36 imediatamente"
+      "closed_pnl_usd": 5.03,
+      "notas": "TP1 Limit fill @ 81063"
     },
     {
-      "timestamp": "2026-05-09T00:19:01.287000-04:00",
-      "side": "LONG",
-      "entry_price": 80165.5,
-      "exit_price": 80458.0,
-      "quantity": 0.056,
-      "pnl_usd": 11.19,
-      "pnl_percent": 6.23
-    },
-    {
-      "timestamp": "2026-05-08T10:47:04.819000-04:00",
-      "side": "LONG",
-      "entry_price": 80165.5,
-      "exit_price": 80566.0,
-      "quantity": 0.024,
-      "pnl_usd": 8.06,
-      "pnl_percent": 10.47
-    },
-    {
-      "timestamp": "2026-05-08T04:53:47.254000-04:00",
-      "side": "LONG",
-      "entry_price": 79900.0,
-      "exit_price": 79879.7,
-      "quantity": 0.077,
-      "pnl_usd": -6.18,
-      "pnl_percent": -2.51
-    },
-    {
-      "timestamp": "2026-05-08T05:01:27.371000-04:00",
-      "side": "LONG",
-      "entry_price": 79900.0,
-      "exit_price": 80299.0,
-      "quantity": 0.033,
-      "pnl_usd": 12.11,
-      "pnl_percent": 11.48
-    },
-    {
-      "timestamp": "2026-05-08T01:07:18.976000-04:00",
-      "side": "SHORT",
-      "entry_price": 80250.0,
-      "exit_price": 79590.2,
-      "quantity": 0.07,
-      "pnl_usd": 42.22,
-      "pnl_percent": 18.79
-    },
-    {
-      "timestamp": "2026-05-07T16:45:23.085000-04:00",
-      "side": "SHORT",
-      "entry_price": 80250.0,
-      "exit_price": 79849.0,
-      "quantity": 0.03,
-      "pnl_usd": 11.07,
-      "pnl_percent": 11.5
-    },
-    {
-      "timestamp": "2026-05-07T11:46:09.967000-04:00",
-      "side": "SHORT",
-      "entry_price": 80500.0,
-      "exit_price": 79964.0,
-      "quantity": 0.007,
-      "pnl_usd": 3.33,
-      "pnl_percent": 14.77
-    },
-    {
-      "timestamp": "2026-05-07T10:27:32.798000-04:00",
-      "side": "SHORT",
-      "entry_price": 80500.0,
-      "exit_price": 80075.1,
-      "quantity": 0.003,
-      "pnl_usd": 1.09,
-      "pnl_percent": 11.28
-    },
-    {
-      "timestamp": "2026-05-06T10:36:51.427000-04:00",
-      "side": "LONG",
-      "entry_price": 81722.8,
-      "exit_price": 81241.9,
-      "quantity": 0.1,
-      "pnl_usd": -57.22,
-      "pnl_percent": -17.5
-    },
-    {
-      "timestamp": "2026-05-05T06:38:00.394000-04:00",
-      "side": "LONG",
-      "entry_price": 80721.1,
-      "exit_price": 80675.4,
-      "quantity": 0.021,
-      "pnl_usd": -2.62,
-      "pnl_percent": -3.86
+      "tipo": "LONG_ENTRY",
+      "timestamp": "09:00",
+      "side": "BUY",
+      "qty": 0.06,
+      "entry_price": 80724.36166667,
+      "exit_price": null,
+      "closed_pnl_usd": null,
+      "notas": "Entrada LONG 0.06 BTC @ 80724"
     }
   ]
 }
