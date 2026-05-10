@@ -1,22 +1,20 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "10/05/2026 11:02:07",
-  "last_github_push": "10/05 11:02",
-  "last_github_push_ts": 1778425327.9497018,
+  "ultimo_update": "10/05/2026 11:07:05",
+  "last_github_push": "10/05 11:07",
+  "last_github_push_ts": 1778425625.186638,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
   "saldo": {
-    "equity_usd": 1449.99,
-    "walletBalance": 1441.74,
-    "cumPnL_unified_usd": -6259.92,
-    "delta_vs_baseline": -135.92,
-    "unrealisedPnl": 9.47,
-    "markPrice": 80882.18,
-    "uPnL_total": 8.25,
-    "ultimo_update": "10/05/2026 10:44:04"
+    "equity_usd": null,
+    "walletBalance": null,
+    "cumPnL_unified_usd": null,
+    "delta_vs_baseline": null,
+    "unrealisedPnl": 12.52,
+    "markPrice": 80382.26
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -27,16 +25,26 @@
   },
   "posicao_atual": {
     "side": "LONG",
-    "size": 0.06,
+    "size": 0.042,
     "avgPrice": null,
-    "stopLoss": 80490.0,
+    "stopLoss": 80724.36166667,
     "takeProfit": null,
     "tp1_limit": null,
     "tp1_pnl_lock": null,
-    "unrealised_pnl_usd": 12.66,
+    "unrealised_pnl_usd": 12.52,
     "tp2_target_estrutural": null
   },
   "trades_recentes": [
+    {
+      "tipo": "TP1_FILL",
+      "timestamp": "11:06",
+      "side": "SELL",
+      "qty": 0.018,
+      "entry_price": 80724.36166667,
+      "exit_price": 81063.0,
+      "closed_pnl_usd": 5.02580915,
+      "notas": "TP1 fillou Limit @ 81063 | SL movido para BE 80724.36 imediatamente"
+    },
     {
       "timestamp": "2026-05-09T00:19:01.287000-04:00",
       "side": "LONG",
