@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "10/05/2026 11:47:30",
-  "last_github_push": "10/05 11:47",
-  "last_github_push_ts": 1778428050.78338,
+  "ultimo_update": "10/05/2026 11:50:45",
+  "last_github_push": "10/05 11:50",
+  "last_github_push_ts": 1778428245.799469,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -17,22 +17,20 @@
     "nota": "watch_1145"
   },
   "progresso_vs_baseline": {
-    "baseline_pnl": -6124.0,
-    "current_pnl": -6259.0,
-    "diff_usd": -135.0,
-    "soma_ultimos_10_trades": 88.71,
-    "interpretacao": "Operacao Virada · $135.00 abaixo do baseline · equity $1,436.53 · LONG 0.04 BTC ativo @ $80,752.74 SL $80,180 · TP1 Limit ativo $81,063 · soma 10 trades +$88.71"
+    "diff_usd": 1731.36,
+    "baseline": -6124.0,
+    "cumPnL": -4392.64482142
   },
   "posicao_atual": {
     "side": "LONG",
     "size": 0.042,
-    "avgPrice": null,
+    "avgPrice": 80724.36166667,
     "stopLoss": 80724.36166667,
     "takeProfit": null,
-    "tp1_limit": null,
+    "tp1_limit": 81063.0,
     "tp1_pnl_lock": null,
     "unrealised_pnl_usd": 16.22,
-    "tp2_target_estrutural": null
+    "tp2_target_estrutural": 82811.0
   },
   "trades_recentes": [
     {
@@ -43,7 +41,9 @@
       "entry_price": 80724.36166667,
       "exit_price": 81063.0,
       "closed_pnl_usd": 5.03,
-      "notas": "TP1 Limit fill @ 81063"
+      "notas": "TP1 Limit fill @ 81063",
+      "pnl_usd": 5.03,
+      "pnl_percent": 0.0
     },
     {
       "tipo": "LONG_ENTRY",
@@ -53,7 +53,9 @@
       "entry_price": 80724.36166667,
       "exit_price": null,
       "closed_pnl_usd": null,
-      "notas": "Entrada LONG 0.06 BTC @ 80724"
+      "notas": "Entrada LONG 0.06 BTC @ 80724",
+      "pnl_usd": null,
+      "pnl_percent": 0.0
     }
   ]
 }
