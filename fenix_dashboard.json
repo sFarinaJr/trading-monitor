@@ -1,27 +1,25 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "10/05/2026 11:52:33",
-  "last_github_push": "10/05 11:52",
-  "last_github_push_ts": 1778428353.507958,
+  "ultimo_update": "10/05/2026 11:53:52",
+  "last_github_push": "10/05 11:53",
+  "last_github_push_ts": 1778428432.991758,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
   "saldo": {
-    "wallet_balance_usdt": 1447.37,
-    "equity_usd": 1472.39,
-    "unrealised_pnl": 25.02,
-    "cumPnL_unified_usd": -4392.64482142,
-    "delta_vs_baseline": 1731.36,
-    "nota": "watch_1150"
+    "wallet_balance_usdt": 1447.11734512,
+    "equity_usd": 1472.35171511,
+    "unrealised_pnl": 25.23436999,
+    "cumPnL_unified_usd": -6254.11350441,
+    "delta_vs_baseline": -130.11,
+    "nota": "fix_1152_wallet_correto"
   },
   "progresso_vs_baseline": {
-    "baseline_pnl": -6124.0,
-    "current_pnl": -6259.0,
-    "diff_usd": -135.0,
-    "soma_ultimos_10_trades": 88.71,
-    "interpretacao": "Operacao Virada · $135.00 abaixo do baseline · equity $1,436.53 · LONG 0.04 BTC ativo @ $80,752.74 SL $80,180 · TP1 Limit ativo $81,063 · soma 10 trades +$88.71"
+    "diff_usd": -130.11,
+    "baseline": -6124.0,
+    "cumPnL": -6254.11350441
   },
   "posicao_atual": {
     "side": "LONG",
@@ -37,7 +35,7 @@
   "trades_recentes": [
     {
       "tipo": "TP1_FILL",
-      "timestamp": "11:06",
+      "timestamp": "2026-05-10T11:06:00",
       "side": "SELL",
       "qty": 0.018,
       "entry_price": 80724.36166667,
@@ -45,19 +43,21 @@
       "closed_pnl_usd": 5.03,
       "notas": "TP1 Limit fill @ 81063",
       "pnl_usd": 5.03,
-      "pnl_percent": 0.0
+      "pnl_percent": 0.0,
+      "quantity": 0.018
     },
     {
       "tipo": "LONG_ENTRY",
-      "timestamp": "09:00",
+      "timestamp": "2026-05-10T09:00:00",
       "side": "BUY",
       "qty": 0.06,
       "entry_price": 80724.36166667,
       "exit_price": null,
       "closed_pnl_usd": null,
       "notas": "Entrada LONG 0.06 BTC @ 80724",
-      "pnl_usd": null,
-      "pnl_percent": 0.0
+      "pnl_usd": 0,
+      "pnl_percent": 0.0,
+      "quantity": 0.06
     }
   ]
 }
