@@ -1,20 +1,20 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "11/05/2026 08:29:18",
-  "last_github_push": "11/05 08:29",
-  "last_github_push_ts": 1778502558.411842,
+  "ultimo_update": "11/05/2026 08:34:21",
+  "last_github_push": "11/05 08:34",
+  "last_github_push_ts": 1778502861.885371,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
   "saldo": {
-    "equity_usd": 1402.94,
-    "cumPnL_unified_usd": -6298.37,
-    "delta_vs_baseline": -174.37,
-    "cumRealisedPnl_unified_usdt": -6298.37,
-    "totalEquity": 1402.94,
-    "walletBalance_usdt": 1402.86,
+    "equity_usd": 1378.38,
+    "cumPnL_unified_usd": -6322.92,
+    "delta_vs_baseline": -198.92,
+    "cumRealisedPnl_unified_usdt": -6322.92,
+    "totalEquity": 1378.38,
+    "walletBalance_usdt": 1378.31,
     "locked": 0.0,
     "unrealisedPnl": 0
   },
@@ -24,17 +24,28 @@
     "diff_usd": -128.32
   },
   "posicao_atual": {
-    "side": "SHORT",
-    "size": 0.07,
-    "avgPrice": 80969.6,
-    "stopLoss": 81220,
+    "side": "FLAT",
+    "size": null,
+    "avgPrice": null,
+    "stopLoss": null,
     "takeProfit": null,
-    "tp1_limit": 80565,
+    "tp1_limit": null,
     "tp1_pnl_lock": null,
-    "unrealised_pnl_usd": -0.04,
-    "tp2_target_estrutural": 78400
+    "unrealised_pnl_usd": 0,
+    "tp2_target_estrutural": null
   },
   "trades_recentes": [
+    {
+      "timestamp": "2026-05-11T08:11:00",
+      "symbol": "BTCUSDT",
+      "side": "SHORT",
+      "entry_price": 80969.6,
+      "exit_price": 81231.1,
+      "quantity": 0.07,
+      "pnl_usd": -24.55,
+      "pnl_percent": -0.32,
+      "note": "SHORT SWING #2 · anchor 1H shooting star $81,168 · SL hit $81,231 (slippage $11 vs SL $81,220) · 4H 00:00-04:00 +$456 + 4H 04:00-08:00 +$117 INVALIDARAM bearish engulfing thesis · macro shifted bullish recovery em curso · OPUS 9.0 bullish Camada 2 confirmou shift pós-SL"
+    },
     {
       "timestamp": "2026-05-11T06:09:46",
       "symbol": "BTCUSDT",
@@ -180,16 +191,6 @@
       "quantity": 0.003,
       "pnl_usd": 1.09,
       "pnl_percent": 0.45
-    },
-    {
-      "timestamp": "2026-05-06T14:12:21",
-      "symbol": "BTCUSDT",
-      "side": "LONG",
-      "entry_price": 81722.8,
-      "exit_price": 81241.9,
-      "quantity": 0.1,
-      "pnl_usd": -57.22,
-      "pnl_percent": -0.7
     }
   ]
 }
