@@ -1,20 +1,20 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "11/05/2026 06:28:03",
-  "last_github_push": "11/05 06:28",
-  "last_github_push_ts": 1778495283.904232,
+  "ultimo_update": "11/05/2026 06:33:06",
+  "last_github_push": "11/05 06:33",
+  "last_github_push_ts": 1778495586.998208,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
   "saldo": {
-    "equity_usd": 1430.58,
-    "cumPnL_unified_usd": -6270.78,
-    "delta_vs_baseline": -146.78,
-    "cumRealisedPnl_unified_usdt": -6270.78,
-    "totalEquity": 1430.58,
-    "walletBalance_usdt": 1430.45,
+    "equity_usd": 1402.94,
+    "cumPnL_unified_usd": -6298.37,
+    "delta_vs_baseline": -174.37,
+    "cumRealisedPnl_unified_usdt": -6298.37,
+    "totalEquity": 1402.94,
+    "walletBalance_usdt": 1402.86,
     "locked": 0.0,
     "unrealisedPnl": 0
   },
@@ -24,17 +24,28 @@
     "diff_usd": -128.32
   },
   "posicao_atual": {
-    "side": "SHORT",
-    "size": 0.07,
-    "avgPrice": 80744.6,
-    "stopLoss": 81050,
+    "side": "FLAT",
+    "size": null,
+    "avgPrice": null,
+    "stopLoss": null,
     "takeProfit": null,
-    "tp1_limit": 80341,
+    "tp1_limit": null,
     "tp1_pnl_lock": null,
-    "unrealised_pnl_usd": -0.64,
-    "tp2_target_estrutural": 78400
+    "unrealised_pnl_usd": 0,
+    "tp2_target_estrutural": null
   },
   "trades_recentes": [
+    {
+      "timestamp": "2026-05-11T06:09:46",
+      "symbol": "BTCUSDT",
+      "side": "SHORT",
+      "entry_price": 80744.6,
+      "exit_price": 81053.9,
+      "quantity": 0.07,
+      "pnl_usd": -27.6,
+      "pnl_percent": -0.38,
+      "note": "SHORT SWING T2 · entry após Camada 2 topo + anchor $81,017 · rally retest forte invalidou tese · SL fire @ $81,054 slippage $4 vs SL $81,050 · 1H 04:00 +$20 + 1H 05:00 +$201 bullish closes sinalizaram retesting forte · setback Operação Virada delta -$146.78 → -$174.37"
+    },
     {
       "timestamp": "2026-05-11T03:00:14",
       "symbol": "BTCUSDT",
@@ -179,16 +190,6 @@
       "quantity": 0.1,
       "pnl_usd": -57.22,
       "pnl_percent": -0.7
-    },
-    {
-      "timestamp": "2026-05-05T20:49:27",
-      "symbol": "BTCUSDT",
-      "side": "LONG",
-      "entry_price": 80721.1,
-      "exit_price": 80675.4,
-      "quantity": 0.021,
-      "pnl_usd": -2.62,
-      "pnl_percent": -0.15
     }
   ]
 }
