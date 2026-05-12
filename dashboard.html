@@ -456,9 +456,10 @@
                 const pct = t.pnl_percent || 0;
                 const cls = pnl > 0 ? 'positive' : (pnl < 0 ? 'negative' : 'neutral');
                 const tipo = t.trade_type || t.side || '?';
-                // Side vem direto de t.side · fonte de verdade (derivado matematicamente)
-                // NÃO extrair do trade_type · sufixo pode estar errado
-                const sideCls = (t.side || '').toUpperCase();
+                // Extrai side puro (LONG/SHORT) do trade_type para aplicar cor do badge
+                // Mantém texto original do tipo · só adiciona className extra pro CSS pegar
+                const tt = tipo.toUpperCase();
+                const sideCls = tt.includes('LONG') ? 'LONG' : (tt.includes('SHORT') ? 'SHORT' : '');
                 return `
                     <tr>
                         <td>${fmtDateTime(t.timestamp)}</td>
