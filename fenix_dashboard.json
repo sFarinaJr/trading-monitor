@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "12/05/2026 15:19:46",
-  "last_github_push": "12/05 15:19",
-  "last_github_push_ts": 1778613586.2715678,
+  "ultimo_update": "12/05/2026 15:24:34",
+  "last_github_push": "12/05 15:24",
+  "last_github_push_ts": 1778613874.109043,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -36,15 +36,15 @@
   },
   "trades_recentes": [
     {
-      "timestamp": "2026-05-12T13:xx",
-      "side": "SHORT_BE",
-      "trade_type": "SHORT_BE_TRAIL",
-      "entry": 80616.1,
-      "exit": 80514.5,
-      "qty": 0.07,
+      "timestamp": "2026-05-12T13:33:00",
+      "symbol": "BTCUSDT",
+      "side": "SHORT",
+      "trade_type": "TRAIL_SHORT",
+      "entry_price": 80616.1,
+      "exit_price": 80514.5,
+      "quantity": 0.07,
       "pnl_usd": 1.02,
-      "macro_thesis": "D+12H engulfing bearish",
-      "outcome": "BE+ ($1.02) · trail SL salvou de loss"
+      "pnl_percent": 0.13
     },
     {
       "timestamp": "2026-05-11T07:10:03",
