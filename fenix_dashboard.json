@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "12/05/2026 10:11:57",
-  "last_github_push": "12/05 10:11",
-  "last_github_push_ts": 1778595117.419798,
+  "ultimo_update": "12/05/2026 11:17:23",
+  "last_github_push": "12/05 11:17",
+  "last_github_push_ts": 1778599043.110848,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -24,14 +24,14 @@
     "diff_usd": -198.92
   },
   "posicao_atual": {
-    "side": "FLAT",
-    "size": null,
-    "avgPrice": 0,
+    "side": "SHORT",
+    "size": 0.07,
+    "avgPrice": 80616.1,
     "stopLoss": null,
     "takeProfit": null,
     "tp1_limit": null,
     "tp1_pnl_lock": null,
-    "unrealised_pnl_usd": 0,
+    "unrealised_pnl_usd": -11.17,
     "tp2_target_estrutural": null
   },
   "trades_recentes": [
@@ -202,70 +202,37 @@
     }
   ],
   "current_thesis": {
-    "thesis_id": "boot_2026_05_12_0000_pos_dual_close_bearish",
-    "boot_ts": "2026-05-12T00:03:02-04:00",
-    "status": "ATIVA",
-    "mark_at_boot": 80990.0,
+    "thesis_id": "thesis_2026_05_12_1015_short_pyramid_macro_bear_4tf",
+    "boot_ts": null,
+    "status": null,
+    "mark_at_boot": null,
     "macro_bias_D": {
-      "direcao": "BEARISH",
-      "score": "intraday bear forte · macro neutro"
+      "direcao": "BEARISH MAXIMO",
+      "score": 5.0
     },
-    "leitura_primaria_opus": "Pos dual close 1H+4H · 4H confirmou bias bear com vol institucional · tese SHORT swing original ($81,500-$81,700) passou rápido sem dar entrada · estratégia muda pra LONG tactical na defesa do suporte $80,660 (testado 2× hoje) · convergência com pullback esperado por ChatGPT+Grok mas em zona mais alta · R:R 2.0x marginal mas tactical defendido pela microestrutura",
+    "leitura_primaria_opus": "4 TFs estruturais alinhados bear (D · 12H · 4H · 1H) · D engulfing + 12H engulfing + losing prev minimums em ambos · funding long_squeeze ativo · qualquer rally = setup SHORT com melhor preço de entrada · tese consolidada user 12/05 10:10 UTC-4",
     "cenarios_opus": {
-      "A1_long_defesa_80660": {
-        "prob": 35,
-        "entry": 80700,
-        "sl": 80200,
-        "tp1": 81150,
-        "tp2": 81700,
-        "rr": 2.0,
-        "tier": "T1",
-        "qty": 0.04,
-        "note": "PRIMARY · suporte intraday 2× testado · Camada 2 obrigatória"
+      "A_short_pullback_rejeicao": {
+        "prob": 60,
+        "descricao": "Mark sobe pra $80,720-$80,900 · Camada 2 topo rejeita · SHORT @ close 5m",
+        "entry_target": 80720,
+        "expected_target": 78500
       },
-      "A2_long_profundo_80300": {
-        "prob": 30,
-        "entry": 80300,
-        "sl": 79500,
-        "tp1": 80800,
-        "tp2": 82000,
-        "rr": 2.13,
-        "tier": "T1",
-        "qty": 0.04,
-        "note": "Sweep profundo · convergencia AIs · Camada 2 + vol >5K"
+      "B_short_breakdown_retest": {
+        "prob": 25,
+        "descricao": "Mark perde $80,350 com vol ≥5K · retest do nível como resistência · SHORT @ retest",
+        "entry_target": 80400,
+        "sl_breakdown": 80550,
+        "expected_target": 78500
       },
-      "B_short_breakdown_80400": {
-        "prob": 20,
-        "entry": 80300,
-        "sl": 80800,
-        "tp1": 80000,
-        "tp2": 79500,
-        "rr": 1.6,
-        "tier": "T1",
-        "qty": 0.04,
-        "note": "MARGINAL R:R · só com Camada 2 topo intermediário"
-      },
-      "C_long_macro_79120": {
+      "C_long_capitulation_fundo": {
         "prob": 10,
-        "entry": 79300,
-        "sl": 78600,
-        "tp1": 79696,
-        "tp2": 80956,
-        "rr": 2.36,
-        "tier": "T1",
-        "qty": 0.04,
-        "note": "Backup defensivo · sweep deep · HL D + RSI 4H <=40"
+        "descricao": "Mark cai pra $80,000 ou $79,500 com Camada 2 fundo + RSI≤30 1H · LONG counter-trend Tier 1",
+        "entry_target_zone": "79500-80000"
       },
-      "D_rally_rejeicao_81700": {
+      "D_range_lateral": {
         "prob": 5,
-        "entry": 81600,
-        "sl": 82100,
-        "tp1": 81192,
-        "tp2": 80200,
-        "rr": 2.8,
-        "tier": "T1",
-        "qty": 0.04,
-        "note": "Improvável dado bear flow · só com confluência forte topo"
+        "descricao": "Mark fica preso $80,350-$80,720 sem breakout · FLAT mantém · espera"
       }
     }
   }
