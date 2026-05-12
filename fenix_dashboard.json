@@ -1,8 +1,8 @@
 {
-  "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "11/05/2026 22:37:33",
-  "last_github_push": "11/05 22:37",
-  "last_github_push_ts": 1778553453.9245079,
+  "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
+  "ultimo_update": "11/05/2026 22:41:53",
+  "last_github_push": "11/05 22:41",
+  "last_github_push_ts": 1778553713.240034,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -191,5 +191,62 @@
       "pnl_usd": -57.22,
       "pnl_percent": -0.7
     }
-  ]
+  ],
+  "current_thesis": {
+    "thesis_id": "boot_2026_05_11_2230_swing_bearish_atenuado",
+    "boot_ts": "2026-05-11T22:41:30-04:00",
+    "status": "ATIVA",
+    "mark_at_boot": 81128.0,
+    "macro_bias_D": {
+      "direcao": "BEARISH",
+      "score": "6/8 bear"
+    },
+    "leitura_primaria_opus": "Estrutura range D $79,120-$82,450 (4.2% range) · tese SWING SHORT na zona LH 4H $81,500-$81,718 com Camada 2 topo 5m confirmada · TP2 estrutural $79,120 HL D · R:R 4.13x · mark $81,128 em meio do range aguardando trigger · suporte intraday $80,660 segurou com vol institucional 7x MA",
+    "cenarios_opus": {
+      "A_short_swing_zona_ideal": {
+        "prob": 55,
+        "entry": 81600,
+        "sl": 82200,
+        "tp1": 81192,
+        "tp2": 79120,
+        "rr": 4.13,
+        "tier": "T2",
+        "qty": 0.07,
+        "note": "Camada 2 topo 5m obrigatoria · LH 4H + supply"
+      },
+      "B_long_retest_profundo": {
+        "prob": 20,
+        "entry": 79300,
+        "sl": 78600,
+        "tp1": 79696,
+        "tp2": 80956,
+        "rr": 2.36,
+        "tier": "T1",
+        "qty": 0.04,
+        "note": "Camada 2 fundo 5m + RSI 4H <=40 · contra-tese"
+      },
+      "C_breakout_cancela_tese": {
+        "prob": 15,
+        "entry": 82520,
+        "sl": 81800,
+        "tp1": 82933,
+        "tp2": 84500,
+        "rr": 2.75,
+        "tier": "T1",
+        "qty": 0.04,
+        "note": "Close 1H > $82,500 vol >=5K · CANCELA tese SHORT"
+      },
+      "D_breakdown_continuacao": {
+        "prob": 10,
+        "entry": 80400,
+        "sl": 81000,
+        "tp1": 80000,
+        "tp2": 79120,
+        "rr": 2.13,
+        "tier": "T1",
+        "qty": 0.04,
+        "note": "Close 1H < $80,400 vol >=5K · breakdown intraday"
+      }
+    }
+  }
 }
