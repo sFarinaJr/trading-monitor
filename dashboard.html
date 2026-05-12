@@ -166,9 +166,7 @@
             padding: 10px;
             border-bottom: 1px solid var(--border);
             font-variant-numeric: tabular-nums;
-            white-space: nowrap;
         }
-        table.trades-table td:nth-child(2) { min-width: 120px; }
         table.trades-table tr:last-child td { border-bottom: none; }
         table.trades-table tr:hover td { background: var(--bg-primary); }
         .trade-side-badge {
@@ -178,15 +176,9 @@
             font-size: 10px;
             font-weight: 700;
             letter-spacing: 0.5px;
-            white-space: nowrap;
-            max-width: 90px;
-            overflow: hidden;
-            text-overflow: ellipsis;
         }
         .trade-side-badge.SHORT { background: rgba(239,68,68,0.15); color: var(--negative); }
         .trade-side-badge.LONG { background: rgba(16,185,129,0.15); color: var(--positive); }
-        .trade-side-badge.NEUTRO { background: rgba(107,114,128,0.15); color: var(--text-secondary); }
-        .trade-subtype { font-size: 9px; color: var(--text-muted); margin-left: 4px; letter-spacing: 0.3px; }
         .trade-pnl-cell {
             font-weight: 700;
         }
@@ -463,24 +455,15 @@
                 const pnl = t.pnl_usd || 0;
                 const pct = t.pnl_percent || 0;
                 const cls = pnl > 0 ? 'positive' : (pnl < 0 ? 'negative' : 'neutral');
-                // Separa side (LONG/SHORT) do trade_type (SL_SHORT, TP1_LONG, etc)
-                // Side fica colorido (verde LONG / vermelho SHORT) · subtipo aparece menor
-                const tt = (t.trade_type || '').toUpperCase();
-                const rawSide = (t.side || '').toUpperCase();
-                let sideTag = rawSide;
-                if (!sideTag) {
-                    if (tt.includes('LONG')) sideTag = 'LONG';
-                    else if (tt.includes('SHORT')) sideTag = 'SHORT';
-                    else sideTag = 'NEUTRO';
-                }
-                // Extrai prefixo do trade_type (TP1, TP2, SL, TRAIL, PARTIAL)
-                let subtipo = tt.replace('_LONG','').replace('_SHORT','').replace('LONG','').replace('SHORT','').trim();
-                if (subtipo && subtipo !== sideTag) subtipo = `(${subtipo})`;
-                else subtipo = '';
+                const tipo = t.trade_type || t.side || '?';
+                // Extrai side puro (LONG/SHORT) do trade_type para aplicar cor do badge
+                // Mantém texto original do tipo · só adiciona className extra pro CSS pegar
+                const tt = tipo.toUpperCase();
+                const sideCls = tt.includes('LONG') ? 'LONG' : (tt.includes('SHORT') ? 'SHORT' : '');
                 return `
                     <tr>
                         <td>${fmtDateTime(t.timestamp)}</td>
-                        <td><span class="trade-side-badge ${sideTag}">${sideTag}</span><span class="trade-subtype">${subtipo}</span></td>
+                        <td><span class="trade-side-badge ${tipo} ${sideCls}">${tipo}</span></td>
                         <td>${fmtMoney(t.entry_price)}</td>
                         <td>${fmtMoney(t.exit_price)}</td>
                         <td class="col-mobile-hide">${fmtNum(t.quantity ?? t.qty, 4)}</td>
