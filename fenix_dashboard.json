@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "13/05/2026 08:34:10",
-  "last_github_push": "13/05 08:34",
-  "last_github_push_ts": 1778675650.5421472,
+  "ultimo_update": "13/05/2026 08:35:38",
+  "last_github_push": "13/05 08:35",
+  "last_github_push_ts": 1778675738.674006,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -209,7 +209,7 @@
     "status": "FLAT · setup bear CLIMAX forming · 15m oversold extreme + vol institucional 2.9x · próximo movimento decidido em 10-15min",
     "mark_at_boot": 80141.0,
     "macro_bias_D": {
-      "direcao": "BEARISH-INTRADIA forte · BULL macro intacto",
+      "direcao": "BEARISH-INTRADIA",
       "score": 5.0
     },
     "leitura_primaria_opus": "BOOT 3 às 08:31 · CONFIGURAÇÃO MUDOU pra bear climax · vol institucional 2.9x no 15m + RSI 28.7/Stoch 8.6 oversold extreme + macro D bull intacto sugerem bounce iminente. Mark $80,141 testando $80,028 (low intra). Movimento bear acelerou $80,503→$80,141 em 14min (-$362). Próximas opções: LONG contrarian se Camada 2 BOT 5m formal disparar + bounce até $80,400-$80,560 (R:R 2-3) · OU SHORT na quebra $80,000 com continuação. NÃO ENTRAR sem confirmação · setup tactical mas direção decidida nos próximos 10-15min.",
