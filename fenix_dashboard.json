@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "13/05/2026 08:43:37",
-  "last_github_push": "13/05 08:43",
-  "last_github_push_ts": 1778676217.979052,
+  "ultimo_update": "13/05/2026 08:45:35",
+  "last_github_push": "13/05 08:45",
+  "last_github_push_ts": 1778676335.5139468,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -209,10 +209,32 @@
     "status": "FLAT · setup bear CLIMAX forming · 15m oversold extreme + vol institucional 2.9x · próximo movimento decidido em 10-15min",
     "mark_at_boot": 80141.0,
     "macro_bias_D": {
-      "direcao": "BEARISH-INTRADIA",
-      "score": 5.0
+      "direcao": "BEARISH com divergência",
+      "score": 6.0
     },
-    "leitura_primaria_opus": "📊 Tendência por TF · Diário: ainda BULLISH (close acima MA20D $79,003 + EMA20D $79,622 · margem $518). 12H: NEUTRO (DOJI crítico body 0% · upper wick $846 · sinal indecisão). 4H: BEARISH (abaixo TODAS MAs EMA20/MA20/MA50 · body bear 62%). 1H: BEARISH (abaixo TODAS MAs · body 87% último fechado). 15m: BEARISH oversold extremo (RSI 28.7 · Stoch 8.6 · vol 2.9x = climax institucional). 5m: BEARISH oversold (RSI 30 · Stoch 26). 🎯 Setup atual · mark $80,016 testando $80,000 psicológico · movimento bear acelerou -$487 nas últimas 20min. 🚦 Decisão · AGUARDAR Camada 2 BOT 5m formal (wick inf ≥60% close bull) pra LONG contrarian OU quebra confirmada $80,000 pra SHORT continuação até $79,622 (EMA20D macro).",
-    "cenarios_opus": {}
+    "leitura_primaria_opus": "📊 Tendência por TF · Diário · BEARISH com DIVERGÊNCIA RSI ativa (low $79,804 RSI 58.1 < pivot $79,120 RSI 63.6 · momentum quebrou antes do preço). 12H · BEARISH (DOJI rejeição topo · wick $846). 4H · BEARISH (abaixo TODAS MAs). 1H · BEARISH (87% body bear). 15m · BEARISH oversold extremo (RSI 28.7 · Stoch 8.6 · vol 2.9x climax). 5m · BEARISH oversold (RSI 30). 🎯 Mark $80,016 testando $80,000 psicológico · movimento bear -$487 em 25min. 🚦 AGUARDAR · quebra confirmada $80,000 abre $79,800 ($79,622 EMA20D próximo) · Camada 2 BOT 5m única confirmação pra LONG contrarian curto.",
+    "cenarios_opus": {
+      "A_quebra_80k_continuacao_bear": {
+        "prob": 55,
+        "descricao": "Quebra $80,000 com vol · cai $79,800 (D low) · target $79,622 (EMA20D macro)",
+        "tp2": 79622
+      },
+      "B_bounce_camada2_long": {
+        "prob": 25,
+        "descricao": "Camada 2 BOT 5m formal · LONG contrarian curto · TP $80,400-$80,560",
+        "entry": 80000,
+        "rr": 2
+      },
+      "C_reversal_profundo_short_entry": {
+        "prob": 15,
+        "descricao": "Bounce profundo até $80,560-$80,700 · SHORT melhor entry · R:R 3+",
+        "entry": 80650
+      },
+      "D_invalidacao_macro_bear": {
+        "prob": 5,
+        "descricao": "Quebra $79,003 MA20D · D macro vira BEAR estrutural · target $77,000",
+        "tp2": 77000
+      }
+    }
   }
 }
