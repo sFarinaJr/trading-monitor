@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "13/05/2026 08:38:34",
-  "last_github_push": "13/05 08:38",
-  "last_github_push_ts": 1778675914.9233322,
+  "ultimo_update": "13/05/2026 08:40:58",
+  "last_github_push": "13/05 08:40",
+  "last_github_push_ts": 1778676058.977225,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -212,30 +212,7 @@
       "direcao": "BEARISH-INTRADIA",
       "score": 5.0
     },
-    "leitura_primaria_opus": "BOOT 3 às 08:31 · CONFIGURAÇÃO MUDOU pra bear climax · vol institucional 2.9x no 15m + RSI 28.7/Stoch 8.6 oversold extreme + macro D bull intacto sugerem bounce iminente. Mark $80,141 testando $80,028 (low intra). Movimento bear acelerou $80,503→$80,141 em 14min (-$362). Próximas opções: LONG contrarian se Camada 2 BOT 5m formal disparar + bounce até $80,400-$80,560 (R:R 2-3) · OU SHORT na quebra $80,000 com continuação. NÃO ENTRAR sem confirmação · setup tactical mas direção decidida nos próximos 10-15min.",
-    "cenarios_opus": {
-      "A_bounce_local_long": {
-        "prob": 40,
-        "descricao": "Vol 2.9x + RSI/Stoch oversold extreme + macro D bull = bounce iminente · LONG entry $80,000-$80,100 · SL $79,800 · TP $80,400-$80,560",
-        "target_entry_long": 80050,
-        "sl_long": 79800,
-        "tp_long": 80450
-      },
-      "B_quebra_80000_continuacao": {
-        "prob": 35,
-        "descricao": "Quebra $80,000 com vol · cai pra $79,800 (D low) · depois $79,622 (EMA20D) · ainda dentro do macro bull",
-        "target": 79622
-      },
-      "C_bounce_profundo_short_setup": {
-        "prob": 20,
-        "descricao": "Reversal forte com bounce até $80,560-$80,700 · cria SHORT entry melhor com R:R 3+",
-        "target_entry_short": 80650
-      },
-      "D_continuacao_direta": {
-        "prob": 5,
-        "descricao": "Cai direto $79,622 sem bounce · raro mas possível em cascading panic",
-        "invalidacao_bull_macro": 79003
-      }
-    }
+    "leitura_primaria_opus": "📊 Tendência por TF · Diário: ainda BULLISH (close acima MA20D $79,003 + EMA20D $79,622 · margem $518). 12H: NEUTRO (DOJI crítico body 0% · upper wick $846 · sinal indecisão). 4H: BEARISH (abaixo TODAS MAs EMA20/MA20/MA50 · body bear 62%). 1H: BEARISH (abaixo TODAS MAs · body 87% último fechado). 15m: BEARISH oversold extremo (RSI 28.7 · Stoch 8.6 · vol 2.9x = climax institucional). 5m: BEARISH oversold (RSI 30 · Stoch 26). 🎯 Setup atual · mark $80,016 testando $80,000 psicológico · movimento bear acelerou -$487 nas últimas 20min. 🚦 Decisão · AGUARDAR Camada 2 BOT 5m formal (wick inf ≥60% close bull) pra LONG contrarian OU quebra confirmada $80,000 pra SHORT continuação até $79,622 (EMA20D macro).",
+    "cenarios_opus": {}
   }
 }
