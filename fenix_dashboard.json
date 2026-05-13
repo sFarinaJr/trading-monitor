@@ -1,22 +1,23 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "13/05/2026 04:50:09",
-  "last_github_push": "13/05 04:50",
-  "last_github_push_ts": 1778662209.884586,
+  "ultimo_update": "13/05/2026 04:55:14",
+  "last_github_push": "13/05 04:55",
+  "last_github_push_ts": 1778662514.501157,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
   "saldo": {
-    "equity_usdt": 1378.38,
-    "available_usdt": 1378.38,
-    "cum_realised_pnl": -6322.92,
-    "progresso_vs_baseline_usd": -2497.62,
-    "updated_at": "2026-05-12T00:03:02-04:00",
-    "equity_usd": 1378.38,
-    "cumPnL_unified_usd": -6322.92,
-    "delta_vs_baseline": -2497.62
+    "equity_usdt": 1333.78,
+    "available_usdt": 1333.78,
+    "cum_realised_pnl": -6367.45,
+    "progresso_vs_baseline_usd": -2542.17,
+    "updated_at": "2026-05-13T04:51-04:00",
+    "equity_usd": 1333.78,
+    "cumPnL_unified_usd": -6367.45,
+    "delta_vs_baseline": -2542.17,
+    "pnl_fenix_desde_baseline": -243.45
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -24,17 +25,29 @@
     "diff_usd": -198.92
   },
   "posicao_atual": {
-    "side": "SHORT",
-    "size": 0.07,
-    "avgPrice": 80568.8,
-    "stopLoss": null,
+    "side": "LONG",
+    "size": 0.042,
+    "avgPrice": 80724.36166667,
+    "stopLoss": 80724.3,
     "takeProfit": null,
-    "tp1_limit": null,
-    "tp1_pnl_lock": null,
-    "unrealised_pnl_usd": -27.5,
-    "tp2_target_estrutural": null
+    "tp1_limit": 81063.0,
+    "tp1_pnl_lock": 5.03,
+    "unrealised_pnl_usd": 30.77,
+    "tp2_target_estrutural": 82811.0
   },
   "trades_recentes": [
+    {
+      "timestamp": "2026-05-13T04:50:17",
+      "symbol": "BTCUSDT",
+      "side": "SHORT",
+      "trade_type": "SL_SHORT",
+      "entry_price": 80568.8,
+      "exit_price": 81134.0,
+      "quantity": 0.07,
+      "pnl_usd": -45.55,
+      "pnl_percent": -0.7,
+      "context_exit": "SL hit em $81,126.70 com slippage exit avg $81,134 · ironia: wake Camada 2 TOP exhaustion score 9.0 disparou ~10s antes mas SL pegou primeiro (stop hunt clássico) · 2 apertos de SL feitos pelo user (81669→81236→81126) preservaram parte do capital"
+    },
     {
       "timestamp": "2026-05-12T13:33:00",
       "symbol": "BTCUSDT",
@@ -188,17 +201,6 @@
       "quantity": 0.07,
       "pnl_usd": 42.22,
       "pnl_percent": 0.75
-    },
-    {
-      "timestamp": "2026-05-07T16:45:23",
-      "symbol": "BTCUSDT",
-      "side": "SHORT",
-      "trade_type": "TP2_SHORT",
-      "entry_price": 80250.0,
-      "exit_price": 79849.0,
-      "quantity": 0.03,
-      "pnl_usd": 11.07,
-      "pnl_percent": 0.46
     }
   ],
   "current_thesis": {
