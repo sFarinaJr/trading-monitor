@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "13/05/2026 08:28:25",
-  "last_github_push": "13/05 08:28",
-  "last_github_push_ts": 1778675305.688919,
+  "ultimo_update": "13/05/2026 08:29:54",
+  "last_github_push": "13/05 08:29",
+  "last_github_push_ts": 1778675394.167933,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -204,34 +204,35 @@
     }
   ],
   "current_thesis": {
-    "thesis_id": "thesis_2026_05_12_2030_post_d_close_bear_lateral",
-    "boot_ts": "2026-05-12T20:30",
-    "status": null,
-    "mark_at_boot": 80607.8,
+    "thesis_id": "thesis_2026_05_13_0820_break_estrutural_bear",
+    "boot_ts": "2026-05-13T08:20",
+    "status": "FLAT · SHORT anterior fechou SL hit 04:50 (-$45.55) · break bear materializou pós-stop hunt",
+    "mark_at_boot": 80325.0,
     "macro_bias_D": {
-      "direcao": "BEARISH",
-      "score": 4.0
+      "direcao": "BEARISH-INTRADIA · BULL macro residual",
+      "score": 4.5
     },
-    "leitura_primaria_opus": "BOOT 20:30 pós-D close · D 05-11 confirmou bearish thesis com vol institucional 53K · D 05-12 forming BULL +0.18% pequeno (possível bounce). RSI mostra força residual bull no D (60.6) mas 4H 50 e 1H 41 apontam pressão lateral/bear curto prazo. Trade SHORT atual está bem posicionado · TP2 $79,500 plausível. Cuidado · se D atual fechar BULL forte amanhã (>1.5%) invalida thesis.",
+    "leitura_primaria_opus": "BOOT 2 às 08:20 · break estrutural 4H bear confirmado. Mark caiu de $80,503 (08:17) pra $80,183 (08:23) em 6min · -$320 com price_velocity expansion_bearish (sinal INICIATIVO). Suportes $80,400 e $80,363 quebrados. Setup atual: estrutura 4H+1H bear · 15m oversold extreme · macro D atenuando bull. Próximos targets bear: $80,000 (psicológico) · $79,800 (D low) · $79,622 (EMA20D · suporte macro crítico). Recomendação · NÃO ENTRAR setup ambíguo · esperar Camada 2 BOT formal pra LONG OU pullback $80,500-$80,600 pra SHORT melhor entry.",
     "cenarios_opus": {
       "A_continuacao_bear": {
-        "prob": 50,
-        "descricao": "Quebra $80,363 com vol · cai pra $79,800 (D low 05-11) · depois $79,500",
-        "target": 79500
+        "prob": 55,
+        "descricao": "Bear domina · quebra $80,200 · cai pra $80,000/$79,800/$79,622 (EMA20D)",
+        "target": 79622
       },
-      "B_bounce_short_setup": {
+      "B_pullback_short_entry": {
         "prob": 25,
-        "descricao": "Mark bounce até $80,800-$81,000 · rejeição cria novo SHORT entry",
-        "target_entry": 80900
+        "descricao": "Bounce até $80,500-$80,600 · rejeição cria SHORT entry melhor (R:R 2-3)",
+        "target_entry": 80550
       },
-      "C_lateral_range": {
+      "C_camada2_bot_long": {
         "prob": 15,
-        "descricao": "Range $80,400-$80,800 consolidação · sem definição"
+        "descricao": "Camada 2 BOT 5m formal (wick inf ≥60% close bull) + macro D bull suporta · LONG bounce até $80,800",
+        "target_entry_long": 80250
       },
       "D_bull_surpresa": {
-        "prob": 10,
-        "descricao": "Rally surpresa pra $81,000+ · invalida tese se D fechar bull forte",
-        "invalidacao": 81200
+        "prob": 5,
+        "descricao": "Recuperação forte > $80,800 · invalida tese bear · risco de squeeze short",
+        "invalidacao": 80818
       }
     }
   }
