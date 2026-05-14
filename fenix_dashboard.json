@@ -1,25 +1,25 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "13/05/2026 23:32:02",
+  "ultimo_update": "13/05/2026 23:32:58",
   "last_github_push": "13/05 23:32",
-  "last_github_push_ts": 1778729522.435002,
+  "last_github_push_ts": 1778729578.101142,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
   "saldo": {
-    "equity_usdt": 1355.72,
-    "available_usdt": 1350.76,
-    "cum_realised_pnl": -6350.47,
-    "progresso_vs_baseline_usd": -226.47,
-    "updated_at": "2026-05-13T23:32:01-04:00",
-    "equity_usd": 1355.72,
-    "cumPnL_unified_usd": -6350.47,
-    "delta_vs_baseline": -226.47,
-    "pnl_fenix_desde_baseline": -226.47,
-    "wallet_balance_usdt": 1350.76,
-    "unrealisedPnl": 4.96
+    "equity_usdt": 1352.56,
+    "available_usdt": 1352.56,
+    "cum_realised_pnl": -6348.67,
+    "progresso_vs_baseline_usd": -224.67,
+    "updated_at": "2026-05-13T23:32:57-04:00",
+    "equity_usd": 1352.56,
+    "cumPnL_unified_usd": -6348.67,
+    "delta_vs_baseline": -224.67,
+    "pnl_fenix_desde_baseline": -224.67,
+    "wallet_balance_usdt": 1352.56,
+    "unrealisedPnl": 0.0
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -27,58 +27,61 @@
     "diff_usd": -198.92
   },
   "posicao_atual": {
-    "side": "SHORT",
-    "size": 0.04,
-    "avgPrice": 79430.0,
-    "stopLoss": 80441.9,
+    "side": "LONG",
+    "size": 0.042,
+    "avgPrice": 80724.36166667,
+    "stopLoss": 80724.3,
     "takeProfit": null,
-    "tp1_limit": 79596.0,
-    "tp1_pnl_lock": null,
-    "unrealised_pnl_usd": 4.64,
-    "tp2_target_estrutural": null
+    "tp1_limit": 81063.0,
+    "tp1_pnl_lock": 5.03,
+    "unrealised_pnl_usd": 30.77,
+    "tp2_target_estrutural": 82811.0
   },
   "trades_recentes": [
     {
-      "timestamp": "2026-05-13T17:14:00",
+      "timestamp": "2026-05-13T23:32:23",
+      "symbol": "BTCUSDT",
+      "side": "SHORT",
+      "entry_price": 79430.0,
+      "exit_price": 79341.39,
+      "quantity": 0.04,
+      "pnl_usd": 1.34,
+      "pnl_percent": 0.11
+    },
+    {
+      "timestamp": "2026-05-13T11:37:29",
       "symbol": "BTCUSDT",
       "side": "LONG",
-      "trade_type": "SL_LONG_BE_PLUS_COVER",
-      "entry_price": 79308.41,
+      "entry_price": 79308.4113,
       "exit_price": 79398.3,
       "quantity": 0.107,
       "pnl_usd": 3.3,
-      "pnl_percent": 0.04,
-      "context_exit": "SL $79,400 hit no Fib 61,8% pullback (clássico stop hunt) após pico $79,743. Slippage favorável $1.70. Trade total +$16.43 contando TP1 cover. Princípio NUNCA-NEGATIVO honrado"
+      "pnl_percent": 0.11
     },
     {
-      "timestamp": "2026-05-13T14:24:00",
+      "timestamp": "2026-05-13T14:23:52",
       "symbol": "BTCUSDT",
       "side": "LONG",
-      "trade_type": "TP1_COVER_LONG",
       "entry_price": 79200.0,
       "exit_price": 79730.1,
       "quantity": 0.03,
       "pnl_usd": 14.14,
-      "pnl_percent": 0.67,
-      "context_exit": "Market Sell cover TP1 0,030 BTC. TP1 Limit anterior cancelado externamente. Re-executado via Market quando mark $79,706 disparou wake. Captura parcial pré-stop hunt"
+      "pnl_percent": 0.67
     },
     {
-      "timestamp": "2026-05-13T04:50:17",
+      "timestamp": "2026-05-12T18:15:41",
       "symbol": "BTCUSDT",
       "side": "SHORT",
-      "trade_type": "SL_SHORT",
       "entry_price": 80568.8,
       "exit_price": 81134.0,
       "quantity": 0.07,
       "pnl_usd": -45.55,
-      "pnl_percent": -0.7,
-      "context_exit": "SL hit em $81,126.70 com slippage exit avg $81,134 · ironia: wake Camada 2 TOP exhaustion score 9.0 disparou ~10s antes mas SL pegou primeiro (stop hunt clássico) · 2 apertos de SL feitos pelo user (81669→81236→81126) preservaram parte do capital"
+      "pnl_percent": -0.7
     },
     {
-      "timestamp": "2026-05-12T13:33:00",
+      "timestamp": "2026-05-12T10:29:32",
       "symbol": "BTCUSDT",
       "side": "SHORT",
-      "trade_type": "TRAIL_SHORT",
       "entry_price": 80616.1,
       "exit_price": 80514.5,
       "quantity": 0.07,
@@ -89,122 +92,101 @@
       "timestamp": "2026-05-11T07:10:03",
       "symbol": "BTCUSDT",
       "side": "SHORT",
-      "trade_type": "SL_SHORT",
       "entry_price": 80969.6,
       "exit_price": 81231.1,
       "quantity": 0.07,
       "pnl_usd": -24.55,
-      "pnl_percent": -0.43
+      "pnl_percent": -0.32
     },
     {
       "timestamp": "2026-05-11T03:53:29",
       "symbol": "BTCUSDT",
       "side": "SHORT",
-      "trade_type": "SL_SHORT",
       "entry_price": 80744.6,
       "exit_price": 81053.9,
       "quantity": 0.07,
       "pnl_usd": -27.6,
-      "pnl_percent": -0.49
+      "pnl_percent": -0.38
     },
     {
       "timestamp": "2026-05-10T23:22:44",
       "symbol": "BTCUSDT",
       "side": "LONG",
-      "trade_type": "TRAIL_LONG",
       "entry_price": 80541.1,
       "exit_price": 80651.8,
       "quantity": 0.028,
       "pnl_usd": 0.62,
-      "pnl_percent": 0.03
+      "pnl_percent": 0.14
     },
     {
       "timestamp": "2026-05-10T23:22:59",
       "symbol": "BTCUSDT",
       "side": "LONG",
-      "trade_type": "TP1_LONG",
       "entry_price": 80541.1,
       "exit_price": 80945.0,
       "quantity": 0.012,
       "pnl_usd": 4.12,
-      "pnl_percent": 0.43
+      "pnl_percent": 0.5
     },
     {
       "timestamp": "2026-05-10T22:09:29",
       "symbol": "BTCUSDT",
       "side": "LONG",
-      "trade_type": "PARTIAL_LONG",
       "entry_price": 81495.0,
       "exit_price": 81390.9,
       "quantity": 0.04,
       "pnl_usd": -6.61,
-      "pnl_percent": -0.2
+      "pnl_percent": -0.13
     },
     {
       "timestamp": "2026-05-10T20:18:21",
       "symbol": "BTCUSDT",
       "side": "LONG",
-      "trade_type": "SL_LONG",
       "entry_price": 81718.0,
       "exit_price": 81393.0,
       "quantity": 0.04,
       "pnl_usd": -16.59,
-      "pnl_percent": -0.51
+      "pnl_percent": -0.4
     },
     {
       "timestamp": "2026-05-09T12:30:51",
       "symbol": "BTCUSDT",
       "side": "LONG",
-      "trade_type": "PARTIAL_LONG",
-      "entry_price": 80724.36,
+      "entry_price": 80724.3617,
       "exit_price": 80814.3,
       "quantity": 0.042,
       "pnl_usd": -0.02,
-      "pnl_percent": -0.0
+      "pnl_percent": 0.11
     },
     {
       "timestamp": "2026-05-09T12:31:15",
       "symbol": "BTCUSDT",
       "side": "LONG",
-      "trade_type": "TP1_LONG",
-      "entry_price": 80724.36,
+      "entry_price": 80724.3617,
       "exit_price": 81063.0,
       "quantity": 0.018,
       "pnl_usd": 5.03,
-      "pnl_percent": 0.35
+      "pnl_percent": 0.42
     },
     {
       "timestamp": "2026-05-09T00:19:01",
       "symbol": "BTCUSDT",
       "side": "LONG",
-      "trade_type": "TP1_LONG",
       "entry_price": 80165.5,
       "exit_price": 80458.0,
       "quantity": 0.056,
       "pnl_usd": 11.19,
-      "pnl_percent": 0.25
+      "pnl_percent": 0.36
     },
     {
       "timestamp": "2026-05-08T10:47:04",
       "symbol": "BTCUSDT",
       "side": "LONG",
-      "trade_type": "TP1_LONG",
       "entry_price": 80165.5,
       "exit_price": 80566.0,
       "quantity": 0.024,
       "pnl_usd": 8.06,
-      "pnl_percent": 0.42
-    },
-    {
-      "timestamp": "2026-05-08T04:53:47",
-      "symbol": "BTCUSDT",
-      "side": "LONG",
-      "trade_type": "PARTIAL_LONG",
-      "entry_price": 79900.0,
-      "exit_price": 79879.7,
-      "quantity": 0.077,
-      "pnl_usd": -6.18,
-      "pnl_percent": -0.1
+      "pnl_percent": 0.5
     }
   ],
   "current_thesis": {
