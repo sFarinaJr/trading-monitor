@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "14/05/2026 00:17:50",
-  "last_github_push": "14/05 00:17",
-  "last_github_push_ts": 1778732270.406569,
+  "ultimo_update": "14/05/2026 00:18:44",
+  "last_github_push": "14/05 00:18",
+  "last_github_push_ts": 1778732324.0062342,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -13,7 +13,7 @@
     "available_usdt": 1352.56,
     "cum_realised_pnl": -6348.67,
     "progresso_vs_baseline_usd": -224.67,
-    "updated_at": "2026-05-14T00:17:49-04:00",
+    "updated_at": "2026-05-14T00:18:43-04:00",
     "equity_usd": 1352.56,
     "cumPnL_unified_usd": -6348.67,
     "delta_vs_baseline": -224.67,
@@ -190,37 +190,15 @@
     }
   ],
   "current_thesis": {
-    "thesis_id": "thesis_2026_05_13_0831_bear_climax_oversold_extreme",
-    "boot_ts": "2026-05-13T08:31",
-    "status": "FLAT · setup bear CLIMAX forming · 15m oversold extreme + vol institucional 2.9x · próximo movimento decidido em 10-15min",
-    "mark_at_boot": 80141.0,
+    "thesis_id": "boot_v2_2026_05_14_0015",
+    "boot_ts": null,
+    "status": null,
+    "mark_at_boot": 79198,
     "macro_bias_D": {
-      "direcao": "BEARISH com divergência",
-      "score": 6.0
+      "direcao": null,
+      "score": null
     },
-    "leitura_primaria_opus": "📊 Tendência por TF · Diário · BEARISH com DIVERGÊNCIA RSI ativa (low $79,804 RSI 58.1 < pivot $79,120 RSI 63.6 · momentum quebrou antes do preço). 12H · BEARISH (DOJI rejeição topo · wick $846). 4H · BEARISH (abaixo TODAS MAs). 1H · BEARISH (87% body bear). 15m · BEARISH oversold extremo (RSI 28.7 · Stoch 8.6 · vol 2.9x climax). 5m · BEARISH oversold (RSI 30). 🎯 Mark $80,016 testando $80,000 psicológico · movimento bear -$487 em 25min. 🚦 AGUARDAR · quebra confirmada $80,000 abre $79,800 ($79,622 EMA20D próximo) · Camada 2 BOT 5m única confirmação pra LONG contrarian curto.",
-    "cenarios_opus": {
-      "A_quebra_80k_continuacao_bear": {
-        "prob": 55,
-        "descricao": "Quebra $80,000 com vol · cai $79,800 (D low) · target $79,622 (EMA20D macro)",
-        "tp2": 79622
-      },
-      "B_bounce_camada2_long": {
-        "prob": 25,
-        "descricao": "Camada 2 BOT 5m formal · LONG contrarian curto · TP $80,400-$80,560",
-        "entry": 80000,
-        "rr": 2
-      },
-      "C_reversal_profundo_short_entry": {
-        "prob": 15,
-        "descricao": "Bounce profundo até $80,560-$80,700 · SHORT melhor entry · R:R 3+",
-        "entry": 80650
-      },
-      "D_invalidacao_macro_bear": {
-        "prob": 5,
-        "descricao": "Quebra $79,003 MA20D · D macro vira BEAR estrutural · target $77,000",
-        "tp2": 77000
-      }
-    }
+    "leitura_primaria_opus": null,
+    "cenarios_opus": {}
   }
 }
