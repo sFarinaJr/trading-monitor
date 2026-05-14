@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "14/05/2026 00:20:57",
-  "last_github_push": "14/05 00:20",
-  "last_github_push_ts": 1778732457.396832,
+  "ultimo_update": "14/05/2026 00:21:15",
+  "last_github_push": "14/05 00:21",
+  "last_github_push_ts": 1778732475.318968,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -195,10 +195,25 @@
     "status": null,
     "mark_at_boot": 79198,
     "macro_bias_D": {
-      "direcao": null,
-      "score": null
+      "direcao": "BEARISH",
+      "score": 8.5
     },
-    "leitura_primaria_opus": null,
-    "cenarios_opus": {}
+    "leitura_primaria_opus": "📉 Tendência por TF · Diário BEARISH (5 dias bear consecutivos · close < MA20D · pivot baixa confirmado). 4H BEARISH (LH descendentes $81,306→$79,664). 1H BEARISH (double top $79,743). 15m NEUTRO consolidação tight. 🎯 Mark $79,198 abaixo fundo majoritário $79,120 quebrado. 🔻 Pivot baixa estrutural ATIVO. Zona SHORT ELITE $79,743 (pivot 4H) · TP médio $77,500 (Fib ext 1.272) · TP alto $76,725 (Fib ext 1.618).",
+    "cenarios_opus": {
+      "A_continuacao_bear": {
+        "prob": 55,
+        "descricao": "Continuação bear até $77,500-$78,200 · 12-24h",
+        "tp2": 77500
+      },
+      "B_bounce_intermediario": {
+        "prob": 30,
+        "descricao": "Bounce até $79,400-$79,700 (Fib 23.6-38.2) antes continuação · entry SHORT ELITE em $79,743",
+        "entry": 79743
+      },
+      "C_reversal_bull": {
+        "prob": 15,
+        "descricao": "Break $80,000 invalida pivot · vai $80,500+ recovery (improvável)"
+      }
+    }
   }
 }
