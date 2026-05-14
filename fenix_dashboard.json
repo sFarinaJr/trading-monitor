@@ -1,25 +1,25 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "14/05/2026 14:36:59",
-  "last_github_push": "14/05 14:36",
-  "last_github_push_ts": 1778783819.8228118,
+  "ultimo_update": "14/05/2026 14:37:19",
+  "last_github_push": "14/05 14:37",
+  "last_github_push_ts": 1778783839.00178,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
   "saldo": {
-    "equity_usdt": 1229.77,
-    "available_usdt": 1354.62,
+    "equity_usdt": 1192.78,
+    "available_usdt": 1192.78,
     "cum_realised_pnl": -6346.61,
     "progresso_vs_baseline_usd": -222.61,
-    "updated_at": "2026-05-14T12:21:44-04:00",
-    "equity_usd": 1229.77,
+    "updated_at": "2026-05-14T14:32:00-04:00",
+    "equity_usd": 1192.78,
     "cumPnL_unified_usd": -6346.61,
     "delta_vs_baseline": -222.61,
     "pnl_fenix_desde_baseline": -222.61,
     "wallet_balance_usdt": 1354.62,
-    "unrealisedPnl": -124.85
+    "unrealisedPnl": -161.85
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -34,7 +34,7 @@
     "takeProfit": null,
     "tp1_limit": null,
     "tp1_pnl_lock": null,
-    "unrealised_pnl_usd": -124.85,
+    "unrealised_pnl_usd": -161.85,
     "tp2_target_estrutural": null
   },
   "trades_recentes": [
@@ -190,30 +190,15 @@
     }
   ],
   "current_thesis": {
-    "thesis_id": "boot_v2_2026_05_14_0015",
+    "thesis_id": "boot_opus_2026_05_14_1432_bull_recovery",
     "boot_ts": null,
     "status": null,
-    "mark_at_boot": 79198,
+    "mark_at_boot": 81810.0,
     "macro_bias_D": {
-      "direcao": "BEARISH",
-      "score": 8.5
+      "direcao": "BULLISH",
+      "score": null
     },
-    "leitura_primaria_opus": "📉 Tendência por TF · Diário BEARISH (5 dias bear consecutivos · close < MA20D · pivot baixa confirmado). 4H BEARISH (LH descendentes $81,306→$79,664). 1H BEARISH (double top $79,743). 15m NEUTRO consolidação tight. 🎯 Mark $79,198 abaixo fundo majoritário $79,120 quebrado. 🔻 Pivot baixa estrutural ATIVO. Zona SHORT ELITE $79,743 (pivot 4H) · TP médio $77,500 (Fib ext 1.272) · TP alto $76,725 (Fib ext 1.618).",
-    "cenarios_opus": {
-      "A_continuacao_bear": {
-        "prob": 55,
-        "descricao": "Continuação bear até $77,500-$78,200 · 12-24h",
-        "tp2": 77500
-      },
-      "B_bounce_intermediario": {
-        "prob": 30,
-        "descricao": "Bounce até $79,400-$79,700 (Fib 23.6-38.2) antes continuação · entry SHORT ELITE em $79,743",
-        "entry": 79743
-      },
-      "C_reversal_bull": {
-        "prob": 15,
-        "descricao": "Break $80,000 invalida pivot · vai $80,500+ recovery (improvável)"
-      }
-    }
+    "leitura_primaria_opus": "BULLISH CONFIRMED · estrutura virou em todos TFs principais · mercado em modo V-recovery rumo retest topo macro $82,811 · SHORT atual em zona desfavoravel · gerenciamento passivo defensivo · order flow indica squeeze ja consumiu fase 1 (OI -5.9%) e entrou fase consolidacao antes possivel segunda leg · 🗣️ TOPO15m repetido indica zona de virada curta provavel",
+    "cenarios_opus": "PRIORIDADE 1 · aguardar rejeicao $81,937-$82,000 com Camada 2 topo 5m · janela exit SHORT ~BE $80,140 · PRIORIDADE 2 · vigilancia break $82,100 = exit defensivo SHORT imediato · PRIORIDADE 3 · zero novas entradas ate close 1H/4H confirmar direcao definitiva"
   }
 }
