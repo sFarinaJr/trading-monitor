@@ -1,41 +1,41 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "14/05/2026 10:18:46",
-  "last_github_push": "14/05 10:18",
-  "last_github_push_ts": 1778768326.158777,
+  "ultimo_update": "14/05/2026 10:19:47",
+  "last_github_push": "14/05 10:19",
+  "last_github_push_ts": 1778768387.1034958,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
   "saldo": {
-    "equity_usdt": 1356.22,
-    "available_usdt": 1356.22,
-    "cum_realised_pnl": -6345.01,
-    "progresso_vs_baseline_usd": -221.01,
-    "updated_at": "2026-05-14T10:18:45-04:00",
-    "equity_usd": 1356.22,
-    "cumPnL_unified_usd": -6345.01,
-    "delta_vs_baseline": -221.01,
-    "pnl_fenix_desde_baseline": -221.01,
-    "wallet_balance_usdt": 1356.22,
-    "unrealisedPnl": 0.0
+    "equity_usdt": 1357.35,
+    "available_usdt": 1354.62,
+    "cum_realised_pnl": -6346.61,
+    "progresso_vs_baseline_usd": -222.61,
+    "updated_at": "2026-05-14T10:19:46-04:00",
+    "equity_usd": 1357.35,
+    "cumPnL_unified_usd": -6346.61,
+    "delta_vs_baseline": -222.61,
+    "pnl_fenix_desde_baseline": -222.61,
+    "wallet_balance_usdt": 1354.62,
+    "unrealisedPnl": 2.73
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
-    "current_pnl": -6345.01,
-    "diff_usd": -221.01
+    "current_pnl": -6346.61,
+    "diff_usd": -222.61
   },
   "posicao_atual": {
-    "side": "LONG",
-    "size": 0.042,
-    "avgPrice": 80724.36166667,
-    "stopLoss": 80724.3,
+    "side": "SHORT",
+    "size": 0.1,
+    "avgPrice": 80200.0,
+    "stopLoss": null,
     "takeProfit": null,
-    "tp1_limit": 81063.0,
-    "tp1_pnl_lock": 5.03,
-    "unrealised_pnl_usd": 30.77,
-    "tp2_target_estrutural": 82811.0
+    "tp1_limit": null,
+    "tp1_pnl_lock": null,
+    "unrealised_pnl_usd": 2.73,
+    "tp2_target_estrutural": null
   },
   "trades_recentes": [
     {
