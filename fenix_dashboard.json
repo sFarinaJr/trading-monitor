@@ -1,41 +1,41 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "14/05/2026 08:34:58",
-  "last_github_push": "14/05 08:34",
-  "last_github_push_ts": 1778762098.216222,
+  "ultimo_update": "14/05/2026 08:35:55",
+  "last_github_push": "14/05 08:35",
+  "last_github_push_ts": 1778762155.812441,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
   "saldo": {
-    "equity_usdt": 1378.94,
-    "available_usdt": 1350.59,
-    "cum_realised_pnl": -6350.64,
-    "progresso_vs_baseline_usd": -226.64,
-    "updated_at": "2026-05-14T08:34:57-04:00",
-    "equity_usd": 1378.94,
-    "cumPnL_unified_usd": -6350.64,
-    "delta_vs_baseline": -226.64,
-    "pnl_fenix_desde_baseline": -226.64,
-    "wallet_balance_usdt": 1350.59,
-    "unrealisedPnl": 28.35
+    "equity_usdt": 1356.22,
+    "available_usdt": 1356.22,
+    "cum_realised_pnl": -6345.01,
+    "progresso_vs_baseline_usd": -221.01,
+    "updated_at": "2026-05-14T08:35:55-04:00",
+    "equity_usd": 1356.22,
+    "cumPnL_unified_usd": -6345.01,
+    "delta_vs_baseline": -221.01,
+    "pnl_fenix_desde_baseline": -221.01,
+    "wallet_balance_usdt": 1356.22,
+    "unrealisedPnl": 0.0
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
-    "current_pnl": -6350.64,
-    "diff_usd": -226.64
+    "current_pnl": -6345.01,
+    "diff_usd": -221.01
   },
   "posicao_atual": {
-    "side": "SHORT",
-    "size": 0.14,
-    "avgPrice": 79720.0,
-    "stopLoss": 79633.0,
+    "side": "LONG",
+    "size": 0.042,
+    "avgPrice": 80724.36166667,
+    "stopLoss": 80724.3,
     "takeProfit": null,
-    "tp1_limit": null,
-    "tp1_pnl_lock": null,
-    "unrealised_pnl_usd": 25.31,
-    "tp2_target_estrutural": null
+    "tp1_limit": 81063.0,
+    "tp1_pnl_lock": 5.03,
+    "unrealised_pnl_usd": 30.77,
+    "tp2_target_estrutural": 82811.0
   },
   "trades_recentes": [
     {
