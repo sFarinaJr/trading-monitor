@@ -1,25 +1,25 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "14/05/2026 02:37:27",
+  "ultimo_update": "14/05/2026 02:37:55",
   "last_github_push": "14/05 02:37",
-  "last_github_push_ts": 1778740647.289462,
+  "last_github_push_ts": 1778740675.4954,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
   "saldo": {
-    "equity_usdt": 1343.78,
+    "equity_usdt": 1343.34,
     "available_usdt": 1350.33,
     "cum_realised_pnl": -6350.9,
     "progresso_vs_baseline_usd": -226.9,
-    "updated_at": "2026-05-14T02:36:59-04:00",
-    "equity_usd": 1343.78,
+    "updated_at": "2026-05-14T02:37:54-04:00",
+    "equity_usd": 1343.34,
     "cumPnL_unified_usd": -6350.9,
     "delta_vs_baseline": -226.9,
     "pnl_fenix_desde_baseline": -226.9,
     "wallet_balance_usdt": 1350.33,
-    "unrealisedPnl": -6.55
+    "unrealisedPnl": -6.99
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -34,7 +34,7 @@
     "takeProfit": null,
     "tp1_limit": null,
     "tp1_pnl_lock": null,
-    "unrealised_pnl_usd": -6.55,
+    "unrealised_pnl_usd": -8.29,
     "tp2_target_estrutural": null
   },
   "trades_recentes": [
