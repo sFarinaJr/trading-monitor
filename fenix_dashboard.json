@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "15/05/2026 00:00:02",
+  "ultimo_update": "15/05/2026 00:00:53",
   "last_github_push": "15/05 00:00",
-  "last_github_push_ts": 1778817602.8075159,
+  "last_github_push_ts": 1778817653.090976,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -190,15 +190,15 @@
     }
   ],
   "current_thesis": {
-    "thesis_id": "BOOT_OPUS_REFRESH_2026_05_14_2318",
+    "thesis_id": "BOOT_OPUS_REFRESH_2026_05_14_2355",
     "boot_ts": null,
     "status": null,
-    "mark_at_boot": 81180.0,
+    "mark_at_boot": 81038.0,
     "macro_bias_D": {
       "direcao": null,
       "score": null
     },
-    "leitura_primaria_opus": "BTC em compressão pós-rally. D bull intacto mas 4H mostrando primeira fissura (MACD bear cross). 1H hammer $80,700 defendeu suporte estrutural Fib 38.2%. Resistência crítica $81,300 (atual topo) → $81,500 (resistência média) → $81,937 Fib 78.6% (não testado) → $82,000 LTB · ZONA REVERSA INTACTA mas mercado tentando recovery contínuo.",
+    "leitura_primaria_opus": "BTC fechou cenário A1a do BOOT 23:18 como esperado. Double-top $81,300 confirmado · breakdown 23:30 alinhou com tese · Wyckoff UTAD validado · Elliott B finalizou · agora em onda C descendente. Pressões: 4H bear cross robusto + 15m topping + L/S ratio deteriorando. Anti-pressão: 1H hammer ainda vivo + D bull momentum + Fib 38.2 $80,747 segurando como suporte ativo.",
     "cenarios_opus": {}
   }
 }
