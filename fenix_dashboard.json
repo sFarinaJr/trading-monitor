@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "15/05/2026 09:38:25",
-  "last_github_push": "15/05 09:38",
-  "last_github_push_ts": 1778852305.499079,
+  "ultimo_update": "15/05/2026 09:39:12",
+  "last_github_push": "15/05 09:39",
+  "last_github_push_ts": 1778852352.9159071,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -195,15 +195,37 @@
     }
   ],
   "current_thesis": {
-    "thesis_id": "BOOT_OPUS_REFRESH_2026_05_14_2355",
-    "boot_ts": null,
-    "status": null,
-    "mark_at_boot": 81038.0,
+    "thesis_id": "BOOT_FORMAL_2026_05_15_0921",
+    "boot_ts": "2026-05-15T09:21:00-04:00",
+    "status": "ATIVO · breakdown $79,975 materializando 09:38 · cenário B/Y1 estendido",
+    "mark_at_boot": 80119.0,
     "macro_bias_D": {
-      "direcao": null,
-      "score": null
+      "direcao": "BULLISH",
+      "score": 6.0
     },
-    "leitura_primaria_opus": "BTC fechou cenário A1a do BOOT 23:18 como esperado. Double-top $81,300 confirmado · breakdown 23:30 alinhou com tese · Wyckoff UTAD validado · Elliott B finalizou · agora em onda C descendente. Pressões: 4H bear cross robusto + 15m topping + L/S ratio deteriorando. Anti-pressão: 1H hammer ainda vivo + D bull momentum + Fib 38.2 $80,747 segurando como suporte ativo.",
-    "cenarios_opus": {}
+    "leitura_primaria_opus": "Cenário B/Y1 estendido MATERIALIZADO 09:38 · breakdown Fib 61.8 $79,975 com volume_surge confirma continuação bear curto-prazo · target $79,400 neckline (TP1 macro Y1)",
+    "cenarios_opus": {
+      "B_breakdown_extended": {
+        "prob": 55,
+        "tp2": 79400,
+        "entry": 79488,
+        "rr": 2.0,
+        "note": "Y1 estendido em curso · breakdown $79,975 confirmou · target $79,400"
+      },
+      "A1_bottom_in_bounce": {
+        "prob": 25,
+        "tp2": 80361,
+        "note": "Bottom em $79,400 + bounce · setup LONG futuro"
+      },
+      "C_lateral": {
+        "prob": 15,
+        "note": "Lateral $79,500-$80,000 indefinido"
+      },
+      "D_capitulation": {
+        "prob": 5,
+        "tp2": 78724,
+        "note": "Capitulation rumo LTA $78,724 se equities cascateiam"
+      }
+    }
   }
 }
