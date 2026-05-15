@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "14/05/2026 23:40:52",
-  "last_github_push": "14/05 23:40",
-  "last_github_push_ts": 1778816452.4976032,
+  "ultimo_update": "14/05/2026 23:41:02",
+  "last_github_push": "14/05 23:41",
+  "last_github_push_ts": 1778816462.40523,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -34,7 +34,7 @@
     "takeProfit": null,
     "tp1_limit": null,
     "tp1_pnl_lock": null,
-    "unrealised_pnl_usd": -76.37,
+    "unrealised_pnl_usd": -98.0,
     "tp2_target_estrutural": null
   },
   "trades_recentes": [
@@ -190,15 +190,15 @@
     }
   ],
   "current_thesis": {
-    "thesis_id": "boot_opus_2026_05_14_2107_bull_recovery_exhaust_curta",
+    "thesis_id": "BOOT_OPUS_REFRESH_2026_05_14_2318",
     "boot_ts": null,
     "status": null,
-    "mark_at_boot": 81508.5,
+    "mark_at_boot": 81180.0,
     "macro_bias_D": {
-      "direcao": "BULLISH",
+      "direcao": null,
       "score": null
     },
-    "leitura_primaria_opus": "BULLISH CONFIRMED · estrutura virou em todos TFs principais · mercado em modo V-recovery rumo retest topo macro $82,811 · SHORT atual em zona desfavoravel · gerenciamento passivo defensivo · order flow indica squeeze ja consumiu fase 1 (OI -5.9%) e entrou fase consolidacao antes possivel segunda leg · 🗣️ TOPO15m repetido indica zona de virada curta provavel",
-    "cenarios_opus": "PRIORIDADE 1 · aguardar rejeicao $81,937-$82,000 com Camada 2 topo 5m · janela exit SHORT ~BE $80,140 · PRIORIDADE 2 · vigilancia break $82,100 = exit defensivo SHORT imediato · PRIORIDADE 3 · zero novas entradas ate close 1H/4H confirmar direcao definitiva"
+    "leitura_primaria_opus": "BTC em compressão pós-rally. D bull intacto mas 4H mostrando primeira fissura (MACD bear cross). 1H hammer $80,700 defendeu suporte estrutural Fib 38.2%. Resistência crítica $81,300 (atual topo) → $81,500 (resistência média) → $81,937 Fib 78.6% (não testado) → $82,000 LTB · ZONA REVERSA INTACTA mas mercado tentando recovery contínuo.",
+    "cenarios_opus": {}
   }
 }
