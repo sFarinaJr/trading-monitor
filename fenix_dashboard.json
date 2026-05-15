@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "15/05/2026 15:20:31",
-  "last_github_push": "15/05 15:20",
-  "last_github_push_ts": 1778872831.0332842,
+  "ultimo_update": "15/05/2026 15:21:00",
+  "last_github_push": "15/05 15:21",
+  "last_github_push_ts": 1778872860.612299,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -227,5 +227,102 @@
         "note": "Capitulation rumo LTA $78,724 se equities cascateiam"
       }
     }
+  },
+  "execution_mode": "AUTO",
+  "manual_approval_required": false,
+  "price_watch": {
+    "ts": "2026-05-15T15:15:14",
+    "levels": [
+      {
+        "price": 82811,
+        "tier": "alto",
+        "direction": "above",
+        "reason": "Topo macro D 27/04 · resistência distante",
+        "active": true,
+        "decisao_pre_armada": "Não vai atingir hoje · só monitorar pra contexto macro",
+        "triggered": false
+      },
+      {
+        "price": 80974,
+        "tier": "alto",
+        "direction": "above",
+        "reason": "Topo intraday 15/05 anterior · resistência média",
+        "active": true,
+        "decisao_pre_armada": "Se mark atingir aqui · bull recovery confirmado · setup SHORT em Camada 2 topo 5m com SL acima $81,200",
+        "triggered": false
+      },
+      {
+        "price": 79975,
+        "tier": "alto",
+        "direction": "above",
+        "reason": "Fib 61.8% invertido · resistência forte zona",
+        "active": true,
+        "decisao_pre_armada": "Recovery bull até aqui · setup SHORT scalp se Camada 2 topo 5m fire · SL $80,200",
+        "triggered": false
+      },
+      {
+        "price": 79792,
+        "tier": "médio",
+        "direction": "above",
+        "reason": "Fib 50% invertido swing $80,974 → $78,610",
+        "active": true,
+        "decisao_pre_armada": "Resist intermediário · bounce bull pode parar aqui · monitorar reversal",
+        "triggered": false
+      },
+      {
+        "price": 79525,
+        "tier": "médio",
+        "direction": "above",
+        "reason": "High 1H 14:00 · topo do bounce atual",
+        "active": true,
+        "decisao_pre_armada": "Se romper com vol > 2K · bull continuation · setup LONG pullback subsequente",
+        "triggered": false
+      },
+      {
+        "price": 78971,
+        "tier": "médio",
+        "direction": "below",
+        "reason": "Low intra-bounce 1H 11:00 · primeiro suporte",
+        "active": true,
+        "decisao_pre_armada": "Se romper com vol · bear continuation · setup SHORT entry $79,000 SL $79,400 TP $78,610",
+        "triggered": false
+      },
+      {
+        "price": 78724,
+        "tier": "alto",
+        "direction": "below",
+        "reason": "LTA quebrada origem · agora resistência abaixo (era suporte)",
+        "active": true,
+        "decisao_pre_armada": "Retest desta zona · setup LONG bounce se Camada 2 fundo 5m disparar · SL $78,400",
+        "triggered": false
+      },
+      {
+        "price": 78610,
+        "tier": "alto",
+        "direction": "below",
+        "reason": "Low capitulação 1H 09:00 · suporte crítico (vol 15.8K institucional)",
+        "active": true,
+        "decisao_pre_armada": "Toque aqui = setup LONG primário · SL $78,400 TP1 $79,000 TP2 $79,400 · R:R 3x+",
+        "triggered": false
+      },
+      {
+        "price": 78000,
+        "tier": "alto",
+        "direction": "below",
+        "reason": "Suporte psicológico $78K · zona se bear estender",
+        "active": true,
+        "decisao_pre_armada": "Bear acelerar até aqui · aguardar Camada 2 fundo 5m · setup LONG contrarian",
+        "triggered": false
+      },
+      {
+        "price": 77500,
+        "tier": "alto",
+        "direction": "below",
+        "reason": "Suporte estrutural antigo · alvo cisne negro",
+        "active": true,
+        "decisao_pre_armada": "Capitulação total · LONG bottom-fish com SL $77,200 · risco alto",
+        "triggered": false
+      }
+    ]
   }
 }
