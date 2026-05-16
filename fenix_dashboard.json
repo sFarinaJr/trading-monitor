@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "15/05/2026 20:00:38",
-  "last_github_push": "15/05 20:00",
-  "last_github_push_ts": 1778889638.684748,
+  "ultimo_update": "15/05/2026 20:01:32",
+  "last_github_push": "15/05 20:01",
+  "last_github_push_ts": 1778889692.363415,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -197,13 +197,13 @@
   "current_thesis": {
     "thesis_id": "BOOT_FORMAL_2026_05_15_0921",
     "boot_ts": "2026-05-15T09:21:00-04:00",
-    "status": "ATIVO · breakdown $79,975 materializando 09:38 · cenário B/Y1 estendido",
+    "status": "BEAR confirmado pós close D · target $77,500",
     "mark_at_boot": 80119.0,
     "macro_bias_D": {
-      "direcao": "BULLISH",
-      "score": 6.0
+      "direcao": "BEARISH",
+      "score": 7.0
     },
-    "leitura_primaria_opus": "Cenário B/Y1 estendido MATERIALIZADO 09:38 · breakdown Fib 61.8 $79,975 com volume_surge confirma continuação bear curto-prazo · target $79,400 neckline (TP1 macro Y1)",
+    "leitura_primaria_opus": "Estrutura D virou BEAR · LTA $78,724 broken · target estrutural $77,500 (suporte antigo) · setup primário SHORT em retest $79,400-$79,500 zone",
     "cenarios_opus": {
       "B_breakdown_extended": {
         "prob": 55,
