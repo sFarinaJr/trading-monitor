@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "16/05/2026 19:35:57",
-  "last_github_push": "16/05 19:35",
-  "last_github_push_ts": 1778974557.383212,
+  "ultimo_update": "16/05/2026 19:36:26",
+  "last_github_push": "16/05 19:36",
+  "last_github_push_ts": 1778974586.963011,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -197,43 +197,18 @@
     }
   ],
   "current_thesis": {
-    "thesis_id": "BOOT_POS_CLOSE_D_BEAR_2026_05_15_2006",
-    "boot_ts": "2026-05-15T20:06:00-04:00",
-    "ultimo_update": "15/05/2026 20:51:42",
-    "status": "BOOT_POS_CLOSE_D_BEAR · D 14/05 fechou bear engulfo institucional · estrutura D virou BEAR · range coiled $78,900-$79,200 aguardando próxima leg · MODO AUTO ativo (LEI #1 plena)",
-    "mark_at_boot": 79086.0,
-    "mark_now": 79086.0,
+    "thesis_id": null,
+    "boot_ts": null,
+    "ultimo_update": null,
+    "status": null,
+    "mark_at_boot": null,
+    "mark_now": null,
     "macro_bias_D": {
-      "direcao": "BEARISH",
-      "score": 7.0
+      "direcao": "NEUTRO",
+      "score": null
     },
-    "leitura_primaria_opus": "D bear engulfo institucional consolidou virada estrutural. 4H/1H confirmam bear forte. 15m mostra primeira exaustão de venda intra-cycle mas precisa confirmação. Price coiled em range $78,900-$79,200 (200 pts) há 4h após cascade. Cenário base: lateralização $78,900-$79,500 por mais 4-12h então resolução direcional. Viés probabilístico bear (55% combinado) com target $78,610 → $78,344 → $77,500. Setup SHORT em retest $79,400-$79,525 é PRIMÁRIO. Setup LONG bottom-fish $78,300-$78,400 (TRIG_BB armado) é CONTRARIAN secundário.",
-    "cenarios_opus": {
-      "A_lateral_consolidacao": {
-        "prob": 40,
-        "range": "$78,900-$79,500",
-        "horizonte_h": "4-12",
-        "note": "Range coiled 4h+ continua · sem catalisador novo · ASIA não chegou"
-      },
-      "B_breakdown_continuacao": {
-        "prob": 35,
-        "tp_zone": "$78,610 → $78,344 → $77,500",
-        "trigger": "Break $78,900 com vol >2K 5m + close 15m abaixo",
-        "note": "ASIA open trade catalisador · target $78,344 BB lo TRIG_BB armado"
-      },
-      "C_bounce_recuperacao": {
-        "prob": 20,
-        "tp_zone": "$79,500 → $79,790 → $79,975",
-        "trigger": "Camada 2 fundo 5m + close 15m bullish + reclaim EMA 1H $79,302",
-        "note": "Bull divergence 15m + RSI 1H oversold + funding negativo extremo = combustível mas ESTRUTURA D BEAR limita upside"
-      },
-      "D_capitulation_brutal": {
-        "prob": 5,
-        "tp_zone": "$77,500 → $76,725",
-        "trigger": "Equities futures cascateiam ASIA",
-        "note": "Cauda · equities precisam -1.5%+ adicional"
-      }
-    }
+    "leitura_primaria_opus": null,
+    "cenarios_opus": {}
   },
   "execution_mode": "AUTO",
   "manual_approval_required": false,
