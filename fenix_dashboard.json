@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "15/05/2026 22:46:23",
-  "last_github_push": "15/05 22:46",
-  "last_github_push_ts": 1778899583.0205061,
+  "ultimo_update": "15/05/2026 22:47:08",
+  "last_github_push": "15/05 22:47",
+  "last_github_push_ts": 1778899628.504162,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -234,7 +234,7 @@
   "execution_mode": "AUTO",
   "manual_approval_required": false,
   "price_watch": {
-    "ts": "2026-05-15T15:15:14",
+    "ts": "2026-05-15T22:47:08",
     "levels": [
       {
         "price": 82811,
@@ -279,6 +279,33 @@
         "reason": "High 1H 14:00 · topo do bounce atual",
         "active": true,
         "decisao_pre_armada": "Se romper com vol > 2K · bull continuation · setup LONG pullback subsequente",
+        "triggered": false
+      },
+      {
+        "price": 79790,
+        "tier": "alto",
+        "direction": "above",
+        "reason": "Stop loss setup SHORT primário · ponto-não-retorno bear curto",
+        "active": true,
+        "decisao_pre_armada": "Se mark cruzar pra cima · invalidação Wave 2 corrective · reavaliar tese · cenário C bounce dead-cat",
+        "triggered": false
+      },
+      {
+        "price": 78890,
+        "tier": "médio",
+        "direction": "below",
+        "reason": "Entry SHORT secundário · rompimento range coiled",
+        "active": true,
+        "decisao_pre_armada": "Entrada VENDA · SHORT 0.014 BTC · stop $79,200 · alvo 1 $78,610 · alvo 2 $78,000 · risco/retorno 2.85x · gatilho close 15m abaixo vol >1K",
+        "triggered": false
+      },
+      {
+        "price": 78340,
+        "tier": "alto",
+        "direction": "below",
+        "reason": "Entry LONG contrarian · BB lo + zona oversold",
+        "active": true,
+        "decisao_pre_armada": "Entrada COMPRA · LONG 0.014 BTC · stop $78,050 · alvo 1 $78,700 · alvo 2 $79,525 · risco/retorno 3.4x · gatilho Camada 2 fundo 5m fechado",
         "triggered": false
       }
     ]
