@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "16/05/2026 22:28:23",
-  "last_github_push": "16/05 22:28",
-  "last_github_push_ts": 1778984903.702913,
+  "ultimo_update": "16/05/2026 22:29:23",
+  "last_github_push": "16/05 22:29",
+  "last_github_push_ts": 1778984963.9842072,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -24,7 +24,7 @@
     "available_usdt": 1359.89,
     "progresso_vs_baseline_usd": -217.35,
     "pnl_fenix_desde_baseline": -217.35,
-    "updated_at": "2026-05-16T22:28:23-04:00"
+    "updated_at": "2026-05-16T22:29:23-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -214,9 +214,9 @@
         "entry": 78500,
         "sl": 79050,
         "tp1": 78107,
-        "tp2": 77086,
-        "rr": 2.57,
-        "note": "Mark testa $78,500 PP D + retest break · setup SHORT macro aligned · sizing T1 0.040 BTC"
+        "tp2": 76540,
+        "rr": 3.56,
+        "note": "Mark testa $78,500 PP D + retest break · setup SHORT macro aligned · TP2 ajustado $76,540 (1.272x) pra R:R 3.56x ≥ LEI #9"
       },
       "LONG_bounce_contratrend": {
         "prob": 35,
