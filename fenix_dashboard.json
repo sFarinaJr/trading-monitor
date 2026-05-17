@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "17/05/2026 09:34:16",
-  "last_github_push": "17/05 09:34",
-  "last_github_push_ts": 1779024856.0065339,
+  "ultimo_update": "17/05/2026 09:35:13",
+  "last_github_push": "17/05 09:35",
+  "last_github_push_ts": 1779024913.690965,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -24,7 +24,7 @@
     "available_usdt": 1344.52,
     "progresso_vs_baseline_usd": -232.71,
     "pnl_fenix_desde_baseline": -232.71,
-    "updated_at": "2026-05-17T09:34:15-04:00"
+    "updated_at": "2026-05-17T09:35:12-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -198,44 +198,20 @@
   ],
   "current_thesis": {
     "thesis_id": null,
-    "boot_ts": null,
-    "ultimo_update": "2026-05-16T22:35:00-04:00",
+    "boot_ts": "2026-05-17T09:34:49.493804-04:00",
+    "ultimo_update": null,
     "status": null,
-    "mark_at_boot": null,
+    "mark_at_boot": 78220.4,
     "mark_now": null,
     "macro_bias_D": {
       "direcao": "BEARISH",
       "score": null
     },
-    "leitura_primaria_opus": "Macro D BEARISH confirmado pelo engolfo bear 15/05 ($82,811 topo → $77,601 LL hoje) com continuação no 16/05. Estrutura LH+LL formada. Mark $77,800 abaixo EMA20 D ($79,412). RSI 1H 26 oversold extremo gera bounce técnico curto prazo mas não invalida bear macro. Setup primário SHORT pullback em $78,500 (PP D + retest break) com SL $79,050 e TP2 $77,086 (measured move 1.0x). Setup secundário LONG bounce contra-trend só com Camada 2 fundo 5m formal em $77,601-$77,700. Targets bear medidos · $77,086 → $76,040 → $75,860 (Fib extension 1.0x · 1.272x · 1.618x).",
+    "leitura_primaria_opus": "BTC em indecisão profunda apos venda institucional 14/05 (D bear engolfo $79,069→close vol 71.9K) · D bear continuation com 2 dias inside bar provando exaustao temporaria · 16/05 LOW $77,601 testou suporte D historico e segurou · 17/05 lateral apertado $78,134-$78,569 · macro bias D BEARISH dominante mas momentum bearish CADENCIANDO · RSI 4H 38.46 oversold leve + EMA20 4H $78,552 funcionando como ima (mark $78,220 logo abaixo) · MACD 1H acabou de cruzar bull cross fresco (hist +120.6) · short squeeze pre-condicoes presentes mas SEM gatilho estrutural (sem combo FUNDO 4H+15m · sem signature 🗣️ FUNDO 15m · sem camada2_bot_exhaustion). Coracao ultimos 40min oscilando score 7-13.5 bullish persistente mas SEM evento estrutural confirmando. Volume 4H 1.83K vs MA 8.87K (-79%) = mercado dormindo · ningúem comprometido. Funding flip de negativo (14/05) pra positivo leve (+0.004%) · longs cautelosos. L/S ratio 0.556/0.444 longs leves crescendo. OI 54.6K estavel com leve crescimento.",
     "cenarios_opus": {
-      "SHORT_pullback_primario": {
-        "prob": 45,
-        "entry": 78500,
-        "sl": 79050,
-        "tp1": 78107,
-        "tp2": 76540,
-        "rr": 3.56,
-        "note": "Mark testa $78,500 PP D + retest break · setup SHORT macro aligned · TP2 ajustado $76,540 (1.272x) pra R:R 3.56x ≥ LEI #9"
-      },
-      "LONG_bounce_contratrend": {
-        "prob": 35,
-        "entry": 77650,
-        "sl": 77500,
-        "tp1": 78038,
-        "tp2": 78500,
-        "rr": 3.4,
-        "note": "Camada 2 fundo 5m formal em $77,601-$77,700 · contra-trend tactical · TP2 fixo (não trail) · sizing reduzido 0.020 BTC"
-      },
-      "SHORT_breakdown_acelerado": {
-        "prob": 20,
-        "entry": 77500,
-        "sl": 78000,
-        "tp1": 77000,
-        "tp2": 76040,
-        "rr": 2.92,
-        "note": "Mark perde $77,601 com vol > 1500 BTC em close 1H · cenário A acelera · SHORT continuation"
-      }
+      "A_short_continuation_bear": "PRIMÁRIO MODO 1 · Mark sobe pra $78,500 (R1 4H) + Camada 2 topo 5m → SHORT pullback · entry $78,500 SL $79,050 TP1 $78,107 TP2 $77,086 · R:R 2.57x ≥1.5x LEI #9 · qty 0.024 T1 · macro aligned BEARISH ✓",
+      "B_long_bounce_contra_trend": "MODO 2 SELETIVO · Mark cai pra $77,700-$77,601 + camada2_bot_exhaustion 5m → LONG bounce · entry $77,700 SL $77,400 TP1 $78,089 TP2 $78,500 · R:R 2.67x ≥1.5x · qty 0.044 T1 · MODO 2 contra-trend AUTORIZADO via signal whitelist · AGUARDA Camada 2 5m fechada LEI #4",
+      "C_lateral_aguardar": "TERCIARIO · Range $78,107-$78,500 lateralizado 4-12h ate close D · sem trade · monitorar wakes coracao + watcher · trigger A ou B confirmado dispara cenario correspondente"
     }
   },
   "execution_mode": "AUTO",
