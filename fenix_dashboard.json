@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "17/05/2026 06:34:36",
-  "last_github_push": "17/05 06:34",
-  "last_github_push_ts": 1779014076.5324821,
+  "ultimo_update": "17/05/2026 06:35:20",
+  "last_github_push": "17/05 06:35",
+  "last_github_push_ts": 1779014120.699724,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -24,7 +24,7 @@
     "available_usdt": 1343.12,
     "progresso_vs_baseline_usd": -234.11,
     "pnl_fenix_desde_baseline": -234.11,
-    "updated_at": "2026-05-17T06:29:07-04:00"
+    "updated_at": "2026-05-17T06:35:19-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -243,15 +243,6 @@
   "price_watch": {
     "ts": "2026-05-16T22:26:42.385554",
     "levels": [
-      {
-        "price": 78500,
-        "tier": "alto",
-        "direction": "above",
-        "reason": "Setup SHORT primário entry · zona retest break",
-        "active": true,
-        "triggered": false,
-        "decisao_pre_armada": "Armar Limit Sell 0.040 BTC + SL $79,050 + TP1 $78,107 + TP2 $77,086 · pedir confirmação user"
-      },
       {
         "price": 79050,
         "tier": "alto",
