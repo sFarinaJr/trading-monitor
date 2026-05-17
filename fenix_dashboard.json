@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "16/05/2026 22:25:27",
-  "last_github_push": "16/05 22:25",
-  "last_github_push_ts": 1778984727.539362,
+  "ultimo_update": "16/05/2026 22:26:26",
+  "last_github_push": "16/05 22:26",
+  "last_github_push_ts": 1778984786.063541,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -24,7 +24,7 @@
     "available_usdt": 1359.89,
     "progresso_vs_baseline_usd": -217.35,
     "pnl_fenix_desde_baseline": -217.35,
-    "updated_at": "2026-05-16T22:25:26-04:00"
+    "updated_at": "2026-05-16T22:26:25-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -199,7 +199,7 @@
   "current_thesis": {
     "thesis_id": null,
     "boot_ts": null,
-    "ultimo_update": null,
+    "ultimo_update": "2026-05-16T22:35:00-04:00",
     "status": null,
     "mark_at_boot": null,
     "mark_now": null,
@@ -207,8 +207,36 @@
       "direcao": "BEARISH",
       "score": null
     },
-    "leitura_primaria_opus": null,
-    "cenarios_opus": {}
+    "leitura_primaria_opus": "Macro D BEARISH confirmado pelo engolfo bear 15/05 ($82,811 topo → $77,601 LL hoje) com continuação no 16/05. Estrutura LH+LL formada. Mark $77,800 abaixo EMA20 D ($79,412). RSI 1H 26 oversold extremo gera bounce técnico curto prazo mas não invalida bear macro. Setup primário SHORT pullback em $78,500 (PP D + retest break) com SL $79,050 e TP2 $77,086 (measured move 1.0x). Setup secundário LONG bounce contra-trend só com Camada 2 fundo 5m formal em $77,601-$77,700. Targets bear medidos · $77,086 → $76,040 → $75,860 (Fib extension 1.0x · 1.272x · 1.618x).",
+    "cenarios_opus": {
+      "SHORT_pullback_primario": {
+        "prob": 45,
+        "entry": 78500,
+        "sl": 79050,
+        "tp1": 78107,
+        "tp2": 77086,
+        "rr": 2.57,
+        "note": "Mark testa $78,500 PP D + retest break · setup SHORT macro aligned · sizing T1 0.040 BTC"
+      },
+      "LONG_bounce_contratrend": {
+        "prob": 35,
+        "entry": 77650,
+        "sl": 77500,
+        "tp1": 78038,
+        "tp2": 78500,
+        "rr": 3.4,
+        "note": "Camada 2 fundo 5m formal em $77,601-$77,700 · contra-trend tactical · TP2 fixo (não trail) · sizing reduzido 0.020 BTC"
+      },
+      "SHORT_breakdown_acelerado": {
+        "prob": 20,
+        "entry": 77500,
+        "sl": 78000,
+        "tp1": 77000,
+        "tp2": 76040,
+        "rr": 2.92,
+        "note": "Mark perde $77,601 com vol > 1500 BTC em close 1H · cenário A acelera · SHORT continuation"
+      }
+    }
   },
   "execution_mode": "AUTO",
   "manual_approval_required": false,
