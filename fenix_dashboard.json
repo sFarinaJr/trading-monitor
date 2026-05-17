@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "17/05/2026 19:41:54",
-  "last_github_push": "17/05 19:41",
-  "last_github_push_ts": 1779061314.442522,
+  "ultimo_update": "17/05/2026 19:42:38",
+  "last_github_push": "17/05 19:42",
+  "last_github_push_ts": 1779061358.973537,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -24,7 +24,7 @@
     "available_usdt": 1344.52,
     "progresso_vs_baseline_usd": -232.71,
     "pnl_fenix_desde_baseline": -232.71,
-    "updated_at": "2026-05-17T19:41:41-04:00"
+    "updated_at": "2026-05-17T19:42:38-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -245,15 +245,6 @@
         "active": true,
         "triggered": false,
         "decisao_pre_armada": "Close 4H acima = revisar tese completa · pode estar virando"
-      },
-      {
-        "price": 77086,
-        "tier": "alto",
-        "direction": "below",
-        "reason": "Target measured move 1.0x engolfo bear",
-        "active": true,
-        "triggered": false,
-        "decisao_pre_armada": "TP2 SHORT primário · zona de tomada de lucro institucional · contrarian LONG zone se capitulação massiva"
       },
       {
         "price": 76708,
