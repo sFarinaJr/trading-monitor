@@ -1,45 +1,45 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "17/05/2026 07:33:13",
-  "last_github_push": "17/05 07:33",
-  "last_github_push_ts": 1779017593.915048,
+  "ultimo_update": "17/05/2026 07:34:12",
+  "last_github_push": "17/05 07:34",
+  "last_github_push_ts": 1779017652.3298829,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
   "saldo": {
-    "equity_usd": 1348.65,
+    "equity_usd": 1344.52,
     "walletBalance": 1358.41,
-    "cumPnL_unified_usd": -6360.01,
-    "delta_vs_baseline": -236.01,
-    "unrealisedPnl": 7.43,
+    "cumPnL_unified_usd": -6356.71,
+    "delta_vs_baseline": -232.71,
+    "unrealisedPnl": 0.0,
     "markPrice": 80101.95,
     "wallet_usdt": 1358.41,
     "equity": 1358.47,
-    "cum_realised_pnl": -6360.01,
+    "cum_realised_pnl": -6356.71,
     "ts": "15/05/2026 09:11:00",
-    "equity_usdt": 1348.65,
-    "wallet_balance_usdt": 1341.22,
-    "available_usdt": 1341.22,
-    "progresso_vs_baseline_usd": -236.01,
-    "pnl_fenix_desde_baseline": -236.01,
-    "updated_at": "2026-05-17T07:33:13-04:00"
+    "equity_usdt": 1344.52,
+    "wallet_balance_usdt": 1344.52,
+    "available_usdt": 1344.52,
+    "progresso_vs_baseline_usd": -232.71,
+    "pnl_fenix_desde_baseline": -232.71,
+    "updated_at": "2026-05-17T07:34:11-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
-    "current_pnl": -6360.01,
-    "diff_usd": -236.01
+    "current_pnl": -6356.71,
+    "diff_usd": -232.71
   },
   "posicao_atual": {
-    "side": "SHORT",
-    "size": 0.044,
-    "avgPrice": 78477.4,
-    "stopLoss": 78805.0,
-    "takeProfit": 78086.0,
+    "side": "FLAT",
+    "size": 0,
+    "avgPrice": null,
+    "stopLoss": null,
+    "takeProfit": null,
     "tp1_limit": null,
     "tp1_pnl_lock": null,
-    "unrealised_pnl_usd": 7.43,
+    "unrealised_pnl_usd": 0,
     "tp2_target_estrutural": null
   },
   "trades_recentes": [
