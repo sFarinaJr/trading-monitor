@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "16/05/2026 22:26:26",
-  "last_github_push": "16/05 22:26",
-  "last_github_push_ts": 1778984786.063541,
+  "ultimo_update": "16/05/2026 22:27:25",
+  "last_github_push": "16/05 22:27",
+  "last_github_push_ts": 1778984845.550865,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -24,7 +24,7 @@
     "available_usdt": 1359.89,
     "progresso_vs_baseline_usd": -217.35,
     "pnl_fenix_desde_baseline": -217.35,
-    "updated_at": "2026-05-16T22:26:25-04:00"
+    "updated_at": "2026-05-16T22:27:24-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -241,43 +241,142 @@
   "execution_mode": "AUTO",
   "manual_approval_required": false,
   "price_watch": {
-    "ts": "2026-05-15T22:47:08",
+    "ts": "2026-05-16T22:26:42.385554",
     "levels": [
       {
-        "price": 82811,
-        "tier": "alto",
-        "direction": "above",
-        "reason": "Topo macro D 27/04 · resistência distante",
-        "active": true,
-        "decisao_pre_armada": "Não vai atingir hoje · só monitorar pra contexto macro",
-        "triggered": false
-      },
-      {
-        "price": 80974,
-        "tier": "alto",
-        "direction": "above",
-        "reason": "Topo intraday 15/05 anterior · resistência média",
-        "active": true,
-        "decisao_pre_armada": "Se mark atingir aqui · bull recovery confirmado · setup SHORT em Camada 2 topo 5m com SL acima $81,200",
-        "triggered": false
-      },
-      {
-        "price": 79975,
-        "tier": "alto",
-        "direction": "above",
-        "reason": "Fib 61.8% invertido · resistência forte zona",
-        "active": true,
-        "decisao_pre_armada": "Recovery bull até aqui · setup SHORT scalp se Camada 2 topo 5m fire · SL $80,200",
-        "triggered": false
-      },
-      {
-        "price": 79792,
+        "price": 78107,
         "tier": "médio",
         "direction": "above",
-        "reason": "Fib 50% invertido swing $80,974 → $78,610",
+        "reason": "Open D 16/05 · gatilho recuperação",
         "active": true,
-        "decisao_pre_armada": "Resist intermediário · bounce bull pode parar aqui · monitorar reversal",
-        "triggered": false
+        "triggered": false,
+        "decisao_pre_armada": "Recovery acima · invalida cenário A acelerado · monitorar pra cenário B/D"
+      },
+      {
+        "price": 78300,
+        "tier": "alto",
+        "direction": "above",
+        "reason": "PP D · resistência intermediária pullback zone",
+        "active": true,
+        "triggered": false,
+        "decisao_pre_armada": "Mark testando PP · armar SHORT pullback se aproximar de $78,500"
+      },
+      {
+        "price": 78500,
+        "tier": "alto",
+        "direction": "above",
+        "reason": "Setup SHORT primário entry · zona retest break",
+        "active": true,
+        "triggered": false,
+        "decisao_pre_armada": "Armar Limit Sell 0.040 BTC + SL $79,050 + TP1 $78,107 + TP2 $77,086 · pedir confirmação user"
+      },
+      {
+        "price": 79050,
+        "tier": "alto",
+        "direction": "above",
+        "reason": "SL setup SHORT primário · invalidação",
+        "active": true,
+        "triggered": false,
+        "decisao_pre_armada": "Stop do setup SHORT se atingir após entry"
+      },
+      {
+        "price": 79387,
+        "tier": "médio",
+        "direction": "above",
+        "reason": "EMA9 D · cap recovery",
+        "active": true,
+        "triggered": false,
+        "decisao_pre_armada": "Resistência dinâmica · bounce esperado parar aqui se chegar"
+      },
+      {
+        "price": 79400,
+        "tier": "alto",
+        "direction": "above",
+        "reason": "EMA20 D · resistência macro · invalidação tese bear",
+        "active": true,
+        "triggered": false,
+        "decisao_pre_armada": "Close 4H acima = revisar tese completa · pode estar virando"
+      },
+      {
+        "price": 77700,
+        "tier": "médio",
+        "direction": "below",
+        "reason": "Camada 2 LONG zone superior (bounce)",
+        "active": true,
+        "triggered": false,
+        "decisao_pre_armada": "Monitor candle 5m fechado · se wick ≥35% + bull close = setup LONG contra-trend"
+      },
+      {
+        "price": 77601,
+        "tier": "alto",
+        "direction": "below",
+        "reason": "DEFESA D LOW 15/05 · breakdown = bear acelera",
+        "active": true,
+        "triggered": false,
+        "decisao_pre_armada": "Perda com close 1H + vol > 1500 = cenário A confirmado · setup SHORT mais agressivo entry $77,500 SL $78,000 TP2 $76,040"
+      },
+      {
+        "price": 77407,
+        "tier": "alto",
+        "direction": "below",
+        "reason": "S1 D · primeiro target pós perda $77,601",
+        "active": true,
+        "triggered": false,
+        "decisao_pre_armada": "Pos perda $77,601 · monitorar Camada 2 fundo aqui"
+      },
+      {
+        "price": 77086,
+        "tier": "alto",
+        "direction": "below",
+        "reason": "Target measured move 1.0x engolfo bear",
+        "active": true,
+        "triggered": false,
+        "decisao_pre_armada": "TP2 SHORT primário · zona de tomada de lucro institucional · contrarian LONG zone se capitulação massiva"
+      },
+      {
+        "price": 76708,
+        "tier": "médio",
+        "direction": "below",
+        "reason": "S2 D · confluência",
+        "active": true,
+        "triggered": false,
+        "decisao_pre_armada": "Bear continuation cont · monitor exhaustion"
+      },
+      {
+        "price": 76540,
+        "tier": "alto",
+        "direction": "below",
+        "reason": "Target measured move 1.272x · contrarian LONG zone",
+        "active": true,
+        "triggered": false,
+        "decisao_pre_armada": "Se mark chegar com vol 1H > 5K + Camada 2 fundo · LONG bottom-fish $76,600 SL $76,100 TP2 $78,500 R:R 3.80x (pedir confirma user)"
+      },
+      {
+        "price": 76040,
+        "tier": "alto",
+        "direction": "below",
+        "reason": "Range 1.0x Fib extension · target bear maior",
+        "active": true,
+        "triggered": false,
+        "decisao_pre_armada": "Cluster denso pode ser freio · monitor reversal"
+      },
+      {
+        "price": 75860,
+        "tier": "médio",
+        "direction": "below",
+        "reason": "Body 1.618x extension · target bear extremo",
+        "active": true,
+        "triggered": false,
+        "decisao_pre_armada": "Zona de exaustão profunda · contrarian LONG só com capitulação massiva"
+      },
+      {
+        "price": 75815,
+        "tier": "médio",
+        "direction": "below",
+        "reason": "S3 D",
+        "active": true,
+        "triggered": false,
+        "decisao_pre_armada": "Confluência com 1.618x · provável final do movimento bear se chegar"
       }
     ]
   }
