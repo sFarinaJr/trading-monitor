@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "17/05/2026 19:40:42",
-  "last_github_push": "17/05 19:40",
-  "last_github_push_ts": 1779061242.5739,
+  "ultimo_update": "17/05/2026 19:41:41",
+  "last_github_push": "17/05 19:41",
+  "last_github_push_ts": 1779061301.899719,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -24,7 +24,7 @@
     "available_usdt": 1344.52,
     "progresso_vs_baseline_usd": -232.71,
     "pnl_fenix_desde_baseline": -232.71,
-    "updated_at": "2026-05-17T19:40:41-04:00"
+    "updated_at": "2026-05-17T19:41:41-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -245,24 +245,6 @@
         "active": true,
         "triggered": false,
         "decisao_pre_armada": "Close 4H acima = revisar tese completa · pode estar virando"
-      },
-      {
-        "price": 77601,
-        "tier": "alto",
-        "direction": "below",
-        "reason": "DEFESA D LOW 15/05 · breakdown = bear acelera",
-        "active": true,
-        "triggered": false,
-        "decisao_pre_armada": "Perda com close 1H + vol > 1500 = cenário A confirmado · setup SHORT mais agressivo entry $77,500 SL $78,000 TP2 $76,040"
-      },
-      {
-        "price": 77407,
-        "tier": "alto",
-        "direction": "below",
-        "reason": "S1 D · primeiro target pós perda $77,601",
-        "active": true,
-        "triggered": false,
-        "decisao_pre_armada": "Pos perda $77,601 · monitorar Camada 2 fundo aqui"
       },
       {
         "price": 77086,
