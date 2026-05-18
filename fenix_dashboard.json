@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "18/05/2026 07:49:06",
-  "last_github_push": "18/05 07:49",
-  "last_github_push_ts": 1779104946.6013591,
+  "ultimo_update": "18/05/2026 07:50:04",
+  "last_github_push": "18/05 07:50",
+  "last_github_push_ts": 1779105004.95942,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -24,7 +24,7 @@
     "available_usdt": 1344.52,
     "progresso_vs_baseline_usd": -232.71,
     "pnl_fenix_desde_baseline": -232.71,
-    "updated_at": "2026-05-18T07:49:05-04:00"
+    "updated_at": "2026-05-18T07:50:04-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -204,61 +204,72 @@
     "mark_at_boot": 78220.4,
     "mark_now": null,
     "macro_bias_D": {
-      "direcao": "BEARISH ACELERANDO",
+      "direcao": "BEARISH (macro) · COIL/contestado (tático)",
       "score": 6
     },
-    "leitura_primaria_opus": "BOOT D-close 17/05 (recovery · user cobrou atalho). Downtrend macro 10 dias · topo $82,350 (04/05) · LH+LL · 15/05 -$1.983 · 17/05 fechou -0,88% C$77,416 com NOVA LL $76,671 rompendo defesa D $77,601 DECISIVO. 4H crash bar $78,370→$76,671 (engolfo bearish massivo) · preço muito abaixo EMA20 4H ~$78,500. Bounce 15m topou $77,500 e FALHOU sem topo estrutural (só PULSO · zero camada2_top). Bear forte acelerando · próximo leg $75,750.",
+    "leitura_primaria_opus": "18/05 07:50 · COIL RESOLVEU PRA CIMA (por ora). Madrugada: bear quebrou $76,671 ($76,550) mas FALHOU e recomprou · fundo defendido 5+x com exaustao repetida · agora rompeu coil → $77,304 (+0,8% do fundo). Contexto honesto: FÊNIX NÃO pegou o long de reversao no $76,671 (bottom_exh 06:25 + nivel defendido + SL favoravel) — falha de processo (ancoragem no viés macro bear + nao avaliou divergencia RSI). Entrada perdida · NAO perseguir o $77,304 (anti revenge-trade). Macro D segue BEAR · upside limitado.",
     "cenarios_opus": [
       {
-        "id": "A_PRIMARIO",
-        "desc": "SHORT trend-following · pullback bounce até resistência $77,600-$78,150 + camada2_top/🗣️ TOPO estrutural 5m fechado · macro bear aligned · LEI #24 ok (FLAT/mesma dir)",
+        "id": "A_SHORT_PULLBACK",
+        "desc": "SHORT trend-following se repique continuar até resistência $77,600-$78,150 COM rejeicao camada2_top/🗣️TOPO 5m fechado · macro bear aligned (preferido pelo macro)",
         "entry_zona": "77600-78150",
-        "sl": "acima topo do bounce + buffer",
-        "tp1": "-0.5%",
-        "tp2": "75750 / 74800",
-        "status": "AGUARDANDO topo estrutural"
+        "sl": "acima topo do repique +buffer",
+        "tp": "75750/74800"
       },
       {
-        "id": "B_CONTINUATION",
-        "desc": "preço cai direto p/ $75,750 sem pullback limpo · NÃO perseguir (cicatriz chase) · sem entrada",
-        "status": "esperar"
+        "id": "B_LONG_BEARTRAP",
+        "desc": "LONG contra-trend MODO 2 SELETIVO só se: varrida de $76,671 + camada2 bottom_exh FORTE 5m fechado reclamando acima + divergencia RSI confirmada · SL abaixo da varrida (~<$76,550) · alvo topo coil/$77,6k · tatico repique NAO swing",
+        "entry_zona": "reclaim pos-varrida $76,671",
+        "sl": "<76550",
+        "tp": "77600"
       },
       {
-        "id": "C_INVALIDA",
-        "desc": "close 4H reclaim acima ~$78,600 · revisar tese bear (improvável c/ momentum)",
-        "status": "monitor"
+        "id": "C_LONG_RETEST",
+        "desc": "LONG se close acima e retest de $77,3-77,6k segurando com camada2 bull · estrutura curto-prazo virou bull · ainda contra macro D bear",
+        "entry_zona": "retest 77300-77600",
+        "sl": "<77000",
+        "tp": "78100"
       }
     ],
     "setups_pre_armados": [
       {
         "tipo": "SHORT pullback trend-following",
-        "nome": "SHORT pullback trend-following",
+        "nome": "SHORT resistência $77,6-78,1k",
         "direcao": "short",
         "entry_zone": "$77,600–$78,150",
         "entry": 77900,
         "sl": 78650,
-        "sl_txt": "$78,650 (acima topo do bounce + buffer)",
-        "tp1": "$77,510 (-0,5% · 30%)",
-        "tp2": "$75,750 → $74,800 (estrutural)",
-        "rr": "2.5",
-        "rr_blended": "2.5",
-        "trigger": "camada2_top OU 🗣️ TOPO 5m FECHADO na zona $77,600-$78,150",
-        "macro": "aligned BEAR",
-        "lei24": "ok (FLAT/mesma direção da SHORT pendente)",
-        "status": "AGUARDANDO topo estrutural no repique"
+        "sl_txt": "$78,650 acima topo repique",
+        "tp1": "$77,510",
+        "tp2": "$75,750",
+        "rr": "~3,0",
+        "status": "AGUARDANDO repique até zona + rejeicao camada2 (macro-aligned · preferido)"
+      },
+      {
+        "tipo": "LONG bear-trap MODO 2",
+        "nome": "LONG varrida $76,671 + camada2",
+        "direcao": "long",
+        "entry_zone": "reclaim $76,671 pos-varrida",
+        "entry": 76700,
+        "sl": 76500,
+        "sl_txt": "$76,500 abaixo varrida",
+        "tp1": "$77,100",
+        "tp2": "$77,600",
+        "rr": "~2,0",
+        "status": "AGUARDANDO varrida + camada2 bottom_exh forte + RSI div (contra-trend seletivo · sizing menor)"
       }
     ],
     "ponto_nao_retorno": {
       "bearish_invalida": 78600,
-      "bearish_invalida_razao": "close 4H reclaim acima broken range top · tese bear revisar",
-      "bear_continua_enquanto": "< $77,601",
+      "bearish_invalida_razao": "close 4H acima $78,600 reclaim · tese bear macro revisar",
+      "bear_continua_enquanto": "macro D < $78,600 · tatico < $77,600",
       "stop_intra": "N/A FLAT",
       "target_proximo": 75750
     },
     "proximo_marco": {
-      "evento": "camada2_top/🗣️ TOPO no pullback OU close 4H 00:00 Cuiabá",
-      "wake_target": "estrutural via Monitor coração",
-      "decisao_esperada": "SHORT trend-following se topo estrutural no repique · senão aguardar"
+      "evento": "repique→resistencia $77,6-78,1k (SHORT) OU varrida $76,671+camada2 (LONG beartrap) OU close 4H 00:00",
+      "wake_target": "estrutural via Monitor coracao",
+      "decisao_esperada": "SHORT no topo estrutural do repique (macro-aligned) · OU LONG seletivo só com varrida+camada2+RSIdiv · meio de range = SEM trade"
     }
   },
   "execution_mode": "AUTO",
