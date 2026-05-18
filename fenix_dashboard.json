@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "18/05/2026 11:49:51",
-  "last_github_push": "18/05 11:49",
-  "last_github_push_ts": 1779119391.306921,
+  "ultimo_update": "18/05/2026 11:50:41",
+  "last_github_push": "18/05 11:50",
+  "last_github_push_ts": 1779119441.5759842,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -256,9 +256,9 @@
       "trail_inicia_em": 76336.0
     },
     "proximo_marco": {
-      "evento": "add-on zona dourada (signal_addon_zona_dourada 5/5 · re-entra 50%+ampl) OU continuacao bear (restante 0.028 corre) OU SL $77,413 OU TP2 $75,750",
-      "wake_target": "addon_zona_dourada / trail-1H / SL",
-      "decisao_esperada": "GATILHO2 add-on quando watcher detectar 5/5 · restante mecanico trail-1H · fechamento discricionario = aprovacao user"
+      "evento": "add-on zona dourada 5/5 (AUTONOMO · executo + mostro) · OU trail-1H aperta SL no 1H close qualificado · OU SL $77,413 hit → novo trade autonomo · OU continuacao bear",
+      "wake_target": "addon_zona_dourada / 1H close / SL",
+      "decisao_esperada": "100% autonomo · so reporto 🟦/monitor · NUNCA fecho discricionario · so SL fecha"
     }
   },
   "execution_mode": "AUTO",
