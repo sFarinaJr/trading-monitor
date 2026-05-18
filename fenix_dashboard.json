@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "18/05/2026 11:08:17",
-  "last_github_push": "18/05 11:08",
-  "last_github_push_ts": 1779116897.8677351,
+  "ultimo_update": "18/05/2026 11:09:10",
+  "last_github_push": "18/05 11:09",
+  "last_github_push_ts": 1779116950.655596,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -39,7 +39,7 @@
     "takeProfit": null,
     "tp1_limit": 77111,
     "tp1_pnl_lock": 5.52,
-    "unrealised_pnl_usd": 74.21,
+    "unrealised_pnl_usd": 71.99,
     "tp2_target_estrutural": null
   },
   "trades_recentes": [
@@ -246,9 +246,9 @@
       "trail_inicia_em": 76336.0
     },
     "proximo_marco": {
-      "evento": "4H close qualificado (high+buffer < $77,413) → trail aperta SL · provavel bloco 12:00-16:00 se preco contido · OU TP2 $75,750 · OU SL $77,413",
-      "wake_target": "4H close / TP2 / SL",
-      "decisao_esperada": "narrar aperto trail-4H quando 4H qualificado fechar · hold ate la · sem fechamento discricionario"
+      "evento": "4H close qualificado (high+buf<$77,413) → trail aperta SL (narro) · OU TP2 $75,750 (a $463) · OU SL $77,413",
+      "wake_target": "4H close / TP2 / SL / trail_trigger_5m duravel",
+      "decisao_esperada": "trail mecanico · narro aperto no 4H qualificado · sem fechamento discricionario"
     }
   },
   "execution_mode": "AUTO",
