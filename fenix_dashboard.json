@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "18/05/2026 09:45:45",
-  "last_github_push": "18/05 09:45",
-  "last_github_push_ts": 1779111945.61045,
+  "ultimo_update": "18/05/2026 09:46:22",
+  "last_github_push": "18/05 09:46",
+  "last_github_push_ts": 1779111982.8128629,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -39,7 +39,7 @@
     "takeProfit": null,
     "tp1_limit": 77111,
     "tp1_pnl_lock": 5.52,
-    "unrealised_pnl_usd": 38.4,
+    "unrealised_pnl_usd": 45.41,
     "tp2_target_estrutural": null
   },
   "trades_recentes": [
@@ -187,7 +187,7 @@
       "direcao": "BEARISH (macro) · COIL/contestado (tático)",
       "score": 6
     },
-    "leitura_primaria_opus": "18/05 09:34 · TP1 FILLOU. SHORT 0.056 rem @ $77,498.5 · TP1 30% saiu @ $77,111 (+$5.52 net) · uPnL +$18. 1a VALIDACAO FORWARD do BE-delay v2.10 AO VIVO: SL ficou ESTRUTURAL $77,900 (NAO foi pra BE imediato · auto_lei12=False correto) · watcher recorrente move pra BE+fees $77413.3 SO quando mark <=$76917.3 (-0,75% adic). Mark $77,172 ainda nao chegou. Macro D bear · tese rodando.",
+    "leitura_primaria_opus": "18/05 09:46 · BE-DELAY v2.10 VALIDADO FORWARD (1a vez end-to-end). SHORT 0.056 @ $77,498.5 · TP1 ✓ +$5.52 · gatilho -0,75% disparou 09:37 → watcher moveu SL $77,900→$77,413 (BE+fees) automatico · confirmado Bybit. Mark $76,688 (caiu forte) · uPnL +$45 · TP2 ref $75,750 a $937. Pior caso agora = lucro travado. Mecanismo BE-delay provou-se ao vivo (NAO é vitoria de PnL ainda · trade tem que fechar bem · mas o mecanismo funcionou exato).",
     "cenarios_opus": [
       {
         "id": "A_SHORT_PULLBACK",
@@ -240,16 +240,15 @@
       }
     ],
     "ponto_nao_retorno": {
-      "sl_ativo": 77900,
-      "sl_fase": "ESTRUTURAL (BE-delay fase A · pre -0,75%)",
-      "be_delay_trigger": 76917.3,
-      "be_fees_alvo": 77413.3,
-      "target_proximo": 75750
+      "sl_ativo": 77413.3,
+      "sl_fase": "BE+fees (fase B · gatilho disparou 09:37)",
+      "target_proximo": 75750,
+      "trail_inicia_em": 76336.0
     },
     "proximo_marco": {
-      "evento": "mark <=$76917.3 (-0,75%) → watcher move SL→BE+fees $77413.3 · depois -1,5% → trail 4H · OU SL $77,900 / TP2 $75,750",
-      "wake_target": "fill / SL move / camada2 inversa",
-      "decisao_esperada": "gestao autonoma LEI #12 v2.10 (watcher recorrente) · sem acao manual ate marco"
+      "evento": "mark -1,5% adic ($76336.0) → trail estrutural 4H · OU TP2 $75,750 · OU SL BE+fees $77,413",
+      "wake_target": "trail trigger / TP2 zona / SL",
+      "decisao_esperada": "gestao autonoma · trail 4H quando -1,5% · sem acao manual"
     }
   },
   "execution_mode": "AUTO",
