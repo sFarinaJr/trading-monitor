@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "18/05/2026 13:20:19",
+  "ultimo_update": "18/05/2026 13:20:22",
   "last_github_push": "18/05 13:20",
-  "last_github_push_ts": 1779124819.206111,
+  "last_github_push_ts": 1779124822.885033,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -197,7 +197,7 @@
       "direcao": "BEARISH (macro) · COIL/contestado (tático)",
       "score": 6
     },
-    "leitura_primaria_opus": "18/05 12:04 · TRAIL-1H 1o APERTO (autonomo · user observando). 1H 11:00-12:00 fechou high $76,450 · buffer $300 (vol pos-explosao · cicatriz manda robusto) · trail_SL $76,750 < SL atual $77,413 → apertou. SL $77,413→$76,750 (set_trading_stop · confirmado Bybit). Trava ~+$21 no restante 0.028 + ~$40 ja realizado = pior caso ~+$61. SHORT 0.028 @ $77,498.5 · mark $76,279 · uPnL +$34. Unica saida = SL (diretiva travada).",
+    "leitura_primaria_opus": "18/05 13:19 · ADD-ON ARMADO (mapeado durável · conversation-independent). SHORT 0.028 @ $77,498.5 · SL $77,413 BE+fees · realizado ~$40. Aguardando TOPO VERDADEIRO (top_exh/COMBOTOP no high do repique OU perda fundo $76,014). No gatilho · executo AUTONOMO: trail ancora SL acima do topo + add-on zona dourada (re-entra 0.028+amplificado · worst-case >=BE · matematica existente · simetrico). Mesmo gatilho serve trail E add-on. Sem mudar regra agora · so mapeado + flag de verificar alinhamento 5/5. Macro D bear.",
     "cenarios_opus": [
       {
         "id": "A_SHORT_PULLBACK",
@@ -256,9 +256,9 @@
       "trail_inicia_em": 76336.0
     },
     "proximo_marco": {
-      "evento": "proximo 1H close com high+buf < $76,750 → trail aperta mais (autonomo · narro) · OU SL $76,750 hit → fecha → novo trade autonomo · OU add-on zona dourada 5/5 · OU continuacao bear",
-      "wake_target": "1H close / SL / addon",
-      "decisao_esperada": "trail-1H mecanico autonomo cada 1H close · so SL fecha · zero pergunta"
+      "evento": "TOPO VERDADEIRO confirmado (top_exh/COMBOTOP no high do repique OU perda $76,014) → AUTONOMO: (1) ancora SL acima do topo + buffer (trail) (2) EXECUTA add-on zona dourada (re-entra 0.028+amplificado · worst-case>=BE) · ambos no MESMO gatilho",
+      "wake_target": "coracao top_exh/COMBOTOP · OU break $76,014 · OU SL $77,413",
+      "decisao_esperada": "executar add-on + trail-SL no topo confirmado SEM perguntar · cross-check Bybit · so SL fecha o combinado"
     }
   },
   "execution_mode": "AUTO",
