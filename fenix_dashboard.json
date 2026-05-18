@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "18/05/2026 12:06:00",
+  "ultimo_update": "18/05/2026 12:06:07",
   "last_github_push": "18/05 12:06",
-  "last_github_push_ts": 1779120360.5520241,
+  "last_github_push_ts": 1779120367.595476,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -39,7 +39,7 @@
     "takeProfit": null,
     "tp1_limit": 77111,
     "tp1_pnl_lock": 5.52,
-    "unrealised_pnl_usd": 33.38,
+    "unrealised_pnl_usd": 34.15,
     "tp2_target_estrutural": null
   },
   "trades_recentes": [
@@ -197,7 +197,7 @@
       "direcao": "BEARISH (macro) · COIL/contestado (tático)",
       "score": 6
     },
-    "leitura_primaria_opus": "18/05 11:36 · LOOP DE EXAUSTAO ATIVO. COMBO FUNDO + FUNDO15m RSI 28.96 contra o SHORT +$77 → GATILHO 1 executado (user dirigiu · tua diretiva): parcial 50% (0.028 @ ~$76,117) travou ~$34 + TP1 $7.91 ja banked. Restante 0.028 SHORT · SL $77,413 BE+fees (risk-free) · mark $76,225 (combo ja bouncando · leitura validada). GATILHO 2 armado · add-on zona dourada (watcher 5/5) re-entra 50%+amplificado quando contraparte exaurir/recuar. Macro D bear.",
+    "leitura_primaria_opus": "18/05 12:04 · TRAIL-1H 1o APERTO (autonomo · user observando). 1H 11:00-12:00 fechou high $76,450 · buffer $300 (vol pos-explosao · cicatriz manda robusto) · trail_SL $76,750 < SL atual $77,413 → apertou. SL $77,413→$76,750 (set_trading_stop · confirmado Bybit). Trava ~+$21 no restante 0.028 + ~$40 ja realizado = pior caso ~+$61. SHORT 0.028 @ $77,498.5 · mark $76,279 · uPnL +$34. Unica saida = SL (diretiva travada).",
     "cenarios_opus": [
       {
         "id": "A_SHORT_PULLBACK",
@@ -256,9 +256,9 @@
       "trail_inicia_em": 76336.0
     },
     "proximo_marco": {
-      "evento": "add-on zona dourada 5/5 (AUTONOMO · executo + mostro) · OU trail-1H aperta SL no 1H close qualificado · OU SL $77,413 hit → novo trade autonomo · OU continuacao bear",
-      "wake_target": "addon_zona_dourada / 1H close / SL",
-      "decisao_esperada": "100% autonomo · so reporto 🟦/monitor · NUNCA fecho discricionario · so SL fecha"
+      "evento": "proximo 1H close com high+buf < $76,750 → trail aperta mais (autonomo · narro) · OU SL $76,750 hit → fecha → novo trade autonomo · OU add-on zona dourada 5/5 · OU continuacao bear",
+      "wake_target": "1H close / SL / addon",
+      "decisao_esperada": "trail-1H mecanico autonomo cada 1H close · so SL fecha · zero pergunta"
     }
   },
   "execution_mode": "AUTO",
