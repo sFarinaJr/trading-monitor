@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "18/05/2026 09:01:34",
-  "last_github_push": "18/05 09:01",
-  "last_github_push_ts": 1779109294.884334,
+  "ultimo_update": "18/05/2026 09:02:06",
+  "last_github_push": "18/05 09:02",
+  "last_github_push_ts": 1779109326.569364,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -207,7 +207,7 @@
       "direcao": "BEARISH (macro) · COIL/contestado (tático)",
       "score": 6
     },
-    "leitura_primaria_opus": "18/05 08:46 · PRECO NA ZONA SHORT (1a vez). $77,722 dentro de $77,600-78,150 · 4x TOPO15m · RSI 72 overbought 15m. SETUP ARMADO esperando 1 gatilho mandatorio: camada2_top 5m FECHADO rejeitando (LEI #4). AINDA NAO: nenhum camada2_top valido (linhas top_exh do coracao com preco velho/bugado $80k+ = invalidas) E fita COMPRANDO na zona (08:40/08:45 'compras dominam') = sem rejeicao. Divergencia 15m foi negada (RSI subiu 72). Macro D bear · short é o lado · entro DECISIVO quando o 5m fechar rejeitando.",
+    "leitura_primaria_opus": "18/05 09:01 · REJEICAO DA ZONA EM CURSO. Preco bateu $77,722 (topo zona), NAO segurou, rolando $77,722→$77,575/601 · tom 'vendas dominam' 3x (08:50/55/09:00 bear). Tese short confirmando. MAS gatilho LEI #4 NAO disparou valido: camada2_top/top_exh do coracao com preco CORROMPIDO ($78,300/$78,500 enquanto real $77,575 · impossivel · bug stale-price). Duravel sem camada2_top. NAO entro por inferencia de PULSO (cicatriz candle_fechado). Entro IMEDIATO quando camada2_top 5m VALIDO (preco coerente ~$77,5-77,7k) disparar. Macro D bear · short é o lado.",
     "cenarios_opus": [
       {
         "id": "A_SHORT_PULLBACK",
@@ -243,7 +243,7 @@
         "tp1": "$77,510",
         "tp2": "$75,750",
         "rr": "~3,0",
-        "status": "ARMADO · preco NA zona $77,722 · aguarda UNICO gatilho: camada2_top 5m FECHADO rejeitando (LEI #4) · fita ainda compra · entro decisivo no fechamento de rejeicao"
+        "status": "ARMADO · REJEICAO da zona em curso ($77,722→$77,6k vendas dominam) · aguarda camada2_top 5m VALIDO (top_exh atuais com preco bugado $78,5k=invalidos LEI #7) · entro decisivo no valido"
       },
       {
         "tipo": "LONG bear-trap MODO 2",
