@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "18/05/2026 02:10:21",
-  "last_github_push": "18/05 02:10",
-  "last_github_push_ts": 1779084621.694776,
+  "ultimo_update": "18/05/2026 02:13:12",
+  "last_github_push": "18/05 02:13",
+  "last_github_push_ts": 1779084792.347338,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -24,7 +24,7 @@
     "available_usdt": 1344.52,
     "progresso_vs_baseline_usd": -232.71,
     "pnl_fenix_desde_baseline": -232.71,
-    "updated_at": "2026-05-18T02:09:41-04:00"
+    "updated_at": "2026-05-18T02:13:11-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -307,15 +307,6 @@
         "entry": 77601,
         "tp2": 75750,
         "rr": "2.4"
-      },
-      {
-        "price": 76671,
-        "tier": "alto",
-        "direction": "below",
-        "reason": "LL 17/05 · suporte imediato",
-        "active": true,
-        "triggered": false,
-        "decisao_pre_armada": "Perda c/ vol = leg direto p/ $75,750"
       },
       {
         "price": 75750,
