@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "18/05/2026 08:46:41",
-  "last_github_push": "18/05 08:46",
-  "last_github_push_ts": 1779108401.456545,
+  "ultimo_update": "18/05/2026 08:47:15",
+  "last_github_push": "18/05 08:47",
+  "last_github_push_ts": 1779108435.809397,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -207,7 +207,7 @@
       "direcao": "BEARISH (macro) · COIL/contestado (tático)",
       "score": 6
     },
-    "leitura_primaria_opus": "18/05 08:36 · SETUP SHORT IMINENTE (construindo). Repique $76,671→$77,5k. 3x TOPO15m (08:01/08:22/08:34) + divergencia bearish 15m FORMANDO (preco HH $77,461→$77,503 / RSI LH 66.7→61.9 · Stoch rolando 92→88). Momentum do repique enfraquecendo. NAO entrada ainda: preco $77,503 abaixo da zona $77,600-78,150 (~$100) · SEM camada2_top 5m fechado (LEI #4) · divergencia so 15m (falta multi-TF). Pre-armado FORTE · macro D bear (short é o lado).",
+    "leitura_primaria_opus": "18/05 08:46 · PRECO NA ZONA SHORT (1a vez). $77,722 dentro de $77,600-78,150 · 4x TOPO15m · RSI 72 overbought 15m. SETUP ARMADO esperando 1 gatilho mandatorio: camada2_top 5m FECHADO rejeitando (LEI #4). AINDA NAO: nenhum camada2_top valido (linhas top_exh do coracao com preco velho/bugado $80k+ = invalidas) E fita COMPRANDO na zona (08:40/08:45 'compras dominam') = sem rejeicao. Divergencia 15m foi negada (RSI subiu 72). Macro D bear · short é o lado · entro DECISIVO quando o 5m fechar rejeitando.",
     "cenarios_opus": [
       {
         "id": "A_SHORT_PULLBACK",
@@ -243,7 +243,7 @@
         "tp1": "$77,510",
         "tp2": "$75,750",
         "rr": "~3,0",
-        "status": "IMINENTE · 3x TOPO15m + div 15m formando · aguarda preco NA zona $77,6-78,1k + camada2_top 5m fechado · tier elite/T3 possivel se confluencia completa"
+        "status": "ARMADO · preco NA zona $77,722 · aguarda UNICO gatilho: camada2_top 5m FECHADO rejeitando (LEI #4) · fita ainda compra · entro decisivo no fechamento de rejeicao"
       },
       {
         "tipo": "LONG bear-trap MODO 2",
@@ -267,9 +267,9 @@
       "target_proximo": 75750
     },
     "proximo_marco": {
-      "evento": "preco EM $77,600-78,150 + camada2_top/🗣️TOPO 5m FECHADO rejeitando + divergencia RSI estendendo 1h",
-      "wake_target": "estrutural Monitor coracao",
-      "decisao_esperada": "SHORT macro-aligned · 3xTOPO15m+div15m ja na mesa · se zona+Camada2+RSI multi-TF → confluencia ELITE possivel T3 · senao T2 · agir DECISIVO no gatilho (avaliacao completa RSI incluida)"
+      "evento": "camada2_top/🗣️TOPO 5m FECHADO rejeitando NA zona $77,6-78,1k (wick≥35% close bearish · LEI #4)",
+      "wake_target": "Monitor coracao estrutural",
+      "decisao_esperada": "SHORT macro-aligned IMEDIATO no fechamento de rejeicao · tier por confluencia (4xTOPO15m+overbought+zona → T2/T3 conforme div multi-TF e R:R) · SEM o 5m fechado = SEM entrada (LEI #4 inegociavel)"
     }
   },
   "execution_mode": "AUTO",
