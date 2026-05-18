@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "18/05/2026 10:20:07",
+  "ultimo_update": "18/05/2026 10:20:37",
   "last_github_push": "18/05 10:20",
-  "last_github_push_ts": 1779114007.272558,
+  "last_github_push_ts": 1779114037.622496,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -39,7 +39,7 @@
     "takeProfit": null,
     "tp1_limit": 77111,
     "tp1_pnl_lock": 5.52,
-    "unrealised_pnl_usd": 51.79,
+    "unrealised_pnl_usd": 56.07,
     "tp2_target_estrutural": null
   },
   "trades_recentes": [
@@ -187,7 +187,7 @@
       "direcao": "BEARISH (macro) · COIL/contestado (tático)",
       "score": 6
     },
-    "leitura_primaria_opus": "18/05 09:46 · BE-DELAY v2.10 VALIDADO FORWARD (1a vez end-to-end). SHORT 0.056 @ $77,498.5 · TP1 ✓ +$5.52 · gatilho -0,75% disparou 09:37 → watcher moveu SL $77,900→$77,413 (BE+fees) automatico · confirmado Bybit. Mark $76,688 (caiu forte) · uPnL +$45 · TP2 ref $75,750 a $937. Pior caso agora = lucro travado. Mecanismo BE-delay provou-se ao vivo (NAO é vitoria de PnL ainda · trade tem que fechar bem · mas o mecanismo funcionou exato).",
+    "leitura_primaria_opus": "18/05 10:19 · SHORT 0.056 deep profit. mark $76,497 · uPnL +$56 + TP1 +$5.52. FUNDO4H $76,517 RSI38 disparou CONTRA (down-leg pode exaurir perto do alvo) · MAS é 1 sinal informativo solo · SL NAO apertado (LEI #8/mod04 · cicatriz 06/05: nao cortar runner cedo). SL fica BE+fees $77,413 ate mark -1,5% ($76,336 · a ~$161) → trail-4H mecanico. TP2 ref $75,750 a $747. Atento a escalada de reversao (camada2_bot/combo/vibe) · senao hold.",
     "cenarios_opus": [
       {
         "id": "A_SHORT_PULLBACK",
@@ -246,9 +246,9 @@
       "trail_inicia_em": 76336.0
     },
     "proximo_marco": {
-      "evento": "mark -1,5% adic ($76336.0) → trail estrutural 4H · OU TP2 $75,750 · OU SL BE+fees $77,413",
-      "wake_target": "trail trigger / TP2 zona / SL",
-      "decisao_esperada": "gestao autonoma · trail 4H quando -1,5% · sem acao manual"
+      "evento": "mark $76,336 (-1,5%) → trail-4H · OU TP2 $75,750 · OU SL BE+fees $77,413 · OU escalada reversao (camada2_bot+FUNDO+RSI extremo)",
+      "wake_target": "trail trigger / TP2 / camada2_bottom",
+      "decisao_esperada": "hold mecanico · trail-4H em $76,336 · proteger SO se confluencia reversao real (nao FUNDO4H solo)"
     }
   },
   "execution_mode": "AUTO",
