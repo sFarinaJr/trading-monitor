@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "17/05/2026 20:21:13",
+  "ultimo_update": "17/05/2026 20:21:54",
   "last_github_push": "17/05 20:21",
-  "last_github_push_ts": 1779063673.964347,
+  "last_github_push_ts": 1779063714.3907478,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -228,7 +228,38 @@
         "desc": "close 4H reclaim acima ~$78,600 · revisar tese bear (improvável c/ momentum)",
         "status": "monitor"
       }
-    ]
+    ],
+    "setups_pre_armados": [
+      {
+        "tipo": "SHORT pullback trend-following",
+        "nome": "SHORT pullback trend-following",
+        "direcao": "short",
+        "entry_zone": "$77,600–$78,150",
+        "entry": 77900,
+        "sl": 78650,
+        "sl_txt": "$78,650 (acima topo do bounce + buffer)",
+        "tp1": "$77,510 (-0,5% · 30%)",
+        "tp2": "$75,750 → $74,800 (estrutural)",
+        "rr": "2.5",
+        "rr_blended": "2.5",
+        "trigger": "camada2_top OU 🗣️ TOPO 5m FECHADO na zona $77,600-$78,150",
+        "macro": "aligned BEAR",
+        "lei24": "ok (FLAT/mesma direção da SHORT pendente)",
+        "status": "AGUARDANDO topo estrutural no repique"
+      }
+    ],
+    "ponto_nao_retorno": {
+      "bearish_invalida": 78600,
+      "bearish_invalida_razao": "close 4H reclaim acima broken range top · tese bear revisar",
+      "bear_continua_enquanto": "< $77,601",
+      "stop_intra": "N/A FLAT",
+      "target_proximo": 75750
+    },
+    "proximo_marco": {
+      "evento": "camada2_top/🗣️ TOPO no pullback OU close 4H 00:00 Cuiabá",
+      "wake_target": "estrutural via Monitor coração",
+      "decisao_esperada": "SHORT trend-following se topo estrutural no repique · senão aguardar"
+    }
   },
   "execution_mode": "AUTO",
   "manual_approval_required": false,
