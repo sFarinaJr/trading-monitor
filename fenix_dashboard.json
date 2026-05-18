@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "17/05/2026 20:12:35",
-  "last_github_push": "17/05 20:12",
-  "last_github_push_ts": 1779063155.7201762,
+  "ultimo_update": "17/05/2026 20:20:51",
+  "last_github_push": "17/05 20:20",
+  "last_github_push_ts": 1779063651.917373,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -14,7 +14,7 @@
     "cumPnL_unified_usd": -6356.71,
     "delta_vs_baseline": -232.71,
     "unrealisedPnl": 0.0,
-    "markPrice": 78119,
+    "markPrice": 76961,
     "wallet_usdt": 1358.41,
     "equity": 1358.47,
     "cum_realised_pnl": -6356.71,
@@ -24,7 +24,7 @@
     "available_usdt": 1344.52,
     "progresso_vs_baseline_usd": -232.71,
     "pnl_fenix_desde_baseline": -232.71,
-    "updated_at": "2026-05-17T20:12:34-04:00"
+    "updated_at": "2026-05-17T20:20:16-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -198,98 +198,111 @@
   ],
   "current_thesis": {
     "thesis_id": null,
-    "boot_ts": "2026-05-17T09:34:49.493804-04:00",
+    "boot_ts": "2026-05-17T20:13:10.962090-04:00",
     "ultimo_update": null,
     "status": null,
     "mark_at_boot": 78220.4,
     "mark_now": null,
     "macro_bias_D": {
-      "direcao": "BEARISH",
-      "score": null
+      "direcao": "BEARISH ACELERANDO",
+      "score": 6
     },
-    "leitura_primaria_opus": "BTC em indecisão profunda apos venda institucional 14/05 (D bear engolfo $79,069→close vol 71.9K) · D bear continuation com 2 dias inside bar provando exaustao temporaria · 16/05 LOW $77,601 testou suporte D historico e segurou · 17/05 lateral apertado $78,134-$78,569 · macro bias D BEARISH dominante mas momentum bearish CADENCIANDO · RSI 4H 38.46 oversold leve + EMA20 4H $78,552 funcionando como ima (mark $78,220 logo abaixo) · MACD 1H acabou de cruzar bull cross fresco (hist +120.6) · short squeeze pre-condicoes presentes mas SEM gatilho estrutural (sem combo FUNDO 4H+15m · sem signature 🗣️ FUNDO 15m · sem camada2_bot_exhaustion). Coracao ultimos 40min oscilando score 7-13.5 bullish persistente mas SEM evento estrutural confirmando. Volume 4H 1.83K vs MA 8.87K (-79%) = mercado dormindo · ningúem comprometido. Funding flip de negativo (14/05) pra positivo leve (+0.004%) · longs cautelosos. L/S ratio 0.556/0.444 longs leves crescendo. OI 54.6K estavel com leve crescimento.",
-    "cenarios_opus": {
-      "A_short_continuation_bear": "PRIMÁRIO MODO 1 · Mark sobe pra $78,500 (R1 4H) + Camada 2 topo 5m → SHORT pullback · entry $78,500 SL $79,050 TP1 $78,107 TP2 $77,086 · R:R 2.57x ≥1.5x LEI #9 · qty 0.024 T1 · macro aligned BEARISH ✓",
-      "B_long_bounce_contra_trend": "MODO 2 SELETIVO · Mark cai pra $77,700-$77,601 + camada2_bot_exhaustion 5m → LONG bounce · entry $77,700 SL $77,400 TP1 $78,089 TP2 $78,500 · R:R 2.67x ≥1.5x · qty 0.044 T1 · MODO 2 contra-trend AUTORIZADO via signal whitelist · AGUARDA Camada 2 5m fechada LEI #4",
-      "C_lateral_aguardar": "TERCIARIO · Range $78,107-$78,500 lateralizado 4-12h ate close D · sem trade · monitorar wakes coracao + watcher · trigger A ou B confirmado dispara cenario correspondente"
-    }
+    "leitura_primaria_opus": "BOOT D-close 17/05 (recovery · user cobrou atalho). Downtrend macro 10 dias · topo $82,350 (04/05) · LH+LL · 15/05 -$1.983 · 17/05 fechou -0,88% C$77,416 com NOVA LL $76,671 rompendo defesa D $77,601 DECISIVO. 4H crash bar $78,370→$76,671 (engolfo bearish massivo) · preço muito abaixo EMA20 4H ~$78,500. Bounce 15m topou $77,500 e FALHOU sem topo estrutural (só PULSO · zero camada2_top). Bear forte acelerando · próximo leg $75,750.",
+    "cenarios_opus": [
+      {
+        "id": "A_PRIMARIO",
+        "desc": "SHORT trend-following · pullback bounce até resistência $77,600-$78,150 + camada2_top/🗣️ TOPO estrutural 5m fechado · macro bear aligned · LEI #24 ok (FLAT/mesma dir)",
+        "entry_zona": "77600-78150",
+        "sl": "acima topo do bounce + buffer",
+        "tp1": "-0.5%",
+        "tp2": "75750 / 74800",
+        "status": "AGUARDANDO topo estrutural"
+      },
+      {
+        "id": "B_CONTINUATION",
+        "desc": "preço cai direto p/ $75,750 sem pullback limpo · NÃO perseguir (cicatriz chase) · sem entrada",
+        "status": "esperar"
+      },
+      {
+        "id": "C_INVALIDA",
+        "desc": "close 4H reclaim acima ~$78,600 · revisar tese bear (improvável c/ momentum)",
+        "status": "monitor"
+      }
+    ]
   },
   "execution_mode": "AUTO",
   "manual_approval_required": false,
   "price_watch": {
-    "ts": "2026-05-16T22:26:42.385554",
+    "ts": "2026-05-17T20:20:51.882552-04:00",
     "levels": [
       {
-        "price": 79050,
+        "price": 78650,
         "tier": "alto",
         "direction": "above",
-        "reason": "SL setup SHORT primário · invalidação",
+        "reason": "Invalidação BEAR (close 4H acima) · revisar tese",
         "active": true,
         "triggered": false,
-        "decisao_pre_armada": "Stop do setup SHORT se atingir após entry"
+        "decisao_pre_armada": "Close 4H acima = bear invalida · reavaliar BOOT"
       },
       {
-        "price": 79387,
-        "tier": "médio",
-        "direction": "above",
-        "reason": "EMA9 D · cap recovery",
-        "active": true,
-        "triggered": false,
-        "decisao_pre_armada": "Resistência dinâmica · bounce esperado parar aqui se chegar"
-      },
-      {
-        "price": 79400,
+        "price": 78150,
         "tier": "alto",
         "direction": "above",
-        "reason": "EMA20 D · resistência macro · invalidação tese bear",
+        "reason": "SHORT fenix_short_1810 resting (perna profunda pullback)",
         "active": true,
         "triggered": false,
-        "decisao_pre_armada": "Close 4H acima = revisar tese completa · pode estar virando"
+        "decisao_pre_armada": "Sell Limit 0.043 ATIVA · SL $78,500 embedded · só fila em bounce +$1,2k",
+        "entry": 78150,
+        "tp2": 75750,
+        "rr": "2.5"
       },
       {
-        "price": 76708,
-        "tier": "médio",
-        "direction": "below",
-        "reason": "S2 D · confluência",
+        "price": 78000,
+        "tier": "alto",
+        "direction": "above",
+        "reason": "Resistência consolidação rompida (overhead supply)",
         "active": true,
         "triggered": false,
-        "decisao_pre_armada": "Bear continuation cont · monitor exhaustion"
+        "decisao_pre_armada": "Zona SHORT pullback · aguardar camada2_top/🗣️TOPO 5m fechado"
       },
       {
-        "price": 76540,
+        "price": 77601,
+        "tier": "alto",
+        "direction": "above",
+        "reason": "Defesa D ROMPIDA 17/05 = resistência agora",
+        "active": true,
+        "triggered": false,
+        "decisao_pre_armada": "1ª resistência do repique · SHORT trend-following se topo estrutural confirmar",
+        "entry": 77601,
+        "tp2": 75750,
+        "rr": "2.4"
+      },
+      {
+        "price": 76671,
         "tier": "alto",
         "direction": "below",
-        "reason": "Target measured move 1.272x · contrarian LONG zone",
+        "reason": "LL 17/05 · suporte imediato",
         "active": true,
         "triggered": false,
-        "decisao_pre_armada": "Se mark chegar com vol 1H > 5K + Camada 2 fundo · LONG bottom-fish $76,600 SL $76,100 TP2 $78,500 R:R 3.80x (pedir confirma user)"
+        "decisao_pre_armada": "Perda c/ vol = leg direto p/ $75,750"
       },
       {
-        "price": 76040,
+        "price": 75750,
         "tier": "alto",
         "direction": "below",
-        "reason": "Range 1.0x Fib extension · target bear maior",
+        "reason": "Suporte D 07/05 · TARGET 1 do short",
         "active": true,
         "triggered": false,
-        "decisao_pre_armada": "Cluster denso pode ser freio · monitor reversal"
+        "decisao_pre_armada": "TP2 conservador do SHORT pullback"
       },
       {
-        "price": 75860,
-        "tier": "médio",
+        "price": 74800,
+        "tier": "alto",
         "direction": "below",
-        "reason": "Body 1.618x extension · target bear extremo",
+        "reason": "Lows abril · TARGET 2 maior",
         "active": true,
         "triggered": false,
-        "decisao_pre_armada": "Zona de exaustão profunda · contrarian LONG só com capitulação massiva"
-      },
-      {
-        "price": 75815,
-        "tier": "médio",
-        "direction": "below",
-        "reason": "S3 D",
-        "active": true,
-        "triggered": false,
-        "decisao_pre_armada": "Confluência com 1.618x · provável final do movimento bear se chegar"
+        "decisao_pre_armada": "TP2 premium se bear estender"
       }
     ]
   }
