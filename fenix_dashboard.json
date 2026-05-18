@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "18/05/2026 08:35:49",
-  "last_github_push": "18/05 08:35",
-  "last_github_push_ts": 1779107749.942403,
+  "ultimo_update": "18/05/2026 08:36:24",
+  "last_github_push": "18/05 08:36",
+  "last_github_push_ts": 1779107784.483139,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -207,7 +207,7 @@
       "direcao": "BEARISH (macro) · COIL/contestado (tático)",
       "score": 6
     },
-    "leitura_primaria_opus": "18/05 08:02 · repique do fundo $76,671 → $77,428 (+1%). 08:01 TOPO15m $77,428 RSI63 Stoch92 — primeiro sinal exaustao 15m MAS NAO entrada: abaixo da zona short ($77,600-78,150 · falta ~$172) · sem Camada 2 5m · sem RSI div multi-TF (checado) · signature 15m solo fraca. Pre-armado · aguardando preco NA zona + camada2_top/TOPO 5m fechado + RSI div. Macro D segue BEAR (short macro-aligned é o preferido).",
+    "leitura_primaria_opus": "18/05 08:36 · SETUP SHORT IMINENTE (construindo). Repique $76,671→$77,5k. 3x TOPO15m (08:01/08:22/08:34) + divergencia bearish 15m FORMANDO (preco HH $77,461→$77,503 / RSI LH 66.7→61.9 · Stoch rolando 92→88). Momentum do repique enfraquecendo. NAO entrada ainda: preco $77,503 abaixo da zona $77,600-78,150 (~$100) · SEM camada2_top 5m fechado (LEI #4) · divergencia so 15m (falta multi-TF). Pre-armado FORTE · macro D bear (short é o lado).",
     "cenarios_opus": [
       {
         "id": "A_SHORT_PULLBACK",
@@ -243,7 +243,7 @@
         "tp1": "$77,510",
         "tp2": "$75,750",
         "rr": "~3,0",
-        "status": "AGUARDANDO repique até zona + rejeicao camada2 (macro-aligned · preferido)"
+        "status": "IMINENTE · 3x TOPO15m + div 15m formando · aguarda preco NA zona $77,6-78,1k + camada2_top 5m fechado · tier elite/T3 possivel se confluencia completa"
       },
       {
         "tipo": "LONG bear-trap MODO 2",
@@ -267,9 +267,9 @@
       "target_proximo": 75750
     },
     "proximo_marco": {
-      "evento": "preco→zona $77,600-78,150 + camada2_top/🗣️TOPO 5m FECHADO rejeitando + RSI div multi-TF bearish",
+      "evento": "preco EM $77,600-78,150 + camada2_top/🗣️TOPO 5m FECHADO rejeitando + divergencia RSI estendendo 1h",
       "wake_target": "estrutural Monitor coracao",
-      "decisao_esperada": "SHORT macro-aligned se confluencia elite na zona (tier por confluencia · T3 só com stack elite · senao T2) · meio de repique = SEM trade"
+      "decisao_esperada": "SHORT macro-aligned · 3xTOPO15m+div15m ja na mesa · se zona+Camada2+RSI multi-TF → confluencia ELITE possivel T3 · senao T2 · agir DECISIVO no gatilho (avaliacao completa RSI incluida)"
     }
   },
   "execution_mode": "AUTO",
