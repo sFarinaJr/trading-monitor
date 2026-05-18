@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "18/05/2026 08:02:36",
-  "last_github_push": "18/05 08:02",
-  "last_github_push_ts": 1779105756.174457,
+  "ultimo_update": "18/05/2026 08:03:00",
+  "last_github_push": "18/05 08:03",
+  "last_github_push_ts": 1779105780.360585,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -207,7 +207,7 @@
       "direcao": "BEARISH (macro) · COIL/contestado (tático)",
       "score": 6
     },
-    "leitura_primaria_opus": "18/05 07:50 · COIL RESOLVEU PRA CIMA (por ora). Madrugada: bear quebrou $76,671 ($76,550) mas FALHOU e recomprou · fundo defendido 5+x com exaustao repetida · agora rompeu coil → $77,304 (+0,8% do fundo). Contexto honesto: FÊNIX NÃO pegou o long de reversao no $76,671 (bottom_exh 06:25 + nivel defendido + SL favoravel) — falha de processo (ancoragem no viés macro bear + nao avaliou divergencia RSI). Entrada perdida · NAO perseguir o $77,304 (anti revenge-trade). Macro D segue BEAR · upside limitado.",
+    "leitura_primaria_opus": "18/05 08:02 · repique do fundo $76,671 → $77,428 (+1%). 08:01 TOPO15m $77,428 RSI63 Stoch92 — primeiro sinal exaustao 15m MAS NAO entrada: abaixo da zona short ($77,600-78,150 · falta ~$172) · sem Camada 2 5m · sem RSI div multi-TF (checado) · signature 15m solo fraca. Pre-armado · aguardando preco NA zona + camada2_top/TOPO 5m fechado + RSI div. Macro D segue BEAR (short macro-aligned é o preferido).",
     "cenarios_opus": [
       {
         "id": "A_SHORT_PULLBACK",
@@ -267,9 +267,9 @@
       "target_proximo": 75750
     },
     "proximo_marco": {
-      "evento": "repique→resistencia $77,6-78,1k (SHORT) OU varrida $76,671+camada2 (LONG beartrap) OU close 4H 00:00",
-      "wake_target": "estrutural via Monitor coracao",
-      "decisao_esperada": "SHORT no topo estrutural do repique (macro-aligned) · OU LONG seletivo só com varrida+camada2+RSIdiv · meio de range = SEM trade"
+      "evento": "preco→zona $77,600-78,150 + camada2_top/🗣️TOPO 5m FECHADO rejeitando + RSI div multi-TF bearish",
+      "wake_target": "estrutural Monitor coracao",
+      "decisao_esperada": "SHORT macro-aligned se confluencia elite na zona (tier por confluencia · T3 só com stack elite · senao T2) · meio de repique = SEM trade"
     }
   },
   "execution_mode": "AUTO",
