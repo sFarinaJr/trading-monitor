@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "18/05/2026 11:30:47",
+  "ultimo_update": "18/05/2026 11:30:50",
   "last_github_push": "18/05 11:30",
-  "last_github_push_ts": 1779118247.89793,
+  "last_github_push_ts": 1779118250.4072452,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -39,7 +39,7 @@
     "takeProfit": null,
     "tp1_limit": 77111,
     "tp1_pnl_lock": 5.52,
-    "unrealised_pnl_usd": 80.66,
+    "unrealised_pnl_usd": 80.0,
     "tp2_target_estrutural": null
   },
   "trades_recentes": [
@@ -246,9 +246,9 @@
       "trail_inicia_em": 76336.0
     },
     "proximo_marco": {
-      "evento": "4H close qualificado (high+buf<$77,413) → trail aperta SL (narro) · OU TP2 $75,750 (a $463) · OU SL $77,413",
-      "wake_target": "4H close / TP2 / SL / trail_trigger_5m duravel",
-      "decisao_esperada": "trail mecanico · narro aperto no 4H qualificado · sem fechamento discricionario"
+      "evento": "1H FECHADO com high_1H+buf<$77,413 → trail aperta SL (narro) · OU TP2 $75,750 (a $418) · OU SL $77,413",
+      "wake_target": "1H close / TP2 / SL · cross-check Bybit obrigatorio",
+      "decisao_esperada": "trail-1H mecanico · narro aperto · sem fechamento discricionario · ignorar eventos watcher sem cross-check"
     }
   },
   "execution_mode": "AUTO",
