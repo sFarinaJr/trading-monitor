@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "18/05/2026 13:45:33",
+  "ultimo_update": "18/05/2026 13:45:49",
   "last_github_push": "18/05 13:45",
-  "last_github_push_ts": 1779126333.428589,
+  "last_github_push_ts": 1779126349.555619,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -256,9 +256,9 @@
       "trail_inicia_em": 76336.0
     },
     "proximo_marco": {
-      "evento": "TOPO VERDADEIRO confirmado (top_exh/COMBOTOP no high do repique OU perda $76,014) → AUTONOMO: (1) ancora SL acima do topo + buffer (trail) (2) EXECUTA add-on zona dourada (re-entra 0.028+amplificado · worst-case>=BE) · ambos no MESMO gatilho",
-      "wake_target": "coracao top_exh/COMBOTOP · OU break $76,014 · OU SL $77,413",
-      "decisao_esperada": "executar add-on + trail-SL no topo confirmado SEM perguntar · cross-check Bybit · so SL fecha o combinado"
+      "evento": "TOPO VERDADEIRO confirmado (top_exh/COMBOTOP COERENTE high repique OU perda $76,014) = gatilho UNICO → AUTONOMO: trail ancora SL acima + add-on zona dourada. pullback_dourado = so ALERTA (nao executa).",
+      "wake_target": "coracao top_exh/COMBOTOP coerente · OU break $76,014 · OU SL $77,413",
+      "decisao_esperada": "executar trail+add-on SO no topo verdadeiro confirmado · pullback_dourado nunca executa sozinho · cross-check Bybit · so SL fecha"
     }
   },
   "execution_mode": "AUTO",
