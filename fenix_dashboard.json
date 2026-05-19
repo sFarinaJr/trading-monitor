@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "19/05/2026 09:41:20",
-  "last_github_push": "19/05 09:41",
-  "last_github_push_ts": 1779198080.841794,
+  "ultimo_update": "19/05/2026 09:42:12",
+  "last_github_push": "19/05 09:42",
+  "last_github_push_ts": 1779198132.258216,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -19,7 +19,7 @@
     "progresso_vs_baseline_usd": -196.58,
     "delta_vs_baseline": -196.58,
     "pnl_fenix_desde_baseline": -196.58,
-    "updated_at": "2026-05-19T09:41:20-04:00"
+    "updated_at": "2026-05-19T09:42:11-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -193,59 +193,128 @@
   ],
   "current_thesis": {
     "thesis_id": null,
-    "boot_ts": "2026-05-19T01:05:00-04:00",
-    "ultimo_update": "2026-05-19T01:08:00-04:00",
-    "status": "FLAT",
-    "mark_at_boot": 76871.4,
-    "mark_now": 76871.4,
+    "boot_ts": "2026-05-19T09:48:00-04:00",
+    "ultimo_update": "2026-05-19T09:48:00-04:00",
+    "status": "FLAT · BOOT FORMAL PROFUNDO concluido · sentinela armada · 2 setups pre-armados",
+    "mark_at_boot": 76914.2,
+    "mark_now": 76914.2,
     "macro_bias_D": {
-      "direcao": "BEARISH (D/4H downtrend · lower highs · -7% do topo $82,811)",
+      "direcao": "BEARISH (D/4H downtrend confirmado · lower highs + lower lows 14d desde $82,811 · -7%)",
       "score": 6
     },
-    "leitura_primaria_opus": "BOOT ISENTO 01:05 (FLAT · sem vies posicao) · Macro D/4H BEARISH dominante (LH+LL 14d · -7% do topo). PORÉM zona de demanda $75,999-$76,105 defendida 2x consecutivas (D ontem hammer pavio inferior $964 varrendo $75,999 e recuperando · D hoje L $76,433). Estrutura imediata = consolidacao/range $76,1k-$77,4k ha ~20h SEM tendencia intraday. Fundos intraday ascendentes ($76,105→$76,178). Coracao: compras dominam leve · orderbook bid 5.8x (demanda forte no book) · vibe sereno · Exaustao de Fundo 23:40+00:05 $76,671 (>60min). Peso baixista macro MAS suporte $76k forte e mercado em indecisao vol baixo. Sem sinal estrutural de decisao firing.",
-    "cenarios_opus": [
-      "BEAR cont: close 1H < $75,999 c/ vol >5K → $75,750 → $74,800 (macro aligned · PRIMARIO se romper)",
-      "BULL bounce contra-trend: camada2_bot_exhaustion 5m em $76k-$76,1k (MODO 2 SELETIVO autorizado) → alvo $77,377/$77,766",
-      "NEUTRO range $76,100-$77,400 (PROVAVEL · vol baixo · indecisao · sem trade · monitorar wakes)"
+    "leitura_primaria_opus": "ACUMULACAO DE CURTO PRAZO PARA BOUNCE CORRETIVO dentro de downtrend macro D/4H intacto. Resposta a pergunta-chave: a compressao + div RSI 4H+1H + exaustao de fundo 2x na demanda $75,999-$76,105 = ACUMULACAO pra bounce (nao distribuicao pra breakdown). 6 evidencias convergentes: (1) 1H virou HL ascendente 75,999->76,607 + topos 76,972->77,377 ascendentes (compressao LH ja resolveu pra cima) (2) falling wedge 1H rompendo (padrao reversao altista, alvo ~$78,7-79k) (3) div RSI bull confirmada 4H+1H no low $75,999 (4) demanda $75,999-$76,105 defendida 2x + fundos 4H ascendentes = absorcao (5) watcher bias bullish score 7.5: price_velocity +379/5m expansion, range_expansion 2.83x close 0.87, orderbook 2.36x buy (6) volume seca nos pullbacks expande nos pushes. DISCIPLINA ANTI-ANCHORING: e BOUNCE corretivo de alvo LIMITADO, NAO virada de tendencia. D segue LH+LL sem reversao D confirmada. Supply pesada em $77,377 / $77,766 / $78,150. Perda de $75,999 c/ volume = inverte 100% pra continuacao bear (cenario A).",
+    "cenarios_opus": {
+      "cenario_B_MAIS_PROVAVEL_LONG_bounce": "Gatilho: close 1H > $77,377 c/ Camada 2 fundo 5m fechado OU pullback defendendo $76,600 c/ camada2_bottom 5m. Entry ~$77,000-77,100. SL estrutural 1H $76,430 (abaixo fundo 1H $76,540). TP1 $77,385 (+0,5% cobre 30%). TP2 4H $78,500 (pivot 3+ toques $78,4-78,6). R:R 2,63x. MODO 2 SELETIVO.",
+      "cenario_A_SHORT_continuacao_bear": "Gatilho: close 1H/4H < $75,999 c/ volume expansao + camada2_top OU rejeicao confirmada $77,766/$78,150 c/ candle 5m fechado bearish. Entry rejeicao ~$77,700. SL acima topo 4H $78,650. TP2 $74,800 (lows abril, abaixo fundo 4H $75,999). R:R 3,05x.",
+      "cenario_C_range": "Sem gatilho · compressao $76,1k-$77,4k segue · FENIX aguarda close 1H decisivo · SEM ENTRADA"
+    },
+    "setups_pre_armados": [
+      {
+        "nome": "LONG_bounce_MODO2",
+        "direcao": "Buy",
+        "gatilho": "close 1H > $77,377 + Camada2 fundo 5m fechado OU pullback $76,600 + camada2_bottom 5m",
+        "entry": 77000,
+        "sl": 76430,
+        "tp1": 77385,
+        "tp2": 78500,
+        "rr": 2.63,
+        "tier": "T1-T2",
+        "valido": true,
+        "modo": "MODO 2 SELETIVO contra-trend"
+      },
+      {
+        "nome": "SHORT_rejeicao_supply",
+        "direcao": "Sell",
+        "gatilho": "rejeicao confirmada $77,766/$78,150 candle 5m fechado bearish OU close 1H < $75,999 c/ volume",
+        "entry": 77700,
+        "sl": 78650,
+        "tp1": 77311,
+        "tp2": 74800,
+        "rr": 3.05,
+        "tier": "T1-T2",
+        "valido": true,
+        "modo": "alinhado macro bear"
+      }
     ],
-    "setups_pre_armados": "FLAT · NENHUM setup armado/valido agora. Gates 1+2.5+3 FALHAM (wake 1h_close score 4.5 ALERT_ONLY · sem sinal estrutural 60min · score<threshold). 3 cenarios pre-armados: (A) SHORT continuacao se perde $75,999 c/ vol+estrutural · (B) LONG MODO 2 SELETIVO se camada2_bot_exhaustion 5m fechado em $76k · (C) range = sem trade. LEI #24 vigente · LEI #26 ativa se abrir trade.",
-    "ponto_nao_retorno": "$75,999 perda close 1H c/ vol = leg baixista confirmada / $77,766 reclaim close 4H = tese bear enfraquece (correcao maior)",
-    "proximo_marco": "Proximo close 1H (02:00 UTC-4) re-avalia · break do range $76,100-$77,400 com volume define direcao · zona demanda $75,999-$76,105 = linha critica"
+    "ponto_nao_retorno": "Close 1H/4H abaixo de $75,999 (demanda 2x-defendida) INVALIDA bounce -> ativa cenario A continuacao bear. Close 4H acima de $78,650 invalida bear de curto prazo -> reavaliacao altista maior. Enquanto $75,999-$77,766 segura, e range/acumulacao.",
+    "proximo_marco": "Close 1H 10:00 UTC-4 (proximo fechamento horario) · validar se rompe $77,377 ou rejeita · watcher 24/7 monitora gatilhos price_watch"
   },
   "execution_mode": "AUTO",
   "manual_approval_required": false,
   "price_watch": {
-    "ts": "2026-05-17T20:20:51.882552-04:00",
+    "ts": "2026-05-19T09:48:00-04:00",
     "levels": [
       {
         "price": 78650,
-        "tier": "alto",
         "direction": "above",
-        "reason": "Invalidação BEAR (close 4H acima) · revisar tese",
+        "tier": "alto",
+        "reason": "Resistencia D / topo 4H · INVALIDACAO bear de curto (close 4H acima)",
+        "decisao_pre_armada": "Close 4H > $78,650 invalida bear de curto prazo. NAO chase. Reavaliar tese p/ altista maior. SHORT cenario A so se rejeicao confirmada ANTES deste nivel.",
         "active": true,
-        "triggered": false,
-        "decisao_pre_armada": "Close 4H acima = bear invalida · reavaliar BOOT"
+        "triggered": false
       },
       {
         "price": 78150,
-        "tier": "alto",
         "direction": "above",
-        "reason": "SHORT fenix_short_1810 resting (perna profunda pullback)",
+        "tier": "alto",
+        "reason": "Supply pesada downtrend (zona pullback profundo)",
+        "decisao_pre_armada": "Se preco alcanca $78,150 SEM ter rompido estrutura 4H: avaliar SHORT cenario A (rejeicao 5m fechado bearish). Se rompeu com forca: aguardar retest, NAO short cego.",
         "active": true,
-        "triggered": false,
-        "decisao_pre_armada": "Sell Limit 0.043 ATIVA · SL $78,500 embedded · só fila em bounce +$1,2k",
-        "entry": 78150,
-        "tp2": 75750,
-        "rr": "2.5"
+        "triggered": false
       },
       {
-        "price": 78000,
-        "tier": "alto",
+        "price": 77766,
         "direction": "above",
-        "reason": "Resistência consolidação rompida (overhead supply)",
+        "tier": "alto",
+        "reason": "Neckline double bottom 4H / topo 4H · supply chave",
+        "decisao_pre_armada": "Rejeicao confirmada $77,766 (candle 5m fechado bearish) = gatilho SHORT cenario A. Close 4H ACIMA = confirma double bottom -> reforca cenario B LONG (alvo maior).",
         "active": true,
-        "triggered": false,
-        "decisao_pre_armada": "Zona SHORT pullback · aguardar camada2_top/🗣️TOPO 5m fechado"
+        "triggered": false
+      },
+      {
+        "price": 77377,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "Topo 1H / borda superior falling wedge · GATILHO LONG bounce",
+        "decisao_pre_armada": "Close 1H > $77,377 c/ volume + Camada2 fundo 5m fechado = gatilho LONG cenario B (MODO 2 SELETIVO). Validar skill fenix-entry-validator antes do place_order. Entry ~$77,000-77,100 SL $76,430 TP1 $77,385 TP2 $78,500.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 76600,
+        "direction": "below",
+        "tier": "medio",
+        "reason": "Pivot pullback intra-range · zona de entrada LONG alternativa",
+        "decisao_pre_armada": "Pullback defendendo $76,600 c/ camada2_bottom 5m fechado (wick >=35%) = entrada LONG alternativa cenario B antes do rompimento. Exige Camada 2 confirmada (LEI #4).",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 75999,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "Demanda 2x-defendida / low 4H capitulation · PONTO DE NAO RETORNO",
+        "decisao_pre_armada": "Close 1H/4H < $75,999 c/ volume expansao INVALIDA bounce -> ativa cenario A SHORT continuacao bear. Entry retest $75,950 SL $76,720 (acima fundo quebrado) TP2 $74,800. Gatilho estrutural de alta prioridade.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 75750,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "Suporte D 07/05 · TARGET 1 do cenario A SHORT",
+        "decisao_pre_armada": "Se cenario A ativo e preco atinge $75,750: zona de parcial/decisao. Watcher monitora · avaliar trail estrutural.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 74800,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "Lows abril · TP2 cenario A SHORT",
+        "decisao_pre_armada": "TP2 estrutural cenario A. Saida via trail (LEI #5 · nunca ordem TP2 automatica). Reavaliar tese macro se atingido.",
+        "active": true,
+        "triggered": false
       }
     ]
   }
