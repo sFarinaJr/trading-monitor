@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "19/05/2026 01:07:22",
-  "last_github_push": "19/05 01:07",
-  "last_github_push_ts": 1779167242.5190022,
+  "ultimo_update": "19/05/2026 01:08:15",
+  "last_github_push": "19/05 01:08",
+  "last_github_push_ts": 1779167295.7153249,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -19,7 +19,7 @@
     "progresso_vs_baseline_usd": -196.58,
     "delta_vs_baseline": -196.58,
     "pnl_fenix_desde_baseline": -196.58,
-    "updated_at": "2026-05-19T01:07:21-04:00"
+    "updated_at": "2026-05-19T01:08:15-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -193,24 +193,24 @@
   ],
   "current_thesis": {
     "thesis_id": null,
-    "boot_ts": "2026-05-18T20:08:00-04:00",
-    "ultimo_update": "2026-05-18T23:20:01-04:00",
+    "boot_ts": "2026-05-19T01:05:00-04:00",
+    "ultimo_update": "2026-05-19T01:08:00-04:00",
     "status": "FLAT",
-    "mark_at_boot": 77017.9,
-    "mark_now": 76744.5,
+    "mark_at_boot": 76871.4,
+    "mark_now": 76871.4,
     "macro_bias_D": {
-      "direcao": "BEARISH-LEAN (D/4H downtrend · lower highs)",
+      "direcao": "BEARISH (D/4H downtrend · lower highs · -7% do topo $82,811)",
       "score": 6
     },
-    "leitura_primaria_opus": "BOOT D 20:08 ISENTO · D/4H downtrend (lower highs · RSI4H 37 oversold · MACD -727) · bounce SO 15m exaurindo em range 1H $76,900-$77,193 abaixo do lower-high 4H $77,766 · volume BAIXO todos TFs (indecisao) · doji D no suporte $76,000 · peso baixista MAS exige quebra $76,000 p/ confirmar · ESTADO ATUAL FLAT (trade SHORT fechou SL +$36.13)",
+    "leitura_primaria_opus": "BOOT ISENTO 01:05 (FLAT · sem vies posicao) · Macro D/4H BEARISH dominante (LH+LL 14d · -7% do topo). PORÉM zona de demanda $75,999-$76,105 defendida 2x consecutivas (D ontem hammer pavio inferior $964 varrendo $75,999 e recuperando · D hoje L $76,433). Estrutura imediata = consolidacao/range $76,1k-$77,4k ha ~20h SEM tendencia intraday. Fundos intraday ascendentes ($76,105→$76,178). Coracao: compras dominam leve · orderbook bid 5.8x (demanda forte no book) · vibe sereno · Exaustao de Fundo 23:40+00:05 $76,671 (>60min). Peso baixista macro MAS suporte $76k forte e mercado em indecisao vol baixo. Sem sinal estrutural de decisao firing.",
     "cenarios_opus": [
-      "BEAR cont: close1H<$76,900→$76,000 · close<$76,000→$75,750→$74,900",
-      "BULL rev: reclaim $77,193 + close4H>$77,766→$78,570",
-      "NEUTRO range $76,900-$77,193 (provavel · vol baixo)"
+      "BEAR cont: close 1H < $75,999 c/ vol >5K → $75,750 → $74,800 (macro aligned · PRIMARIO se romper)",
+      "BULL bounce contra-trend: camada2_bot_exhaustion 5m em $76k-$76,1k (MODO 2 SELETIVO autorizado) → alvo $77,377/$77,766",
+      "NEUTRO range $76,100-$77,400 (PROVAVEL · vol baixo · indecisao · sem trade · monitorar wakes)"
     ],
-    "setups_pre_armados": "FLAT · NENHUM setup armado · aguardando setup FENIX mapeado (sinal estrutural + score + R:R≥1.5 + macro aligned + sem veto). EXAUSTAO $76,671 21:35 avaliada e DESCARTADA (contra BOOT D · suporte muito testado · sem confluencia). LEI #26 ativa se abrir trade.",
-    "ponto_nao_retorno": "$76,000 perda c/ vol = leg baixista / $77,766 reclaim 4H = tese bear invalidada",
-    "proximo_marco": "rompimento range $76,900-$77,193 com volume (close 1H/4H) define direcao"
+    "setups_pre_armados": "FLAT · NENHUM setup armado/valido agora. Gates 1+2.5+3 FALHAM (wake 1h_close score 4.5 ALERT_ONLY · sem sinal estrutural 60min · score<threshold). 3 cenarios pre-armados: (A) SHORT continuacao se perde $75,999 c/ vol+estrutural · (B) LONG MODO 2 SELETIVO se camada2_bot_exhaustion 5m fechado em $76k · (C) range = sem trade. LEI #24 vigente · LEI #26 ativa se abrir trade.",
+    "ponto_nao_retorno": "$75,999 perda close 1H c/ vol = leg baixista confirmada / $77,766 reclaim close 4H = tese bear enfraquece (correcao maior)",
+    "proximo_marco": "Proximo close 1H (02:00 UTC-4) re-avalia · break do range $76,100-$77,400 com volume define direcao · zona demanda $75,999-$76,105 = linha critica"
   },
   "execution_mode": "AUTO",
   "manual_approval_required": false,
