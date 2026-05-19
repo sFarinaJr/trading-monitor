@@ -462,7 +462,13 @@
             const trades = allTrades.slice(0, 10);
             tbody.innerHTML = trades.map(t => {
                 const pnl = t.pnl_usd || 0;
-                const pct = (t.pnl_percent || 0) * 25;  // % real · alavancagem 25x (user 19/05)
+                // % REAL = retorno líquido sobre a margem (pnl ÷ margem) ·
+                // mesmo sinal do $ sempre (inclui taxas) · margem =
+                // notional/25 · fallback price-move×25 (user 19/05)
+                const _q = +(t.quantity ?? t.qty ?? 0);
+                const _e = +(t.entry_price ?? 0);
+                const _mgn = (_q && _e) ? (_q * _e) / 25 : 0;
+                const pct = _mgn ? (pnl / _mgn) * 100 : (t.pnl_percent || 0) * 25;
                 const cls = pnl > 0 ? 'positive' : (pnl < 0 ? 'negative' : 'neutral');
                 // Separa side (LONG/SHORT) do trade_type (SL_SHORT, TP1_LONG, etc)
                 // Side fica colorido (verde LONG / vermelho SHORT) · subtipo aparece menor
