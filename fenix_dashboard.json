@@ -1,45 +1,45 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "18/05/2026 20:20:07",
-  "last_github_push": "18/05 20:20",
-  "last_github_push_ts": 1779150007.2638578,
+  "ultimo_update": "18/05/2026 20:21:02",
+  "last_github_push": "18/05 20:21",
+  "last_github_push_ts": 1779150062.283725,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
   "saldo": {
-    "equity_usd": 1384.88,
+    "equity_usd": 1380.65,
     "walletBalance": 1358.41,
-    "cumPnL_unified_usd": -6318.13,
-    "delta_vs_baseline": -194.13,
-    "unrealisedPnl": 1.78,
+    "cumPnL_unified_usd": -6320.58,
+    "delta_vs_baseline": -196.58,
+    "unrealisedPnl": 0.0,
     "markPrice": 76961,
     "wallet_usdt": 1358.41,
     "equity": 1358.47,
-    "cum_realised_pnl": -6318.13,
+    "cum_realised_pnl": -6320.58,
     "ts": "15/05/2026 09:11:00",
-    "equity_usdt": 1384.88,
-    "wallet_balance_usdt": 1383.1,
-    "available_usdt": 1383.1,
-    "progresso_vs_baseline_usd": -194.13,
-    "pnl_fenix_desde_baseline": -194.13,
-    "updated_at": "2026-05-18T20:20:06-04:00"
+    "equity_usdt": 1380.65,
+    "wallet_balance_usdt": 1380.65,
+    "available_usdt": 1380.65,
+    "progresso_vs_baseline_usd": -196.58,
+    "pnl_fenix_desde_baseline": -196.58,
+    "updated_at": "2026-05-18T20:21:01-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
-    "current_pnl": -6318.13,
-    "diff_usd": -194.13
+    "current_pnl": -6320.58,
+    "diff_usd": -196.58
   },
   "posicao_atual": {
-    "side": "SHORT",
-    "size": 0.068,
-    "avgPrice": 77212.14705882,
-    "stopLoss": 77210.0,
+    "side": "FLAT",
+    "size": 0,
+    "avgPrice": null,
+    "stopLoss": null,
     "takeProfit": null,
-    "tp1_limit": 77111,
-    "tp1_pnl_lock": 5.52,
-    "unrealised_pnl_usd": 1.78,
+    "tp1_limit": null,
+    "tp1_pnl_lock": null,
+    "unrealised_pnl_usd": 0,
     "tp2_target_estrutural": null
   },
   "trades_recentes": [
