@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "19/05/2026 16:43:01",
+  "ultimo_update": "19/05/2026 16:43:54",
   "last_github_push": "19/05 16:43",
-  "last_github_push_ts": 1779223381.2071931,
+  "last_github_push_ts": 1779223434.702657,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -15,7 +15,7 @@
     "progresso_vs_baseline_usd": -196.58,
     "delta_vs_baseline": -196.58,
     "pnl_fenix_desde_baseline": -196.58,
-    "updated_at": "2026-05-19T16:43:00-04:00"
+    "updated_at": "2026-05-19T16:43:54-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -190,20 +190,21 @@
   "current_thesis": {
     "thesis_id": null,
     "boot_ts": "2026-05-19T09:48:00-04:00",
-    "ultimo_update": "2026-05-19T09:48:00-04:00",
+    "ultimo_update": "2026-05-19T16:42:00-04:00",
     "status": "FLAT · BOOT FORMAL PROFUNDO concluido · sentinela armada · 2 setups pre-armados",
     "mark_at_boot": 76914.2,
-    "mark_now": 76914.2,
+    "mark_now": 76913,
     "macro_bias_D": {
       "direcao": "BEARISH (D/4H downtrend confirmado · lower highs + lower lows 14d desde $82,811 · -7%)",
       "score": 6
     },
-    "leitura_primaria_opus": "ACUMULACAO DE CURTO PRAZO PARA BOUNCE CORRETIVO dentro de downtrend macro D/4H intacto. Resposta a pergunta-chave: a compressao + div RSI 4H+1H + exaustao de fundo 2x na demanda $75,999-$76,105 = ACUMULACAO pra bounce (nao distribuicao pra breakdown). 6 evidencias convergentes: (1) 1H virou HL ascendente 75,999->76,607 + topos 76,972->77,377 ascendentes (compressao LH ja resolveu pra cima) (2) falling wedge 1H rompendo (padrao reversao altista, alvo ~$78,7-79k) (3) div RSI bull confirmada 4H+1H no low $75,999 (4) demanda $75,999-$76,105 defendida 2x + fundos 4H ascendentes = absorcao (5) watcher bias bullish score 7.5: price_velocity +379/5m expansion, range_expansion 2.83x close 0.87, orderbook 2.36x buy (6) volume seca nos pullbacks expande nos pushes. DISCIPLINA ANTI-ANCHORING: e BOUNCE corretivo de alvo LIMITADO, NAO virada de tendencia. D segue LH+LL sem reversao D confirmada. Supply pesada em $77,377 / $77,766 / $78,150. Perda de $75,999 c/ volume = inverte 100% pra continuacao bear (cenario A).",
-    "cenarios_opus": {
-      "cenario_B_MAIS_PROVAVEL_LONG_bounce": "Gatilho: close 1H > $77,377 c/ Camada 2 fundo 5m fechado OU pullback defendendo $76,600 c/ camada2_bottom 5m. Entry ~$77,000-77,100. SL estrutural 1H $76,430 (abaixo fundo 1H $76,540). TP1 $77,385 (+0,5% cobre 30%). TP2 4H $78,500 (pivot 3+ toques $78,4-78,6). R:R 2,63x. MODO 2 SELETIVO.",
-      "cenario_A_SHORT_continuacao_bear": "Gatilho: close 1H/4H < $75,999 c/ volume expansao + camada2_top OU rejeicao confirmada $77,766/$78,150 c/ candle 5m fechado bearish. Entry rejeicao ~$77,700. SL acima topo 4H $78,650. TP2 $74,800 (lows abril, abaixo fundo 4H $75,999). R:R 3,05x.",
-      "cenario_C_range": "Sem gatilho · compressao $76,1k-$77,4k segue · FENIX aguarda close 1H decisivo · SEM ENTRADA"
-    },
+    "leitura_primaria_opus": "REAVALIACAO INTRA 16:42 (apos lapso · BOOT era 09:48). Coil intraday APERTADO entre fundo $76,105 (defendido 3x · capitulacao 4H absorvida vol 12k) e teto $77,024-77,054 (rejeitado 2x). Volume 15m secando = energia drenando. Macro D/4H BEAR intacto (bounce dentro de baixa, NAO virada). BMSB 20W $75,026 = piso estrutural real · 21W EMA $78,505 = teto.",
+    "cenarios_opus": [
+      "A SHORT continuacao (macro-aligned · PRIMARIO): close 1H < $75,999 c/ vol → alvo $74,800",
+      "SHORT intra: rejeicao teto $77,024-77,054 (2x rej) c/ exaustao 5m → alvo $76,400/76,105",
+      "B LONG intra: defesa $76,105-76,200 c/ camada2_bottom 5m → alvo $77,000 (MODO 2 SELETIVO contra-trend)",
+      "C coil $76,1-77,0k continua · sem trade ate gatilho fechar"
+    ],
     "setups_pre_armados": [
       {
         "nome": "LONG_bounce_MODO2",
@@ -232,8 +233,8 @@
         "modo": "alinhado macro bear"
       }
     ],
-    "ponto_nao_retorno": "Close 1H/4H abaixo de $75,999 (demanda 2x-defendida) INVALIDA bounce -> ativa cenario A continuacao bear. Close 4H acima de $78,650 invalida bear de curto prazo -> reavaliacao altista maior. Enquanto $75,999-$77,766 segura, e range/acumulacao.",
-    "proximo_marco": "Close 1H 10:00 UTC-4 (proximo fechamento horario) · validar se rompe $77,377 ou rejeita · watcher 24/7 monitora gatilhos price_watch"
+    "ponto_nao_retorno": "close 1H < $75,999 c/ vol = cenario A confirma · close 4H > $77,766 = bear curto enfraquece",
+    "proximo_marco": "close 1H 17:00 UTC-4 · reavaliar nivel intra a cada ciclo (NUNCA mais congelar)"
   },
   "execution_mode": "AUTO",
   "manual_approval_required": false,
