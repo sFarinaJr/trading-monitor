@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "18/05/2026 21:47:33",
+  "ultimo_update": "18/05/2026 21:47:49",
   "last_github_push": "18/05 21:47",
-  "last_github_push_ts": 1779155253.6874728,
+  "last_github_push_ts": 1779155269.0351932,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -193,24 +193,24 @@
   ],
   "current_thesis": {
     "thesis_id": null,
-    "boot_ts": "2026-05-17T20:13:10.962090-04:00",
-    "ultimo_update": null,
-    "status": null,
-    "mark_at_boot": 78220.4,
-    "mark_now": null,
+    "boot_ts": "2026-05-18T20:08:00-04:00",
+    "ultimo_update": "2026-05-18T21:47:48-04:00",
+    "status": "FLAT",
+    "mark_at_boot": 77017.9,
+    "mark_now": 76742.1,
     "macro_bias_D": {
-      "direcao": "BEARISH (macro) · COIL/contestado (tático)",
+      "direcao": "BEARISH-LEAN (D/4H downtrend · lower highs)",
       "score": 6
     },
-    "leitura_primaria_opus": "BOOT D 20:08 ISENTO · D/4H downtrend (lower highs · RSI4H 37 oversold · MACD -727) · bounce so 15m exaurindo em range 1H $76,900-$77,193 abaixo do lower-high 4H $77,766 · volume BAIXO todos TFs (indecisao) · peso baixista MAS exige quebra $76,000 p/ confirmar · doji D no suporte $76,000",
+    "leitura_primaria_opus": "BOOT D 20:08 ISENTO · D/4H downtrend (lower highs · RSI4H 37 oversold · MACD -727) · bounce SO 15m exaurindo em range 1H $76,900-$77,193 abaixo do lower-high 4H $77,766 · volume BAIXO todos TFs (indecisao) · doji D no suporte $76,000 · peso baixista MAS exige quebra $76,000 p/ confirmar · ESTADO ATUAL FLAT (trade SHORT fechou SL +$36.13)",
     "cenarios_opus": [
       "BEAR cont: close1H<$76,900→$76,000 · close<$76,000→$75,750→$74,900",
       "BULL rev: reclaim $77,193 + close4H>$77,766→$78,570",
-      "NEUTRO range $76,900-$77,193 (mais provavel curtissimo · vol baixo)"
+      "NEUTRO range $76,900-$77,193 (provavel · vol baixo)"
     ],
-    "setups_pre_armados": "NENHUM novo · diretiva SO SL FECHA · add-on ja feito · modulo 03 SUSPENSO",
+    "setups_pre_armados": "FLAT · NENHUM setup armado · aguardando setup FENIX mapeado (sinal estrutural + score + R:R≥1.5 + macro aligned + sem veto). EXAUSTAO $76,671 21:35 avaliada e DESCARTADA (contra BOOT D · suporte muito testado · sem confluencia). LEI #26 ativa se abrir trade.",
     "ponto_nao_retorno": "$76,000 perda c/ vol = leg baixista / $77,766 reclaim 4H = tese bear invalidada",
-    "proximo_marco": "rompimento range $76,900-$77,193 com volume · close 1H/4H"
+    "proximo_marco": "rompimento range $76,900-$77,193 com volume (close 1H/4H) define direcao"
   },
   "execution_mode": "AUTO",
   "manual_approval_required": false,
