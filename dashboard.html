@@ -486,7 +486,7 @@
                         <td>${fmtMoney(t.exit_price)}</td>
                         <td class="col-mobile-hide">${fmtNum(t.quantity ?? t.qty, 4)}</td>
                         <td class="trade-pnl-cell ${cls}">${fmtMoney(pnl, true)}</td>
-                        <td class="col-mobile-hide ${cls}">${pct >= 0 ? '+' : ''}${fmtNum(pct, 3)}%</td>
+                        <td class="col-mobile-hide ${cls}">${pct >= 0 ? '+' : ''}${fmtNum(pct, 2)}%</td>
                     </tr>
                 `;
             }).join('');
