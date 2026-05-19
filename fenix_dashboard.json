@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "18/05/2026 20:10:16",
+  "ultimo_update": "18/05/2026 20:10:45",
   "last_github_push": "18/05 20:10",
-  "last_github_push_ts": 1779149416.767738,
+  "last_github_push_ts": 1779149445.755506,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -197,69 +197,15 @@
       "direcao": "BEARISH (macro) · COIL/contestado (tático)",
       "score": 6
     },
-    "leitura_primaria_opus": "18/05 13:19 · ADD-ON ARMADO (mapeado durável · conversation-independent). SHORT 0.028 @ $77,498.5 · SL $77,413 BE+fees · realizado ~$40. Aguardando TOPO VERDADEIRO (top_exh/COMBOTOP no high do repique OU perda fundo $76,014). No gatilho · executo AUTONOMO: trail ancora SL acima do topo + add-on zona dourada (re-entra 0.028+amplificado · worst-case >=BE · matematica existente · simetrico). Mesmo gatilho serve trail E add-on. Sem mudar regra agora · so mapeado + flag de verificar alinhamento 5/5. Macro D bear.",
+    "leitura_primaria_opus": "BOOT D 20:08 ISENTO · D/4H downtrend (lower highs · RSI4H 37 oversold · MACD -727) · bounce so 15m exaurindo em range 1H $76,900-$77,193 abaixo do lower-high 4H $77,766 · volume BAIXO todos TFs (indecisao) · peso baixista MAS exige quebra $76,000 p/ confirmar · doji D no suporte $76,000",
     "cenarios_opus": [
-      {
-        "id": "A_SHORT_PULLBACK",
-        "desc": "SHORT trend-following se repique continuar até resistência $77,600-$78,150 COM rejeicao camada2_top/🗣️TOPO 5m fechado · macro bear aligned (preferido pelo macro)",
-        "entry_zona": "77600-78150",
-        "sl": "acima topo do repique +buffer",
-        "tp": "75750/74800"
-      },
-      {
-        "id": "B_LONG_BEARTRAP",
-        "desc": "LONG contra-trend MODO 2 SELETIVO só se: varrida de $76,671 + camada2 bottom_exh FORTE 5m fechado reclamando acima + divergencia RSI confirmada · SL abaixo da varrida (~<$76,550) · alvo topo coil/$77,6k · tatico repique NAO swing",
-        "entry_zona": "reclaim pos-varrida $76,671",
-        "sl": "<76550",
-        "tp": "77600"
-      },
-      {
-        "id": "C_LONG_RETEST",
-        "desc": "LONG se close acima e retest de $77,3-77,6k segurando com camada2 bull · estrutura curto-prazo virou bull · ainda contra macro D bear",
-        "entry_zona": "retest 77300-77600",
-        "sl": "<77000",
-        "tp": "78100"
-      }
+      "BEAR cont: close1H<$76,900→$76,000 · close<$76,000→$75,750→$74,900",
+      "BULL rev: reclaim $77,193 + close4H>$77,766→$78,570",
+      "NEUTRO range $76,900-$77,193 (mais provavel curtissimo · vol baixo)"
     ],
-    "setups_pre_armados": [
-      {
-        "tipo": "SHORT pullback trend-following",
-        "nome": "SHORT resistência $77,6-78,1k",
-        "direcao": "short",
-        "entry_zone": "$77,600–$78,150",
-        "entry": 77900,
-        "sl": 78650,
-        "sl_txt": "$78,650 acima topo repique",
-        "tp1": "$77,510",
-        "tp2": "$75,750",
-        "rr": "~3,0",
-        "status": "EXECUTADO 09:12 · SHORT 0.08 @ 77498.5 · SL 77900 · TP1 77111 · T2"
-      },
-      {
-        "tipo": "LONG bear-trap MODO 2",
-        "nome": "LONG varrida $76,671 + camada2",
-        "direcao": "long",
-        "entry_zone": "reclaim $76,671 pos-varrida",
-        "entry": 76700,
-        "sl": 76500,
-        "sl_txt": "$76,500 abaixo varrida",
-        "tp1": "$77,100",
-        "tp2": "$77,600",
-        "rr": "~2,0",
-        "status": "AGUARDANDO varrida + camada2 bottom_exh forte + RSI div (contra-trend seletivo · sizing menor)"
-      }
-    ],
-    "ponto_nao_retorno": {
-      "sl_ativo": 77413.3,
-      "sl_fase": "BE+fees (fase B · gatilho disparou 09:37)",
-      "target_proximo": 75750,
-      "trail_inicia_em": 76336.0
-    },
-    "proximo_marco": {
-      "evento": "TOPO VERDADEIRO confirmado (top_exh/COMBOTOP COERENTE high repique OU perda $76,014) = gatilho UNICO → AUTONOMO: trail ancora SL acima + add-on zona dourada. pullback_dourado = so ALERTA (nao executa).",
-      "wake_target": "coracao top_exh/COMBOTOP coerente · OU break $76,014 · OU SL $77,413",
-      "decisao_esperada": "executar trail+add-on SO no topo verdadeiro confirmado · pullback_dourado nunca executa sozinho · cross-check Bybit · so SL fecha"
-    }
+    "setups_pre_armados": "NENHUM novo · diretiva SO SL FECHA · add-on ja feito · modulo 03 SUSPENSO",
+    "ponto_nao_retorno": "$76,000 perda c/ vol = leg baixista / $77,766 reclaim 4H = tese bear invalidada",
+    "proximo_marco": "rompimento range $76,900-$77,193 com volume · close 1H/4H"
   },
   "execution_mode": "AUTO",
   "manual_approval_required": false,
