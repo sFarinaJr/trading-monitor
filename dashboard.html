@@ -263,7 +263,7 @@
             </div>
         </header>
 
-        <!-- 🎯 PROGRESSO DA MISSÃO -->
+        <!-- 🎯 PROGRESSO DA MISSÃO · público (história do canal · user 19/05) -->
         <div class="card mission">
             <div class="card-title">🎯 Progresso da Missão</div>
             <div class="mission-row">
@@ -298,7 +298,7 @@
                             <th>Saída</th>
                             <th class="col-mobile-hide">Qty</th>
                             <th>PnL ($)</th>
-                            <th class="col-mobile-hide">PnL %</th>
+                            <th class="col-mobile-hide">PnL% 25x</th>
                         </tr>
                     </thead>
                     <tbody id="tradesBody">
@@ -462,7 +462,7 @@
             const trades = allTrades.slice(0, 10);
             tbody.innerHTML = trades.map(t => {
                 const pnl = t.pnl_usd || 0;
-                const pct = t.pnl_percent || 0;
+                const pct = (t.pnl_percent || 0) * 25;  // % real · alavancagem 25x (user 19/05)
                 const cls = pnl > 0 ? 'positive' : (pnl < 0 ? 'negative' : 'neutral');
                 // Separa side (LONG/SHORT) do trade_type (SL_SHORT, TP1_LONG, etc)
                 // Side fica colorido (verde LONG / vermelho SHORT) · subtipo aparece menor
