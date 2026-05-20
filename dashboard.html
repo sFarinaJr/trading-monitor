@@ -448,10 +448,45 @@
             window.__nextRefreshAt = Date.now() + REFRESH_MS;
         }
 
+        // user 20/05 10:36 · agrupa múltiplas parciais do mesmo trade em 1 linha
+        // chave: side+entry_price · weighted avg do exit_price · soma qty/pnl
+        function aggregateTradesByEntry(trades) {
+            if (!Array.isArray(trades) || trades.length === 0) return [];
+            const groups = new Map();
+            for (const t of trades) {
+                const side = String(t.side || '').toUpperCase();
+                const entry = +t.entry_price || 0;
+                if (!side || !entry) continue;
+                const key = `${side}_${entry.toFixed(2)}`;
+                if (!groups.has(key)) {
+                    groups.set(key, {
+                        timestamp: t.timestamp, side, entry_price: entry,
+                        exit_qty: 0, exit_qty_x_price: 0, pnl_usd: 0,
+                        num_parts: 0, trade_type: t.trade_type
+                    });
+                }
+                const g = groups.get(key);
+                const q = +(t.quantity ?? t.qty) || 0;
+                const ex = +t.exit_price || 0;
+                g.exit_qty += q;
+                g.exit_qty_x_price += q * ex;
+                g.pnl_usd += (+t.pnl_usd || 0);
+                g.num_parts += 1;
+                if (t.timestamp && (!g.timestamp || Date.parse(t.timestamp) < Date.parse(g.timestamp))) {
+                    g.timestamp = t.timestamp;
+                }
+            }
+            return Array.from(groups.values()).map(g => ({
+                timestamp: g.timestamp, side: g.side, entry_price: g.entry_price,
+                exit_price: g.exit_qty > 0 ? g.exit_qty_x_price / g.exit_qty : 0,
+                quantity: g.exit_qty, qty: g.exit_qty, pnl_usd: g.pnl_usd,
+                trade_type: g.trade_type, num_parts: g.num_parts
+            })).sort((a, b) => Date.parse(b.timestamp) - Date.parse(a.timestamp));
+        }
         function renderTrades(state) {
             const tbody = document.getElementById('tradesBody');
             // Fonte primária · state.trades_recentes atualizado a cada ciclo
-            const allTrades = state?.trades_recentes || [];
+            const allTrades = aggregateTradesByEntry(state?.trades_recentes || []);
 
             if (allTrades.length === 0) {
                 tbody.innerHTML = '<tr><td colspan="7" style="text-align: center; color: var(--text-muted); padding: 30px;">Nenhum trade registrado</td></tr>';
@@ -484,6 +519,9 @@
                 let subtipo = tt.replace('_LONG','').replace('_SHORT','').replace('LONG','').replace('SHORT','').trim();
                 if (subtipo && subtipo !== sideTag) subtipo = `(${subtipo})`;
                 else subtipo = '';
+                // user 20/05 10:36 · indicador de parciais agrupadas
+                const np = +(t.num_parts || 0);
+                if (np > 1) subtipo = subtipo ? `${subtipo} ${np} parciais` : `${np} parciais`;
                 return `
                     <tr>
                         <td>${fmtDateTime(t.timestamp)}</td>
