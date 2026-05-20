@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "19/05/2026 20:06:22",
-  "last_github_push": "19/05 20:06",
-  "last_github_push_ts": 1779235582.1735969,
+  "ultimo_update": "19/05/2026 20:07:15",
+  "last_github_push": "19/05 20:07",
+  "last_github_push_ts": 1779235635.270847,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -15,7 +15,7 @@
     "progresso_vs_baseline_usd": -223.96,
     "delta_vs_baseline": -223.96,
     "pnl_fenix_desde_baseline": -223.96,
-    "updated_at": "2026-05-19T20:06:21-04:00"
+    "updated_at": "2026-05-19T20:07:14-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -189,52 +189,101 @@
   ],
   "current_thesis": {
     "thesis_id": null,
-    "boot_ts": "2026-05-19T09:48:00-04:00",
-    "ultimo_update": "2026-05-19T16:42:00-04:00",
-    "status": "FLAT · BOOT FORMAL PROFUNDO concluido · sentinela armada · 2 setups pre-armados",
-    "mark_at_boot": 76914.2,
-    "mark_now": 76913,
+    "boot_ts": "2026-05-19T20:04:21-04:00",
+    "ultimo_update": "2026-05-19T20:04:21-04:00",
+    "status": "ARMADA · FLAT · 4 setups pre-armados · sentinela 24/7 · LEI vigente",
+    "mark_at_boot": 76860.5,
+    "mark_now": 76860.5,
     "macro_bias_D": {
-      "direcao": "BEARISH (D/4H downtrend confirmado · lower highs + lower lows 14d desde $82,811 · -7%)",
-      "score": 6
+      "direcao": "BEAR",
+      "score": null
     },
-    "leitura_primaria_opus": "REAVALIACAO INTRA 16:42 (apos lapso · BOOT era 09:48). Coil intraday APERTADO entre fundo $76,105 (defendido 3x · capitulacao 4H absorvida vol 12k) e teto $77,024-77,054 (rejeitado 2x). Volume 15m secando = energia drenando. Macro D/4H BEAR intacto (bounce dentro de baixa, NAO virada). BMSB 20W $75,026 = piso estrutural real · 21W EMA $78,505 = teto.",
-    "cenarios_opus": [
-      "A SHORT continuacao (macro-aligned · PRIMARIO): close 1H < $75,999 c/ vol → alvo $74,800",
-      "SHORT intra: rejeicao teto $77,024-77,054 (2x rej) c/ exaustao 5m → alvo $76,400/76,105",
-      "B LONG intra: defesa $76,105-76,200 c/ camada2_bottom 5m → alvo $77,000 (MODO 2 SELETIVO contra-trend)",
-      "C coil $76,1-77,0k continua · sem trade ate gatilho fechar"
-    ],
+    "leitura_primaria_opus": "RANGE DE EXAUSTÃO DE QUEDA · Coil bearish $76.1k-$77.4k há ~30h (24-25 candles 1H) · Toda tentativa de upside é vendida ($77,377 17/05, $77,054 17/05, $77,014 19/05) · Toda tentativa de breakdown é absorvida ($76,105 17/05, $76,000 17/05 wick, $76,189 19/05) · D close hoje DOJI/HIGHWAVE/LONGLEGGEDDOJI · vela de INDECISÃO fechada no centro do range · Volume D hoje 41K (vs 82K dia 17/05 onde testou $76k) = compressão progressiva · Resolução estrutural exige rompimento de uma das bordas COM volume +50% acima da média recente · Sem isso, range continua. Bias macro BEAR mantém prioridade (cenário A SHORT bordas superiores · cenário B LONG só seletivo MODO 2 em borda inferior).",
+    "cenarios_opus": {
+      "cenario_A_SHORT_continuacao_BEAR": {
+        "probabilidade": "45%",
+        "gatilho": "Close 1H < $76,000 c/ vol >=8K OU rejeição confirmada $77,377/$77,766 (candle 5m fechado bearish · MODO2 SELETIVO topo)",
+        "entry_zona": "$77,200-$77,400 (rejeição teto) OU $75,950 (re-test breakdown)",
+        "sl": "$77,830 (acima neckline $77,766) OU $76,250 (acima break $76k)",
+        "tp1": "+0.5% mecânico (LEI #10 30%)",
+        "tp2": "$74,800 (lows abril) · TP2 estrutural cripto",
+        "rr": "3,0-3,5x",
+        "invalidacao": "Close 4H > $78,150"
+      },
+      "cenario_B_LONG_bounce_bottom": {
+        "probabilidade": "30%",
+        "gatilho": "Close 1H > $77,377 + camada2_top 5m confirmado OU pullback $76,600 c/ camada2_bot 5m wick>=35%",
+        "entry_zona": "$77,000-$77,100 (breakout retest) OU $76,650 (defesa pullback)",
+        "sl": "$76,430 (fundo 1H buffer) OU $76,250",
+        "tp1": "+0.5% mecânico",
+        "tp2": "$78,150-$78,500 (resistencia D · zona pullback profundo)",
+        "rr": "2,5-3,0x",
+        "invalidacao": "Close 1H < $76,000 (rompe range bottom = cenário A confirma)",
+        "nota": "MODO 2 SELETIVO contra-trend BEAR macro · só com confluência camada2 estrutural"
+      },
+      "cenario_C_RANGE_continua": {
+        "probabilidade": "25%",
+        "comportamento": "Coil $76.1k-$77.4k continua 12-24h adicionais · sem entrada · aguardar wakeup por wedge break ou camada2 confirmado",
+        "tempo_max": "Até close 4H 04:00 UTC-4 20/05 · após isso revisa-se viés"
+      }
+    },
     "setups_pre_armados": [
       {
-        "nome": "LONG_bounce_MODO2",
-        "direcao": "Buy",
-        "gatilho": "close 1H > $77,377 + Camada2 fundo 5m fechado OU pullback $76,600 + camada2_bottom 5m",
-        "entry": 77000,
-        "sl": 76430,
-        "tp1": 77385,
-        "tp2": 78500,
-        "rr": 2.63,
-        "tier": "T1-T2",
-        "valido": true,
-        "modo": "MODO 2 SELETIVO contra-trend"
+        "label": "SHORT_BORDA_SUPERIOR_$77.4k",
+        "side": "SHORT",
+        "entry_zona": "$77,250-$77,400",
+        "gatilho_5m": "Rejeição candle 5m fechado bearish ABAIXO de $77,377 c/ vol >=2x média",
+        "sl": "$77,830",
+        "tp1": "$76,990 (+0.5% mecânico)",
+        "tp2": "$75,750-$74,800 (1ª target suporte D + lows abril)",
+        "rr": "3,1x",
+        "modo": "MODO 1 (macro aligned BEAR) com confluência estrutural · NÃO requer Camada 2 bot (estamos no topo)",
+        "ativo": true
       },
       {
-        "nome": "SHORT_rejeicao_supply",
-        "direcao": "Sell",
-        "gatilho": "rejeicao confirmada $77,766/$78,150 candle 5m fechado bearish OU close 1H < $75,999 c/ volume",
-        "entry": 77700,
-        "sl": 78650,
-        "tp1": 77311,
-        "tp2": 74800,
-        "rr": 3.05,
-        "tier": "T1-T2",
-        "valido": true,
-        "modo": "alinhado macro bear"
+        "label": "SHORT_BREAKDOWN_$76k",
+        "side": "SHORT",
+        "entry_zona": "$75,950 (re-test após break)",
+        "gatilho_1h": "Close 1H < $76,000 c/ vol >=8K · re-test do break $75.95k-$76.05k",
+        "sl": "$76,250",
+        "tp1": "+0.5% mecânico",
+        "tp2": "$74,800",
+        "rr": "3,9x",
+        "modo": "MODO 1 (macro aligned BEAR · break estrutural)",
+        "ativo": true
+      },
+      {
+        "label": "LONG_BOUNCE_$76.6k (MODO 2 SELETIVO)",
+        "side": "LONG",
+        "entry_zona": "$76,650-$76,720",
+        "gatilho_5m": "Camada2_bottom 5m fechado wick>=35% + RSI div bull 1H confirmada",
+        "sl": "$76,250",
+        "tp1": "+0.5% mecânico",
+        "tp2": "$77,400-$77,766",
+        "rr": "2,5x",
+        "modo": "MODO 2 SELETIVO (contra-trend) · exige sinal estrutural Camada 2 confirmado",
+        "ativo": true,
+        "warning": "Contra macro BEAR · só com gatilho mecânico claro · cicatriz LONG hoje 18:04 -$23 era setup similar mas IH&S invalidou · cautela"
+      },
+      {
+        "label": "LONG_BREAKOUT_$77.4k (MODO 2 SELETIVO)",
+        "side": "LONG",
+        "entry_zona": "$77,150-$77,250 (re-test após break)",
+        "gatilho_1h": "Close 1H > $77,377 + camada2_top 5m confirmado",
+        "sl": "$76,790",
+        "tp1": "+0.5% mecânico",
+        "tp2": "$78,150-$78,500",
+        "rr": "2,3x",
+        "modo": "MODO 2 SELETIVO contra-trend BEAR · exige confluência estrutural",
+        "ativo": true
       }
     ],
-    "ponto_nao_retorno": "close 1H < $75,999 c/ vol = cenario A confirma · close 4H > $77,766 = bear curto enfraquece",
-    "proximo_marco": "close 1H 17:00 UTC-4 · reavaliar nivel intra a cada ciclo (NUNCA mais congelar)"
+    "ponto_nao_retorno": {
+      "bear_invalida_close_4H_acima": 78150,
+      "bull_invalida_close_4H_abaixo": 75750,
+      "nota": "Se mark ficar entre $75.75k-$78.15k · macro range mantém · cada hour-close pode mover o pêndulo"
+    },
+    "proximo_marco": "Close 1H 21:00 UTC-4 (em ~55min) · revisar volume real + posição vs EMAs 1H 21/50 · gatilho de break = vol >=8K na hora de break"
   },
   "execution_mode": "AUTO",
   "manual_approval_required": false,
