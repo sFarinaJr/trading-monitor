@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "20/05/2026 22:03:32",
-  "last_github_push": "20/05 22:03",
-  "last_github_push_ts": 1779329012.6625779,
+  "ultimo_update": "20/05/2026 22:04:25",
+  "last_github_push": "20/05 22:04",
+  "last_github_push_ts": 1779329065.2379751,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -15,7 +15,7 @@
     "progresso_vs_baseline_usd": -167.24,
     "delta_vs_baseline": -167.24,
     "pnl_fenix_desde_baseline": -167.24,
-    "updated_at": "2026-05-20T22:03:32-04:00"
+    "updated_at": "2026-05-20T22:04:24-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -298,23 +298,68 @@
   "execution_mode": "AUTO",
   "manual_approval_required": false,
   "price_watch": {
-    "ts": "2026-05-19T09:48:00-04:00",
+    "ts": "2026-05-20T22:04:04-04:00",
     "levels": [
       {
-        "price": 78650,
+        "price": 78569,
         "direction": "above",
         "tier": "alto",
-        "reason": "Resistencia D / topo 4H · INVALIDACAO bear de curto (close 4H acima)",
-        "decisao_pre_armada": "Close 4H > $78,650 invalida bear de curto prazo. NAO chase. Reavaliar tese p/ altista maior. SHORT cenario A so se rejeicao confirmada ANTES deste nivel.",
+        "reason": "LH 4H 16/05 · acima invalida tese bear macro de curto · PNR bear",
+        "decisao_pre_armada": "Close 4H acima de $78,569 = virada macro curta CONFIRMADA. Cancelar setups SHORT. Reavaliar tese p/ continuação bull até $79,500-$80,200 (alvo wave B Elliott).",
         "active": true,
         "triggered": false
       },
       {
-        "price": 78150,
+        "price": 78400,
         "direction": "above",
         "tier": "alto",
-        "reason": "Supply pesada downtrend (zona pullback profundo)",
-        "decisao_pre_armada": "Se preco alcanca $78,150 SEM ter rompido estrutura 4H: avaliar SHORT cenario A (rejeicao 5m fechado bearish). Se rompeu com forca: aguardar retest, NAO short cego.",
+        "reason": "LTB D descendente projetada · zona supply MODO2 SHORT",
+        "decisao_pre_armada": "Preço $78,300-$78,500 + camada2_top 5m bearish + 🗣️ topo 15m+1H = gatilho SHORT setup #4. Entry ~$78,400 SL $78,700 TP2 $77,766 R:R 2.11x.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 78300,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "Close 4H acima = BREAKOUT LTB D · gatilho LONG #1",
+        "decisao_pre_armada": "Close 4H 24:00 ≥ $78,300 com volume + retest pullback c/ Camada 2 fundo 5m = LONG setup #1. Entry $78,300 SL $77,900 TP2 $79,068 R:R 1.92x. Sem volume ou sem retest = aguardar.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 77766,
+        "direction": "below",
+        "tier": "medio",
+        "reason": "Neckline double bottom 4H · TP2 short setup #4 e #5 · suporte se quebrado vira resistência",
+        "decisao_pre_armada": "TP2 estrutural setup SHORT #5 (saída via trail LEI #5). Se preço cair abaixo desse nível pós-bounce = reforça setup SHORT continuação.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 77450,
+        "direction": "below",
+        "tier": "medio",
+        "reason": "Zona pullback bull flag · gatilho LONG setup #2 (neckline retest)",
+        "decisao_pre_armada": "Preço atinge $77,377-$77,500 + camada2_bottom 5m + 🗣️ fundo 15m = LONG setup #2. Entry $77,450 SL $77,150 TP2 $78,142 R:R 2.31x.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 77000,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "Psicológico + LTA ascendente curta + low 1H 13:00 · zona LONG pullback profundo",
+        "decisao_pre_armada": "Preço atinge $76,977-$77,000 + camada2_bottom 5m + 🗣️ fundo 1H + vol ≥1,3x = LONG setup #3. Entry $77,000 SL $76,643 TP2 $77,766 R:R 2.15x. Perda de $77,000 sem reação compromete LTA.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 76105,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "Double bottom #2 · suporte estrutural FORTE · pré-PNR",
+        "decisao_pre_armada": "Close 1H abaixo de $76,105 = double bottom INVALIDADO. Compromete tese bull curto. Próximo nível = $75,999 (PNR). NÃO entrar LONG · aguardar reação.",
         "active": true,
         "triggered": false
       },
@@ -322,17 +367,8 @@
         "price": 75999,
         "direction": "below",
         "tier": "alto",
-        "reason": "Demanda 2x-defendida / low 4H capitulation · PONTO DE NAO RETORNO",
-        "decisao_pre_armada": "Close 1H/4H < $75,999 c/ volume expansao INVALIDA bounce -> ativa cenario A SHORT continuacao bear. Entry retest $75,950 SL $76,720 (acima fundo quebrado) TP2 $74,800. Gatilho estrutural de alta prioridade.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 75750,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "Suporte D 07/05 · TARGET 1 do cenario A SHORT",
-        "decisao_pre_armada": "Se cenario A ativo e preco atinge $75,750: zona de parcial/decisao. Watcher monitora · avaliar trail estrutural.",
+        "reason": "LOW absoluto 7 dias · PONTO NÃO RETORNO · close 1H/4H abaixo ativa SHORT continuação",
+        "decisao_pre_armada": "Close 1H/4H abaixo de $75,999 com volume expansão INVALIDA bounce · ativa SHORT setup #6 continuação bear. Entry retest $75,950 SL $76,450 TP2 $74,800 R:R 2.30x. Gatilho ESTRUTURAL alta prioridade.",
         "active": true,
         "triggered": false
       },
@@ -340,8 +376,8 @@
         "price": 74800,
         "direction": "below",
         "tier": "alto",
-        "reason": "Lows abril · TP2 cenario A SHORT",
-        "decisao_pre_armada": "TP2 estrutural cenario A. Saida via trail (LEI #5 · nunca ordem TP2 automatica). Reavaliar tese macro se atingido.",
+        "reason": "Lows abril · TP2 cenário SHORT continuação",
+        "decisao_pre_armada": "TP2 estrutural setup #6 SHORT. Saída via trail (LEI #5 · nunca ordem TP2 automática). Reavaliar tese macro se atingido.",
         "active": true,
         "triggered": false
       }
