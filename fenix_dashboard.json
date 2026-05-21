@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "21/05/2026 09:38:44",
-  "last_github_push": "21/05 09:38",
-  "last_github_push_ts": 1779370724.0597172,
+  "ultimo_update": "21/05/2026 09:39:46",
+  "last_github_push": "21/05 09:39",
+  "last_github_push_ts": 1779370786.512267,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -15,7 +15,7 @@
     "progresso_vs_baseline_usd": -161.51,
     "delta_vs_baseline": -161.51,
     "pnl_fenix_desde_baseline": -161.51,
-    "updated_at": "2026-05-21T09:38:43-04:00"
+    "updated_at": "2026-05-21T09:39:45-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -340,15 +340,6 @@
         "tier": "alto",
         "reason": "Close 4H acima = BREAKOUT LTB D · gatilho LONG #1",
         "decisao_pre_armada": "Close 4H 24:00 ≥ $78,300 com volume + retest pullback c/ Camada 2 fundo 5m = LONG setup #1. Entry $78,300 SL $77,900 TP2 $79,068 R:R 1.92x. Sem volume ou sem retest = aguardar.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 77000,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "Psicológico + LTA ascendente curta + low 1H 13:00 · zona LONG pullback profundo",
-        "decisao_pre_armada": "Preço atinge $76,977-$77,000 + camada2_bottom 5m + 🗣️ fundo 1H + vol ≥1,3x = LONG setup #3. Entry $77,000 SL $76,643 TP2 $77,766 R:R 2.15x. Perda de $77,000 sem reação compromete LTA.",
         "active": true,
         "triggered": false
       },
