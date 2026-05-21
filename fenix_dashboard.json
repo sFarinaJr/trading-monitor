@@ -1,26 +1,26 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "21/05/2026 11:47:32",
-  "last_github_push": "21/05 11:47",
-  "last_github_push_ts": 1779378452.724619,
+  "ultimo_update": "21/05/2026 11:48:28",
+  "last_github_push": "21/05 11:48",
+  "last_github_push_ts": 1779378508.7456052,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
   "saldo": {
-    "cum_realised_pnl": -6286.74,
-    "cumPnL_unified_usd": -6286.74,
-    "unrealisedPnl": 26.97,
-    "progresso_vs_baseline_usd": -162.74,
-    "delta_vs_baseline": -162.74,
-    "pnl_fenix_desde_baseline": -162.74,
-    "updated_at": "2026-05-21T11:47:32-04:00"
+    "cum_realised_pnl": -6279.36,
+    "cumPnL_unified_usd": -6279.36,
+    "unrealisedPnl": 25.23,
+    "progresso_vs_baseline_usd": -155.36,
+    "delta_vs_baseline": -155.36,
+    "pnl_fenix_desde_baseline": -155.36,
+    "updated_at": "2026-05-21T11:48:28-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
-    "current_pnl": -6286.74,
-    "diff_usd": -162.74
+    "current_pnl": -6279.36,
+    "diff_usd": -155.36
   },
   "posicao_atual": {
     "side": "LONG",
@@ -34,6 +34,16 @@
     "tp2_target_estrutural": null
   },
   "trades_recentes": [
+    {
+      "timestamp": "2026-05-21T10:58:45",
+      "symbol": "BTCUSDT",
+      "side": "LONG",
+      "entry_price": 76920.0,
+      "exit_price": 77304.6,
+      "quantity": 0.02,
+      "pnl_usd": 7.08,
+      "pnl_percent": 0.5
+    },
     {
       "timestamp": "2026-05-21T02:05:33",
       "symbol": "BTCUSDT",
@@ -173,16 +183,6 @@
       "quantity": 0.1,
       "pnl_usd": -27.38,
       "pnl_percent": -0.25
-    },
-    {
-      "timestamp": "2026-05-18T09:13:00",
-      "symbol": "BTCUSDT",
-      "side": "SHORT",
-      "entry_price": 77212.147,
-      "exit_price": 77205.7,
-      "quantity": 0.068,
-      "pnl_usd": -5.01,
-      "pnl_percent": 0.01
     }
   ],
   "current_thesis": {
