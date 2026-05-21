@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "20/05/2026 23:43:27",
+  "ultimo_update": "20/05/2026 23:43:34",
   "last_github_push": "20/05 23:43",
-  "last_github_push_ts": 1779335007.573602,
+  "last_github_push_ts": 1779335014.2862809,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -185,7 +185,7 @@
   "current_thesis": {
     "thesis_id": null,
     "boot_ts": "2026-05-20T22:03:13-04:00",
-    "ultimo_update": "2026-05-20T23:41:30-04:00",
+    "ultimo_update": "2026-05-20T23:43:34-04:00",
     "status": null,
     "mark_at_boot": 77789.9,
     "mark_now": null,
@@ -286,7 +286,7 @@
       }
     ],
     "ponto_nao_retorno": null,
-    "proximo_marco": "⏰ Próximo · Close 4H 24:00 UTC-4 (~20min) · decide A (rompe $78,300 → continuação bull) vs B (rejeição $78,150 → SHORT contra-bounce R:R 3.83x). Antes disso · monitorar reação intra-1H em $77,500-$78,150 · Camada 2 5m fechada em $78,000-$78,150 + 🗣️ topo confluente = gatilho SHORT imediato."
+    "proximo_marco": "Close 4H 24:00 UTC-4 (~20min) · decide A (rompe $78,300 → continuação bull) vs B (rejeição $78,150 → SHORT contra-bounce R:R 3.83x). Antes disso · monitorar reação intra-1H em $77,500-$78,150 · Camada 2 5m fechada em $78,000-$78,150 + 🗣️ topo confluente = gatilho SHORT imediato."
   },
   "execution_mode": "AUTO",
   "manual_approval_required": false,
