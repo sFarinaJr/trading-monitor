@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "21/05/2026 06:25:56",
-  "last_github_push": "21/05 06:25",
-  "last_github_push_ts": 1779359156.30224,
+  "ultimo_update": "21/05/2026 06:26:52",
+  "last_github_push": "21/05 06:26",
+  "last_github_push_ts": 1779359212.080247,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -15,7 +15,7 @@
     "progresso_vs_baseline_usd": -161.51,
     "delta_vs_baseline": -161.51,
     "pnl_fenix_desde_baseline": -161.51,
-    "updated_at": "2026-05-21T06:25:55-04:00"
+    "updated_at": "2026-05-21T06:26:51-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -340,15 +340,6 @@
         "tier": "alto",
         "reason": "Close 4H acima = BREAKOUT LTB D · gatilho LONG #1",
         "decisao_pre_armada": "Close 4H 24:00 ≥ $78,300 com volume + retest pullback c/ Camada 2 fundo 5m = LONG setup #1. Entry $78,300 SL $77,900 TP2 $79,068 R:R 1.92x. Sem volume ou sem retest = aguardar.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 77450,
-        "direction": "below",
-        "tier": "medio",
-        "reason": "Zona pullback bull flag · gatilho LONG setup #2 (neckline retest)",
-        "decisao_pre_armada": "Preço atinge $77,377-$77,500 + camada2_bottom 5m + 🗣️ fundo 15m = LONG setup #2. Entry $77,450 SL $77,150 TP2 $78,142 R:R 2.31x.",
         "active": true,
         "triggered": false
       },
