@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "20/05/2026 22:02:39",
-  "last_github_push": "20/05 22:02",
-  "last_github_push_ts": 1779328959.8751411,
+  "ultimo_update": "20/05/2026 22:03:32",
+  "last_github_push": "20/05 22:03",
+  "last_github_push_ts": 1779329012.6625779,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -15,7 +15,7 @@
     "progresso_vs_baseline_usd": -167.24,
     "delta_vs_baseline": -167.24,
     "pnl_fenix_desde_baseline": -167.24,
-    "updated_at": "2026-05-20T22:02:39-04:00"
+    "updated_at": "2026-05-20T22:03:32-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -187,101 +187,113 @@
   ],
   "current_thesis": {
     "thesis_id": null,
-    "boot_ts": "2026-05-19T20:04:21-04:00",
-    "ultimo_update": "2026-05-19T20:04:21-04:00",
-    "status": "ARMADA · FLAT · 4 setups pre-armados · sentinela 24/7 · LEI vigente",
-    "mark_at_boot": 76860.5,
-    "mark_now": 76860.5,
+    "boot_ts": "2026-05-20T22:03:13-04:00",
+    "ultimo_update": "20/05/2026 22:03:13",
+    "status": null,
+    "mark_at_boot": 77789.9,
+    "mark_now": null,
     "macro_bias_D": {
-      "direcao": "BEAR",
+      "direcao": "BEAR_CORRECTIVO_BOUNCE",
       "score": null
     },
-    "leitura_primaria_opus": "RANGE DE EXAUSTÃO DE QUEDA · Coil bearish $76.1k-$77.4k há ~30h (24-25 candles 1H) · Toda tentativa de upside é vendida ($77,377 17/05, $77,054 17/05, $77,014 19/05) · Toda tentativa de breakdown é absorvida ($76,105 17/05, $76,000 17/05 wick, $76,189 19/05) · D close hoje DOJI/HIGHWAVE/LONGLEGGEDDOJI · vela de INDECISÃO fechada no centro do range · Volume D hoje 41K (vs 82K dia 17/05 onde testou $76k) = compressão progressiva · Resolução estrutural exige rompimento de uma das bordas COM volume +50% acima da média recente · Sem isso, range continua. Bias macro BEAR mantém prioridade (cenário A SHORT bordas superiores · cenário B LONG só seletivo MODO 2 em borda inferior).",
+    "leitura_primaria_opus": "Bounce corretivo dentro do downtrend macro D · Wave B contracorretiva Elliott (alvo 38.2-61.8% do leg $82,811→$75,999 = $78,602-$80,208). 1H 20:00 bull engolfing testou $78,051 mas FALHOU romper $78,150 (38.2% fib do swing curto $81,639→$75,999). 21:00 1H em formação está recuando suavemente ($77,789 vs high $78,142) · indica possível exaustão local do bounce. Próximo movimento depende de: (a) close 4H acima de $78,300 = quebra LTB D → continuação bull (cenário A); (b) rejeição $78,000-$78,150 + Camada 2 bear 5m = SHORT contra-bounce (cenário B); (c) range $77,000-$78,150 persiste = SEM ENTRADA (cenário C).",
     "cenarios_opus": {
-      "cenario_A_SHORT_continuacao_BEAR": {
-        "probabilidade": "45%",
-        "gatilho": "Close 1H < $76,000 c/ vol >=8K OU rejeição confirmada $77,377/$77,766 (candle 5m fechado bearish · MODO2 SELETIVO topo)",
-        "entry_zona": "$77,200-$77,400 (rejeição teto) OU $75,950 (re-test breakdown)",
-        "sl": "$77,830 (acima neckline $77,766) OU $76,250 (acima break $76k)",
-        "tp1": "+0.5% mecânico (LEI #10 30%)",
-        "tp2": "$74,800 (lows abril) · TP2 estrutural cripto",
-        "rr": "3,0-3,5x",
-        "invalidacao": "Close 4H > $78,150"
-      },
-      "cenario_B_LONG_bounce_bottom": {
-        "probabilidade": "30%",
-        "gatilho": "Close 1H > $77,377 + camada2_top 5m confirmado OU pullback $76,600 c/ camada2_bot 5m wick>=35%",
-        "entry_zona": "$77,000-$77,100 (breakout retest) OU $76,650 (defesa pullback)",
-        "sl": "$76,430 (fundo 1H buffer) OU $76,250",
-        "tp1": "+0.5% mecânico",
-        "tp2": "$78,150-$78,500 (resistencia D · zona pullback profundo)",
-        "rr": "2,5-3,0x",
-        "invalidacao": "Close 1H < $76,000 (rompe range bottom = cenário A confirma)",
-        "nota": "MODO 2 SELETIVO contra-trend BEAR macro · só com confluência camada2 estrutural"
-      },
-      "cenario_C_RANGE_continua": {
-        "probabilidade": "25%",
-        "comportamento": "Coil $76.1k-$77.4k continua 12-24h adicionais · sem entrada · aguardar wakeup por wedge break ou camada2 confirmado",
-        "tempo_max": "Até close 4H 04:00 UTC-4 20/05 · após isso revisa-se viés"
-      }
+      "cenario_A_CONTINUACAO_BOUNCE": "Close 4H 24:00 acima de $78,300 + retest $78,000-$78,150 c/ Camada 2 fundo 5m fechado → LONG entry $78,300 SL $77,900 TP2 $79,068. R:R 1,92x. Probabilidade estimada 35% · depende close 4H que ainda falta 2h45min + LTB D ser realmente rompida.",
+      "cenario_B_REJEICAO_SHORT": "Preço retorna $78,000-$78,142 SEM romper $78,200 + camada2_top 5m bearish + 🗣️ topo 1H → SHORT entry $78,050 SL $78,200 TP2 $77,476. R:R 3,83x. Probabilidade estimada 40% · falha break já parcialmente vista em 1H 20:00 ($78,051 rejeição) · sinal forte se confirma close 4H abaixo de $78,000.",
+      "cenario_C_RANGE_PERSISTE": "Preço oscila $77,200-$78,150 · SEM ENTRADA · aguardar gatilho mecânico claro. Probabilidade estimada 25%."
     },
     "setups_pre_armados": [
       {
-        "label": "SHORT_BORDA_SUPERIOR_$77.4k",
-        "side": "SHORT",
-        "entry_zona": "$77,250-$77,400",
-        "gatilho_5m": "Rejeição candle 5m fechado bearish ABAIXO de $77,377 c/ vol >=2x média",
-        "sl": "$77,830",
-        "tp1": "$76,990 (+0.5% mecânico)",
-        "tp2": "$75,750-$74,800 (1ª target suporte D + lows abril)",
-        "rr": "3,1x",
-        "modo": "MODO 1 (macro aligned BEAR) com confluência estrutural · NÃO requer Camada 2 bot (estamos no topo)",
-        "ativo": true
+        "id": "long_breakout_ltb_d",
+        "direcao": "LONG",
+        "nome": "Breakout LTB descendente D",
+        "tipo": "MODO 1 macro-aligned bullish",
+        "entry": 78300,
+        "sl": 77900,
+        "tp1": 78550,
+        "tp2": 79068,
+        "rr": 1.92,
+        "gatilho": "Close 4H ≥ $78,300 + Camada 2 retest pullback OU 🗣️ fundo 15m+1H cluster",
+        "tier": "T2",
+        "estado": "armado"
       },
       {
-        "label": "SHORT_BREAKDOWN_$76k",
-        "side": "SHORT",
-        "entry_zona": "$75,950 (re-test após break)",
-        "gatilho_1h": "Close 1H < $76,000 c/ vol >=8K · re-test do break $75.95k-$76.05k",
-        "sl": "$76,250",
-        "tp1": "+0.5% mecânico",
-        "tp2": "$74,800",
-        "rr": "3,9x",
-        "modo": "MODO 1 (macro aligned BEAR · break estrutural)",
-        "ativo": true
+        "id": "long_pullback_neckline",
+        "direcao": "LONG",
+        "nome": "Pullback retest neckline double bottom",
+        "tipo": "MODO 2 SELETIVO",
+        "entry": 77450,
+        "sl": 77150,
+        "tp1": 77680,
+        "tp2": 78142,
+        "rr": 2.31,
+        "gatilho": "Preço atinge $77,377-$77,500 + camada2_bottom 5m + 🗣️ fundo 15m",
+        "tier": "T2",
+        "estado": "armado"
       },
       {
-        "label": "LONG_BOUNCE_$76.6k (MODO 2 SELETIVO)",
-        "side": "LONG",
-        "entry_zona": "$76,650-$76,720",
-        "gatilho_5m": "Camada2_bottom 5m fechado wick>=35% + RSI div bull 1H confirmada",
-        "sl": "$76,250",
-        "tp1": "+0.5% mecânico",
-        "tp2": "$77,400-$77,766",
-        "rr": "2,5x",
-        "modo": "MODO 2 SELETIVO (contra-trend) · exige sinal estrutural Camada 2 confirmado",
-        "ativo": true,
-        "warning": "Contra macro BEAR · só com gatilho mecânico claro · cicatriz LONG hoje 18:04 -$23 era setup similar mas IH&S invalidou · cautela"
+        "id": "long_pullback_profundo",
+        "direcao": "LONG",
+        "nome": "Pullback profundo HL ascendente",
+        "tipo": "MODO 2 SELETIVO",
+        "entry": 77000,
+        "sl": 76643,
+        "tp1": 77140,
+        "tp2": 77766,
+        "rr": 2.15,
+        "gatilho": "Preço atinge $76,977-$77,000 + camada2_bottom 5m + 🗣️ fundo 1H + vol ≥1,3x MA",
+        "tier": "T2",
+        "estado": "armado"
       },
       {
-        "label": "LONG_BREAKOUT_$77.4k (MODO 2 SELETIVO)",
-        "side": "LONG",
-        "entry_zona": "$77,150-$77,250 (re-test após break)",
-        "gatilho_1h": "Close 1H > $77,377 + camada2_top 5m confirmado",
-        "sl": "$76,790",
-        "tp1": "+0.5% mecânico",
-        "tp2": "$78,150-$78,500",
-        "rr": "2,3x",
-        "modo": "MODO 2 SELETIVO contra-trend BEAR · exige confluência estrutural",
-        "ativo": true
+        "id": "short_rejeicao_ltb",
+        "direcao": "SHORT",
+        "nome": "Rejeição LTB descendente D",
+        "tipo": "MODO 2 SELETIVO contra-trend",
+        "entry": 78400,
+        "sl": 78700,
+        "tp1": 78310,
+        "tp2": 77766,
+        "rr": 2.11,
+        "gatilho": "Preço alcança $78,300-$78,500 + camada2_top 5m + 🗣️ topo 15m+1H",
+        "tier": "T2",
+        "estado": "armado"
+      },
+      {
+        "id": "short_falha_break_78142",
+        "direcao": "SHORT",
+        "nome": "Falha break $78,142 + retest 5m",
+        "tipo": "MODO 2 SELETIVO contra-bounce",
+        "entry": 78050,
+        "sl": 78200,
+        "tp1": 77990,
+        "tp2": 77476,
+        "rr": 3.83,
+        "gatilho": "Preço retorna $78,000-$78,142 SEM romper $78,200 + camada2_top 5m + 🗣️ topo 1H",
+        "tier": "T2",
+        "estado": "armado · CANDIDATO MAIS PROVÁVEL CURTO PRAZO"
+      },
+      {
+        "id": "short_continuacao_pnr",
+        "direcao": "SHORT",
+        "nome": "Continuação bear · perda PNR $75,999",
+        "tipo": "MODO 1 macro-aligned bearish",
+        "entry": 75950,
+        "sl": 76450,
+        "tp1": 75800,
+        "tp2": 74800,
+        "rr": 2.3,
+        "gatilho": "Close 1H/4H < $75,999 com volume expansão + retest $75,950",
+        "tier": "T1",
+        "estado": "armado · só ativa se bounce falhar e quebra"
       }
     ],
     "ponto_nao_retorno": {
-      "bear_invalida_close_4H_acima": 78150,
-      "bull_invalida_close_4H_abaixo": 75750,
-      "nota": "Se mark ficar entre $75.75k-$78.15k · macro range mantém · cada hour-close pode mover o pêndulo"
+      "pnr_bear": "$78,569 (close D 4H/D · LH 16/05) · acima invalida tese bear macro de curto",
+      "pnr_bear_estendido": "$80,400 BMSB · acima inverte macro pra bull",
+      "pnr_bull": "$75,999 (low absoluto 7 dias) · close 1H/4H abaixo ativa continuação bear · invalida bounce corretivo"
     },
-    "proximo_marco": "Close 1H 21:00 UTC-4 (em ~55min) · revisar volume real + posição vs EMAs 1H 21/50 · gatilho de break = vol >=8K na hora de break"
+    "proximo_marco": "Close 4H 24:00 UTC-4 (~2h45min) · decide A (rompe $78,300 → continuação) vs B (rejeição $78,150 → SHORT contra-bounce). Antes disso · monitorar reação intra-1H em $77,500-$78,150 · Camada 2 5m fechada em $78,000-$78,150 = gatilho SHORT imediato."
   },
   "execution_mode": "AUTO",
   "manual_approval_required": false,
