@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "20/05/2026 23:53:31",
-  "last_github_push": "20/05 23:53",
-  "last_github_push_ts": 1779335611.372857,
+  "ultimo_update": "20/05/2026 23:54:25",
+  "last_github_push": "20/05 23:54",
+  "last_github_push_ts": 1779335665.505186,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -185,7 +185,7 @@
   "current_thesis": {
     "thesis_id": null,
     "boot_ts": "2026-05-20T22:03:13-04:00",
-    "ultimo_update": "2026-05-20T23:49:21-04:00",
+    "ultimo_update": "2026-05-20T23:54:13-04:00",
     "status": null,
     "mark_at_boot": 77789.9,
     "mark_now": null,
@@ -193,7 +193,7 @@
       "direcao": "BEAR_CORRECTIVO_BOUNCE",
       "score": -2.0
     },
-    "leitura_primaria_opus": "Bounce corretivo dentro do downtrend macro D · Wave B contracorretiva Elliott (alvo 38.2-61.8% do leg $82,811→$75,999 = $78,602-$80,208).\n\n1H 20:00 bull engolfing testou $78,051 mas FALHOU romper $78,150 (38.2% fib do swing curto $81,639→$75,999). 1H 21:00-23:00 em recuo suave ($77,965 vs high $78,142) · possível exaustão local do bounce.\n\nPróximo movimento depende de · (a) close 4H acima $78,300 = quebra LTB D → continuação bull (35%); (b) rejeição $78,000-$78,150 + Camada 2 bear 5m = SHORT contra-bounce (40% · preferido R:R 3.83x); (c) range $77,000-$78,150 persiste = SEM ENTRADA (25%).",
+    "leitura_primaria_opus": "Bounce corretivo dentro do downtrend macro D (-8.2% 12 dias · $82,811→$75,999) · Wave B contracorretiva Elliott (alvo 38.2-61.8% do leg = $78,602-$80,208). EMAs D 9/21 ainda bear-stacked ($78,230/$78,474 vs close $77,518). Volume D 19/05 abaixo MA20 (83%) · bounce sem convicção forte.\n\n1H 20:00 bull engolfing testou $78,051 mas FALHOU romper $78,150 (38.2% fib do swing $81,639→$75,999). 1H 21:00-23:00 em recuo suave ($77,965 vs high $78,142) · possível exaustão local do bounce.\n\nPróximo movimento depende de · (a) close 4H acima $78,300 = quebra LTB D → continuação bull (35%); (b) rejeição $78,000-$78,150 + Camada 2 bear 5m = SHORT contra-bounce (40% · preferido R:R 3.83x); (c) range $77,000-$78,150 persiste = SEM ENTRADA (25%).",
     "cenarios_opus": {
       "cenário_A_CONTINUAÇÃO_BULL": {
         "prob": 35,
