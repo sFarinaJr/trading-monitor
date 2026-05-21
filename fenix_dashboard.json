@@ -1,39 +1,49 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "21/05/2026 12:43:42",
-  "last_github_push": "21/05 12:43",
-  "last_github_push_ts": 1779381822.650474,
+  "ultimo_update": "21/05/2026 12:44:24",
+  "last_github_push": "21/05 12:44",
+  "last_github_push_ts": 1779381864.219973,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
   "saldo": {
-    "cum_realised_pnl": -6279.58,
-    "cumPnL_unified_usd": -6279.58,
-    "unrealisedPnl": 9.23,
-    "progresso_vs_baseline_usd": -155.58,
-    "delta_vs_baseline": -155.58,
-    "pnl_fenix_desde_baseline": -155.58,
-    "updated_at": "2026-05-21T12:43:26-04:00"
+    "cum_realised_pnl": -6276.81,
+    "cumPnL_unified_usd": -6276.81,
+    "unrealisedPnl": 0.0,
+    "progresso_vs_baseline_usd": -152.81,
+    "delta_vs_baseline": -152.81,
+    "pnl_fenix_desde_baseline": -152.81,
+    "updated_at": "2026-05-21T12:44:23-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
-    "current_pnl": -6279.58,
-    "diff_usd": -155.58
+    "current_pnl": -6276.81,
+    "diff_usd": -152.81
   },
   "posicao_atual": {
-    "side": "LONG",
-    "size": 0.06,
-    "avgPrice": 76920.0,
-    "stopLoss": 77004.6,
+    "side": "FLAT",
+    "size": 0,
+    "avgPrice": null,
+    "stopLoss": null,
     "takeProfit": null,
     "tp1_limit": null,
     "tp1_pnl_lock": null,
-    "unrealised_pnl_usd": 8.12,
+    "unrealised_pnl_usd": 0,
     "tp2_target_estrutural": null
   },
   "trades_recentes": [
+    {
+      "timestamp": "2026-05-21T11:00:01",
+      "symbol": "BTCUSDT",
+      "side": "LONG",
+      "entry_price": 76920.0,
+      "exit_price": 77008.5,
+      "quantity": 0.06,
+      "pnl_usd": 1.62,
+      "pnl_percent": 0.12
+    },
     {
       "timestamp": "2026-05-21T10:58:45",
       "symbol": "BTCUSDT",
@@ -173,16 +183,6 @@
       "quantity": 0.03,
       "pnl_usd": 10.56,
       "pnl_percent": 0.5
-    },
-    {
-      "timestamp": "2026-05-19T18:04:13",
-      "symbol": "BTCUSDT",
-      "side": "LONG",
-      "entry_price": 76958.6,
-      "exit_price": 76769.4,
-      "quantity": 0.1,
-      "pnl_usd": -27.38,
-      "pnl_percent": -0.25
     }
   ],
   "current_thesis": {
