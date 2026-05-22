@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "21/05/2026 22:29:10",
+  "ultimo_update": "21/05/2026 22:29:36",
   "last_github_push": "21/05 22:29",
-  "last_github_push_ts": 1779416950.26652,
+  "last_github_push_ts": 1779416976.470664,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -239,7 +239,12 @@
         "tier": "T2",
         "macro_aligned": true,
         "invalidacao": "close 4H acima $77,790",
-        "razao_estrutural": "LH 4H quádruplo · 38.2% fib + cluster pivôs $77,727-$77,783 · 1H compressão break SHORT"
+        "razao_estrutural": "LH 4H quádruplo · 38.2% fib + cluster pivôs $77,727-$77,783 · 1H compressão break SHORT",
+        "direcao": "SHORT",
+        "lado": "SHORT",
+        "nome": "SHORT_continuacao_retest_topo",
+        "gatilho": "$77,580-$77,650",
+        "entrada": 77600
       },
       {
         "tipo": "SHORT_breakdown_market",
@@ -253,7 +258,12 @@
         "tier": "T1",
         "macro_aligned": true,
         "invalidacao": "close 1H acima $77,650 com vol expansão",
-        "razao_estrutural": "BOS bear curto · break LL 1H · momentum SHORT continuação"
+        "razao_estrutural": "BOS bear curto · break LL 1H · momentum SHORT continuação",
+        "direcao": "SHORT",
+        "lado": "SHORT",
+        "nome": "SHORT_breakdown_market",
+        "gatilho": "fill no close 1H abaixo $77,354",
+        "entrada": 77300
       },
       {
         "tipo": "TP2_trade_ativo_short_0.06",
@@ -267,7 +277,12 @@
         "tier": "GESTÃO",
         "macro_aligned": true,
         "invalidacao": "SL hit $77,864 (lock +$5)",
-        "razao_estrutural": "Psicológico $77,000 + zona reflexiva 2× (12/05 e 17/05) · R:R 2.02x · pendente armar Limit reduceOnly"
+        "razao_estrutural": "Psicológico $77,000 + zona reflexiva 2× (12/05 e 17/05) · R:R 2.02x · pendente armar Limit reduceOnly",
+        "direcao": "SHORT",
+        "lado": "SHORT",
+        "nome": "TP2_trade_ativo_short_0.06",
+        "gatilho": "trade já aberto",
+        "entrada": 77950
       }
     ],
     "ponto_nao_retorno": null,
