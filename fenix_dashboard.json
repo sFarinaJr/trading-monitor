@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "22/05/2026 00:05:51",
-  "last_github_push": "22/05 00:05",
-  "last_github_push_ts": 1779422751.4862359,
+  "ultimo_update": "22/05/2026 00:06:46",
+  "last_github_push": "22/05 00:06",
+  "last_github_push_ts": 1779422806.404523,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,11 +11,11 @@
   "saldo": {
     "cum_realised_pnl": -6257.3,
     "cumPnL_unified_usd": -6257.3,
-    "unrealisedPnl": 4.84,
+    "unrealisedPnl": 4.44,
     "progresso_vs_baseline_usd": -133.3,
     "delta_vs_baseline": -133.3,
     "pnl_fenix_desde_baseline": -133.3,
-    "updated_at": "2026-05-22T00:05:50-04:00"
+    "updated_at": "2026-05-22T00:06:45-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -30,7 +30,7 @@
     "takeProfit": null,
     "tp1_limit": 77560.2,
     "tp1_pnl_lock": 7.17,
-    "unrealised_pnl_usd": 4.84,
+    "unrealised_pnl_usd": 4.44,
     "tp2_target_estrutural": 77000
   },
   "trades_recentes": [
@@ -293,15 +293,6 @@
   "price_watch": {
     "ts": "2026-05-21T20:55:00-04:00",
     "levels": [
-      {
-        "price": 77790,
-        "direction": "above",
-        "tier": "alto",
-        "reason": "SL trade ativo + LH 4H $77,783 + buffer · setup A invalidação",
-        "decisao_pre_armada": "Cruzar acima · ALERT score+3 · invalida setup A SHORT retest · SL trade ativo HIT → trade fecha · re-avaliar tese inversão",
-        "active": true,
-        "triggered": false
-      },
       {
         "price": 78070,
         "direction": "above",
