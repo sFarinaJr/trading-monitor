@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "22/05/2026 19:05:37",
-  "last_github_push": "22/05 19:05",
-  "last_github_push_ts": 1779491137.607693,
+  "ultimo_update": "22/05/2026 19:06:20",
+  "last_github_push": "22/05 19:06",
+  "last_github_push_ts": 1779491180.2431848,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -317,15 +317,6 @@
         "tier": "alto",
         "reason": "LH 4H-28 · PNR bear macro · invalida tese bear D completa",
         "decisao_pre_armada": "Cruzar acima · ALERT strategic_breach · BOOT REFRESH · macro D bear invalidada · OPUS reescreve tese · tier baixa pra T1 LONG ativável",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 74900,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "LOW abril (D-26) · TP2 macro extension · onda C Elliott 1.0×",
-        "decisao_pre_armada": "Cruzar abaixo · TP2 final macro · partial 100% trades ativos · re-armar SHORT só com rejeição 4H clara abaixo · MODO 2 SELETIVO pra LONG defensivo",
         "active": true,
         "triggered": false
       }
