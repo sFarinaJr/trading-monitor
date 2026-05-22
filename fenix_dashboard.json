@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "21/05/2026 22:26:28",
-  "last_github_push": "21/05 22:26",
-  "last_github_push_ts": 1779416788.371064,
+  "ultimo_update": "21/05/2026 22:27:03",
+  "last_github_push": "21/05 22:27",
+  "last_github_push_ts": 1779416823.831357,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -188,7 +188,7 @@
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-05-21_20-55",
     "boot_ts": "2026-05-21T20:55:00-04:00",
-    "ultimo_update": "2026-05-21T20:55:00-04:00",
+    "ultimo_update": "2026-05-21T22:26:53-04:00",
     "status": "BOOT_COMPLETO",
     "mark_at_boot": 77413,
     "mark_now": 77413,
@@ -196,34 +196,34 @@
       "direcao": "BEARISH",
       "score": 5.0
     },
-    "leitura_primaria_opus": "BTC fechou D-1 em $77,588 (+0.09%) num movimento de bounce corretivo que ESGOTOU em $78,173 (21/05 04:00) · exatamente o 38.2% fib retracement do swing macro $82,811→$75,999. A LTB descendente do D (3 toques · $82,811→$78,569→$78,173) está INTACTA e foi reafirmada às 17:00 UTC-4 hoje quando a tentativa bull em $78,070 foi rejeitada com BEAR ENGULFING 1H $77,840→$77,355 (devolveu o ganho de +$686 da hora anterior). Pós-rejeição · 4H entrou em COMPRESSÃO extrema $77,164-$77,609 com volume minguando (8249→650 nos últimos 8 candles 1H · queda 92%) · padrão clássico de BEAR FLAG / TRIÂNGULO DESCENDENTE preparando breakdown. 1H tem LH quádruplo $77,783→77,777→77,725→77,727→77,609 e acabou de fazer LL novo $77,499 e $77,354 (rompeu pivôs de hora anteriores). RSI todos TFs neutro (D 44.5 / 4H 48.1 / 1H 49.2) · sem divergência regular nem hidden detectada · indeciso mas sem força bull. EMAs · mark $77,413 ABAIXO de EMA9 D ($77,968), EMA20 D ($78,292), EMA30 D ($78,709) confirmando bearish · em 4H mark cruza EMA9/EMA20 (cluster $77,486) e perto EMA50 4H ($78,212) abaixo · em 1H mark sobre EMA50 1H ($77,396) que virou suporte intra. Score SHORT 5.0/6 vs LONG 0/6 (VETO 1H LH + VETO LEI #24 trade ativo). Setup primário · SHORT continuação retest topo · entry $77,600 zona com R:R TP2 4.84x = válido. Cenário base (60% prob): breakdown $77,164 com close 1H abaixo dispara setup SHORT mecânico para $76,680 → $76,000 → eventualmente $74,900-$74,146 (target C onda Elliott + fib extension -0.272).",
+    "leitura_primaria_opus": "Bounce corretivo dentro do downtrend macro D (-6.52% topo macro $82,811→$76k · Wave B contracorretiva Elliott · alvo 38.2-61.8% do leg = $78,173-$79,200). EMAs D 9/21 bear-stacked · volume D abaixo MA20 (bounce sem convicção).\n\n1H 17:00 testou LTB $78,070 com BIG BULL +$686 mas REJEITOU com BEAR ENGULFING que devolveu o ganho. 1H 21:00 BOS bear $77,354 confirmou breakdown curto mas HAMMER 1H 22:00 absorveu no nível com EXAUSTAOs duplos · momentum perdendo.\n\nPróximo movimento depende de · (a) breakdown < $77,280 retoma alvo $76,680 (35%); (b) bull squeeze rompe $77,642 → $78,070 LTB (35%); (c) grind lateral $77,300-$77,700 prolonga sem entrada (30%).",
     "cenarios_opus": {
       "cenario_A_breakdown_short_continuacao": {
-        "prob": 0.6,
-        "entry": 77400,
+        "prob": 35,
+        "entry": 77280,
         "sl": 77790,
-        "tp1": 77000,
-        "tp2": 76680,
-        "rr": 3.28,
-        "note": "Close 1H abaixo $77,354 (LL atual) confirma BOS bear · executar add SHORT market ou setup A retest $77,600 · alvo $76,680 (LOW 4H-5) → estende $76,000 (double bottom)"
+        "tp1": 76680,
+        "tp2": 76000,
+        "rr": 2.1,
+        "note": "Close 1H abaixo $77,280 confirma retomada BOS bear · alvo escalonado $76,680→$76,000→$74,900"
       },
       "cenario_B_bull_squeeze_curto": {
-        "prob": 0.25,
-        "entry": "wait",
-        "sl": "n/a",
+        "prob": 35,
+        "entry": 77642,
+        "sl": 77280,
         "tp1": 77790,
         "tp2": 78070,
-        "rr": "n/a",
-        "note": "Break compressão pra cima rompe $77,609 → testa $77,790 (LH 4H) → $78,070 (LTB) · se rejeita = SHORT premium MODO 2 SELETIVO · se rompe $78,070 com close 4H = LONG ativável (LEI #24 só após FLAT)"
+        "rr": 1.18,
+        "note": "Break compressão acima $77,642 testa $77,790 LH 4H · próximo $78,070 LTB · rejeição = SHORT premium"
       },
       "cenario_C_grind_lateral": {
-        "prob": 0.15,
-        "entry": "n/a",
-        "sl": "n/a",
-        "tp1": "n/a",
-        "tp2": "n/a",
-        "rr": "n/a",
-        "note": "Compressão $77,164-$77,609 prolonga 6h+ · sem setup ativável · aguardar break direção · trade ativo SHORT mantém com SL firme $77,864"
+        "prob": 30,
+        "entry": null,
+        "sl": null,
+        "tp1": null,
+        "tp2": null,
+        "rr": null,
+        "note": "Compressão $77,300-$77,700 prolonga 6h+ · sem setup ativável · aguardar break direção"
       }
     },
     "setups_pre_armados": [
@@ -270,8 +270,8 @@
         "razao_estrutural": "Psicológico $77,000 + zona reflexiva 2× (12/05 e 17/05) · R:R 2.02x · pendente armar Limit reduceOnly"
       }
     ],
-    "ponto_nao_retorno": "$78,070 (LTB 4H rejeitada · close 4H acima invalida tese SHORT curto · forçaria recuo pra LONG defensivo) · PNR bear macro: $78,569 (LH 4H-28 · close D acima invalida bear macro completamente) · PNR bull ativar SHORT continuação: $77,164 (close 1H abaixo = BOS bear confirmado)",
-    "proximo_marco": "Close 1H 21:00 UTC-4 (5min · candle confirma OU rejeita $77,400) · se close abaixo $77,354 = BOS bear curto · executar Setup B market · se close acima $77,727 = compressão alivia bull · revisar tese · paralelo: armar TP2 $77,000 trade ativo (qty 0.06) pendente aval user · BOOT D próximo 22/05 20:05 UTC-4"
+    "ponto_nao_retorno": null,
+    "proximo_marco": "Close 4H 24:00 UTC-4 (~1h35) decide A (rejeição confirma BEAR · retoma $76,680) vs B (rompimento $77,790 testa LTB $78,070). Antes disso · monitorar reação 1H em $77,500-$77,700 · close 1H abaixo $77,280 = breakdown imediato · close acima $77,727 = bull squeeze ativo."
   },
   "execution_mode": "AUTO",
   "manual_approval_required": false,
