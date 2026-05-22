@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "22/05/2026 10:06:47",
-  "last_github_push": "22/05 10:06",
-  "last_github_push_ts": 1779458807.654113,
+  "ultimo_update": "22/05/2026 10:07:43",
+  "last_github_push": "22/05 10:07",
+  "last_github_push_ts": 1779458863.5857248,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -15,7 +15,7 @@
     "progresso_vs_baseline_usd": -131.98,
     "delta_vs_baseline": -131.98,
     "pnl_fenix_desde_baseline": -131.98,
-    "updated_at": "2026-05-22T10:06:47-04:00"
+    "updated_at": "2026-05-22T10:07:42-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -317,15 +317,6 @@
         "tier": "alto",
         "reason": "LH 4H-28 · PNR bear macro · invalida tese bear D completa",
         "decisao_pre_armada": "Cruzar acima · ALERT strategic_breach · BOOT REFRESH · macro D bear invalidada · OPUS reescreve tese · tier baixa pra T1 LONG ativável",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 77000,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "Psicológico + zona reflexiva 2× (12/05 e 17/05) · TP candidate trade ativo",
-        "decisao_pre_armada": "Cruzar abaixo · TP2 trade ativo executa (se Limit armado) · parcial 50% mínimo · move SL trail 1H · LEI #11 não TP fixo nos 70% remanescentes",
         "active": true,
         "triggered": false
       },
