@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "22/05/2026 07:19:39",
-  "last_github_push": "22/05 07:19",
-  "last_github_push_ts": 1779448779.934166,
+  "ultimo_update": "22/05/2026 07:20:34",
+  "last_github_push": "22/05 07:20",
+  "last_github_push_ts": 1779448834.524977,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -15,7 +15,7 @@
     "progresso_vs_baseline_usd": -131.98,
     "delta_vs_baseline": -131.98,
     "pnl_fenix_desde_baseline": -131.98,
-    "updated_at": "2026-05-22T07:19:39-04:00"
+    "updated_at": "2026-05-22T07:20:33-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -317,15 +317,6 @@
         "tier": "alto",
         "reason": "LH 4H-28 · PNR bear macro · invalida tese bear D completa",
         "decisao_pre_armada": "Cruzar acima · ALERT strategic_breach · BOOT REFRESH · macro D bear invalidada · OPUS reescreve tese · tier baixa pra T1 LONG ativável",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 77164,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "LOW 4H-12 / 1H-26 · fundo da compressão 4H · break = continuação",
-        "decisao_pre_armada": "Cruzar abaixo · ALERT strategic_breach · BOS bear 4H · executar SHORT add market (tier T2) · alvo $76,680-$76,000 · TP2 trade ativo $76,500-$76,680",
         "active": true,
         "triggered": false
       },
