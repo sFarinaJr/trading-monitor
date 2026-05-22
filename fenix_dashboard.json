@@ -1,39 +1,49 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "22/05/2026 15:31:01",
+  "ultimo_update": "22/05/2026 15:31:06",
   "last_github_push": "22/05 15:31",
-  "last_github_push_ts": 1779478261.895454,
+  "last_github_push_ts": 1779478266.957082,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
   "saldo": {
-    "cum_realised_pnl": -6258.05,
-    "cumPnL_unified_usd": -6258.05,
-    "unrealisedPnl": 3.9,
-    "progresso_vs_baseline_usd": -134.05,
-    "delta_vs_baseline": -134.05,
-    "pnl_fenix_desde_baseline": -134.05,
-    "updated_at": "2026-05-22T15:30:02-04:00"
+    "cum_realised_pnl": -6291.68,
+    "cumPnL_unified_usd": -6291.68,
+    "unrealisedPnl": 0.0,
+    "progresso_vs_baseline_usd": -167.68,
+    "delta_vs_baseline": -167.68,
+    "pnl_fenix_desde_baseline": -167.68,
+    "updated_at": "2026-05-22T15:31:06-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
-    "current_pnl": -6258.05,
-    "diff_usd": -134.05
+    "current_pnl": -6291.68,
+    "diff_usd": -167.68
   },
   "posicao_atual": {
-    "side": "LONG",
-    "size": 0.08,
-    "avgPrice": 76188.9,
-    "stopLoss": 75815.0,
-    "takeProfit": 77164.0,
+    "side": "FLAT",
+    "size": 0,
+    "avgPrice": null,
+    "stopLoss": null,
+    "takeProfit": null,
     "tp1_limit": null,
-    "tp1_pnl_lock": 7.17,
-    "unrealised_pnl_usd": 3.98,
-    "tp2_target_estrutural": 77000
+    "tp1_pnl_lock": null,
+    "unrealised_pnl_usd": 0,
+    "tp2_target_estrutural": null
   },
   "trades_recentes": [
+    {
+      "timestamp": "2026-05-22T15:29:40",
+      "symbol": "BTCUSDT",
+      "side": "LONG",
+      "entry_price": 76188.9,
+      "exit_price": 75810.2,
+      "quantity": 0.08,
+      "pnl_usd": -36.98,
+      "pnl_percent": -0.5
+    },
     {
       "timestamp": "2026-05-22T13:27:42",
       "symbol": "BTCUSDT",
@@ -173,16 +183,6 @@
       "quantity": 0.02,
       "pnl_usd": 7.12,
       "pnl_percent": 0.5
-    },
-    {
-      "timestamp": "2026-05-20T03:06:07",
-      "symbol": "BTCUSDT",
-      "side": "LONG",
-      "entry_price": 76560.0,
-      "exit_price": 77316.1,
-      "quantity": 0.01,
-      "pnl_usd": 6.98,
-      "pnl_percent": 0.99
     }
   ],
   "current_thesis": {
@@ -317,24 +317,6 @@
         "tier": "alto",
         "reason": "LH 4H-28 · PNR bear macro · invalida tese bear D completa",
         "decisao_pre_armada": "Cruzar acima · ALERT strategic_breach · BOOT REFRESH · macro D bear invalidada · OPUS reescreve tese · tier baixa pra T1 LONG ativável",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 76105,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "Double bottom #2 (18/05 / 19/05) · suporte estrutural FORTE · pré-PNR",
-        "decisao_pre_armada": "Cruzar abaixo · ALERT strategic_breach · suporte estrutural quebrado · alvo macro $75,272-$74,900 · trade ativo trail 1H · MODO 2 add se rejeição 1H abaixo",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 75999,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "LOW absoluto 7d · PNR FINAL · close abaixo = BEAR CONTINUATION confirmada $74k+",
-        "decisao_pre_armada": "Cruzar abaixo · ALERT MAX score+5 · PNR rompido · BOOT REFRESH · bear continuação macro ativada · setup novo SHORT continuação T3 sizing · target $74,900-$74,146 ext",
         "active": true,
         "triggered": false
       },
