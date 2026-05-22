@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "21/05/2026 20:59:45",
-  "last_github_push": "21/05 20:59",
-  "last_github_push_ts": 1779411585.432595,
+  "ultimo_update": "21/05/2026 21:00:05",
+  "last_github_push": "21/05 21:00",
+  "last_github_push_ts": 1779411605.895038,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,11 +11,11 @@
   "saldo": {
     "cum_realised_pnl": -6270.28,
     "cumPnL_unified_usd": -6270.28,
-    "unrealisedPnl": 35.44,
+    "unrealisedPnl": 38.01,
     "progresso_vs_baseline_usd": -146.28,
     "delta_vs_baseline": -146.28,
     "pnl_fenix_desde_baseline": -146.28,
-    "updated_at": "2026-05-21T20:59:10-04:00"
+    "updated_at": "2026-05-21T21:00:05-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -30,7 +30,7 @@
     "takeProfit": null,
     "tp1_limit": null,
     "tp1_pnl_lock": null,
-    "unrealised_pnl_usd": 35.44,
+    "unrealised_pnl_usd": 38.01,
     "tp2_target_estrutural": null
   },
   "trades_recentes": [
@@ -329,15 +329,6 @@
         "tier": "alto",
         "reason": "LH 4H-28 · PNR bear macro · invalida tese bear D completa",
         "decisao_pre_armada": "Cruzar acima · ALERT strategic_breach · BOOT REFRESH · macro D bear invalidada · OPUS reescreve tese · tier baixa pra T1 LONG ativável",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 77354,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "LOW intra 1H-0 atual · break = BOS bear curto",
-        "decisao_pre_armada": "Cruzar abaixo · ALERT score+3 · BOS bear curto · executar Setup A market (SHORT retest se subir) OU Setup B add (se já vier em momentum) · armar TP2 trade ativo $77,000 IMEDIATO",
         "active": true,
         "triggered": false
       },
