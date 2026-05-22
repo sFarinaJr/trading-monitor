@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "21/05/2026 20:51:51",
-  "last_github_push": "21/05 20:51",
-  "last_github_push_ts": 1779411111.592269,
+  "ultimo_update": "21/05/2026 20:52:45",
+  "last_github_push": "21/05 20:52",
+  "last_github_push_ts": 1779411165.678396,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,11 +11,11 @@
   "saldo": {
     "cum_realised_pnl": -6270.28,
     "cumPnL_unified_usd": -6270.28,
-    "unrealisedPnl": 32.2,
+    "unrealisedPnl": 32.29,
     "progresso_vs_baseline_usd": -146.28,
     "delta_vs_baseline": -146.28,
     "pnl_fenix_desde_baseline": -146.28,
-    "updated_at": "2026-05-21T20:51:50-04:00"
+    "updated_at": "2026-05-21T20:52:45-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -30,7 +30,7 @@
     "takeProfit": null,
     "tp1_limit": null,
     "tp1_pnl_lock": null,
-    "unrealised_pnl_usd": 31.94,
+    "unrealised_pnl_usd": 32.29,
     "tp2_target_estrutural": null
   },
   "trades_recentes": [
@@ -276,32 +276,41 @@
   "execution_mode": "AUTO",
   "manual_approval_required": false,
   "price_watch": {
-    "ts": "2026-05-20T22:04:04-04:00",
+    "ts": "2026-05-21T20:55:00-04:00",
     "levels": [
       {
-        "price": 78569,
+        "price": 77609,
         "direction": "above",
-        "tier": "alto",
-        "reason": "LH 4H 16/05 · acima invalida tese bear macro de curto · PNR bear",
-        "decisao_pre_armada": "Close 4H acima de $78,569 = virada macro curta CONFIRMADA. Cancelar setups SHORT. Reavaliar tese p/ continuação bull até $79,500-$80,200 (alvo wave B Elliott).",
+        "tier": "medio",
+        "reason": "HIGH D-0 em formação + 1H micro resistance",
+        "decisao_pre_armada": "Cruzar acima · informativo · monitor 4H rejeição · não ação",
         "active": true,
         "triggered": false
       },
       {
-        "price": 78400,
+        "price": 77727,
         "direction": "above",
-        "tier": "alto",
-        "reason": "LTB D descendente projetada · zona supply MODO2 SHORT",
-        "decisao_pre_armada": "Preço $78,300-$78,500 + camada2_top 5m bearish + 🗣️ topo 15m+1H = gatilho SHORT setup #4. Entry ~$78,400 SL $78,700 TP2 $77,766 R:R 2.11x.",
+        "tier": "medio",
+        "reason": "LH 1H último (pivot fractal)",
+        "decisao_pre_armada": "Cruzar acima · suspeita break compressão bull curta · re-avaliar 1H direção · sem ação",
         "active": true,
         "triggered": false
       },
       {
-        "price": 78300,
+        "price": 77790,
         "direction": "above",
         "tier": "alto",
-        "reason": "Close 4H acima = BREAKOUT LTB D · gatilho LONG #1",
-        "decisao_pre_armada": "Close 4H 24:00 ≥ $78,300 com volume + retest pullback c/ Camada 2 fundo 5m = LONG setup #1. Entry $78,300 SL $77,900 TP2 $79,068 R:R 1.92x. Sem volume ou sem retest = aguardar.",
+        "reason": "SL trade ativo + LH 4H $77,783 + buffer · setup A invalidação",
+        "decisao_pre_armada": "Cruzar acima · ALERT score+3 · invalida setup A SHORT retest · SL trade ativo HIT → trade fecha · re-avaliar tese inversão",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 78070,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "LTB 4H rejeitada 21/05 17:00 · PNR bear curto",
+        "decisao_pre_armada": "Cruzar acima · ALERT score+4 strategic_level_breach · PNR bear curto rompido · força recuo defensivo · cancelar setups SHORT pré-armados · revisar tese pra MODO 2 SELETIVO LONG só após FLAT",
         "active": true,
         "triggered": false
       },
@@ -309,8 +318,44 @@
         "price": 78173,
         "direction": "above",
         "tier": "alto",
-        "reason": "REANÁLISE 21/05 16:56 · HIGH REAL do dia 21/05 (04:00 UTC-4) · resistência ATIVA confirmada · testada várias vezes · não foi superada",
-        "decisao_pre_armada": "Preço atinge $78,150-$78,200 + camada2_top 5m + topo 1H = setup SHORT continuação ou rejeição.",
+        "reason": "HIGH D-1 (21/05 04:00) + 38.2% fib master + cluster múltiplo",
+        "decisao_pre_armada": "Cruzar acima · MASTER RESISTANCE rompida · escala OPUS imediato · BOOT REFRESH dispara · tese bear curta invalidada · LONG só após FLAT",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 78569,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "LH 4H-28 · PNR bear macro · invalida tese bear D completa",
+        "decisao_pre_armada": "Cruzar acima · ALERT strategic_breach · BOOT REFRESH · macro D bear invalidada · OPUS reescreve tese · tier baixa pra T1 LONG ativável",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 77354,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "LOW intra 1H-0 atual · break = BOS bear curto",
+        "decisao_pre_armada": "Cruzar abaixo · ALERT score+3 · BOS bear curto · executar Setup A market (SHORT retest se subir) OU Setup B add (se já vier em momentum) · armar TP2 trade ativo $77,000 IMEDIATO",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 77164,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "LOW 4H-12 / 1H-26 · fundo da compressão 4H · break = continuação",
+        "decisao_pre_armada": "Cruzar abaixo · ALERT strategic_breach · BOS bear 4H · executar SHORT add market (tier T2) · alvo $76,680-$76,000 · TP2 trade ativo $76,500-$76,680",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 77000,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "Psicológico + zona reflexiva 2× (12/05 e 17/05) · TP candidate trade ativo",
+        "decisao_pre_armada": "Cruzar abaixo · TP2 trade ativo executa (se Limit armado) · parcial 50% mínimo · move SL trail 1H · LEI #11 não TP fixo nos 70% remanescentes",
         "active": true,
         "triggered": false
       },
@@ -318,8 +363,8 @@
         "price": 76680,
         "direction": "below",
         "tier": "alto",
-        "reason": "REANÁLISE 21/05 16:56 · LOW REAL do dia 21/05 (09:39 UTC-4 · capitulação) · novo suporte estrutural ATIVO · defendido com bounce de +$1,300",
-        "decisao_pre_armada": "Preço atinge $76,650-$76,750 + camada2_bottom 5m + fundo = setup LONG bounce ou confirmação de defesa estrutural.",
+        "reason": "LOW 4H-5 (21/05 05:00) · suporte 4H ativo · TP2 setup A",
+        "decisao_pre_armada": "Cruzar abaixo · ALERT score+4 · TP2 setup A atinge · partial 70-100% · próximo nível $76,105 double bottom · LEI #11 trail estrutural 1H",
         "active": true,
         "triggered": false
       },
@@ -327,8 +372,8 @@
         "price": 76105,
         "direction": "below",
         "tier": "alto",
-        "reason": "Double bottom #2 · suporte estrutural FORTE · pré-PNR",
-        "decisao_pre_armada": "Close 1H abaixo de $76,105 = double bottom INVALIDADO. Compromete tese bull curto. Próximo nível = $75,999 (PNR). NÃO entrar LONG · aguardar reação.",
+        "reason": "Double bottom #2 (18/05 / 19/05) · suporte estrutural FORTE · pré-PNR",
+        "decisao_pre_armada": "Cruzar abaixo · ALERT strategic_breach · suporte estrutural quebrado · alvo macro $75,272-$74,900 · trade ativo trail 1H · MODO 2 add se rejeição 1H abaixo",
         "active": true,
         "triggered": false
       },
@@ -336,17 +381,17 @@
         "price": 75999,
         "direction": "below",
         "tier": "alto",
-        "reason": "LOW absoluto 7 dias · PONTO NÃO RETORNO · close 1H/4H abaixo ativa SHORT continuação",
-        "decisao_pre_armada": "Close 1H/4H abaixo de $75,999 com volume expansão INVALIDA bounce · ativa SHORT setup #6 continuação bear. Entry retest $75,950 SL $76,450 TP2 $74,800 R:R 2.30x. Gatilho ESTRUTURAL alta prioridade.",
+        "reason": "LOW absoluto 7d · PNR FINAL · close abaixo = BEAR CONTINUATION confirmada $74k+",
+        "decisao_pre_armada": "Cruzar abaixo · ALERT MAX score+5 · PNR rompido · BOOT REFRESH · bear continuação macro ativada · setup novo SHORT continuação T3 sizing · target $74,900-$74,146 ext",
         "active": true,
         "triggered": false
       },
       {
-        "price": 74800,
+        "price": 74900,
         "direction": "below",
         "tier": "alto",
-        "reason": "Lows abril · TP2 cenário SHORT continuação",
-        "decisao_pre_armada": "TP2 estrutural setup #6 SHORT. Saída via trail (LEI #5 · nunca ordem TP2 automática). Reavaliar tese macro se atingido.",
+        "reason": "LOW abril (D-26) · TP2 macro extension · onda C Elliott 1.0×",
+        "decisao_pre_armada": "Cruzar abaixo · TP2 final macro · partial 100% trades ativos · re-armar SHORT só com rejeição 4H clara abaixo · MODO 2 SELETIVO pra LONG defensivo",
         "active": true,
         "triggered": false
       }
