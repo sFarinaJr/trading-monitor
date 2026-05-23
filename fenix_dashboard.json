@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "22/05/2026 20:20:44",
-  "last_github_push": "22/05 20:20",
-  "last_github_push_ts": 1779495644.304917,
+  "ultimo_update": "22/05/2026 20:21:39",
+  "last_github_push": "22/05 20:21",
+  "last_github_push_ts": 1779495699.11731,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -15,7 +15,7 @@
     "progresso_vs_baseline_usd": -206.61,
     "delta_vs_baseline": -206.61,
     "pnl_fenix_desde_baseline": -206.61,
-    "updated_at": "2026-05-22T20:20:43-04:00"
+    "updated_at": "2026-05-22T20:21:38-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -186,128 +186,200 @@
     }
   ],
   "current_thesis": {
-    "thesis_id": "boot_d_close_2026-05-21_20-55",
-    "boot_ts": "2026-05-21T20:55:00-04:00",
-    "ultimo_update": "2026-05-22T03:00:10-04:00",
+    "thesis_id": "boot_d_close_2026-05-22_20-15",
+    "boot_ts": "2026-05-22T20:21:23-04:00",
+    "ultimo_update": "2026-05-22T20:21:23-04:00",
     "status": "BOOT_COMPLETO",
-    "mark_at_boot": 77413,
-    "mark_now": 77413,
+    "mark_at_boot": 75468.5,
+    "mark_now": 75468.5,
     "macro_bias_D": {
       "direcao": "BEARISH",
-      "score": 5.0
+      "score": 6.0
     },
-    "leitura_primaria_opus": "Bounce corretivo dentro do downtrend macro D (-6.52% topo macro $82,811→$76k · Wave B contracorretiva Elliott · alvo 38.2-61.8% do leg = $78,173-$79,200). EMAs D 9/21 bear-stacked · volume D abaixo MA20 (bounce sem convicção).\n\n1H 17:00 testou LTB $78,070 com BIG BULL +$686 mas REJEITOU com BEAR ENGULFING que devolveu o ganho. 1H 21:00 BOS bear $77,354 confirmou breakdown curto mas HAMMER 1H 22:00 absorveu no nível com EXAUSTAOs duplos · momentum perdendo.\n\nPróximo movimento depende de · (a) breakdown < $77,280 retoma alvo $76,680 (35%); (b) bull squeeze rompe $77,642 → $78,070 LTB (35%); (c) grind lateral $77,300-$77,700 prolonga sem entrada (30%).",
+    "leitura_primaria_opus": "Continuação bear macro D ativa. Após bounce 19/05-21/05 esgotar em $78,173 (38.2% fib + LTB D 3 toques rejeitada), D-1 (21/05) imprimiu ENGULFING BEAR gigante O$77,588→C$75,509 range $2,554 (-2.68%) com stop hunt $75,311. D-0 fechou $75,468.50 candle interno de indecisão pós-dump (range $263) abaixo EMA9/EMA20 D estimadas $77,800/$76,900. Volume D 22/05 759 BTC (well below average 50K+) confirma compradores ausentes pós-rompimento.\n\nSetup técnico bullish FORTE (4 EXAUSTAOs Fundo + COMBOFND 18:44 com FUNDO 4H+1H+15m + RSI 1H 25.13 oversold) NÃO sustentou bounce · macro D bear esmagou. SL trade $75,430 hit em $75,425.12 (slippage $5). Novo low 1H $75,531 (19:45) confirmou breakdown continuação · 4H diff -2.02% slope -0.41% (sentidos). Long/short ratio 56.65%/43.35% (longs ainda super alavancados · liquidações pendentes).\n\nPróximo movimento · (a) SHORT continuação rejeição $76,000-$76,200 (zona resistance 1H + low D-2 reflexivo) tem 40% prob com alvo $74,900-$74,200; (b) bounce técnico reteste $75,000-$75,300 + Camada 2 5m + COMBOFND confluente · LONG MODO 2 SELETIVO contra-trend 30% prob (alvo $76,000 swing reativo); (c) range $75,300-$76,000 prolonga sem entrada 30%. Contexto exógeno · troca secretário Fed deflagrou loss 15:29 · evento policy reverbera 24-48h.",
     "cenarios_opus": {
-      "cenario_A_breakdown_short_continuacao": {
-        "prob": 35,
-        "entry": 77280,
-        "sl": 77790,
-        "tp1": 76680,
+      "cenario_A_short_continuacao_rejeicao_76k": {
+        "prob": 40,
+        "entry": 76050,
+        "sl": 76260,
+        "tp1": 75670,
+        "tp2": 74900,
+        "rr": 5.48,
+        "note": "Bounce técnico testa $76,000-$76,200 (resistance 1H + low D-2 reflexivo) · rejeição com Camada 2 5m bear = SHORT continuação macro · TP2 $74,900 LOW 4H estendida"
+      },
+      "cenario_B_long_modo2_seletivo_reteste_75k": {
+        "prob": 30,
+        "entry": 75150,
+        "sl": 74950,
+        "tp1": 75525,
         "tp2": 76000,
-        "rr": 2.1,
-        "note": "Close 1H abaixo $77,280 confirma retomada BOS bear · alvo escalonado $76,680→$76,000→$74,900"
+        "rr": 4.25,
+        "note": "Reteste stop hunt $75,000-$75,300 (zona $75,311 low D-1) + Camada 2 5m bull + COMBOFND confluente = LONG MODO 2 SELETIVO contra-trend · alvo bounce reativo $76,000 · qty reduzida T1 0.04 BTC · invalida abaixo $74,950"
       },
-      "cenario_B_bull_squeeze_curto": {
-        "prob": 35,
-        "entry": 77642,
-        "sl": 77280,
-        "tp1": 77790,
-        "tp2": 78070,
-        "rr": 1.18,
-        "note": "Break compressão acima $77,642 testa $77,790 LH 4H · próximo $78,070 LTB · rejeição = SHORT premium"
-      },
-      "cenario_C_grind_lateral": {
+      "cenario_C_range_75300_76000_sem_setup": {
         "prob": 30,
         "entry": null,
         "sl": null,
         "tp1": null,
         "tp2": null,
         "rr": null,
-        "note": "Compressão $77,300-$77,700 prolonga 6h+ · sem setup ativável · aguardar break direção"
+        "note": "Compressão $75,300-$76,000 prolonga 6h+ sem rompimento decisivo · SEM ENTRADA · aguardar break direção próximo close 4H"
       }
     },
     "setups_pre_armados": [
       {
-        "tipo": "SHORT_continuacao_retest_topo",
-        "entry_zone": "$77,580-$77,650",
-        "entry": 77600,
-        "sl": 77790,
-        "tp1": 77280,
-        "tp2": 76680,
-        "rr": 4.84,
+        "tipo": "SHORT_continuacao_rejeicao_76k",
+        "entry_zone": "$76,000-$76,200",
+        "entry": 76050,
+        "sl": 76260,
+        "tp1": 75670,
+        "tp2": 74900,
+        "rr": 5.48,
         "qty_btc": 0.06,
         "tier": "T2",
         "macro_aligned": true,
-        "invalidacao": "close 4H acima $77,790",
-        "razao_estrutural": "LH 4H quádruplo · 38.2% fib + cluster pivôs $77,727-$77,783 · 1H compressão break SHORT",
+        "invalidacao": "close 1H acima $76,260 com vol expansão · rompe resistance retornando dentro range D",
+        "razao_estrutural": "Resistance 1H imediata $75,830-$75,950 (3 últimas barras topo) · próximo cluster $76,150-$76,200 (low D-2 reflexivo + EMA20 1H estimada) · macro D bear esmaga bounces · COMBOFND falhou hoje confirma supply abundante acima",
         "direcao": "SHORT",
         "lado": "SHORT",
-        "nome": "SHORT_continuacao_retest_topo",
-        "gatilho": "$77,580-$77,650",
-        "entrada": 77600
+        "nome": "SHORT_continuacao_rejeicao_76k",
+        "entrada": 76050,
+        "gatilho": "$76,000-$76,200"
       },
       {
-        "tipo": "SHORT_breakdown_market",
-        "entry_zone": "fill no close 1H abaixo $77,354",
-        "entry": 77300,
-        "sl": 77650,
-        "tp1": 77000,
-        "tp2": 76500,
-        "rr": 2.29,
+        "tipo": "SHORT_breakdown_market_75300",
+        "entry_zone": "fill no close 1H abaixo $75,300",
+        "entry": 75250,
+        "sl": 75550,
+        "tp1": 74900,
+        "tp2": 74200,
+        "rr": 3.5,
         "qty_btc": 0.06,
         "tier": "T1",
         "macro_aligned": true,
-        "invalidacao": "close 1H acima $77,650 com vol expansão",
-        "razao_estrutural": "BOS bear curto · break LL 1H · momentum SHORT continuação",
+        "invalidacao": "close 1H acima $75,550 com vol expansão · stop hunt reverted",
+        "razao_estrutural": "Break LL $75,311 estrutura D-1 confirma continuação bear macro · alvo $74,900 (extension 1.27x do swing $76,680→$75,311) → $74,200 (extension 1.618x)",
         "direcao": "SHORT",
         "lado": "SHORT",
-        "nome": "SHORT_breakdown_market",
-        "gatilho": "fill no close 1H abaixo $77,354",
-        "entrada": 77300
+        "nome": "SHORT_breakdown_market_75300",
+        "entrada": 75250,
+        "gatilho": "fill no close 1H abaixo $75,300"
       },
       {
-        "tipo": "TP2_trade_ativo_short_0.06",
-        "entry_zone": "trade já aberto",
-        "entry": 77950,
-        "sl": 77864,
-        "tp1": "fillou $77,560 13:37",
-        "tp2": 77000,
-        "rr": 2.02,
-        "qty_btc": 0.06,
-        "tier": "GESTÃO",
-        "macro_aligned": true,
-        "invalidacao": "SL hit $77,864 (lock +$5)",
-        "razao_estrutural": "Psicológico $77,000 + zona reflexiva 2× (12/05 e 17/05) · R:R 2.02x · pendente armar Limit reduceOnly",
-        "direcao": "SHORT",
-        "lado": "SHORT",
-        "nome": "TP2_trade_ativo_short_0.06",
-        "gatilho": "trade já aberto",
-        "entrada": 77950
+        "tipo": "LONG_modo2_seletivo_reteste_75k_contratrend",
+        "entry_zone": "$75,000-$75,300",
+        "entry": 75150,
+        "sl": 74950,
+        "tp1": 75525,
+        "tp2": 76000,
+        "rr": 4.25,
+        "qty_btc": 0.04,
+        "tier": "T1",
+        "macro_aligned": false,
+        "invalidacao": "close 5m abaixo $74,950 · ou ausência de Camada 2 5m bull no reteste",
+        "razao_estrutural": "MODO 2 SELETIVO contra-trend · reteste do stop hunt $75,311 (low D-1) requer Camada 2 5m bull + COMBOFND confluente + RSI 1H <30 + macro_aligned=False (contra D bear) · qty REDUZIDA T1 · NÃO entrar sem confluência elite (LEI #15 exceção pullback estrutural)",
+        "direcao": "LONG",
+        "lado": "LONG",
+        "nome": "LONG_modo2_seletivo_reteste_75k_contratrend",
+        "entrada": 75150,
+        "gatilho": "$75,000-$75,300"
       }
     ],
     "ponto_nao_retorno": null,
-    "proximo_marco": "Close 4H 24:00 UTC-4 (~1h35) decide A (rejeição confirma BEAR · retoma $76,680) vs B (rompimento $77,790 testa LTB $78,070). Antes disso · monitorar reação 1H em $77,500-$77,700 · close 1H abaixo $77,280 = breakdown imediato · close acima $77,727 = bull squeeze ativo."
+    "proximo_marco": "Close 4H 24:00 UTC-4 (~3h45) decide A (rejeição $76,000-$76,200 → SHORT continuação) vs B (bounce sustentado quebra $76,200 → reteste $76,680). Antes disso · monitorar reação 1H em $75,500-$76,000 · close 1H 21:00 primeira pista · score≥9 + Camada 2 5m + COMBOTOP/COMBOFND = gatilho wake estrutural · senão FLAT vigilante."
   },
   "execution_mode": "AUTO",
   "manual_approval_required": false,
   "price_watch": {
-    "ts": "2026-05-21T20:55:00-04:00",
+    "ts": "2026-05-22T20:21:23-04:00",
     "levels": [
       {
-        "price": 78070,
-        "direction": "above",
+        "price": 75311,
+        "direction": "below",
         "tier": "alto",
-        "reason": "LTB 4H rejeitada 21/05 17:00 · PNR bear curto",
-        "decisao_pre_armada": "Cruzar acima · ALERT score+4 strategic_level_breach · PNR bear curto rompido · força recuo defensivo · cancelar setups SHORT pré-armados · revisar tese pra MODO 2 SELETIVO LONG só após FLAT",
+        "reason": "stop hunt D-1 + low estrutural · BREAK abaixo = breakdown continuação",
+        "decisao_pre_armada": "Avaliar SHORT_breakdown_market_75300. Aguardar close 1H abaixo $75,300 com vol expansão. Entry market $75,250 · SL $75,550 · TP1 $74,900 · TP2 $74,200 · R:R 3.50x · tier T1 qty 0.06. Cuidado · stop hunt reverso possível · só executar com Camada 2 confirmada.",
         "active": true,
         "triggered": false
       },
       {
-        "price": 78173,
+        "price": 75000,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "zona psicológica 75k · liquidações longs alavancados (ratio 56.65%)",
+        "decisao_pre_armada": "Re-avaliar tese · se bounce imediato com Camada 2 5m bull + COMBOFND = LONG MODO 2 SELETIVO entry $75,050 SL $74,800 qty 0.04 T1. Se quebra continua = aguardar $74,500 alvo.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 75150,
+        "direction": "below",
+        "tier": "medio",
+        "reason": "zona de entry LONG MODO 2 SELETIVO contra-trend",
+        "decisao_pre_armada": "Reteste do stop hunt zone · vigiar Camada 2 5m bull + RSI 1H <30 + COMBOFND. Se confluência elite = LONG T1 0.04 entry $75,150 SL $74,950 TP1 $75,525 TP2 $76,000 R:R 4.25x.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 75670,
+        "direction": "above",
+        "tier": "medio",
+        "reason": "alvo TP1 do SHORT rejeição · 50% retrace do swing recente",
+        "decisao_pre_armada": "Se SHORT entry $76,050 executado · TP1 30% qty parcial aqui $75,670 (LEI #10 30%) · BE+Fees imediato pós-fill (LEI #12 v2.11).",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 75830,
+        "direction": "above",
+        "tier": "medio",
+        "reason": "resistance 1H imediata · 3 últimas barras topo",
+        "decisao_pre_armada": "Vigiar reação · se rejeição clara com Camada 2 5m bear = sinal precoce do SHORT primário. Não executar aqui ainda · esperar zona $76,000+ pra entrada com R:R melhor.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 76050,
         "direction": "above",
         "tier": "alto",
-        "reason": "HIGH D-1 (21/05 04:00) + 38.2% fib master + cluster múltiplo",
-        "decisao_pre_armada": "Cruzar acima · MASTER RESISTANCE rompida · escala OPUS imediato · BOOT REFRESH dispara · tese bear curta invalidada · LONG só após FLAT",
+        "reason": "ENTRY SHORT primário · zona rejeição $76,000-$76,200",
+        "decisao_pre_armada": "SHORT_continuacao_rejeicao_76k. Aguardar Camada 2 5m bear FECHADA na zona $76,000-$76,200 · wick ≥35% + body bear (LEI #4). Entry limit $76,050 · SL $76,260 (acima high zona) · TP1 $75,670 30% · TP2 $74,900 · R:R 5.48x · qty 0.06 T2 (LEI #2 stopLoss embedded).",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 76200,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "high da zona rejeição + low D-2 reflexivo · INVALIDAÇÃO do SHORT primário se rompido",
+        "decisao_pre_armada": "Se rompido com vol = invalida SHORT $76,050 · re-avaliar bull squeeze cenário · próximo target $76,680 (low 4H anterior). LONG breakout só com close 1H acima $76,200 + vol expansão · qty T1.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 76680,
+        "direction": "above",
+        "tier": "medio",
+        "reason": "low 4H anterior · PNR bear curto · 38.2% fib swing macro",
+        "decisao_pre_armada": "Reteste forte aqui sinal de Wave 4 corretiva ativa · re-avaliar tese bear de curto prazo · PNR macro continua $78,173.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 77150,
+        "direction": "above",
+        "tier": "medio",
+        "reason": "high 4H recente · LH 4H + resistance estrutural",
+        "decisao_pre_armada": "Rompimento sustentado aqui = bull continuação local · LTB D em pressão · cuidado com SHORT prematuro.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 78070,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "LTB D · 3 toques intacta · PNR bear macro",
+        "decisao_pre_armada": "Se mark atingir $78,070 · LTB D testada · oportunidade SHORT macro premium · entry SHORT $78,000-$78,070 com Camada 2 5m bear · SL $78,260 acima high D-1 · TP2 $75,300+ R:R 14x+.",
         "active": true,
         "triggered": false
       },
@@ -315,8 +387,26 @@
         "price": 78569,
         "direction": "above",
         "tier": "alto",
-        "reason": "LH 4H-28 · PNR bear macro · invalida tese bear D completa",
-        "decisao_pre_armada": "Cruzar acima · ALERT strategic_breach · BOOT REFRESH · macro D bear invalidada · OPUS reescreve tese · tier baixa pra T1 LONG ativável",
+        "reason": "LH 4H-28 · PNR bear macro · close acima INVALIDA tese bear D completa",
+        "decisao_pre_armada": "Invalidação macro · se rompido com close D = re-evaluate full tese · não usar pra entrada · só pra abortar SHORTs ativos.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 74900,
+        "direction": "below",
+        "tier": "medio",
+        "reason": "TP2 estrutural SHORT primário · LOW 4H estendida · alvo continuação",
+        "decisao_pre_armada": "Trail estrutural 1H + buffer (LEI #11 + módulo 04) ativo aqui · TP2 governado por trail · NÃO armar ordem fixa (LEI #5).",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 74200,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "extension 1.618x · alvo SHORT breakdown · zona macro relevante histórica",
+        "decisao_pre_armada": "Alvo extremo do SHORT breakdown · trail estrutural decide saída · vigiar exhaustion clara (LEI #4 inversa) ou Camada 2 5m bull pra exit defensivo.",
         "active": true,
         "triggered": false
       }
