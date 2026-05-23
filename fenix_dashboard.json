@@ -1,39 +1,49 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "23/05/2026 16:10:41",
-  "last_github_push": "23/05 16:10",
-  "last_github_push_ts": 1779567041.065831,
+  "ultimo_update": "23/05/2026 16:11:37",
+  "last_github_push": "23/05 16:11",
+  "last_github_push_ts": 1779567097.4539142,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
   "saldo": {
-    "cum_realised_pnl": -6352.25,
-    "cumPnL_unified_usd": -6352.25,
-    "unrealisedPnl": 46.12,
-    "progresso_vs_baseline_usd": -228.25,
-    "delta_vs_baseline": -228.25,
-    "pnl_fenix_desde_baseline": -228.25,
-    "updated_at": "2026-05-23T16:10:40-04:00"
+    "cum_realised_pnl": -6330.3,
+    "cumPnL_unified_usd": -6330.3,
+    "unrealisedPnl": 22.2,
+    "progresso_vs_baseline_usd": -206.3,
+    "delta_vs_baseline": -206.3,
+    "pnl_fenix_desde_baseline": -206.3,
+    "updated_at": "2026-05-23T16:11:36-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
-    "current_pnl": -6352.25,
-    "diff_usd": -228.25
+    "current_pnl": -6330.3,
+    "diff_usd": -206.3
   },
   "posicao_atual": {
     "side": "LONG",
-    "size": 0.05,
+    "size": 0.025,
     "avgPrice": 75159.0,
     "stopLoss": 75242.0,
     "takeProfit": 76477.0,
     "tp1_limit": null,
     "tp1_pnl_lock": 7.17,
-    "unrealised_pnl_usd": 46.12,
+    "unrealised_pnl_usd": 22.1,
     "tp2_target_estrutural": 77000
   },
   "trades_recentes": [
+    {
+      "timestamp": "2026-05-23T16:10:53",
+      "symbol": "BTCUSDT",
+      "side": "LONG",
+      "entry_price": 75159.0,
+      "exit_price": 76078.9,
+      "quantity": 0.025,
+      "pnl_usd": 21.25,
+      "pnl_percent": 1.22
+    },
     {
       "timestamp": "2026-05-23T14:41:05",
       "symbol": "BTCUSDT",
@@ -173,16 +183,6 @@
       "quantity": 0.08,
       "pnl_usd": -18.48,
       "pnl_percent": -0.22
-    },
-    {
-      "timestamp": "2026-05-20T13:50:50",
-      "symbol": "BTCUSDT",
-      "side": "SHORT",
-      "entry_price": 77665.0,
-      "exit_price": 77572.3313,
-      "quantity": 0.08,
-      "pnl_usd": 2.76,
-      "pnl_percent": 0.12
     }
   ],
   "current_thesis": {
@@ -293,15 +293,6 @@
   "price_watch": {
     "ts": "2026-05-22T20:21:23-04:00",
     "levels": [
-      {
-        "price": 76050,
-        "direction": "above",
-        "tier": "alto",
-        "reason": "ENTRY SHORT primário · zona rejeição $76,000-$76,200",
-        "decisao_pre_armada": "SHORT_continuacao_rejeicao_76k. Aguardar Camada 2 5m bear FECHADA na zona $76,000-$76,200 · wick ≥35% + body bear (LEI #4). Entry limit $76,050 · SL $76,260 (acima high zona) · TP1 $75,670 30% · TP2 $74,900 · R:R 5.48x · qty 0.06 T2 (LEI #2 stopLoss embedded).",
-        "active": true,
-        "triggered": false
-      },
       {
         "price": 76200,
         "direction": "above",
