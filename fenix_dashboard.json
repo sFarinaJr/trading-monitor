@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "23/05/2026 16:31:15",
-  "last_github_push": "23/05 16:31",
-  "last_github_push_ts": 1779568275.854214,
+  "ultimo_update": "23/05/2026 16:32:12",
+  "last_github_push": "23/05 16:32",
+  "last_github_push_ts": 1779568332.8448708,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,11 +11,11 @@
   "saldo": {
     "cum_realised_pnl": -6330.3,
     "cumPnL_unified_usd": -6330.3,
-    "unrealisedPnl": 22.03,
+    "unrealisedPnl": 26.36,
     "progresso_vs_baseline_usd": -206.3,
     "delta_vs_baseline": -206.3,
     "pnl_fenix_desde_baseline": -206.3,
-    "updated_at": "2026-05-23T16:31:15-04:00"
+    "updated_at": "2026-05-23T16:32:12-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -30,7 +30,7 @@
     "takeProfit": null,
     "tp1_limit": null,
     "tp1_pnl_lock": 7.17,
-    "unrealised_pnl_usd": 22.03,
+    "unrealised_pnl_usd": 26.36,
     "tp2_target_estrutural": 77000
   },
   "trades_recentes": [
@@ -293,15 +293,6 @@
   "price_watch": {
     "ts": "2026-05-22T20:21:23-04:00",
     "levels": [
-      {
-        "price": 76200,
-        "direction": "above",
-        "tier": "alto",
-        "reason": "high da zona rejeição + low D-2 reflexivo · INVALIDAÇÃO do SHORT primário se rompido",
-        "decisao_pre_armada": "Se rompido com vol = invalida SHORT $76,050 · re-avaliar bull squeeze cenário · próximo target $76,680 (low 4H anterior). LONG breakout só com close 1H acima $76,200 + vol expansão · qty T1.",
-        "active": true,
-        "triggered": false
-      },
       {
         "price": 76680,
         "direction": "above",
