@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "23/05/2026 03:47:15",
+  "ultimo_update": "23/05/2026 03:47:21",
   "last_github_push": "23/05 03:47",
-  "last_github_push_ts": 1779522435.423601,
+  "last_github_push_ts": 1779522441.54352,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -15,7 +15,7 @@
     "progresso_vs_baseline_usd": -258.57,
     "delta_vs_baseline": -258.57,
     "pnl_fenix_desde_baseline": -258.57,
-    "updated_at": "2026-05-23T03:46:27-04:00"
+    "updated_at": "2026-05-23T03:47:20-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -293,24 +293,6 @@
   "price_watch": {
     "ts": "2026-05-22T20:21:23-04:00",
     "levels": [
-      {
-        "price": 75000,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "zona psicológica 75k · liquidações longs alavancados (ratio 56.65%)",
-        "decisao_pre_armada": "Re-avaliar tese · se bounce imediato com Camada 2 5m bull + COMBOFND = LONG MODO 2 SELETIVO entry $75,050 SL $74,800 qty 0.04 T1. Se quebra continua = aguardar $74,500 alvo.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 75150,
-        "direction": "below",
-        "tier": "medio",
-        "reason": "zona de entry LONG MODO 2 SELETIVO contra-trend",
-        "decisao_pre_armada": "Reteste do stop hunt zone · vigiar Camada 2 5m bull + RSI 1H <30 + COMBOFND. Se confluência elite = LONG T1 0.04 entry $75,150 SL $74,950 TP1 $75,525 TP2 $76,000 R:R 4.25x.",
-        "active": true,
-        "triggered": false
-      },
       {
         "price": 75670,
         "direction": "above",
