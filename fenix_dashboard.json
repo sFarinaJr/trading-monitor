@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "22/05/2026 20:36:12",
-  "last_github_push": "22/05 20:36",
-  "last_github_push_ts": 1779496572.8609889,
+  "ultimo_update": "22/05/2026 20:37:06",
+  "last_github_push": "22/05 20:37",
+  "last_github_push_ts": 1779496626.2261481,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -15,7 +15,7 @@
     "progresso_vs_baseline_usd": -206.61,
     "delta_vs_baseline": -206.61,
     "pnl_fenix_desde_baseline": -206.61,
-    "updated_at": "2026-05-22T20:36:12-04:00"
+    "updated_at": "2026-05-22T20:37:05-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -293,15 +293,6 @@
   "price_watch": {
     "ts": "2026-05-22T20:21:23-04:00",
     "levels": [
-      {
-        "price": 75311,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "stop hunt D-1 + low estrutural · BREAK abaixo = breakdown continuação",
-        "decisao_pre_armada": "Avaliar SHORT_breakdown_market_75300. Aguardar close 1H abaixo $75,300 com vol expansão. Entry market $75,250 · SL $75,550 · TP1 $74,900 · TP2 $74,200 · R:R 3.50x · tier T1 qty 0.06. Cuidado · stop hunt reverso possível · só executar com Camada 2 confirmada.",
-        "active": true,
-        "triggered": false
-      },
       {
         "price": 75000,
         "direction": "below",
