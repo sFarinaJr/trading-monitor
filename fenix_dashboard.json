@@ -2,7 +2,7 @@
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
   "ultimo_update": "23/05/2026 06:45:11",
   "last_github_push": "23/05 06:45",
-  "last_github_push_ts": 1779533111.262322,
+  "last_github_push_ts": 1779533111.3221729,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -30,7 +30,7 @@
     "takeProfit": 76477.0,
     "tp1_limit": null,
     "tp1_pnl_lock": 7.17,
-    "unrealised_pnl_usd": 11.53,
+    "unrealised_pnl_usd": 12.38,
     "tp2_target_estrutural": 77000
   },
   "trades_recentes": [
