@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "24/05/2026 04:00:54",
-  "last_github_push": "24/05 04:00",
-  "last_github_push_ts": 1779609654.617256,
+  "ultimo_update": "24/05/2026 04:01:48",
+  "last_github_push": "24/05 04:01",
+  "last_github_push_ts": 1779609708.8288069,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -15,7 +15,7 @@
     "progresso_vs_baseline_usd": -161.4,
     "delta_vs_baseline": -161.4,
     "pnl_fenix_desde_baseline": -161.4,
-    "updated_at": "2026-05-24T04:00:54-04:00",
+    "updated_at": "2026-05-24T04:01:48-04:00",
     "equity_total_usdt": 1414.92,
     "unrealised_pnl": 19.74,
     "ts": "2026-05-23T20:05:42.619891-04:00"
@@ -191,7 +191,7 @@
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-05-23_20-05",
     "boot_ts": "2026-05-23T20:05:42.619891-04:00",
-    "ultimo_update": "2026-05-24T03:52:49.617264-04:00",
+    "ultimo_update": "2026-05-24T04:00:54.729902-04:00",
     "status": "BOOT_COMPLETO",
     "mark_at_boot": 76679.0,
     "mark_now": 76679.0,
@@ -285,7 +285,21 @@
         "aviso": "contra-tendência macro · só com confluência forte 1H+15m simultâneos",
         "criado_ts": "2026-05-24T03:48:37.306527-04:00",
         "ajuste_user_ts": "2026-05-24T03:52:49.617264-04:00",
-        "ajuste_user_nota": "sizing T2→T1 conforme decisão user 03:52 · contra-bias macro merece conservadorismo"
+        "ajuste_user_nota": "sizing T2→T1 conforme decisão user 03:52 · contra-bias macro merece conservadorismo",
+        "estrategia_execucao": "Opção_C_hibrida",
+        "execucao_split": {
+          "limit_1_maker": {
+            "preco": 76124,
+            "qty_btc": 0.025,
+            "status": "a_armar_agora"
+          },
+          "gatilho_market_2": {
+            "qty_btc": 0.025,
+            "condicao": "EXAUSTAO FUNDO 5m + macro alinhado OR 🗣️ FUNDO 15m OR (ob_imbalance ratio>5 + vol spike 5m)"
+          }
+        },
+        "sl_unico": 74800,
+        "ajuste_opcao_c_ts": "2026-05-24T04:00:54.729902-04:00"
       }
     ],
     "ponto_nao_retorno": "Close D > $82,811 + buffer 0.5% = $83,225 invalida COUNT macro Elliott completo (LEI #30). PNR INTRA · close 4H abaixo $74,221 (low Wave A) = Wave A não completou · count INVALIDATED. PNR BULL (curto) · close 1H acima $79,500 com vol = Wave B extension · zona Wave 4 maior (re-avaliar).",
