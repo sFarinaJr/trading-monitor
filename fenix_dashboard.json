@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "24/05/2026 18:35:23",
-  "last_github_push": "24/05 18:35",
-  "last_github_push_ts": 1779662123.8686988,
+  "ultimo_update": "24/05/2026 18:36:18",
+  "last_github_push": "24/05 18:36",
+  "last_github_push_ts": 1779662178.5327392,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -15,7 +15,7 @@
     "progresso_vs_baseline_usd": -161.4,
     "delta_vs_baseline": -161.4,
     "pnl_fenix_desde_baseline": -161.4,
-    "updated_at": "2026-05-24T18:35:23-04:00",
+    "updated_at": "2026-05-24T18:36:17-04:00",
     "equity_total_usdt": 1414.92,
     "unrealised_pnl": 19.74,
     "ts": "2026-05-23T20:05:42.619891-04:00"
@@ -191,7 +191,7 @@
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-05-23_20-05",
     "boot_ts": "2026-05-23T20:05:42.619891-04:00",
-    "ultimo_update": "2026-05-24T16:15:24.541002-04:00",
+    "ultimo_update": "2026-05-24T18:35:43.325177-04:00",
     "status": "BOOT_COMPLETO",
     "mark_at_boot": 76679.0,
     "mark_now": 76679.0,
@@ -266,7 +266,7 @@
         "lado": "LONG",
         "prioridade": "SECUNDÁRIA_TATICA",
         "escala": "sub_macro_ABC_user",
-        "entry": 76124,
+        "entry": 76600,
         "entry_central": 75960,
         "entry_zone_min": 75397,
         "entry_zone_max": 76124,
@@ -299,13 +299,15 @@
             "condicao": "EXAUSTAO FUNDO 5m + macro alinhado OR 🗣️ FUNDO 15m OR (ob_imbalance ratio>5 + vol spike 5m)"
           }
         },
-        "sl_unico": 74800,
+        "sl_unico": 75602,
         "ajuste_opcao_c_ts": "2026-05-24T04:00:54.729902-04:00",
-        "entry_descricao": "Limit 1 em $76,124 (B 38.2%) · Limit 2 sinal-driven entre $75,397-$76,124",
+        "entry_descricao": "Limit 1 $76,600 (Fibo 38.2% pullback) + Limit 2 $76,400 (Fibo 61.8%) · NOVO setup pullback rally atual",
         "nome": "LONG_oportunista_fundo_B_OpC",
         "status_limit_1": "CANCELADO 16:14 · sub-c expanded flat completou em $76,144 · book limpo · re-arma se preço voltar zona $76,200-$76,400 com cluster demand",
         "cancelamento_ts": "2026-05-24T16:15:24.541002-04:00",
-        "nota_re_arme": "Aguardar preço voltar a zona LONG entry + cluster DEMAND 15m+1H pra re-armar"
+        "nota_re_arme": "Aguardar preço voltar a zona LONG entry + cluster DEMAND 15m+1H pra re-armar",
+        "ajuste_pullback_ts": "2026-05-24T18:35:43.325177-04:00",
+        "nota": "Setup atualizado · sub-c UP iniciada do $76,062 · entry no pullback Fibo da primeira pernada"
       }
     ],
     "ponto_nao_retorno": "Close D > $82,811 + buffer 0.5% = $83,225 invalida COUNT macro Elliott completo (LEI #30). PNR INTRA · close 4H abaixo $74,221 (low Wave A) = Wave A não completou · count INVALIDATED. PNR BULL (curto) · close 1H acima $79,500 com vol = Wave B extension · zona Wave 4 maior (re-avaliar).",
