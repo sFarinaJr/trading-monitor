@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "24/05/2026 04:01:48",
-  "last_github_push": "24/05 04:01",
-  "last_github_push_ts": 1779609708.8288069,
+  "ultimo_update": "24/05/2026 04:02:42",
+  "last_github_push": "24/05 04:02",
+  "last_github_push_ts": 1779609762.096766,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -15,7 +15,7 @@
     "progresso_vs_baseline_usd": -161.4,
     "delta_vs_baseline": -161.4,
     "pnl_fenix_desde_baseline": -161.4,
-    "updated_at": "2026-05-24T04:01:48-04:00",
+    "updated_at": "2026-05-24T04:02:41-04:00",
     "equity_total_usdt": 1414.92,
     "unrealised_pnl": 19.74,
     "ts": "2026-05-23T20:05:42.619891-04:00"
@@ -191,7 +191,7 @@
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-05-23_20-05",
     "boot_ts": "2026-05-23T20:05:42.619891-04:00",
-    "ultimo_update": "2026-05-24T04:00:54.729902-04:00",
+    "ultimo_update": "2026-05-24T04:02:19.586700-04:00",
     "status": "BOOT_COMPLETO",
     "mark_at_boot": 76679.0,
     "mark_now": 76679.0,
@@ -236,7 +236,7 @@
         "lado": "SHORT",
         "prioridade": "PRIMÁRIA_MACRO",
         "escala": "macro_persistente_LEI29",
-        "entry": "77500-79500 (zona macro)",
+        "entry": 78500,
         "entry_central": 78500,
         "entry_zone_min": 77500,
         "entry_zone_max": 79500,
@@ -257,7 +257,8 @@
         "duracao_esperada_dias": "3-10",
         "scaling_in_permitido": true,
         "scaling_in_max_addons": 3,
-        "criado_ts": "2026-05-24T03:48:37.306527-04:00"
+        "criado_ts": "2026-05-24T03:48:37.306527-04:00",
+        "nome": "SHORT_estrutural_wave_c_macro"
       },
       {
         "tipo": "LONG_oportunista_fundo_Wave_B_sub_c",
@@ -265,7 +266,7 @@
         "lado": "LONG",
         "prioridade": "SECUNDÁRIA_TATICA",
         "escala": "sub_macro_ABC_user",
-        "entry": "75800-76124 (zona fundo B sub-c)",
+        "entry": 76124,
         "entry_central": 75960,
         "entry_zone_min": 75397,
         "entry_zone_max": 76124,
@@ -299,7 +300,9 @@
           }
         },
         "sl_unico": 74800,
-        "ajuste_opcao_c_ts": "2026-05-24T04:00:54.729902-04:00"
+        "ajuste_opcao_c_ts": "2026-05-24T04:00:54.729902-04:00",
+        "entry_descricao": "Limit 1 em $76,124 (B 38.2%) · Limit 2 sinal-driven entre $75,397-$76,124",
+        "nome": "LONG_oportunista_fundo_B_OpC"
       }
     ],
     "ponto_nao_retorno": "Close D > $82,811 + buffer 0.5% = $83,225 invalida COUNT macro Elliott completo (LEI #30). PNR INTRA · close 4H abaixo $74,221 (low Wave A) = Wave A não completou · count INVALIDATED. PNR BULL (curto) · close 1H acima $79,500 com vol = Wave B extension · zona Wave 4 maior (re-avaliar).",
