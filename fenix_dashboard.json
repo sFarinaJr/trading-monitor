@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "24/05/2026 10:16:30",
-  "last_github_push": "24/05 10:16",
-  "last_github_push_ts": 1779632190.008814,
+  "ultimo_update": "24/05/2026 10:17:21",
+  "last_github_push": "24/05 10:17",
+  "last_github_push_ts": 1779632241.117145,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -15,7 +15,7 @@
     "progresso_vs_baseline_usd": -161.4,
     "delta_vs_baseline": -161.4,
     "pnl_fenix_desde_baseline": -161.4,
-    "updated_at": "2026-05-24T10:16:27-04:00",
+    "updated_at": "2026-05-24T10:17:20-04:00",
     "equity_total_usdt": 1414.92,
     "unrealised_pnl": 19.74,
     "ts": "2026-05-23T20:05:42.619891-04:00"
@@ -355,15 +355,6 @@
         "tier": "medio",
         "reason": "PICO INTRA Wave B (16:30 hoje · $77,371.9) · resistência imediata",
         "decisao_pre_armada": "Topo intra Wave B · próximo rompimento confirma bull leg continua até Fibo 38.2%. SE rejeição com Camada 2 5m bear aqui (TOPO TRUNCADO) · armar SHORT intra-Wave-B T1 entry $77,250-$77,400 SL $77,550 TP2 $76,000 R:R 5.2 · MAS só após trade ponte LONG fechar (LEI #24).",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 76300,
-        "direction": "below",
-        "tier": "medio",
-        "reason": "Pullback HL 4H estimada + EMA20 1H · zona LONG bridge add-on",
-        "decisao_pre_armada": "Pullback de qualidade na bull leg Wave B. SE Camada 2 5m bull + COMBOFND 15m+1H ≤5min · armar LONG add-on T1 entry $76,250-$76,350 SL $76,000 TP2 $77,400 R:R 3.67 qty 0.04 BTC. Trade adicional à ponte (LEI #24 OK · mesma direção).",
         "active": true,
         "triggered": false
       },
