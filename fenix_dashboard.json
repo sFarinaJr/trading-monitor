@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "24/05/2026 03:52:42",
-  "last_github_push": "24/05 03:52",
-  "last_github_push_ts": 1779609162.316871,
+  "ultimo_update": "24/05/2026 03:53:01",
+  "last_github_push": "24/05 03:53",
+  "last_github_push_ts": 1779609181.093027,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -191,7 +191,7 @@
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-05-23_20-05",
     "boot_ts": "2026-05-23T20:05:42.619891-04:00",
-    "ultimo_update": "2026-05-24T03:48:37.306527-04:00",
+    "ultimo_update": "2026-05-24T03:52:49.617264-04:00",
     "status": "BOOT_COMPLETO",
     "mark_at_boot": 76679.0,
     "mark_now": 76679.0,
@@ -275,15 +275,17 @@
         "tp2_pct": 30,
         "sl": 74800,
         "sl_invalidacao_total": 74221,
-        "sizing_tier": "T2",
-        "sizing_pct_margem": 18,
-        "qty_max_btc": 0.1,
+        "sizing_tier": "T1",
+        "sizing_pct_margem": 10,
+        "qty_max_btc": 0.05,
         "rr_conservador": 3.5,
         "rr_agressivo": 5.0,
         "gatilho": "mark dentro [75397,76124] + cluster DEMAND 15m+1H + 🗣️ FUNDO confluente",
         "tese": "Surfar Wave C bull (rally final ABC sub-macro) até zona macro $79k onde Trade 2 SHORT arma",
         "aviso": "contra-tendência macro · só com confluência forte 1H+15m simultâneos",
-        "criado_ts": "2026-05-24T03:48:37.306527-04:00"
+        "criado_ts": "2026-05-24T03:48:37.306527-04:00",
+        "ajuste_user_ts": "2026-05-24T03:52:49.617264-04:00",
+        "ajuste_user_nota": "sizing T2→T1 conforme decisão user 03:52 · contra-bias macro merece conservadorismo"
       }
     ],
     "ponto_nao_retorno": "Close D > $82,811 + buffer 0.5% = $83,225 invalida COUNT macro Elliott completo (LEI #30). PNR INTRA · close 4H abaixo $74,221 (low Wave A) = Wave A não completou · count INVALIDATED. PNR BULL (curto) · close 1H acima $79,500 com vol = Wave B extension · zona Wave 4 maior (re-avaliar).",
