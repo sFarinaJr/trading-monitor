@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "23/05/2026 20:06:21",
-  "last_github_push": "23/05 20:06",
-  "last_github_push_ts": 1779581181.7290308,
+  "ultimo_update": "23/05/2026 20:07:03",
+  "last_github_push": "23/05 20:07",
+  "last_github_push_ts": 1779581223.602022,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,11 +11,11 @@
   "saldo": {
     "cum_realised_pnl": -6304.72,
     "cumPnL_unified_usd": -6304.72,
-    "unrealisedPnl": 19.14,
+    "unrealisedPnl": 19.05,
     "progresso_vs_baseline_usd": -180.72,
     "delta_vs_baseline": -180.72,
     "pnl_fenix_desde_baseline": -180.72,
-    "updated_at": "2026-05-23T20:06:06-04:00",
+    "updated_at": "2026-05-23T20:07:02-04:00",
     "equity_total_usdt": 1414.92,
     "unrealised_pnl": 19.74,
     "ts": "2026-05-23T20:05:42.619891-04:00"
@@ -33,7 +33,7 @@
     "takeProfit": null,
     "tp1_limit": null,
     "tp1_pnl_lock": 7.17,
-    "unrealised_pnl_usd": 19.14,
+    "unrealised_pnl_usd": 19.05,
     "tp2_target_estrutural": 77000
   },
   "trades_recentes": [
@@ -294,23 +294,95 @@
   "execution_mode": "AUTO",
   "manual_approval_required": false,
   "price_watch": {
-    "ts": "2026-05-22T20:21:23-04:00",
+    "ts": "2026-05-23T20:06:52.273733-04:00",
     "levels": [
       {
-        "price": 78070,
+        "price": 77502,
         "direction": "above",
         "tier": "alto",
-        "reason": "LTB D · 3 toques intacta · PNR bear macro",
-        "decisao_pre_armada": "Se mark atingir $78,070 · LTB D testada · oportunidade SHORT macro premium · entry SHORT $78,000-$78,070 com Camada 2 5m bear · SL $78,260 acima high D-1 · TP2 $75,300+ R:R 14x+.",
+        "reason": "Fibo 38.2% Wave A · MÍNIMO zona Wave B Elliott · primeira oportunidade SHORT estrutural Wave C",
+        "decisao_pre_armada": "ZONA WAVE B INFERIOR · CRÍTICO. Trade ponte LONG ATIVO · primeira parcial defensiva 50% se chegar aqui SEM Camada 2 5m bear ainda (LEI #26 v4.0). SE Camada 2 5m bear + RSI div 1H bearish fechado · armar SHORT estrutural Wave C entry $77,500-$77,700 SL $78,700 TP2 macro $74,200 (qty T2 0.06 BTC LEI #2 stopLoss embedded). Trade ponte LONG fecha 100% após SHORT estrutural armado.",
         "active": true,
         "triggered": false
       },
       {
-        "price": 78569,
+        "price": 78000,
         "direction": "above",
         "tier": "alto",
-        "reason": "LH 4H-28 · PNR bear macro · close acima INVALIDA tese bear D completa",
-        "decisao_pre_armada": "Invalidação macro · se rompido com close D = re-evaluate full tese · não usar pra entrada · só pra abortar SHORTs ativos.",
+        "reason": "Zona psicológica intermediária + área Wave B Fibo 45-50% · cluster decisão",
+        "decisao_pre_armada": "ZONA WAVE B MÉDIA · centro da zona target macro. SE Camada 2 5m bear + RSI div 1H bearish + cluster TOPO ≤5min · armar SHORT estrutural Wave C entry $77,950-$78,050 SL $78,700 TP2 $74,200 R:R 5.8. Sizing T2 0.06 BTC. Trade ponte LONG já deve estar fechado nesta zona.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 78516,
+        "direction": "above",
+        "tier": "medio",
+        "reason": "Fibo 50% Wave A · MEIO zona Wave B · alvo intermediário trade ponte LONG",
+        "decisao_pre_armada": "Fibo 50% · zona ideal pra topo Wave B simples (não-extension). Trade ponte LONG deve fazer parcial 70-100% aqui. SHORT estrutural pode aguardar Fibo 61.8% ($79,530) pra melhor R:R.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 79500,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "Fibo 61.8% Wave A · MÁXIMO zona Wave B · invalidação parcial se rompe com vol",
+        "decisao_pre_armada": "ZONA WAVE B SUPERIOR. SE close 4H > $79,500 com vol expansão · INVALIDAÇÃO PARCIAL Wave B (LEI #30) · pausar trade estrutural · escalar revisão OPUS · pode ser Wave 4 maior. Antes disso · SHORT estrutural ÚLTIMA oportunidade aqui com R:R 5+.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 77372,
+        "direction": "above",
+        "tier": "medio",
+        "reason": "PICO INTRA Wave B (16:30 hoje · $77,371.9) · resistência imediata",
+        "decisao_pre_armada": "Topo intra Wave B · próximo rompimento confirma bull leg continua até Fibo 38.2%. SE rejeição com Camada 2 5m bear aqui (TOPO TRUNCADO) · armar SHORT intra-Wave-B T1 entry $77,250-$77,400 SL $77,550 TP2 $76,000 R:R 5.2 · MAS só após trade ponte LONG fechar (LEI #24).",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 77000,
+        "direction": "above",
+        "tier": "medio",
+        "reason": "Resistência 1H estimada + zona psicológica $77k",
+        "decisao_pre_armada": "Reteste resistance · vigiar Camada 2. Se rompido com vol = bull leg confirma extensão até Fibo 38.2% $77,502. SE rejeição clara · sinal precoce SHORT mas aguardar zona alta $77,250-$77,400.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 76300,
+        "direction": "below",
+        "tier": "medio",
+        "reason": "Pullback HL 4H estimada + EMA20 1H · zona LONG bridge add-on",
+        "decisao_pre_armada": "Pullback de qualidade na bull leg Wave B. SE Camada 2 5m bull + COMBOFND 15m+1H ≤5min · armar LONG add-on T1 entry $76,250-$76,350 SL $76,000 TP2 $77,400 R:R 3.67 qty 0.04 BTC. Trade adicional à ponte (LEI #24 OK · mesma direção).",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 76000,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "Invalidação local bull leg Wave B · LL 4H se rompido",
+        "decisao_pre_armada": "BREAK abaixo $76,000 com vol = bull leg invalidada · pode indicar topo Wave B já formou em $77,372 (Wave B truncada). Cancelar setup LONG bridge add-on. Avaliar fechar trade ponte LONG defensivo. SL trail $75,451 ainda trava lucro.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 75451,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "SL TRAIL trade ponte LONG · trava +$3.79 mínimo na posição restante (+ $77.86 realizado)",
+        "decisao_pre_armada": "SL hit · trade ponte LONG fecha · min garantido $81.69 USD total. Pós-fechamento · executar LEI #17 (11 passos cancelar órfãs · atualizar state · rodar dashboard). SE Wave B abortada · re-avaliar Wave C SHORT pode entrar mais cedo em zona $76,500-$77,500 reduzida (condição invalidacao_parcial 2 do macro).",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 74221,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "LOW Wave A · INVALIDAÇÃO TOTAL count Elliott se rompido (LEI #30)",
+        "decisao_pre_armada": "INVALIDAÇÃO PARCIAL · close 4H abaixo $74,221 = Wave A não completou OU Wave B falhou · count INVALIDATED. Escalar revisão OPUS · fechar trade ponte 100% defensivo. PENDING_REVIEW macro Elliott.",
         "active": true,
         "triggered": false
       },
@@ -318,8 +390,17 @@
         "price": 74200,
         "direction": "below",
         "tier": "alto",
-        "reason": "extension 1.618x · alvo SHORT breakdown · zona macro relevante histórica",
-        "decisao_pre_armada": "Alvo extremo do SHORT breakdown · trail estrutural decide saída · vigiar exhaustion clara (LEI #4 inversa) ou Camada 2 5m bull pra exit defensivo.",
+        "reason": "TP2 MACRO Wave C estrutural · 1× magnitude Wave A · alvo principal trade estrutural SHORT",
+        "decisao_pre_armada": "TP2 macro Wave C · trail estrutural decide saída · NÃO armar ordem fixa (LEI #5). Vigiar exhaustion clara OU Camada 2 5m bull pra exit defensivo trade estrutural SHORT.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 82811,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "TOPO MACRO Wave A · close acima invalida count completo (LEI #30)",
+        "decisao_pre_armada": "INVALIDAÇÃO MACRO TOTAL · close D > $82,811 + buffer ($83,225) · count Wave A→B→C cancelado · macro_id arquivado · trade estrutural FECHA 100%. Não usar pra entrada · só pra abortar trade estrutural ativo.",
         "active": true,
         "triggered": false
       }
