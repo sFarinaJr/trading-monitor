@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "25/05/2026 02:24:00",
+  "ultimo_update": "25/05/2026 02:24:54",
   "last_github_push": "25/05 02:24",
-  "last_github_push_ts": 1779690240.9843771,
+  "last_github_push_ts": 1779690294.418684,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -15,7 +15,7 @@
     "progresso_vs_baseline_usd": -161.4,
     "delta_vs_baseline": -161.4,
     "pnl_fenix_desde_baseline": -161.4,
-    "updated_at": "2026-05-25T02:24:00-04:00",
+    "updated_at": "2026-05-25T02:24:53-04:00",
     "equity_total_usdt": 1414.92,
     "unrealised_pnl": 19.74,
     "ts": "2026-05-23T20:05:42.619891-04:00"
@@ -191,7 +191,7 @@
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-05-24_20-20",
     "boot_ts": "2026-05-24T20:25:15-04:00",
-    "ultimo_update": "2026-05-25T02:11:18.446397-04:00",
+    "ultimo_update": "2026-05-25T02:24:51.833981-04:00",
     "status": "BOOT_COMPLETO",
     "mark_at_boot": 77118.9,
     "mark_now": 77118.9,
@@ -326,6 +326,36 @@
         "direcao": "LONG",
         "lado": "LONG",
         "entrada": 76776
+      },
+      {
+        "tipo": "SHORT_addon1_macro_wave_c",
+        "direcao": "SHORT",
+        "lado": "SHORT",
+        "nome": "SHORT_addon1_77900",
+        "entry": 77900,
+        "tp1": 76500,
+        "tp2": 74200,
+        "sl": 79500,
+        "sizing_tier": "T2",
+        "qty_max_btc": 0.04,
+        "rr_conservador": 2.05,
+        "gatilho": "Scaling-in LEI #31 · add-on Trade 2 SHORT macro · zona estendida",
+        "criado_ts": "2026-05-25T02:24:51.833981-04:00"
+      },
+      {
+        "tipo": "SHORT_addon2_macro_wave_c",
+        "direcao": "SHORT",
+        "lado": "SHORT",
+        "nome": "SHORT_addon2_78300",
+        "entry": 78300,
+        "tp1": 76500,
+        "tp2": 74200,
+        "sl": 79500,
+        "sizing_tier": "T2",
+        "qty_max_btc": 0.04,
+        "rr_conservador": 2.45,
+        "gatilho": "Scaling-in LEI #31 · add-on Trade 2 SHORT macro · zona alta",
+        "criado_ts": "2026-05-25T02:24:51.833981-04:00"
       }
     ],
     "ponto_nao_retorno": null,
