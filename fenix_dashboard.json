@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "25/05/2026 02:09:17",
+  "ultimo_update": "25/05/2026 02:09:29",
   "last_github_push": "25/05 02:09",
-  "last_github_push_ts": 1779689357.162196,
+  "last_github_push_ts": 1779689369.586497,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -15,7 +15,7 @@
     "progresso_vs_baseline_usd": -161.4,
     "delta_vs_baseline": -161.4,
     "pnl_fenix_desde_baseline": -161.4,
-    "updated_at": "2026-05-25T02:08:33-04:00",
+    "updated_at": "2026-05-25T02:09:28-04:00",
     "equity_total_usdt": 1414.92,
     "unrealised_pnl": 19.74,
     "ts": "2026-05-23T20:05:42.619891-04:00"
@@ -335,15 +335,6 @@
     "ts": "2026-05-24T20:26:15-04:00",
     "levels": [
       {
-        "price": 77503,
-        "direction": "above",
-        "tier": "alto",
-        "reason": "Fibo 38.2% Wave A · ENTRADA zona macro SHORT estrutural",
-        "decisao_pre_armada": "Avaliar SHORT estrutural macro · verificar Camada 2 5m bear + RSI div 1H · se ≥2/4 critérios topo B · armar SHORT tier T2 18% margem (qty 0.06-0.10) · SL $78,300 zona Fibo 50% pra dar respiro · TP1 $76,500 TP2 $74,200 macro",
-        "active": true,
-        "triggered": false
-      },
-      {
         "price": 78516,
         "direction": "above",
         "tier": "alto",
@@ -385,15 +376,6 @@
         "tier": "alto",
         "reason": "LOW Wave A · INVALIDAÇÃO INTRA Wave B (close 4H abaixo · Wave A não completou)",
         "decisao_pre_armada": "Close 4H abaixo $74,221 = Wave A não completou · count INVALIDATED · revisar Elliott · escalar OPUS · pausar trade estrutural pendente",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 77490,
-        "direction": "above",
-        "tier": "medio",
-        "reason": "Pico intra Wave B atual (24/05 16:00 UTC) · retest decisivo",
-        "decisao_pre_armada": "Retest $77,490 com Camada 2 5m bear + RSI div 1H = gatilho SHORT cedo cenário B (entry $77,400 SL $77,550 TP2 $76,200 · qty 0.10 R:R 8.0). Rompimento com close 1H acima + vol = cenário A continua até Fibo zona macro",
         "active": true,
         "triggered": false
       },
