@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "26/05/2026 11:32:19",
+  "ultimo_update": "26/05/2026 11:32:25",
   "last_github_push": "26/05 11:32",
-  "last_github_push_ts": 1779809539.1297548,
+  "last_github_push_ts": 1779809545.392622,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -207,7 +207,7 @@
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-05-25_20-05",
     "boot_ts": "2026-05-25T20:05:00-04:00",
-    "ultimo_update": "2026-05-26T10:11:00.338450",
+    "ultimo_update": "2026-05-26T11:32:21.218059",
     "status": "BOOT_COMPLETO",
     "mark_at_boot": 77265.9,
     "mark_now": 77265.9,
@@ -340,6 +340,18 @@
         "direcao": "SHORT",
         "lado": "SHORT",
         "entrada": 78250
+      },
+      {
+        "id": "SHORT_pullback_pos_quebra_76885",
+        "entry": 76900,
+        "lado": "SHORT",
+        "direcao": "SHORT",
+        "tipo": "pullback_pos_quebra_estrutural",
+        "razao": "Mark quebrou $76,885 (chop fundo) e $76,436 (cabeça H&S 1H) · Wave C macro vence H&S menor · aguardar pullback ate $76,800-$77,000 (Fibo 38.2-61.8% do drop $77,938-$76,346) · SHORT no pullback com SL acima swing_high $78,406 (LEI #18) · TP $74,221 macro",
+        "sl_estrutural": 78406,
+        "tp": 74221,
+        "qty_btc": 0.04,
+        "ts_criado": "2026-05-26T11:32:21.218053"
       }
     ],
     "ponto_nao_retorno": null,
