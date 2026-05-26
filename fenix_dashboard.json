@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "26/05/2026 10:25:18",
-  "last_github_push": "26/05 10:25",
-  "last_github_push_ts": 1779805518.268735,
+  "ultimo_update": "26/05/2026 10:26:12",
+  "last_github_push": "26/05 10:26",
+  "last_github_push_ts": 1779805572.409035,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -15,7 +15,7 @@
     "progresso_vs_baseline_usd": -152.82,
     "delta_vs_baseline": -152.82,
     "pnl_fenix_desde_baseline": -152.82,
-    "updated_at": "2026-05-26T10:25:17-04:00",
+    "updated_at": "2026-05-26T10:26:11-04:00",
     "equity_total_usdt": 1414.92,
     "unrealised_pnl": 19.74,
     "ts": "2026-05-23T20:05:42.619891-04:00"
@@ -351,15 +351,6 @@
     "ts": "2026-05-25T20:07:00-04:00",
     "levels": [
       {
-        "price": 77885,
-        "direction": "above",
-        "tier": "alto",
-        "reason": "TOPO Wave B atualizado (25/05 16:00 UTC) · pico atingido + rejeitado · pivot decisivo retest",
-        "decisao_pre_armada": "Mark retest $77,885 com Camada 2 5m bear + RSI div 1H bear = SHORT add-on premium (LEI #31 · qty 0.02 BTC restante) entry zona $77,700-$77,885 · SL $78,040 · TP2 $74,200 · ALERT 🟦 INICIO/FIM imediato",
-        "active": true,
-        "triggered": false
-      },
-      {
         "price": 78040,
         "direction": "above",
         "tier": "alto",
@@ -410,15 +401,6 @@
         "tier": "alto",
         "reason": "LOW Wave A · TARGET MACRO TP2 conservador alternativo · invalidacao intra Wave B (close 4H abaixo · Wave A nao completou)",
         "decisao_pre_armada": "Atinge $74,221 = TP2 macro target ZONA · trade SHORT TP nativo Bybit $74,200 fillara · fechamento 100% mecanico · uPnL ~+$380 (27% reward) · LEI #17 protocolo pos-fechamento (11 passos) · revisar Elliott macro",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 77823,
-        "direction": "above",
-        "tier": "medio",
-        "reason": "Pivot D classico R1 (calc D-1 25/05) · resistencia matematica · convergencia com zona retest",
-        "decisao_pre_armada": "Test/rompimento R1 com close 1H + vol = Wave B estende cenario B premium add-on · sem rompimento = topo Wave B cravado cenario A · sinal direcional",
         "active": true,
         "triggered": false
       },
