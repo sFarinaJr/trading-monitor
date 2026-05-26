@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "25/05/2026 20:37:37",
-  "last_github_push": "25/05 20:37",
-  "last_github_push_ts": 1779755857.657622,
+  "ultimo_update": "25/05/2026 20:38:31",
+  "last_github_push": "25/05 20:38",
+  "last_github_push_ts": 1779755911.641352,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,11 +11,11 @@
   "saldo": {
     "cum_realised_pnl": -6288.57,
     "cumPnL_unified_usd": -6288.57,
-    "unrealisedPnl": 41.82,
+    "unrealisedPnl": 47.66,
     "progresso_vs_baseline_usd": -164.57,
     "delta_vs_baseline": -164.57,
     "pnl_fenix_desde_baseline": -164.57,
-    "updated_at": "2026-05-25T20:37:37-04:00",
+    "updated_at": "2026-05-25T20:38:31-04:00",
     "equity_total_usdt": 1414.92,
     "unrealised_pnl": 19.74,
     "ts": "2026-05-23T20:05:42.619891-04:00"
@@ -33,7 +33,7 @@
     "takeProfit": 74200.0,
     "tp1_limit": null,
     "tp1_pnl_lock": 7.17,
-    "unrealised_pnl_usd": 41.82,
+    "unrealised_pnl_usd": 48.85,
     "tp2_target_estrutural": 74200
   },
   "trades_recentes": [
@@ -376,15 +376,6 @@
         "tier": "alto",
         "reason": "INVALIDACAO TOTAL Wave A->B->C macro · topo $82,811 + buffer 0.5% (LEI #30)",
         "decisao_pre_armada": "AUTO-INVALIDA macro count via watcher LEI #30 · fenix_elliott_macro.json vira PENDING_REVIEW · trade SHORT estrutural FECHA 100% mecanico (perda gerenciada SL $78,040 ANTES de chegar aqui · cenario teorico)",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 76974,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "LL 1H 23:00 UTC pos-topo Wave B · primeira evidencia mecanica virada bear · suporte intra-1H novo",
-        "decisao_pre_armada": "Mark furar $76,974 com close 1H bear + vol = confirmacao Wave C iniciou · ativar cenario A 60% com forca · trade SHORT estrutural caminha pra TP1 nivel $76,500 (BE+fees trigger LEI #10 v3.0 dispara) · 🟦 INICIO/FIM imediato",
         "active": true,
         "triggered": false
       },
