@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "26/05/2026 07:11:21",
-  "last_github_push": "26/05 07:11",
-  "last_github_push_ts": 1779793881.919478,
+  "ultimo_update": "26/05/2026 07:12:16",
+  "last_github_push": "26/05 07:12",
+  "last_github_push_ts": 1779793936.424744,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -15,7 +15,7 @@
     "progresso_vs_baseline_usd": -152.82,
     "delta_vs_baseline": -152.82,
     "pnl_fenix_desde_baseline": -152.82,
-    "updated_at": "2026-05-26T07:11:21-04:00",
+    "updated_at": "2026-05-26T07:12:15-04:00",
     "equity_total_usdt": 1414.92,
     "unrealised_pnl": 19.74,
     "ts": "2026-05-23T20:05:42.619891-04:00"
@@ -419,15 +419,6 @@
         "tier": "medio",
         "reason": "Centro zona retest add-on premium SHORT (LEI #31 scaling-in)",
         "decisao_pre_armada": "Mark dentro $77,500-$77,700 + Camada 2 5m bear + 🗣️ TOPO 15m+1H simultaneos + RSI div 1H bear = SHORT add-on premium · qty 0.04 BTC · SL $78,040 · TP1 $76,500 TP2 $74,200 · R:R 3.4 · LEI #31 max 3 add-ons (ja teve 2 anteriores · este e o 3o)",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 77302,
-        "direction": "below",
-        "tier": "medio",
-        "reason": "BE-fees trade SHORT estrutural · LEI #10 v3.0 destino do SL apos TP1 nivel",
-        "decisao_pre_armada": "Quando LEI #10 v3.0 dispara (mark cruzar $76,500) · watcher move SL pra $77,302 · idempotente · LEI #12 v3.0 fee-aware · trade fica em situacao de zero-risco pos-TP1 nivel · garantia minima",
         "active": true,
         "triggered": false
       },
