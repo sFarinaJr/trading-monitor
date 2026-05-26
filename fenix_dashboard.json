@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "26/05/2026 00:01:47",
-  "last_github_push": "26/05 00:01",
-  "last_github_push_ts": 1779768107.377202,
+  "ultimo_update": "26/05/2026 00:02:30",
+  "last_github_push": "26/05 00:02",
+  "last_github_push_ts": 1779768150.627469,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,11 +11,11 @@
   "saldo": {
     "cum_realised_pnl": -6263.19,
     "cumPnL_unified_usd": -6263.19,
-    "unrealisedPnl": 62.95,
+    "unrealisedPnl": 65.16,
     "progresso_vs_baseline_usd": -139.19,
     "delta_vs_baseline": -139.19,
     "pnl_fenix_desde_baseline": -139.19,
-    "updated_at": "2026-05-26T00:01:36-04:00",
+    "updated_at": "2026-05-26T00:02:30-04:00",
     "equity_total_usdt": 1414.92,
     "unrealised_pnl": 19.74,
     "ts": "2026-05-23T20:05:42.619891-04:00"
@@ -42,15 +42,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_SHORT",
-    "markPrice": 76621.38,
-    "mark_price_atual": 76621.38,
-    "unrealised_pnl_usd": 62.95,
-    "unrealisedPnl": 62.95,
+    "markPrice": 76594.97,
+    "mark_price_atual": 76594.97,
+    "unrealised_pnl_usd": 65.16,
+    "unrealisedPnl": 65.16,
     "be_price": 77592.48871394,
     "liq_price": 80065.2,
     "tp2_target_estrutural": 74200,
-    "last_update": "2026-05-26T00:01:36-04:00",
-    "ts_snapshot": "2026-05-26T00:01:36-04:00"
+    "last_update": "2026-05-26T00:02:30-04:00",
+    "ts_snapshot": "2026-05-26T00:02:30-04:00"
   },
   "trades_recentes": [
     {
@@ -207,7 +207,7 @@
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-05-25_20-05",
     "boot_ts": "2026-05-25T20:05:00-04:00",
-    "ultimo_update": "2026-05-25T20:09:55-0400",
+    "ultimo_update": "2026-05-26T00:02:24.315677",
     "status": "BOOT_COMPLETO",
     "mark_at_boot": 77265.9,
     "mark_now": 77265.9,
@@ -340,6 +340,18 @@
         "direcao": "SHORT",
         "lado": "SHORT",
         "entrada": 78250
+      },
+      {
+        "id": "SHORT_addon_topo_sub2",
+        "entry": 77200,
+        "lado": "SHORT",
+        "direcao": "SHORT",
+        "tipo": "addon_estrutural_intra_wave_c",
+        "razao": "Topo sub-2 BULL bounce · Fibo 50% retracao sub-1 BEAR ($77,885->$76,469) · plano cenario C aprovado user 23:53 25/05",
+        "sl_estrutural": 78348,
+        "tp": 74200,
+        "qty_btc": 0.06,
+        "ts_criado": "2026-05-26T00:02:24.315671"
       }
     ],
     "ponto_nao_retorno": null,
