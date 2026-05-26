@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "25/05/2026 22:46:09",
-  "last_github_push": "25/05 22:46",
-  "last_github_push_ts": 1779763569.985499,
+  "ultimo_update": "25/05/2026 22:47:03",
+  "last_github_push": "25/05 22:47",
+  "last_github_push_ts": 1779763623.9389389,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,11 +11,11 @@
   "saldo": {
     "cum_realised_pnl": -6288.57,
     "cumPnL_unified_usd": -6288.57,
-    "unrealisedPnl": 100.22,
+    "unrealisedPnl": 107.42,
     "progresso_vs_baseline_usd": -164.57,
     "delta_vs_baseline": -164.57,
     "pnl_fenix_desde_baseline": -164.57,
-    "updated_at": "2026-05-25T22:46:06-04:00",
+    "updated_at": "2026-05-25T22:47:03-04:00",
     "equity_total_usdt": 1414.92,
     "unrealised_pnl": 19.74,
     "ts": "2026-05-23T20:05:42.619891-04:00"
@@ -42,15 +42,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_SHORT",
-    "markPrice": 76535.54,
-    "mark_price_atual": 76535.54,
-    "unrealised_pnl_usd": 100.22,
-    "unrealisedPnl": 100.22,
+    "markPrice": 76478.2,
+    "mark_price_atual": 76478.2,
+    "unrealised_pnl_usd": 107.1,
+    "unrealisedPnl": 107.1,
     "be_price": 77301.82209984,
     "liq_price": 80065.2,
     "tp2_target_estrutural": 74200,
-    "last_update": "2026-05-25T22:46:07-04:00",
-    "ts_snapshot": "2026-05-25T22:46:07-04:00"
+    "last_update": "2026-05-25T22:47:03-04:00",
+    "ts_snapshot": "2026-05-25T22:47:03-04:00"
   },
   "trades_recentes": [
     {
@@ -392,15 +392,6 @@
         "tier": "alto",
         "reason": "INVALIDACAO TOTAL Wave A->B->C macro · topo $82,811 + buffer 0.5% (LEI #30)",
         "decisao_pre_armada": "AUTO-INVALIDA macro count via watcher LEI #30 · fenix_elliott_macro.json vira PENDING_REVIEW · trade SHORT estrutural FECHA 100% mecanico (perda gerenciada SL $78,040 ANTES de chegar aqui · cenario teorico)",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 76500,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "TP1 NIVEL trade SHORT estrutural (LEI #10 v3.0) · dispara BE+fees mecanico mark cruzando",
-        "decisao_pre_armada": "Mark atingir $76,500 = LEI #10 v3.0 dispara · watcher move SL pra BE+fees ($77,302 ou inferior · idempotente) · TRAIL por candle 1H verde inicia (LEI #11 v2.0 · ja ativo) · cenario A 60% concretiza · 🟦 INICIO/FIM",
         "active": true,
         "triggered": false
       },
