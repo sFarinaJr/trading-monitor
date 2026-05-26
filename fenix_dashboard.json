@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "26/05/2026 10:18:30",
+  "ultimo_update": "26/05/2026 10:18:57",
   "last_github_push": "26/05 10:18",
-  "last_github_push_ts": 1779805110.994833,
+  "last_github_push_ts": 1779805137.107141,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -15,7 +15,7 @@
     "progresso_vs_baseline_usd": -152.82,
     "delta_vs_baseline": -152.82,
     "pnl_fenix_desde_baseline": -152.82,
-    "updated_at": "2026-05-26T10:18:30-04:00",
+    "updated_at": "2026-05-26T10:18:56-04:00",
     "equity_total_usdt": 1414.92,
     "unrealised_pnl": 19.74,
     "ts": "2026-05-23T20:05:42.619891-04:00"
@@ -410,15 +410,6 @@
         "tier": "alto",
         "reason": "LOW Wave A · TARGET MACRO TP2 conservador alternativo · invalidacao intra Wave B (close 4H abaixo · Wave A nao completou)",
         "decisao_pre_armada": "Atinge $74,221 = TP2 macro target ZONA · trade SHORT TP nativo Bybit $74,200 fillara · fechamento 100% mecanico · uPnL ~+$380 (27% reward) · LEI #17 protocolo pos-fechamento (11 passos) · revisar Elliott macro",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 77600,
-        "direction": "above",
-        "tier": "medio",
-        "reason": "Centro zona retest add-on premium SHORT (LEI #31 scaling-in)",
-        "decisao_pre_armada": "Mark dentro $77,500-$77,700 + Camada 2 5m bear + 🗣️ TOPO 15m+1H simultaneos + RSI div 1H bear = SHORT add-on premium · qty 0.04 BTC · SL $78,040 · TP1 $76,500 TP2 $74,200 · R:R 3.4 · LEI #31 max 3 add-ons (ja teve 2 anteriores · este e o 3o)",
         "active": true,
         "triggered": false
       },
