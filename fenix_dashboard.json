@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "26/05/2026 11:40:35",
-  "last_github_push": "26/05 11:40",
-  "last_github_push_ts": 1779810035.582748,
+  "ultimo_update": "26/05/2026 11:41:18",
+  "last_github_push": "26/05 11:41",
+  "last_github_push_ts": 1779810078.8107038,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -15,7 +15,7 @@
     "progresso_vs_baseline_usd": -152.82,
     "delta_vs_baseline": -152.82,
     "pnl_fenix_desde_baseline": -152.82,
-    "updated_at": "2026-05-26T11:40:24-04:00",
+    "updated_at": "2026-05-26T11:41:18-04:00",
     "equity_total_usdt": 1414.92,
     "unrealised_pnl": 19.74,
     "ts": "2026-05-23T20:05:42.619891-04:00"
@@ -207,7 +207,7 @@
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-05-25_20-05",
     "boot_ts": "2026-05-25T20:05:00-04:00",
-    "ultimo_update": "2026-05-26T11:32:21.218059",
+    "ultimo_update": "2026-05-26T11:41:04.933267",
     "status": "BOOT_COMPLETO",
     "mark_at_boot": 77265.9,
     "mark_now": 77265.9,
@@ -352,6 +352,18 @@
         "tp": 74221,
         "qty_btc": 0.04,
         "ts_criado": "2026-05-26T11:32:21.218053"
+      },
+      {
+        "id": "SHORT_pullback_fibo_38_76955",
+        "entry": 76955,
+        "lado": "SHORT",
+        "direcao": "SHORT",
+        "tipo": "pullback_fibo_38_pos_drop",
+        "razao": "Fibo 38.2% retração do drop $77,938→$76,346 · entry mais provavel fillar (~70%) · EV superior ao $77,300 (EV 1.22 vs 0.76) · trade #3 pos failed H&S",
+        "sl_estrutural": 78520,
+        "tp": 74221,
+        "qty_btc": 0.05,
+        "ts_criado": "2026-05-26T11:41:04.933262"
       }
     ],
     "ponto_nao_retorno": null,
