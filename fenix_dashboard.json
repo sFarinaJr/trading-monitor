@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "26/05/2026 22:15:40",
-  "last_github_push": "26/05 22:15",
-  "last_github_push_ts": 1779848140.792709,
+  "ultimo_update": "26/05/2026 22:16:35",
+  "last_github_push": "26/05 22:16",
+  "last_github_push_ts": 1779848195.691543,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -16,7 +16,7 @@
     "progresso_vs_baseline_usd": -151.11,
     "delta_vs_baseline": -151.11,
     "pnl_fenix_desde_baseline": -151.11,
-    "updated_at": "2026-05-26T22:15:40-04:00"
+    "updated_at": "2026-05-26T22:16:35-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -277,6 +277,30 @@
         "nome": "SHORT_BREAK_SUB_1_LOW_se_extende",
         "entrada": 75500,
         "gatilho": "close 1H < $75,500 com vol 1.5x"
+      },
+      {
+        "nome": "LONG_TATICO_SUB_2_C_CONTRA_MACRO",
+        "tipo": "tatico_intra_sub",
+        "direcao": "LONG",
+        "lado": "LONG",
+        "entry": 75800,
+        "entry_zona_min_max": [
+          75770,
+          75830
+        ],
+        "sl": 75710,
+        "tp1": 76179,
+        "tp2": 76400,
+        "tp3": 76548,
+        "rr": 4.2,
+        "rr_stretch": 8.3,
+        "tier": "T1",
+        "qty_btc": 0.02,
+        "macro_aligned": false,
+        "macro_alignment": "CONTRA",
+        "gatilho": "user_autorizou_22_14 · estrutura ABC sub-2-B fundo $75,729 22:00",
+        "invalidacao": "break $75,710 = sub-2 morta · sub-1 estendendo",
+        "added_ts": "2026-05-26T22:16:08-04:00"
       }
     ],
     "ponto_nao_retorno": null,
