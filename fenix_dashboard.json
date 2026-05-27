@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "26/05/2026 21:06:05",
-  "last_github_push": "26/05 21:06",
-  "last_github_push_ts": 1779843965.169538,
+  "ultimo_update": "26/05/2026 21:07:00",
+  "last_github_push": "26/05 21:07",
+  "last_github_push_ts": 1779844020.211641,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -16,7 +16,7 @@
     "progresso_vs_baseline_usd": -151.11,
     "delta_vs_baseline": -151.11,
     "pnl_fenix_desde_baseline": -151.11,
-    "updated_at": "2026-05-26T21:06:04-04:00"
+    "updated_at": "2026-05-26T21:06:59-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -205,7 +205,7 @@
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-05-26_21-15",
     "boot_ts": "2026-05-26T21:05:56-04:00",
-    "ultimo_update": "2026-05-26T21:05:56-04:00",
+    "ultimo_update": "2026-05-26T21:06:19-04:00",
     "status": "BOOT_COMPLETO",
     "mark_at_boot": 76023,
     "mark_now": 76023,
@@ -251,8 +251,8 @@
         "qty_btc": 0.06,
         "tier": "T2",
         "macro_aligned": true,
-        "invalidacao": "Close 4H acima $78,250 = sub-2 estende além zona · contagem Wave 5 reavaliada · escalar OPUS revisão Elliott (LEI #30 invalidação parcial)",
-        "razao_estrutural": "PRIMÁRIO macro Wave 5 sub-3 SHORT · retest sub-2 zona Fib 38-62% sub-1 com Camada 2 5m TOP + RSI 1H div bearish + close 4H bear engulfing confirmação. Validator Elliott matemático aprovou contagem (3 regras impulsivas satisfeitas). TP2 Fib 50% Wave 3 macro = $73,911. LEI #29 fenix_elliott_macro.json alinhado · LEI #31 scaling-in permitido até 0.18 BTC max.",
+        "invalidacao": "close 4H > $78,500 ou Wave 4 acima topo $78,049 invalidando finalização",
+        "razao_estrutural": "Sub-2 bounce 38-62% Fib retracement sub-1 W5 macro · zona Fib 50% $76,840 · gatilho Camada 2 5m TOP + RSI 1H div bear + close 4H bear engulfing",
         "direcao": "SHORT",
         "lado": "SHORT",
         "nome": "SHORT_RETEST_SUB_2_WAVE_5_MACRO",
@@ -260,23 +260,23 @@
         "gatilho": "$76,548-$77,128"
       },
       {
-        "tipo": "SHORT_BREAK_SUB_1_LOW_75627",
-        "entry_zone": "$75,300-$75,600",
+        "tipo": "SHORT_BREAK_SUB_1_LOW_se_extende",
+        "entry_zone": "close 1H < $75,500 com vol 1.5x",
         "entry": 75500,
         "sl": 76300,
         "tp1": 74917,
         "tp2": 73911,
-        "rr": 2.01,
-        "qty_btc": 0.03,
+        "rr": 2.27,
+        "qty_btc": 0.06,
         "tier": "T2",
         "macro_aligned": true,
-        "invalidacao": "Close 1H acima $76,300 com vol = sub-1 não estendeu · re-armar setup primário sub-2 bounce",
-        "razao_estrutural": "ALTERNATIVO sub-1 extension · break close 1H < $75,500 com vol 1.5x MA confirma sub-1 estendida · sub-2 alvo maior $77,500+ depois · entry market · LEI #31 scaling-in permitido. Razão · evitar perder Wave 5 sub-3 se mercado não der retest premium.",
+        "invalidacao": "close 1H > $76,300 com vol expansão · re-mapear sub-1 finalizada",
+        "razao_estrutural": "Sub-1 W5 estende abaixo do low $75,627 atual · break momentum SHORT alvo TP2 macro $73,911 · entry alternativo conservador",
         "direcao": "SHORT",
         "lado": "SHORT",
-        "nome": "SHORT_BREAK_SUB_1_LOW_75627",
+        "nome": "SHORT_BREAK_SUB_1_LOW_se_extende",
         "entrada": 75500,
-        "gatilho": "close 1H < $75,500 com vol"
+        "gatilho": "close 1H < $75,500 com vol 1.5x"
       }
     ],
     "ponto_nao_retorno": null,
