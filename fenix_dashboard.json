@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "26/05/2026 23:13:36",
+  "ultimo_update": "26/05/2026 23:13:49",
   "last_github_push": "26/05 23:13",
-  "last_github_push_ts": 1779851616.3074188,
+  "last_github_push_ts": 1779851629.0077,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -277,6 +277,27 @@
         "nome": "SHORT_BREAK_SUB_1_LOW_se_extende",
         "entrada": 75500,
         "gatilho": "close 1H < $75,500 com vol 1.5x"
+      },
+      {
+        "nome": "LONG_TATICO_SUB_2_ABC_CONTRA_MACRO",
+        "tipo": "tatico_contrawave_v19",
+        "direcao": "LONG",
+        "lado": "LONG",
+        "entry": 75890,
+        "entry_zona_min_max": [
+          75850,
+          75920
+        ],
+        "sl": 75620,
+        "tp1": 76548,
+        "tp2": 76840,
+        "tp3": 77128,
+        "rr": 2.45,
+        "tier": "T1_plus",
+        "qty_btc": 0.04,
+        "macro_alignment": "CONTRA_contrawave_override",
+        "gatilho": "user autorizou 23:13",
+        "added_ts": "2026-05-26T23:13:38-04:00"
       }
     ],
     "ponto_nao_retorno": null,
