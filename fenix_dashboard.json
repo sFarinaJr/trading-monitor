@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "26/05/2026 23:54:36",
-  "last_github_push": "26/05 23:54",
-  "last_github_push_ts": 1779854076.264214,
+  "ultimo_update": "26/05/2026 23:55:29",
+  "last_github_push": "26/05 23:55",
+  "last_github_push_ts": 1779854129.545714,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -16,7 +16,7 @@
     "progresso_vs_baseline_usd": -164.56,
     "delta_vs_baseline": -164.56,
     "pnl_fenix_desde_baseline": -164.56,
-    "updated_at": "2026-05-26T23:54:35-04:00"
+    "updated_at": "2026-05-26T23:55:28-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -361,23 +361,6 @@
         "decisao_pre_armada": "AUTO-INVALIDA macro count via watcher LEI #30 · fenix_elliott_macro.json vira PENDING_REVIEW · macro arquivado · cenário teórico (SL primário $78,250 antes)",
         "active": true,
         "triggered": false
-      },
-      {
-        "price": 75627,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "LOW sub-1 atual Wave 5 macro · break com vol = sub-1 estende",
-        "decisao_pre_armada": "BREAK $75,627 com close 1H bear + vol 1.5x MA = sub-1 W5 NÃO terminou (BOOT 21:27 errado) · AÇÃO OBRIGATÓRIA: (1) RECALCULAR todos os fractais sub-1 desde topo W4 $78,049 · (2) Invalidar contagem ABC sub-2 vigente (sub-2-a $76,077 · sub-2-b $75,771) · (3) Re-mapear sub-1 mais profunda · novo low candidato $75,300 (Fib 1.272 sub-1 inicial) ou $74,917 (Fib 38% W3) · (4) Disparar skill fenix-analise-macro pra recálculo completo · (5) Sub-2 alvo se mover pra zona Fib 38-62% da sub-1 RE-DEFINIDA · (6) NÃO entrar SHORT no break (entry dentro sub-1 em curso · VETO_SHORT_INTRA_SUB1) · aguardar bounce sub-2 confirmar topo novo",
-        "active": true,
-        "triggered": false,
-        "recalcular_fractais": true,
-        "skill_dispatch": "fenix-analise-macro",
-        "invalidates": [
-          "sub-1_low_75627",
-          "sub-2-a_76077",
-          "sub-2-b_75771",
-          "sub-2-c_atual"
-        ]
       },
       {
         "price": 75300,
