@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "26/05/2026 20:34:27",
-  "last_github_push": "26/05 20:34",
-  "last_github_push_ts": 1779842067.8897111,
+  "ultimo_update": "26/05/2026 20:35:20",
+  "last_github_push": "26/05 20:35",
+  "last_github_push_ts": 1779842120.063599,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -203,118 +203,136 @@
     }
   ],
   "current_thesis": {
-    "thesis_id": "boot_d_close_2026-05-25_20-05",
-    "boot_ts": "2026-05-25T20:05:00-04:00",
-    "ultimo_update": "2026-05-26T15:23:11-04:00",
+    "thesis_id": "boot_d_close_2026-05-26_20-05",
+    "boot_ts": "2026-05-26T20:30:00-04:00",
+    "ultimo_update": "2026-05-26T20:30:00-04:00",
     "status": "BOOT_COMPLETO",
-    "mark_at_boot": 77265.9,
-    "mark_now": 77265.9,
+    "mark_at_boot": 75940.5,
+    "mark_now": 75940.5,
     "macro_bias_D": {
       "direcao": "BEARISH",
-      "score": 5.5
+      "score": 6.5
     },
-    "leitura_primaria_opus": "§1 CONTEXTO MACRO · Macro Elliott vigente WAVE_B_IN_PROGRESS oficial (LEI #29 fenix_elliott_macro.json) mas TOPO B muito provavelmente CRAVOU em $77,885 (23/05 16:00 UTC · rejeição 4H + LH+LL 1H pós-topo) sem atingir Fibo 38% $77,502 em close · Wave C iniciada. Macro D em downtrend 12 dias ($82,811→$74,221→$77,885 bounce truncated→$75,733 atual). EMAs bear-stacked: D $77,615 · 4H $76,768 · 1H $76,647 · mark $75,861 abaixo de todas. Volume D atual 72k vs MA20 ~60k = 1.2x acima · convicção institucional bear.\n\n§2 ESTADO ATUAL · 4H 12:00 UTC bear engulfing forte (O $77,159.9 H $78,049 L $76,216 C $76,464 vol 1.7x MA) rompeu suporte LL 1H $76,974 com volume. Mark intra-day $75,861 testou L $75,733 (Fib 38% bounce Wave A). RSI 1H 32.19 ZONA OVERSOLD curto prazo · Camada 2 bottom_exhaustion 5m disparou 15:20 @ $75,865 · MACD 4H histograma +235.7 (momentum bear desacelerando intra-candle). Trade SHORT estrutural 0.144 BTC avg $77,370 STOPADO @ $77,344.9 PnL -$15.85 ANTES da continuação bear (cicatriz · SL apertado pegou wick local).\n\n§3 PRÓXIMO MOVIMENTO · 3 cenários · (a) bounce oversold local até EMA20 4H $76,768 ou ZONA $76,500-$76,974 (últimas resistências broken) 50% · prob alta dado RSI 32 + Camada 2 + cluster EXAUSTAO 13:45-14:10; (b) close 4H 16:00 bear sustentado < $75,800 + vol expansão = Wave C continuação ao TP2 macro $74,200 35%; (c) range $75,700-$76,200 12h sem rompimento 15% · próximo close 4H decide.",
+    "leitura_primaria_opus": "§1 CONTEXTO MACRO · Contagem ELLIOTT REVISADA 26/05 18:17 UTC-4 · 5 IMPULSIVAS DOWN macro VALIDADAS matematicamente (W2 não retraced 100% W1 OK · W3 mais longa OK · W4 não invade territory W1 OK). ABC zigzag REJEITADO (sub-c truncated violou regra zigzag). LEI #29 fenix_elliott_macro.json estado WAVE_5_MACRO_IN_PROGRESS_SUB_1_FINALIZANDO. Validator matemático Python aprovou contagem.\n\n§2 ESTADO ATUAL · D close em formação ($75,897->$75,940 · volume early 600). D-1 (25/05) FECHOU $75,897 BEAR macro confirmação (O$77,280 H$78,049 L$75,627 C$75,897 range $2,421 vol 79k). 4H 12:00 UTC-4 bear engulfing massivo (vol 4.4x MA) · 4H 16:00 UTC-4 continuação $76,464->$75,733. Mark $75,940 entre EMA20 1H ($76,647) abaixo e low sub-1 atual $75,627 acima. Sub-1 ainda em formação · nenhum bounce desde topo $78,049 atingiu Fib 38% mínimo de sub-1 (max bounce 25.6% $76,247). Camada 2 5m bottom_exhaustion disparou 15:20 UTC-4 (@$75,865 · 5h atrás) mas mark consolidou ao redor sem follow-through forte. Sentidos · pulsos 20:30 neutro/compras dominam (+3) score 5.5 sonnet. Watcher score 7.5 escalou OPUS 20:28 (livro pressão venda + delta compra agressiva + compressão + rejeição pavio + distância nível).\n\n§3 PRÓXIMO MOVIMENTO · 3 cenários · (a) sub-1 estende abaixo $75,627 antes de sub-2 bounce 40% · prob alta dado momentum bear 4H + falta de bounce sólido + EMA20 1H rejeitando; (b) sub-2 bounce inicia agora desde $75,627 alvo $76,553-$77,124 (Fib 38-62% sub-1) 35% · setup SHORT premium retest sub-3 macro; (c) range $75,700-$76,200 12h sem rompimento 25% · próximo close 4H 00:00 UTC-4 decide.",
     "cenarios_opus": {
-      "cenario_A_bounce_oversold_local": {
-        "prob": 50,
-        "entry": 75900,
-        "sl": 75600,
-        "tp1": 76280,
-        "tp2": 76735,
-        "rr": 2.78,
-        "note": "Bounce contrarian curtíssimo · RSI 1H 32 oversold + Camada 2 bottom_exhaustion 15:20 + cluster EXAUSTAO 13:45-14:10 · TP2 EMA20 4H $76,768 zona resistência · LEI #28 ZONA BOOT $75,800-$76,000 com sinal timing · sizing T1 contrarian obrigatório (LEI #28 cláusula reforçada 23/05)"
-      },
-      "cenario_B_wave_c_continuacao": {
-        "prob": 35,
-        "entry": 76200,
-        "sl": 76900,
-        "tp1": 75820,
-        "tp2": 74300,
-        "rr": 2.71,
-        "note": "SHORT retest após bounce A · rejeição EMA20 4H $76,768 ou zona $76,500-$76,974 com Camada 2 5m bear + RSI 1H div bearish · alinhado bias macro Wave C · TP2 $74,200 (TP2 macro fenix_elliott_macro.json) · sizing T2 default · setup PRIMÁRIO macro"
-      },
-      "cenario_C_range_indefinido": {
-        "prob": 15,
+      "cenario_A_sub1_estende_abaixo_75627": {
+        "prob": 40,
         "entry": null,
         "sl": null,
         "tp1": null,
         "tp2": null,
         "rr": null,
-        "note": "Range $75,700-$76,200 12h sem rompimento · SEM ENTRADA · aguardar close 4H 16:00 UTC-4 ou nova quebra estrutural · LEI #1 zero perguntas mantém FÊNIX aguardando timing"
+        "note": "Sub-1 aprofunda · NÃO entrar SHORT no break porque seria DENTRO sub-1 em curso · aguardar sub-2 bounce qualificar zona retest. SE break $75,300 com vol expansão 2x MA = sinal sub-1 estendida · re-mapear sub-2 alvo maior $77,500+"
+      },
+      "cenario_B_sub2_bounce_iniciando_alvo_76548_77128": {
+        "prob": 35,
+        "entry": 76840,
+        "sl": 78250,
+        "tp1": 74917,
+        "tp2": 73911,
+        "rr": 2.07,
+        "note": "Sub-2 bounce ativa · zona alvo Fib 38-62% sub-1 ($76,553-$77,124) com Camada 2 5m TOP + RSI 1H div bearish + close 4H rejeitando = setup PRIMÁRIO SHORT_RETEST_SUB_2_WAVE_5_MACRO. T2 0.06 BTC. R:R 2.07x conservador / 5.1x stretch Fib 1.0 TP3 $69,649."
+      },
+      "cenario_C_range_75700_76200_consolidacao": {
+        "prob": 25,
+        "entry": null,
+        "sl": null,
+        "tp1": null,
+        "tp2": null,
+        "rr": null,
+        "note": "Range estreito 12h · SEM ENTRADA · aguardar close 4H 00:00 UTC-4 ou close 1H quebra estrutural com vol · LEI #1 FÊNIX aguarda timing"
       }
     },
     "setups_pre_armados": [
       {
-        "tipo": "LONG_BOUNCE_oversold_contrarian_curtissimo",
-        "entry_zone": "$75,800-$75,900",
-        "entry": 75900,
-        "sl": 75600,
-        "tp1": 76280,
-        "tp2": 76735,
-        "rr": 2.78,
-        "qty_btc": 0.005,
-        "tier": "T1",
-        "macro_aligned": false,
-        "invalidacao": "Close 1H abaixo $75,600 com vol expansão = Wave C aprofunda · LEI #28 cláusula contrarian sizing T1 obrigatório · LEI #15 score 2/6 pullback estrutural aceitável",
-        "razao_estrutural": "RSI 1H 32 oversold + Camada 2 bottom_exhaustion 5m disparou 15:20 @ $75,865 + cluster EXAUSTAO 13:45 e 14:10 + cheirinho ursos persistente 20min · TP2 EMA20 4H $76,735 (resistência primária pós-pullback)",
-        "direcao": "LONG",
-        "lado": "LONG",
-        "nome": "LONG_BOUNCE_oversold_contrarian_curtissimo",
-        "entrada": 75900,
-        "gatilho": "$75,800-$75,900"
-      },
-      {
-        "tipo": "SHORT_WAVE_C_continuacao_retest_resistencia",
-        "entry_zone": "$76,500-$76,800",
-        "entry": 76700,
-        "sl": 76900,
-        "tp1": 75820,
-        "tp2": 74300,
-        "rr": 12.0,
-        "qty_btc": 0.013,
+        "tipo": "SHORT_RETEST_SUB_2_WAVE_5_MACRO",
+        "entry_zone": "$76,548-$77,128",
+        "entry": 76840,
+        "sl": 78250,
+        "tp1": 74917,
+        "tp2": 73911,
+        "rr": 2.07,
+        "qty_btc": 0.06,
         "tier": "T2",
         "macro_aligned": true,
-        "invalidacao": "Close 4H acima $77,000 com vol expansão = Wave B estende além zona · escalar revisão Elliott · invalidação parcial LEI #30",
-        "razao_estrutural": "PRIMÁRIO macro Wave C bear · retest EMA20 4H $76,768 ou zona LL 1H broken $76,974 com Camada 2 5m bear + RSI 1H div bearish · TP2 macro $74,200 (fenix_elliott_macro.json) · LEI #29 alinhado · LEI #31 scaling-in permitido",
+        "invalidacao": "Close 4H acima $78,250 = sub-2 estende além zona · contagem Wave 5 reavaliada · escalar OPUS revisão Elliott (LEI #30 invalidação parcial)",
+        "razao_estrutural": "PRIMÁRIO macro Wave 5 sub-3 SHORT · retest sub-2 zona Fib 38-62% sub-1 com Camada 2 5m TOP + RSI 1H div bearish + close 4H bear engulfing confirmação. Validator Elliott matemático aprovou contagem (3 regras impulsivas satisfeitas). TP2 Fib 50% Wave 3 macro = $73,911. LEI #29 fenix_elliott_macro.json alinhado · LEI #31 scaling-in permitido até 0.18 BTC max.",
         "direcao": "SHORT",
         "lado": "SHORT",
-        "nome": "SHORT_WAVE_C_continuacao_retest_resistencia",
-        "entrada": 76700,
-        "gatilho": "$76,500-$76,800"
+        "nome": "SHORT_RETEST_SUB_2_WAVE_5_MACRO",
+        "entrada": 76840,
+        "gatilho": "$76,548-$77,128"
+      },
+      {
+        "tipo": "SHORT_BREAK_SUB_1_LOW_75627",
+        "entry_zone": "$75,300-$75,600",
+        "entry": 75500,
+        "sl": 76300,
+        "tp1": 74917,
+        "tp2": 73911,
+        "rr": 2.01,
+        "qty_btc": 0.03,
+        "tier": "T2",
+        "macro_aligned": true,
+        "invalidacao": "Close 1H acima $76,300 com vol = sub-1 não estendeu · re-armar setup primário sub-2 bounce",
+        "razao_estrutural": "ALTERNATIVO sub-1 extension · break close 1H < $75,500 com vol 1.5x MA confirma sub-1 estendida · sub-2 alvo maior $77,500+ depois · entry market · LEI #31 scaling-in permitido. Razão · evitar perder Wave 5 sub-3 se mercado não der retest premium.",
+        "direcao": "SHORT",
+        "lado": "SHORT",
+        "nome": "SHORT_BREAK_SUB_1_LOW_75627",
+        "entrada": 75500,
+        "gatilho": "close 1H < $75,500 com vol"
       }
     ],
-    "ponto_nao_retorno": null,
-    "proximo_marco": "Close 4H 16:00 UTC-4 (~45min) · decide A (bounce local até EMA20 4H $76,768) vs B (Wave C continua $74,200). Antes disso · monitorar reação 1H em $75,700-$76,000 · nova Camada 2 confluente 5m bear em $76,500-$76,800 = gatilho SHORT cenário B."
+    "ponto_nao_retorno": "Close D acima $83,225 = INVALIDAÇÃO TOTAL macro Wave 1-2-3-4-5 (LEI #30 · topo $82,811 + buffer 0.5%) · macro arquivado em PENDING_REVIEW · trade estrutural fecha 100% mecânico. Close 4H acima $78,250 = INVALIDAÇÃO PARCIAL (Wave 5 sub-2 estende além zona · contagem reavaliada).",
+    "proximo_marco": "Close 4H 00:00 UTC-4 (~3h30) · decide A (sub-1 estende abaixo $75,627) vs B (sub-2 bounce inicia alvo $76,548-$77,128) vs C (range). Antes disso · monitorar reação 1H em $75,627-$76,000 · nova Camada 2 confluente 5m TOP em $76,548-$77,128 = gatilho SHORT cenário B (setup primário macro)."
   },
   "execution_mode": "AUTO",
   "manual_approval_required": false,
   "price_watch": {
-    "ts": "2026-05-25T20:07:00-04:00",
+    "ts": "2026-05-26T20:30:00-04:00",
     "levels": [
       {
-        "price": 78040,
+        "price": 77128,
         "direction": "above",
         "tier": "alto",
-        "reason": "SL trade SHORT estrutural ATIVO · invalidacao tatica posicao 0.12 BTC",
-        "decisao_pre_armada": "Mark atingir $78,040 = SL STOP trade SHORT macro · perda ~$80 (5.7% equity) · escalar OPUS imediato · reavaliar contagem Elliott · trade fechado pelo Bybit nativo · executar protocolo pos-fechamento LEI #17 (11 passos)",
+        "reason": "ZONA TOP setup primário SHORT_RETEST_SUB_2 · Fib 61.8% sub-1 W5",
+        "decisao_pre_armada": "Mark atingir $77,128 com Camada 2 5m TOP + RSI 1H div bearish + close 4H bear engulfing = SHORT setup primário macro · entry $76,840 SL $78,250 TP1 $74,917 TP2 $73,911 R:R 2.07 T2 0.06 BTC · LEI #29 alinhado · 🟦 INÍCIO/FIM imediato",
         "active": true,
         "triggered": false
       },
       {
-        "price": 78516,
+        "price": 76840,
         "direction": "above",
         "tier": "alto",
-        "reason": "Fibo 50% Wave A · ZONA PRIME extension premium SHORT add-on (cenario B 25%)",
-        "decisao_pre_armada": "Cenario B materializa · mark atinge zona $78,000-$78,500 + Camada 2 5m bear = SHORT add-on EXTENSION (LEI #31 ultimo add-on · qty 0.02 BTC chega qty_max 0.18 BTC) entry $78,250 · SL $78,700 · TP2 $74,200 · R:R 9.0 premium",
+        "reason": "ZONA CENTRO setup primário SHORT_RETEST_SUB_2 · Fib 50% sub-1 W5",
+        "decisao_pre_armada": "Mark dentro $76,548-$77,128 + Camada 2 5m TOP + sentidos vendas dominam + RSI 1H div bearish = SHORT primário · NÃO esperar topo extremo · entry market ao redor $76,840",
         "active": true,
         "triggered": false
       },
       {
-        "price": 79530,
+        "price": 76548,
         "direction": "above",
         "tier": "alto",
-        "reason": "Fibo 61.8% Wave A · TOPO MAX zona Wave B · pre-invalidacao parcial se romper close 4H",
-        "decisao_pre_armada": "Atinge + rejeitar = SHORT add-on premium maximo (Camada 2 5m bear obrigatorio) · romper close 4H acima = invalidacao parcial Wave B · escalar OPUS revisao Elliott · trade SHORT em situacao critica",
+        "reason": "ZONA BOTTOM setup primário SHORT_RETEST_SUB_2 · Fib 38.2% sub-1 W5",
+        "decisao_pre_armada": "Mark atingir $76,548 = entrada zona retest sub-2 · monitorar Camada 2 5m TOP · pode ser ponto entry mais conservador se confluência fortíssima · SL ainda $78,250",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 78250,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "SL setup primário SHORT_RETEST_SUB_2 · invalidação parcial Wave 5 sub-2",
+        "decisao_pre_armada": "Mark atingir $78,250 com close 4H = sub-2 estende além zona · contagem Wave 5 reavaliada · escalar OPUS revisão Elliott · LEI #30 invalidação parcial",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 78049,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "TOPO Wave 4 macro final (double top com $77,885) · pivot decisivo retest absoluto",
+        "decisao_pre_armada": "Mark retest $78,049 com rejeição + Camada 2 5m TOP forte = SHORT add-on premium MAX · entry $77,900-$78,049 SL $78,250 TP2 $73,911 R:R 5.7x · qty 0.03 BTC · LEI #31",
         "active": true,
         "triggered": false
       },
@@ -322,8 +340,35 @@
         "price": 83225,
         "direction": "above",
         "tier": "alto",
-        "reason": "INVALIDACAO TOTAL Wave A->B->C macro · topo $82,811 + buffer 0.5% (LEI #30)",
-        "decisao_pre_armada": "AUTO-INVALIDA macro count via watcher LEI #30 · fenix_elliott_macro.json vira PENDING_REVIEW · trade SHORT estrutural FECHA 100% mecanico (perda gerenciada SL $78,040 ANTES de chegar aqui · cenario teorico)",
+        "reason": "INVALIDAÇÃO TOTAL macro Wave 1-2-3-4-5 · topo $82,811 + buffer 0.5% (LEI #30)",
+        "decisao_pre_armada": "AUTO-INVALIDA macro count via watcher LEI #30 · fenix_elliott_macro.json vira PENDING_REVIEW · macro arquivado · cenário teórico (SL primário $78,250 antes)",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 75627,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "LOW sub-1 atual Wave 5 macro · break com vol = sub-1 estende",
+        "decisao_pre_armada": "Mark furar $75,627 com close 1H bear + vol 1.5x MA = sub-1 estendida · re-mapear sub-2 alvo maior · NÃO entrar SHORT no break (entry dentro sub-1) · aguardar bounce sub-2",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 75300,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "Sub-1 extension breakdown · zona Fib 1.272 extension sub-1 inicial",
+        "decisao_pre_armada": "Close 1H < $75,300 com vol 2x = sub-1 estendida ESTRUTURAL · setup ALTERNATIVO SHORT_BREAK_SUB_1 dispara · entry $75,500 SL $76,300 TP2 $73,911 R:R 2.01 T2 0.03 BTC · LEI #31",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 74917,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "TP1 nível setup primário · Fib 38.2% Wave 3 macro target",
+        "decisao_pre_armada": "Mark atingir $74,917 = TP1 setup primário · LEI #10 v3.0 dispara BE+fees se trade ativo · 38% conquista Wave 5 macro target",
         "active": true,
         "triggered": false
       },
@@ -331,17 +376,53 @@
         "price": 74221,
         "direction": "below",
         "tier": "alto",
-        "reason": "LOW Wave A · TARGET MACRO TP2 conservador alternativo · invalidacao intra Wave B (close 4H abaixo · Wave A nao completou)",
-        "decisao_pre_armada": "Atinge $74,221 = TP2 macro target ZONA · trade SHORT TP nativo Bybit $74,200 fillara · fechamento 100% mecanico · uPnL ~+$380 (27% reward) · LEI #17 protocolo pos-fechamento (11 passos) · revisar Elliott macro",
+        "reason": "LOW Wave A macro · alvo macro conservador alternativo (Fib 50% W3 = $73,911 official TP2)",
+        "decisao_pre_armada": "Atinge $74,221 = perto TP2 macro · trade SHORT estrutural se ativo TP nativo $73,911 fillará em sequência · LEI #17 protocolo pós-fechamento 11 passos",
         "active": true,
         "triggered": false
       },
       {
-        "price": 78367,
+        "price": 73911,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "TP2 macro Wave 5 · Fib 50% Wave 3 alvo conservador padrão Elliott",
+        "decisao_pre_armada": "Mark atingir $73,911 = TP2 macro principal · trade SHORT estrutural TP nativo Bybit fechará 100% mecânico · LEI #17 protocolo pós-fechamento · revisar Elliott (próxima onda macro)",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 69649,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "TP3 stretch Wave 5 macro · Fib 100% Wave 3 alvo default Elliott extensão",
+        "decisao_pre_armada": "Mark atingir $69,649 = stretch máximo Wave 5 · improvável atingir antes de exaustão · se acontecer · trail terá fechado antes provavelmente",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 76199,
         "direction": "above",
         "tier": "medio",
-        "reason": "Pivot D classico R2 (calc D-1 25/05) · alvo bull se Wave B estende",
-        "decisao_pre_armada": "Atinge R2 = Wave B estende ate zona extension cenario B · proximo: Fibo 50% $78,516 ($149 acima) · ja em zona LTB_D_macro · add-on extension faz sentido",
+        "reason": "Fib 23.6% sub-1 · primeiro nível bounce sub-2 candidato (raso)",
+        "decisao_pre_armada": "Mark atingir $76,199 = bounce inicial sub-2 raso · monitorar continuação rumo a $76,548 zona setup primário · não entrar ainda · aguardar confluência",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 76270,
+        "direction": "above",
+        "tier": "medio",
+        "reason": "Pivot D S1 · resistência intra-day pós-quebra",
+        "decisao_pre_armada": "Mark atingir $76,270 · pivot técnico clássico · próximo a Fib 23.6% · confluência leve · monitorar reação",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 76525,
+        "direction": "above",
+        "tier": "medio",
+        "reason": "Pivot D PP · centro day",
+        "decisao_pre_armada": "Mark atingir $76,525 = pivot day centro · confluência muito próxima ao Fib 38% sub-1 ($76,553) · começar monitorar sinais sub-2 topo se chegar",
         "active": true,
         "triggered": false
       }
