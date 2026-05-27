@@ -1,37 +1,37 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "27/05/2026 09:27:17",
-  "last_github_push": "27/05 09:27",
-  "last_github_push_ts": 1779888437.411322,
+  "ultimo_update": "27/05/2026 09:28:12",
+  "last_github_push": "27/05 09:28",
+  "last_github_push_ts": 1779888492.979316,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
   "saldo": {
-    "cum_realised_pnl": -6272.83,
-    "cumPnL_unified_usd": -6272.83,
-    "unrealisedPnl": 0.0,
+    "cum_realised_pnl": -6275.31,
+    "cumPnL_unified_usd": -6275.31,
+    "unrealisedPnl": 2.55,
     "ts": "2026-05-26T16:44:55-04:00",
-    "progresso_vs_baseline_usd": -148.83,
-    "delta_vs_baseline": -148.83,
-    "pnl_fenix_desde_baseline": -148.83,
-    "updated_at": "2026-05-27T09:27:16-04:00"
+    "progresso_vs_baseline_usd": -151.31,
+    "delta_vs_baseline": -151.31,
+    "pnl_fenix_desde_baseline": -151.31,
+    "updated_at": "2026-05-27T09:28:12-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
-    "current_pnl": -6272.83,
-    "diff_usd": -148.83
+    "current_pnl": -6275.31,
+    "diff_usd": -151.31
   },
   "posicao_atual": {
-    "side": "FLAT",
-    "size": 0,
-    "qty": 0,
-    "avgPrice": null,
-    "avg_price": null,
-    "entry_price": null,
-    "stopLoss": null,
-    "stop_loss": null,
+    "side": "SHORT",
+    "size": 0.06,
+    "qty": 0.06,
+    "avgPrice": 75198.5,
+    "avg_price": 75198.5,
+    "entry_price": 75198.5,
+    "stopLoss": 75649.7,
+    "stop_loss": 75649.7,
     "takeProfit": null,
     "take_profit": null,
     "tp2": null,
@@ -39,16 +39,16 @@
     "tp1_limit": null,
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
-    "status": null,
-    "markPrice": null,
-    "mark_price_atual": null,
-    "unrealised_pnl_usd": 0,
-    "unrealisedPnl": 0,
-    "be_price": null,
-    "liq_price": null,
+    "status": "OPEN_SHORT",
+    "markPrice": 75156.02,
+    "mark_price_atual": 75156.02,
+    "unrealised_pnl_usd": 2.55,
+    "unrealisedPnl": 2.55,
+    "be_price": 75115.82712008,
+    "liq_price": 77817.3,
     "tp2_target_estrutural": null,
-    "last_update": null,
-    "ts_snapshot": null
+    "last_update": "2026-05-27T09:28:12-04:00",
+    "ts_snapshot": "2026-05-27T09:28:12-04:00"
   },
   "trades_recentes": [
     {
@@ -205,7 +205,7 @@
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-05-26_21-15",
     "boot_ts": "2026-05-26T21:05:56-04:00",
-    "ultimo_update": "2026-05-26T21:06:19-04:00",
+    "ultimo_update": "2026-05-27T09:27:00-04:00",
     "status": "BOOT_COMPLETO",
     "mark_at_boot": 76023,
     "mark_now": 76023,
@@ -298,6 +298,24 @@
         "macro_alignment": "CONTRA_contrawave_override",
         "gatilho": "user autorizou 23:13",
         "added_ts": "2026-05-26T23:13:38-04:00"
+      },
+      {
+        "nome": "SHORT_BREAK_SUB1_W5_MACRO_EXTENSION",
+        "tipo": "SHORT_BREAK_EXTENSION",
+        "direcao": "SHORT",
+        "lado": "SHORT",
+        "entry": 75235.7,
+        "sl": 76701,
+        "tp1": 74917,
+        "tp2": 73911,
+        "tp3": 69649,
+        "tier": "T2",
+        "qty": 0.06,
+        "status": "ARMADO_LIVE",
+        "criado_em": "2026-05-27T09:27:00-04:00",
+        "gatilho": "mark < 75235.7 = sub-1 W5 macro low FURADA = sub-3 extension confirmada",
+        "razao_estrutural": "Sub-3 W5 macro extensão · sub-1 low original $75,235.7 perdido · alvo macro $69,649 Fib 100% extension W3",
+        "rr_simples": 4.52
       }
     ],
     "ponto_nao_retorno": null,
