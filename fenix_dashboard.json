@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "27/05/2026 09:08:47",
-  "last_github_push": "27/05 09:08",
-  "last_github_push_ts": 1779887327.7903,
+  "ultimo_update": "27/05/2026 09:09:45",
+  "last_github_push": "27/05 09:09",
+  "last_github_push_ts": 1779887385.019542,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -16,7 +16,7 @@
     "progresso_vs_baseline_usd": -148.83,
     "delta_vs_baseline": -148.83,
     "pnl_fenix_desde_baseline": -148.83,
-    "updated_at": "2026-05-27T09:08:47-04:00"
+    "updated_at": "2026-05-27T09:09:44-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -308,15 +308,6 @@
   "price_watch": {
     "ts": "2026-05-27T05:32:00-04:00",
     "levels": [
-      {
-        "price": 75500,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "GATILHO PRIMÁRIO setup SHORT_BREAK_SUB_2_TRUNC · close 1H < $75,500 + vol ≥1.5x MA = sub-3 confirmada",
-        "decisao_pre_armada": "Close 1H 06:00 UTC-4 (ou subsequente) abaixo $75,500 com vol ≥1.5x MA = disparar SHORT a mercado T3 0.118 BTC · ANTES place_order: (1) criar fenix_entry_authorized.json {expires_at: now+180s, side: Sell, note: 'user T3 verbal 05:14 sub-3 confirmation'} · (2) usar orderType=Limit price=mark atual (params_guard exige) · (3) stopLoss 76300 takeProfit 73911 tpslMode=Full · (4) orderLinkId fenix_short_sub3_t3_<ts> · R:R 1.98 OK · LEI #2/#3/#28/#29 satisfeitos",
-        "active": true,
-        "triggered": false
-      },
       {
         "price": 75235.7,
         "direction": "below",
