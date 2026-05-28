@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "27/05/2026 23:43:33",
-  "last_github_push": "27/05 23:43",
-  "last_github_push_ts": 1779939813.471922,
+  "ultimo_update": "27/05/2026 23:44:17",
+  "last_github_push": "27/05 23:44",
+  "last_github_push_ts": 1779939857.377887,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -259,8 +259,8 @@
       },
       {
         "tipo": "SHORT_ADDON_SUB_4_BOUNCE_ZONA",
-        "entry_zone": "$74,584-$74,881",
-        "entry": 74800,
+        "entry_zone": "$74,250-$74,750",
+        "entry": 74500,
         "sl": 75200,
         "tp1": 73911,
         "tp2": 73323,
@@ -276,7 +276,8 @@
         "invalidacao": "close 1H > $75,200 com vol expansao = sub-4 estende mais ou sub-3 invalidada",
         "nome": "SHORT_ADDON_SUB_4_BOUNCE_ZONA",
         "entrada": 74800,
-        "gatilho": "user pedir + Camada 2 5m TOP zona + RSI 1H div bearish"
+        "gatilho": "user pedir + Camada 2 5m TOP zona + RSI 1H div bearish",
+        "nota_v6.27_27052026_2343": "entry ajustado pra Fib 38% sub-3 · bounce mais provável (~70%) · aprovado user 23:43"
       }
     ],
     "ponto_nao_retorno": null,
