@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "27/05/2026 21:37:21",
-  "last_github_push": "27/05 21:37",
-  "last_github_push_ts": 1779932241.80763,
+  "ultimo_update": "27/05/2026 21:38:18",
+  "last_github_push": "27/05 21:38",
+  "last_github_push_ts": 1779932298.45403,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -6275.17,
     "cumPnL_unified_usd": -6275.17,
-    "unrealisedPnl": 54.0,
+    "unrealisedPnl": 51.5,
     "ts": "2026-05-26T16:44:55-04:00",
     "progresso_vs_baseline_usd": -151.17,
     "delta_vs_baseline": -151.17,
     "pnl_fenix_desde_baseline": -151.17,
-    "updated_at": "2026-05-27T21:37:21-04:00"
+    "updated_at": "2026-05-27T21:38:17-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_SHORT",
-    "markPrice": 74298.5,
-    "mark_price_atual": 74298.5,
-    "unrealised_pnl_usd": 54.0,
-    "unrealisedPnl": 54.0,
+    "markPrice": 74333.47,
+    "mark_price_atual": 74333.47,
+    "unrealised_pnl_usd": 51.9,
+    "unrealisedPnl": 51.9,
     "be_price": 75118.09126047,
     "liq_price": 77817.3,
     "tp2_target_estrutural": 69649.0,
-    "last_update": "2026-05-27T21:37:21-04:00",
-    "ts_snapshot": "2026-05-27T21:37:21-04:00"
+    "last_update": "2026-05-27T21:38:18-04:00",
+    "ts_snapshot": "2026-05-27T21:38:18-04:00"
   },
   "trades_recentes": [
     {
@@ -285,59 +285,50 @@
   "execution_mode": "AUTO",
   "manual_approval_required": false,
   "price_watch": {
-    "ts": "2026-05-27T05:32:00-04:00",
+    "ts": "2026-05-27T21:32:00-04:00",
     "levels": [
       {
-        "price": 77128,
+        "price": 74881,
         "direction": "above",
         "tier": "alto",
-        "reason": "ZONA TOP setup primário SHORT_RETEST_SUB_2 · Fib 61.8% sub-1 W5",
-        "decisao_pre_armada": "Mark atingir $77,128 com Camada 2 5m TOP + RSI 1H div bearish + close 4H bear engulfing = SHORT setup primário macro · entry $76,840 SL $78,250 TP1 $74,917 TP2 $73,911 R:R 2.07 T2 0.06 BTC · LEI #29 alinhado · 🟦 INÍCIO/FIM imediato",
+        "reason": "Sub-4 bounce alvo top Fib 38.2% sub-3",
+        "decisao_pre_armada": "Mark sub para $74,881 = topo zona bounce sub-4 · ZONA add-on SHORT user-explicit (NAO autonomo · LEI #3) · entry $74,800 SL $75,200 TP1 $73,911 TP2 $73,323 R:R 2.22 T1 0.03 BTC",
         "active": true,
         "triggered": false
       },
       {
-        "price": 76840,
+        "price": 74799,
         "direction": "above",
         "tier": "alto",
-        "reason": "ZONA CENTRO setup primário SHORT_RETEST_SUB_2 · Fib 50% sub-1 W5",
-        "decisao_pre_armada": "Mark dentro $76,548-$77,128 + Camada 2 5m TOP + sentidos vendas dominam + RSI 1H div bearish = SHORT primário · NÃO esperar topo extremo · entry market ao redor $76,840",
+        "reason": "EMA20 1H · resistencia critica imediata",
+        "decisao_pre_armada": "Mark cruza acima $74,799 = sub-4 bounce ganha trator · monitorar Camada 2 5m TOP na zona $74,799-$74,881 + RSI 1H div bearish · trade live SHORT mantem-se · alerta watch",
         "active": true,
         "triggered": false
       },
       {
-        "price": 76548,
+        "price": 74584,
         "direction": "above",
         "tier": "alto",
-        "reason": "ZONA BOTTOM setup primário SHORT_RETEST_SUB_2 · Fib 38.2% sub-1 W5",
-        "decisao_pre_armada": "Mark atingir $76,548 = entrada zona retest sub-2 · monitorar Camada 2 5m TOP · pode ser ponto entry mais conservador se confluência fortíssima · SL ainda $78,250",
+        "reason": "Sub-4 bounce alvo bottom Fib 23.6% sub-3",
+        "decisao_pre_armada": "Mark sub para $74,584 = inicio zona bounce sub-4 · monitorar continuacao para $74,800 (centro) ou rejeicao imediata · zona watch",
         "active": true,
         "triggered": false
       },
       {
-        "price": 78250,
+        "price": 75200,
         "direction": "above",
         "tier": "alto",
-        "reason": "SL setup primário SHORT_RETEST_SUB_2 · invalidação parcial Wave 5 sub-2",
-        "decisao_pre_armada": "Mark atingir $78,250 com close 4H = sub-2 estende além zona · contagem Wave 5 reavaliada · escalar OPUS revisão Elliott · LEI #30 invalidação parcial",
+        "reason": "SL add-on hipotetico sub-4 bounce + invalidacao sub-4 estender alem",
+        "decisao_pre_armada": "Mark > $75,200 com close 4H = sub-4 estende alem zona ou sub-3 invalidada · re-mapear estrutura · trade live SHORT comeca a aquecer (mark distancia $1 de entry)",
         "active": true,
         "triggered": false
       },
       {
-        "price": 78049,
+        "price": 75048,
         "direction": "above",
         "tier": "alto",
-        "reason": "TOPO Wave 4 macro final (double top com $77,885) · pivot decisivo retest absoluto",
-        "decisao_pre_armada": "Mark retest $78,049 com rejeição + Camada 2 5m TOP forte = SHORT add-on premium MAX · entry $77,900-$78,049 SL $78,250 TP2 $73,911 R:R 5.7x · qty 0.03 BTC · LEI #31",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 83225,
-        "direction": "above",
-        "tier": "alto",
-        "reason": "INVALIDAÇÃO TOTAL macro Wave 1-2-3-4-5 · topo $82,811 + buffer 0.5% (LEI #30)",
-        "decisao_pre_armada": "AUTO-INVALIDA macro count via watcher LEI #30 · fenix_elliott_macro.json vira PENDING_REVIEW · macro arquivado · cenário teórico (SL primário $78,250 antes)",
+        "reason": "SL TRADE LIVE USER · stopa SHORT 0.06 BTC",
+        "decisao_pre_armada": "Mark > $75,048.4 = SL user stop · trade fecha em ~+$9 (entry $75,198.50 vs SL $75,048.4 SHORT = +$0.20% / +$9 USD * 25x). USER CONTROLA SL · FENIX NAO TOCA",
         "active": true,
         "triggered": false
       },
@@ -345,8 +336,26 @@
         "price": 73911,
         "direction": "below",
         "tier": "alto",
-        "reason": "TP2 macro Wave 5 · Fib 50% Wave 3 alvo conservador padrão Elliott",
-        "decisao_pre_armada": "Mark atingir $73,911 = TP2 macro principal · trade SHORT estrutural TP nativo Bybit fechará 100% mecânico · LEI #17 protocolo pós-fechamento · revisar Elliott (próxima onda macro)",
+        "reason": "TP2 macro Wave 5 Fib 50% W3 · alvo conservador padrao",
+        "decisao_pre_armada": "Mark atingir $73,911 = TP2 macro · trade live SHORT user TP nativo $69,649 NAO disparara ainda mas zona target · monitorar Camada 2 BOTTOM exhaustion 5m + RSI 4H div bull · possivel zona realizar parcial estrutural (LEI #26)",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 73581,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "Pivot D S2 · alvo intermediario",
+        "decisao_pre_armada": "Mark atingir $73,581 = entre TP2 $73,911 e TP final $69,649 · zona de exaustao potential · monitorar 4H RSI < 25 + Camada 2 BOTTOM forte = exit defensivo trade live SHORT considerar",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 73323,
+        "direction": "below",
+        "tier": "medio",
+        "reason": "Fib 100% sub-1 W5 · alvo sub-3 estender",
+        "decisao_pre_armada": "Mark atingir $73,323 = sub-3 atingiu 1x sub-1 magnitude · ponto natural exaustao sub-3 · expect sub-4 bounce maior · trade live SHORT captura $1,876 USD",
         "active": true,
         "triggered": false
       },
@@ -354,35 +363,44 @@
         "price": 69649,
         "direction": "below",
         "tier": "alto",
-        "reason": "TP3 stretch Wave 5 macro · Fib 100% Wave 3 alvo default Elliott extensão",
-        "decisao_pre_armada": "Mark atingir $69,649 = stretch máximo Wave 5 · improvável atingir antes de exaustão · se acontecer · trail terá fechado antes provavelmente",
+        "reason": "TP3 stretch Fib 100% W3 macro · TP user trade live",
+        "decisao_pre_armada": "Mark atingir $69,649 = TP user trade live fillara mecanico Bybit · trade fecha 100% · LEI #17 protocolo pos-fechamento 11 passos · revisao macro Elliott proxima onda",
         "active": true,
         "triggered": false
       },
       {
-        "price": 76199,
+        "price": 75516,
         "direction": "above",
         "tier": "medio",
-        "reason": "Fib 23.6% sub-1 · primeiro nível bounce sub-2 candidato (raso)",
-        "decisao_pre_armada": "Mark atingir $76,199 = bounce inicial sub-2 raso · monitorar continuação rumo a $76,548 zona setup primário · não entrar ainda · aguardar confluência",
+        "reason": "EMA20 4H · resistencia macro",
+        "decisao_pre_armada": "Mark cruza $75,516 = sub-4 estende muito alem zona · revisao sub-3 (talvez nao confirmada) · pause analise · escalar OPUS",
         "active": true,
         "triggered": false
       },
       {
-        "price": 76270,
+        "price": 76137,
         "direction": "above",
-        "tier": "medio",
-        "reason": "Pivot D S1 · resistência intra-day pós-quebra",
-        "decisao_pre_armada": "Mark atingir $76,270 · pivot técnico clássico · próximo a Fib 23.6% · confluência leve · monitorar reação",
+        "tier": "alto",
+        "reason": "TOPO sub-2 W5 · invalidacao parcial sub-3",
+        "decisao_pre_armada": "Mark > $76,137 = sub-3 invalidada · sub-2 bounce maior em curso · trade live SHORT entra em risco · re-mapear estrutura Wave 5 · escalar OPUS REVISAO",
         "active": true,
         "triggered": false
       },
       {
-        "price": 76525,
+        "price": 78049,
         "direction": "above",
-        "tier": "medio",
-        "reason": "Pivot D PP · centro day",
-        "decisao_pre_armada": "Mark atingir $76,525 = pivot day centro · confluência muito próxima ao Fib 38% sub-1 ($76,553) · começar monitorar sinais sub-2 topo se chegar",
+        "tier": "alto",
+        "reason": "TOPO Wave 4 final · invalidacao Wave 5 inteira",
+        "decisao_pre_armada": "Mark > $78,049 = Wave 5 INVALIDADA estrutural · contagem macro VIRA · FENIX desliga setups SHORT estruturais · re-revisao OPUS macro · trade live SHORT em -$170 risco trailing",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 83225,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "INVALIDACAO TOTAL macro · topo $82,811 + buffer 0.5% (LEI #30)",
+        "decisao_pre_armada": "AUTO-INVALIDA macro count via watcher LEI #30 · fenix_elliott_macro.json vira PENDING_REVIEW · trade SHORT user ja estaria stopado muito antes em $75,048",
         "active": true,
         "triggered": false
       }
