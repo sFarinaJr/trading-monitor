@@ -1,56 +1,66 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "28/05/2026 00:06:29",
+  "ultimo_update": "28/05/2026 00:06:40",
   "last_github_push": "28/05 00:06",
-  "last_github_push_ts": 1779941189.690478,
+  "last_github_push_ts": 1779941200.4220061,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
   "saldo": {
-    "cum_realised_pnl": -6229.16,
-    "cumPnL_unified_usd": -6229.16,
-    "unrealisedPnl": 65.69,
+    "cum_realised_pnl": -6165.01,
+    "cumPnL_unified_usd": -6165.01,
+    "unrealisedPnl": 0.0,
     "ts": "2026-05-26T16:44:55-04:00",
-    "progresso_vs_baseline_usd": -105.16,
-    "delta_vs_baseline": -105.16,
-    "pnl_fenix_desde_baseline": -105.16,
-    "updated_at": "2026-05-28T00:05:43-04:00"
+    "progresso_vs_baseline_usd": -41.01,
+    "delta_vs_baseline": -41.01,
+    "pnl_fenix_desde_baseline": -41.01,
+    "updated_at": "2026-05-28T00:06:39-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
-    "current_pnl": -6229.16,
-    "diff_usd": -105.16
+    "current_pnl": -6165.01,
+    "diff_usd": -41.01
   },
   "posicao_atual": {
-    "side": "SHORT",
-    "size": 0.03,
-    "qty": 0.03,
-    "avgPrice": 75198.5,
-    "avg_price": 75198.5,
-    "entry_price": 75198.5,
-    "stopLoss": 75048.4,
-    "stop_loss": 75048.4,
-    "takeProfit": 69649.0,
-    "take_profit": 69649.0,
-    "tp2": 69649.0,
+    "side": "FLAT",
+    "size": 0,
+    "qty": 0,
+    "avgPrice": null,
+    "avg_price": null,
+    "entry_price": null,
+    "stopLoss": null,
+    "stop_loss": null,
+    "takeProfit": null,
+    "take_profit": null,
+    "tp2": null,
     "tp1": null,
     "tp1_limit": null,
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
-    "status": "OPEN_SHORT",
-    "markPrice": 73008.0,
-    "mark_price_atual": 73008.0,
-    "unrealised_pnl_usd": 65.72,
-    "unrealisedPnl": 65.72,
-    "be_price": 76611.94585111,
-    "liq_price": 77817.3,
-    "tp2_target_estrutural": 69649.0,
-    "last_update": "2026-05-28T00:05:43-04:00",
-    "ts_snapshot": "2026-05-28T00:05:43-04:00"
+    "status": null,
+    "markPrice": null,
+    "mark_price_atual": null,
+    "unrealised_pnl_usd": 0,
+    "unrealisedPnl": 0,
+    "be_price": null,
+    "liq_price": null,
+    "tp2_target_estrutural": null,
+    "last_update": null,
+    "ts_snapshot": null
   },
   "trades_recentes": [
+    {
+      "timestamp": "2026-05-28T00:06:03",
+      "symbol": "BTCUSDT",
+      "side": "SHORT",
+      "entry_price": 75198.5,
+      "exit_price": 73020.2,
+      "quantity": 0.03,
+      "pnl_usd": 62.97,
+      "pnl_percent": 2.9
+    },
     {
       "timestamp": "2026-05-27T23:31:44",
       "symbol": "BTCUSDT",
@@ -190,16 +200,6 @@
       "quantity": 0.04,
       "pnl_usd": 1.28,
       "pnl_percent": 0.16
-    },
-    {
-      "timestamp": "2026-05-21T13:37:06",
-      "symbol": "BTCUSDT",
-      "side": "SHORT",
-      "entry_price": 77950.0,
-      "exit_price": 77863.3,
-      "quantity": 0.03,
-      "pnl_usd": 1.0,
-      "pnl_percent": 0.11
     }
   ],
   "current_thesis": {
