@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "27/05/2026 23:15:49",
-  "last_github_push": "27/05 23:15",
-  "last_github_push_ts": 1779938149.384279,
+  "ultimo_update": "27/05/2026 23:16:22",
+  "last_github_push": "27/05 23:16",
+  "last_github_push_ts": 1779938182.153908,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -329,42 +329,6 @@
         "tier": "alto",
         "reason": "SL TRADE LIVE USER · stopa SHORT 0.06 BTC",
         "decisao_pre_armada": "Mark > $75,048.4 = SL user stop · trade fecha em ~+$9 (entry $75,198.50 vs SL $75,048.4 SHORT = +$0.20% / +$9 USD * 25x). USER CONTROLA SL · FENIX NAO TOCA",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 73911,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "TP2 macro Wave 5 Fib 50% W3 · alvo conservador padrao",
-        "decisao_pre_armada": "Mark atingir $73,911 = TP2 macro · trade live SHORT user TP nativo $69,649 NAO disparara ainda mas zona target · monitorar Camada 2 BOTTOM exhaustion 5m + RSI 4H div bull · possivel zona realizar parcial estrutural (LEI #26)",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 73581,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "Pivot D S2 · alvo intermediario",
-        "decisao_pre_armada": "Mark atingir $73,581 = entre TP2 $73,911 e TP final $69,649 · zona de exaustao potential · monitorar 4H RSI < 25 + Camada 2 BOTTOM forte = exit defensivo trade live SHORT considerar",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 73323,
-        "direction": "below",
-        "tier": "medio",
-        "reason": "Fib 100% sub-1 W5 · alvo sub-3 estender",
-        "decisao_pre_armada": "Mark atingir $73,323 = sub-3 atingiu 1x sub-1 magnitude · ponto natural exaustao sub-3 · expect sub-4 bounce maior · trade live SHORT captura $1,876 USD",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 69649,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "TP3 stretch Fib 100% W3 macro · TP user trade live",
-        "decisao_pre_armada": "Mark atingir $69,649 = TP user trade live fillara mecanico Bybit · trade fecha 100% · LEI #17 protocolo pos-fechamento 11 passos · revisao macro Elliott proxima onda",
         "active": true,
         "triggered": false
       },
