@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "28/05/2026 19:23:14",
-  "last_github_push": "28/05 19:23",
-  "last_github_push_ts": 1780010594.9415371,
+  "ultimo_update": "28/05/2026 19:24:10",
+  "last_github_push": "28/05 19:24",
+  "last_github_push_ts": 1780010650.250391,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -16,7 +16,7 @@
     "progresso_vs_baseline_usd": -54.23,
     "delta_vs_baseline": -54.23,
     "pnl_fenix_desde_baseline": -54.23,
-    "updated_at": "2026-05-28T19:23:14-04:00"
+    "updated_at": "2026-05-28T19:24:09-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -205,7 +205,7 @@
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-05-27_21-32",
     "boot_ts": "2026-05-27T21:32:00-04:00",
-    "ultimo_update": "2026-05-27T21:32:00-04:00",
+    "ultimo_update": "2026-05-28T19:24:02-0400",
     "status": "BOOT_COMPLETO",
     "mark_at_boot": 74308.8,
     "mark_now": 74308.8,
@@ -333,6 +333,19 @@
           "trigger": "Bounce pós-fill sem stopar · zona $74,800-$75,000 · add-on defensivo aprovado 09/05/2026",
           "qty_total_max": 0.17
         }
+      },
+      {
+        "nome": "LONG_ONDA2_C_SUBFUNDO",
+        "direcao": "LONG",
+        "lado": "LONG",
+        "entry": 73620,
+        "entry_zone": "$73,500-$73,650",
+        "sl": 72100.0,
+        "tp2": 78892.0,
+        "tier": "T1",
+        "status": "PRE_ARM_WATCH",
+        "origem": "LEI #3 v2 · onda-2 de C sub-fundo · Camada2 exaustao fundo BULLISH 19:20 · contrawave T1",
+        "ts_armado": "2026-05-28T19:24:02-0400"
       }
     ],
     "ponto_nao_retorno": null,
