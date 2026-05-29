@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "29/05/2026 11:34:13",
-  "last_github_push": "29/05 11:34",
-  "last_github_push_ts": 1780068853.0219798,
+  "ultimo_update": "29/05/2026 11:35:10",
+  "last_github_push": "29/05 11:35",
+  "last_github_push_ts": 1780068910.216139,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -6182.25,
     "cumPnL_unified_usd": -6182.25,
-    "unrealisedPnl": 71.58,
+    "unrealisedPnl": 73.03,
     "ts": "2026-05-26T16:44:55-04:00",
     "progresso_vs_baseline_usd": -58.25,
     "delta_vs_baseline": -58.25,
     "pnl_fenix_desde_baseline": -58.25,
-    "updated_at": "2026-05-29T11:34:12-04:00"
+    "updated_at": "2026-05-29T11:35:09-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_LONG",
-    "markPrice": 74042.03,
-    "mark_price_atual": 74042.03,
-    "unrealised_pnl_usd": 71.58,
-    "unrealisedPnl": 71.58,
+    "markPrice": 74046.5,
+    "mark_price_atual": 74046.5,
+    "unrealised_pnl_usd": 72.25,
+    "unrealisedPnl": 72.25,
     "be_price": 73632.06435499,
     "liq_price": 70977.1,
     "tp2_target_estrutural": 78892.0,
-    "last_update": "2026-05-29T11:34:12-04:00",
-    "ts_snapshot": "2026-05-29T11:34:12-04:00"
+    "last_update": "2026-05-29T11:35:10-04:00",
+    "ts_snapshot": "2026-05-29T11:35:10-04:00"
   },
   "trades_recentes": [
     {
@@ -304,15 +304,6 @@
         "tier": "alto",
         "reason": "SL do trade live LONG 0.05 BTC",
         "decisao_pre_armada": "SL do LONG live stopa aqui. Se stopado · confirmar fill via get_position_info · registrar trade fechado · reavaliar se onda-2 invalidou (close < 72552). V05b · watcher gerencia.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 74036.0,
-        "direction": "above",
-        "tier": "medio",
-        "reason": "EMA20 4H · 1a resistencia imediata da onda-2",
-        "decisao_pre_armada": "Mark cruza EMA20 4H acima = onda-2 ganha forca. NAO acao direta · monitorar continuidade rumo zona topo C-2. LONG live HOLD.",
         "active": true,
         "triggered": false
       },
