@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "29/05/2026 03:28:28",
-  "last_github_push": "29/05 03:28",
-  "last_github_push_ts": 1780039708.332541,
+  "ultimo_update": "29/05/2026 03:29:29",
+  "last_github_push": "29/05 03:29",
+  "last_github_push_ts": 1780039769.5497751,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -6180.62,
     "cumPnL_unified_usd": -6180.62,
-    "unrealisedPnl": 8.48,
+    "unrealisedPnl": 8.68,
     "ts": "2026-05-26T16:44:55-04:00",
     "progresso_vs_baseline_usd": -56.62,
     "delta_vs_baseline": -56.62,
     "pnl_fenix_desde_baseline": -56.62,
-    "updated_at": "2026-05-29T03:28:27-04:00"
+    "updated_at": "2026-05-29T03:29:28-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_LONG",
-    "markPrice": 73734.45,
-    "mark_price_atual": 73734.45,
-    "unrealised_pnl_usd": 8.48,
-    "unrealisedPnl": 8.48,
+    "markPrice": 73738.33,
+    "mark_price_atual": 73738.33,
+    "unrealised_pnl_usd": 8.68,
+    "unrealisedPnl": 8.68,
     "be_price": 73653.1301926,
     "liq_price": 70977.1,
     "tp2_target_estrutural": 78892.0,
-    "last_update": "2026-05-29T03:28:28-04:00",
-    "ts_snapshot": "2026-05-29T03:28:28-04:00"
+    "last_update": "2026-05-29T03:29:29-04:00",
+    "ts_snapshot": "2026-05-29T03:29:29-04:00"
   },
   "trades_recentes": [
     {
@@ -260,7 +260,9 @@
         "macro_aligned": false,
         "contra_macro_escape": true,
         "razao_estrutural": "LONG onda-2 de C grande (alinhado direcao_sub_corrente UP · contrawave escape LEI #3 v2). Entry $73.564,8 capturando bounce desde C-1 low $72.552. SL $72.100 abaixo invalidacao C-2 $72.552. TP $78.892 = Fib 0.618 de C-1 (sub_tp2 = zona IDEAL onde a onda-3 SHORT arma). V05b INTOCAVEL · watcher gerencia · Claude NAO escreve sl/tp/entry.",
-        "gatilho": "Camada2 exaustao fundo BULLISH + onda-2 sub-fundo (entrou 28/05)"
+        "gatilho": "Camada2 exaustao fundo BULLISH + onda-2 sub-fundo (entrou 28/05)",
+        "entrada": 73564.8,
+        "tp1": 73932.6
       },
       {
         "nome": "SHORT_ONDA3_C_GRANDE_TOPO_C2",
@@ -284,7 +286,8 @@
         "razao_estrutural": "SHORT da onda-3 de C grande (macro-aligned · trade do BOOT). Arma no TOPO da onda-2 (zona $77.700-$80.600 · ideal Fib 0.500-0.618 de C-1 = $77.682-$78.892). SL $83.225 (acima topo B $82.811 + buffer 0.5%). Alvos: $72.552 (C-1 low · partial 30%) -> $59.888 (fundo A · ima primario) -> $49.680 (0.5A). LEI #29 macro-aligned.",
         "invalidacao": "close > $82.811 = B nao seria topo · C grande invalida · recount",
         "gatilho": "chegada zona $77.700-$80.600 + Camada2 5m TOP EXHAUSTION bias=bearish + RSI 4H div bear + rejeicao · NAO chase com preco correndo (LEI #3 v2)",
-        "linkId_template": "fenix_short_onda3_C_ellstruct"
+        "linkId_template": "fenix_short_onda3_C_ellstruct",
+        "entrada": 78287
       }
     ],
     "ponto_nao_retorno": null,
@@ -293,86 +296,122 @@
   "execution_mode": "AUTO",
   "manual_approval_required": false,
   "price_watch": {
-    "ts": "2026-05-28T17:10:30-0400",
+    "ts": "2026-05-29T03:28:38-04:00",
     "levels": [
       {
-        "price": 74881,
-        "direction": "above",
+        "price": 72552.0,
+        "direction": "below",
         "tier": "alto",
-        "reason": "Sub-4 bounce alvo top Fib 38.2% sub-3",
-        "decisao_pre_armada": "Mark sub para $74,881 = topo zona bounce sub-4 · ZONA add-on SHORT user-explicit (NAO autonomo · LEI #3) · entry $74,800 SL $75,200 TP1 $73,911 TP2 $73,323 R:R 2.22 T1 0.03 BTC",
+        "reason": "C-1 low · INVALIDACAO da onda-2 de C",
+        "decisao_pre_armada": "Close < 72552 = C-1 nao completou (onda-1 estendendo) · invalida onda-2. RECALCULAR sub-estrutura desde topo B 82811 · disparar skill fenix-analise-macro. LONG live invalida no SL 72100. NAO abrir nada novo ate recount.",
         "active": true,
         "triggered": false
       },
       {
-        "price": 74799,
-        "direction": "above",
+        "price": 72100.0,
+        "direction": "below",
         "tier": "alto",
-        "reason": "EMA20 1H · resistencia critica imediata",
-        "decisao_pre_armada": "Mark cruza acima $74,799 = sub-4 bounce ganha trator · monitorar Camada 2 5m TOP na zona $74,799-$74,881 + RSI 1H div bearish · trade live SHORT mantem-se · alerta watch",
+        "reason": "SL do trade live LONG 0.05 BTC",
+        "decisao_pre_armada": "SL do LONG live stopa aqui. Se stopado · confirmar fill via get_position_info · registrar trade fechado · reavaliar se onda-2 invalidou (close < 72552). V05b · watcher gerencia.",
         "active": true,
         "triggered": false
       },
       {
-        "price": 74584,
-        "direction": "above",
-        "tier": "alto",
-        "reason": "Sub-4 bounce alvo bottom Fib 23.6% sub-3",
-        "decisao_pre_armada": "Mark sub para $74,584 = inicio zona bounce sub-4 · monitorar continuacao para $74,800 (centro) ou rejeicao imediata · zona watch",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 75200,
-        "direction": "above",
-        "tier": "alto",
-        "reason": "SL add-on hipotetico sub-4 bounce + invalidacao sub-4 estender alem",
-        "decisao_pre_armada": "Mark > $75,200 com close 4H = sub-4 estende alem zona ou sub-3 invalidada · re-mapear estrutura · trade live SHORT comeca a aquecer (mark distancia $1 de entry)",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 75048,
-        "direction": "above",
-        "tier": "alto",
-        "reason": "SL TRADE LIVE USER · stopa SHORT 0.06 BTC",
-        "decisao_pre_armada": "Mark > $75,048.4 = SL user stop · trade fecha em ~+$9 (entry $75,198.50 vs SL $75,048.4 SHORT = +$0.20% / +$9 USD * 25x). USER CONTROLA SL · FENIX NAO TOCA",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 75516,
+        "price": 74036.0,
         "direction": "above",
         "tier": "medio",
-        "reason": "EMA20 4H · resistencia macro",
-        "decisao_pre_armada": "Mark cruza $75,516 = sub-4 estende muito alem zona · revisao sub-3 (talvez nao confirmada) · pause analise · escalar OPUS",
+        "reason": "EMA20 4H · 1a resistencia imediata da onda-2",
+        "decisao_pre_armada": "Mark cruza EMA20 4H acima = onda-2 ganha forca. NAO acao direta · monitorar continuidade rumo zona topo C-2. LONG live HOLD.",
         "active": true,
         "triggered": false
       },
       {
-        "price": 76137,
+        "price": 74585.0,
         "direction": "above",
-        "tier": "alto",
-        "reason": "TOPO sub-2 W5 · invalidacao parcial sub-3",
-        "decisao_pre_armada": "Mark > $76,137 = sub-3 invalidada · sub-2 bounce maior em curso · trade live SHORT entra em risco · re-mapear estrutura Wave 5 · escalar OPUS REVISAO",
+        "tier": "medio",
+        "reason": "Pivot D R1 · alvo intermediario onda-2",
+        "decisao_pre_armada": "Resistencia pivot. Onda-2 saudavel se rompe. Sem acao · LONG live captura · SHORT onda-3 ainda longe (zona 77.7k+).",
         "active": true,
         "triggered": false
       },
       {
-        "price": 78049,
+        "price": 76471.0,
         "direction": "above",
         "tier": "alto",
-        "reason": "TOPO Wave 4 final · invalidacao Wave 5 inteira",
-        "decisao_pre_armada": "Mark > $78,049 = Wave 5 INVALIDADA estrutural · contagem macro VIRA · FENIX desliga setups SHORT estruturais · re-revisao OPUS macro · trade live SHORT em -$170 risco trailing",
+        "reason": "Fib 0.382 de C-1 · INICIO zona topo C-2 (SHORT onda-3 watch)",
+        "decisao_pre_armada": "Entrada na zona de topo da onda-2. COMECAR a vigiar Camada2 5m TOP EXHAUSTION bias=bearish + RSI 4H div bear. NAO shortar ainda (zona ideal e 77.682-78.892). LONG live aproximando alvo · avaliar parcial se RSI 1H div bear LEI #26.",
         "active": true,
         "triggered": false
       },
       {
-        "price": 83225,
+        "price": 77682.0,
         "direction": "above",
         "tier": "alto",
-        "reason": "INVALIDACAO TOTAL macro · topo $82,811 + buffer 0.5% (LEI #30)",
-        "decisao_pre_armada": "AUTO-INVALIDA macro count via watcher LEI #30 · fenix_elliott_macro.json vira PENDING_REVIEW · trade SHORT user ja estaria stopado muito antes em $75,048",
+        "reason": "Fib 0.500 de C-1 · zona IDEAL inferior SHORT onda-3",
+        "decisao_pre_armada": "Zona ideal SHORT onda-3 (inicio). SE Camada2 5m TOP EXHAUSTION fresca bias=bearish + rejeicao + RSI 4H div bear · ARMAR SHORT estrutural T3 0.13 BTC · SL 83225 · TP1 72552 (30%) · TP2 59888 · linkId fenix_short_onda3_C_ellstruct. NAO chase preco correndo (LEI #3 v2 · entra na exaustao).",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 78892.0,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "Fib 0.618 de C-1 · sub_tp2 · TP do LONG live · zona IDEAL SHORT onda-3",
+        "decisao_pre_armada": "TP do LONG live (78892) · Bybit fecha 100% (tpslMode Full). SIMULTANEO = topo ideal onda-2 = ARMAR SHORT onda-3 T3 se confluencia topo (Camada2 5m TOP + rejeicao). Transicao LONG->SHORT. SL SHORT 83225 · TP2 59888.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 80616.0,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "Fib 0.786 de C-1 · topo MAXIMO esperado da onda-2",
+        "decisao_pre_armada": "Topo maximo onda-2 antes da invalidacao. SHORT onda-3 com confluencia maxima aqui (proximo ao topo B). Se ja short · HOLD. R:R otimo pra C grande down.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 82811.0,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "Topo B grande · INVALIDACAO TOTAL da tese C grande",
+        "decisao_pre_armada": "Close > 82811 = B NAO seria topo · tese C grande DOWN invalida. ESCALAR AO USER (evidencia NOVA real · LEI #29 nao sobrescrever sozinho). Disparar fenix-analise-macro pra recount completo. Fechar/reavaliar qualquer SHORT.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 83225.0,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "Invalidacao total + buffer 0.5% · SL do SHORT onda-3",
+        "decisao_pre_armada": "SL do SHORT estrutural onda-3. Stopa se onda-2 exceder topo B + buffer. Recount macro obrigatorio.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 73140.0,
+        "direction": "below",
+        "tier": "medio",
+        "reason": "Low intra onda-2 (pullback 1H que segurou)",
+        "decisao_pre_armada": "Sub-fundo da onda-2 intra. Fura = pullback mais profundo (cenario B) mas ainda > 72552 OK. Monitorar Camada2 fundo BULLISH pra possivel LONG add-on contrawave (cap T1).",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 71565.0,
+        "direction": "below",
+        "tier": "medio",
+        "reason": "Pivot D S2 · alvo se onda-2 falhar e C-3 acelerar",
+        "decisao_pre_armada": "Se ja em recount (furou 72552) · alvo de continuacao C grande down. SHORT macro captura. Sem LONG.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 59888.0,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "Fundo A grande · ALVO PRIMARIO de C grande (ima)",
+        "decisao_pre_armada": "Alvo macro primario de C grande (TP2 SHORT onda-3). Se chegamos aqui via C-3/C-5 · zigzag testa/fura fundo A. Avaliar parcial grande do SHORT + vigiar exhaustion pra C grande poder estender a 49680/41861.",
         "active": true,
         "triggered": false
       }
