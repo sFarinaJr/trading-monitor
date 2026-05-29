@@ -1,27 +1,27 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "28/05/2026 19:59:51",
-  "last_github_push": "28/05 19:59",
-  "last_github_push_ts": 1780012791.5531058,
+  "ultimo_update": "28/05/2026 20:00:47",
+  "last_github_push": "28/05 20:00",
+  "last_github_push_ts": 1780012847.6320791,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
   "saldo": {
-    "cum_realised_pnl": -6180.26,
-    "cumPnL_unified_usd": -6180.26,
-    "unrealisedPnl": 2.15,
+    "cum_realised_pnl": -6180.62,
+    "cumPnL_unified_usd": -6180.62,
+    "unrealisedPnl": 5.57,
     "ts": "2026-05-26T16:44:55-04:00",
-    "progresso_vs_baseline_usd": -56.26,
-    "delta_vs_baseline": -56.26,
-    "pnl_fenix_desde_baseline": -56.26,
-    "updated_at": "2026-05-28T19:59:50-04:00"
+    "progresso_vs_baseline_usd": -56.62,
+    "delta_vs_baseline": -56.62,
+    "pnl_fenix_desde_baseline": -56.62,
+    "updated_at": "2026-05-28T20:00:46-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
-    "current_pnl": -6180.26,
-    "diff_usd": -56.26
+    "current_pnl": -6180.62,
+    "diff_usd": -56.62
   },
   "posicao_atual": {
     "side": "LONG",
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_LONG",
-    "markPrice": 73607.74,
-    "mark_price_atual": 73607.74,
-    "unrealised_pnl_usd": 2.15,
-    "unrealisedPnl": 2.15,
-    "be_price": 73645.76581119,
+    "markPrice": 73676.2,
+    "mark_price_atual": 73676.2,
+    "unrealised_pnl_usd": 5.57,
+    "unrealisedPnl": 5.57,
+    "be_price": 73653.1301926,
     "liq_price": 70977.1,
     "tp2_target_estrutural": 78892.0,
-    "last_update": "2026-05-28T19:59:51-04:00",
-    "ts_snapshot": "2026-05-28T19:59:51-04:00"
+    "last_update": "2026-05-28T20:00:47-04:00",
+    "ts_snapshot": "2026-05-28T20:00:47-04:00"
   },
   "trades_recentes": [
     {
