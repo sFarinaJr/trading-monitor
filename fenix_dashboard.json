@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "29/05/2026 03:27:05",
+  "ultimo_update": "29/05/2026 03:27:32",
   "last_github_push": "29/05 03:27",
-  "last_github_push_ts": 1780039625.894439,
+  "last_github_push_ts": 1780039652.286777,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -6180.62,
     "cumPnL_unified_usd": -6180.62,
-    "unrealisedPnl": 7.93,
+    "unrealisedPnl": 8.55,
     "ts": "2026-05-26T16:44:55-04:00",
     "progresso_vs_baseline_usd": -56.62,
     "delta_vs_baseline": -56.62,
     "pnl_fenix_desde_baseline": -56.62,
-    "updated_at": "2026-05-29T03:26:30-04:00"
+    "updated_at": "2026-05-29T03:27:31-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_LONG",
-    "markPrice": 73723.5,
-    "mark_price_atual": 73723.5,
-    "unrealised_pnl_usd": 7.93,
-    "unrealisedPnl": 7.93,
+    "markPrice": 73735.9,
+    "mark_price_atual": 73735.9,
+    "unrealised_pnl_usd": 8.55,
+    "unrealisedPnl": 8.55,
     "be_price": 73653.1301926,
     "liq_price": 70977.1,
     "tp2_target_estrutural": 78892.0,
-    "last_update": "2026-05-29T03:26:30-04:00",
-    "ts_snapshot": "2026-05-29T03:26:30-04:00"
+    "last_update": "2026-05-29T03:27:32-04:00",
+    "ts_snapshot": "2026-05-29T03:27:32-04:00"
   },
   "trades_recentes": [
     {
@@ -203,153 +203,92 @@
     }
   ],
   "current_thesis": {
-    "thesis_id": "boot_d_close_2026-05-27_21-32",
-    "boot_ts": "2026-05-27T21:32:00-04:00",
-    "ultimo_update": "2026-05-28T19:24:02-0400",
+    "thesis_id": "boot_d_close_2026-05-28_d1_72552_onda2C",
+    "boot_ts": "2026-05-29T03:27:18-04:00",
+    "ultimo_update": "2026-05-29T03:27:18-04:00",
     "status": "BOOT_COMPLETO",
-    "mark_at_boot": 74308.8,
-    "mark_now": 74308.8,
+    "mark_at_boot": 73790.9,
+    "mark_now": 73790.9,
     "macro_bias_D": {
       "direcao": "BEARISH",
       "score": 8.0
     },
-    "leitura_primaria_opus": "Wave 5 macro sub-3 IMPULSIVA DOWN CONFIRMADA hoje 27/05 com 3 gatilhos estruturais: (1) BEAR ENGULFING 4H 12:00 UTC-4 vol 22,927 BTC (3.7x MA) cravou inicio sub-3 · (2) BEAR MARUBOZU 1H 18:00 UTC-4 vol 5,260 BTC (2.5x MA) rompeu $74,626 low sessao com close $74,446 · (3) D-0 BEAR -1.96% close $74,412 com vol 70k (131% D-1). Sub-3 magnitude atual $2,032 = 72% sub-1 · low intra $74,104.7 (28/05 00:00 atual) FUROU $74,221 low W3 ant por $116 · alvo Fib 38.2% W3 $74,906 JA ALCANCADO (118% do progresso · TP1 nivel cruzado).\n\nEstrutura interna confirma Wave 5 contagem (3 regras Elliott matematicas OK): W1 $82,811->$79,120 (-4.46%) · W2 retracement 90.2% < 100% W1 OK · W3 $82,450->$74,221 magnitude $8,229 mais longa OK · W4 retracement 44.6% nao invade W1 territory OK · W5 IN PROGRESS desde $78,049 (sub-1/sub-2/sub-3 todas validadas). Mark $74,308 abaixo TODAS EMAs: D $76,473 (-2.83%) · 4H $75,516 (-1.60%) · 1H $74,799 (-0.66%) · 15m $74,447 (-0.19%). MACD acelera bear TODOS TFs (hist D -884 expansao · 4H -303 · 1H -413 · 15m -78). RSI bear stack: D 38.00 · 4H 29.97 (OVERSOLD EXTREMO) · 1H 31.57 · 15m 39.59.\n\nTrade live SHORT 0.06 BTC @ $75,198.50 (entry user 27/05 sub-3 break) · mark $74,308 · uPnL +$53.03 (~+1.18% · 25x alavancagem = +29.7% conta nominal) · SL user $75,048.4 (apertado 0.20% acima entry · zona proteção quase BE) · TP $69,649 (Fib 100% W3 macro extension). Co-administracao user · FENIX nao toca.\n\nDerivativos confirmam: OI +13.09% 24h (build SHORT macro) · Funding flip negativo intra (shorts dominam) · L/S retail 58% LONG sendo liquidado (sinal contrarian bear). Order book micro bid 4.93 ratio top (compras agressivas locais MAS sem walls grandes · bounce micro possivel mas tese estrutural intacta).\n\nCenarios proximos: (a) Sub-4 bounce inicia ja proxima vela 1H · alvo $74,584-$74,881 (Fib 23-38% sub-3) · resistencia critica EMA20 1H $74,799 (50%) · (b) Sub-3 estende sem bounce ate alvo Fib 100% sub-1 = $73,323 (30%) · (c) Wave 5 acelera diretamente a TP2 $73,911 sem sub-4 visivel (20%). Tactic: HOLD trade SHORT live (gestao user) · zero entrada autonoma (LEI #3 + co-administracao). Monitorar 4H 24:00 UTC-4 close (~3h) decisivo entre cenario A vs B.",
+    "leitura_primaria_opus": "Macro travado (LEI #29 manual_override · validado user+math 28/05). Onda C grande IMPULSIVA DOWN iniciando desde topo B $82.811 · alvos $59.888 (fundo A · ima primario)->$49.680 (0.5A). C-1 ja completou $82.811->$72.552 (5 subondas · c-sub5 cravou projecao 2.618*sub1 = $72.787 por $100-235 · exhaustion classico). Onda-2 de C UP em formacao desde $72.552 (low cravado 28/05). D macro bear-stacked: EMA20 D $75.961 acima mark · RSI D 36.8 · MACD hist D -1.145.\n\nD-1 (28/05) fechou $73.597,6 BULL com long lower wick a $72.552 = defesa do C-1 low (hammer-like · vol 86.5k = 157% MA20 · maior vol da semana). Onda-2 bounce em curso: $72.552->$73.911 high = +$1.359 (+1.87%) = ~13% retracement de C-1. 1H flipou bull (MACD hist +159 · mark $73.790 acima EMA20 1H $73.568 · RSI 52.1) · 15m/5m bull (RSI 61/65). Mark testando EMA20 4H $74.036 como primeira resistencia. Sequencia 1H HL desde o low (72.552->73.629->pullback 73.140 segurou->73.911->73.790).\n\nProximo movimento: (a) onda-2 continua subindo rumo zona topo C-2 $76.471-$80.616 · LONG live captura · SHORT onda-3 arma no topo (50%); (b) onda-2 estagna/pullback raso mantendo > $72.552 antes de retomar (35%); (c) furada de $72.552 = C-1 nao completou · recontar sub-estrutura + invalida LONG live no SL $72.100 (15%). Derivativos: funding +0.0001 leve long · OI -4.5% ult 4h (longs aliviados no bounce) · L/S 0.59 retail long-heavy · bid wall 16 BTC @ $73.784. DXY $99.05 flat (neutro).",
     "cenarios_opus": {
-      "cenario_A_sub4_bounce_iniciando": {
+      "cenario_A_onda2_continua_topo": {
         "prob": 50,
-        "entry_zone_hipotetica_SHORT_addon": "$74,584-$74,881",
-        "sl": 75200,
-        "tp1": 73911,
-        "tp2": 73000,
-        "rr": 1.74,
-        "note": "Sub-4 bounce inicia ja na proxima vela 1H · alvo Fib 23-38% sub-3 com resistencia critica EMA20 1H $74,799 · ZONA DE OPORTUNIDADE SHORT add-on macro (NAO autonomo · co-administracao user). RSI 4H 29.97 oversold extremo sugere pause antes sub-5 final. Volume 4H formacao baixo 3.8k = bounce provavel proxima vela."
+        "entry": 73790,
+        "sl": 72100,
+        "tp1": 76471,
+        "tp2": 78892,
+        "rr": 3.02,
+        "note": "Onda-2 de C continua UP rumo zona topo $76.471 (Fib 0.382 C-1) -> $78.892 (Fib 0.618 · sub_tp2). LONG live 0.05 @ $73.564,8 captura. SHORT onda-3 macro arma no topo da onda-2. Gatilho: close 1H/4H sustentando > EMA20 4H $74.036 + estrutura HH/HL continua."
       },
-      "cenario_B_sub3_estende_sem_bounce": {
-        "prob": 30,
-        "tp_intermediario_macro": 73323,
-        "tp2_macro": 73911,
-        "tp_final": 69649,
-        "note": "Sub-3 estende ate Fib 100% sub-1 = $73,323 OU diretamente alvo TP2 $73,911 (Fib 50% W3). Trade live SHORT continua capturando · TP $69,649 macro extension. Probabilidade reduzida porque magnitude sub-3 ja 72% sub-1 = espaco para bounce sub-4 antes sub-5 final."
+      "cenario_B_onda2_pullback_raso": {
+        "prob": 35,
+        "entry": null,
+        "sl": null,
+        "tp1": null,
+        "tp2": null,
+        "rr": null,
+        "note": "Onda-2 estagna/pullback raso (zona $72.900-$73.400) mantendo acima invalidacao $72.552 antes de retomar UP. LONG live HOLD acima SL $72.100. SEM entrada nova (esperar retomada ou zona topo). Gatilho: rejeicao em EMA20 4H $74.036 + 1H MACD esfriar."
       },
-      "cenario_C_capitulation_acelera": {
-        "prob": 20,
-        "tp_macro_imediato": 73911,
-        "tp_extension": 69649,
-        "note": "Wave 5 acelera diretamente TP2 $73,911 sem sub-4 visivel · vol 4H expande 2x+ em 1-2 candles · capitulation final. Trade live SHORT captura 100% · TP nativo fillar $69,649 se trail estendido."
+      "cenario_C_fura_72552_recount": {
+        "prob": 15,
+        "entry": null,
+        "sl": null,
+        "tp1": null,
+        "tp2": null,
+        "rr": null,
+        "note": "Close abaixo $72.552 = C-1 nao completou (onda-1 estendendo) · invalida onda-2 · dispara RECALCULO sub-estrutura (skill fenix-analise-macro). LONG live invalida no SL $72.100. SEM entrada · aguardar recount. Watcher level $72.552 tier=alto dispara."
       }
     },
     "setups_pre_armados": [
       {
-        "tipo": "TRADE_LIVE_USER_PROTEGIDO",
-        "entry": 75198.5,
-        "sl": 75048.4,
-        "tp": 69649,
-        "qty_btc": 0.06,
-        "side": "SHORT",
-        "lado": "SHORT",
-        "direcao": "SHORT",
-        "tier": "T2",
-        "macro_aligned": true,
-        "status": "ATIVO_CO_ADMINISTRADO_USER",
-        "uPnL_atual": 53.03,
-        "razao_estrutural": "SHORT macro Wave 5 sub-3 estrutural · entry $75,198.50 capturando movimento $78,049->$74,104 atual · SL user 0.20% acima entry quase BE · TP $69,649 Fib 100% W3 extension.",
-        "nome": "TRADE_LIVE_SHORT_USER_27_05",
-        "entrada": 75198.5,
-        "gatilho": "sub-3 W5 confirmacao 27/05 18:00"
-      },
-      {
-        "tipo": "SHORT_ADDON_SUB_4_BOUNCE_ZONA",
-        "entry_zone": "$74,250-$74,750",
-        "entry": 74500,
-        "sl": 75200,
-        "tp1": 73911,
-        "tp2": 73323,
-        "rr": 2.22,
-        "qty_btc": 0.03,
-        "side": "SHORT",
-        "lado": "SHORT",
-        "direcao": "SHORT",
-        "tier": "T1",
-        "macro_aligned": true,
-        "status": "WATCH_NAO_ARMADO_AUTONOMO",
-        "razao_estrutural": "Bounce sub-4 esperado em zona Fib 23-38% sub-3 ($74,584-$74,881) com resistencia critica EMA20 1H $74,799 · SHORT add-on macro pra ampliar exposure no ultimo leg sub-5. NAO AUTONOMO porque trade live ja ativo (LEI #3 + co-administracao). Gatilho user explicito necessario.",
-        "invalidacao": "close 1H > $75,200 com vol expansao = sub-4 estende mais ou sub-3 invalidada",
-        "nome": "SHORT_ADDON_SUB_4_BOUNCE_ZONA",
-        "entrada": 74800,
-        "gatilho": "user pedir + Camada 2 5m TOP zona + RSI 1H div bearish",
-        "nota_v6.27_27052026_2343": "entry ajustado pra Fib 38% sub-3 · bounce mais provável (~70%) · aprovado user 23:43"
-      },
-      {
-        "nome": "LONG_TATICO_BOUNCE_SUB4_CONTRA_MACRO",
-        "tipo": "LONG_BOUNCE_CONTRAMACRO",
+        "nome": "TRADE_LIVE_LONG_ONDA2_C_V05b",
+        "tipo": "TRADE_LIVE_INTOCAVEL",
         "direcao": "LONG",
         "lado": "LONG",
-        "entry": 73368,
-        "entry_zone": "$73,250-$73,450",
-        "sl": 72650,
-        "tp1": 73950,
-        "tp2": 74700,
-        "tier": "T1",
-        "qty_btc": 0.05,
-        "status": "ATIVO_LONG_LIVE",
-        "criado_em": "2026-05-28T00:06:00-04:00",
-        "atualizado_em": "2026-05-28T07:05:00-04:00",
-        "razao_estrutural": "Sub-3 W5 macro fundo cravado $72,687 (2.618 W1 + Fib 0.618 W3) · Camada 2 BOTTOM EXHAUSTION fresh 05:25 @ $73,358 structural=true · bounce sub-4 W-C em curso · LONG tático contra-macro T1 cheio · validação contagem ABC user 07:05",
-        "rr_simples": 1.89,
-        "macro_aligned": false,
-        "contra_macro_escape": true
-      },
-      {
-        "nome": "SHORT_ESTRUTURAL_SUB_5_WAVE_C_MACRO_T3",
-        "tipo": "SHORT_ESTRUTURAL_MACRO",
-        "direcao": "SHORT",
-        "lado": "SHORT",
-        "entry": 74500,
-        "entry_zone": "$74,400-$74,700",
-        "sl": 75300,
-        "tp1": 72687,
-        "tp1_qty_pct": 50,
-        "tp2": 69649,
-        "tp3_stretch": 64151,
-        "tier": "T3",
-        "qty_btc": 0.13,
-        "status": "PRE_ARM_WATCH",
-        "criado_em": "2026-05-28T07:05:00-04:00",
-        "razao_estrutural": "Contagem ABC user validada matematicamente 07:05 UTC-4 · Wave C macro em curso · sub-4 W-C bounce esperado terminar zona $74,000-$74,700 · sub-5 W-C alvo $69,649 (igualdade Wave A) ou $64,151 (1.618× A) ou $60,869 (2.0× A · tua zona $60k) · user explicit 07:03 'tier T3 nao T2 a favor tendencia macro'",
-        "rr_tp2": 4.16,
-        "rr_tp3": 7.45,
-        "macro_aligned": true,
-        "contra_macro_escape": false,
-        "linkId_template": "fenix_short_subC5_macro_t3",
-        "gatilhos_armar": [
-          "Mark zona $74,400-$74,700 + Camada 2 TOP EXHAUSTION 5m structural bias=bearish",
-          "Close 1H bear engulfing na zona $74,000-$74,700",
-          "RSI 1H bear divergência + vol decay confirmando topo sub-4",
-          "2+ confluências = transição agressiva LONG→SHORT autônoma"
-        ],
-        "scaling_in_add_on": {
-          "enabled": true,
-          "qty_add": 0.04,
-          "trigger": "Bounce pós-fill sem stopar · zona $74,800-$75,000 · add-on defensivo aprovado 09/05/2026",
-          "qty_total_max": 0.17
-        }
-      },
-      {
-        "nome": "LONG_ONDA2_C_SUBFUNDO",
-        "direcao": "LONG",
-        "lado": "LONG",
-        "entry": 73620,
-        "entry_zone": "$73,500-$73,650",
+        "side": "LONG",
+        "entry": 73564.8,
+        "entry_zone": "$73.500-$73.650",
         "sl": 72100.0,
         "tp2": 78892.0,
         "tier": "T1",
+        "qty_btc": 0.05,
+        "status": "ATIVO_LONG_LIVE_INTOCAVEL",
+        "macro_aligned": false,
+        "contra_macro_escape": true,
+        "razao_estrutural": "LONG onda-2 de C grande (alinhado direcao_sub_corrente UP · contrawave escape LEI #3 v2). Entry $73.564,8 capturando bounce desde C-1 low $72.552. SL $72.100 abaixo invalidacao C-2 $72.552. TP $78.892 = Fib 0.618 de C-1 (sub_tp2 = zona IDEAL onde a onda-3 SHORT arma). V05b INTOCAVEL · watcher gerencia · Claude NAO escreve sl/tp/entry.",
+        "gatilho": "Camada2 exaustao fundo BULLISH + onda-2 sub-fundo (entrou 28/05)"
+      },
+      {
+        "nome": "SHORT_ONDA3_C_GRANDE_TOPO_C2",
+        "tipo": "SHORT_ESTRUTURAL_MACRO",
+        "direcao": "SHORT",
+        "lado": "SHORT",
+        "side": "SHORT",
+        "entry": 78287,
+        "entry_zone": "$77.700-$80.600",
+        "sl": 83225.0,
+        "tp1": 72552.0,
+        "tp1_qty_pct": 30,
+        "tp2": 59888.0,
+        "tp3_stretch": 49680.0,
+        "tier": "T3",
+        "qty_btc": 0.13,
         "status": "PRE_ARM_WATCH",
-        "origem": "LEI #3 v2 · onda-2 de C sub-fundo · Camada2 exaustao fundo BULLISH 19:20 · contrawave T1",
-        "ts_armado": "2026-05-28T19:24:02-0400"
+        "macro_aligned": true,
+        "contra_macro_escape": false,
+        "rr_tp2": 3.71,
+        "razao_estrutural": "SHORT da onda-3 de C grande (macro-aligned · trade do BOOT). Arma no TOPO da onda-2 (zona $77.700-$80.600 · ideal Fib 0.500-0.618 de C-1 = $77.682-$78.892). SL $83.225 (acima topo B $82.811 + buffer 0.5%). Alvos: $72.552 (C-1 low · partial 30%) -> $59.888 (fundo A · ima primario) -> $49.680 (0.5A). LEI #29 macro-aligned.",
+        "invalidacao": "close > $82.811 = B nao seria topo · C grande invalida · recount",
+        "gatilho": "chegada zona $77.700-$80.600 + Camada2 5m TOP EXHAUSTION bias=bearish + RSI 4H div bear + rejeicao · NAO chase com preco correndo (LEI #3 v2)",
+        "linkId_template": "fenix_short_onda3_C_ellstruct"
       }
     ],
     "ponto_nao_retorno": null,
-    "proximo_marco": "Close 4H 24:00 UTC-4 (~2.5h · final D-0 ja foi 20:00 · proximo 4H eh 00:00 28/05) · decide cenario A (sub-4 bounce alvo $74,584-$74,881) vs B (sub-3 estende direto alvo $73,323). Trade live SHORT user continua capturando em todos cenarios. Tactic: NAO MEXER · co-administracao."
+    "proximo_marco": "Close 4H 04:00 UTC-4 (~40min) · decide A (onda-2 continua UP rumo $76.471-$78.892 · LONG live captura) vs B (pullback raso mantendo > $72.552). Antes disso · monitorar reacao do mark na EMA20 4H $74.036 (1a resistencia) · sustentacao 1H > $73.568 = onda-2 saudavel. Watcher vigia $72.552 (invalidacao C-2 tier=alto) e $76.471 (entrada zona topo C-2 tier=alto)."
   },
   "execution_mode": "AUTO",
   "manual_approval_required": false,
