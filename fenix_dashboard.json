@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "29/05/2026 03:27:32",
-  "last_github_push": "29/05 03:27",
-  "last_github_push_ts": 1780039652.286777,
+  "ultimo_update": "29/05/2026 03:28:28",
+  "last_github_push": "29/05 03:28",
+  "last_github_push_ts": 1780039708.332541,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -6180.62,
     "cumPnL_unified_usd": -6180.62,
-    "unrealisedPnl": 8.55,
+    "unrealisedPnl": 8.48,
     "ts": "2026-05-26T16:44:55-04:00",
     "progresso_vs_baseline_usd": -56.62,
     "delta_vs_baseline": -56.62,
     "pnl_fenix_desde_baseline": -56.62,
-    "updated_at": "2026-05-29T03:27:31-04:00"
+    "updated_at": "2026-05-29T03:28:27-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_LONG",
-    "markPrice": 73735.9,
-    "mark_price_atual": 73735.9,
-    "unrealised_pnl_usd": 8.55,
-    "unrealisedPnl": 8.55,
+    "markPrice": 73734.45,
+    "mark_price_atual": 73734.45,
+    "unrealised_pnl_usd": 8.48,
+    "unrealisedPnl": 8.48,
     "be_price": 73653.1301926,
     "liq_price": 70977.1,
     "tp2_target_estrutural": 78892.0,
-    "last_update": "2026-05-29T03:27:32-04:00",
-    "ts_snapshot": "2026-05-29T03:27:32-04:00"
+    "last_update": "2026-05-29T03:28:28-04:00",
+    "ts_snapshot": "2026-05-29T03:28:28-04:00"
   },
   "trades_recentes": [
     {
@@ -204,8 +204,8 @@
   ],
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-05-28_d1_72552_onda2C",
-    "boot_ts": "2026-05-29T03:27:18-04:00",
-    "ultimo_update": "2026-05-29T03:27:18-04:00",
+    "boot_ts": "2026-05-29T03:27:49-04:00",
+    "ultimo_update": "2026-05-29T03:27:49-04:00",
     "status": "BOOT_COMPLETO",
     "mark_at_boot": 73790.9,
     "mark_now": 73790.9,
@@ -213,7 +213,7 @@
       "direcao": "BEARISH",
       "score": 8.0
     },
-    "leitura_primaria_opus": "Macro travado (LEI #29 manual_override · validado user+math 28/05). Onda C grande IMPULSIVA DOWN iniciando desde topo B $82.811 · alvos $59.888 (fundo A · ima primario)->$49.680 (0.5A). C-1 ja completou $82.811->$72.552 (5 subondas · c-sub5 cravou projecao 2.618*sub1 = $72.787 por $100-235 · exhaustion classico). Onda-2 de C UP em formacao desde $72.552 (low cravado 28/05). D macro bear-stacked: EMA20 D $75.961 acima mark · RSI D 36.8 · MACD hist D -1.145.\n\nD-1 (28/05) fechou $73.597,6 BULL com long lower wick a $72.552 = defesa do C-1 low (hammer-like · vol 86.5k = 157% MA20 · maior vol da semana). Onda-2 bounce em curso: $72.552->$73.911 high = +$1.359 (+1.87%) = ~13% retracement de C-1. 1H flipou bull (MACD hist +159 · mark $73.790 acima EMA20 1H $73.568 · RSI 52.1) · 15m/5m bull (RSI 61/65). Mark testando EMA20 4H $74.036 como primeira resistencia. Sequencia 1H HL desde o low (72.552->73.629->pullback 73.140 segurou->73.911->73.790).\n\nProximo movimento: (a) onda-2 continua subindo rumo zona topo C-2 $76.471-$80.616 · LONG live captura · SHORT onda-3 arma no topo (50%); (b) onda-2 estagna/pullback raso mantendo > $72.552 antes de retomar (35%); (c) furada de $72.552 = C-1 nao completou · recontar sub-estrutura + invalida LONG live no SL $72.100 (15%). Derivativos: funding +0.0001 leve long · OI -4.5% ult 4h (longs aliviados no bounce) · L/S 0.59 retail long-heavy · bid wall 16 BTC @ $73.784. DXY $99.05 flat (neutro).",
+    "leitura_primaria_opus": "Macro travado (LEI #29 · validado user+math 28/05). Onda C grande DOWN desde topo B $82.811 · alvos $59.888 (fundo A)->$49.680. C-1 completou $82.811->$72.552 (5 subondas · c-sub5 cravou 2.618*sub1=$72.787). Onda-2 de C UP em formacao desde $72.552. D bear-stacked: EMA20 D $75.961 · RSI D 36.8 · MACD hist D -1.145.\n\nD-1 (28/05) fechou $73.597,6 BULL com long lower wick a $72.552 = defesa do C-1 low (hammer · vol 86.5k=157% MA). Onda-2 bounce $72.552->$73.911 = +$1.359 (+1.87%) = ~13% de C-1. 1H flipou bull (MACD hist +159 · mark acima EMA20 1H $73.568 · RSI 52.1) · 15m/5m bull. Mark testando EMA20 4H $74.036.\n\nProximo: (a) onda-2 sobe rumo topo C-2 $76.471-$80.616 · LONG live captura · SHORT onda-3 arma no topo (50%); (b) pullback raso mantendo > $72.552 (35%); (c) fura $72.552 = recontar + invalida LONG no SL (15%). Funding +0.0001 leve long · OI -4.5% ult 4h · L/S 0.59 retail long · bid wall 16 BTC @ $73.784 · DXY flat.",
     "cenarios_opus": {
       "cenario_A_onda2_continua_topo": {
         "prob": 50,
