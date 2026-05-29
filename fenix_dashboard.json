@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "29/05/2026 03:13:33",
-  "last_github_push": "29/05 03:13",
-  "last_github_push_ts": 1780038813.4218109,
+  "ultimo_update": "29/05/2026 03:14:27",
+  "last_github_push": "29/05 03:14",
+  "last_github_push_ts": 1780038867.7460978,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -16,7 +16,7 @@
     "progresso_vs_baseline_usd": -56.62,
     "delta_vs_baseline": -56.62,
     "pnl_fenix_desde_baseline": -56.62,
-    "updated_at": "2026-05-29T03:13:32-04:00"
+    "updated_at": "2026-05-29T03:14:27-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -47,8 +47,8 @@
     "be_price": 73653.1301926,
     "liq_price": 70977.1,
     "tp2_target_estrutural": 78892.0,
-    "last_update": "2026-05-29T03:13:33-04:00",
-    "ts_snapshot": "2026-05-29T03:13:33-04:00"
+    "last_update": "2026-05-29T03:14:27-04:00",
+    "ts_snapshot": "2026-05-29T03:14:27-04:00"
   },
   "trades_recentes": [
     {
