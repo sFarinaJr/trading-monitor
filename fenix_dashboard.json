@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "29/05/2026 20:07:23",
-  "last_github_push": "29/05 20:07",
-  "last_github_push_ts": 1780099643.3130171,
+  "ultimo_update": "29/05/2026 20:08:03",
+  "last_github_push": "29/05 20:08",
+  "last_github_push_ts": 1780099683.133186,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -297,8 +297,18 @@
   "execution_mode": "AUTO",
   "manual_approval_required": false,
   "price_watch": {
-    "ts": "2026-05-29T03:28:38-04:00",
+    "ts": "2026-05-29T20:05:00-04:00",
     "levels": [
+      {
+        "price": 72552.0,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "C-1 low · INVALIDACAO da onda-2 de C (CLOSE-based · hoje wickou 72.460,7 e fechou acima · NAO disparou)",
+        "decisao_pre_armada": "Close < 72552 = C-1 nao completou (onda-1 estendendo) · invalida onda-2. RECALCULAR sub-estrutura desde topo B 82811 · disparar skill fenix-analise-macro. LONG live invalida no SL 72100. NAO abrir nada novo ate recount.",
+        "active": true,
+        "triggered": false,
+        "triggered_ts": "2026-05-29T14:27:17.920308+00:00"
+      },
       {
         "price": 72100.0,
         "direction": "below",
@@ -307,6 +317,16 @@
         "decisao_pre_armada": "SL do LONG live stopa aqui. Se stopado · confirmar fill via get_position_info · registrar trade fechado · reavaliar se onda-2 invalidou (close < 72552). V05b · watcher gerencia.",
         "active": true,
         "triggered": false
+      },
+      {
+        "price": 74199.0,
+        "direction": "above",
+        "tier": "medio",
+        "reason": "EMA20 4H $74.199 · 1a resistencia imediata da onda-2",
+        "decisao_pre_armada": "Mark cruza EMA20 4H acima = onda-2 ganha forca. NAO acao direta · monitorar continuidade rumo zona topo C-2. LONG live HOLD.",
+        "active": true,
+        "triggered": false,
+        "triggered_ts": "2026-05-29T15:35:05.863813+00:00"
       },
       {
         "price": 74585.0,
@@ -370,6 +390,16 @@
         "decisao_pre_armada": "SL do SHORT estrutural onda-3. Stopa se onda-2 exceder topo B + buffer. Recount macro obrigatorio.",
         "active": true,
         "triggered": false
+      },
+      {
+        "price": 73140.0,
+        "direction": "below",
+        "tier": "medio",
+        "reason": "Low intra onda-2 (pullback 1H que segurou)",
+        "decisao_pre_armada": "Sub-fundo da onda-2 intra. Fura = pullback mais profundo (cenario B) mas ainda > 72552 OK. Monitorar Camada2 fundo BULLISH pra possivel LONG add-on contrawave (cap T1).",
+        "active": true,
+        "triggered": false,
+        "triggered_ts": "2026-05-29T13:11:51.359381+00:00"
       },
       {
         "price": 71565.0,
