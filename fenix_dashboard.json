@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "30/05/2026 21:23:49",
-  "last_github_push": "30/05 21:23",
-  "last_github_push_ts": 1780190629.164683,
+  "ultimo_update": "30/05/2026 21:24:43",
+  "last_github_push": "30/05 21:24",
+  "last_github_push_ts": 1780190683.144336,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -6184.81,
     "cumPnL_unified_usd": -6184.81,
-    "unrealisedPnl": 95.04,
+    "unrealisedPnl": 100.32,
     "ts": "2026-05-30T20:05:00-04:00",
     "progresso_vs_baseline_usd": -60.81,
     "delta_vs_baseline": -60.81,
     "pnl_fenix_desde_baseline": -60.81,
-    "updated_at": "2026-05-30T21:23:48-04:00"
+    "updated_at": "2026-05-30T21:24:42-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_LONG",
-    "markPrice": 74198.39,
-    "mark_price_atual": 74198.39,
-    "unrealised_pnl_usd": 95.04,
-    "unrealisedPnl": 95.04,
+    "markPrice": 74233.6,
+    "mark_price_atual": 74233.6,
+    "unrealised_pnl_usd": 100.32,
+    "unrealisedPnl": 100.32,
     "be_price": 73649.13211299,
     "liq_price": 70977.1,
     "tp2_target_estrutural": 78892.0,
-    "last_update": "2026-05-30T21:23:49-04:00",
-    "ts_snapshot": "2026-05-30T21:23:49-04:00"
+    "last_update": "2026-05-30T21:24:43-04:00",
+    "ts_snapshot": "2026-05-30T21:24:43-04:00"
   },
   "trades_recentes": [
     {
@@ -370,16 +370,6 @@
         "decisao_pre_armada": "Mark rompeu 74310 = coil resolveu pra CIMA, onda-2 de C progredindo rumo 0.382=76471. Claude: trailar SL pra baixo do ultimo higher-low 1H CONFIRMADO (LEI #19, nao fractal 15m) · manter HOLD rumo aos alvos · reportar novo SL.",
         "active": true,
         "triggered": false
-      },
-      {
-        "price": 74199.0,
-        "direction": "above",
-        "tier": "medio",
-        "reason": "EMA20 4H $74.199 · 1a resistencia imediata da onda-2",
-        "decisao_pre_armada": "Mark cruza EMA20 4H acima = onda-2 ganha forca. NAO acao direta · monitorar continuidade rumo zona topo C-2. LONG live HOLD.",
-        "active": true,
-        "triggered": false,
-        "triggered_ts": "2026-05-29T15:35:05.863813+00:00"
       },
       {
         "price": 73140.0,
