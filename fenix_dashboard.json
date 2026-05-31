@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "30/05/2026 20:07:02",
+  "ultimo_update": "30/05/2026 20:07:54",
   "last_github_push": "30/05 20:07",
-  "last_github_push_ts": 1780186022.207299,
+  "last_github_push_ts": 1780186074.6431592,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -6184.81,
     "cumPnL_unified_usd": -6184.81,
-    "unrealisedPnl": 40.17,
-    "ts": "2026-05-26T16:44:55-04:00",
+    "unrealisedPnl": 43.94,
+    "ts": "2026-05-30T20:05:00-04:00",
     "progresso_vs_baseline_usd": -60.81,
     "delta_vs_baseline": -60.81,
     "pnl_fenix_desde_baseline": -60.81,
-    "updated_at": "2026-05-30T20:07:01-04:00"
+    "updated_at": "2026-05-30T20:05:00-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_LONG",
-    "markPrice": 73832.6,
-    "mark_price_atual": 73832.6,
-    "unrealised_pnl_usd": 40.17,
-    "unrealisedPnl": 40.17,
+    "markPrice": 73857.74,
+    "mark_price_atual": 73857.74,
+    "unrealised_pnl_usd": 43.94,
+    "unrealisedPnl": 43.94,
     "be_price": 73649.13211299,
     "liq_price": 70977.1,
     "tp2_target_estrutural": 78892.0,
-    "last_update": "2026-05-30T20:07:02-04:00",
-    "ts_snapshot": "2026-05-30T20:07:02-04:00"
+    "last_update": "2026-05-30T20:05:00-04:00",
+    "ts_snapshot": "2026-05-30T20:05:00-04:00"
   },
   "trades_recentes": [
     {
@@ -203,35 +203,35 @@
     }
   ],
   "current_thesis": {
-    "thesis_id": "boot_d_close_2026-05-29_d0_73437_onda2C",
-    "boot_ts": "2026-05-29T20:05:00-04:00",
-    "ultimo_update": "2026-05-29T20:05:00-04:00",
+    "thesis_id": "boot_d_close_2026-05-30_d0_73854_onda2C",
+    "boot_ts": "2026-05-30T20:05:00-04:00",
+    "ultimo_update": "2026-05-30T20:05:00-04:00",
     "status": "BOOT_COMPLETO",
-    "mark_at_boot": 73435.57,
-    "mark_now": 73435.57,
+    "mark_at_boot": 73857.74,
+    "mark_now": 73857.74,
     "macro_bias_D": {
       "direcao": "BEARISH",
       "score": 8.0
     },
-    "leitura_primaria_opus": "Macro travado (LEI #29 · user+math 28/05). Onda C grande DOWN desde topo B $82.811 · alvos $59.888 (fundo A)->$49.680. VALIDACAO INDEPENDENTE hoje: A_grande (126.150->59.888) PASS como 5-ondas impulso · C-1 (82.811->72.552) PASS 5-ondas impulso. PORÉM a ABC GRANDE FALHA o teste de ZIGZAG estrito (B retracou 34.6% < piso 38%). Leitura honesta: a correcao grande NAO e zigzag textbook · B raso + A impulsiva = perfil de FLAT/correcao de tendencia-forte onde C ainda projeta rumo/abaixo do fundo A (59.888). A DIRECAO (C down) sobrevive · o LABEL 'zigzag' e impreciso. SEM evidencia nova (close>82.811) · NAO recontar (LEI #29) · so registro este caveat.\n\nD-0 (29/05) fechou $73.437,3 com long lower wick a $72.460,7 (wickou $91 abaixo do C-1 low $72.552 INTRADAY mas FECHOU $885 acima · invalidacao e CLOSE-based · onda-2 SOBREVIVE). 4H 16:00 fez V-recovery massivo (low $72.460,7 vol 31.9k -> close $73.774) rejeitando abaixo de $72.552.\n\nBounce onda-2 ~13% de C-1 · 1H neutro (RSI ~50 · MACD hist ~flat) · 4H oversold recuperando · D bear profundo (RSI ~30). Proximo: (a) onda-2 sobe rumo topo C-2 $76.471-$78.892 · LONG live captura · SHORT onda-3 arma no topo (50%); (b) pullback/range raso mantendo > $72.552 close (35%); (c) CLOSE < $72.552 = recontar + LONG invalida no SL $72.100 (15%). Derivativos: funding +0.00007 leve long · OI 54.0k BTC -7.8% em 2d (longs trimados no flush · des-alavancagem saudavel) · L/S 0.58 retail long-heavy · order book ask wall 16.1 BTC @ $73.432 (resistencia imediata top-of-book) · DXY flat.",
+    "leitura_primaria_opus": "Macro travado (LEI #29 · user+math 28/05 · re-validado hoje). Onda C grande DOWN desde topo B $82.811 · alvos $59.888 (fundo A)->$49.680. VALIDACAO INDEPENDENTE hoje (validator matematico): C-1 (82.811->72.552) PASS como 5-ondas impulso (3 regras OK · define a invalidacao operacional da onda-2). A_grande mantida como impulso descendente macro (direcao LOCKED) · sub-divisao interna do label e aproximada (caveat ja registrado) · ABC grande reprova zigzag estrito (B 34.6% < 38%) · perfil FLAT/strong-trend · DIRECAO C down sobrevive. SEM evidencia nova (close>82.811) · NAO recontar (LEI #29).\n\nD-0 (30/05) fechou $73.854,1 VERDE (+0.57%) recuperando do flush de ontem · candle bull pequeno corpo dentro do coil 72460-74310. O dia foi consolidacao apertada ~17h sob o teto 74117/0.382-B-zone com exaustoes de topo recorrentes (Camada 2 TOP 5m disparou multiplas vezes 17:30/18:15) MAS sem breakdown · suporte intra 73.756-73.780 defendido no corpo (pavio furou 73.740 e recuperou). 1H VIROU bull leve (RSI 53.6 · preco > EMA9 > EMA20 · MACD hist +12.3) e 4H MACD hist virou positivo (+172) · sinais de que a onda-2 esta ganhando tracao apos coilar 2 dias.\n\nProximo: (a) onda-2 rompe teto 74310 e progride rumo $76.471 (Fib 0.382 C-1) -> $78.892 · LONG live captura · SHORT onda-3 arma no topo (52%); (b) range/pullback raso mantendo > $72.552 close · coil continua (33%); (c) CLOSE < $72.552 = recontar + LONG live no SL $73.650,7 (15%). Derivativos: funding +0.000074 leve long (nao extremo) · OI 54.6k BTC recuperando do flush (+1% ult dia · -7% em 2d antes) · L/S 0.574 retail long-heavy (trimando levemente desde 0.583) · order book bid/ask walls equilibrados colados ao mark (~4-6 BTC cada · 73848/73849) sem pressao clara · DXY ~99 flat.",
     "cenarios_opus": {
-      "cenario_A_onda2_continua_topo": {
-        "prob": 50,
-        "entry": 73436,
+      "cenario_A_onda2_rompe_topo": {
+        "prob": 52,
+        "entry": 73857,
         "sl": 72100,
         "tp1": 76471,
         "tp2": 78892,
-        "rr": 3.02,
-        "note": "Onda-2 continua UP rumo $76.471 (Fib 0.382 C-1) -> $78.892 (Fib 0.618 · TP do LONG live). LONG live 0.15 @ $73.564,8 captura. SHORT onda-3 macro arma no topo. Gatilho: close 1H/4H sustentando > EMA20 4H $74.199 + estrutura HH/HL continua."
+        "rr": 2.85,
+        "note": "Onda-2 rompe teto coil $74.310 e progride UP rumo $76.471 (Fib 0.382 C-1) -> $78.892 (Fib 0.618 · TP do LONG live). LONG live 0.15 @ $73.564,8 captura. SHORT onda-3 macro arma no topo. Gatilho: close 1H/4H sustentando > $74.310 + EMA20 4H $74.024 + estrutura HH/HL. 1H ja virou bull (RSI 53.6 · cross EMA bull · MACD+) e 4H MACD virou + · tracao retomando."
       },
-      "cenario_B_onda2_pullback_range_raso": {
-        "prob": 35,
+      "cenario_B_coil_pullback_raso": {
+        "prob": 33,
         "entry": null,
         "sl": null,
         "tp1": null,
         "tp2": null,
         "rr": null,
-        "note": "Onda-2 lateraliza/pullback raso (zona $72.900-$73.500) mantendo CLOSE > $72.552 antes de retomar UP. LONG live HOLD acima SL $72.100. SEM entrada nova. Gatilho: rejeicao em EMA20 4H $74.199 + 1H MACD esfriar (ja esfriou intra)."
+        "note": "Onda-2 segue coilando/pullback raso (zona $73.140-$74.310) mantendo CLOSE > $72.552 antes de retomar UP. LONG live HOLD acima SL $73.650,7. SEM entrada nova. Gatilho: rejeicao no teto $74.310/EMA20 4H + exaustoes topo 5m persistindo (vinham disparando o dia todo)."
       },
       "cenario_C_close_abaixo_72552_recount": {
         "prob": 15,
@@ -240,7 +240,7 @@
         "tp1": null,
         "tp2": null,
         "rr": null,
-        "note": "CLOSE (nao wick) abaixo $72.552 = C-1 nao completou (onda-1 estendendo) · invalida onda-2 · dispara RECALCULO sub-estrutura (skill fenix-analise-macro). LONG live invalida no SL $72.100. SEM entrada · aguardar recount. Watcher level $72.552 tier=alto. NB: hoje wickou $72.460,7 mas FECHOU acima · nao disparou."
+        "note": "CLOSE (nao wick) abaixo $72.552 = C-1 nao completou (onda-1 estendendo) · invalida onda-2 · dispara RECALCULO sub-estrutura (skill fenix-analise-macro). LONG live invalida no SL $73.650,7 (BE+fees · ja protegido em lucro). SEM entrada · aguardar recount. Watcher level $72.552 tier=alto."
       }
     },
     "setups_pre_armados": [
@@ -252,14 +252,14 @@
         "side": "LONG",
         "entry": 73564.8,
         "entry_zone": "$73.500-$73.650",
-        "sl": 72100.0,
+        "sl": 73650.7,
         "tp2": 78892.0,
         "tier": "T1",
         "qty_btc": 0.15,
         "status": "ATIVO_LONG_LIVE_INTOCAVEL",
         "macro_aligned": false,
         "contra_macro_escape": true,
-        "razao_estrutural": "LONG onda-2 de C grande (alinhado direcao_sub_corrente UP · contrawave escape LEI #3 v2). Entry $73.564,8. SL $72.100 abaixo invalidacao C-2 $72.552. TP $78.892 = Fib 0.618 C-1 (zona IDEAL onde onda-3 SHORT arma). V05b INTOCAVEL · watcher gerencia · Claude NAO escreve sl/tp/entry.",
+        "razao_estrutural": "LONG onda-2 de C grande (alinhado direcao_sub_corrente UP · contrawave escape LEI #3 v2). Entry $73.564,8. SL $73.650,7 (BE+fees+buffer · ja em LUCRO · LEI #12 disparou BE em 28/05). TP $78.892 = Fib 0.618 C-1 (zona IDEAL onde onda-3 SHORT arma). V05b INTOCAVEL · watcher gerencia · Claude NAO escreve sl/tp/entry.",
         "gatilho": "Camada2 exaustao fundo BULLISH + onda-2 sub-fundo (entrou 28/05)",
         "entrada": 73564.8,
         "tp1": 73932.6,
@@ -283,21 +283,21 @@
         "status": "PRE_ARM_WATCH",
         "macro_aligned": true,
         "contra_macro_escape": false,
-        "rr_tp2": 3.71,
-        "razao_estrutural": "SHORT da onda-3 de C grande (macro-aligned · trade do BOOT). Arma no TOPO da onda-2 (zona $77.700-$80.600 · ideal Fib 0.500-0.618 C-1 = $77.682-$78.892). SL $83.225 (acima topo B $82.811 +0.5%). Alvos: $72.552 (C-1 low · partial 30%) -> $59.888 (fundo A · ima) -> $49.680. LEI #29 macro-aligned. R:R TP2 ~3.71.",
+        "rr_tp2": 3.73,
+        "razao_estrutural": "SHORT da onda-3 de C grande (macro-aligned · trade do BOOT). Arma no TOPO da onda-2 (zona $77.700-$80.600 · ideal Fib 0.500-0.618 C-1 = $77.682-$78.892). SL $83.225 (acima topo B $82.811 +0.5%). Alvos: $72.552 (C-1 low · partial 30%) -> $59.888 (fundo A · ima) -> $49.680. LEI #29 macro-aligned. R:R TP2 3.73.",
         "invalidacao": "close > $82.811 = B nao seria topo · C grande invalida · recount + escalar user",
         "gatilho": "chegada zona $77.700-$80.600 + Camada2 5m TOP EXHAUSTION bias=bearish + RSI 4H div bear + rejeicao · NAO chase com preco correndo (LEI #3 v2)",
         "linkId_template": "fenix_short_onda3_C_ellstruct",
         "entrada": 78287
       }
     ],
-    "ponto_nao_retorno": "MACRO · CLOSE D > $82.811 (+buffer $83.225) invalida tese C grande inteira -> escalar user + recount (LEI #29). INTRA/SUB · CLOSE (nao wick) < $72.552 invalida onda-2 de C -> recontar sub-estrutura + LONG live no SL $72.100. BULL continuacao SHORT · topo onda-2 na zona $77.682-$78.892 (Fib 0.500-0.618 C-1) arma SHORT onda-3 macro.",
-    "proximo_marco": "Close 4H 00:00 UTC-4 (~4h) · decide A (onda-2 continua UP rumo $76.471-$78.892 · LONG live captura) vs B (pullback/range raso mantendo CLOSE > $72.552). 1a resistencia EMA20 4H $74.199 + pivot R1 $74.345. Sustentacao 1H > EMA20 $73.510 = onda-2 saudavel. Watcher vigia $72.552 (invalidacao C-2 tier=alto) e $76.471 (entrada zona topo C-2 tier=alto)."
+    "ponto_nao_retorno": "MACRO · CLOSE D > $82.811 (+buffer $83.225) invalida tese C grande inteira -> escalar user + recount (LEI #29). INTRA/SUB · CLOSE (nao wick) < $72.552 invalida onda-2 de C -> recontar sub-estrutura + LONG live no SL $73.650,7. BULL continuacao SHORT · topo onda-2 na zona $77.682-$78.892 (Fib 0.500-0.618 C-1) arma SHORT onda-3 macro.",
+    "proximo_marco": "Close 4H 00:00 UTC-4 (~4h) · decide A (onda-2 rompe teto $74.310 e progride rumo $76.471-$78.892 · LONG live captura) vs B (coil/pullback raso mantendo CLOSE > $72.552). 1a resistencia EMA20 4H $74.024 + teto coil $74.310 + pivot R1 $74.261. Sustentacao 1H > EMA20 $73.786 = onda-2 saudavel (ja confirmado · 1H cross bull). Watcher vigia $72.552 (invalidacao C-2 tier=alto) · $74.310 (breakout coil tier=alto) e $76.471 (entrada zona topo C-2 tier=alto)."
   },
   "execution_mode": "AUTO",
   "manual_approval_required": false,
   "price_watch": {
-    "ts": "2026-05-30T13:41:12-0400",
+    "ts": "2026-05-30T20:05:00-04:00",
     "levels": [
       {
         "price": 83225.0,
