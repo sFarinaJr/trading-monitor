@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "01/06/2026 14:34:45",
-  "last_github_push": "01/06 14:34",
-  "last_github_push_ts": 1780338885.0301728,
+  "ultimo_update": "01/06/2026 14:35:39",
+  "last_github_push": "01/06 14:35",
+  "last_github_push_ts": 1780338939.1294248,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -6078.04,
     "cumPnL_unified_usd": -6078.04,
-    "unrealisedPnl": 2.86,
+    "unrealisedPnl": 2.05,
     "ts": "2026-05-31T10:26:35-04:00",
     "progresso_vs_baseline_usd": 45.96,
     "delta_vs_baseline": 45.96,
     "pnl_fenix_desde_baseline": 45.96,
-    "updated_at": "2026-06-01T14:34:44-04:00"
+    "updated_at": "2026-06-01T14:35:38-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_SHORT",
-    "markPrice": 71604.64,
-    "mark_price_atual": 71604.64,
-    "unrealised_pnl_usd": 2.86,
-    "unrealisedPnl": 2.86,
+    "markPrice": 71631.82,
+    "mark_price_atual": 71631.82,
+    "unrealised_pnl_usd": 2.05,
+    "unrealisedPnl": 2.05,
     "be_price": 71646.25455999,
     "liq_price": 74197.0,
     "tp2_target_estrutural": 64051.0,
-    "last_update": "2026-06-01T14:34:44-04:00",
-    "ts_snapshot": "2026-06-01T14:34:44-04:00"
+    "last_update": "2026-06-01T14:35:39-04:00",
+    "ts_snapshot": "2026-06-01T14:35:39-04:00"
   },
   "trades_recentes": [
     {
@@ -277,6 +277,44 @@
         "rr": 4.9,
         "invalidacao": "close > 72552",
         "razao_estrutural": "SHORT sub-3 de onda-3 · parcial topo sub-2 · escalona T3 conforme confirma"
+      },
+      {
+        "nome": "SHORT_SUB2C_A",
+        "tipo": "SHORT_ESTRUTURAL_MACRO",
+        "direcao": "SHORT",
+        "lado": "SHORT",
+        "side": "SHORT",
+        "entry": 72150,
+        "entry_zone": "topo sub-2-C onda-3 (72.0-72.5)",
+        "sl": 73250.0,
+        "tp1": 64051.0,
+        "tp2": 57711.0,
+        "tier": "ADD_escalona_T3",
+        "qty_btc": 0.02,
+        "status": "ATIVO_ADD",
+        "macro_aligned": true,
+        "rr": 7.4,
+        "invalidacao": "close > 72552",
+        "razao_estrutural": "add sub-3 no topo da sub-2-C (zigzag C>=A) · espalhado 72.0-72.5 · SL invalidacao"
+      },
+      {
+        "nome": "SHORT_SUB2C_B",
+        "tipo": "SHORT_ESTRUTURAL_MACRO",
+        "direcao": "SHORT",
+        "lado": "SHORT",
+        "side": "SHORT",
+        "entry": 72400,
+        "entry_zone": "topo sub-2-C onda-3 (72.0-72.5)",
+        "sl": 73250.0,
+        "tp1": 64051.0,
+        "tp2": 57711.0,
+        "tier": "ADD_escalona_T3",
+        "qty_btc": 0.03,
+        "status": "ATIVO_ADD",
+        "macro_aligned": true,
+        "rr": 9.8,
+        "invalidacao": "close > 72552",
+        "razao_estrutural": "add sub-3 no topo da sub-2-C (zigzag C>=A) · espalhado 72.0-72.5 · SL invalidacao"
       }
     ],
     "ponto_nao_retorno": "BEAR MACRO invalida: close D > 82.811 (escalar user · recount). ONDA-2 recount (re-rotula como completa em 74.310 · NAO muda direcao): close < 72.552. BEAR CURTO reavalia: reclaim e sustentacao close 4H > 74.585 (R1) ativa caminho A em vez de B.",
