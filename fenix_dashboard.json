@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "01/06/2026 09:51:35",
-  "last_github_push": "01/06 09:51",
-  "last_github_push_ts": 1780321895.938936,
+  "ultimo_update": "01/06/2026 09:52:33",
+  "last_github_push": "01/06 09:52",
+  "last_github_push_ts": 1780321953.8395479,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -16,7 +16,7 @@
     "progresso_vs_baseline_usd": -48.58,
     "delta_vs_baseline": -48.58,
     "pnl_fenix_desde_baseline": -48.58,
-    "updated_at": "2026-06-01T09:51:35-04:00"
+    "updated_at": "2026-06-01T09:52:33-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -48,7 +48,7 @@
     "liq_price": 70977.1,
     "tp2_target_estrutural": 78892.0,
     "last_update": "2026-05-31T10:14:29-04:00",
-    "ts_snapshot": "2026-06-01T09:51:35-04:00"
+    "ts_snapshot": "2026-06-01T09:52:33-04:00"
   },
   "trades_recentes": [
     {
@@ -326,15 +326,6 @@
         "tier": "alto",
         "reason": "Teto do coil de 3 dias (range high 28/05) · breakout-confirm onda-2 UP",
         "decisao_pre_armada": "Mark rompeu 74310 close-based = coil resolveu pra CIMA, onda-2 ativa caminho A rumo 0.382=76471. Reativa watch da zona topo C-2. Sem trade aqui (sem posicao) · so re-armar vigilancia SHORT no topo. NAO chase LONG (contra-macro).",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 71565.0,
-        "direction": "below",
-        "tier": "medio",
-        "reason": "Pivot D S2 · alvo intermediario se C-3 acelera",
-        "decisao_pre_armada": "TP1 do SHORT breakdown (caminho B). Alvo de continuacao C grande down. Avaliar parcial 30% do SHORT aqui · trailar resto rumo 59888.",
         "active": true,
         "triggered": false
       },
