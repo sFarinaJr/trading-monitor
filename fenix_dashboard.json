@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "31/05/2026 20:07:41",
-  "last_github_push": "31/05 20:07",
-  "last_github_push_ts": 1780272461.4283361,
+  "ultimo_update": "31/05/2026 20:08:35",
+  "last_github_push": "31/05 20:08",
+  "last_github_push_ts": 1780272515.090605,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -16,7 +16,7 @@
     "progresso_vs_baseline_usd": -48.58,
     "delta_vs_baseline": -48.58,
     "pnl_fenix_desde_baseline": -48.58,
-    "updated_at": "2026-05-31T20:07:40-04:00"
+    "updated_at": "2026-05-31T20:08:34-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -48,7 +48,7 @@
     "liq_price": 70977.1,
     "tp2_target_estrutural": 78892.0,
     "last_update": "2026-05-31T10:14:29-04:00",
-    "ts_snapshot": "2026-05-31T20:07:41-04:00"
+    "ts_snapshot": "2026-05-31T20:08:35-04:00"
   },
   "trades_recentes": [
     {
@@ -163,76 +163,55 @@
     }
   ],
   "current_thesis": {
-    "thesis_id": "boot_d_close_2026-05-30_d0_73854_onda2C",
-    "boot_ts": "2026-05-30T20:05:00-04:00",
-    "ultimo_update": "2026-05-31T17:32:03-04:00",
+    "thesis_id": "boot_d_close_2026-05-31_d0_73650_onda2C_rasa",
+    "boot_ts": "2026-05-31T20:05:00-04:00",
+    "ultimo_update": "2026-05-31T20:05:00-04:00",
     "status": "BOOT_COMPLETO",
-    "mark_at_boot": 73857.74,
-    "mark_now": 73654.0,
+    "mark_at_boot": 73649.6,
+    "mark_now": 73649.6,
     "macro_bias_D": {
       "direcao": "BEARISH",
       "score": 8.0
     },
-    "leitura_primaria_opus": "Macro travado (LEI #29 · user+math 28/05 · re-validado hoje). Onda C grande DOWN desde topo B $82.811 · alvos $59.888 (fundo A)->$49.680. VALIDACAO INDEPENDENTE hoje (validator matematico): C-1 (82.811->72.552) PASS como 5-ondas impulso (3 regras OK · define a invalidacao operacional da onda-2). A_grande mantida como impulso descendente macro (direcao LOCKED) · sub-divisao interna do label e aproximada (caveat ja registrado) · ABC grande reprova zigzag estrito (B 34.6% < 38%) · perfil FLAT/strong-trend · DIRECAO C down sobrevive. SEM evidencia nova (close>82.811) · NAO recontar (LEI #29).\n\nD-0 (30/05) fechou $73.854,1 VERDE (+0.57%) recuperando do flush de ontem · candle bull pequeno corpo dentro do coil 72460-74310. O dia foi consolidacao apertada ~17h sob o teto 74117/0.382-B-zone com exaustoes de topo recorrentes (Camada 2 TOP 5m disparou multiplas vezes 17:30/18:15) MAS sem breakdown · suporte intra 73.756-73.780 defendido no corpo (pavio furou 73.740 e recuperou). 1H VIROU bull leve (RSI 53.6 · preco > EMA9 > EMA20 · MACD hist +12.3) e 4H MACD hist virou positivo (+172) · sinais de que a onda-2 esta ganhando tracao apos coilar 2 dias.\n\nProximo: (a) onda-2 rompe teto 74310 e progride rumo $76.471 (Fib 0.382 C-1) -> $78.892 · LONG live captura · SHORT onda-3 arma no topo (52%); (b) range/pullback raso mantendo > $72.552 close · coil continua (33%); (c) CLOSE < $72.552 = recontar + LONG live no SL $73.650,7 (15%). Derivativos: funding +0.000074 leve long (nao extremo) · OI 54.6k BTC recuperando do flush (+1% ult dia · -7% em 2d antes) · L/S 0.574 retail long-heavy (trimando levemente desde 0.583) · order book bid/ask walls equilibrados colados ao mark (~4-6 BTC cada · 73848/73849) sem pressao clara · DXY ~99 flat.",
+    "leitura_primaria_opus": "Mercado em onda-2 de C grande que se revelou RASA e LATERAL. Apos C-1 completar (82.811->72.552, impulso 5-ondas validado), o bounce corretivo so retracou 17% (topo 74.310) e travou num coil de 3 dias entre 73.1-74.3k. Hoje houve 3 rejeicoes em 73.9-74.0k sem forca pra romper o teto. D-0 fechou vermelho abaixo de todas as EMAs diarias com RSI D 37. Isso e tipico de onda-2 fraca que precede onda-3 EXTENSA (regra Elliott: shallow w2 -> strong w3). A tese macro C grande DOWN segue 100% intacta · nao ha evidencia tecnica nova que force recount (so close > 82.811 invalidaria · impossivel daqui). Estamos FLAT (o LONG V05b da onda-2 fechou 28/05 em BE+fees, lucro +5.65). O unico setup armado e SHORT da onda-3, que se materializa por DOIS caminhos: caminho A (onda-2 estende ate 76.5-80.6k -> short no topo, RR 3.73) ou caminho B (coil quebra pra baixo via close < 72.552 -> short no breakdown, RR 6.42). O caminho B ganhou probabilidade (45%) dada a fraqueza da onda-2 e a distribuicao visivel (OI -1.1%, lower-highs, longs retail dominando = combustivel pra squeeze down). Disciplina: NAO chase em nenhum dos dois · entrar so na exaustao/retracao confirmada por Camada2.",
     "cenarios_opus": {
-      "cenario_A_onda2_rompe_topo": {
-        "prob": 52,
-        "entry": 73857,
-        "sl": 72100,
-        "tp1": 76471,
-        "tp2": 78892,
-        "rr": 2.85,
-        "note": "Onda-2 rompe teto coil $74.310 e progride UP rumo $76.471 (Fib 0.382 C-1) -> $78.892 (Fib 0.618 · TP do LONG live). LONG live 0.15 @ $73.564,8 captura. SHORT onda-3 macro arma no topo. Gatilho: close 1H/4H sustentando > $74.310 + EMA20 4H $74.024 + estrutura HH/HL. 1H ja virou bull (RSI 53.6 · cross EMA bull · MACD+) e 4H MACD virou + · tracao retomando."
+      "cenario_A_onda2_estende_topo": {
+        "prob": 35,
+        "entry": 78287,
+        "sl": 83225,
+        "tp1": 72552,
+        "tp2": 59888,
+        "rr": 3.73,
+        "note": "onda-2 retoma UP rumo zona canonica 76.471-80.616 (38-78% C-1) · SHORT onda-3 arma no topo com Camada2 5m TOP + RSI 4H div bear"
       },
-      "cenario_B_coil_pullback_raso": {
-        "prob": 33,
+      "cenario_B_onda2_rasa_breakdown": {
+        "prob": 45,
+        "entry": 72400,
+        "sl": 74350,
+        "tp1": 71565,
+        "tp2": 59888,
+        "rr": 6.42,
+        "note": "onda-2 ja topou 74.310 (rasa 17%) · close < 72.460/72.552 confirma onda-3 DOWN · SHORT breakdown na PRIMEIRA retracao (nao chase a vela)"
+      },
+      "cenario_C_coil_persiste": {
+        "prob": 20,
         "entry": null,
         "sl": null,
         "tp1": null,
         "tp2": null,
         "rr": null,
-        "note": "Onda-2 segue coilando/pullback raso (zona $73.140-$74.310) mantendo CLOSE > $72.552 antes de retomar UP. LONG live HOLD acima SL $73.650,7. SEM entrada nova. Gatilho: rejeicao no teto $74.310/EMA20 4H + exaustoes topo 5m persistindo (vinham disparando o dia todo)."
-      },
-      "cenario_C_close_abaixo_72552_recount": {
-        "prob": 15,
-        "entry": null,
-        "sl": null,
-        "tp1": null,
-        "tp2": null,
-        "rr": null,
-        "note": "CLOSE (nao wick) abaixo $72.552 = C-1 nao completou (onda-1 estendendo) · invalida onda-2 · dispara RECALCULO sub-estrutura (skill fenix-analise-macro). LONG live invalida no SL $73.650,7 (BE+fees · ja protegido em lucro). SEM entrada · aguardar recount. Watcher level $72.552 tier=alto."
+        "note": "range 73.1-74.3k persiste (corretivo complexo flat/triangle da onda-2) · STAND-BY ate breakout direcional close-based"
       }
     },
     "setups_pre_armados": [
       {
-        "nome": "TRADE_LIVE_LONG_ONDA2_C_V05b",
-        "tipo": "TRADE_LIVE_INTOCAVEL",
-        "direcao": "LONG",
-        "lado": "LONG",
-        "side": "LONG",
-        "entry": 73564.8,
-        "entry_zone": "$73.500-$73.650",
-        "sl": 73650.7,
-        "tp2": 78892.0,
-        "tier": "T1",
-        "qty_btc": 0.15,
-        "status": "ATIVO_LONG_LIVE_INTOCAVEL",
-        "macro_aligned": false,
-        "contra_macro_escape": true,
-        "razao_estrutural": "LONG onda-2 de C grande (alinhado direcao_sub_corrente UP · contrawave escape LEI #3 v2). Entry $73.564,8. SL $73.650,7 (BE+fees+buffer · ja em LUCRO · LEI #12 disparou BE em 28/05). TP $78.892 = Fib 0.618 C-1 (zona IDEAL onde onda-3 SHORT arma). V05b INTOCAVEL · watcher gerencia · Claude NAO escreve sl/tp/entry.",
-        "gatilho": "Camada2 exaustao fundo BULLISH + onda-2 sub-fundo (entrou 28/05)",
-        "entrada": 73564.8,
-        "tp1": 73932.6,
-        "invalidacao": "close < 72552"
-      },
-      {
-        "nome": "SHORT_ONDA3_C_GRANDE_TOPO_C2",
+        "nome": "SHORT_ONDA3_C_TOPO_C2_CAMINHO_A",
         "tipo": "SHORT_ESTRUTURAL_MACRO",
         "direcao": "SHORT",
         "lado": "SHORT",
         "side": "SHORT",
         "entry": 78287,
-        "entry_zone": "$77.700-$80.600",
+        "entry_zone": "$77.682-$78.892 (ideal) · $76.471-$80.616 (zona ampla)",
         "sl": 83225.0,
         "tp1": 72552.0,
         "tp1_qty_pct": 30,
@@ -243,16 +222,35 @@
         "status": "PRE_ARM_WATCH",
         "macro_aligned": true,
         "contra_macro_escape": false,
-        "rr_tp2": 3.73,
-        "razao_estrutural": "SHORT da onda-3 de C grande (macro-aligned · trade do BOOT). Arma no TOPO da onda-2 (zona $77.700-$80.600 · ideal Fib 0.500-0.618 C-1 = $77.682-$78.892). SL $83.225 (acima topo B $82.811 +0.5%). Alvos: $72.552 (C-1 low · partial 30%) -> $59.888 (fundo A · ima) -> $49.680. LEI #29 macro-aligned. R:R TP2 3.73.",
-        "invalidacao": "close > $82.811 = B nao seria topo · C grande invalida · recount + escalar user",
-        "gatilho": "chegada zona $77.700-$80.600 + Camada2 5m TOP EXHAUSTION bias=bearish + RSI 4H div bear + rejeicao · NAO chase com preco correndo (LEI #3 v2)",
-        "linkId_template": "fenix_short_onda3_C_ellstruct",
-        "entrada": 78287
+        "rr": 3.73,
+        "invalidacao": "close > 82811",
+        "razao_estrutural": "SHORT da onda-3 de C grande (caminho A · macro-aligned · trade do BOOT). Arma no TOPO da onda-2 se ela estender ate zona canonica. Ideal Fib 0.500-0.618 C-1 = 77.682-78.892. SL 83.225 (acima topo B 82.811). TP1 72.552 (C-1 low · 30%) · TP2 59.888 (fundo A · ima macro). Gatilho: chegada na zona + Camada2 5m TOP EXHAUSTION bias=bearish + RSI 4H div bear + rejeicao. NAO chase (LEI #3 v2)."
+      },
+      {
+        "nome": "SHORT_ONDA3_BREAKDOWN_CAMINHO_B",
+        "tipo": "SHORT_ESTRUTURAL_MACRO",
+        "direcao": "SHORT",
+        "lado": "SHORT",
+        "side": "SHORT",
+        "entry": 72400,
+        "entry_zone": "primeira retracao apos close < 72.552/72.460",
+        "sl": 74350.0,
+        "tp1": 71565.0,
+        "tp1_qty_pct": 30,
+        "tp2": 59888.0,
+        "tp3_stretch": 49680.0,
+        "tier": "T2",
+        "qty_btc": 0.13,
+        "status": "PRE_ARM_WATCH",
+        "macro_aligned": true,
+        "contra_macro_escape": false,
+        "rr": 6.42,
+        "invalidacao": "reclaim close > 74310 (coil top)",
+        "razao_estrutural": "SHORT da onda-3 via BREAKDOWN do coil (caminho B · onda-2 foi rasa). Gatilho: close 1H/4H < 72.552 confirma onda-2 completa em 74.310 e onda-3 DOWN iniciada. Entra na PRIMEIRA retracao (nao chase a vela de quebra). SL 74.350 (acima teto coil). TP1 71.565 (S2 · 30%) · TP2 59.888 (fundo A). Confirmar Camada2 5m exhaustion no pullback. RR 6.42."
       }
     ],
-    "ponto_nao_retorno": "MACRO · CLOSE D > $82.811 (+buffer $83.225) invalida tese C grande inteira -> escalar user + recount (LEI #29). INTRA/SUB · CLOSE (nao wick) < $72.552 invalida onda-2 de C -> recontar sub-estrutura + LONG live no SL $73.650,7. BULL continuacao SHORT · topo onda-2 na zona $77.682-$78.892 (Fib 0.500-0.618 C-1) arma SHORT onda-3 macro.",
-    "proximo_marco": "Close 4H 00:00 UTC-4 (~4h) · decide A (onda-2 rompe teto $74.310 e progride rumo $76.471-$78.892 · LONG live captura) vs B (coil/pullback raso mantendo CLOSE > $72.552). 1a resistencia EMA20 4H $74.024 + teto coil $74.310 + pivot R1 $74.261. Sustentacao 1H > EMA20 $73.786 = onda-2 saudavel (ja confirmado · 1H cross bull). Watcher vigia $72.552 (invalidacao C-2 tier=alto) · $74.310 (breakout coil tier=alto) e $76.471 (entrada zona topo C-2 tier=alto)."
+    "ponto_nao_retorno": "BEAR MACRO invalida: close D > 82.811 (escalar user · recount). ONDA-2 recount (re-rotula como completa em 74.310 · NAO muda direcao): close < 72.552. BEAR CURTO reavalia: reclaim e sustentacao close 4H > 74.585 (R1) ativa caminho A em vez de B.",
+    "proximo_marco": "Close 1H 21:00 UTC-4 (~55min) · depois close 4H 24:00 UTC-4 (00:00). Vigiar resolucao do coil 72.460-74.310 · break direcional close-based define caminho A (cima) vs B (baixo)."
   },
   "execution_mode": "AUTO",
   "manual_approval_required": false,
