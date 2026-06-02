@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "01/06/2026 20:07:40",
-  "last_github_push": "01/06 20:07",
-  "last_github_push_ts": 1780358860.4269462,
+  "ultimo_update": "01/06/2026 20:08:16",
+  "last_github_push": "01/06 20:08",
+  "last_github_push_ts": 1780358896.9894469,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -288,14 +288,14 @@
   "execution_mode": "AUTO",
   "manual_approval_required": false,
   "price_watch": {
-    "ts": "2026-05-31T20:05:00-04:00",
+    "ts": "2026-06-01T20:08:05-04:00",
     "levels": [
       {
         "price": 83225.0,
         "direction": "above",
         "tier": "alto",
-        "reason": "Invalidacao total + buffer 0.5% · SL do SHORT onda-3",
-        "decisao_pre_armada": "SL do SHORT estrutural onda-3. Stopa se onda-2 exceder topo B + buffer. Recount macro obrigatorio · escalar user.",
+        "reason": "Invalidacao total + buffer · SL macro",
+        "decisao_pre_armada": "Recount macro obrigatorio · escalar user · fechar SHORT.",
         "active": true,
         "triggered": false
       },
@@ -303,53 +303,8 @@
         "price": 82811.0,
         "direction": "above",
         "tier": "alto",
-        "reason": "Topo B grande · INVALIDACAO TOTAL da tese C grande",
-        "decisao_pre_armada": "Close > 82811 = B NAO seria topo · tese C grande DOWN invalida. ESCALAR AO USER (evidencia NOVA real · LEI #29 nao sobrescrever sozinho). Disparar fenix-analise-macro pra recount completo. Fechar/reavaliar qualquer SHORT.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 80616.0,
-        "direction": "above",
-        "tier": "alto",
-        "reason": "Fib 0.786 de C-1 · topo MAXIMO esperado da onda-2",
-        "decisao_pre_armada": "Topo maximo onda-2 antes da invalidacao. SHORT onda-3 com confluencia maxima aqui (proximo ao topo B). Se ja short · HOLD. R:R otimo pra C grande down.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 78892.0,
-        "direction": "above",
-        "tier": "alto",
-        "reason": "Fib 0.618 de C-1 · zona IDEAL SHORT onda-3 (caminho A)",
-        "decisao_pre_armada": "Topo ideal onda-2 (caminho A). ARMAR SHORT onda-3 T3 0.13 BTC se Camada2 5m TOP EXHAUSTION fresca bias=bearish + rejeicao + RSI 4H div bear. SL 83225 · TP1 72552 (30%) · TP2 59888 · linkId fenix_short_onda3_C_ellstruct. NAO chase (LEI #3 v2).",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 77682.0,
-        "direction": "above",
-        "tier": "alto",
-        "reason": "Fib 0.500 de C-1 · zona IDEAL inferior SHORT onda-3 (caminho A)",
-        "decisao_pre_armada": "Zona ideal SHORT onda-3 (inicio). SE Camada2 5m TOP EXHAUSTION fresca bias=bearish + rejeicao + RSI 4H div bear · ARMAR SHORT estrutural T3 0.13 BTC · SL 83225 · TP1 72552 (30%) · TP2 59888 · linkId fenix_short_onda3_C_ellstruct. NAO chase (LEI #3 v2 · entra na exaustao).",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 76471.0,
-        "direction": "above",
-        "tier": "alto",
-        "reason": "Fib 0.382 de C-1 · INICIO zona topo C-2 (SHORT onda-3 watch · caminho A)",
-        "decisao_pre_armada": "Entrada na zona de topo da onda-2 (caminho A). COMECAR a vigiar Camada2 5m TOP EXHAUSTION bias=bearish + RSI 4H div bear. NAO shortar ainda (zona ideal 77.682-78.892).",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 74585.0,
-        "direction": "above",
-        "tier": "medio",
-        "reason": "Pivot D R1 · resistencia intermediaria onda-2",
-        "decisao_pre_armada": "Resistencia pivot. Onda-2 saudavel (caminho A) se rompe e sustenta. Sem acao direta · monitorar continuidade rumo zona topo C-2.",
+        "reason": "Topo B grande · INVALIDACAO TOTAL tese C",
+        "decisao_pre_armada": "Close > 82811 = tese C grande DOWN invalida. ESCALAR USER (LEI #29). Disparar fenix-analise-macro recount. Fechar SHORT.",
         "active": true,
         "triggered": false
       },
@@ -357,8 +312,89 @@
         "price": 74310.0,
         "direction": "above",
         "tier": "alto",
-        "reason": "Teto do coil de 3 dias (range high 28/05) · breakout-confirm onda-2 UP",
-        "decisao_pre_armada": "Mark rompeu 74310 close-based = coil resolveu pra CIMA, onda-2 ativa caminho A rumo 0.382=76471. Reativa watch da zona topo C-2. Sem trade aqui (sem posicao) · so re-armar vigilancia SHORT no topo. NAO chase LONG (contra-macro).",
+        "reason": "Topo onda-2 · INVALIDACAO ONDA-3",
+        "decisao_pre_armada": "Reclaim close > 74310 invalida onda-3 down (volta onda-2 ou recount sub). Fechar/reduzir SHORT ativo. Disparar fenix-analise-macro re-rotulo sub-onda.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 73726.0,
+        "direction": "above",
+        "tier": "medio",
+        "reason": "Order block bear · origem breakdown",
+        "decisao_pre_armada": "Repique grande (onda-4 maior) chegou ao OB. Vigiar Camada2 5m TOP exhaustion bias bearish -> SHORT add no topo (cenario B). NAO chase.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 73250.0,
+        "direction": "above",
+        "tier": "medio",
+        "reason": "SL setups SHORT repique",
+        "decisao_pre_armada": "Nivel de SL dos setups add repique. Acima disso repique virou pullback maior (cenario B) · re-armar SHORT na zona 72.9-73.5k.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 72480.0,
+        "direction": "above",
+        "tier": "medio",
+        "reason": "Fib 0.5 repique onda-3 · topo zona SHORT add",
+        "decisao_pre_armada": "Repique chegou ao topo da zona SHORT ideal. Camada2 5m TOP + RSI 4H rejeicao -> SHORT add (cenario A · RR 8.3). Entrar NA exaustao nao perseguindo.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 72048.0,
+        "direction": "above",
+        "tier": "medio",
+        "reason": "Fib 0.382 repique onda-3 · base zona SHORT add",
+        "decisao_pre_armada": "Base da zona SHORT repique. Repique chegando · preparar Camada2 watch pra SHORT add.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 71653.0,
+        "direction": "above",
+        "tier": "info",
+        "reason": "BE+fees trade ativo SHORT",
+        "decisao_pre_armada": "Acima daqui trade SHORT 0.03 vira loss. Watcher gerencia SL estrutural 73600. Apenas referencia.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 70992.0,
+        "direction": "below",
+        "tier": "medio",
+        "reason": "Pivot S2 D",
+        "decisao_pre_armada": "Cruzou S2 down · onda-3 progredindo. Manter SHORT ativo · proximo alvo S3 69823.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 70650.0,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "Fundo dia 01/06 · BREAKDOWN onda-3 acelera",
+        "decisao_pre_armada": "Close 1H/4H < 70650 = onda-3 acelera. SHORT add na 1a retracao (cenario A continuacao · entry ~70900 SL 71900 TP 64051 RR 6.85). NAO chase a vela de quebra · esperar retracao + Camada2.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 69823.0,
+        "direction": "below",
+        "tier": "medio",
+        "reason": "Pivot S3 D · alvo TP1 breakdown",
+        "decisao_pre_armada": "S3 atingido · TP1 do setup breakdown. Realizar parcial 30% se em SHORT add · trail resto rumo 64051/59888.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 64051.0,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "TP2 trade ativo + setups · alvo onda-3",
+        "decisao_pre_armada": "TP2 estrutural onda-3. Bybit fecha 100% trade ativo (embedded). Avaliar re-armar SHORT pra extensao 59888 se momentum forte.",
         "active": true,
         "triggered": false
       },
@@ -366,8 +402,8 @@
         "price": 59888.0,
         "direction": "below",
         "tier": "alto",
-        "reason": "Fundo A grande · ALVO PRIMARIO de C grande (ima · TP2 SHORT onda-3)",
-        "decisao_pre_armada": "Alvo macro primario de C grande (TP2 SHORT onda-3). Zigzag testa/fura fundo A. Avaliar parcial grande do SHORT + vigiar exhaustion pra C grande poder estender a 49680/41861.",
+        "reason": "Fundo A grande · 1o ima onda C",
+        "decisao_pre_armada": "Alvo macro principal onda C. Camada2 5m FUNDO exhaustion forte -> avaliar fechar SHORTs / reduzir. Possivel fim onda-3 ou onda C. Disparar fenix-analise-macro reavaliacao.",
         "active": true,
         "triggered": false
       }
