@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "01/06/2026 22:00:48",
-  "last_github_push": "01/06 22:00",
-  "last_github_push_ts": 1780365648.613225,
+  "ultimo_update": "01/06/2026 22:01:45",
+  "last_github_push": "01/06 22:01",
+  "last_github_push_ts": 1780365705.1733508,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -6077.82,
     "cumPnL_unified_usd": -6077.82,
-    "unrealisedPnl": 31.6,
+    "unrealisedPnl": 30.72,
     "ts": "2026-06-01T20:07:18-04:00",
     "progresso_vs_baseline_usd": 46.18,
     "delta_vs_baseline": 46.18,
     "pnl_fenix_desde_baseline": 46.18,
-    "updated_at": "2026-06-01T22:00:48-04:00"
+    "updated_at": "2026-06-01T22:01:44-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -30,8 +30,8 @@
     "avgPrice": 71700.0,
     "avg_price": 71700.0,
     "entry_price": 71700.0,
-    "stopLoss": 73600.0,
-    "stop_loss": 73600.0,
+    "stopLoss": 71800.0,
+    "stop_loss": 71800.0,
     "takeProfit": 64051.0,
     "take_profit": 64051.0,
     "tp2": 64051.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_SHORT",
-    "markPrice": 70646.65,
-    "mark_price_atual": 70646.65,
-    "unrealised_pnl_usd": 31.6,
-    "unrealisedPnl": 31.6,
+    "markPrice": 70676.0,
+    "mark_price_atual": 70676.0,
+    "unrealised_pnl_usd": 30.72,
+    "unrealisedPnl": 30.72,
     "be_price": 71653.38976562,
     "liq_price": 74197.0,
     "tp2_target_estrutural": 64051.0,
-    "last_update": "2026-06-01T22:00:48-04:00",
-    "ts_snapshot": "2026-06-01T22:00:48-04:00"
+    "last_update": "2026-06-01T22:01:45-04:00",
+    "ts_snapshot": "2026-06-01T22:01:45-04:00"
   },
   "trades_recentes": [
     {
@@ -359,15 +359,6 @@
         "tier": "info",
         "reason": "BE+fees trade ativo SHORT",
         "decisao_pre_armada": "Acima daqui trade SHORT 0.03 vira loss. Watcher gerencia SL estrutural 73600. Apenas referencia.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 70650.0,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "Fundo dia 01/06 · BREAKDOWN onda-3 acelera",
-        "decisao_pre_armada": "Close 1H/4H < 70650 = onda-3 acelera. SHORT add na 1a retracao (cenario A continuacao · entry ~70900 SL 71900 TP 64051 RR 6.85). NAO chase a vela de quebra · esperar retracao + Camada2.",
         "active": true,
         "triggered": false
       },
