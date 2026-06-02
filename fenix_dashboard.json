@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "02/06/2026 11:55:35",
-  "last_github_push": "02/06 11:55",
-  "last_github_push_ts": 1780415735.516196,
+  "ultimo_update": "02/06/2026 11:56:31",
+  "last_github_push": "02/06 11:56",
+  "last_github_push_ts": 1780415791.9649541,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -6176.07,
     "cumPnL_unified_usd": -6176.07,
-    "unrealisedPnl": -125.03,
+    "unrealisedPnl": -114.12,
     "ts": "2026-06-01T20:07:18-04:00",
     "progresso_vs_baseline_usd": -52.07,
     "delta_vs_baseline": -52.07,
     "pnl_fenix_desde_baseline": -52.07,
-    "updated_at": "2026-06-02T11:55:34-04:00"
+    "updated_at": "2026-06-02T11:56:31-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_LONG",
-    "markPrice": 67144.9,
-    "mark_price_atual": 67144.9,
-    "unrealised_pnl_usd": -124.51,
-    "unrealisedPnl": -124.51,
+    "markPrice": 67248.8,
+    "mark_price_atual": 67248.8,
+    "unrealised_pnl_usd": -114.12,
+    "unrealisedPnl": -114.12,
     "be_price": 68441.32072639,
     "liq_price": 54987.0,
     "tp2_target_estrutural": null,
-    "last_update": "2026-06-02T11:55:35-04:00",
-    "ts_snapshot": "2026-06-02T11:55:35-04:00"
+    "last_update": "2026-06-02T11:56:31-04:00",
+    "ts_snapshot": "2026-06-02T11:56:31-04:00"
   },
   "trades_recentes": [
     {
@@ -295,7 +295,7 @@
     "ponto_nao_retorno": "ONDA-3 invalida (recount sub): close > 74.310 (reclaim topo onda-2). BEAR MACRO invalida TOTAL: close D > 82.811 (escalar user · recount). Onda-3 ACELERA: perde 70.650 (fundo dia) em close -> rumo S3 69.823 -> 59.888.",
     "proximo_marco": "Close 1H 21:00 UTC-4 (~58min) · depois close 4H 24:00 UTC-4 (00:00). Decide A (repique ate 72.0-72.5k -> SHORT add) vs continuacao direta. Antes disso · vigiar se bounce intra estende pra zona short OU se perde 70.650 (fundo dia) em close = onda-3 acelera rumo S3 69.823 -> 59.888."
   },
-  "execution_mode": "AUTO",
+  "execution_mode": "MANUAL",
   "manual_approval_required": false,
   "price_watch": {
     "ts": "2026-06-01T20:08:05-04:00",
