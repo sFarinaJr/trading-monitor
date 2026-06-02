@@ -1,37 +1,37 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "02/06/2026 10:10:12",
-  "last_github_push": "02/06 10:10",
-  "last_github_push_ts": 1780409412.916554,
+  "ultimo_update": "02/06/2026 10:11:08",
+  "last_github_push": "02/06 10:11",
+  "last_github_push_ts": 1780409468.8926091,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
   "saldo": {
-    "cum_realised_pnl": -6174.7,
-    "cumPnL_unified_usd": -6174.7,
-    "unrealisedPnl": 0.0,
+    "cum_realised_pnl": -6176.07,
+    "cumPnL_unified_usd": -6176.07,
+    "unrealisedPnl": -5.66,
     "ts": "2026-06-01T20:07:18-04:00",
-    "progresso_vs_baseline_usd": -50.7,
-    "delta_vs_baseline": -50.7,
-    "pnl_fenix_desde_baseline": -50.7,
-    "updated_at": "2026-06-02T10:10:12-04:00"
+    "progresso_vs_baseline_usd": -52.07,
+    "delta_vs_baseline": -52.07,
+    "pnl_fenix_desde_baseline": -52.07,
+    "updated_at": "2026-06-02T10:11:08-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
-    "current_pnl": -6174.7,
-    "diff_usd": -50.7
+    "current_pnl": -6176.07,
+    "diff_usd": -52.07
   },
   "posicao_atual": {
-    "side": "NONE",
-    "size": 0,
-    "qty": 0,
-    "avgPrice": 70650.0,
-    "avg_price": 70650.0,
-    "entry_price": 70650.0,
-    "stopLoss": 69640.0,
-    "stop_loss": 69640.0,
+    "side": "LONG",
+    "size": 0.1,
+    "qty": 0.1,
+    "avgPrice": 68390.0,
+    "avg_price": 68390.0,
+    "entry_price": 68390.0,
+    "stopLoss": null,
+    "stop_loss": null,
     "takeProfit": null,
     "take_profit": null,
     "tp2": null,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_LONG",
-    "markPrice": 70238.48,
-    "mark_price_atual": 70238.48,
-    "unrealised_pnl_usd": 0,
-    "unrealisedPnl": -82.3,
-    "be_price": 70703.01665916,
-    "liq_price": 68164.9,
+    "markPrice": 68333.4,
+    "mark_price_atual": 68333.4,
+    "unrealised_pnl_usd": -5.66,
+    "unrealisedPnl": -5.66,
+    "be_price": 68441.32072639,
+    "liq_price": 65984.4,
     "tp2_target_estrutural": null,
-    "last_update": "2026-06-02T02:53:17-04:00",
-    "ts_snapshot": "2026-06-02T10:10:12-04:00"
+    "last_update": "2026-06-02T10:11:08-04:00",
+    "ts_snapshot": "2026-06-02T10:11:08-04:00"
   },
   "trades_recentes": [
     {
