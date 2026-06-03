@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "03/06/2026 19:02:32",
-  "last_github_push": "03/06 19:02",
-  "last_github_push_ts": 1780527752.771179,
+  "ultimo_update": "03/06/2026 19:03:29",
+  "last_github_push": "03/06 19:03",
+  "last_github_push_ts": 1780527809.399824,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -6177.56,
     "cumPnL_unified_usd": -6177.56,
-    "unrealisedPnl": -367.43,
+    "unrealisedPnl": -386.47,
     "ts": "2026-06-02T20:05:00-04:00",
     "progresso_vs_baseline_usd": -53.56,
     "delta_vs_baseline": -53.56,
     "pnl_fenix_desde_baseline": -53.56,
-    "updated_at": "2026-06-03T19:02:32-04:00"
+    "updated_at": "2026-06-03T19:03:28-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_LONG",
-    "markPrice": 64715.69,
-    "mark_price_atual": 64715.69,
-    "unrealised_pnl_usd": -367.43,
-    "unrealisedPnl": -367.43,
+    "markPrice": 64525.34,
+    "mark_price_atual": 64525.34,
+    "unrealised_pnl_usd": -386.47,
+    "unrealisedPnl": -386.47,
     "be_price": 68456.2500116,
     "liq_price": 54987.0,
     "tp2_target_estrutural": null,
-    "last_update": "2026-06-03T19:02:32-04:00",
-    "ts_snapshot": "2026-06-03T19:02:32-04:00"
+    "last_update": "2026-06-03T19:03:29-04:00",
+    "ts_snapshot": "2026-06-03T19:03:29-04:00"
   },
   "trades_recentes": [
     {
@@ -351,15 +351,6 @@
         "tier": "medio",
         "reason": "EMA20 1H · 1a resistencia repique",
         "decisao_pre_armada": "1o teste de resistencia no repique. Observar reacao (rejeicao = bear continua).",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 64729.0,
-        "direction": "below",
-        "tier": "medio",
-        "reason": "ext 2.618 · alvo intermediario",
-        "decisao_pre_armada": "alvo intermediario down (DCA fundo user region). TP1 do SHORT_BREAKDOWN. Observar.",
         "active": true,
         "triggered": false
       },
