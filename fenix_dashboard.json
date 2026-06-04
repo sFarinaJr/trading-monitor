@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "04/06/2026 16:19:18",
-  "last_github_push": "04/06 16:19",
-  "last_github_push_ts": 1780604358.276286,
+  "ultimo_update": "04/06/2026 16:20:23",
+  "last_github_push": "04/06 16:20",
+  "last_github_push_ts": 1780604423.02,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -351,15 +351,6 @@
         "tier": "medio",
         "reason": "EMA20 1H · 1a resistencia repique",
         "decisao_pre_armada": "1o teste de resistencia no repique. Observar reacao (rejeicao = bear continua).",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 59888.0,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "fundo A grande · 1o ima macro / TP2",
-        "decisao_pre_armada": "alvo macro primario atingido (fundo A). Zona de exaustao da onda final · vigiar reversao p/ recount (onda final pode completar aqui). Escalar OPUS.",
         "active": true,
         "triggered": false
       }
