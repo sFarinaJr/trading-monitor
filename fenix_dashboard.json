@@ -1,27 +1,27 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "04/06/2026 03:59:14",
-  "last_github_push": "04/06 03:59",
-  "last_github_push_ts": 1780559954.548367,
+  "ultimo_update": "04/06/2026 04:00:11",
+  "last_github_push": "04/06 04:00",
+  "last_github_push_ts": 1780560011.169578,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
   "saldo": {
-    "cum_realised_pnl": -6177.53,
-    "cumPnL_unified_usd": -6177.53,
-    "unrealisedPnl": -478.18,
+    "cum_realised_pnl": -6177.73,
+    "cumPnL_unified_usd": -6177.73,
+    "unrealisedPnl": -482.47,
     "ts": "2026-06-02T20:05:00-04:00",
-    "progresso_vs_baseline_usd": -53.53,
-    "delta_vs_baseline": -53.53,
-    "pnl_fenix_desde_baseline": -53.53,
-    "updated_at": "2026-06-04T03:59:13-04:00"
+    "progresso_vs_baseline_usd": -53.73,
+    "delta_vs_baseline": -53.73,
+    "pnl_fenix_desde_baseline": -53.73,
+    "updated_at": "2026-06-04T04:00:10-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
-    "current_pnl": -6177.53,
-    "diff_usd": -53.53
+    "current_pnl": -6177.73,
+    "diff_usd": -53.73
   },
   "posicao_atual": {
     "side": "LONG",
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_LONG",
-    "markPrice": 63608.2,
-    "mark_price_atual": 63608.2,
-    "unrealised_pnl_usd": -478.18,
-    "unrealisedPnl": -478.18,
-    "be_price": 68455.96005192,
+    "markPrice": 63553.34,
+    "mark_price_atual": 63553.34,
+    "unrealised_pnl_usd": -483.67,
+    "unrealisedPnl": -483.67,
+    "be_price": 68457.88968382,
     "liq_price": 54987.0,
     "tp2_target_estrutural": null,
-    "last_update": "2026-06-04T03:59:14-04:00",
-    "ts_snapshot": "2026-06-04T03:59:14-04:00"
+    "last_update": "2026-06-04T04:00:11-04:00",
+    "ts_snapshot": "2026-06-04T04:00:11-04:00"
   },
   "trades_recentes": [
     {
