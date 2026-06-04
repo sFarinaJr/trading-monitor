@@ -1,27 +1,27 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "03/06/2026 20:00:00",
+  "ultimo_update": "03/06/2026 20:00:07",
   "last_github_push": "03/06 20:00",
-  "last_github_push_ts": 1780531200.337472,
+  "last_github_push_ts": 1780531207.9854321,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
   "saldo": {
-    "cum_realised_pnl": -6177.56,
-    "cumPnL_unified_usd": -6177.56,
-    "unrealisedPnl": -431.06,
+    "cum_realised_pnl": -6177.53,
+    "cumPnL_unified_usd": -6177.53,
+    "unrealisedPnl": -427.07,
     "ts": "2026-06-02T20:05:00-04:00",
-    "progresso_vs_baseline_usd": -53.56,
-    "delta_vs_baseline": -53.56,
-    "pnl_fenix_desde_baseline": -53.56,
-    "updated_at": "2026-06-03T19:59:10-04:00"
+    "progresso_vs_baseline_usd": -53.53,
+    "delta_vs_baseline": -53.53,
+    "pnl_fenix_desde_baseline": -53.53,
+    "updated_at": "2026-06-03T20:00:07-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
-    "current_pnl": -6177.56,
-    "diff_usd": -53.56
+    "current_pnl": -6177.53,
+    "diff_usd": -53.53
   },
   "posicao_atual": {
     "side": "LONG",
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_LONG",
-    "markPrice": 64079.4,
-    "mark_price_atual": 64079.4,
-    "unrealised_pnl_usd": -431.06,
-    "unrealisedPnl": -431.06,
-    "be_price": 68456.2500116,
+    "markPrice": 64119.3,
+    "mark_price_atual": 64119.3,
+    "unrealised_pnl_usd": -427.07,
+    "unrealisedPnl": -427.07,
+    "be_price": 68455.96005192,
     "liq_price": 54987.0,
     "tp2_target_estrutural": null,
-    "last_update": "2026-06-03T19:59:10-04:00",
-    "ts_snapshot": "2026-06-03T19:59:10-04:00"
+    "last_update": "2026-06-03T20:00:07-04:00",
+    "ts_snapshot": "2026-06-03T20:00:07-04:00"
   },
   "trades_recentes": [
     {
