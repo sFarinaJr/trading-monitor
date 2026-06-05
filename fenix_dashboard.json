@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "04/06/2026 21:47:03",
+  "ultimo_update": "04/06/2026 21:47:59",
   "last_github_push": "04/06 21:47",
-  "last_github_push_ts": 1780624023.386025,
+  "last_github_push_ts": 1780624079.931235,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -6177.56,
     "cumPnL_unified_usd": -6177.56,
-    "unrealisedPnl": -505.93,
+    "unrealisedPnl": -506.34,
     "ts": "2026-06-02T20:05:00-04:00",
     "progresso_vs_baseline_usd": -53.56,
     "delta_vs_baseline": -53.56,
     "pnl_fenix_desde_baseline": -53.56,
-    "updated_at": "2026-06-04T21:47:02-04:00"
+    "updated_at": "2026-06-04T21:47:59-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -47,8 +47,8 @@
     "be_price": 68456.27968562,
     "liq_price": 54987.0,
     "tp2_target_estrutural": null,
-    "last_update": "2026-06-04T21:47:03-04:00",
-    "ts_snapshot": "2026-06-04T21:47:03-04:00"
+    "last_update": "2026-06-04T21:47:59-04:00",
+    "ts_snapshot": "2026-06-04T21:47:59-04:00"
   },
   "trades_recentes": [
     {
@@ -333,15 +333,6 @@
         "tier": "alto",
         "reason": "topo B grande · INVALIDACAO TOTAL macro bear",
         "decisao_pre_armada": "ANALISE: close D > 82811 invalida zigzag bearish inteiro -> B nao seria topo -> recount macro total. Reavaliar tudo.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 63306.0,
-        "direction": "below",
-        "tier": "medio",
-        "reason": "PP pivot D · perda mantem bias bear curto",
-        "decisao_pre_armada": "ANALISE: mark sob PP confirma fraqueza do bounce C-2 · vies SHORT mantido. Vigiar S1 61877.",
         "active": true,
         "triggered": false
       },
