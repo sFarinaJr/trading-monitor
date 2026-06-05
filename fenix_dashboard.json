@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "04/06/2026 21:44:14",
-  "last_github_push": "04/06 21:44",
-  "last_github_push_ts": 1780623854.5463018,
+  "ultimo_update": "04/06/2026 21:45:11",
+  "last_github_push": "04/06 21:45",
+  "last_github_push_ts": 1780623911.687621,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -6177.56,
     "cumPnL_unified_usd": -6177.56,
-    "unrealisedPnl": -504.29,
+    "unrealisedPnl": -501.21,
     "ts": "2026-06-02T20:05:00-04:00",
     "progresso_vs_baseline_usd": -53.56,
     "delta_vs_baseline": -53.56,
     "pnl_fenix_desde_baseline": -53.56,
-    "updated_at": "2026-06-04T21:44:13-04:00"
+    "updated_at": "2026-06-04T21:45:11-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_LONG",
-    "markPrice": 63347.1,
-    "mark_price_atual": 63347.1,
-    "unrealised_pnl_usd": -504.29,
-    "unrealisedPnl": -504.29,
+    "markPrice": 63370.37,
+    "mark_price_atual": 63370.37,
+    "unrealised_pnl_usd": -501.96,
+    "unrealisedPnl": -501.96,
     "be_price": 68456.27968562,
     "liq_price": 54987.0,
     "tp2_target_estrutural": null,
-    "last_update": "2026-06-04T21:44:14-04:00",
-    "ts_snapshot": "2026-06-04T21:44:14-04:00"
+    "last_update": "2026-06-04T21:45:11-04:00",
+    "ts_snapshot": "2026-06-04T21:45:11-04:00"
   },
   "trades_recentes": [
     {
@@ -183,92 +183,92 @@
     }
   ],
   "current_thesis": {
-    "thesis_id": "boot_d_close_2026-06-02_onda_final_DOWN_capitulacao_66725_MANUAL",
-    "boot_ts": "2026-06-02T20:05:00-04:00",
-    "ultimo_update": "2026-06-02T20:05:00-04:00",
+    "thesis_id": "boot_d_close_2026-06-04_WAVE_C_zigzag_C1completa_C2_UP_topo_SHORT_MANUAL",
+    "boot_ts": "2026-06-04T21:42:00-04:00",
+    "ultimo_update": "2026-06-04T21:42:00-04:00",
     "status": "BOOT_COMPLETO",
-    "mark_at_boot": 66725.2,
-    "mark_now": 66677.0,
+    "mark_at_boot": 63280.0,
+    "mark_now": 63280.0,
     "macro_bias_D": {
       "direcao": "BEARISH",
-      "score": 9.5
+      "score": 9.0
     },
-    "leitura_primaria_opus": "Onda final DOWN em ACELERACAO (macro.json onda-3 de C grande · Espinha onda-5 desde 126.150 · ambas DOWN · divergencia so de rotulo de grau · CONFIRMAM-SE mutuamente). O BOOT 01/06 previu que perder 70.650 abriria a perna rumo S3->59.888 · foi exatamente o que aconteceu: D-0 02/06 abriu 71.391 e cascateou ate 66.160 SEM repique, fechando 66.725 (-6.5% · vol 158.332 = capitulacao institucional, maior volume em meses).\n\nEMAs ABAIXO do mark em TODOS os TFs. RSI D 21.8 / 4H 12.4 / 1H 23.3 = oversold EXTREMO simultaneo (assinatura de capitulacao). O coracao detectou FUNDO1H RSI 16.65 as 19:02 = exaustao intra. O mark (66.677) esta colado em 3 confluencias de suporte: 0.618 da projecao Espinha da onda-5 (65.963), S3 pivot D (66.601) e fundo dia (66.160). Funding caiu pra ~zero (+0.0000067, era +0.0001) · OI caiu de 60.7k->58.5k (longs liquidados no flush) · L/S 1.577 (61% longs retail = combustivel restante).\n\nProximo movimento: (a) onda continua down apos repique corretivo ate Fib 0.5-0.618 (69.9-70.8k) -> SHORT add (55%); (b) BOUNCE TECNICO por oversold extremo RSI 12/22 ate 68-70k antes de continuar (30%); (c) breakdown direto <66.160 rumo 59.888 sem repique (15%). MODO MANUAL ATIVO (user 02/06 12:00): FENIX SO observa/informa · NAO abre/fecha/parcial. Unica acao Bybit permitida = mover SL p/ BE+taxas (LEI#12 · mas trade user em loss, BE nao arma). Trade do USER LONG 0.1 @68390 (DCA fundo · babysit LEI#32 · INTOCAVEL · uPnL -161). LONG PROIBIDO p/ FENIX (LEI #29).",
+    "leitura_primaria_opus": "A Espinha (cerebro unico da contagem) mantem tese travada PERSISTENTE: zigzag bearish 5-3-5 DOWN, com WAVE C impulsiva descendente em formacao desde o topo da B (82811). A onda A foi um 5-ondas valido (82811->66262), a B corretiva, e a C agora desce rumo a zona 0.382-0.618xA (57499 / 49680 / 41861), ja tendo cumprido ~65% do alvo central 49680.\n\nNo grau menor, a sub-onda C-1 (primeiro impulso 5-down da C) COMPLETOU em 61333 (fundo 03/06), confirmada por pivo de alta 15m apos o fundo (topo 64734) sem novo low. Estamos agora na C-2 corretiva UP (a onda de trabalho), onde a FENIX deve agir no TOPO (SHORT macro-aligned). Porem o bounce da C-2 e FRACO: subiu apenas ate 64734 (retracao 0.157 da perna C-1 inteira, nem chegou ao 0.236=66402) e ja recuou para 63280. Isso sugere C-2 rasa/lateral que pode topar cedo, mantendo a faca apontada pra baixo.\n\nContexto: D RSI 17.8 e 4H RSI 26.8 = oversold (combustivel pra repique tecnico, e o unico fator pro-bounce). MACD 4H hist -48 quase zerado = impulso down desacelerando (coerente com C-2 corretiva). Funding -0.000024 (~neutro, leve negativo) · OI 56.153 caindo (-2.6% 12h, longs ainda saindo) · L/S 0.612 (61% longs retail = combustivel baixista residual). Coracao: pulsos neutros com vendas dominando 63.2-63.4k, SubTopo 63954 marcado 21:00.\n\nCenarios: (a) C-2 sobe mais ate 64.7-66.4k antes de virar -> SHORT add no topo (50%); (b) C-2 ja topou em 64734 e a C-3 down retoma direto -> SHORT na 1a retracao apos perder 61333 (30%); (c) bounce tecnico oversold maior ate 66-67k (Fib 0.236-0.382) antes da C-3 (20%). MODO OBSERVACAO (user 02/06): FENIX SO observa/informa · NAO abre/fecha/parcial. Trade do USER LONG 0.1 @68390 (babysit LEI#32 · INTOCAVEL · uPnL -512 · SL 57868 user · liq 54987). LONG PROIBIDO p/ FENIX (LEI #29).",
     "cenarios_opus": {
-      "cenario_A_onda_continua_down_pos_repique": {
-        "prob": 55,
-        "entry": 69943,
-        "sl": 71250,
-        "tp1": 66160,
-        "tp2": 59888,
-        "rr": 7.69,
-        "note": "repique corretivo ate Fib 0.5-0.618 (69.9-70.8k) -> SHORT add com Camada2 5m TOP + RSI 4H rejeicao. Alvo fundo A 59.888."
+      "cenario_A_C2_sobe_mais_topo_SHORT": {
+        "prob": 50,
+        "entry": 65400,
+        "sl": 66700,
+        "tp1": 61333,
+        "tp2": 57499,
+        "rr": 3.0,
+        "note": "C-2 estende ate zona 64.7-66.4k (rompe 64734 OU Fib 0.236 C-1=66402) -> SHORT add no topo com Camada2 5m TOP + RSI 4H rejeicao. Alvo C-3 down 57499 -> 49680."
       },
-      "cenario_B_bounce_tecnico_oversold": {
+      "cenario_B_C2_topou_C3_retoma": {
         "prob": 30,
+        "entry": 61000,
+        "sl": 62700,
+        "tp1": 59904,
+        "tp2": 57499,
+        "rr": 1.94,
+        "note": "C-2 topou raso em 64734 · perde 61333 em close 1H -> C-3 down retomou. SHORT na 1a retracao apos breakdown (nao chase a faca). Alvo 57499 -> 49680."
+      },
+      "cenario_C_bounce_oversold_maior": {
+        "prob": 20,
         "entry": null,
         "sl": null,
         "tp1": null,
         "tp2": null,
         "rr": null,
-        "note": "RSI D 21.8/4H 12.4 oversold EXTREMO + FUNDO1H RSI 16.65 gera bounce tecnico ate 68-70k. STAND-BY · NAO short o fundo · espera repique definir topo. LONG vetado LEI#29 (so seria contra-macro · alem disso MODO MANUAL)."
-      },
-      "cenario_C_breakdown_direto_59888": {
-        "prob": 15,
-        "entry": 66400,
-        "sl": 67700,
-        "tp1": 64729,
-        "tp2": 59888,
-        "rr": 5.01,
-        "note": "perde 66.160 em close sem repique -> aceleracao direta rumo fundo A 59.888. SHORT add na 1a retracao (nao chase). MODO MANUAL: FENIX nao executa."
+        "note": "RSI D 17.8 oversold EXTREMO gera bounce tecnico maior ate 66-67k (Fib 0.236-0.382 C-1) antes da C-3. STAND-BY · espera repique definir topo p/ SHORT. LONG vetado LEI#29 + MODO OBSERVACAO."
       }
     },
     "setups_pre_armados": [
       {
-        "nome": "SHORT_REPIQUE_PRIMARIO",
+        "nome": "SHORT_TOPO_C2_PRIMARIO",
         "tipo": "SHORT_ESTRUTURAL_MACRO",
         "direcao": "SHORT",
         "lado": "SHORT",
         "side": "SHORT",
-        "entry": 69943,
-        "entrada": 69943,
-        "entry_zone": "$69.943-$70.836 (Fib 0.5-0.618 repique swing 73726->66160)",
-        "gatilho": "$69.943-$70.836 + Camada2 5m TOP + RSI 4H rejeicao",
-        "sl": 71250.0,
-        "tp1": 66160.0,
+        "entry": 65400,
+        "entrada": 65400,
+        "entry_zone": "$64.734-$66.402 (rompe topo C-2 64734 OU Fib 0.236 C-1 66402)",
+        "gatilho": "repique ate 64.7-66.4k + Camada2 5m TOP + RSI 4H rejeicao",
+        "sl": 66700.0,
+        "tp1": 61333.0,
         "tp1_qty_pct": 30,
-        "tp2": 59888.0,
-        "tp3_stretch": 55549.0,
+        "tp2": 57499.0,
+        "tp3_stretch": 49680.0,
         "tier": "T3",
-        "qty_btc": 0.1,
-        "status": "PRE_ARM_WATCH",
+        "qty_btc": 0.08,
+        "status": "PRE_ARM_WATCH (ANALISE · modo observacao)",
         "macro_aligned": true,
-        "invalidacao": "close 1H > 71250 (reclaim 0.786)",
-        "rr": 7.69,
-        "razao_estrutural": "SHORT da onda-3/onda-5 DOWN no REPIQUE. Hoje (02/06) o breakdown <70.650 confirmou a aceleracao prevista no BOOT 01/06: cascade ate 66.160 (-6.5% D · vol 158k capitulacao). Mark colado no 0.618 Espinha (65.963)+S3 pivot (66.601). RSI D 21.8/4H 12.4 oversold EXTREMO = risco de bounce tecnico. NAO chase. Espera repique ate Fib 0.5-0.618 (69.9-70.8k) p/ SHORT add com Camada2 5m TOP exhaustion. SL 71250. TP1 66160 (30%) TP2 59888 (fundo A · alvo macro). LONG VETADO LEI#29."
+        "invalidacao": "close 1H > 66700 (acima zona · risco bounce maior)",
+        "rr": 3.0,
+        "razao_estrutural": "SHORT no TOPO da C-2 corretiva UP (onda de trabalho da WAVE C zigzag DOWN). C-1 completou 61333 · C-2 bounce ate 64734 (raso). Se C-2 estende ate Fib 0.236 da C-1 (66402) ou rompe+retesta 64734 -> SHORT add macro-aligned com Camada2 5m TOP exhaustion. SL 66700. TP1 61333 (extremo C-1 · 30%) TP2 57499 (0.382xA · 1o alvo C-3). MODO OBSERVACAO: ANALISE, nao executado. LONG VETADO LEI#29."
       },
       {
-        "nome": "SHORT_BREAKDOWN_S3_CONTINUACAO",
+        "nome": "SHORT_BREAKDOWN_C3_RETOMA",
         "tipo": "SHORT_ESTRUTURAL_MACRO",
         "direcao": "SHORT",
         "lado": "SHORT",
         "side": "SHORT",
-        "entry": 66400,
-        "entrada": 66400,
-        "entry_zone": "1a retracao apos close 1H < 66.160 (fundo dia)",
-        "gatilho": "close 1H/4H < 66.160 + retracao (nao chase a vela)",
-        "sl": 67700.0,
-        "tp1": 64729.0,
+        "entry": 61000,
+        "entrada": 61000,
+        "entry_zone": "1a retracao apos close 1H < 61333 (extremo C-1)",
+        "gatilho": "close 1H < 61333 + retracao (nao chase a vela)",
+        "sl": 62700.0,
+        "tp1": 59904.0,
         "tp1_qty_pct": 30,
-        "tp2": 59888.0,
-        "tp3_stretch": 55549.0,
+        "tp2": 57499.0,
+        "tp3_stretch": 49680.0,
         "tier": "T2",
-        "qty_btc": 0.08,
-        "status": "PRE_ARM_WATCH",
+        "qty_btc": 0.06,
+        "status": "PRE_ARM_WATCH (ANALISE · modo observacao)",
         "macro_aligned": true,
-        "invalidacao": "reclaim close 1H > 67700",
-        "rr": 5.01,
-        "razao_estrutural": "SHORT continuacao via breakdown do fundo dia 66.160. Gatilho close <66.160 confirma onda final acelera rumo fundo A 59.888 (1o ima macro). Entra na 1a retracao. SL 67700. TP1 64729 (2.618 ext · 30%) TP2 59888. Confirmar Camada2 5m no pullback. LONG VETADO."
+        "invalidacao": "reclaim close 1H > 62700",
+        "rr": 1.94,
+        "razao_estrutural": "SHORT continuacao: C-2 topou raso e perde 61333 (extremo C-1) em close = C-3 down retomou. Entra na 1a retracao apos breakdown (nao chase). SL 62700. TP1 59904 (S2 pivot · 30%) TP2 57499 (0.382xA). MODO OBSERVACAO: ANALISE. LONG VETADO."
       },
       {
         "nome": "GESTAO_LONG_USER_BABYSIT_0.1",
@@ -280,7 +280,7 @@
         "entrada": 68390,
         "entry_zone": "trade do USER (discricionario DCA fundo · espelho Bybit · INTOCAVEL)",
         "gatilho": "trade ja aberto · LEI#32 babysit",
-        "sl": 62781.1,
+        "sl": 57868.1,
         "tp1": null,
         "tp2": null,
         "rr": null,
@@ -288,24 +288,42 @@
         "tier": "BABYSIT",
         "status": "ATIVO",
         "macro_aligned": false,
-        "invalidacao": "SL 62781 (gerenciado pelo USER)",
-        "razao_estrutural": "Trade DISCRICIONARIO do USER (LONG DCA fundo na queda). LEI#32 babysit defensiva: FENIX NAO cancela, NAO reduz qty, NAO inverte, NAO abre oposto. SL 62781 gerenciado pelo user. BE+fees (68465) acima do mark (em loss) · nao arma. uPnL -161. Valores espelham Bybit (V05b INTOCAVEL). MODO MANUAL ativo · FENIX so observa."
+        "invalidacao": "SL 57868 (gerenciado pelo USER · liq 54987)",
+        "razao_estrutural": "Trade DISCRICIONARIO do USER (LONG DCA fundo na queda). LEI#32 babysit defensiva: FENIX NAO cancela, NAO reduz qty, NAO inverte, NAO abre oposto. SL 57868 gerenciado pelo user (liq 54987). uPnL -512. Valores espelham Bybit (V05b INTOCAVEL). MODO OBSERVACAO ativo · FENIX SO observa, ZERO escrita Bybit nesta sessao."
       }
     ],
-    "ponto_nao_retorno": "ONDA invalida (recount sub): close > 74.310 (reclaim topo onda-2). BEAR MACRO invalida TOTAL: close D > 82.811. ACELERA: perde 66.160 (fundo dia) em close -> rumo 59.888 -> 55.549. SUPORTE imediato: 0.618 Espinha 65.963 / S3 66.601.",
-    "proximo_marco": "Close 1H 21:00 UTC-4 (~55min) · depois close 4H 24:00 UTC-4 (00:00). Decide A (repique 69.9-70.8k -> SHORT add) vs C (breakdown <66.160 -> 59.888) vs B (bounce oversold). MODO MANUAL: FENIX observa · NAO opera. Vigiar trade user LONG 0.1 @68390 (SL 62781 gerenciado user · babysit)."
+    "ponto_nao_retorno": "C-2 INVALIDA (C-3 down ja retomou): close 1H < 61333 (extremo C-1). ONDA invalida (recount): close > 74310 (topo onda-2/teto C). BEAR MACRO invalida TOTAL: close D > 82811 (topo B). Suporte imediato: PP/mark 63306 · S1 61877 · 61333 (extremo C-1). Resistencia: 64734 (topo C-2) · 66402 (Fib 0.236 C-1).",
+    "proximo_marco": "Close 1H 22:00 UTC-4 (~18min) · depois close 4H 24:00 UTC-4 (00:00). Decide A (C-2 estende 64.7-66.4k -> SHORT topo) vs B (perde 61333 -> C-3 retoma) vs C (bounce oversold maior). MODO OBSERVACAO: FENIX observa · NAO opera. Vigiar trade user LONG 0.1 @68390 (SL 57868 user · INTOCAVEL)."
   },
   "execution_mode": "MANUAL",
   "manual_approval_required": false,
   "price_watch": {
-    "ts": "2026-06-02T20:05:00-04:00",
+    "ts": "2026-06-04T21:42:00-04:00",
     "levels": [
+      {
+        "price": 66402.0,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "Fib 0.236 retr C-1 (82811->61333) · zona SHORT topo C-2",
+        "decisao_pre_armada": "ANALISE (modo observacao): se mark atinge 66402 com Camada2 5m TOP + RSI 4H rejeicao -> zona SHORT macro-aligned. SL 66700. FENIX NAO executa nesta sessao (user gerencia).",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 64734.0,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "topo C-2 atual (03/06) · rompe = C-2 estende rumo zona SHORT",
+        "decisao_pre_armada": "ANALISE: rompimento de 64734 + retracao confirma C-2 estendendo -> arma SHORT no pullback ate 65.4-66.4k. NAO chase a vela. FENIX observa.",
+        "active": true,
+        "triggered": false
+      },
       {
         "price": 74310.0,
         "direction": "above",
         "tier": "alto",
-        "reason": "topo onda-2 · INVALIDACAO da onda atual",
-        "decisao_pre_armada": "close 1H > 74310 = recount sub-ondas. RECALCULAR fractais desde topo · disparar skill fenix-analise-macro. MODO MANUAL: alertar user.",
+        "reason": "topo onda-2 / teto C · INVALIDACAO da onda (recount)",
+        "decisao_pre_armada": "ANALISE: close > 74310 invalida a contagem da onda -> disparar recount Espinha (skill fenix-analise-macro). Reavaliar viés.",
         "active": true,
         "triggered": false
       },
@@ -314,43 +332,70 @@
         "direction": "above",
         "tier": "alto",
         "reason": "topo B grande · INVALIDACAO TOTAL macro bear",
-        "decisao_pre_armada": "close D > 82811 = bear macro INVALIDADO. Escalar OPUS · recount completo. MODO MANUAL: alertar user urgente.",
+        "decisao_pre_armada": "ANALISE: close D > 82811 invalida zigzag bearish inteiro -> B nao seria topo -> recount macro total. Reavaliar tudo.",
         "active": true,
         "triggered": false
       },
       {
-        "price": 70836.0,
-        "direction": "above",
-        "tier": "alto",
-        "reason": "Fib 0.618 repique · topo zona SHORT",
-        "decisao_pre_armada": "repique chegou ao topo da zona SHORT (69.9-70.8k). SE Camada2 5m TOP + RSI 4H rejeicao = setup SHORT_REPIQUE_PRIMARIO (entry 69943 SL 71250 TP2 59888 RR 7.69 T3). MODO MANUAL: alertar · NAO executar.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 69943.0,
-        "direction": "above",
-        "tier": "alto",
-        "reason": "Fib 0.5 repique · entry SHORT ideal",
-        "decisao_pre_armada": "mark no entry do SHORT_REPIQUE_PRIMARIO. Re-validar score+RR+Camada2. MODO MANUAL: alertar user.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 70650.0,
-        "direction": "above",
+        "price": 63306.0,
+        "direction": "below",
         "tier": "medio",
-        "reason": "order block bear (origem breakdown)",
-        "decisao_pre_armada": "reclaim do nivel de breakdown · vigiar se vira repique p/ SHORT ou reversao maior. Reavaliar.",
+        "reason": "PP pivot D · perda mantem bias bear curto",
+        "decisao_pre_armada": "ANALISE: mark sob PP confirma fraqueza do bounce C-2 · vies SHORT mantido. Vigiar S1 61877.",
         "active": true,
         "triggered": false
       },
       {
-        "price": 68235.0,
-        "direction": "above",
+        "price": 61877.0,
+        "direction": "below",
         "tier": "medio",
-        "reason": "EMA20 1H · 1a resistencia repique",
-        "decisao_pre_armada": "1o teste de resistencia no repique. Observar reacao (rejeicao = bear continua).",
+        "reason": "S1 pivot D · ultimo suporte antes extremo C-1",
+        "decisao_pre_armada": "ANALISE: perde S1 -> aproxima extremo C-1 61333. Preparar setup SHORT_BREAKDOWN_C3_RETOMA.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 61333.0,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "extremo C-1 · PERDE em close = C-2 invalida, C-3 down retoma",
+        "decisao_pre_armada": "ANALISE: close 1H < 61333 invalida C-2 e confirma C-3 down -> SHORT na 1a retracao (entry ~61000, SL 62700, TP2 57499). FENIX NAO executa (modo observacao · user gerencia).",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 59904.0,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "S2 pivot D · TP1 do setup C-3",
+        "decisao_pre_armada": "ANALISE: alvo intermediario da C-3 · zona de parcial/TP1. Vigiar reacao.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 57499.0,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "0.382xA · 1o alvo macro da onda C (TP2)",
+        "decisao_pre_armada": "ANALISE: 1o ima estrutural da onda C-3. Zona de TP2 dos setups SHORT. Reavaliar exaustao na chegada.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 57868.0,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "SL do trade user LONG (LEI#32 · gerenciado user)",
+        "decisao_pre_armada": "ANALISE/ALERTA: aproximacao do SL do user LONG 0.1 @68390. FENIX NAO mexe (LEI#32 · user gerencia). Apenas informar.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 49680.0,
+        "direction": "below",
+        "tier": "medio",
+        "reason": "0.5xA · alvo central realista da onda C",
+        "decisao_pre_armada": "ANALISE: alvo central da onda C (zona de termino provavel · Espinha). TP estendido.",
         "active": true,
         "triggered": false
       }
