@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "05/06/2026 02:23:59",
-  "last_github_push": "05/06 02:23",
-  "last_github_push_ts": 1780640639.0878222,
+  "ultimo_update": "05/06/2026 02:24:54",
+  "last_github_push": "05/06 02:24",
+  "last_github_push_ts": 1780640694.2132502,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -6177.56,
     "cumPnL_unified_usd": -6177.56,
-    "unrealisedPnl": -700.74,
+    "unrealisedPnl": -700.66,
     "ts": "2026-06-02T20:05:00-04:00",
     "progresso_vs_baseline_usd": -53.56,
     "delta_vs_baseline": -53.56,
     "pnl_fenix_desde_baseline": -53.56,
-    "updated_at": "2026-06-05T02:23:58-04:00"
+    "updated_at": "2026-06-05T02:24:53-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_LONG",
-    "markPrice": 61382.6,
-    "mark_price_atual": 61382.6,
-    "unrealised_pnl_usd": -700.74,
-    "unrealisedPnl": -700.74,
+    "markPrice": 61380.16,
+    "mark_price_atual": 61380.16,
+    "unrealised_pnl_usd": -700.98,
+    "unrealisedPnl": -700.98,
     "be_price": 68456.27968562,
     "liq_price": 54987.0,
     "tp2_target_estrutural": null,
-    "last_update": "2026-06-05T02:23:59-04:00",
-    "ts_snapshot": "2026-06-05T02:23:59-04:00"
+    "last_update": "2026-06-05T02:24:54-04:00",
+    "ts_snapshot": "2026-06-05T02:24:54-04:00"
   },
   "trades_recentes": [
     {
@@ -333,15 +333,6 @@
         "tier": "alto",
         "reason": "topo B grande · INVALIDACAO TOTAL macro bear",
         "decisao_pre_armada": "ANALISE: close D > 82811 invalida zigzag bearish inteiro -> B nao seria topo -> recount macro total. Reavaliar tudo.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 61333.0,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "extremo C-1 · PERDE em close = C-2 invalida, C-3 down retoma",
-        "decisao_pre_armada": "ANALISE: close 1H < 61333 invalida C-2 e confirma C-3 down -> SHORT na 1a retracao (entry ~61000, SL 62700, TP2 57499). FENIX NAO executa (modo observacao · user gerencia).",
         "active": true,
         "triggered": false
       },
