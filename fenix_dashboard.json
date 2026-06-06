@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "05/06/2026 20:07:20",
-  "last_github_push": "05/06 20:07",
-  "last_github_push_ts": 1780704440.5615208,
+  "ultimo_update": "05/06/2026 20:08:15",
+  "last_github_push": "05/06 20:08",
+  "last_github_push_ts": 1780704495.28104,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -6177.34,
     "cumPnL_unified_usd": -6177.34,
-    "unrealisedPnl": -704.1,
+    "unrealisedPnl": -699.44,
     "ts": "2026-06-02T20:05:00-04:00",
     "progresso_vs_baseline_usd": -53.34,
     "delta_vs_baseline": -53.34,
     "pnl_fenix_desde_baseline": -53.34,
-    "updated_at": "2026-06-05T20:07:19-04:00"
+    "updated_at": "2026-06-05T20:08:14-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_LONG",
-    "markPrice": 61358.3,
-    "mark_price_atual": 61358.3,
-    "unrealised_pnl_usd": -703.17,
-    "unrealisedPnl": -703.17,
+    "markPrice": 61403.63,
+    "mark_price_atual": 61403.63,
+    "unrealised_pnl_usd": -698.64,
+    "unrealisedPnl": -698.64,
     "be_price": 68454.0818362,
     "liq_price": 45822.5,
     "tp2_target_estrutural": null,
-    "last_update": "2026-06-05T20:07:20-04:00",
-    "ts_snapshot": "2026-06-05T20:07:20-04:00"
+    "last_update": "2026-06-05T20:08:15-04:00",
+    "ts_snapshot": "2026-06-05T20:08:15-04:00"
   },
   "trades_recentes": [
     {
@@ -298,14 +298,14 @@
   "execution_mode": "MANUAL",
   "manual_approval_required": false,
   "price_watch": {
-    "ts": "2026-06-04T21:42:00-04:00",
+    "ts": "2026-06-05T20:01:32-04:00",
     "levels": [
       {
-        "price": 66402.0,
+        "price": 64682.0,
         "direction": "above",
         "tier": "alto",
-        "reason": "Fib 0.236 retr C-1 (82811->61333) · zona SHORT topo C-2",
-        "decisao_pre_armada": "ANALISE (modo observacao): se mark atinge 66402 com Camada2 5m TOP + RSI 4H rejeicao -> zona SHORT macro-aligned. SL 66700. FENIX NAO executa nesta sessao (user gerencia).",
+        "reason": "Fib 0.236 perna C-1 (82811->59081) · zona SHORT topo C-2",
+        "decisao_pre_armada": "MODO OBSERVACAO: NAO executar. Avaliar SHORT topo C-2 se repique atingir + Camada2 5m TOP + RSI 4H rejeicao. SL 66700 TP2 57499. ANALISE apenas · ZERO Bybit.",
         "active": true,
         "triggered": false
       },
@@ -313,8 +313,17 @@
         "price": 64734.0,
         "direction": "above",
         "tier": "alto",
-        "reason": "topo C-2 atual (03/06) · rompe = C-2 estende rumo zona SHORT",
-        "decisao_pre_armada": "ANALISE: rompimento de 64734 + retracao confirma C-2 estendendo -> arma SHORT no pullback ate 65.4-66.4k. NAO chase a vela. FENIX observa.",
+        "reason": "topo C-2 antigo (03/06) · rompe = C-2 estende rumo zona SHORT",
+        "decisao_pre_armada": "MODO OBSERVACAO: NAO executar. Rompimento+retesta = confirma C-2 estendendo · zona SHORT macro-aligned. ANALISE.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 68146.0,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "Fib 0.382 perna C-1 · teto bounce oversold maior (cenario C)",
+        "decisao_pre_armada": "MODO OBSERVACAO: bounce oversold ate aqui = topo C-2 esticado · SHORT macro-aligned de alta convicao se Camada2 TOP. ANALISE.",
         "active": true,
         "triggered": false
       },
@@ -323,7 +332,7 @@
         "direction": "above",
         "tier": "alto",
         "reason": "topo onda-2 / teto C · INVALIDACAO da onda (recount)",
-        "decisao_pre_armada": "ANALISE: close > 74310 invalida a contagem da onda -> disparar recount Espinha (skill fenix-analise-macro). Reavaliar viés.",
+        "decisao_pre_armada": "close > 74310 = onda invalida. Disparar skill fenix-analise-macro RECOUNT (limpa lock tree.json). NAO operar contra ate recontagem.",
         "active": true,
         "triggered": false
       },
@@ -332,7 +341,34 @@
         "direction": "above",
         "tier": "alto",
         "reason": "topo B grande · INVALIDACAO TOTAL macro bear",
-        "decisao_pre_armada": "ANALISE: close D > 82811 invalida zigzag bearish inteiro -> B nao seria topo -> recount macro total. Reavaliar tudo.",
+        "decisao_pre_armada": "close > 82811 = tese bear macro invalida TOTAL. RECOUNT completo Espinha. Bias bear cancelado.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 61992.0,
+        "direction": "above",
+        "tier": "medio",
+        "reason": "topo local repique pos-fundo (05/06) · LH",
+        "decisao_pre_armada": "rompe 61992 = repique C-2 ganha corpo (rumo 64.7k). Observar p/ armar SHORT no topo. ANALISE.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 61354.0,
+        "direction": "below",
+        "tier": "medio",
+        "reason": "PP pivot D · perda mantem bias bear curto",
+        "decisao_pre_armada": "abaixo PP = repique fraco · bias bear curto intacto. Observar 59081. ANALISE.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 59081.0,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "extremo C-1 (estendido hoje) · PERDE em close = leg down retoma",
+        "decisao_pre_armada": "close 1H < 59081 = C-2 invalida · C-3 (ou C-1 leg) down retomou. SHORT na 1a retracao apos breakdown (NAO chase a faca). SL 60300 TP1 57499 TP2 49680. MODO OBSERVACAO: ANALISE.",
         "active": true,
         "triggered": false
       },
@@ -340,17 +376,17 @@
         "price": 57499.0,
         "direction": "below",
         "tier": "alto",
-        "reason": "0.382xA · 1o alvo macro da onda C (TP2)",
-        "decisao_pre_armada": "ANALISE: 1o ima estrutural da onda C-3. Zona de TP2 dos setups SHORT. Reavaliar exaustao na chegada.",
+        "reason": "0.382xA · 1o alvo macro da onda C (TP1 do C-3)",
+        "decisao_pre_armada": "alvo C-3 atingido. Avaliar parcial/TP. Proximo ima 49680. ANALISE.",
         "active": true,
         "triggered": false
       },
       {
-        "price": 57868.0,
+        "price": 52331.0,
         "direction": "below",
         "tier": "alto",
-        "reason": "SL do trade user LONG (LEI#32 · gerenciado user)",
-        "decisao_pre_armada": "ANALISE/ALERTA: aproximacao do SL do user LONG 0.1 @68390. FENIX NAO mexe (LEI#32 · user gerencia). Apenas informar.",
+        "reason": "SL do trade user LONG (LEI#32 · gerenciado user · liq 45822)",
+        "decisao_pre_armada": "SL do trade USER. LEI#32: FENIX NAO toca. So observar/avisar se aproximar. INTOCAVEL.",
         "active": true,
         "triggered": false
       },
@@ -358,8 +394,8 @@
         "price": 49680.0,
         "direction": "below",
         "tier": "medio",
-        "reason": "0.5xA · alvo central realista da onda C",
-        "decisao_pre_armada": "ANALISE: alvo central da onda C (zona de termino provavel · Espinha). TP estendido.",
+        "reason": "0.5xA · alvo central realista da onda C (TP2)",
+        "decisao_pre_armada": "alvo central onda C. Zona de exaustao da C esperada. Vigiar reversao macro. ANALISE.",
         "active": true,
         "triggered": false
       }
