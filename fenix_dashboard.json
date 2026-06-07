@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "07/06/2026 00:49:24",
-  "last_github_push": "07/06 00:49",
-  "last_github_push_ts": 1780807764.8821208,
+  "ultimo_update": "07/06/2026 00:50:23",
+  "last_github_push": "07/06 00:50",
+  "last_github_push_ts": 1780807823.0684428,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -6177.4,
     "cumPnL_unified_usd": -6177.4,
-    "unrealisedPnl": -656.97,
+    "unrealisedPnl": -657.49,
     "ts": "2026-06-02T20:05:00-04:00",
     "progresso_vs_baseline_usd": -53.4,
     "delta_vs_baseline": -53.4,
     "pnl_fenix_desde_baseline": -53.4,
-    "updated_at": "2026-06-07T00:49:24-04:00"
+    "updated_at": "2026-06-07T00:50:22-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_LONG",
-    "markPrice": 61773.0,
-    "mark_price_atual": 61773.0,
-    "unrealised_pnl_usd": -656.97,
-    "unrealisedPnl": -656.97,
+    "markPrice": 61768.29,
+    "mark_price_atual": 61768.29,
+    "unrealised_pnl_usd": -657.49,
+    "unrealisedPnl": -657.49,
     "be_price": 67807.23636881,
     "liq_price": 45390.6,
     "tp2_target_estrutural": null,
-    "last_update": "2026-06-07T00:49:24-04:00",
-    "ts_snapshot": "2026-06-07T00:49:24-04:00"
+    "last_update": "2026-06-07T00:50:23-04:00",
+    "ts_snapshot": "2026-06-07T00:50:23-04:00"
   },
   "trades_recentes": [
     {
@@ -342,15 +342,6 @@
         "tier": "medio",
         "reason": "Fib 0.146 C-1 · 1o teste de corpo da C-2",
         "decisao_pre_armada": "[MODO OBSERVACAO: FENIX NAO executa · so INFORMA o user · ZERO escrita Bybit] Repique passou 0.146 (62546) · C-2 ganhando corpo (acima R1 61758). Re-avaliar se C-2 mira 64.7k (zona SHORT) ou falha. Informar progresso da C-2.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 61758,
-        "direction": "above",
-        "tier": "medio",
-        "reason": "R1 pivot D · 1a resistencia intraday",
-        "decisao_pre_armada": "[MODO OBSERVACAO: FENIX NAO executa · so INFORMA o user · ZERO escrita Bybit] Mark rompeu R1 61758 · repique 1H ativo. Observar continuidade da C-2 ate 62.5-64.7k. Sem acao (modo obs).",
         "active": true,
         "triggered": false
       },
