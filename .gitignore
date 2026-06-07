@@ -6,3 +6,7 @@
 !fenix_dashboard.json
 !README.md
 !LICENSE
+
+# secrets · nunca versionar (chaves bybit)
+.mcp.json
+.bybit_keys
