@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "07/06/2026 04:36:46",
-  "last_github_push": "07/06 04:36",
-  "last_github_push_ts": 1780821406.004259,
+  "ultimo_update": "07/06/2026 04:37:36",
+  "last_github_push": "07/06 04:37",
+  "last_github_push_ts": 1780821456.4966998,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -6177.26,
     "cumPnL_unified_usd": -6177.26,
-    "unrealisedPnl": -568.39,
+    "unrealisedPnl": -567.93,
     "ts": "2026-06-02T20:05:00-04:00",
     "progresso_vs_baseline_usd": -53.26,
     "delta_vs_baseline": -53.26,
     "pnl_fenix_desde_baseline": -53.26,
-    "updated_at": "2026-06-07T04:36:34-04:00"
+    "updated_at": "2026-06-07T04:37:35-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_LONG",
-    "markPrice": 62578.3,
-    "mark_price_atual": 62578.3,
-    "unrealised_pnl_usd": -568.39,
-    "unrealisedPnl": -568.39,
+    "markPrice": 62582.43,
+    "mark_price_atual": 62582.43,
+    "unrealised_pnl_usd": -567.93,
+    "unrealisedPnl": -567.93,
     "be_price": 67806.04072885,
     "liq_price": 45390.6,
     "tp2_target_estrutural": null,
-    "last_update": "2026-06-07T04:36:34-04:00",
-    "ts_snapshot": "2026-06-07T04:36:34-04:00"
+    "last_update": "2026-06-07T04:37:36-04:00",
+    "ts_snapshot": "2026-06-07T04:37:36-04:00"
   },
   "trades_recentes": [
     {
@@ -333,15 +333,6 @@
         "tier": "alto",
         "reason": "Fib 0.236 C-1 (64681) + topo C-2 antigo · zona SHORT PRIMARIA",
         "decisao_pre_armada": "[MODO OBSERVACAO: FENIX NAO executa · so INFORMA o user · ZERO escrita Bybit] C-2 atingiu zona SHORT primaria 64.7k (0.236 C-1). AVALIAR Camada2 5m TOP exhaustion + rejeicao RSI 4H -> SetupA SHORT topo C-2. INFORMAR user. NAO executar (obs).",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 62546,
-        "direction": "above",
-        "tier": "medio",
-        "reason": "Fib 0.146 C-1 · 1o teste de corpo da C-2",
-        "decisao_pre_armada": "[MODO OBSERVACAO: FENIX NAO executa · so INFORMA o user · ZERO escrita Bybit] Repique passou 0.146 (62546) · C-2 ganhando corpo (acima R1 61758). Re-avaliar se C-2 mira 64.7k (zona SHORT) ou falha. Informar progresso da C-2.",
         "active": true,
         "triggered": false
       },
