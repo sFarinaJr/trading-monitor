@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "06/06/2026 21:11:44",
-  "last_github_push": "06/06 21:11",
-  "last_github_push_ts": 1780794704.154801,
+  "ultimo_update": "06/06/2026 21:12:33",
+  "last_github_push": "06/06 21:12",
+  "last_github_push_ts": 1780794753.4996932,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -298,95 +298,104 @@
   "execution_mode": "MANUAL",
   "manual_approval_required": false,
   "price_watch": {
-    "ts": "2026-06-05T20:01:32-04:00",
+    "ts": "2026-06-06T21:09:44-04:00",
     "levels": [
       {
-        "price": 64682.0,
+        "price": 82811,
         "direction": "above",
         "tier": "alto",
-        "reason": "Fib 0.236 perna C-1 (82811->59081) · zona SHORT topo C-2",
-        "decisao_pre_armada": "MODO OBSERVACAO: NAO executar. Avaliar SHORT topo C-2 se repique atingir + Camada2 5m TOP + RSI 4H rejeicao. SL 66700 TP2 57499. ANALISE apenas · ZERO Bybit.",
+        "reason": "topo B · INVALIDACAO TOTAL bear macro (close D)",
+        "decisao_pre_armada": "[MODO OBSERVACAO: FENIX NAO executa · so INFORMA o user · ZERO escrita Bybit] Close D > 82811 = tese bear INVALIDA. Forcar RECOUNT Espinha (limpar lock tree.json) + disparar fenix-analise-macro. INFORMAR user reversao macro. (cenario extremo · mark muito longe).",
         "active": true,
         "triggered": false
       },
       {
-        "price": 64734.0,
+        "price": 74310,
         "direction": "above",
         "tier": "alto",
-        "reason": "topo C-2 antigo (03/06) · rompe = C-2 estende rumo zona SHORT",
-        "decisao_pre_armada": "MODO OBSERVACAO: NAO executar. Rompimento+retesta = confirma C-2 estendendo · zona SHORT macro-aligned. ANALISE.",
+        "reason": "teto onda-2/C · INVALIDACAO ONDA (recount)",
+        "decisao_pre_armada": "[MODO OBSERVACAO: FENIX NAO executa · so INFORMA o user · ZERO escrita Bybit] Close > 74310 = onda C invalidada (recount). Disparar RECOUNT Espinha + fenix-analise-macro. INFORMAR user que C precisa recontagem.",
         "active": true,
         "triggered": false
       },
       {
-        "price": 68146.0,
+        "price": 68146,
         "direction": "above",
         "tier": "alto",
-        "reason": "Fib 0.382 perna C-1 · teto bounce oversold maior (cenario C)",
-        "decisao_pre_armada": "MODO OBSERVACAO: bounce oversold ate aqui = topo C-2 esticado · SHORT macro-aligned de alta convicao se Camada2 TOP. ANALISE.",
+        "reason": "Fib 0.382 C-1 · teto provavel C-2 · zona SHORT alta",
+        "decisao_pre_armada": "[MODO OBSERVACAO: FENIX NAO executa · so INFORMA o user · ZERO escrita Bybit] C-2 atingiu 0.382 (68146) · teto provavel da corretiva. AVALIAR Camada2 5m TOP + RSI 4H rejeicao p/ SHORT macro-aligned (SetupA zona alta). INFORMAR user setup SHORT armando. NAO executar (obs).",
         "active": true,
         "triggered": false
       },
       {
-        "price": 74310.0,
+        "price": 64734,
         "direction": "above",
         "tier": "alto",
-        "reason": "topo onda-2 / teto C · INVALIDACAO da onda (recount)",
-        "decisao_pre_armada": "close > 74310 = onda invalida. Disparar skill fenix-analise-macro RECOUNT (limpa lock tree.json). NAO operar contra ate recontagem.",
+        "reason": "Fib 0.236 C-1 (64681) + topo C-2 antigo · zona SHORT PRIMARIA",
+        "decisao_pre_armada": "[MODO OBSERVACAO: FENIX NAO executa · so INFORMA o user · ZERO escrita Bybit] C-2 atingiu zona SHORT primaria 64.7k (0.236 C-1). AVALIAR Camada2 5m TOP exhaustion + rejeicao RSI 4H -> SetupA SHORT topo C-2. INFORMAR user. NAO executar (obs).",
         "active": true,
         "triggered": false
       },
       {
-        "price": 82811.0,
-        "direction": "above",
-        "tier": "alto",
-        "reason": "topo B grande · INVALIDACAO TOTAL macro bear",
-        "decisao_pre_armada": "close > 82811 = tese bear macro invalida TOTAL. RECOUNT completo Espinha. Bias bear cancelado.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 61992.0,
+        "price": 62546,
         "direction": "above",
         "tier": "medio",
-        "reason": "topo local repique pos-fundo (05/06) · LH",
-        "decisao_pre_armada": "rompe 61992 = repique C-2 ganha corpo (rumo 64.7k). Observar p/ armar SHORT no topo. ANALISE.",
+        "reason": "Fib 0.146 C-1 · 1o teste de corpo da C-2",
+        "decisao_pre_armada": "[MODO OBSERVACAO: FENIX NAO executa · so INFORMA o user · ZERO escrita Bybit] Repique passou 0.146 (62546) · C-2 ganhando corpo (acima R1 61758). Re-avaliar se C-2 mira 64.7k (zona SHORT) ou falha. Informar progresso da C-2.",
         "active": true,
         "triggered": false
       },
       {
-        "price": 59081.0,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "extremo C-1 (estendido hoje) · PERDE em close = leg down retoma",
-        "decisao_pre_armada": "close 1H < 59081 = C-2 invalida · C-3 (ou C-1 leg) down retomou. SHORT na 1a retracao apos breakdown (NAO chase a faca). SL 60300 TP1 57499 TP2 49680. MODO OBSERVACAO: ANALISE.",
+        "price": 61758,
+        "direction": "above",
+        "tier": "medio",
+        "reason": "R1 pivot D · 1a resistencia intraday",
+        "decisao_pre_armada": "[MODO OBSERVACAO: FENIX NAO executa · so INFORMA o user · ZERO escrita Bybit] Mark rompeu R1 61758 · repique 1H ativo. Observar continuidade da C-2 ate 62.5-64.7k. Sem acao (modo obs).",
         "active": true,
         "triggered": false
       },
       {
-        "price": 57499.0,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "0.382xA · 1o alvo macro da onda C (TP1 do C-3)",
-        "decisao_pre_armada": "alvo C-3 atingido. Avaliar parcial/TP. Proximo ima 49680. ANALISE.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 52331.0,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "SL do trade user LONG (LEI#32 · gerenciado user · liq 45822)",
-        "decisao_pre_armada": "SL do trade USER. LEI#32: FENIX NAO toca. So observar/avisar se aproximar. INTOCAVEL.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 49680.0,
+        "price": 60594,
         "direction": "below",
         "tier": "medio",
-        "reason": "0.5xA · alvo central realista da onda C (TP2)",
-        "decisao_pre_armada": "alvo central onda C. Zona de exaustao da C esperada. Vigiar reversao macro. ANALISE.",
+        "reason": "PP pivot D · perda = repique perde forca",
+        "decisao_pre_armada": "[MODO OBSERVACAO: FENIX NAO executa · so INFORMA o user · ZERO escrita Bybit] Mark perdeu PP 60594 · repique C-2 enfraquecendo. Vigiar 59691 (S1) e 59081 (extremo C-1). Informar perda de momentum.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 59691,
+        "direction": "below",
+        "tier": "medio",
+        "reason": "S1 pivot D · ultimo degrau antes do extremo C-1",
+        "decisao_pre_armada": "[MODO OBSERVACAO: FENIX NAO executa · so INFORMA o user · ZERO escrita Bybit] Mark perdeu S1 59691 · aproximando extremo C-1 59081. ALERTA: risco de breakdown da C-2. Preparar leitura SetupB. Informar user.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 59081,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "extremo C-1 (defendido 3x) · perda em close = C-3 down retoma",
+        "decisao_pre_armada": "[MODO OBSERVACAO: FENIX NAO executa · so INFORMA o user · ZERO escrita Bybit] Close 1H < 59081 = C-2 INVALIDA, C-3 down retomou (ou C-1 leg extra). Disparar reavaliacao Elliott (sub-onda). SetupB SHORT na 1a retracao apos breakdown. INFORMAR user breakdown estrutural. NAO chase a faca, NAO executar (obs).",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 57499,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "alvo C primario 0.382xA",
+        "decisao_pre_armada": "[MODO OBSERVACAO: FENIX NAO executa · so INFORMA o user · ZERO escrita Bybit] Atingiu alvo C primario 57499 (0.382A). Se SetupB estivesse vivo, seria TP1. AVALIAR exaustao p/ proximo leg (49680). INFORMAR user alvo C-3 atingido.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 49680,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "alvo C central 0.5xA · ima realista da onda C",
+        "decisao_pre_armada": "[MODO OBSERVACAO: FENIX NAO executa · so INFORMA o user · ZERO escrita Bybit] Atingiu alvo C central 49680 (0.5A · ima principal). Zona de exaustao da onda C provavel. AVALIAR fim da C / inicio de correcao maior. INFORMAR user.",
         "active": true,
         "triggered": false
       }
