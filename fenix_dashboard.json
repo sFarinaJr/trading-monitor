@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "07/06/2026 21:30:13",
-  "last_github_push": "07/06 21:30",
-  "last_github_push_ts": 1780882213.618429,
+  "ultimo_update": "07/06/2026 21:31:09",
+  "last_github_push": "07/06 21:31",
+  "last_github_push_ts": 1780882269.228773,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -6177.39,
     "cumPnL_unified_usd": -6177.39,
-    "unrealisedPnl": -545.35,
+    "unrealisedPnl": -553.89,
     "ts": "2026-06-02T20:05:00-04:00",
     "progresso_vs_baseline_usd": -53.39,
     "delta_vs_baseline": -53.39,
     "pnl_fenix_desde_baseline": -53.39,
-    "updated_at": "2026-06-07T21:30:13-04:00"
+    "updated_at": "2026-06-07T21:31:08-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_LONG",
-    "markPrice": 62768.3,
-    "mark_price_atual": 62768.3,
-    "unrealised_pnl_usd": -547.49,
-    "unrealisedPnl": -547.49,
+    "markPrice": 62710.08,
+    "mark_price_atual": 62710.08,
+    "unrealised_pnl_usd": -553.89,
+    "unrealisedPnl": -553.89,
     "be_price": 67807.21681115,
     "liq_price": 45390.6,
     "tp2_target_estrutural": null,
-    "last_update": "2026-06-07T21:30:13-04:00",
-    "ts_snapshot": "2026-06-07T21:30:13-04:00"
+    "last_update": "2026-06-07T21:31:09-04:00",
+    "ts_snapshot": "2026-06-07T21:31:09-04:00"
   },
   "trades_recentes": [
     {
@@ -351,15 +351,6 @@
         "tier": "alto",
         "reason": "R1 pivot D + Fib 0.236 C-1 (64682) · piso zona SHORT primaria",
         "decisao_pre_armada": "MODO OBSERVACAO: FENIX SO analisa (nao executa Bybit). Entrada na zona SHORT primaria (64.7k = R1 D + Fib 0.236). SHORT se reversao 15m + Camada2 5m TOP. SL 68500. Alvo 59081->57499. NAO chase.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 62756,
-        "direction": "below",
-        "tier": "medio",
-        "reason": "PP pivot D · perda = repique perde forca",
-        "decisao_pre_armada": "MODO OBSERVACAO: FENIX SO analisa (nao executa Bybit). Mark perde PP = C-2 perde momentum. Vigiar continuacao p/ S1 e extremo C-1.",
         "active": true,
         "triggered": false
       },
