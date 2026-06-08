@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "08/06/2026 12:07:19",
-  "last_github_push": "08/06 12:07",
-  "last_github_push_ts": 1780934839.7236328,
+  "ultimo_update": "08/06/2026 12:08:18",
+  "last_github_push": "08/06 12:08",
+  "last_github_push_ts": 1780934898.785323,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -6180.26,
     "cumPnL_unified_usd": -6180.26,
-    "unrealisedPnl": -382.88,
+    "unrealisedPnl": -382.75,
     "ts": "2026-06-02T20:05:00-04:00",
     "progresso_vs_baseline_usd": -56.26,
     "delta_vs_baseline": -56.26,
     "pnl_fenix_desde_baseline": -56.26,
-    "updated_at": "2026-06-08T12:07:19-04:00"
+    "updated_at": "2026-06-08T12:08:18-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_LONG",
-    "markPrice": 63810.54,
-    "mark_price_atual": 63810.54,
-    "unrealised_pnl_usd": -382.93,
-    "unrealisedPnl": -382.93,
+    "markPrice": 63811.2,
+    "mark_price_atual": 63811.2,
+    "unrealised_pnl_usd": -382.75,
+    "unrealisedPnl": -382.75,
     "be_price": 65274.73701693,
     "liq_price": 52436.9,
     "tp2_target_estrutural": 69355.1,
-    "last_update": "2026-06-08T12:07:19-04:00",
-    "ts_snapshot": "2026-06-08T12:07:19-04:00"
+    "last_update": "2026-06-08T12:08:18-04:00",
+    "ts_snapshot": "2026-06-08T12:08:18-04:00"
   },
   "trades_recentes": [
     {
@@ -183,140 +183,59 @@
     }
   ],
   "trade_aberto": {
-    "dir": "LONG",
-    "open_ts": 1780409423101,
+    "dir": "SHORT",
+    "open_ts": 1780383250700,
     "close_ts": null,
-    "avg_entry": 65218.38,
-    "avg_exit": null,
-    "entry_qty": 0.272,
-    "exit_qty": 0.0,
-    "open_size": 0.272,
-    "fees": 3.5479,
-    "n_entries": 4,
-    "n_exits": 0,
+    "avg_entry": 70120.2,
+    "avg_exit": 65218.38,
+    "entry_qty": 0.2,
+    "exit_qty": 0.272,
+    "open_size": -0.072,
+    "fees": 11.2611,
+    "n_entries": 1,
+    "n_exits": 4,
     "entries": [
       [
-        0.1,
-        68390.0
-      ],
-      [
-        0.01,
-        61300.0
-      ],
-      [
-        0.079,
-        63400.0
-      ],
-      [
-        0.083,
-        63600.0
+        0.2,
+        70120.2
       ]
     ],
     "status": "OPEN",
-    "upnl": -385.8,
-    "mark": 63800.0
+    "realized_parcial": 1333.29
   },
   "trades_agrupados": [
     {
-      "dir": "LONG",
-      "open_ts": 1780377000764,
-      "close_ts": 1780383250700,
-      "avg_entry": 70650.0,
-      "avg_exit": 70120.2,
-      "entry_qty": 0.2,
-      "exit_qty": 0.2,
-      "open_size": 0.0,
-      "fees": 10.5392,
-      "n_entries": 9,
-      "n_exits": 1,
-      "entries": [
-        [
-          0.034,
-          70650.0
-        ],
-        [
-          0.001,
-          70650.0
-        ],
-        [
-          0.005,
-          70650.0
-        ],
-        [
-          0.001,
-          70650.0
-        ],
-        [
-          0.002,
-          70650.0
-        ],
-        [
-          0.035,
-          70650.0
-        ],
-        [
-          0.002,
-          70650.0
-        ],
-        [
-          0.021,
-          70650.0
-        ],
-        [
-          0.099,
-          70650.0
-        ]
-      ],
-      "status": "CLOSED",
-      "net_pnl": -116.5,
-      "gross_pnl": -105.96
-    },
-    {
       "dir": "SHORT",
-      "open_ts": 1780336172120,
-      "close_ts": 1780375254982,
-      "avg_entry": 71700.0,
-      "avg_exit": 71006.9,
-      "entry_qty": 0.03,
-      "exit_qty": 0.03,
-      "open_size": 0.0,
-      "fees": 1.6018,
-      "n_entries": 1,
-      "n_exits": 1,
+      "open_ts": 1780334548769,
+      "close_ts": 1780377011031,
+      "avg_entry": 71533.39,
+      "avg_exit": 70696.55,
+      "entry_qty": 0.23,
+      "exit_qty": 0.23,
+      "open_size": -0.0,
+      "fees": 12.2937,
+      "n_entries": 3,
+      "n_exits": 10,
       "entries": [
+        [
+          0.18,
+          71508.4
+        ],
+        [
+          0.02,
+          71508.4
+        ],
         [
           0.03,
           71700.0
         ]
       ],
       "status": "CLOSED",
-      "net_pnl": 19.19,
-      "gross_pnl": 20.79
-    },
-    {
-      "dir": "LONG",
-      "open_ts": 1780330069713,
-      "close_ts": 1780334548769,
-      "avg_entry": 70980.0,
-      "avg_exit": 71508.4,
-      "entry_qty": 0.2,
-      "exit_qty": 0.2,
-      "open_size": 0.0,
-      "fees": 10.7051,
-      "n_entries": 1,
-      "n_exits": 2,
-      "entries": [
-        [
-          0.2,
-          70980.0
-        ]
-      ],
-      "status": "CLOSED",
-      "net_pnl": 94.97,
-      "gross_pnl": 105.68
+      "net_pnl": 180.18,
+      "gross_pnl": 192.47
     }
   ],
-  "trades_rollup_updated_at": "2026-06-08T12:07:22-0400",
+  "trades_rollup_updated_at": "2026-06-08T12:08:20-0400",
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-06-07_W_close_WAVE_C_C1fundo_59081_C2_corretiva_UP_corpo_SHORT_topo_MODO_OBS",
     "boot_ts": "2026-06-07T20:13:00-04:00",
