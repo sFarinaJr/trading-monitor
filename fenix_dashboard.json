@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "08/06/2026 15:17:12",
-  "last_github_push": "08/06 15:17",
-  "last_github_push_ts": 1780946232.475426,
+  "ultimo_update": "08/06/2026 15:18:09",
+  "last_github_push": "08/06 15:18",
+  "last_github_push_ts": 1780946289.173928,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -6180.26,
     "cumPnL_unified_usd": -6180.26,
-    "unrealisedPnl": -504.77,
+    "unrealisedPnl": -504.54,
     "ts": "2026-06-02T20:05:00-04:00",
     "progresso_vs_baseline_usd": -56.26,
     "delta_vs_baseline": -56.26,
     "pnl_fenix_desde_baseline": -56.26,
-    "updated_at": "2026-06-08T15:17:11-04:00"
+    "updated_at": "2026-06-08T15:18:08-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_LONG",
-    "markPrice": 63362.6,
-    "mark_price_atual": 63362.6,
-    "unrealised_pnl_usd": -504.77,
-    "unrealisedPnl": -504.77,
+    "markPrice": 63363.23,
+    "mark_price_atual": 63363.23,
+    "unrealised_pnl_usd": -504.6,
+    "unrealisedPnl": -504.6,
     "be_price": 65274.73701693,
     "liq_price": 52436.9,
     "tp2_target_estrutural": 69355.1,
-    "last_update": "2026-06-08T15:17:12-04:00",
-    "ts_snapshot": "2026-06-08T15:17:12-04:00"
+    "last_update": "2026-06-08T15:18:09-04:00",
+    "ts_snapshot": "2026-06-08T15:18:09-04:00"
   },
   "trades_recentes": [
     {
@@ -182,44 +182,6 @@
       "pnl_percent": -0.06
     }
   ],
-  "trade_aberto": {
-    "dir": "LONG",
-    "open_ts": 1780409423101,
-    "close_ts": null,
-    "avg_entry": 65218.38,
-    "avg_exit": null,
-    "entry_qty": 0.272,
-    "exit_qty": 0.0,
-    "open_size": 0.272,
-    "fees": 3.5479,
-    "n_entries": 4,
-    "n_exits": 0,
-    "entries": [
-      [
-        0.1,
-        68390.0
-      ],
-      [
-        0.01,
-        61300.0
-      ],
-      [
-        0.079,
-        63400.0
-      ],
-      [
-        0.083,
-        63600.0
-      ]
-    ],
-    "status": "OPEN",
-    "upnl": -502.76,
-    "mark": 63370.0,
-    "avg_bybit": 65218.38,
-    "bate_bybit": true
-  },
-  "trades_agrupados": [],
-  "trades_rollup_updated_at": "2026-06-08T15:17:14-0400",
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-06-07_W_close_WAVE_C_C1fundo_59081_C2_corretiva_UP_corpo_SHORT_topo_MODO_OBS",
     "boot_ts": "2026-06-07T20:13:00-04:00",
