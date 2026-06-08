@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "08/06/2026 13:25:06",
-  "last_github_push": "08/06 13:25",
-  "last_github_push_ts": 1780939506.794016,
+  "ultimo_update": "08/06/2026 13:26:04",
+  "last_github_push": "08/06 13:26",
+  "last_github_push_ts": 1780939564.743315,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -6180.26,
     "cumPnL_unified_usd": -6180.26,
-    "unrealisedPnl": -466.26,
+    "unrealisedPnl": -448.25,
     "ts": "2026-06-02T20:05:00-04:00",
     "progresso_vs_baseline_usd": -56.26,
     "delta_vs_baseline": -56.26,
     "pnl_fenix_desde_baseline": -56.26,
-    "updated_at": "2026-06-08T13:25:06-04:00"
+    "updated_at": "2026-06-08T13:26:04-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_LONG",
-    "markPrice": 63504.2,
-    "mark_price_atual": 63504.2,
-    "unrealised_pnl_usd": -466.26,
-    "unrealisedPnl": -466.26,
+    "markPrice": 63570.4,
+    "mark_price_atual": 63570.4,
+    "unrealised_pnl_usd": -448.25,
+    "unrealisedPnl": -448.25,
     "be_price": 65274.73701693,
     "liq_price": 52436.9,
     "tp2_target_estrutural": 69355.1,
-    "last_update": "2026-06-08T13:25:06-04:00",
-    "ts_snapshot": "2026-06-08T13:25:06-04:00"
+    "last_update": "2026-06-08T13:26:04-04:00",
+    "ts_snapshot": "2026-06-08T13:26:04-04:00"
   },
   "trades_recentes": [
     {
@@ -213,8 +213,8 @@
       ]
     ],
     "status": "OPEN",
-    "upnl": -466.26,
-    "mark": 63504.2
+    "upnl": -449.39,
+    "mark": 63566.2
   },
   "trades_agrupados": [
     {
@@ -294,7 +294,7 @@
       "gross_pnl": 20.79
     }
   ],
-  "trades_rollup_updated_at": "2026-06-08T13:25:08-0400",
+  "trades_rollup_updated_at": "2026-06-08T13:26:06-0400",
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-06-07_W_close_WAVE_C_C1fundo_59081_C2_corretiva_UP_corpo_SHORT_topo_MODO_OBS",
     "boot_ts": "2026-06-07T20:13:00-04:00",
