@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "09/06/2026 06:10:25",
-  "last_github_push": "09/06 06:10",
-  "last_github_push_ts": 1780999825.411905,
+  "ultimo_update": "09/06/2026 06:11:32",
+  "last_github_push": "09/06 06:11",
+  "last_github_push_ts": 1780999892.996021,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -6181.18,
     "cumPnL_unified_usd": -6181.18,
-    "unrealisedPnl": -704.42,
+    "unrealisedPnl": -693.66,
     "ts": "2026-06-02T20:05:00-04:00",
     "progresso_vs_baseline_usd": -57.18,
     "delta_vs_baseline": -57.18,
     "pnl_fenix_desde_baseline": -57.18,
-    "updated_at": "2026-06-09T06:10:24-04:00"
+    "updated_at": "2026-06-09T06:11:32-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_LONG",
-    "markPrice": 62628.6,
-    "mark_price_atual": 62628.6,
-    "unrealised_pnl_usd": -704.42,
-    "unrealisedPnl": -704.42,
+    "markPrice": 62668.17,
+    "mark_price_atual": 62668.17,
+    "unrealised_pnl_usd": -693.66,
+    "unrealisedPnl": -693.66,
     "be_price": 65278.12041773,
     "liq_price": 52436.9,
     "tp2_target_estrutural": 69355.1,
-    "last_update": "2026-06-09T06:10:25-04:00",
-    "ts_snapshot": "2026-06-09T06:10:25-04:00"
+    "last_update": "2026-06-09T06:11:32-04:00",
+    "ts_snapshot": "2026-06-09T06:11:32-04:00"
   },
   "trades_recentes": [
     {
@@ -374,60 +374,6 @@
         "tier": "medio",
         "reason": "topo C-2 (spike 06/06 + rejeicao 08/06 64.220) · break = extensao zona SHORT",
         "decisao_pre_armada": "MODO OBSERVACAO: FENIX SO analisa (nao executa Bybit). Break do topo da C-2 = extensao do repique ate Fib 0.236-0.618. Atualizar watch SHORT pro topo novo.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 62213,
-        "direction": "below",
-        "tier": "medio",
-        "reason": "S1 pivot D · perda = C-2 topou (fadiga) · queda C-3 retoma",
-        "decisao_pre_armada": "MODO OBSERVACAO: FENIX SO analisa (nao executa Bybit). Perda de S1 D 62.213 (com close 1H) = C-2 topou e a queda retoma sem precisar subir. Armar SHORT_C2_TOPOU_QUEBRA_HL na retracao (entry ~61900 SL 64400 TP 59081/57499). NAO chase a faca.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 61095,
-        "direction": "below",
-        "tier": "medio",
-        "reason": "SL user LONG (61095.1 · baixou de 62370 hoje) · vigiar babysit",
-        "decisao_pre_armada": "MODO OBSERVACAO: FENIX SO analisa (nao executa Bybit). Mark perto do SL do user (61095). LEI#32 babysit: FENIX NAO toca (SL e do user). Apenas observar/registrar se o LONG do user stopar.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 60711,
-        "direction": "below",
-        "tier": "medio",
-        "reason": "HL 06/06 · base da C-2 · perda degrada estrutura corretiva",
-        "decisao_pre_armada": "MODO OBSERVACAO: FENIX SO analisa (nao executa Bybit). Perda do HL 06/06 60.711 = estrutura corretiva da C-2 degradando rumo ao extremo C-1. Confirma vies de queda C-3.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 59081,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "extremo C-1 (defendido 3x) · perda em close 1H = C-3 confirma",
-        "decisao_pre_armada": "MODO OBSERVACAO: FENIX SO analisa (nao executa Bybit). Close 1H < 59081 = C-1/C-2 INVALIDA, C-3 down retoma. Disparar RECALCULO fractais Espinha (skill fenix-analise-macro). Armar SHORT_BREAKDOWN_C3 na 1a retracao (entry 58700 SL 60300 TP 57499/49680). NAO chase.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 57499,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "alvo C primario 0.382xA",
-        "decisao_pre_armada": "MODO OBSERVACAO: FENIX SO analisa (nao executa Bybit). 1o alvo da WAVE C (0.382xA). Avaliar parcial/realocacao de qualquer SHORT aberto. Proximo ima 49680.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 49680,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "alvo C central 0.5xA · ima realista da onda C",
-        "decisao_pre_armada": "MODO OBSERVACAO: FENIX SO analisa (nao executa Bybit). Alvo central da onda C (0.5xA · ima). Zona de exaustao da WAVE C. Avaliar fim da correcao ABC.",
         "active": true,
         "triggered": false
       }
