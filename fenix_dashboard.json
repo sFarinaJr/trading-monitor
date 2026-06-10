@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "10/06/2026 01:54:23",
-  "last_github_push": "10/06 01:54",
-  "last_github_push_ts": 1781070863.3163168,
+  "ultimo_update": "10/06/2026 01:55:13",
+  "last_github_push": "10/06 01:55",
+  "last_github_push_ts": 1781070913.136127,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -334,51 +334,6 @@
         "tier": "medio",
         "reason": "Fib 0.382 sub-A · checkpoint reclaim da C-2",
         "decisao_pre_armada": "MODO OBSERVACAO · FENIX NAO opera (zero Bybit · user gerencia o trade babysit LEI #32). Reclaim deste 0,382 com volume = sub-C up viva (rumo 64250). Falhar = repique exausto (cenario A). So analise.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 60705,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "fundo B intra (09/06 12:00) · base/defesa imediata da C-2",
-        "decisao_pre_armada": "MODO OBSERVACAO · FENIX NAO opera (zero Bybit · user gerencia o trade babysit LEI #32). Perda de 60705 degrada a C-2 e inclina C-3 down (rumo 59081). So analise/alerta. ATENCAO: trade user (SL 59623,8) fica exposto abaixo daqui.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 59623.8,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "SL do trade user LONG (babysit LEI #32 · INTOCAVEL)",
-        "decisao_pre_armada": "MODO OBSERVACAO · FENIX NAO opera (zero Bybit · user gerencia o trade babysit LEI #32). Nivel de SL do user. FENIX NAO toca · so observa. Se atingido = trade user stopa (responsabilidade do user).",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 59081,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "extremo C-1 (defendido 3x) · perda em close 1H = C-2 INVALIDA",
-        "decisao_pre_armada": "MODO OBSERVACAO · FENIX NAO opera (zero Bybit · user gerencia o trade babysit LEI #32). Close 1H < 59081 INVALIDA a C-2 (leg down retoma) -> C-3 down confirmada · disparar RECALCULO fractais + skill fenix-analise-macro. So analise.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 57499,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "alvo C primario 0.382xA",
-        "decisao_pre_armada": "MODO OBSERVACAO · FENIX NAO opera (zero Bybit · user gerencia o trade babysit LEI #32). 1o alvo da onda C. Zona de possivel exaustao da queda (vigiar fundo, NAO comprar · macro down). So analise.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 49680,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "alvo C central 0.5xA · ima realista da onda C",
-        "decisao_pre_armada": "MODO OBSERVACAO · FENIX NAO opera (zero Bybit · user gerencia o trade babysit LEI #32). Alvo central/ima da onda C. So analise.",
         "active": true,
         "triggered": false
       }
