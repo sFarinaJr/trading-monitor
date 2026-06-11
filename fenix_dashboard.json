@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "11/06/2026 13:03:22",
-  "last_github_push": "11/06 13:03",
-  "last_github_push_ts": 1781197402.978414,
+  "ultimo_update": "11/06/2026 13:04:21",
+  "last_github_push": "11/06 13:04",
+  "last_github_push_ts": 1781197461.778235,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -16,7 +16,7 @@
     "progresso_vs_baseline_usd": -717.35,
     "delta_vs_baseline": -717.35,
     "pnl_fenix_desde_baseline": -717.35,
-    "updated_at": "2026-06-11T13:03:22-04:00"
+    "updated_at": "2026-06-11T13:04:21-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -48,7 +48,7 @@
     "liq_price": 59238.0,
     "tp2_target_estrutural": 69355.1,
     "last_update": "2026-06-11T08:25:12-04:00",
-    "ts_snapshot": "2026-06-11T13:03:22-04:00"
+    "ts_snapshot": "2026-06-11T13:04:21-04:00"
   },
   "trades_recentes": [
     {
@@ -225,15 +225,6 @@
         "tier": "alto",
         "reason": "topo C-2 (spike 06/06 + rejeicao 64220 08/06) ~ topo A",
         "decisao_pre_armada": "MODO OBSERVACAO · FENIX NAO opera (zero Bybit · user gerencia o trade babysit LEI #32). Topo da perna A da C-2. Romper com volume = C-2 estende pra zona SHORT; rejeitar = C-2 topou (cenario A). So analise.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 62384,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "PISO impulso c (topo c-1) · no-overlap · invalida bull de curto",
-        "decisao_pre_armada": "MODO OBSERVACAO · zero Bybit (user gerencia · babysit LEI #32). SE close 1H < 62384: impulso de c quebra (overlap) · C-2 provavelmente topou em 63037 -> C-3 down rumo 60705/59081. So analise/alerta · acordar Claude.",
         "active": true,
         "triggered": false
       }
