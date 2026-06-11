@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "10/06/2026 20:03:30",
-  "last_github_push": "10/06 20:03",
-  "last_github_push_ts": 1781136210.397772,
+  "ultimo_update": "10/06/2026 20:04:11",
+  "last_github_push": "10/06 20:04",
+  "last_github_push_ts": 1781136251.373718,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -183,17 +183,17 @@
     }
   ],
   "current_thesis": {
-    "thesis_id": "boot_d_close_2026-06-09_WAVE_C_DOWN_C1fundo_59081_C2corretivaUP_overlap_SHORTtopo_MODO_OBS",
-    "boot_ts": "2026-06-09T20:29:00-04:00",
-    "ultimo_update": "2026-06-09T20:29:00-04:00",
+    "thesis_id": "boot_d_close_2026-06-10_WAVE_C_DOWN_C1fundo_59081_C2corretivaUP_range_SHORTtopo_MODO_OBS",
+    "boot_ts": "2026-06-10T20:04:02-04:00",
+    "ultimo_update": "2026-06-10T20:04:02-04:00",
     "status": "ACTIVE",
-    "mark_at_boot": 61767.3,
-    "mark_now": 61767.3,
+    "mark_at_boot": 61476.4,
+    "mark_now": 61476.4,
     "macro_bias_D": {
       "direcao": "BEARISH",
       "score": 8.0
     },
-    "leitura_primaria_opus": "D-0 (09/06) fechou 61699,9 (-2,15% 24h) · candle BEAR de continuation com pavio inferior longo (low 60705 recomprado), vol 102.674 BTC. RSI diario 21,6 (sobrevendido EXTREMO), preco muito abaixo da EMA9 (64549) e EMA20 (68869), MACD hist -3165, BB pos 15%. Estrutura macro inalterada: ABC zigzag bearish, WAVE C DOWN em andamento. A C-1 completou no fundo 59081 e desde entao roda a C-2 CORRETIVA UP (bounce) que e a oportunidade SHORT na exaustao do seu topo.\n\nNUANCE ELLIOTT (registrada): a perna A da C-2 (59081->64250) tem OVERLAP W4/W1 (recuos a 61138 e 61524, abaixo do topo do 1o impulso ~61992) -> A NAO e um impulso 5-ondas limpo; e corretiva 3-ondas ou diagonal de liderança. Isso NAO muda o macro (bounce -> short), muda so o label fino e a precisao do alvo do topo da C-2 (zona ampla 64.7-68.1k em vez de ponto cravado).\n\nIntra-dia 09/06: a C-2 tentou nascer do fundo B 60705 (martelo 12:00) e empilhou 5 verdes em escada ate 62250, mas SEM romper o 0,382=62275 e com volume secando (13k->2,6k) + OI virando unwinding. As 17:00 veio o 1o vermelho quebrando a sequencia (topo da reacao 62250 < 0,382): o cenario 'repique exausto de menor grau' ganhou força vs sub-C up cheia. Tese viva enquanto 60705 segura; perder degrada pra C-3 down. Macro nao morre ate close D > 82811.",
+    "leitura_primaria_opus": "D-0 (10/06) fechou 61476 (-0,36% vs D-1) · candle BEAR inside, pavio inferior longo (low 60614 recomprado), vol 90.916 BTC (~88% MA). RSI diario ~22 (sobrevendido extremo), preco abaixo EMA9 ~63.8k e EMA20 ~67-68k descendente, MACD hist ~-3000, BB pos ~15%. Estrutura macro inalterada: ABC zigzag bearish, WAVE C DOWN. C-1 completou em 59081, C-2 corretiva UP roda o range 60.6-62.8 ha ~5 dias, topos decrescentes. Niveis-chave: piso 60705/S1 60445 (perder = C-3 down engata mirando 59081), invalidacao B em close D < 59081. Funding flat-negativo, OI 56.165k subindo, L/S 0.627 long (varejo net-long = combustivel squeeze). MODO OBSERVACAO: FÊNIX nao arma nem toca Bybit, user gerencia o LONG 0.388@64166 (contra o vies macro · babysit).",
     "cenarios_opus": {
       "cenario_A_repique_exausto_queda_retoma": {
         "prob": 0.55,
