@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "10/06/2026 20:46:39",
-  "last_github_push": "10/06 20:46",
-  "last_github_push_ts": 1781138799.182538,
+  "ultimo_update": "10/06/2026 20:47:36",
+  "last_github_push": "10/06 20:47",
+  "last_github_push_ts": 1781138856.1741152,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -6463.01,
     "cumPnL_unified_usd": -6463.01,
-    "unrealisedPnl": -637.24,
+    "unrealisedPnl": -631.53,
     "ts": "2026-06-02T20:05:00-04:00",
     "progresso_vs_baseline_usd": -339.01,
     "delta_vs_baseline": -339.01,
     "pnl_fenix_desde_baseline": -339.01,
-    "updated_at": "2026-06-10T20:46:38-04:00"
+    "updated_at": "2026-06-10T20:47:35-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_LONG",
-    "markPrice": 61830.1,
-    "mark_price_atual": 61830.1,
-    "unrealised_pnl_usd": -635.5,
-    "unrealisedPnl": -635.5,
+    "markPrice": 61847.1,
+    "mark_price_atual": 61847.1,
+    "unrealised_pnl_usd": -630.88,
+    "unrealisedPnl": -630.88,
     "be_price": 65262.34027368,
     "liq_price": 55276.3,
     "tp2_target_estrutural": 69355.1,
-    "last_update": "2026-06-10T20:46:39-04:00",
-    "ts_snapshot": "2026-06-10T20:46:39-04:00"
+    "last_update": "2026-06-10T20:47:36-04:00",
+    "ts_snapshot": "2026-06-10T20:47:36-04:00"
   },
   "trades_recentes": [
     {
@@ -75,10 +75,10 @@
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-06-10_WAVE_C_DOWN_C1fundo_59081_C2corretivaUP_range_SHORTtopo_MODO_OBS",
     "boot_ts": "2026-06-10T20:04:02-04:00",
-    "ultimo_update": "2026-06-10T20:04:02-04:00",
+    "ultimo_update": "2026-06-10T20:46:00-04:00",
     "status": "ACTIVE",
     "mark_at_boot": 61476.4,
-    "mark_now": 61476.4,
+    "mark_now": 61753.96,
     "macro_bias_D": {
       "direcao": "BEARISH",
       "score": 8.0
@@ -110,7 +110,7 @@
         "tp1": null,
         "tp2": null,
         "rr": null,
-        "note": "Breakdown direto: close 1H < 59081 invalida a C-2 (leg down retoma sem completar bounce) -> C-3 acelera pra 57499/49680. Tambem ameaca o LONG do user (SL 59623,8 fura antes do 59081)."
+        "note": "Breakdown direto: close 1H < 59081 invalida a C-2 (leg down retoma sem completar bounce) -> C-3 acelera pra 57499/49680. Tambem ameaca o LONG do user (SL 58571,5 fura antes do 59081)."
       }
     },
     "setups_pre_armados": [
@@ -148,12 +148,12 @@
       }
     ],
     "ponto_nao_retorno": "C-2 INVALIDA (leg down retoma direto): close 1H < 59081 (extremo C-1). ONDA invalida (recount Espinha · topo C-2 estourou): close > 74310 (teto onda-2/C). BEAR MACRO invalida TOTAL: close D > 82811 (topo B). Suporte: PP D 61969 · S1 D 60436 · S2 D 59173 · 60705 (fundo B intra, defesa imediata) · 59081 (extremo C-1 defendido). Resistencia: R1 D 63232 · 0,236=64682/64250 (topo C-2 spike) · R2 D 64765 · 0,382=68146 · 0,5=70946 · 0,618=73746.",
-    "proximo_marco": "Close 1H 21:00 UTC-4 · depois close 4H 24:00 (00:00). Decide se a C-2 ja topou (repique exausto · cenario A) e a queda C-3 retoma, vs estende ate a zona SHORT 64.7-68.1k (B), vs perde 59081 (C). MODO OBSERVACAO: FENIX observa, NAO opera. Vigiar trade user LONG 0.388 @64166 (SL 59623,8 a ~-3,5% do mark · TP 69355 · liq 55276 a ~-10,4% · INTOCAVEL LEI #32)."
+    "proximo_marco": "Close 1H 21:00 UTC-4 · depois close 4H 24:00 (00:00). Decide se a C-2 ja topou (repique exausto · cenario A) e a queda C-3 retoma, vs estende ate a zona SHORT 64.7-68.1k (B), vs perde 59081 (C). MODO OBSERVACAO: FENIX observa, NAO opera. Vigiar trade user LONG 0.272 @64166 (SL 58571,5 a ~-3,5% do mark · TP 69355 · liq 55276 a ~-10,4% · INTOCAVEL LEI #32)."
   },
   "execution_mode": "OBSERVACAO",
   "manual_approval_required": true,
   "price_watch": {
-    "ts": "2026-06-09T20:30:00-04:00",
+    "ts": "2026-06-10T20:46:00-04:00",
     "levels": [
       {
         "price": 82811,
