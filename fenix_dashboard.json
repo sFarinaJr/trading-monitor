@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "11/06/2026 06:54:09",
-  "last_github_push": "11/06 06:54",
-  "last_github_push_ts": 1781175249.484264,
+  "ultimo_update": "11/06/2026 06:55:10",
+  "last_github_push": "11/06 06:55",
+  "last_github_push_ts": 1781175310.6264231,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -6473.9,
     "cumPnL_unified_usd": -6473.9,
-    "unrealisedPnl": -103.47,
+    "unrealisedPnl": -67.8,
     "ts": "2026-06-02T20:05:00-04:00",
     "progresso_vs_baseline_usd": -349.9,
     "delta_vs_baseline": -349.9,
     "pnl_fenix_desde_baseline": -349.9,
-    "updated_at": "2026-06-11T06:54:08-04:00"
+    "updated_at": "2026-06-11T06:55:10-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_LONG",
-    "markPrice": 63012.13,
-    "mark_price_atual": 63012.13,
-    "unrealised_pnl_usd": -107.92,
-    "unrealisedPnl": -107.92,
+    "markPrice": 63064.1,
+    "mark_price_atual": 63064.1,
+    "unrealised_pnl_usd": -67.8,
+    "unrealisedPnl": -67.8,
     "be_price": 63574.44877265,
     "liq_price": 59238.0,
     "tp2_target_estrutural": 69355.1,
-    "last_update": "2026-06-11T06:54:09-04:00",
-    "ts_snapshot": "2026-06-11T06:54:09-04:00"
+    "last_update": "2026-06-11T06:55:10-04:00",
+    "ts_snapshot": "2026-06-11T06:55:10-04:00"
   },
   "trades_recentes": [
     {
@@ -215,15 +215,6 @@
         "tier": "medio",
         "reason": "topo C-2 (spike 06/06 + rejeicao 64220 08/06) ~ topo A",
         "decisao_pre_armada": "MODO OBSERVACAO · FENIX NAO opera (zero Bybit · user gerencia o trade babysit LEI #32). Topo da perna A da C-2. Romper com volume = C-2 estende pra zona SHORT; rejeitar = C-2 topou (cenario A). So analise.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 63037,
-        "direction": "above",
-        "tier": "alto",
-        "reason": "PORTAO c-3 high · 3x rejeitado · gate imediato pro 64k",
-        "decisao_pre_armada": "MODO OBSERVACAO · zero Bybit (user gerencia · babysit LEI #32). SE close 1H > 63037 com vol expandindo: c-5 viva, libera teste 64.220-64.250. So analise/alerta · acordar Claude.",
         "active": true,
         "triggered": false
       },
