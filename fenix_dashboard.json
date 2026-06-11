@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "11/06/2026 07:01:07",
+  "ultimo_update": "11/06/2026 07:01:35",
   "last_github_push": "11/06 07:01",
-  "last_github_push_ts": 1781175667.6290188,
+  "last_github_push_ts": 1781175695.175777,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -153,7 +153,7 @@
   "execution_mode": "OBSERVACAO",
   "manual_approval_required": true,
   "price_watch": {
-    "ts": "2026-06-11T03:10:09-0400",
+    "ts": "2026-06-11T07:01:23-0400",
     "levels": [
       {
         "price": 82811,
@@ -212,7 +212,7 @@
       {
         "price": 64250,
         "direction": "above",
-        "tier": "medio",
+        "tier": "alto",
         "reason": "topo C-2 (spike 06/06 + rejeicao 64220 08/06) ~ topo A",
         "decisao_pre_armada": "MODO OBSERVACAO · FENIX NAO opera (zero Bybit · user gerencia o trade babysit LEI #32). Topo da perna A da C-2. Romper com volume = C-2 estende pra zona SHORT; rejeitar = C-2 topou (cenario A). So analise.",
         "active": true,
