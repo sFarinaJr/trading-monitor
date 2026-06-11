@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "11/06/2026 15:42:55",
-  "last_github_push": "11/06 15:42",
-  "last_github_push_ts": 1781206975.122292,
+  "ultimo_update": "11/06/2026 15:43:35",
+  "last_github_push": "11/06 15:43",
+  "last_github_push_ts": 1781207015.004401,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -50,28 +50,7 @@
     "last_update": "2026-06-11T08:25:12-04:00",
     "ts_snapshot": "2026-06-11T15:42:41-04:00"
   },
-  "trades_recentes": [
-    {
-      "timestamp": "2026-06-11T08:26:04",
-      "symbol": "BTCUSDT",
-      "side": "LONG",
-      "entry_price": 63151.9257,
-      "exit_price": 62710.4426,
-      "quantity": 0.772,
-      "pnl_usd": -384.56,
-      "pnl_percent": -0.7
-    },
-    {
-      "timestamp": "2026-06-10T20:40:39",
-      "symbol": "BTCUSDT",
-      "side": "LONG",
-      "entry_price": 64166.4949,
-      "exit_price": 61770.0,
-      "quantity": 0.116,
-      "pnl_usd": -282.08,
-      "pnl_percent": -3.73
-    }
-  ],
+  "trades_recentes": [],
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-06-10_WAVE_C_DOWN_C1fundo_59081_C2corretivaUP_range_SHORTtopo_MODO_OBS",
     "boot_ts": "2026-06-10T20:04:02-04:00",
