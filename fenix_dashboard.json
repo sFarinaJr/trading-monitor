@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "12/06/2026 05:52:36",
-  "last_github_push": "12/06 05:52",
-  "last_github_push_ts": 1781257956.929006,
+  "ultimo_update": "12/06/2026 05:53:22",
+  "last_github_push": "12/06 05:53",
+  "last_github_push_ts": 1781258002.481217,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -16,7 +16,7 @@
     "progresso_vs_baseline_usd": -717.35,
     "delta_vs_baseline": -717.35,
     "pnl_fenix_desde_baseline": -717.35,
-    "updated_at": "2026-06-12T05:52:24-04:00"
+    "updated_at": "2026-06-12T05:53:21-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -48,7 +48,7 @@
     "liq_price": 59238.0,
     "tp2_target_estrutural": 69355.1,
     "last_update": "2026-06-11T08:25:12-04:00",
-    "ts_snapshot": "2026-06-12T05:52:24-04:00"
+    "ts_snapshot": "2026-06-12T05:53:22-04:00"
   },
   "trades_recentes": [],
   "current_thesis": {
@@ -249,17 +249,17 @@
         "lado": "SHORT",
         "direcao": "SHORT",
         "prioridade": "ALT_A_ESTRUTURAL",
-        "entry": 63930.0,
+        "entry": 63800.0,
         "sl": 64442.7,
         "tp1": 57498.9,
         "tp2": 49680.0,
-        "rr": 27.8,
+        "rr": 22.0,
         "qty_btc": 0.2,
         "tp_size": 0.06,
         "tier": "T2",
         "macro_aligned": true,
         "fib_role": "alt-A estrutural · zona 63600-64250 · SL topo C-2 64443",
-        "trigger": "Rejeicao em 63600-64250 + Camada2 TOPO/rollover -> SHORT. SL 64442.7. close>64250 flip B.",
+        "trigger": "DISPARANDO · Camada2 top_exhaustion 7.5 + TOPO15m + Stoch95.8 em 63.93 · SHORT entry~63800 SL 64443",
         "invalidacao": "close>64250 flip B",
         "source": "espinha_dual_count_A"
       }
