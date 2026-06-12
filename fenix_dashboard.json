@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "11/06/2026 22:32:58",
-  "last_github_push": "11/06 22:32",
-  "last_github_push_ts": 1781231578.448041,
+  "ultimo_update": "11/06/2026 22:33:53",
+  "last_github_push": "11/06 22:33",
+  "last_github_push_ts": 1781231633.12914,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -54,7 +54,7 @@
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-06-11_WAVE_C_DOWN_C1fundo_59081_C2corretivaUP_bullreversal_63600_SHORTtopo_AUTONOMA",
     "boot_ts": "2026-06-11T20:18:00-04:00",
-    "ultimo_update": "2026-06-11T21:52:00-04:00",
+    "ultimo_update": "2026-06-11T22:33:00-04:00",
     "status": "ACTIVE",
     "mark_at_boot": 63600.0,
     "mark_now": 63466.2,
@@ -94,35 +94,37 @@
     },
     "setups_pre_armados": [
       {
-        "tipo": "SHORT_rollover_C2_early",
+        "tipo": "SHORT_zonaA_C2cap",
         "lado": "SHORT",
         "direcao": "SHORT",
-        "entry_zone": "63300-63600",
-        "entry": 63500,
-        "sl": 64500,
+        "prioridade": "PRIMARIA",
+        "entry_zone": "63900-64250",
+        "entry": 64100,
+        "sl": 64600,
         "tp1": 57499,
         "tp2": 49680,
-        "rr": 6.0,
-        "qty_btc": 0.17,
-        "tier": "T2/T3_por_cap6%",
+        "rr": 13.0,
+        "qty_btc": 0.28,
+        "tier": "T3",
         "macro_aligned": true,
-        "trigger": "SO dispara em ROLLOVER CONFIRMADO: rejeicao bearish 1H no topo (TOPO + RSI virando) + perda da estrutura intraday (close 1H < 62800). NAO shortar 63.5k as cegas enquanto pode subir pra 67-68k. Entrada no repique pra 63.3-63.6k apos confirmacao.",
-        "invalidacao": "close 1H > 64500 (novo topo · C-2 ainda estendendo pra 67-68k -> usar setup primario la em cima)",
+        "trigger": "ESTRUTURAL (Modo 2): teto da C-2 = resistencia = o nivel E o edge. Short no TOQUE/rejeicao em 63.9-64.25k (rejeicao leve 5m basta, nao precisa do stack pesado de sinais). SL tight 64600 -> qty T3 (0.28). Esta e a zona short A do Raio-X · a NEAREST e mais provavel.",
+        "fallback": "Se romper baixo ANTES de tagar o teto (rollover de 63.5k sem tocar 64.3k), exige score>=7 bear + perda 62800 (Modo 1 sinal).",
+        "invalidacao": "close 1H > 64600 -> C-2 estende pra 0,382 (68k) · ai usa a zona secundaria",
         "ordem_pronta": {
           "category": "linear",
           "symbol": "BTCUSDT",
           "side": "Sell",
           "orderType": "Limit",
-          "price": "63500",
-          "qty": "0.170",
-          "orderLinkId": "fenix_short_rollover_c2_ellstruct",
-          "stopLoss": "64500",
+          "price": "64100",
+          "qty": "0.280",
+          "orderLinkId": "fenix_short_zonaA_ellstruct",
+          "stopLoss": "64600",
           "takeProfit": "57499",
           "tpslMode": "Partial",
-          "tpSize": "0.050"
+          "tpSize": "0.080"
         },
-        "guards_verificados": "8/8 green 11/06 21:52 · resolve 'breakdown longe' (entra perto do topo, nao em 61476) · qty 0.17 dentro cap 6%",
-        "razao_estrutural": "Captura o C-3 CEDO e PERTO se a C-2 topou raso em 63.9k (retrace 0,146). Shortar colado no topo = SL tight (1000pts) = qty boa (0.17) dentro do cap 6% + R:R 6-14. Resolve o problema do breakdown em 61476 ser longe/tarde com SL enorme. 61476 vira so CONFIRMACAO de continuacao (add), nao gatilho de entrada."
+        "guards_verificados": "mesma familia da receita 8/8 (ellstruct + Limit+SL+TP Partial + qty mult0.010 + risco<6%)",
+        "razao_estrutural": "TETO da C-2 (resistencia 64.25k / Fib 0,146-0,236 da C-1) = zona short A do Raio-X. PRIMARIA pq e a mais proxima/provavel. Vender o teto com SL tight = T3."
       },
       {
         "tipo": "SHORT_topo_C2_macro",
@@ -152,7 +154,8 @@
           "tpslMode": "Partial",
           "tpSize": "0.080"
         },
-        "guards_verificados": "8/8 green 11/06 21:45 · entry_guard caminho C1 (_ellstruct + manual_override fresco) · params B7 risco 5,8%<6%"
+        "guards_verificados": "8/8 green 11/06 21:45 · entry_guard caminho C1 (_ellstruct + manual_override fresco) · params B7 risco 5,8%<6%",
+        "prioridade": "SECUNDARIA (so se romper 64.6k)"
       },
       {
         "tipo": "SHORT_topo_C2_estendido",
@@ -168,7 +171,8 @@
         "tier": "T2",
         "macro_aligned": true,
         "invalidacao": "close > 74310 (recount onda)",
-        "razao_estrutural": "Extensao da zona SHORT caso a C-2 estenda ate 0,5/0,618 da C-1 (70946/73746). Tier T2 (regra user: trade a-favor da tendencia NUNCA T1). AUTONOMA: arma e executa na exaustao confirmada (LEI #28/#29 OK)."
+        "razao_estrutural": "Extensao da zona SHORT caso a C-2 estenda ate 0,5/0,618 da C-1 (70946/73746). Tier T2 (regra user: trade a-favor da tendencia NUNCA T1). AUTONOMA: arma e executa na exaustao confirmada (LEI #28/#29 OK).",
+        "prioridade": "TERCIARIA (C-2 estende ao 0,5/0,618)"
       }
     ],
     "ponto_nao_retorno": "BEAR MACRO invalida TOTAL: close D > 82811 (topo B). ONDA invalida (recount Espinha · topo C-2 estourou): close > 74310 (teto onda-2/C). C-3 cedo (C-2 topou rasa): close 4H < 61476 (today_low) -> perde 60705 -> close 1H < 59081 (extremo C-1) = C-3 down confirmada. Suporte: PP D 62992 · S1 D 62084 · S2 D 60569 · 59081 (extremo C-1). Resistencia: R1 D 64508 · 64250 (topo C-2 spike) · 64682 (0,236 C-1 = piso zona short) · 68146 (0,382 · topo zona short primaria) · 70946 (0,5) · 73746 (0,618).",
