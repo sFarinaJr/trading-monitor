@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "11/06/2026 21:04:31",
-  "last_github_push": "11/06 21:04",
-  "last_github_push_ts": 1781226271.007251,
+  "ultimo_update": "11/06/2026 21:05:30",
+  "last_github_push": "11/06 21:05",
+  "last_github_push_ts": 1781226330.920704,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -16,7 +16,7 @@
     "progresso_vs_baseline_usd": -717.35,
     "delta_vs_baseline": -717.35,
     "pnl_fenix_desde_baseline": -717.35,
-    "updated_at": "2026-06-11T21:04:30-04:00"
+    "updated_at": "2026-06-11T21:05:30-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -48,48 +48,48 @@
     "liq_price": 59238.0,
     "tp2_target_estrutural": 69355.1,
     "last_update": "2026-06-11T08:25:12-04:00",
-    "ts_snapshot": "2026-06-11T21:04:30-04:00"
+    "ts_snapshot": "2026-06-11T21:05:30-04:00"
   },
   "trades_recentes": [],
   "current_thesis": {
-    "thesis_id": "boot_d_close_2026-06-10_WAVE_C_DOWN_C1fundo_59081_C2corretivaUP_range_SHORTtopo_MODO_OBS",
-    "boot_ts": "2026-06-10T20:04:02-04:00",
-    "ultimo_update": "2026-06-11T20:05:50-04:00",
+    "thesis_id": "boot_d_close_2026-06-11_WAVE_C_DOWN_C1fundo_59081_C2corretivaUP_bullreversal_63600_SHORTtopo_AUTONOMA",
+    "boot_ts": "2026-06-11T20:18:00-04:00",
+    "ultimo_update": "2026-06-11T21:04:00-04:00",
     "status": "ACTIVE",
-    "mark_at_boot": 61476.4,
-    "mark_now": 61753.96,
+    "mark_at_boot": 63600.0,
+    "mark_now": 63466.2,
     "macro_bias_D": {
       "direcao": "BEARISH",
       "score": 8.0
     },
-    "leitura_primaria_opus": "D-0 (10/06) fechou 61476 (-0,36% vs D-1) · candle BEAR inside, pavio inferior longo (low 60614 recomprado), vol 90.916 BTC (~88% MA). RSI diario ~22 (sobrevendido extremo), preco abaixo EMA9 ~63.8k e EMA20 ~67-68k descendente, MACD hist ~-3000, BB pos ~15%. Estrutura macro inalterada: ABC zigzag bearish, WAVE C DOWN. C-1 completou em 59081, C-2 corretiva UP roda o range 60.6-62.8 ha ~5 dias, topos decrescentes. Niveis-chave: piso 60705/S1 60445 (perder = C-3 down engata mirando 59081), invalidacao B em close D < 59081. Funding flat-negativo, OI 56.165k subindo, L/S 0.627 long (varejo net-long = combustivel squeeze). MODO OBSERVACAO: FÊNIX nao arma nem toca Bybit, user gerencia o LONG 0.388@64166 (contra o vies macro · babysit).",
+    "leitura_primaria_opus": "D-0 (11/06) fechou 63600 (+3,45% vs D-1) · candle BULL REVERSAL (O 61476 H 63900 L 61476 C 63600), high 63900 capado sob 64250, vol 80,6k BTC. RSI diario 31,2 (saindo da sobrevenda extrema), preco abaixo EMA9 ~63800 e EMA20 67213 descendente, MACD hist -4032 achatando. 4H RSI 59,4 acima EMA9/20, MACD +390 hist+140 (bounce); 1H RSI 61,9 acima EMA9/20/50 (impulso de alivio); 15m coil/compressao. Estrutura macro INALTERADA: ABC zigzag bearish, WAVE C DOWN. C-1 completou em 59081, C-2 corretiva UP em andamento, retracou so ~20% da C-1 (bounce jovem). Diario macro down + 4H/1H bounce = C-2 corretiva tipica. Niveis-chave: today_low 61476 (perder em close 4H = C-3 cedo), invalidacao B/macro em close D > 82811. Funding +0,0086% (leve premio long), OI +3% (longs entrando no bounce), L/S 0,605 crowded long, ask wall 5,2 BTC em 63574. AUTONOMIA RESTAURADA 11/06: FÊNIX opera dentro da LEI (open/manage/close) · FLAT no momento, sem trade abaixo da zona de short.",
     "cenarios_opus": {
-      "cenario_A_repique_exausto_queda_retoma": {
+      "cenario_A_C2_estende_zona_SHORT": {
         "prob": 0.55,
-        "entry": null,
-        "sl": null,
-        "tp1": null,
-        "tp2": null,
-        "rr": null,
-        "note": "C-2 ja topou (repique exausto de menor grau, topo reacao 62250 < 0,382=62275 com vol secando + OI unwinding). Queda C-3 retoma -> alvos 57499 (0,382xA) e 49680 (0,5xA). Gatilho: perde 60705 -> 59081; close 1H < 59081 = C-3 down confirmada."
-      },
-      "cenario_B_C2_estende_zona_SHORT": {
-        "prob": 0.35,
         "entry": "66700-68150",
         "sl": 69600,
         "tp1": 60700,
         "tp2": 57500,
-        "rr": 4.0,
-        "note": "C-2 estende ate a zona de retracement Fib da C-1 (0,236=64682 piso ate 0,382=68146 topo · ext 0,5=70946/0,618=73746). E onde arma o SHORT macro (Espinha plan). Exige reclaim de 62275->64250->64.7k com volume. Topo da C-2 = entrada SHORT na exaustao."
+        "rr": 4.2,
+        "note": "C-2 estende ate a zona de retracement Fib da C-1 (0,236=64682 piso ate 0,382=68146 topo). E onde arma o SHORT macro (Espinha plan). Exige romper 64250 com volume e alcancar 64.7-68.1k. Topo da C-2 = entrada SHORT na exaustao (rejeicao 5m). Queda C-3 -> alvos 57499/49680."
       },
-      "cenario_C_breakdown_direto_59081": {
-        "prob": 0.1,
+      "cenario_B_C2_rasa_C3_cedo": {
+        "prob": 0.3,
         "entry": null,
         "sl": null,
         "tp1": null,
         "tp2": null,
         "rr": null,
-        "note": "Breakdown direto: close 1H < 59081 invalida a C-2 (leg down retoma sem completar bounce) -> C-3 acelera pra 57499/49680. Tambem ameaca o LONG do user (SL 58571,5 fura antes do 59081)."
+        "note": "C-2 ja topou rasa (~64250, so 0.236 da C-1, bounce fraco) · C-3 down retoma cedo SEM arme em 63,5k (LEI #28 veta short abaixo da zona). Gatilho: close 4H < 61476 (today_low) -> perde 60705 -> 59081. close 1H < 59081 = C-3 down confirmada. FÊNIX nao shorta aqui (fora de zona) · espera retest da zona OU breakdown limpo."
+      },
+      "cenario_C_corre_zona_estendida": {
+        "prob": 0.15,
+        "entry": "70946-73746",
+        "sl": 77733,
+        "tp1": 65000,
+        "tp2": 57500,
+        "rr": 2.0,
+        "note": "C-2 corre direto ate 0,5=70946 / 0,618=73746 da C-1 (extensao). Arma SHORT estendido (Tier menor, contagem mais esticada). Invalida onda em close > 74310 (recount Espinha)."
       }
     },
     "setups_pre_armados": [
@@ -107,7 +107,7 @@
         "tier": "T2",
         "macro_aligned": true,
         "invalidacao": "close 1H > 69600 (acima 1,272A/zona) ou recount Espinha close > 74310",
-        "razao_estrutural": "SHORT na exaustao do topo da C-2 corretiva, dentro da zona de retracement Fib da C-1 (0,236=64682 piso ate 0,382=68146 topo). Alinhado com WAVE C DOWN. Gatilho: bounce reverter no 5m na zona. MODO OBSERVACAO: NAO executa · so analise/alerta."
+        "razao_estrutural": "SHORT na exaustao do topo da C-2 corretiva, dentro da zona de retracement Fib da C-1 (0,236=64682 piso ate 0,382=68146 topo). Alinhado com WAVE C DOWN. Gatilho: bounce reverter no 5m na zona. AUTONOMA: arma e executa na exaustao confirmada (LEI #28/#29 OK)."
       },
       {
         "tipo": "SHORT_topo_C2_estendido",
@@ -123,11 +123,11 @@
         "tier": "T1",
         "macro_aligned": true,
         "invalidacao": "close > 74310 (recount onda)",
-        "razao_estrutural": "Extensao da zona SHORT caso a C-2 estenda ate 0,5/0,618 da C-1 (70946/73746). Tier menor (mais longe, contagem mais esticada). MODO OBSERVACAO: NAO executa · so analise/alerta."
+        "razao_estrutural": "Extensao da zona SHORT caso a C-2 estenda ate 0,5/0,618 da C-1 (70946/73746). Tier menor (mais longe, contagem mais esticada). AUTONOMA: arma e executa na exaustao confirmada (LEI #28/#29 OK)."
       }
     ],
-    "ponto_nao_retorno": "C-2 INVALIDA (leg down retoma direto): close 1H < 59081 (extremo C-1). ONDA invalida (recount Espinha · topo C-2 estourou): close > 74310 (teto onda-2/C). BEAR MACRO invalida TOTAL: close D > 82811 (topo B). Suporte: PP D 61969 · S1 D 60436 · S2 D 59173 · 60705 (fundo B intra, defesa imediata) · 59081 (extremo C-1 defendido). Resistencia: R1 D 63232 · 0,236=64682/64250 (topo C-2 spike) · R2 D 64765 · 0,382=68146 · 0,5=70946 · 0,618=73746.",
-    "proximo_marco": "Close 1H 21:00 UTC-4 · depois close 4H 24:00 (00:00). Decide se a C-2 ja topou (repique exausto · cenario A) e a queda C-3 retoma, vs estende ate a zona SHORT 64.7-68.1k (B), vs perde 59081 (C). MODO OBSERVACAO: FENIX observa, NAO opera. Vigiar trade user LONG 0.272 @64166 (SL 58571,5 a ~-3,5% do mark · TP 69355 · liq 55276 a ~-10,4% · INTOCAVEL LEI #32)."
+    "ponto_nao_retorno": "BEAR MACRO invalida TOTAL: close D > 82811 (topo B). ONDA invalida (recount Espinha · topo C-2 estourou): close > 74310 (teto onda-2/C). C-3 cedo (C-2 topou rasa): close 4H < 61476 (today_low) -> perde 60705 -> close 1H < 59081 (extremo C-1) = C-3 down confirmada. Suporte: PP D 62992 · S1 D 62084 · S2 D 60569 · 59081 (extremo C-1). Resistencia: R1 D 64508 · 64250 (topo C-2 spike) · 64682 (0,236 C-1 = piso zona short) · 68146 (0,382 · topo zona short primaria) · 70946 (0,5) · 73746 (0,618).",
+    "proximo_marco": "Close 4H 22:00 UTC-4 · depois close 1H sequencial. Decide se a C-2 estende ate a zona SHORT 64.7-68.1k (cenario A · arma short na exaustao) vs topou rasa e C-3 retoma cedo (B · breakdown <61476) vs corre 70.9-73.7k (C). AUTONOMIA RESTAURADA: FÊNIX opera dentro da LEI · FLAT agora · entry autonomo so em zona pre-armada (LEI #28) na exaustao do topo C-2."
   },
   "execution_mode": "AUTO",
   "manual_approval_required": true,
