@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "11/06/2026 21:05:30",
-  "last_github_push": "11/06 21:05",
-  "last_github_push_ts": 1781226330.920704,
+  "ultimo_update": "11/06/2026 21:06:19",
+  "last_github_push": "11/06 21:06",
+  "last_github_push_ts": 1781226379.751811,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -132,14 +132,14 @@
   "execution_mode": "AUTO",
   "manual_approval_required": true,
   "price_watch": {
-    "ts": "2026-06-11T07:01:23-0400",
+    "ts": "2026-06-11T21:05:00-04:00",
     "levels": [
       {
         "price": 82811,
         "direction": "above",
         "tier": "alto",
         "reason": "topo B · INVALIDACAO TOTAL bear macro (close D)",
-        "decisao_pre_armada": "MODO OBSERVACAO · FENIX NAO opera (zero Bybit · user gerencia o trade babysit LEI #32). SE close D > 82811: tese ABC bearish MORRE · disparar skill fenix-analise-macro + RECOUNT Espinha. So analise.",
+        "decisao_pre_armada": "SE close D > 82811: tese ABC bearish MORRE · disparar skill fenix-analise-macro + RECOUNT Espinha. AUTONOMA: re-valida e executa/documenta dentro da LEI.",
         "active": true,
         "triggered": false
       },
@@ -148,7 +148,7 @@
         "direction": "above",
         "tier": "alto",
         "reason": "teto onda-2/C · INVALIDACAO ONDA (recount)",
-        "decisao_pre_armada": "MODO OBSERVACAO · FENIX NAO opera (zero Bybit · user gerencia o trade babysit LEI #32). SE close > 74310: C-2 estourou o teto · forcar RECOUNT Espinha (limpar lock tree.json). So analise.",
+        "decisao_pre_armada": "SE close > 74310: C-2 estourou o teto · forcar RECOUNT Espinha (limpar lock tree.json). AUTONOMA: re-valida e executa/documenta dentro da LEI.",
         "active": true,
         "triggered": false
       },
@@ -157,7 +157,7 @@
         "direction": "above",
         "tier": "medio",
         "reason": "Fib 0.618 C-1 · teto ALTO da zona SHORT (cenario B estendido)",
-        "decisao_pre_armada": "MODO OBSERVACAO · FENIX NAO opera (zero Bybit · user gerencia o trade babysit LEI #32). Topo extremo da C-2. SE bounce reverter no 5m aqui = SHORT macro (setup secundario). So analise/alerta.",
+        "decisao_pre_armada": "Topo extremo da C-2. SE bounce reverter no 5m aqui = SHORT macro (setup secundario). AUTONOMA: re-valida (score+R:R+Espinha) e executa/documenta.",
         "active": true,
         "triggered": false
       },
@@ -166,7 +166,7 @@
         "direction": "above",
         "tier": "medio",
         "reason": "Fib 0.5 C-1 · zona SHORT estendida",
-        "decisao_pre_armada": "MODO OBSERVACAO · FENIX NAO opera (zero Bybit · user gerencia o trade babysit LEI #32). Meio da zona SHORT estendida (setup 2 entry). So analise/alerta.",
+        "decisao_pre_armada": "Meio da zona SHORT estendida (setup 2 entry). AUTONOMA: re-valida (score+R:R+Espinha) e executa/documenta.",
         "active": true,
         "triggered": false
       },
@@ -175,7 +175,7 @@
         "direction": "above",
         "tier": "alto",
         "reason": "Fib 0.382 C-1 · TOPO da zona SHORT primaria",
-        "decisao_pre_armada": "MODO OBSERVACAO · FENIX NAO opera (zero Bybit · user gerencia o trade babysit LEI #32). Topo da zona SHORT primaria (setup 1). SE exaustao/rejeicao 5m = ponto de SHORT macro. So analise/alerta.",
+        "decisao_pre_armada": "Topo da zona SHORT primaria (setup 1). SE exaustao/rejeicao 5m = ponto de SHORT macro. AUTONOMA: re-valida (score+R:R+Espinha) e executa/documenta.",
         "active": true,
         "triggered": false
       },
@@ -184,7 +184,7 @@
         "direction": "above",
         "tier": "alto",
         "reason": "Fib 0.236 C-1 (64682) ~ R1 D · PISO da zona SHORT primaria",
-        "decisao_pre_armada": "MODO OBSERVACAO · FENIX NAO opera (zero Bybit · user gerencia o trade babysit LEI #32). Piso da zona SHORT primaria + entrada na C-2 estendida. SE chegar = vigiar exaustao 5m. So analise/alerta.",
+        "decisao_pre_armada": "Piso da zona SHORT primaria + entrada na C-2 estendida. SE chegar = vigiar exaustao 5m. AUTONOMA: re-valida (score+R:R+Espinha) e executa/documenta.",
         "active": true,
         "triggered": false
       },
@@ -193,7 +193,16 @@
         "direction": "above",
         "tier": "alto",
         "reason": "topo C-2 (spike 06/06 + rejeicao 64220 08/06) ~ topo A",
-        "decisao_pre_armada": "MODO OBSERVACAO · FENIX NAO opera (zero Bybit · user gerencia o trade babysit LEI #32). Topo da perna A da C-2. Romper com volume = C-2 estende pra zona SHORT; rejeitar = C-2 topou (cenario A). So analise.",
+        "decisao_pre_armada": "Topo da perna A da C-2. Romper com volume = C-2 estende pra zona SHORT; rejeitar = C-2 topou (cenario A). AUTONOMA: re-valida e executa/documenta dentro da LEI.",
+        "active": true,
+        "triggered": false
+      },
+      {
+        "price": 61476,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "today_low 11/06 (low do D-0 bull reversal) · perda em close 4H = C-2 topou rasa, C-3 cedo",
+        "decisao_pre_armada": "AUTONOMA. SE close 4H/1H < 61476: C-2 provavelmente topou rasa (so 0.236 C-1) · C-3 down retoma rumo 60705 -> 59081. Re-valida Espinha · sem short autonomo abaixo de 64.7k (LEI #28 fora de zona) · documentar e vigiar breakdown limpo p/ retest da zona.",
         "active": true,
         "triggered": false
       }
