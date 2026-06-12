@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "12/06/2026 09:49:01",
-  "last_github_push": "12/06 09:49",
-  "last_github_push_ts": 1781272141.289214,
+  "ultimo_update": "12/06/2026 09:50:01",
+  "last_github_push": "12/06 09:50",
+  "last_github_push_ts": 1781272201.565863,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -6848.36,
     "cumPnL_unified_usd": -6848.36,
-    "unrealisedPnl": 128.48,
+    "unrealisedPnl": 120.08,
     "ts": "2026-06-02T20:05:00-04:00",
     "progresso_vs_baseline_usd": -724.36,
     "delta_vs_baseline": -724.36,
     "pnl_fenix_desde_baseline": -724.36,
-    "updated_at": "2026-06-12T09:49:00-04:00"
+    "updated_at": "2026-06-12T09:50:00-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_SHORT",
-    "markPrice": 63130.31,
-    "mark_price_atual": 63130.31,
-    "unrealised_pnl_usd": 130.22,
-    "unrealisedPnl": 130.22,
+    "markPrice": 63177.17,
+    "mark_price_atual": 63177.17,
+    "unrealised_pnl_usd": 120.85,
+    "unrealisedPnl": 120.85,
     "be_price": 63711.27902653,
     "liq_price": 66002.6,
     "tp2_target_estrutural": 49680.0,
-    "last_update": "2026-06-12T09:49:01-04:00",
-    "ts_snapshot": "2026-06-12T09:49:01-04:00"
+    "last_update": "2026-06-12T09:50:01-04:00",
+    "ts_snapshot": "2026-06-12T09:50:01-04:00"
   },
   "trades_recentes": [],
   "current_thesis": {
@@ -242,7 +242,20 @@
         "fib_role": "C-3 breakdown (user) perde 62800 · SL 63400",
         "trigger": "Perde 62800 (close/momentum+vol) -> SHORT continuacao. SL 63400 (acima fundinho rompido).",
         "invalidacao": "recupera>63400 nega breakdown",
-        "source": "espinha_dual_count_B_brk"
+        "source": "espinha_dual_count_B_brk",
+        "ordem_pronta": {
+          "category": "linear",
+          "symbol": "BTCUSDT",
+          "side": "Sell",
+          "orderType": "Limit",
+          "price": "62800.0",
+          "qty": "0.290",
+          "orderLinkId": "fenix_short_brkC3_ellstruct",
+          "stopLoss": "63400.0",
+          "takeProfit": "57498.9",
+          "tpslMode": "Partial",
+          "tpSize": "0.080"
+        }
       },
       {
         "tipo": "SHORT_altA_estrutural",
