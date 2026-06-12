@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "11/06/2026 22:51:49",
-  "last_github_push": "11/06 22:51",
-  "last_github_push_ts": 1781232709.796215,
+  "ultimo_update": "11/06/2026 22:52:48",
+  "last_github_push": "11/06 22:52",
+  "last_github_push_ts": 1781232768.983427,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -16,7 +16,7 @@
     "progresso_vs_baseline_usd": -717.35,
     "delta_vs_baseline": -717.35,
     "pnl_fenix_desde_baseline": -717.35,
-    "updated_at": "2026-06-11T22:51:49-04:00"
+    "updated_at": "2026-06-11T22:52:48-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -48,13 +48,13 @@
     "liq_price": 59238.0,
     "tp2_target_estrutural": 69355.1,
     "last_update": "2026-06-11T08:25:12-04:00",
-    "ts_snapshot": "2026-06-11T22:51:49-04:00"
+    "ts_snapshot": "2026-06-11T22:52:48-04:00"
   },
   "trades_recentes": [],
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-06-11_WAVE_C_DOWN_C1fundo_59081_C2corretivaUP_bullreversal_63600_SHORTtopo_AUTONOMA",
     "boot_ts": "2026-06-11T20:18:00-04:00",
-    "ultimo_update": "2026-06-11T22:44:54-0400",
+    "ultimo_update": "2026-06-11T22:51:52-0400",
     "status": "ACTIVE",
     "mark_at_boot": 63600.0,
     "mark_now": 63466.2,
@@ -232,79 +232,117 @@
   "execution_mode": "AUTO",
   "manual_approval_required": true,
   "price_watch": {
-    "ts": "2026-06-11T21:05:00-04:00",
+    "ts": "2026-06-11T22:51:52-0400",
     "levels": [
       {
-        "price": 82811,
+        "price": 64681.3,
         "direction": "above",
         "tier": "alto",
-        "reason": "topo B · INVALIDACAO TOTAL bear macro (close D)",
-        "decisao_pre_armada": "SE close D > 82811: tese ABC bearish MORRE · disparar skill fenix-analise-macro + RECOUNT Espinha. AUTONOMA: re-valida e executa/documenta dentro da LEI.",
+        "reason": "PRIMARIA SHORT · zona SHORT primaria C-2",
+        "decisao_pre_armada": "SE mark na zona 64681 (zona SHORT primaria C-2) + Camada2 TOPO 5m / rejeicao: SHORT PRIMARIA qty 0.280 SL 65263.4 TP1 57498.9. AUTONOMA executa ordem_pronta (8/8 guards) dentro da LEI.",
         "active": true,
-        "triggered": false
+        "triggered": false,
+        "source": "espinha_fib_regions"
       },
       {
-        "price": 74310,
+        "price": 68145.9,
         "direction": "above",
         "tier": "alto",
-        "reason": "teto onda-2/C · INVALIDACAO ONDA (recount)",
-        "decisao_pre_armada": "SE close > 74310: C-2 estourou o teto · forcar RECOUNT Espinha (limpar lock tree.json). AUTONOMA: re-valida e executa/documenta dentro da LEI.",
+        "reason": "SECUNDARIA SHORT · teto provavel C-2 (SHORT alto)",
+        "decisao_pre_armada": "SE mark na zona 68146 (teto provavel C-2 (SHORT alto)) + Camada2 TOPO 5m / rejeicao: SHORT SECUNDARIA qty 0.260 SL 68759.2 TP1 57498.9. AUTONOMA executa ordem_pronta (8/8 guards) dentro da LEI.",
         "active": true,
-        "triggered": false
+        "triggered": false,
+        "source": "espinha_fib_regions"
       },
       {
-        "price": 73746,
-        "direction": "above",
-        "tier": "medio",
-        "reason": "Fib 0.618 C-1 · teto ALTO da zona SHORT (cenario B estendido)",
-        "decisao_pre_armada": "Topo extremo da C-2. SE bounce reverter no 5m aqui = SHORT macro (setup secundario). AUTONOMA: re-valida (score+R:R+Espinha) e executa/documenta.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 70946,
-        "direction": "above",
-        "tier": "medio",
-        "reason": "Fib 0.5 C-1 · zona SHORT estendida",
-        "decisao_pre_armada": "Meio da zona SHORT estendida (setup 2 entry). AUTONOMA: re-valida (score+R:R+Espinha) e executa/documenta.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 68146,
+        "price": 70946.0,
         "direction": "above",
         "tier": "alto",
-        "reason": "Fib 0.382 C-1 · TOPO da zona SHORT primaria",
-        "decisao_pre_armada": "Topo da zona SHORT primaria (setup 1). SE exaustao/rejeicao 5m = ponto de SHORT macro. AUTONOMA: re-valida (score+R:R+Espinha) e executa/documenta.",
+        "reason": "TERCIARIA SHORT · C-2 estendida",
+        "decisao_pre_armada": "SE mark na zona 70946 (C-2 estendida) + Camada2 TOPO 5m / rejeicao: SHORT TERCIARIA qty 0.250 SL 71584.5 TP1 57498.9. AUTONOMA executa ordem_pronta (8/8 guards) dentro da LEI.",
         "active": true,
-        "triggered": false
+        "triggered": false,
+        "source": "espinha_fib_regions"
       },
       {
-        "price": 64682,
+        "price": 73746.1,
         "direction": "above",
         "tier": "alto",
-        "reason": "Fib 0.236 C-1 (64682) ~ R1 D · PISO da zona SHORT primaria",
-        "decisao_pre_armada": "Piso da zona SHORT primaria + entrada na C-2 estendida. SE chegar = vigiar exaustao 5m. AUTONOMA: re-valida (score+R:R+Espinha) e executa/documenta.",
+        "reason": "QUATERNARIA SHORT · C-2 profunda (raro)",
+        "decisao_pre_armada": "SE mark na zona 73746 (C-2 profunda (raro)) + Camada2 TOPO 5m / rejeicao: SHORT QUATERNARIA qty 0.240 SL 74409.8 TP1 57498.9. AUTONOMA executa ordem_pronta (8/8 guards) dentro da LEI.",
         "active": true,
-        "triggered": false
+        "triggered": false,
+        "source": "espinha_fib_regions"
       },
       {
-        "price": 64250,
+        "price": 77732.8,
         "direction": "above",
         "tier": "alto",
-        "reason": "topo C-2 (spike 06/06 + rejeicao 64220 08/06) ~ topo A",
-        "decisao_pre_armada": "Topo da perna A da C-2. Romper com volume = C-2 estende pra zona SHORT; rejeitar = C-2 topou (cenario A). AUTONOMA: re-valida e executa/documenta dentro da LEI.",
+        "reason": "limite C-2 (0.786 C1_retr_p_C2_topo) · RECOUNT se romper",
+        "decisao_pre_armada": "SE close > este nivel: C-2 estourou o limite Fib · forcar RECOUNT Espinha (limpar lock tree.json). AUTONOMA re-valida dentro da LEI.",
         "active": true,
-        "triggered": false
+        "triggered": false,
+        "source": "espinha_fib_regions"
       },
       {
-        "price": 61476,
+        "price": 82811.0,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "INVALIDACAO TOTAL macro (close D)",
+        "decisao_pre_armada": "SE close D > este nivel: tese ABC bearish MORRE · skill fenix-analise-macro + RECOUNT. AUTONOMA re-valida/documenta dentro da LEI.",
+        "active": true,
+        "triggered": false,
+        "source": "espinha_fib_regions"
+      },
+      {
+        "price": 62545.6,
         "direction": "below",
         "tier": "alto",
-        "reason": "today_low 11/06 (low do D-0 bull reversal) · perda em close 4H = C-2 topou rasa, C-3 cedo",
-        "decisao_pre_armada": "AUTONOMA. SE close 4H/1H < 61476: C-2 provavelmente topou rasa (so 0.236 C-1) · C-3 down retoma rumo 60705 -> 59081. Re-valida Espinha · sem short autonomo abaixo de 64.7k (LEI #28 fora de zona) · documentar e vigiar breakdown limpo p/ retest da zona.",
+        "reason": "piso corpo C-2 (0.146 C1_retr_p_C2_topo) · perde = C-2 fraca / C-3 cedo",
+        "decisao_pre_armada": "SE close 1H < este nivel: C-2 perde o corpo · risco de C-3 resumir cedo. Camada2 FUNDO aqui + score bear = avaliar breakdown short (continuacao). AUTONOMA dentro da LEI.",
         "active": true,
-        "triggered": false
+        "triggered": false,
+        "source": "espinha_fib_regions"
+      },
+      {
+        "price": 59081.0,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "C-1 low (suporte macro · base retracement C-2)",
+        "decisao_pre_armada": "SE perde C-1 low: C-3 confirmou resumir (rompeu o fundo da C-1). Camada2 FUNDO / continuacao short. AUTONOMA dentro da LEI.",
+        "active": true,
+        "triggered": false,
+        "source": "espinha_fib_regions"
+      },
+      {
+        "price": 57498.9,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "alvo C primario (0.382 alvos_C_down_de_A)",
+        "decisao_pre_armada": "SE mark em 57499 (alvo C primario): zona de TP/parcial da onda C down. Camada2 FUNDO 5m aqui = exaustao -> avaliar parcial/saida. AUTONOMA dentro da LEI.",
+        "active": true,
+        "triggered": false,
+        "source": "espinha_fib_regions"
+      },
+      {
+        "price": 49680.0,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "alvo C central (ima) (0.500 alvos_C_down_de_A)",
+        "decisao_pre_armada": "SE mark em 49680 (alvo C central (ima)): zona de TP/parcial da onda C down. Camada2 FUNDO 5m aqui = exaustao -> avaliar parcial/saida. AUTONOMA dentro da LEI.",
+        "active": true,
+        "triggered": false,
+        "source": "espinha_fib_regions"
+      },
+      {
+        "price": 41861.1,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "alvo C base (0.618 alvos_C_down_de_A)",
+        "decisao_pre_armada": "SE mark em 41861 (alvo C base): zona de TP/parcial da onda C down. Camada2 FUNDO 5m aqui = exaustao -> avaliar parcial/saida. AUTONOMA dentro da LEI.",
+        "active": true,
+        "triggered": false,
+        "source": "espinha_fib_regions"
       }
     ]
   },
