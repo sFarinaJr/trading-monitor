@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "11/06/2026 21:53:28",
-  "last_github_push": "11/06 21:53",
-  "last_github_push_ts": 1781229208.5532439,
+  "ultimo_update": "11/06/2026 21:54:22",
+  "last_github_push": "11/06 21:54",
+  "last_github_push_ts": 1781229262.355276,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -54,7 +54,7 @@
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-06-11_WAVE_C_DOWN_C1fundo_59081_C2corretivaUP_bullreversal_63600_SHORTtopo_AUTONOMA",
     "boot_ts": "2026-06-11T20:18:00-04:00",
-    "ultimo_update": "2026-06-11T21:45:00-04:00",
+    "ultimo_update": "2026-06-11T21:52:00-04:00",
     "status": "ACTIVE",
     "mark_at_boot": 63600.0,
     "mark_now": 63466.2,
@@ -93,6 +93,37 @@
       }
     },
     "setups_pre_armados": [
+      {
+        "tipo": "SHORT_rollover_C2_early",
+        "lado": "SHORT",
+        "direcao": "SHORT",
+        "entry_zone": "63300-63600",
+        "entry": 63500,
+        "sl": 64500,
+        "tp1": 57499,
+        "tp2": 49680,
+        "rr": 6.0,
+        "qty_btc": 0.17,
+        "tier": "T2/T3_por_cap6%",
+        "macro_aligned": true,
+        "trigger": "SO dispara em ROLLOVER CONFIRMADO: rejeicao bearish 1H no topo (TOPO + RSI virando) + perda da estrutura intraday (close 1H < 62800). NAO shortar 63.5k as cegas enquanto pode subir pra 67-68k. Entrada no repique pra 63.3-63.6k apos confirmacao.",
+        "invalidacao": "close 1H > 64500 (novo topo · C-2 ainda estendendo pra 67-68k -> usar setup primario la em cima)",
+        "ordem_pronta": {
+          "category": "linear",
+          "symbol": "BTCUSDT",
+          "side": "Sell",
+          "orderType": "Limit",
+          "price": "63500",
+          "qty": "0.170",
+          "orderLinkId": "fenix_short_rollover_c2_ellstruct",
+          "stopLoss": "64500",
+          "takeProfit": "57499",
+          "tpslMode": "Partial",
+          "tpSize": "0.050"
+        },
+        "guards_verificados": "8/8 green 11/06 21:52 · resolve 'breakdown longe' (entra perto do topo, nao em 61476) · qty 0.17 dentro cap 6%",
+        "razao_estrutural": "Captura o C-3 CEDO e PERTO se a C-2 topou raso em 63.9k (retrace 0,146). Shortar colado no topo = SL tight (1000pts) = qty boa (0.17) dentro do cap 6% + R:R 6-14. Resolve o problema do breakdown em 61476 ser longe/tarde com SL enorme. 61476 vira so CONFIRMACAO de continuacao (add), nao gatilho de entrada."
+      },
       {
         "tipo": "SHORT_topo_C2_macro",
         "lado": "SHORT",
