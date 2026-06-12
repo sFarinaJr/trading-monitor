@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "12/06/2026 11:01:46",
-  "last_github_push": "12/06 11:01",
-  "last_github_push_ts": 1781276506.828693,
+  "ultimo_update": "12/06/2026 11:02:45",
+  "last_github_push": "12/06 11:02",
+  "last_github_push_ts": 1781276565.3632362,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -65,7 +65,7 @@
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-06-11_WAVE_C_DOWN_C1fundo_59081_C2corretivaUP_bullreversal_63600_SHORTtopo_AUTONOMA",
     "boot_ts": "2026-06-11T20:18:00-04:00",
-    "ultimo_update": "2026-06-11T23:03:26-0400",
+    "ultimo_update": "2026-06-12T11:02:03-0400",
     "status": "ACTIVE",
     "mark_at_boot": 63600.0,
     "mark_now": 63466.2,
@@ -235,6 +235,39 @@
         },
         "source": "espinha_fib_regions",
         "derivado_de": "fib_regions role='SHORT precoce C-2 (retrace raso · baixa conviccao)' @ espinha_20260611_105014"
+      },
+      {
+        "tipo": "SHORT_dualcountA_C3early",
+        "lado": "SHORT",
+        "direcao": "SHORT",
+        "prioridade": "ALTERNATIVA_A",
+        "entry": 63928.8,
+        "sl": 64442.7,
+        "tp1": 57498.9,
+        "tp2": 49680.0,
+        "rr": 27.7,
+        "qty_btc": 0.2,
+        "tier": "T2",
+        "macro_aligned": true,
+        "fib_role": "dual-count A (C-2 rasa topou 64250 retrace 21.8% -> C-3 cedo)",
+        "fib_label": "zona 63608-64250",
+        "trigger": "ALTERNATIVA do motor: zona 63608-64250 + Camada2 TOPO/rejeicao + confluencia>=2 -> SHORT. SL 64442.7 (topo C-2 real). close>64250 invalida (flip B).",
+        "invalidacao": "close > 64250 reabre a C-2 → ativa o cenário B (zona projetada)",
+        "ordem_pronta": {
+          "category": "linear",
+          "symbol": "BTCUSDT",
+          "side": "Sell",
+          "orderType": "Limit",
+          "price": "63928.8",
+          "qty": "0.200",
+          "orderLinkId": "fenix_short_dualA_ellstruct",
+          "stopLoss": "64442.7",
+          "takeProfit": "57498.9",
+          "tpslMode": "Partial",
+          "tpSize": "0.060"
+        },
+        "source": "espinha_dual_count_A",
+        "derivado_de": "tree.onda_de_trabalho.plano_trade.dual_count_alternativa"
       }
     ],
     "ponto_nao_retorno": "BEAR MACRO invalida TOTAL: close D > 82811 (topo B). ONDA invalida (recount Espinha · topo C-2 estourou): close > 74310 (teto onda-2/C). C-3 cedo (C-2 topou rasa): close 4H < 61476 (today_low) -> perde 60705 -> close 1H < 59081 (extremo C-1) = C-3 down confirmada. Suporte: PP D 62992 · S1 D 62084 · S2 D 60569 · 59081 (extremo C-1). Resistencia: R1 D 64508 · 64250 (topo C-2 spike) · 64682 (0,236 C-1 = piso zona short) · 68146 (0,382 · topo zona short primaria) · 70946 (0,5) · 73746 (0,618).",
@@ -243,7 +276,7 @@
   "execution_mode": "AUTO",
   "manual_approval_required": true,
   "price_watch": {
-    "ts": "2026-06-11T23:03:26-0400",
+    "ts": "2026-06-12T11:02:03-0400",
     "levels": [
       {
         "price": 70946.0,
@@ -281,6 +314,16 @@
         "tier": "alto",
         "reason": "EARLY SHORT · SHORT precoce C-2 (retrace raso · baixa conviccao)",
         "decisao_pre_armada": "SE mark na zona 64681 (SHORT precoce C-2 (retrace raso · baixa conviccao)) + Camada2 TOPO 5m / rejeicao: SHORT EARLY qty 0.200 SL 65263.4 TP1 57498.9. AUTONOMA executa ordem_pronta (8/8 guards) dentro da LEI.",
+        "active": true,
+        "triggered": false,
+        "source": "espinha_fib_regions"
+      },
+      {
+        "price": 63928.8,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "ALTERNATIVA_A SHORT · dual-count A (C-2 rasa topou 64250 retrace 21.8% -> C-3 cedo)",
+        "decisao_pre_armada": "SE mark na zona 63929 (dual-count A (C-2 rasa topou 64250 retrace 21.8% -> C-3 cedo)) + Camada2 TOPO 5m / rejeicao: SHORT ALTERNATIVA_A qty 0.200 SL 64442.7 TP1 57498.9. AUTONOMA executa ordem_pronta (8/8 guards) dentro da LEI.",
         "active": true,
         "triggered": false,
         "source": "espinha_fib_regions"
