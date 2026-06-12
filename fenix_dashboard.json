@@ -1,32 +1,32 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "12/06/2026 10:34:33",
-  "last_github_push": "12/06 10:34",
-  "last_github_push_ts": 1781274873.1496902,
+  "ultimo_update": "12/06/2026 10:35:36",
+  "last_github_push": "12/06 10:35",
+  "last_github_push_ts": 1781274936.3155022,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
   "saldo": {
-    "cum_realised_pnl": -6848.36,
-    "cumPnL_unified_usd": -6848.36,
-    "unrealisedPnl": 35.22,
+    "cum_realised_pnl": -6834.83,
+    "cumPnL_unified_usd": -6834.83,
+    "unrealisedPnl": 0.0,
     "ts": "2026-06-02T20:05:00-04:00",
-    "progresso_vs_baseline_usd": -724.36,
-    "delta_vs_baseline": -724.36,
-    "pnl_fenix_desde_baseline": -724.36,
-    "updated_at": "2026-06-12T10:34:32-04:00"
+    "progresso_vs_baseline_usd": -710.83,
+    "delta_vs_baseline": -710.83,
+    "pnl_fenix_desde_baseline": -710.83,
+    "updated_at": "2026-06-12T10:35:35-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
-    "current_pnl": -6848.36,
-    "diff_usd": -724.36
+    "current_pnl": -6834.83,
+    "diff_usd": -710.83
   },
   "posicao_atual": {
-    "side": "SHORT",
-    "size": 0.2,
-    "qty": 0.2,
+    "side": "NONE",
+    "size": 0,
+    "qty": 0,
     "avgPrice": 63781.4,
     "avg_price": 63781.4,
     "entry_price": 63781.4,
@@ -42,15 +42,26 @@
     "status": "OPEN_SHORT",
     "markPrice": 63605.3,
     "mark_price_atual": 63605.3,
-    "unrealised_pnl_usd": 35.22,
+    "unrealised_pnl_usd": 0,
     "unrealisedPnl": 35.22,
     "be_price": 63711.27902653,
     "liq_price": 66002.6,
     "tp2_target_estrutural": 49680.0,
     "last_update": "2026-06-12T10:34:33-04:00",
-    "ts_snapshot": "2026-06-12T10:34:33-04:00"
+    "ts_snapshot": "2026-06-12T10:35:36-04:00"
   },
-  "trades_recentes": [],
+  "trades_recentes": [
+    {
+      "timestamp": "2026-06-12T05:57:49",
+      "symbol": "BTCUSDT",
+      "side": "SHORT",
+      "entry_price": 63781.4,
+      "exit_price": 63678.7,
+      "quantity": 0.2,
+      "pnl_usd": 6.52,
+      "pnl_percent": 0.16
+    }
+  ],
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-06-11_WAVE_C_DOWN_C1fundo_59081_C2corretivaUP_bullreversal_63600_SHORTtopo_AUTONOMA",
     "boot_ts": "2026-06-11T20:18:00-04:00",
