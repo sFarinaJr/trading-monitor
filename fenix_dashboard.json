@@ -1,27 +1,27 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "13/06/2026 04:00:00",
-  "last_github_push": "13/06 04:00",
-  "last_github_push_ts": 1781337600.285726,
+  "ultimo_update": "13/06/2026 04:01:01",
+  "last_github_push": "13/06 04:01",
+  "last_github_push_ts": 1781337661.906293,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
   "saldo": {
-    "cum_realised_pnl": -6835.82,
-    "cumPnL_unified_usd": -6835.82,
-    "unrealisedPnl": -44.94,
+    "cum_realised_pnl": -6835.71,
+    "cumPnL_unified_usd": -6835.71,
+    "unrealisedPnl": -42.56,
     "ts": "2026-06-02T20:05:00-04:00",
-    "progresso_vs_baseline_usd": -711.82,
-    "delta_vs_baseline": -711.82,
-    "pnl_fenix_desde_baseline": -711.82,
-    "updated_at": "2026-06-13T03:59:59-04:00"
+    "progresso_vs_baseline_usd": -711.71,
+    "delta_vs_baseline": -711.71,
+    "pnl_fenix_desde_baseline": -711.71,
+    "updated_at": "2026-06-13T04:01:01-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
-    "current_pnl": -6835.82,
-    "diff_usd": -711.82
+    "current_pnl": -6835.71,
+    "diff_usd": -711.71
   },
   "posicao_atual": {
     "side": "SHORT",
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_SHORT",
-    "markPrice": 63821.6,
-    "mark_price_atual": 63821.6,
-    "unrealised_pnl_usd": -44.94,
-    "unrealisedPnl": -44.94,
+    "markPrice": 63803.3,
+    "mark_price_atual": 63803.3,
+    "unrealised_pnl_usd": -42.56,
+    "unrealisedPnl": -42.56,
     "be_price": 63408.80834948,
     "liq_price": 65686.5,
     "tp2_target_estrutural": 49680.0,
-    "last_update": "2026-06-13T04:00:00-04:00",
-    "ts_snapshot": "2026-06-13T04:00:00-04:00"
+    "last_update": "2026-06-13T04:01:01-04:00",
+    "ts_snapshot": "2026-06-13T04:01:01-04:00"
   },
   "trades_recentes": [
     {
