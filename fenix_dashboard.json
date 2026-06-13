@@ -1,27 +1,27 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "13/06/2026 14:49:13",
-  "last_github_push": "13/06 14:49",
-  "last_github_push_ts": 1781376553.148478,
+  "ultimo_update": "13/06/2026 14:50:11",
+  "last_github_push": "13/06 14:50",
+  "last_github_push_ts": 1781376611.870383,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
   "saldo": {
-    "cum_realised_pnl": -6835.71,
-    "cumPnL_unified_usd": -6835.71,
-    "unrealisedPnl": -54.99,
+    "cum_realised_pnl": -6835.6,
+    "cumPnL_unified_usd": -6835.6,
+    "unrealisedPnl": -74.7,
     "ts": "2026-06-02T20:05:00-04:00",
-    "progresso_vs_baseline_usd": -711.71,
-    "delta_vs_baseline": -711.71,
-    "pnl_fenix_desde_baseline": -711.71,
-    "updated_at": "2026-06-13T08:21:42-04:00"
+    "progresso_vs_baseline_usd": -711.6,
+    "delta_vs_baseline": -711.6,
+    "pnl_fenix_desde_baseline": -711.6,
+    "updated_at": "2026-06-13T14:50:11-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
-    "current_pnl": -6835.71,
-    "diff_usd": -711.71
+    "current_pnl": -6835.6,
+    "diff_usd": -711.6
   },
   "posicao_atual": {
     "side": "SHORT",
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_SHORT",
-    "markPrice": 63898.8,
-    "mark_price_atual": 63898.8,
-    "unrealised_pnl_usd": -54.98,
-    "unrealisedPnl": -54.98,
-    "be_price": 63408.80834948,
+    "markPrice": 64050.41,
+    "mark_price_atual": 64050.41,
+    "unrealised_pnl_usd": -74.69,
+    "unrealisedPnl": -74.69,
+    "be_price": 63409.61379356,
     "liq_price": 65686.5,
     "tp2_target_estrutural": 49680.0,
-    "last_update": "2026-06-13T08:21:43-04:00",
-    "ts_snapshot": "2026-06-13T08:21:43-04:00"
+    "last_update": "2026-06-13T14:50:11-04:00",
+    "ts_snapshot": "2026-06-13T14:50:11-04:00"
   },
   "trades_recentes": [
     {
@@ -324,16 +324,6 @@
         "tier": "alto",
         "reason": "EARLY SHORT · SHORT precoce C-2 (retrace raso · baixa conviccao)",
         "decisao_pre_armada": "SE mark na zona 64681 (SHORT precoce C-2 (retrace raso · baixa conviccao)) + Camada2 TOPO 5m / rejeicao: SHORT EARLY qty 0.200 SL 65263.4 TP1 57498.9. AUTONOMA executa ordem_pronta (8/8 guards) dentro da LEI.",
-        "active": true,
-        "triggered": false,
-        "source": "espinha_fib_regions"
-      },
-      {
-        "price": 64049.9,
-        "direction": "above",
-        "tier": "alto",
-        "reason": "ALTERNATIVA_A SHORT · dual-count A (C-2 rasa topou 64372 retrace 22.3% -> C-3 cedo)",
-        "decisao_pre_armada": "SE mark na zona 64050 (dual-count A (C-2 rasa topou 64372 retrace 22.3% -> C-3 cedo)) + Camada2 TOPO 5m / rejeicao: SHORT ALTERNATIVA_A qty 0.200 SL 64564.9 TP1 57498.9. AUTONOMA executa ordem_pronta (8/8 guards) dentro da LEI.",
         "active": true,
         "triggered": false,
         "source": "espinha_fib_regions"
