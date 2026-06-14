@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "14/06/2026 17:19:36",
-  "last_github_push": "14/06 17:19",
-  "last_github_push_ts": 1781471976.2832792,
+  "ultimo_update": "14/06/2026 17:20:13",
+  "last_github_push": "14/06 17:20",
+  "last_github_push_ts": 1781472013.634669,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -16,7 +16,7 @@
     "progresso_vs_baseline_usd": -900.11,
     "delta_vs_baseline": -900.11,
     "pnl_fenix_desde_baseline": -900.11,
-    "updated_at": "2026-06-14T17:18:59-04:00"
+    "updated_at": "2026-06-14T17:20:12-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -48,9 +48,19 @@
     "liq_price": 65686.5,
     "tp2_target_estrutural": 49680.0,
     "last_update": "2026-06-14T17:17:52-04:00",
-    "ts_snapshot": "2026-06-14T17:19:00-04:00"
+    "ts_snapshot": "2026-06-14T17:20:13-04:00"
   },
   "trades_recentes": [
+    {
+      "timestamp": "2026-06-12T18:44:42",
+      "symbol": "BTCUSDT",
+      "side": "SHORT",
+      "entry_price": 63475.9,
+      "exit_price": 64891.9,
+      "quantity": 0.13,
+      "pnl_usd": -192.59,
+      "pnl_percent": -2.23
+    },
     {
       "timestamp": "2026-06-12T12:13:05",
       "symbol": "BTCUSDT",
@@ -319,16 +329,6 @@
         "source": "espinha_fib_regions"
       },
       {
-        "price": 64681.3,
-        "direction": "above",
-        "tier": "alto",
-        "reason": "EARLY SHORT · SHORT precoce C-2 (retrace raso · baixa conviccao)",
-        "decisao_pre_armada": "SE mark na zona 64681 (SHORT precoce C-2 (retrace raso · baixa conviccao)) + Camada2 TOPO 5m / rejeicao: SHORT EARLY qty 0.190 SL 65263.4 TP1 57498.9. AUTONOMA executa ordem_pronta (8/8 guards) dentro da LEI.",
-        "active": true,
-        "triggered": false,
-        "source": "espinha_fib_regions"
-      },
-      {
         "price": 77732.8,
         "direction": "above",
         "tier": "alto",
@@ -347,16 +347,6 @@
         "active": true,
         "triggered": false,
         "source": "espinha_fib_regions"
-      },
-      {
-        "price": 64747.0,
-        "direction": "above",
-        "tier": "alto",
-        "reason": "topo do dia 13/06 · rompimento confirma C-2 estende rumo 68146",
-        "decisao_pre_armada": "SE push > 64747 com volume: C-2 estende · acompanhar rumo a zona SHORT 68146. NAO short aqui (meio do repique) · esperar exaustao na zona. AUTONOMA dentro da LEI.",
-        "active": true,
-        "triggered": false,
-        "source": "boot_13jun_flip"
       }
     ]
   },
