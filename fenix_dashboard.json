@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "14/06/2026 10:29:00",
-  "last_github_push": "14/06 10:29",
-  "last_github_push_ts": 1781447340.859644,
+  "ultimo_update": "14/06/2026 10:30:05",
+  "last_github_push": "14/06 10:30",
+  "last_github_push_ts": 1781447405.331164,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -6835.51,
     "cumPnL_unified_usd": -6835.51,
-    "unrealisedPnl": -96.39,
+    "unrealisedPnl": -83.17,
     "ts": "2026-06-02T20:05:00-04:00",
     "progresso_vs_baseline_usd": -711.51,
     "delta_vs_baseline": -711.51,
     "pnl_fenix_desde_baseline": -711.51,
-    "updated_at": "2026-06-14T10:29:00-04:00"
+    "updated_at": "2026-06-14T10:30:04-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_SHORT",
-    "markPrice": 64217.4,
-    "mark_price_atual": 64217.4,
-    "unrealised_pnl_usd": -96.39,
-    "unrealisedPnl": -96.39,
+    "markPrice": 64115.8,
+    "mark_price_atual": 64115.8,
+    "unrealised_pnl_usd": -83.19,
+    "unrealisedPnl": -83.19,
     "be_price": 63410.32962831,
     "liq_price": 65686.5,
     "tp2_target_estrutural": 49680.0,
-    "last_update": "2026-06-14T10:29:00-04:00",
-    "ts_snapshot": "2026-06-14T10:29:00-04:00"
+    "last_update": "2026-06-14T10:30:05-04:00",
+    "ts_snapshot": "2026-06-14T10:30:05-04:00"
   },
   "trades_recentes": [
     {
@@ -404,16 +404,6 @@
         "tier": "alto",
         "reason": "topo do dia 13/06 · rompimento confirma C-2 estende rumo 68146",
         "decisao_pre_armada": "SE push > 64747 com volume: C-2 estende · acompanhar rumo a zona SHORT 68146. NAO short aqui (meio do repique) · esperar exaustao na zona. AUTONOMA dentro da LEI.",
-        "active": true,
-        "triggered": false,
-        "source": "boot_13jun_flip"
-      },
-      {
-        "price": 64185.0,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "ultimo HL 1H · perde = C-2 estendida falha / C-3 cedo revive (SHORT 0.13 ganha tracao)",
-        "decisao_pre_armada": "SE close 1H < 64185 + Camada2 TOPO 5m + volume: C-2 estendida abortou · C-3 retoma cedo · a SHORT 0.13 viva se justifica (segurar/gerir). Sem Camada2 TOPO, e so pullback. AUTONOMA dentro da LEI.",
         "active": true,
         "triggered": false,
         "source": "boot_13jun_flip"
