@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "14/06/2026 12:23:02",
-  "last_github_push": "14/06 12:23",
-  "last_github_push_ts": 1781454182.072278,
+  "ultimo_update": "14/06/2026 12:25:40",
+  "last_github_push": "14/06 12:25",
+  "last_github_push_ts": 1781454340.198865,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -6835.39,
     "cumPnL_unified_usd": -6835.39,
-    "unrealisedPnl": -79.36,
+    "unrealisedPnl": -87.24,
     "ts": "2026-06-02T20:05:00-04:00",
     "progresso_vs_baseline_usd": -711.39,
     "delta_vs_baseline": -711.39,
     "pnl_fenix_desde_baseline": -711.39,
-    "updated_at": "2026-06-14T12:23:01-04:00"
+    "updated_at": "2026-06-14T12:25:39-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_SHORT",
-    "markPrice": 64086.4,
-    "mark_price_atual": 64086.4,
-    "unrealised_pnl_usd": -79.36,
-    "unrealisedPnl": -79.36,
+    "markPrice": 64146.22,
+    "mark_price_atual": 64146.22,
+    "unrealised_pnl_usd": -87.14,
+    "unrealisedPnl": -87.14,
     "be_price": 63411.25956631,
     "liq_price": 65686.5,
     "tp2_target_estrutural": 49680.0,
-    "last_update": "2026-06-14T12:23:02-04:00",
-    "ts_snapshot": "2026-06-14T12:23:02-04:00"
+    "last_update": "2026-06-14T12:25:40-04:00",
+    "ts_snapshot": "2026-06-14T12:25:40-04:00"
   },
   "trades_recentes": [
     {
@@ -349,71 +349,11 @@
         "source": "espinha_fib_regions"
       },
       {
-        "price": 62545.6,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "piso corpo C-2 (0.146 C1_retr_p_C2_topo) · perde = C-2 fraca / C-3 cedo",
-        "decisao_pre_armada": "SE close 1H < este nivel: C-2 perde o corpo · risco de C-3 resumir cedo. Camada2 FUNDO aqui + score bear = avaliar breakdown short (continuacao). AUTONOMA dentro da LEI.",
-        "active": true,
-        "triggered": false,
-        "source": "espinha_fib_regions"
-      },
-      {
-        "price": 59081.0,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "C-1 low (suporte macro · base retracement C-2)",
-        "decisao_pre_armada": "SE perde C-1 low: C-3 confirmou resumir (rompeu o fundo da C-1). Camada2 FUNDO / continuacao short. AUTONOMA dentro da LEI.",
-        "active": true,
-        "triggered": false,
-        "source": "espinha_fib_regions"
-      },
-      {
-        "price": 57498.9,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "alvo C primario (0.382 alvos_C_down_de_A)",
-        "decisao_pre_armada": "SE mark em 57499 (alvo C primario): zona de TP/parcial da onda C down. Camada2 FUNDO 5m aqui = exaustao -> avaliar parcial/saida. AUTONOMA dentro da LEI.",
-        "active": true,
-        "triggered": false,
-        "source": "espinha_fib_regions"
-      },
-      {
-        "price": 49680.0,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "alvo C central (ima) (0.500 alvos_C_down_de_A)",
-        "decisao_pre_armada": "SE mark em 49680 (alvo C central (ima)): zona de TP/parcial da onda C down. Camada2 FUNDO 5m aqui = exaustao -> avaliar parcial/saida. AUTONOMA dentro da LEI.",
-        "active": true,
-        "triggered": false,
-        "source": "espinha_fib_regions"
-      },
-      {
-        "price": 41861.1,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "alvo C base (0.618 alvos_C_down_de_A)",
-        "decisao_pre_armada": "SE mark em 41861 (alvo C base): zona de TP/parcial da onda C down. Camada2 FUNDO 5m aqui = exaustao -> avaliar parcial/saida. AUTONOMA dentro da LEI.",
-        "active": true,
-        "triggered": false,
-        "source": "espinha_fib_regions"
-      },
-      {
         "price": 64747.0,
         "direction": "above",
         "tier": "alto",
         "reason": "topo do dia 13/06 · rompimento confirma C-2 estende rumo 68146",
         "decisao_pre_armada": "SE push > 64747 com volume: C-2 estende · acompanhar rumo a zona SHORT 68146. NAO short aqui (meio do repique) · esperar exaustao na zona. AUTONOMA dentro da LEI.",
-        "active": true,
-        "triggered": false,
-        "source": "boot_13jun_flip"
-      },
-      {
-        "price": 62810.0,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "low 12/06 · perde com vol = C-3 confirma rumo 60705/59081",
-        "decisao_pre_armada": "SE close 1H < 62810 com volume: C-3 down confirmada · rompe rumo 60705 -> 59081 (C-1 low). SHORT 0.13 colhe. AUTONOMA dentro da LEI.",
         "active": true,
         "triggered": false,
         "source": "boot_13jun_flip"
