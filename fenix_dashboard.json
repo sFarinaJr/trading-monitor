@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "14/06/2026 20:18:45",
-  "last_github_push": "14/06 20:18",
-  "last_github_push_ts": 1781482725.693745,
+  "ultimo_update": "14/06/2026 20:19:54",
+  "last_github_push": "14/06 20:19",
+  "last_github_push_ts": 1781482794.319554,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -85,7 +85,7 @@
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-06-13_WAVE_C_DOWN_C2_REABRE_FLIP_A_PARA_B_DCLOSE_64417_acima_fronteira_64372_SHORT_0.13_PREMATURO",
     "boot_ts": "2026-06-14T00:57:00-04:00",
-    "ultimo_update": "2026-06-14T20:09:15-0400",
+    "ultimo_update": "2026-06-14T20:19:34-0400",
     "status": "ACTIVE",
     "mark_at_boot": 64343.0,
     "mark_now": 64319.0,
@@ -195,27 +195,27 @@
         "lado": "SHORT",
         "direcao": "SHORT",
         "prioridade": "ALTERNATIVA_A",
-        "entry": 65441.2,
-        "sl": 65967.3,
+        "entry": 65569.7,
+        "sl": 66096.9,
         "tp1": 57498.9,
         "tp2": 49680.0,
-        "rr": 30.0,
+        "rr": 30.1,
         "qty_btc": 0.18,
         "tier": "T2",
         "macro_aligned": true,
-        "fib_role": "dual-count A (C-2 rasa topou 65770 retrace 28.2% -> C-3 cedo)",
-        "fib_label": "zona 65112-65770",
-        "trigger": "ALTERNATIVA do motor: zona 65112-65770 + Camada2 TOPO/rejeicao + confluencia>=2 -> SHORT. SL 65967.3 (topo C-2 real). close>65770 invalida (flip B).",
-        "invalidacao": "close > 65770 reabre a C-2 → ativa o cenário B (zona projetada)",
+        "fib_role": "dual-count A (C-2 rasa topou 65899 retrace 28.7% -> C-3 cedo)",
+        "fib_label": "zona 65240-65899",
+        "trigger": "ALTERNATIVA do motor: zona 65240-65899 + Camada2 TOPO/rejeicao + confluencia>=2 -> SHORT. SL 66096.9 (topo C-2 real). close>65899 invalida (flip B).",
+        "invalidacao": "close > 65899 reabre a C-2 → ativa o cenário B (zona projetada)",
         "ordem_pronta": {
           "category": "linear",
           "symbol": "BTCUSDT",
           "side": "Sell",
           "orderType": "Limit",
-          "price": "65441.2",
+          "price": "65569.7",
           "qty": "0.180",
           "orderLinkId": "fenix_short_dualA_ellstruct",
-          "stopLoss": "65967.3",
+          "stopLoss": "66096.9",
           "takeProfit": "57498.9",
           "tpslMode": "Partial",
           "tpSize": "0.050"
@@ -230,8 +230,18 @@
   "execution_mode": "AUTO",
   "manual_approval_required": true,
   "price_watch": {
-    "ts": "2026-06-14T20:09:15-0400",
+    "ts": "2026-06-14T20:19:56-0400",
     "levels": [
+      {
+        "price": 65783.1,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "PRIMARIA SHORT · projecao C-2 1.0×a (topo provável C-2)",
+        "decisao_pre_armada": "SE mark na zona 65783 (projecao C-2 1.0×a (topo provável C-2)) + Camada2 TOPO 5m / rejeicao: SHORT PRIMARIA qty 0.250 SL 66375.1 TP1 57498.9. AUTONOMA executa ordem_pronta (8/8 guards) dentro da LEI.",
+        "active": true,
+        "triggered": false,
+        "source": "espinha_fib_regions"
+      },
       {
         "price": 68977.3,
         "direction": "above",
@@ -243,11 +253,11 @@
         "source": "espinha_fib_regions"
       },
       {
-        "price": 65441.2,
+        "price": 65569.7,
         "direction": "above",
         "tier": "alto",
-        "reason": "ALTERNATIVA_A SHORT · dual-count A (C-2 rasa topou 65770 retrace 28.2% -> C-3 cedo)",
-        "decisao_pre_armada": "SE mark na zona 65441 (dual-count A (C-2 rasa topou 65770 retrace 28.2% -> C-3 cedo)) + Camada2 TOPO 5m / rejeicao: SHORT ALTERNATIVA_A qty 0.180 SL 65967.3 TP1 57498.9. AUTONOMA executa ordem_pronta (8/8 guards) dentro da LEI.",
+        "reason": "ALTERNATIVA_A SHORT · dual-count A (C-2 rasa topou 65899 retrace 28.7% -> C-3 cedo)",
+        "decisao_pre_armada": "SE mark na zona 65570 (dual-count A (C-2 rasa topou 65899 retrace 28.7% -> C-3 cedo)) + Camada2 TOPO 5m / rejeicao: SHORT ALTERNATIVA_A qty 0.180 SL 66096.9 TP1 57498.9. AUTONOMA executa ordem_pronta (8/8 guards) dentro da LEI.",
         "active": true,
         "triggered": false,
         "source": "espinha_fib_regions"
