@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "16/06/2026 04:57:04",
-  "last_github_push": "16/06 04:57",
-  "last_github_push_ts": 1781600224.348473,
+  "ultimo_update": "16/06/2026 04:58:11",
+  "last_github_push": "16/06 04:58",
+  "last_github_push_ts": 1781600291.537239,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -16,7 +16,7 @@
     "progresso_vs_baseline_usd": -987.21,
     "delta_vs_baseline": -987.21,
     "pnl_fenix_desde_baseline": -987.21,
-    "updated_at": "2026-06-16T04:57:03-04:00"
+    "updated_at": "2026-06-16T04:58:10-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -48,7 +48,7 @@
     "liq_price": null,
     "tp2_target_estrutural": null,
     "last_update": "2026-06-15T20:13:21.931541-04:00",
-    "ts_snapshot": "2026-06-16T04:57:04-04:00"
+    "ts_snapshot": "2026-06-16T04:58:11-04:00"
   },
   "trades_recentes": [
     {
@@ -281,16 +281,6 @@
         "tier": "alto",
         "reason": "SECUNDARIA SHORT · projecao C-2 1.618×a (C-2 estendida)",
         "decisao_pre_armada": "SE mark na zona 68977 (projecao C-2 1.618×a (C-2 estendida)) + Camada2 TOPO 5m / rejeicao: SHORT SECUNDARIA qty 0.170 SL 69598.1 TP1 57498.9. AUTONOMA executa ordem_pronta (8/8 guards) dentro da LEI.",
-        "active": true,
-        "triggered": false,
-        "source": "espinha_fib_regions"
-      },
-      {
-        "price": 66939.6,
-        "direction": "above",
-        "tier": "alto",
-        "reason": "ALTERNATIVA_A SHORT · dual-count A (C-2 rasa topou 67276 retrace 34.5% -> C-3 cedo)",
-        "decisao_pre_armada": "SE mark na zona 66940 (dual-count A (C-2 rasa topou 67276 retrace 34.5% -> C-3 cedo)) + Camada2 TOPO 5m / rejeicao: SHORT ALTERNATIVA_A qty 0.170 SL 67477.8 TP1 57498.9. AUTONOMA executa ordem_pronta (8/8 guards) dentro da LEI.",
         "active": true,
         "triggered": false,
         "source": "espinha_fib_regions"
