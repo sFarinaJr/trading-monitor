@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "15/06/2026 22:28:56",
-  "last_github_push": "15/06 22:28",
-  "last_github_push_ts": 1781576936.023239,
+  "ultimo_update": "15/06/2026 22:29:59",
+  "last_github_push": "15/06 22:29",
+  "last_github_push_ts": 1781576999.820286,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -16,7 +16,7 @@
     "progresso_vs_baseline_usd": -987.21,
     "delta_vs_baseline": -987.21,
     "pnl_fenix_desde_baseline": -987.21,
-    "updated_at": "2026-06-15T22:28:54-04:00"
+    "updated_at": "2026-06-15T22:29:59-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -48,7 +48,7 @@
     "liq_price": null,
     "tp2_target_estrutural": null,
     "last_update": "2026-06-15T20:13:21.931541-04:00",
-    "ts_snapshot": "2026-06-15T22:28:55-04:00"
+    "ts_snapshot": "2026-06-15T22:29:59-04:00"
   },
   "trades_recentes": [
     {
@@ -275,16 +275,6 @@
   "price_watch": {
     "ts": "2026-06-15T20:13:57-04:00",
     "levels": [
-      {
-        "price": 65783.1,
-        "direction": "above",
-        "tier": "alto",
-        "reason": "PRIMARIA SHORT · projecao C-2 1.0×a (topo provável C-2)",
-        "decisao_pre_armada": "SE mark na zona 65783 (projecao C-2 1.0×a (topo provável C-2)) + Camada2 TOPO 5m / rejeicao: SHORT PRIMARIA qty 0.250 SL 66375.1 TP1 57498.9. AUTONOMA executa ordem_pronta (8/8 guards) dentro da LEI.",
-        "active": true,
-        "triggered": false,
-        "source": "espinha_fib_regions"
-      },
       {
         "price": 68977.3,
         "direction": "above",
