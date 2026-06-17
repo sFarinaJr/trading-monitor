@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "16/06/2026 21:11:07",
+  "ultimo_update": "16/06/2026 21:11:29",
   "last_github_push": "16/06 21:11",
-  "last_github_push_ts": 1781658667.5411909,
+  "last_github_push_ts": 1781658689.934069,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -94,7 +94,7 @@
   ],
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-06-15_WAVE_C_DOWN_C2_perna_c_TOPOU_67276_recuo_zona_short_exaustao_67-69k_FLAT_killswitch_BLOCKED_v1",
-    "boot_ts": "2026-06-15T20:13:21.931541-04:00",
+    "boot_ts": "2026-06-16T20:05:29-04:00",
     "ultimo_update": "2026-06-16T20:05:29-04:00",
     "status": "ACTIVE",
     "mark_at_boot": 66333.0,
