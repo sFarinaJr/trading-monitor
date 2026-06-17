@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "17/06/2026 06:56:18",
+  "ultimo_update": "17/06/2026 06:56:47",
   "last_github_push": "17/06 06:56",
-  "last_github_push_ts": 1781693778.740084,
+  "last_github_push_ts": 1781693807.145668,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -95,7 +95,7 @@
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-06-15_WAVE_C_DOWN_C2_perna_c_TOPOU_67276_recuo_zona_short_exaustao_67-69k_FLAT_killswitch_BLOCKED_v1",
     "boot_ts": "2026-06-16T20:05:29-04:00",
-    "ultimo_update": "2026-06-16T20:05:29-04:00",
+    "ultimo_update": "2026-06-17T06:56:24-04:00",
     "status": "ACTIVE",
     "mark_at_boot": 66333.0,
     "mark_now": 66333.0,
@@ -265,6 +265,18 @@
         },
         "source": "boot_15jun_topo_c2_atualizado",
         "derivado_de": "perna c topo realizado 67276 + zona exaustao"
+      },
+      {
+        "tipo": "SHORT_C3_continuacao_retest",
+        "direcao": "SHORT",
+        "entry": 65564.0,
+        "sl": 66200.0,
+        "tp1": 57498.9,
+        "tp2": 49680.0,
+        "tier": "T3",
+        "trigger": "C-3 CONFIRMADA (gate 65564 rompido no close + follow-through 64805). SHORT no RETEST do gate rompido (65564) como resistencia + rejeicao 5m. SL 66200 (validado por sl_struct no fill: >= swing_high(20x1H)+0.6%). Alvo 57499->49680. Entry alternativa: lower-high de C-3 quando swing_high resetar e SL estrutural couber no cap 1.5%.",
+        "armado_em": "2026-06-17T06:56:24-04:00",
+        "nota": "continuacao C-3 · so dispara em retest/lower-high com SL estrutural valido · NAO chasar o freefall"
       }
     ],
     "ponto_nao_retorno": "BEAR MACRO invalida TOTAL: close D > 82811. ONDA C-2 invalida (recount Espinha): close > 77733 (0.786 retrace C-1). C-2 e a onda de trabalho VIVA · perna c topou 67276 (entre proj 1.0xa 65783 e 1.618xa 68977). C-3 down so se confirma APOS o topo da C-2 (exaustao 5m + reversao OU close 1H < 65564 piso iv). Suporte: piso iv 65564 (break confirma C-3) · low 12/06 62810 · piso corpo C-2 62546 · C-1 low 59081 (base da C-2). Resistencia/zona-short: 67276 (PRIMARIA · topo feito) · 68146 (0.382 C-1) · 68977 (SECUNDARIA 1.618xa) · 70946 (0.5 C-1) · 73746 (0.618 C-1).",
@@ -354,6 +366,16 @@
         "active": true,
         "triggered": false,
         "source": "espinha_fib_regions"
+      },
+      {
+        "price": 65564.0,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "C-3 RETEST SHORT · gate rompido vira resistencia · short na rejeicao (SL estrutural >66200)",
+        "decisao_pre_armada": "SE mark retesta 65564 (gate rompido) + rejeicao 5m + SL estrutural valido (cap 1.5%): SHORT C-3 continuacao qty conforme sizing T3 risco<=6%. Senao aguardar lower-high com swing_high resetado.",
+        "active": true,
+        "triggered": false,
+        "source": "claude_c3_continuacao_17jun"
       }
     ]
   },
