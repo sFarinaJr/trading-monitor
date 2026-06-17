@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "17/06/2026 14:42:44",
-  "last_github_push": "17/06 14:42",
-  "last_github_push_ts": 1781721764.8546429,
+  "ultimo_update": "17/06/2026 14:43:47",
+  "last_github_push": "17/06 14:43",
+  "last_github_push_ts": 1781721827.060807,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -16,7 +16,7 @@
     "progresso_vs_baseline_usd": -987.21,
     "delta_vs_baseline": -987.21,
     "pnl_fenix_desde_baseline": -987.21,
-    "updated_at": "2026-06-17T14:42:44-04:00"
+    "updated_at": "2026-06-17T14:43:46-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -48,7 +48,7 @@
     "liq_price": null,
     "tp2_target_estrutural": null,
     "last_update": "2026-06-15T20:13:21.931541-04:00",
-    "ts_snapshot": "2026-06-17T14:42:44-04:00"
+    "ts_snapshot": "2026-06-17T14:43:46-04:00"
   },
   "trades_recentes": [
     {
@@ -368,6 +368,16 @@
         "active": true,
         "triggered": false,
         "source": "espinha_fib_regions"
+      },
+      {
+        "price": 64529.6,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "DISCRIMINADOR dual-count · fundo b da C-2 (inicio do c-leg do motor) · separa C-2-done(C-3 down) vs c-to-72k",
+        "decisao_pre_armada": "SE close 1H < 64529.6 (fundo b): C-3 DOWN CONFIRMADA (contagem C-2-done vence · o c-leg do motor INVALIDA pois nao pode fechar abaixo do proprio inicio). ACAO SISTEMATICA: (1) disparar RECOUNT da Espinha (wake espinha_invalidacao) p/ realinhar a tese a C-3 down; (2) ARMAR SHORT C-3 na RETEST bounce de resistencia rompida (65564 / 64529) + Camada2 TOPO/rejeicao + confluencia>=2, SL ESTRUTURAL acima (swing_high 20x1H +0.6% · cap 1.5%), qty T2/T3 risco<=6%, alvos 57499/49680/41861. NAO chasar o breakdown (SL largo · sem edge). Vender o REPIQUE (exaustao no topo do bounce de C-3). ALERT_ONLY: Claude valida retest+SL no fill, mas o GATILHO e do watcher.",
+        "active": true,
+        "triggered": false,
+        "source": "claude_discriminador_dualcount_17jun"
       }
     ]
   },
