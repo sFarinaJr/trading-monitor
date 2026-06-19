@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "19/06/2026 04:57:58",
-  "last_github_push": "19/06 04:57",
-  "last_github_push_ts": 1781859478.3035321,
+  "ultimo_update": "19/06/2026 04:59:08",
+  "last_github_push": "19/06 04:59",
+  "last_github_push_ts": 1781859548.9934669,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -7125.01,
     "cumPnL_unified_usd": -7125.01,
-    "unrealisedPnl": 1187.3,
+    "unrealisedPnl": 1185.29,
     "ts": "2026-06-14T20:22:14-0400",
     "progresso_vs_baseline_usd": -1001.01,
     "delta_vs_baseline": -1001.01,
     "pnl_fenix_desde_baseline": -1001.01,
-    "updated_at": "2026-06-19T04:57:57-04:00"
+    "updated_at": "2026-06-19T04:59:08-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_SHORT",
-    "markPrice": 62540.87,
-    "mark_price_atual": 62540.87,
-    "unrealised_pnl_usd": 1187.3,
-    "unrealisedPnl": 1187.3,
+    "markPrice": 62543.39,
+    "mark_price_atual": 62543.39,
+    "unrealised_pnl_usd": 1185.29,
+    "unrealisedPnl": 1185.29,
     "be_price": 63970.48064087,
     "liq_price": 66254.7,
     "tp2_target_estrutural": 58000.0,
-    "last_update": "2026-06-19T04:57:58-04:00",
-    "ts_snapshot": "2026-06-19T04:57:58-04:00"
+    "last_update": "2026-06-19T04:59:08-04:00",
+    "ts_snapshot": "2026-06-19T04:59:08-04:00"
   },
   "trades_recentes": [
     {
@@ -197,7 +197,7 @@
   "execution_mode": "AUTO",
   "manual_approval_required": true,
   "price_watch": {
-    "ts": "2026-06-19T04:54:07-04:00",
+    "ts": "2026-06-19T04:58:23-04:00",
     "levels": [
       {
         "price": 64031.6,
@@ -268,86 +268,6 @@
         "active": true,
         "triggered": false,
         "source": "espinha_fib_regions"
-      },
-      {
-        "price": 57498.9,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "Alvo C primario (0.382A) · perna down",
-        "decisao_pre_armada": "ALERTA: alvo C primario atingido. Avisar Claude pra avaliar gestao do SL do SHORT user (apertar trail / parcial NAO · so SL por instrucao). NAO coloca ordem.",
-        "active": true,
-        "triggered": false,
-        "source": "boot_18jun_monitor"
-      },
-      {
-        "price": 49680.0,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "Alvo C central / ima (0.5A)",
-        "decisao_pre_armada": "ALERTA: alvo central da onda C (ima). Zona de objetivo do SHORT user. Avisar Claude pra reavaliar SL/saida. NAO coloca ordem (so SL · instrucao user).",
-        "active": true,
-        "triggered": false,
-        "source": "boot_18jun_monitor"
-      },
-      {
-        "price": 59081.0,
-        "direction": "below",
-        "tier": "medio",
-        "reason": "C-1 low ancora · suporte intermediario",
-        "decisao_pre_armada": "ALERTA: testou fundo da C-1 (ancora). Continuacao da perna down. Avisar Claude (gestao SL). NAO coloca ordem.",
-        "active": true,
-        "triggered": false,
-        "source": "boot_18jun_monitor"
-      },
-      {
-        "price": 62216.0,
-        "direction": "below",
-        "tier": "medio",
-        "reason": "Fundo do dia 18/06 · break = continuacao down",
-        "decisao_pre_armada": "ALERTA: rompeu fundo do dia = continuacao bear confirmada. Avisar (gestao SL trail). NAO coloca ordem.",
-        "active": true,
-        "triggered": false,
-        "source": "boot_18jun_monitor"
-      },
-      {
-        "price": 64681.0,
-        "direction": "above",
-        "tier": "alto",
-        "reason": "0.236 retr C-1 / zona repique onda-4 · risco SL short user",
-        "decisao_pre_armada": "ALERTA: repique de onda-4 ate 0.236 retr C-1. SL user 63934 esta ABAIXO desta zona. Avisar Claude pra NAO apertar SL pra dentro do bounce e reavaliar folga. Repique nao invalida tese. NAO coloca ordem.",
-        "active": true,
-        "triggered": false,
-        "source": "boot_18jun_monitor"
-      },
-      {
-        "price": 66154.0,
-        "direction": "above",
-        "tier": "medio",
-        "reason": "EMA20 D · resistencia repique",
-        "decisao_pre_armada": "ALERTA: repique alcancou EMA20 D. Avisar Claude (gestao SL). NAO coloca ordem.",
-        "active": true,
-        "triggered": false,
-        "source": "boot_18jun_monitor"
-      },
-      {
-        "price": 67276.0,
-        "direction": "above",
-        "tier": "alto",
-        "reason": "Topo C-2 realizado · break reabre debate",
-        "decisao_pre_armada": "ALERTA: voltou ao topo C-2. Avisar Claude pra reavaliar contagem (mas so close>77733 inval onda). NAO coloca ordem.",
-        "active": true,
-        "triggered": false,
-        "source": "boot_18jun_monitor"
-      },
-      {
-        "price": 77733.0,
-        "direction": "above",
-        "tier": "alto",
-        "reason": "Limite C-2 (0.786 C-1) · close>aqui = RECOUNT Espinha",
-        "decisao_pre_armada": "CRITICO: close > 77733 invalida onda C-2 -> disparar RECOUNT Espinha (limpar lock tree.json) + skill fenix-analise-macro. Avisar Claude. NAO coloca ordem.",
-        "active": true,
-        "triggered": false,
-        "source": "boot_18jun_monitor"
       }
     ]
   },
