@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "19/06/2026 06:57:39",
-  "last_github_push": "19/06 06:57",
-  "last_github_push_ts": 1781866659.5798242,
+  "ultimo_update": "19/06/2026 06:58:21",
+  "last_github_push": "19/06 06:58",
+  "last_github_push_ts": 1781866701.998731,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -7125.01,
     "cumPnL_unified_usd": -7125.01,
-    "unrealisedPnl": 1172.8,
+    "unrealisedPnl": 1194.98,
     "ts": "2026-06-14T20:22:14-0400",
     "progresso_vs_baseline_usd": -1001.01,
     "delta_vs_baseline": -1001.01,
     "pnl_fenix_desde_baseline": -1001.01,
-    "updated_at": "2026-06-19T06:57:11-04:00"
+    "updated_at": "2026-06-19T06:58:21-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_SHORT",
-    "markPrice": 62557.28,
-    "mark_price_atual": 62557.28,
-    "unrealised_pnl_usd": 1174.18,
-    "unrealisedPnl": 1174.18,
+    "markPrice": 62530.03,
+    "mark_price_atual": 62530.03,
+    "unrealised_pnl_usd": 1195.98,
+    "unrealisedPnl": 1195.98,
     "be_price": 63970.48064087,
     "liq_price": 66254.7,
     "tp2_target_estrutural": 58000.0,
-    "last_update": "2026-06-19T06:57:12-04:00",
-    "ts_snapshot": "2026-06-19T06:57:12-04:00"
+    "last_update": "2026-06-19T06:58:21-04:00",
+    "ts_snapshot": "2026-06-19T06:58:21-04:00"
   },
   "trades_recentes": [
     {
