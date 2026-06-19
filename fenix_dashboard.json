@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "19/06/2026 02:42:19",
-  "last_github_push": "19/06 02:42",
-  "last_github_push_ts": 1781851339.927066,
+  "ultimo_update": "19/06/2026 02:43:14",
+  "last_github_push": "19/06 02:43",
+  "last_github_push_ts": 1781851394.850923,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -7123.27,
     "cumPnL_unified_usd": -7123.27,
-    "unrealisedPnl": 1038.96,
+    "unrealisedPnl": 1009.76,
     "ts": "2026-06-14T20:22:14-0400",
     "progresso_vs_baseline_usd": -999.27,
     "delta_vs_baseline": -999.27,
     "pnl_fenix_desde_baseline": -999.27,
-    "updated_at": "2026-06-19T02:42:03-04:00"
+    "updated_at": "2026-06-19T02:43:14-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_SHORT",
-    "markPrice": 62726.3,
-    "mark_price_atual": 62726.3,
-    "unrealised_pnl_usd": 1038.96,
-    "unrealisedPnl": 1038.96,
+    "markPrice": 62762.7,
+    "mark_price_atual": 62762.7,
+    "unrealised_pnl_usd": 1009.84,
+    "unrealisedPnl": 1009.84,
     "be_price": 63972.66319859,
     "liq_price": 66254.7,
     "tp2_target_estrutural": 58000.0,
-    "last_update": "2026-06-19T02:42:03-04:00",
-    "ts_snapshot": "2026-06-19T02:42:03-04:00"
+    "last_update": "2026-06-19T02:43:14-04:00",
+    "ts_snapshot": "2026-06-19T02:43:14-04:00"
   },
   "trades_recentes": [
     {
@@ -144,6 +144,27 @@
       }
     },
     "setups_pre_armados": [
+      {
+        "tipo": "GESTAO_SHORT_user_babysit",
+        "lado": "SHORT",
+        "direcao": "SHORT",
+        "prioridade": "PRIMARIA (gestao · NAO e ordem nova)",
+        "entry": 64025.0,
+        "sl": 63934.0,
+        "tp1": 57498.9,
+        "tp2": 49680.0,
+        "rr": "alto (lucro travado)",
+        "qty_btc": 0.8,
+        "tier": "user",
+        "macro_aligned": true,
+        "fib_role": "perna down de C (a-favor macro · C-3 ELEITA)",
+        "trigger": "POSICAO JA ABERTA (SHORT user 0.8 @64025 · babysit LEI #32). GESTAO: SO stop loss · trail SL estrutural conforme C-3 down avanca rumo 59081->49680. INSTRUCAO USER 18/06: SO stop loss · SEM parcial/long/scaling/ordem nova. Claude principal gerencia.",
+        "invalidacao": "close > 67276 destrava C-2 · close > 77733 recount · close D > 82811 macro",
+        "ativo": true,
+        "auto_execute": false,
+        "source": "manual_babysit",
+        "nota": "NAO e ordem a colocar · posicao do user em gestao defensiva SL-only. ZERO place_order. source=manual_babysit (sobrevive a bridge)."
+      },
       {
         "tipo": "SHORT_C3_continuacao",
         "lado": "SHORT",
