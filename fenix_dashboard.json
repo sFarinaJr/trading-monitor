@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "18/06/2026 20:16:53",
-  "last_github_push": "18/06 20:16",
-  "last_github_push_ts": 1781828213.186871,
+  "ultimo_update": "18/06/2026 20:17:46",
+  "last_github_push": "18/06 20:17",
+  "last_github_push_ts": 1781828266.769087,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -192,77 +192,97 @@
   "execution_mode": "AUTO",
   "manual_approval_required": true,
   "price_watch": {
-    "ts": "2026-06-15T20:13:57-04:00",
+    "ts": "2026-06-18T20:09:00-04:00",
     "levels": [
-      {
-        "price": 68977.3,
-        "direction": "above",
-        "tier": "alto",
-        "reason": "SECUNDARIA SHORT · projecao C-2 1.618×a (C-2 estendida)",
-        "decisao_pre_armada": "SE mark na zona 68977 (projecao C-2 1.618×a (C-2 estendida)) + Camada2 TOPO 5m / rejeicao: SHORT SECUNDARIA qty 0.170 SL 69598.1 TP1 57498.9. AUTONOMA executa ordem_pronta (8/8 guards) dentro da LEI.",
-        "active": true,
-        "triggered": false,
-        "source": "espinha_fib_regions"
-      },
-      {
-        "price": 77732.8,
-        "direction": "above",
-        "tier": "alto",
-        "reason": "limite C-2 (0.786 C1_retr_p_C2_topo) · RECOUNT se romper",
-        "decisao_pre_armada": "SE close > este nivel: C-2 estourou o limite Fib · forcar RECOUNT Espinha (limpar lock tree.json). AUTONOMA re-valida dentro da LEI.",
-        "active": true,
-        "triggered": false,
-        "source": "espinha_fib_regions"
-      },
-      {
-        "price": 82811.0,
-        "direction": "above",
-        "tier": "alto",
-        "reason": "INVALIDACAO TOTAL macro (close D)",
-        "decisao_pre_armada": "SE close D > este nivel: tese ABC bearish MORRE · skill fenix-analise-macro + RECOUNT. AUTONOMA re-valida/documenta dentro da LEI.",
-        "active": true,
-        "triggered": false,
-        "source": "espinha_fib_regions"
-      },
-      {
-        "price": 59081.0,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "C-1 low (suporte macro · base retracement C-2)",
-        "decisao_pre_armada": "SE perde C-1 low: C-3 confirmou resumir (rompeu o fundo da C-1). Camada2 FUNDO / continuacao short. AUTONOMA dentro da LEI.",
-        "active": true,
-        "triggered": false,
-        "source": "espinha_fib_regions"
-      },
       {
         "price": 57498.9,
         "direction": "below",
         "tier": "alto",
-        "reason": "alvo C primario (0.382 alvos_C_down_de_A)",
-        "decisao_pre_armada": "SE mark em 57499 (alvo C primario): zona de TP/parcial da onda C down. Camada2 FUNDO 5m aqui = exaustao -> avaliar parcial/saida. AUTONOMA dentro da LEI.",
+        "reason": "Alvo C primario (0.382A) · perna down",
+        "decisao_pre_armada": "ALERTA: alvo C primario atingido. Avisar Claude pra avaliar gestao do SL do SHORT user (apertar trail / parcial NAO · so SL por instrucao). NAO coloca ordem.",
         "active": true,
         "triggered": false,
-        "source": "espinha_fib_regions"
+        "source": "boot_18jun_monitor"
       },
       {
         "price": 49680.0,
         "direction": "below",
         "tier": "alto",
-        "reason": "alvo C central (ima) (0.500 alvos_C_down_de_A)",
-        "decisao_pre_armada": "SE mark em 49680 (alvo C central (ima)): zona de TP/parcial da onda C down. Camada2 FUNDO 5m aqui = exaustao -> avaliar parcial/saida. AUTONOMA dentro da LEI.",
+        "reason": "Alvo C central / ima (0.5A)",
+        "decisao_pre_armada": "ALERTA: alvo central da onda C (ima). Zona de objetivo do SHORT user. Avisar Claude pra reavaliar SL/saida. NAO coloca ordem (so SL · instrucao user).",
         "active": true,
         "triggered": false,
-        "source": "espinha_fib_regions"
+        "source": "boot_18jun_monitor"
       },
       {
-        "price": 41861.1,
+        "price": 59081.0,
         "direction": "below",
-        "tier": "alto",
-        "reason": "alvo C base (0.618 alvos_C_down_de_A)",
-        "decisao_pre_armada": "SE mark em 41861 (alvo C base): zona de TP/parcial da onda C down. Camada2 FUNDO 5m aqui = exaustao -> avaliar parcial/saida. AUTONOMA dentro da LEI.",
+        "tier": "medio",
+        "reason": "C-1 low ancora · suporte intermediario",
+        "decisao_pre_armada": "ALERTA: testou fundo da C-1 (ancora). Continuacao da perna down. Avisar Claude (gestao SL). NAO coloca ordem.",
         "active": true,
         "triggered": false,
-        "source": "espinha_fib_regions"
+        "source": "boot_18jun_monitor"
+      },
+      {
+        "price": 62216.0,
+        "direction": "below",
+        "tier": "medio",
+        "reason": "Fundo do dia 18/06 · break = continuacao down",
+        "decisao_pre_armada": "ALERTA: rompeu fundo do dia = continuacao bear confirmada. Avisar (gestao SL trail). NAO coloca ordem.",
+        "active": true,
+        "triggered": false,
+        "source": "boot_18jun_monitor"
+      },
+      {
+        "price": 64681.0,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "0.236 retr C-1 / zona repique onda-4 · risco SL short user",
+        "decisao_pre_armada": "ALERTA: repique de onda-4 ate 0.236 retr C-1. SL user 63934 esta ABAIXO desta zona. Avisar Claude pra NAO apertar SL pra dentro do bounce e reavaliar folga. Repique nao invalida tese. NAO coloca ordem.",
+        "active": true,
+        "triggered": false,
+        "source": "boot_18jun_monitor"
+      },
+      {
+        "price": 66154.0,
+        "direction": "above",
+        "tier": "medio",
+        "reason": "EMA20 D · resistencia repique",
+        "decisao_pre_armada": "ALERTA: repique alcancou EMA20 D. Avisar Claude (gestao SL). NAO coloca ordem.",
+        "active": true,
+        "triggered": false,
+        "source": "boot_18jun_monitor"
+      },
+      {
+        "price": 67276.0,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "Topo C-2 realizado · break reabre debate",
+        "decisao_pre_armada": "ALERTA: voltou ao topo C-2. Avisar Claude pra reavaliar contagem (mas so close>77733 inval onda). NAO coloca ordem.",
+        "active": true,
+        "triggered": false,
+        "source": "boot_18jun_monitor"
+      },
+      {
+        "price": 77733.0,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "Limite C-2 (0.786 C-1) · close>aqui = RECOUNT Espinha",
+        "decisao_pre_armada": "CRITICO: close > 77733 invalida onda C-2 -> disparar RECOUNT Espinha (limpar lock tree.json) + skill fenix-analise-macro. Avisar Claude. NAO coloca ordem.",
+        "active": true,
+        "triggered": false,
+        "source": "boot_18jun_monitor"
+      },
+      {
+        "price": 82811.0,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "Topo B · invalida macro TOTAL (close D)",
+        "decisao_pre_armada": "CRITICO: close D > 82811 invalida bear macro TOTAL -> recount completo. MUITO longe. Avisar Claude. NAO coloca ordem.",
+        "active": true,
+        "triggered": false,
+        "source": "boot_18jun_monitor"
       }
     ]
   },
