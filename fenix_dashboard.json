@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "20/06/2026 08:44:21",
-  "last_github_push": "20/06 08:44",
-  "last_github_push_ts": 1781959461.999937,
+  "ultimo_update": "20/06/2026 08:45:02",
+  "last_github_push": "20/06 08:45",
+  "last_github_push_ts": 1781959502.970936,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -16,7 +16,7 @@
     "progresso_vs_baseline_usd": -939.43,
     "delta_vs_baseline": -939.43,
     "pnl_fenix_desde_baseline": -939.43,
-    "updated_at": "2026-06-20T08:44:00-04:00"
+    "updated_at": "2026-06-20T08:45:02-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -48,7 +48,7 @@
     "liq_price": 66254.7,
     "tp2_target_estrutural": 57730.0,
     "last_update": "2026-06-20T01:13:36-04:00",
-    "ts_snapshot": "2026-06-20T08:44:01-04:00"
+    "ts_snapshot": "2026-06-20T08:45:02-04:00"
   },
   "trades_recentes": [
     {
@@ -115,7 +115,7 @@
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-06-19_WAVE_C_C3_DOWN_em_curso_C32_estendeu_acima_63397_topo_C2_67276_mark63535_alvo_57499_49680_SHORT_user_babysit_SL_only_v1",
     "boot_ts": "2026-06-19T20:02:25-04:00",
-    "ultimo_update": "2026-06-20T08:39:16-04:00",
+    "ultimo_update": "2026-06-20T08:44:23-04:00",
     "status": "ACTIVE",
     "mark_at_boot": 63535.44,
     "mark_now": 63535.44,
@@ -159,8 +159,8 @@
         "lado": "SHORT",
         "direcao": "SHORT",
         "prioridade": "PRIMARIA",
-        "entry": 64719.5,
-        "sl": 65574.5,
+        "entry": 64731.6,
+        "sl": 65585.4,
         "tp1": 59081.4,
         "tp2": 49680.0,
         "rr": 17.6,
@@ -169,12 +169,12 @@
         "macro_aligned": true,
         "alert_only": true,
         "zona": [
-          64449.4,
-          64989.6
+          64462.8,
+          65000.4
         ],
         "fib_role": "continuacao C-3 (pullback raso 0.236-0.382)",
-        "fib_label": "C-3 pullback 64449-64990",
-        "trigger": "ALERTA-ONLY · C-2 TRAVADA no topo 67276 (passado) · C-3 DOWN em curso. Zona de short de CONTINUAÇÃO no pullback raso 64449-64990 a-favor do macro DOWN. Camada2 TOPO/rejeição aqui = exaustão do repique → contexto p/ short C-3 (alvo 59081 C-1 low → 49680). NÃO reabrir short de retrace-C2 (topo passado). NÃO auto-executa (gestão = SL-only do short vigente).",
+        "fib_label": "C-3 pullback 64463-65000",
+        "trigger": "ALERTA-ONLY · C-2 TRAVADA no topo 67276 (passado) · C-3 DOWN em curso. Zona de short de CONTINUAÇÃO no pullback raso 64463-65000 a-favor do macro DOWN. Camada2 TOPO/rejeição aqui = exaustão do repique → contexto p/ short C-3 (alvo 59081 C-1 low → 49680). NÃO reabrir short de retrace-C2 (topo passado). NÃO auto-executa (gestão = SL-only do short vigente).",
         "invalidacao": "close > 67276 DESTRAVA a C-2 (volta contagem conservadora · C-2 ainda subindo) · close > 82811 invalida macro",
         "source": "espinha_c3_continuacao",
         "derivado_de": "tree.onda_de_trabalho.plano_trade.entrada_primaria (modo_c3)"
