@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="fenix.png">
+    <title>FÊNIX — Especialista em trade alavancado 25× · BTC</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-primary: #0f172a;
+            --bg-secondary: #1e293b;
+            --bg-card: #1e293b;
+            --border: #334155;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --accent-blue: #3b82f6;
+            --positive: #10b981;
+            --negative: #ef4444;
+            --warning: #f59e0b;
+            --neutral: #6b7280;
+            color-scheme: dark;
+        }
+        body {
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace;
+            padding: 16px;
+            min-height: 100vh;
+            line-height: 1.5;
+        }
+        .container { max-width: 1100px; margin: 0 auto; }
+        header {
+            background: var(--bg-card);
+            padding: 20px 24px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .logo {
+            width: 56px;
+            height: 56px;
+            border-radius: 8px;
+            object-fit: contain;
+            background: var(--bg-primary);
+            padding: 4px;
+            border: 1px solid var(--border);
+        }
+        h1 {
+            font-size: 22px;
+            color: var(--text-primary);
+            line-height: 1.2;
+        }
+        h1 .subtitle {
+            display: block;
+            font-size: 12px;
+            font-weight: 400;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+        .header-meta {
+            font-size: 12px;
+            color: var(--text-secondary);
+            text-align: right;
+        }
+        .header-meta .status {
+            color: var(--positive);
+            font-weight: 600;
+        }
+        .header-meta .status.error { color: var(--negative); }
+        .header-meta .status.loading { color: var(--warning); }
+
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-bottom: 16px;
+        }
+        .card-title {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .mission { padding: 24px 28px; }
+        .mission-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 24px;
+            margin-bottom: 16px;
+        }
+        .mission-stat {
+            text-align: center;
+        }
+        .mission-stat .label {
+            font-size: 11px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .mission-stat .value {
+            font-size: 28px;
+            font-weight: 700;
+            margin-top: 4px;
+        }
+        .progress-track {
+            height: 14px;
+            background: var(--bg-primary);
+            border-radius: 7px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            margin-top: 8px;
+        }
+        .progress-fill {
+            height: 100%;
+            transition: width 0.6s ease, background 0.3s ease;
+            border-radius: 7px;
+        }
+        .progress-meta {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-top: 6px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .stat-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid var(--border); font-size: 14px; }
+        .stat-row:last-child { border-bottom: none; }
+        .stat-row .key { color: var(--text-secondary); }
+        .stat-row .val { color: var(--text-primary); font-weight: 600; font-variant-numeric: tabular-nums; }
+
+        /* TRADES — tabela compacta */
+        table.trades-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+        table.trades-table th {
+            text-align: left;
+            padding: 8px 10px;
+            color: var(--text-muted);
+            font-weight: 600;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 2px solid var(--border);
+        }
+        table.trades-table td {
+            padding: 10px;
+            border-bottom: 1px solid var(--border);
+            font-variant-numeric: tabular-nums;
+            white-space: nowrap;
+        }
+        table.trades-table td:nth-child(2) { min-width: 120px; }
+        table.trades-table tr:last-child td { border-bottom: none; }
+        table.trades-table tr:hover td { background: var(--bg-primary); }
+        .trade-side-badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+            max-width: 90px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .trade-side-badge.SHORT { background: rgba(239,68,68,0.15); color: var(--negative); }
+        .trade-side-badge.LONG { background: rgba(16,185,129,0.15); color: var(--positive); }
+        .trade-side-badge.NEUTRO { background: rgba(107,114,128,0.15); color: var(--text-secondary); }
+        .trade-subtype { font-size: 9px; color: var(--text-muted); margin-left: 4px; letter-spacing: 0.3px; }
+        .trade-pnl-cell {
+            font-weight: 700;
+        }
+
+        .positive { color: var(--positive); }
+        .negative { color: var(--negative); }
+        .warning  { color: var(--warning); }
+        .neutral  { color: var(--text-secondary); }
+
+        .indicators {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+            margin-top: 12px;
+        }
+        .indicator {
+            background: var(--bg-primary);
+            padding: 10px 12px;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+        }
+        .indicator .name {
+            font-size: 10px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+        .indicator .val {
+            font-size: 16px;
+            font-weight: 700;
+            margin-top: 2px;
+            font-variant-numeric: tabular-nums;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 11px;
+            margin-top: 24px;
+            padding: 16px;
+        }
+
+        @media (max-width: 640px) {
+            body { padding: 10px; }
+            .card, .mission { padding: 16px 18px; }
+            h1 { font-size: 18px; }
+            .logo { width: 44px; height: 44px; }
+            .mission-row { grid-template-columns: 1fr; gap: 14px; }
+            .mission-stat .value { font-size: 22px; }
+            table.trades-table { font-size: 11px; }
+            table.trades-table th, table.trades-table td { padding: 6px 4px; }
+            /* Esconde colunas menos importantes em mobile */
+            table.trades-table .col-mobile-hide { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <div class="header-left">
+                <img src="fenix.png"
+                     alt="FÊNIX" class="logo"
+                     onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/sFarinaJr/trading-monitor/main/fenix.png'; this.onerror=()=>{this.style.display='none';};">
+                <h1>
+                    FÊNIX
+                    <span class="subtitle">Especialista em trade alavancado 25× · BTC/USDT Perpetual</span>
+                </h1>
+            </div>
+            <div class="header-meta">
+                <div class="status loading" id="status">⏳ Carregando…</div>
+                <div id="lastUpdate">--</div>
+                <div id="nextUpdate" style="opacity: 0.6;">próximo refresh em 5min</div>
+                <a id="monitorLink"
+                   href="https://thanks-receptor-scratch-hunter.trycloudflare.com"
+                   target="_blank"
+                   style="display: inline-block; margin-top: 8px; padding: 6px 12px; background: var(--accent-blue); color: white; text-decoration: none; border-radius: 6px; font-size: 12px; font-weight: 700;">
+                   📊 Monitor Live (cloudflare)
+                </a>
+            </div>
+        </header>
+
+        <!-- 🎯 PROGRESSO DA MISSÃO · público (história do canal · user 19/05) -->
+        <div class="card mission">
+            <div class="card-title">🎯 Progresso da Missão</div>
+            <div class="mission-row">
+                <div class="mission-stat">
+                    <div class="label">Baseline (27/04)</div>
+                    <div class="value neutral" id="baseline">--</div>
+                </div>
+                <div class="mission-stat">
+                    <div class="label">PnL Acumulado Atual</div>
+                    <div class="value" id="cumPnl">--</div>
+                </div>
+                <div class="mission-stat">
+                    <div class="label">Variação vs Baseline</div>
+                    <div class="value" id="diff">--</div>
+                </div>
+            </div>
+            <div class="progress-track">
+                <div class="progress-fill" id="progressBar" style="width: 0%; background: var(--negative);"></div>
+            </div>
+        </div>
+
+        <!-- 📓 HISTÓRICO DE TRADES (logo abaixo da missão, últimos 10) -->
+        <div class="card">
+            <div class="card-title">📓 Histórico de Trades (últimos 10)</div>
+            <div style="overflow-x: auto;">
+                <table class="trades-table">
+                    <thead>
+                        <tr>
+                            <th>Data/Hora</th>
+                            <th>Tipo</th>
+                            <th>Entrada</th>
+                            <th>Saída</th>
+                            <th class="col-mobile-hide">Qty</th>
+                            <th>PnL ($)</th>
+                            <th class="col-mobile-hide">PnL% 25x</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tradesBody">
+                        <tr><td colspan="7" style="text-align: center; color: var(--text-muted); padding: 30px;">Carregando…</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="stat-row" style="margin-top: 12px; padding-top: 12px; border-top: 2px solid var(--border);">
+                <span class="key">Total PnL desses trades</span>
+                <span class="val" id="totalTradesPnl">--</span>
+            </div>
+        </div>
+
+        <!-- 📊 POSIÇÃO ATUAL -->
+        <div class="card">
+            <div class="card-title">📊 Posição Atual</div>
+            <div id="positionContent">
+                <div style="text-align: center; padding: 20px; color: var(--text-muted);">Carregando…</div>
+            </div>
+        </div>
+
+        <footer>
+            FÊNIX Dashboard — dados de <a href="https://github.com/sFarinaJr/trading-monitor" style="color: var(--accent-blue);">trading-monitor</a>
+            • <span id="lastSync">--</span>
+        </footer>
+
+    </div>
+
+    <script>
+        const GH_BASE = 'https://raw.githubusercontent.com/sFarinaJr/trading-monitor/main';
+        const STATE_URL = `${GH_BASE}/fenix_dashboard.json`;
+        const REFRESH_MS = 5 * 60 * 1000;
+
+        const fmtMoney = (v, sign = false) => {
+            if (v === null || v === undefined || isNaN(v)) return '--';
+            const abs = Math.abs(Number(v));
+            const formatted = abs.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+            const prefix = v < 0 ? '-$' : (sign && v > 0 ? '+$' : '$');
+            return `${prefix}${formatted}`;
+        };
+        const fmtNum = (v, dec = 2) => {
+            if (v === null || v === undefined || isNaN(v)) return '--';
+            return Number(v).toLocaleString('en-US', { minimumFractionDigits: dec, maximumFractionDigits: dec });
+        };
+        const colorOf = v => (v == null) ? 'neutral' : (v > 0 ? 'positive' : (v < 0 ? 'negative' : 'neutral'));
+
+        const fmtDateTime = (iso) => {
+            if (!iso) return '--';
+            try {
+                const d = new Date(iso);
+                const day = String(d.getDate()).padStart(2, '0');
+                const mon = String(d.getMonth() + 1).padStart(2, '0');
+                const hh = String(d.getHours()).padStart(2, '0');
+                const mm = String(d.getMinutes()).padStart(2, '0');
+                return `${day}/${mon} ${hh}:${mm}`;
+            } catch { return iso; }
+        };
+
+        async function loadState() {
+            try {
+                const r = await fetch(`${STATE_URL}?t=${Date.now()}`);
+                if (!r.ok) throw new Error(`HTTP ${r.status}`);
+                return await r.json();
+            } catch (e) {
+                console.error('Erro carregando state:', e);
+                return null;
+            }
+        }
+        function renderState(s) {
+            if (!s) {
+                document.getElementById('status').textContent = '❌ Erro ao carregar';
+                document.getElementById('status').className = 'status error';
+                return;
+            }
+
+            // PRIVACIDADE (user 20/06): defesa client-side · trade aberto com uPnL
+            // negativo nunca renderiza (o publisher já o omite do JSON; aqui é rede
+            // de segurança caso o JSON chegue com a posição no prejuízo).
+            if (s.posicao_atual) {
+                const _u = Number(s.posicao_atual.unrealised_pnl_usd ?? s.posicao_atual.unrealisedPnl);
+                if (!(_u >= 0)) s.posicao_atual = { side: null, size: 0, status: 'FLAT' };
+            }
+
+            // Botão 'Monitor Live' · href vem do JSON (URL viva do tunnel Cloudflare,
+            // que muda a cada restart). Auto-corrige sem reescrever este HTML.
+            if (s.monitor_url) {
+                document.getElementById('monitorLink').href = s.monitor_url;
+            }
+
+            // 🎯 Missão
+            const baseline = s.baseline?.pnl_acumulado ?? -6124;
+            const cumPnl = s.saldo?.cumPnL_unified_usd ?? s.saldo?.cumRealisedPnl_unified_usdt ?? 0;
+            const diff = s.progresso_vs_baseline?.diff_usd ?? s.progresso_vs_baseline?.diferenca ?? (cumPnl - baseline);
+            document.getElementById('baseline').textContent = fmtMoney(baseline);
+            document.getElementById('cumPnl').textContent = fmtMoney(cumPnl);
+            document.getElementById('cumPnl').className = `value ${colorOf(cumPnl)}`;
+            document.getElementById('diff').textContent = fmtMoney(diff, true);
+            document.getElementById('diff').className = `value ${colorOf(diff)}`;
+
+            const progress = Math.max(0, Math.min(100, ((cumPnl - baseline) / -baseline) * 100));
+            const bar = document.getElementById('progressBar');
+            bar.style.width = `${Math.max(2, progress)}%`;
+            bar.style.background = diff > 0 ? 'linear-gradient(90deg, var(--negative), var(--positive))' : 'var(--negative)';
+
+            // 📊 Posição — aceita ambos formatos (snake_case PT-BR atual + camelCase legado)
+            const pos = s.posicao_atual;
+            const posDiv = document.getElementById('positionContent');
+            const posSize = pos?.size_btc ?? pos?.size ?? 0;
+            const posSide = pos?.side ?? '';
+            const isShort = posSide.toLowerCase().includes('sell') || posSide.toLowerCase().includes('short');
+            const isLong = posSide.toLowerCase().includes('buy') || posSide.toLowerCase().includes('long');
+            const avgPrice = pos?.avg_entry ?? pos?.avgPrice;
+            const uPnl = pos?.unrealised_pnl_usd ?? pos?.unrealisedPnl;
+            const stopLoss = pos?.sl ?? pos?.stopLoss;
+            const tp1 = pos?.tp1_limit;
+            const tp2 = pos?.tp2_target_estrutural ?? pos?.takeProfit;
+            if (pos && posSize > 0) {
+                const sideLabel = isShort ? '🔴 SHORT' : (isLong ? '🟢 LONG' : posSide);
+                const sideClass = isShort ? 'negative' : 'positive';
+                let tpRow;
+                if (tp1 && tp2) {
+                    tpRow = `<div class="stat-row"><span class="key">TP1 / TP2</span> <span class="val positive">${fmtMoney(tp1)} / ${fmtMoney(tp2)}</span></div>`;
+                } else if (tp2) {
+                    tpRow = `<div class="stat-row"><span class="key">Take Profit</span> <span class="val positive">${fmtMoney(tp2)}</span></div>`;
+                } else if (tp1) {
+                    tpRow = `<div class="stat-row"><span class="key">Take Profit</span> <span class="val positive">${fmtMoney(tp1)}</span></div>`;
+                } else {
+                    tpRow = `<div class="stat-row"><span class="key">Take Profit</span> <span class="val positive">— (livre)</span></div>`;
+                }
+                posDiv.innerHTML = `
+                    <div class="stat-row"><span class="key">Side</span> <span class="val ${sideClass}">${sideLabel}</span></div>
+                    <div class="stat-row"><span class="key">Size</span> <span class="val">${fmtNum(posSize, 4)} BTC</span></div>
+                    <div class="stat-row"><span class="key">Avg Price</span> <span class="val">${fmtMoney(avgPrice)}</span></div>
+                    <div class="stat-row"><span class="key">PnL Flutuante</span> <span class="val ${colorOf(uPnl)}">${fmtMoney(uPnl, true)}</span></div>
+                    <div class="stat-row"><span class="key">Stop Loss</span> <span class="val negative">${stopLoss ? fmtMoney(stopLoss) : '⚠️ sem SL'}</span></div>
+                    ${tpRow}
+                `;
+            } else {
+                posDiv.innerHTML = `<div style="text-align: center; padding: 30px 20px;"><div style="font-size: 32px;">💤</div><div style="margin-top: 8px; color: var(--text-secondary); font-weight: 600;">ZERADA</div><div style="margin-top: 4px; font-size: 12px; color: var(--text-muted);">Sem ordens pendentes</div></div>`;
+            }
+
+            // Header status — calcula idade dos dados pra mostrar status real.
+            // Usa last_github_push_ts (epoch s) em vez de string formatada.
+            const pushTs = s.last_github_push_ts ? s.last_github_push_ts * 1000 : 0;
+            const ageMs = pushTs ? (Date.now() - pushTs) : Infinity;
+            const ageMin = Math.floor(ageMs / 60000);
+            const statusEl = document.getElementById('status');
+            if (ageMin < 10) {
+                statusEl.textContent = `✅ Ao vivo (${ageMin}min atrás)`;
+                statusEl.className = 'status';
+            } else if (ageMin < 30) {
+                statusEl.textContent = `🟡 Defasado (${ageMin}min atrás)`;
+                statusEl.className = 'status loading';
+            } else {
+                statusEl.textContent = `❌ Atrasado (${ageMin}min atrás)`;
+                statusEl.className = 'status error';
+            }
+            document.getElementById('lastUpdate').textContent = `Snapshot: ${s.ultimo_update || '--'}`;
+            document.getElementById('lastSync').textContent = `Último push: ${s.last_github_push || '—'}`;
+            // Reset countdown sempre que renderizamos novo dado
+            window.__nextRefreshAt = Date.now() + REFRESH_MS;
+        }
+
+        // user 20/05 10:36 · agrupa múltiplas parciais do mesmo trade em 1 linha
+        // chave: side+entry_price · weighted avg do exit_price · soma qty/pnl
+        function aggregateTradesByEntry(trades) {
+            if (!Array.isArray(trades) || trades.length === 0) return [];
+            const groups = new Map();
+            for (const t of trades) {
+                const side = String(t.side || '').toUpperCase();
+                const entry = +t.entry_price || 0;
+                if (!side || !entry) continue;
+                const key = `${side}_${entry.toFixed(2)}`;
+                if (!groups.has(key)) {
+                    groups.set(key, {
+                        timestamp: t.timestamp, side, entry_price: entry,
+                        exit_qty: 0, exit_qty_x_price: 0, pnl_usd: 0,
+                        num_parts: 0, trade_type: t.trade_type
+                    });
+                }
+                const g = groups.get(key);
+                const q = +(t.quantity ?? t.qty) || 0;
+                const ex = +t.exit_price || 0;
+                g.exit_qty += q;
+                g.exit_qty_x_price += q * ex;
+                g.pnl_usd += (+t.pnl_usd || 0);
+                g.num_parts += 1;
+                if (t.timestamp && (!g.timestamp || Date.parse(t.timestamp) < Date.parse(g.timestamp))) {
+                    g.timestamp = t.timestamp;
+                }
+            }
+            return Array.from(groups.values()).map(g => ({
+                timestamp: g.timestamp, side: g.side, entry_price: g.entry_price,
+                exit_price: g.exit_qty > 0 ? g.exit_qty_x_price / g.exit_qty : 0,
+                quantity: g.exit_qty, qty: g.exit_qty, pnl_usd: g.pnl_usd,
+                trade_type: g.trade_type, num_parts: g.num_parts
+            })).sort((a, b) => Date.parse(b.timestamp) - Date.parse(a.timestamp));
+        }
+        function renderTrades(state) {
+            const tbody = document.getElementById('tradesBody');
+            // Fonte primária · state.trades_recentes atualizado a cada ciclo
+            const allTrades = aggregateTradesByEntry(state?.trades_recentes || []);
+
+            if (allTrades.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="7" style="text-align: center; color: var(--text-muted); padding: 30px;">Nenhum trade registrado</td></tr>';
+                document.getElementById('totalTradesPnl').textContent = '--';
+                return;
+            }
+            // Lista vem do mais recente pro mais antigo · pega só os 10 primeiros.
+            const trades = allTrades.slice(0, 10);
+            tbody.innerHTML = trades.map(t => {
+                const pnl = t.pnl_usd || 0;
+                // % REAL = retorno líquido sobre a margem (pnl ÷ margem) ·
+                // mesmo sinal do $ sempre (inclui taxas) · margem =
+                // notional/25 · fallback price-move×25 (user 19/05)
+                const _q = +(t.quantity ?? t.qty ?? 0);
+                const _e = +(t.entry_price ?? 0);
+                const _mgn = (_q && _e) ? (_q * _e) / 25 : 0;
+                const pct = _mgn ? (pnl / _mgn) * 100 : (t.pnl_percent || 0) * 25;
+                const cls = pnl > 0 ? 'positive' : (pnl < 0 ? 'negative' : 'neutral');
+                // Separa side (LONG/SHORT) do trade_type (SL_SHORT, TP1_LONG, etc)
+                // Side fica colorido (verde LONG / vermelho SHORT) · subtipo aparece menor
+                const tt = (t.trade_type || '').toUpperCase();
+                const rawSide = (t.side || '').toUpperCase();
+                let sideTag = rawSide;
+                if (!sideTag) {
+                    if (tt.includes('LONG')) sideTag = 'LONG';
+                    else if (tt.includes('SHORT')) sideTag = 'SHORT';
+                    else sideTag = 'NEUTRO';
+                }
+                // Extrai prefixo do trade_type (TP1, TP2, SL, TRAIL, PARTIAL)
+                let subtipo = tt.replace('_LONG','').replace('_SHORT','').replace('LONG','').replace('SHORT','').trim();
+                if (subtipo && subtipo !== sideTag) subtipo = `(${subtipo})`;
+                else subtipo = '';
+                // user 20/05 10:36 · indicador de parciais agrupadas
+                const np = +(t.num_parts || 0);
+                if (np > 1) subtipo = subtipo ? `${subtipo} ${np} parciais` : `${np} parciais`;
+                return `
+                    <tr>
+                        <td>${fmtDateTime(t.timestamp)}</td>
+                        <td><span class="trade-side-badge ${sideTag}">${sideTag}</span><span class="trade-subtype">${subtipo}</span></td>
+                        <td>${fmtMoney(t.entry_price)}</td>
+                        <td>${fmtMoney(t.exit_price)}</td>
+                        <td class="col-mobile-hide">${fmtNum(t.quantity ?? t.qty, 4)}</td>
+                        <td class="trade-pnl-cell ${cls}">${fmtMoney(pnl, true)}</td>
+                        <td class="col-mobile-hide ${cls}">${pct >= 0 ? '+' : ''}${fmtNum(pct, 2)}%</td>
+                    </tr>
+                `;
+            }).join('');
+
+            const total = trades.reduce((s, t) => s + (t.pnl_usd || 0), 0);
+            const tEl = document.getElementById('totalTradesPnl');
+            tEl.textContent = fmtMoney(total, true);
+            tEl.className = `val ${colorOf(total)}`;
+        }
+
+        async function refresh() {
+            // Reseta countdown ANTES do fetch · evita travar em "atualizando..." se fetch falhar
+            window.__nextRefreshAt = Date.now() + REFRESH_MS;
+            const state = await loadState();
+            renderState(state);
+            renderTrades(state);
+        }
+
+        // Countdown real do próximo refresh — atualiza a cada segundo.
+        // Também re-calcula o "Ao vivo / Defasado / Atrasado" status pra
+        // refletir a passagem do tempo entre fetches do GitHub.
+        function tickCountdown() {
+            const remainingMs = (window.__nextRefreshAt || 0) - Date.now();
+            const remainingSec = Math.max(0, Math.floor(remainingMs / 1000));
+            const mm = Math.floor(remainingSec / 60);
+            const ss = String(remainingSec % 60).padStart(2, '0');
+            const el = document.getElementById('nextUpdate');
+            if (el) el.textContent = remainingMs > 0
+                ? `próximo refresh em ${mm}:${ss}`
+                : 'atualizando…';
+        }
+
+        refresh();
+        setInterval(refresh, REFRESH_MS);
+        setInterval(tickCountdown, 1000);
+    </script>
+</body>
+</html>

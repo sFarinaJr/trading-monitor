@@ -1,7 +1,7 @@
 *
 !.gitignore
 !index.html
-# !dashboard.html  · dashboard tirada do ar 20/06 (user) · re-habilitar removendo o "# " p/ voltar ao GitHub
+!dashboard.html
 !fenix.png
 !fenix_dashboard.json
 !README.md
