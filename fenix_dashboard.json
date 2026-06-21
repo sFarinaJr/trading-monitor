@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "21/06/2026 14:53:16",
-  "last_github_push": "21/06 14:53",
-  "last_github_push_ts": 1782067996.271938,
+  "ultimo_update": "21/06/2026 14:54:14",
+  "last_github_push": "21/06 14:54",
+  "last_github_push_ts": 1782068054.4190998,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -16,7 +16,7 @@
     "progresso_vs_baseline_usd": -950.9,
     "delta_vs_baseline": -950.9,
     "pnl_fenix_desde_baseline": -950.9,
-    "updated_at": "2026-06-21T14:53:15-04:00"
+    "updated_at": "2026-06-21T14:54:13-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -94,7 +94,7 @@
   "current_thesis": {
     "thesis_id": null,
     "boot_ts": "2026-06-19T20:02:25-04:00",
-    "ultimo_update": "2026-06-21T14:48:16-04:00",
+    "ultimo_update": "2026-06-21T14:53:25-04:00",
     "status": "ACTIVE",
     "mark_at_boot": 63535.44,
     "mark_now": 63535.44,
@@ -111,14 +111,14 @@
   "execution_mode": "AUTO",
   "manual_approval_required": true,
   "price_watch": {
-    "ts": "2026-06-21T14:48:16-04:00",
+    "ts": "2026-06-21T14:53:25-04:00",
     "levels": [
       {
-        "price": 65130.6,
+        "price": 65088.7,
         "direction": "above",
         "tier": "alto",
         "reason": "PRIMARIA SHORT · continuacao C-3 (pullback raso 0.236-0.382)",
-        "decisao_pre_armada": "ALERTA-ONLY · SE mark na zona 65131 (continuacao C-3 (pullback raso 0.236-0.382)) + Camada2 TOPO 5m / rejeição: AVISAR Claude (contexto SHORT PRIMARIA · alvo 59081.4). NÃO auto-executa — gestão atual = SL-only do short vigente (mandato user). Claude julga, não dispara ordem.",
+        "decisao_pre_armada": "ALERTA-ONLY · SE mark na zona 65089 (continuacao C-3 (pullback raso 0.236-0.382)) + Camada2 TOPO 5m / rejeição: AVISAR Claude (contexto SHORT PRIMARIA · alvo 59081.4). NÃO auto-executa — gestão atual = SL-only do short vigente (mandato user). Claude julga, não dispara ordem.",
         "active": true,
         "triggered": false,
         "source": "espinha_c3_continuacao"
