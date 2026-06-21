@@ -1,27 +1,27 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "20/06/2026 20:00:49",
+  "ultimo_update": "20/06/2026 20:00:59",
   "last_github_push": "20/06 20:00",
-  "last_github_push_ts": 1782000049.173756,
+  "last_github_push_ts": 1782000059.0028212,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
   "saldo": {
-    "cum_realised_pnl": -7073.1,
-    "cumPnL_unified_usd": -7073.1,
-    "unrealisedPnl": -994.36,
+    "cum_realised_pnl": -7072.39,
+    "cumPnL_unified_usd": -7072.39,
+    "unrealisedPnl": -978.6,
     "ts": "2026-06-14T20:22:14-0400",
-    "progresso_vs_baseline_usd": -949.1,
-    "delta_vs_baseline": -949.1,
-    "pnl_fenix_desde_baseline": -949.1,
-    "updated_at": "2026-06-20T19:59:56-04:00"
+    "progresso_vs_baseline_usd": -948.39,
+    "delta_vs_baseline": -948.39,
+    "pnl_fenix_desde_baseline": -948.39,
+    "updated_at": "2026-06-20T20:00:58-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
-    "current_pnl": -7073.1,
-    "diff_usd": -949.1
+    "current_pnl": -7072.39,
+    "diff_usd": -948.39
   },
   "posicao_atual": {
     "side": "SHORT",
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_SHORT",
-    "markPrice": 64276.14,
-    "mark_price_atual": 64276.14,
-    "unrealised_pnl_usd": -976.14,
-    "unrealisedPnl": -976.14,
-    "be_price": 63255.54533829,
+    "markPrice": 64278.6,
+    "mark_price_atual": 64278.6,
+    "unrealised_pnl_usd": -978.6,
+    "unrealisedPnl": -978.6,
+    "be_price": 63256.24868999,
     "liq_price": 65504.4,
     "tp2_target_estrutural": 57800.0,
-    "last_update": "2026-06-20T19:59:57-04:00",
-    "ts_snapshot": "2026-06-20T19:59:57-04:00"
+    "last_update": "2026-06-20T20:00:58-04:00",
+    "ts_snapshot": "2026-06-20T20:00:58-04:00"
   },
   "trades_recentes": [
     {
