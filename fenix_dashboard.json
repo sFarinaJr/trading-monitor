@@ -1,0 +1,285 @@
+{
+  "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
+  "ultimo_update": "22/06/2026 09:55:18",
+  "last_github_push": "22/06 09:55",
+  "last_github_push_ts": 1782136518.530777,
+  "baseline": {
+    "data": "2026-04-27",
+    "pnl_acumulado": -6124.0,
+    "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
+  },
+  "saldo": {
+    "cum_realised_pnl": -7063.43,
+    "cumPnL_unified_usd": -7063.43,
+    "unrealisedPnl": 0.0,
+    "ts": "2026-06-14T20:22:14-0400",
+    "progresso_vs_baseline_usd": -2478.05,
+    "delta_vs_baseline": -939.43,
+    "pnl_fenix_desde_baseline": -939.43,
+    "updated_at": "2026-06-22T09:55:17-04:00"
+  },
+  "progresso_vs_baseline": {
+    "baseline_pnl": -6124.0,
+    "current_pnl": -7063.43,
+    "diff_usd": -939.43
+  },
+  "posicao_atual": {
+    "side": "NONE",
+    "size": 0,
+    "qty": 0,
+    "avgPrice": 63300.0,
+    "avg_price": 63300.0,
+    "entry_price": 63300.0,
+    "stopLoss": 64789.5,
+    "stop_loss": 64789.5,
+    "takeProfit": 57800.0,
+    "take_profit": 57800.0,
+    "tp2": 57800.0,
+    "tp1": null,
+    "tp1_limit": null,
+    "tp1_pnl_lock": 0,
+    "tp1_realizado": false,
+    "status": "OPEN_SHORT",
+    "markPrice": 64558.4,
+    "mark_price_atual": 64558.4,
+    "unrealised_pnl_usd": 0,
+    "unrealisedPnl": -1258.4,
+    "be_price": 63253.9309586,
+    "liq_price": 65504.4,
+    "tp2_target_estrutural": 57800.0,
+    "last_update": "2026-06-22T08:01:19-04:00",
+    "ts_snapshot": "2026-06-22T09:55:18-04:00"
+  },
+  "trades_recentes": [
+    {
+      "timestamp": "2026-06-20T01:13:56",
+      "symbol": "BTCUSDT",
+      "side": "SHORT",
+      "entry_price": 64025.0,
+      "exit_price": 63910.23,
+      "quantity": 0.8,
+      "pnl_usd": 53.45,
+      "pnl_percent": 0.18
+    },
+    {
+      "timestamp": "2026-06-18T08:30:00",
+      "symbol": "BTCUSDT",
+      "side": "SHORT",
+      "entry_price": 64275.0,
+      "exit_price": 64223.22,
+      "quantity": 0.6,
+      "pnl_usd": 2.16,
+      "pnl_percent": 0.08
+    },
+    {
+      "timestamp": "2026-06-15T07:20:27",
+      "symbol": "BTCUSDT",
+      "side": "SHORT",
+      "entry_price": 65545.0,
+      "exit_price": 66221.3,
+      "quantity": 0.12,
+      "pnl_usd": -87.1,
+      "pnl_percent": -1.03
+    },
+    {
+      "timestamp": "2026-06-14T17:18:57",
+      "symbol": "BTCUSDT",
+      "side": "SHORT",
+      "entry_price": 63475.9,
+      "exit_price": 64891.9,
+      "quantity": 0.13,
+      "pnl_usd": -193.26,
+      "pnl_percent": -2.23
+    },
+    {
+      "timestamp": "2026-06-12T12:21:11",
+      "symbol": "BTCUSDT",
+      "side": "SHORT",
+      "entry_price": 63820.0,
+      "exit_price": 63753.78,
+      "quantity": 0.18,
+      "pnl_usd": 3.31,
+      "pnl_percent": 0.1
+    },
+    {
+      "timestamp": "2026-06-12T10:35:06",
+      "symbol": "BTCUSDT",
+      "side": "SHORT",
+      "entry_price": 63781.4,
+      "exit_price": 63678.7,
+      "quantity": 0.2,
+      "pnl_usd": 6.52,
+      "pnl_percent": 0.16
+    }
+  ],
+  "current_thesis": {
+    "thesis_id": "boot_d_close_2026-06-19_WAVE_C_C3_DOWN_em_curso_C32_estendeu_acima_63397_topo_C2_67276_mark63535_alvo_57499_49680_SHORT_user_babysit_SL_only_v1",
+    "boot_ts": "2026-06-19T20:02:25-04:00",
+    "ultimo_update": "2026-06-22T09:52:37-04:00",
+    "status": "ACTIVE",
+    "mark_at_boot": 63535.44,
+    "mark_now": 63535.44,
+    "macro_bias_D": {
+      "direcao": "BEARISH",
+      "score": 7.0
+    },
+    "leitura_primaria_opus": "BOOT D-close 19/06 20:00 UTC-4 (so diario · NAO W/M close). MARK $63.535 · 24h +1,01% (REPIQUE intradia · NAO queda · ticker prevPrice24h 62900.8). D-1 (candle estrutural 18/06 20:00->19/06 20:00): O62920.1 H63641.1 L62271.6 C63508.9 vol53k = candle BULL +0,94%, testou fundo 62271 e fechou perto da MAXIMA = repique/reclaim. O wick H63641 PUNGIU o sub-topo C3-2 63397 intra-barra. D-2 (17->18/06): O64476 H64781 L62216 C62920 vol89k = candle BEAR -2,41%. CONTAGEM ADOTADA DA ESPINHA (NAO recontei · LEI #29): ABC zigzag DOWN · WAVE C · C-1 TRAVADA 59081 (ancora) · C-2 corretiva TOPOU 67276 · ONDA DE TRABALHO = C-3 DOWN. Sub: C3-1 diagonal down, C3-2 correcao UP (range 62216-63397), C3-3 impulso down (a maior). EVENTO 19:57: surto bull (vol ~10x) furou C3-2 63397 (max 63641) e 1H FECHOU ~63509 acima COM TOPO1H + CHoCH bearish (liquidity-grab/topo formando). DES-DECRETA o sub-topo C3-2 (estende mais alto antes da C3-3) · NAO toca de-eleicao 67276 nem invalidacao 82811 -> C-3 DOWN INTACTA. C3-3 ainda nao disparou (gatilho resetado mais alto). Multi-TF: D RSI 35.5 (bear estrutural · mark abaixo EMA9 64092/EMA20 65471 · MACD hist +431 line -2212 fundo) · 4H RSI 47 NEUTRO (repicou do fundo 62216 oversold · EMA9 63291<EMA20 63746 bear · BBpos 0.41 · MACD hist -17 flat) · 1H RSI 58.9 MACD hist +99.9 (cross bull MICRO · BBpos 0.94 banda SUP) · 15m RSI 69.2 BBpos 1.05 (esticado/sobrecomprado · exaustao do surto provavel). Coracao: pulsos bull no surto 19:57 MAS sentidos marcaram TOPO1H + CHoCH bearish (rejeicao formando) = repique de exaustao, NAO reversao macro. POSICAO: SHORT 0.8 @64025 do USER (CreateByUser · babysit LEI #32) · mark 63535 · uPnL +$391,65 (+0,77% raw) · SL 63934 (+0,63% acima mark · trava lucro) · TP 57730 · liq 66254.7 (+4,28%). USER carrega rumo ao alvo da onda C (~57499->49680). Derivativos: funding flip LEVE+ (+0.0000159 · vinha 4 negativas · repique posicionado long curto) · OI 54.27k subindo no bounce (long buildup) · L/S buy 0.6041 (longs retail). VEREDITO: C-3 DOWN em curso, C3-2 ganhou MAIS perna (estendeu acima 63397) · repique 1H/15m esticado bull DENTRO do macro down = correcao C3-2 ainda viva, NAO inicio de reversao. SL user 63934 (+0,63% mark) trava +$391 · ameacado por extensao C3-2 ate ~64.4-64.7k (topo 1H 64409 / 0.236 retr C-1 64681 / EMA9 D 64092). INSTRUCAO USER (17-19/06): gerenciar SO o SL · NENHUMA parcial/add/long/fechar · default HOLD · sinais verdes de fundo na queda = armadilha onda-3 (nao fechar) · reduzir/fechar SO em invalidacao estrutural real (close>67276/82811 ou topo confirmado). BOOT READ-ONLY · ZERO place_order/set_trading_stop/cancel (loop principal gere o SL). LONG vetado (LEI #29).",
+    "cenarios_opus": {
+      "cenario_A_C32_estende_repique_antes_C33_PRIMARIO": {
+        "prob": 0.5,
+        "entry": "n/a (SHORT user aberto · so SL · sem parcial/add)",
+        "sl": "manter SL user 63934 folgado (loop principal) · NAO apertar pra dentro do repique",
+        "tp1": 57498.9,
+        "tp2": 49680.0,
+        "rr": "alto (lucro travado +$391)",
+        "note": "PRIMARIO. C3-2 (correcao UP) ganhou mais perna apos furar 63397. Repique 1H/15m esticado (RSI 58.9/69.2 · BBpos 0.94/1.05) pode estender ate 64.4-64.7k (topo 1H 64409 / 0.236 retr C-1 64681 / EMA9 D 64092) antes da C3-3 impulso down disparar rumo 59081->57499->49680. TOPO1H+CHoCH bearish ja sinalizam exaustao. SL user 63934 (+0,63% mark) pode ser tocado se C3-2 estender forte ate 64k+ · instrucao user: NAO fechar/apertar antecipado · so SL pega se vier. Default HOLD."
+      },
+      "cenario_B_C33_dispara_continuacao_down_SECUNDARIO": {
+        "prob": 0.35,
+        "entry": "n/a",
+        "sl": "trail estrutural acima topos 1H descendentes (loop principal · SL-only)",
+        "tp1": 57498.9,
+        "tp2": 49680.0,
+        "rr": "alto",
+        "note": "SECUNDARIO. Rejeicao do repique (exaustao 15m RSI 69 + TOPO1H + CHoCH) -> C3-2 topa abaixo de 64.7k -> C3-3 (impulso down · a maior) dispara · break<62216 confirma · rumo 59081 (C-1 low) -> 57499 (0.382A) -> 49680 (0.5A · ima). SHORT user captura tudo. Loop principal trila SL pra baixo conforme topos 1H caem · sem parcial."
+      },
+      "cenario_C_de_eleicao_ou_invalida_recount": {
+        "prob": 0.15,
+        "entry": "n/a",
+        "sl": "n/a",
+        "tp1": "n/a",
+        "tp2": "n/a",
+        "rr": "n/a",
+        "note": "Se close>67276: DES-ELEGE C-3 (volta contagem conservadora). Se close>77733: RECOUNT Espinha. Invalida macro TOTAL so close D>82811. Todos MUITO longe (+5,9% / +22% / +30% do mark). Residual. SO aqui user reavalia reduzir/fechar (invalidacao estrutural real)."
+      }
+    },
+    "setups_pre_armados": [
+      {
+        "tipo": "SHORT_C3_continuacao",
+        "lado": "SHORT",
+        "direcao": "SHORT",
+        "prioridade": "PRIMARIA",
+        "entry": 66032.2,
+        "sl": 66759.1,
+        "tp1": 59081.4,
+        "tp2": 49680.0,
+        "rr": 22.5,
+        "qty_btc": 0.0,
+        "tier": "T1",
+        "macro_aligned": true,
+        "alert_only": true,
+        "zona": [
+          65900.8,
+          66163.6
+        ],
+        "fib_role": "continuacao C-3 (pullback raso 0.236-0.382)",
+        "fib_label": "C-3 pullback 65901-66164",
+        "trigger": "ALERTA-ONLY · C-2 TRAVADA no topo 67276 (passado) · C-3 DOWN em curso. Zona de short de CONTINUAÇÃO no pullback raso 65901-66164 a-favor do macro DOWN. Camada2 TOPO/rejeição aqui = exaustão do repique → contexto p/ short C-3 (alvo 59081 C-1 low → 49680). NÃO reabrir short de retrace-C2 (topo passado). NÃO auto-executa (gestão = SL-only do short vigente).",
+        "invalidacao": "close > 67276 DESTRAVA a C-2 (volta contagem conservadora · C-2 ainda subindo) · close > 82811 invalida macro",
+        "source": "espinha_c3_continuacao",
+        "derivado_de": "tree.onda_de_trabalho.plano_trade.entrada_primaria (modo_c3)"
+      },
+      {
+        "tipo": "GESTAO_SHORT_user_babysit",
+        "lado": "SHORT",
+        "direcao": "SHORT",
+        "prioridade": "PRIMARIA (gestao · NAO ordem)",
+        "entry": 64025.0,
+        "sl": 63934.0,
+        "tp1": 57498.9,
+        "tp2": 49680.0,
+        "rr": "alto (lucro travado)",
+        "qty_btc": 0.8,
+        "tier": "user",
+        "macro_aligned": true,
+        "fib_role": "perna down de C (C-3 a-favor macro)",
+        "trigger": "POSICAO JA ABERTA (SHORT user 0.8 @64025 · babysit LEI #32). GESTAO: SO stop loss (loop principal). INSTRUCAO USER 17-19/06: SO SL · SEM parcial/add/long/fechar · default HOLD · reduzir/fechar SO em invalidacao estrutural real (close>67276/82811 ou topo confirmado). BOOT READ-ONLY · ZERO ordens.",
+        "invalidacao": "close>67276 de-elege C-3 · close>77733 recount · close D>82811 macro",
+        "ativo": true,
+        "auto_execute": false,
+        "source": "manual_babysit",
+        "nota": "NAO e ordem · posicao do user em gestao defensiva SL-only. ZERO place_order/set_trading_stop/cancel pelo BOOT."
+      }
+    ],
+    "ponto_nao_retorno": "BEAR MACRO invalida TOTAL: close D>82811 (topo B). DES-ELEICAO C-3: close>67276 (topo C-2). RECOUNT onda: close>77733 (0.786 retr C-1). C3-2 (sub-topo 63397) DES-DECRETADO 19:57 (estende mais alto · NAO e invalidacao · so reset do gatilho C3-3). Resistencias/zona repique C3-2: 63641 (max D hoje) · 63746 (EMA20 4H) · 64092 (EMA9 D) · 64409 (topo 1H estrutural) · 64681 (0.236 retr C-1) · 65471 (EMA20 D) · 67276 (topo C-2 · de-eleicao). Suportes/alvos down: 62640 (S1) · 62271/62216 (fundo dia · gatilho C3-3) · 61771 (S2) · 61270 (S3) · 59081 (C-1 low · MIN C-3) · 57499 (0.382A · alvo primario) · 49680 (0.5A · ima) · 41861 (0.618A base).",
+    "proximo_marco": "Closes 1H/4H sequenciais: vigiar se repique C3-2 estende (ate 64.4-64.7k) ou rejeita (15m RSI 69 + TOPO1H + CHoCH = exaustao). PROXIMO D close 20/06 20:00. GESTAO: loop principal gere SO o stop loss do SHORT user (instrucao 17-19/06: SO SL · sem parcial/add/long/fechar · default HOLD). BOOT READ-ONLY · ZERO place_order/set_trading_stop/cancel. LONG vetado (LEI #29). Babysit LEI #32."
+  },
+  "execution_mode": "AUTO",
+  "manual_approval_required": true,
+  "price_watch": {
+    "ts": "2026-06-22T09:52:37-04:00",
+    "levels": [
+      {
+        "price": 66032.2,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "PRIMARIA SHORT · continuacao C-3 (pullback raso 0.236-0.382)",
+        "decisao_pre_armada": "ALERTA-ONLY · SE mark na zona 66032 (continuacao C-3 (pullback raso 0.236-0.382)) + Camada2 TOPO 5m / rejeição: AVISAR Claude (contexto SHORT PRIMARIA · alvo 59081.4). NÃO auto-executa — gestão atual = SL-only do short vigente (mandato user). Claude julga, não dispara ordem.",
+        "active": true,
+        "triggered": false,
+        "source": "espinha_c3_continuacao"
+      },
+      {
+        "price": 67276.0,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "limite C-2 (des-eleicao C-3) · RECOUNT se romper",
+        "decisao_pre_armada": "SE close > este nivel: C-2 estourou o limite Fib · forcar RECOUNT Espinha (limpar lock tree.json). AUTONOMA re-valida dentro da LEI.",
+        "active": true,
+        "triggered": false,
+        "source": "espinha_fib_regions"
+      },
+      {
+        "price": 82811.0,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "INVALIDACAO TOTAL macro (close D)",
+        "decisao_pre_armada": "SE close D > este nivel: tese ABC bearish MORRE · skill fenix-analise-macro + RECOUNT. AUTONOMA re-valida/documenta dentro da LEI.",
+        "active": true,
+        "triggered": false,
+        "source": "espinha_fib_regions"
+      },
+      {
+        "price": 59081.0,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "C-1 low (suporte macro · base retracement C-2)",
+        "decisao_pre_armada": "SE perde C-1 low: C-3 confirmou resumir (rompeu o fundo da C-1). Camada2 FUNDO / continuacao short. AUTONOMA dentro da LEI.",
+        "active": true,
+        "triggered": false,
+        "source": "espinha_fib_regions"
+      },
+      {
+        "price": 57498.9,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "alvo C primario (0.382×A)",
+        "decisao_pre_armada": "SE mark em 57499 (alvo C primario): zona de TP/parcial da onda C down. Camada2 FUNDO 5m aqui = exaustao -> avaliar parcial/saida. AUTONOMA dentro da LEI.",
+        "active": true,
+        "triggered": false,
+        "source": "espinha_fib_regions"
+      },
+      {
+        "price": 49680.0,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "alvo C central (ima) (0.500×A)",
+        "decisao_pre_armada": "SE mark em 49680 (alvo C central (ima)): zona de TP/parcial da onda C down. Camada2 FUNDO 5m aqui = exaustao -> avaliar parcial/saida. AUTONOMA dentro da LEI.",
+        "active": true,
+        "triggered": false,
+        "source": "espinha_fib_regions"
+      },
+      {
+        "price": 41861.1,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "alvo C base (0.618×A)",
+        "decisao_pre_armada": "SE mark em 41861 (alvo C base): zona de TP/parcial da onda C down. Camada2 FUNDO 5m aqui = exaustao -> avaliar parcial/saida. AUTONOMA dentro da LEI.",
+        "active": true,
+        "triggered": false,
+        "source": "espinha_fib_regions"
+      }
+    ]
+  },
+  "monitor_url": "https://div-fluid-wondering-association.trycloudflare.com"
+}
