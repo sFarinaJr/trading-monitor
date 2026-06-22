@@ -1,9 +1,9 @@
 *
 !.gitignore
 !index.html
-!dashboard.html
+# !dashboard.html  · FORA DO AR 22/06 (user · até resolver o trade aberto) · religar = descomentar
 !fenix.png
-!fenix_dashboard.json
+# !fenix_dashboard.json  · FORA DO AR 22/06 (dados do dashboard) · religar = descomentar
 !README.md
 !LICENSE
 
