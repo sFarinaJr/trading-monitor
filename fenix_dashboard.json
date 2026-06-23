@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "22/06/2026 21:02:29",
-  "last_github_push": "22/06 21:02",
-  "last_github_push_ts": 1782176549.4572911,
+  "ultimo_update": "22/06/2026 21:03:13",
+  "last_github_push": "22/06 21:03",
+  "last_github_push_ts": 1782176593.5905159,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -114,7 +114,7 @@
   ],
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-06-19_WAVE_C_C3_DOWN_em_curso_C32_estendeu_acima_63397_topo_C2_67276_mark63535_alvo_57499_49680_SHORT_user_babysit_SL_only_v1",
-    "boot_ts": "2026-06-19T20:02:25-04:00",
+    "boot_ts": "2026-06-22T20:09:00-04:00",
     "ultimo_update": "2026-06-22T20:53:40-04:00",
     "status": "ACTIVE",
     "mark_at_boot": 63535.44,
