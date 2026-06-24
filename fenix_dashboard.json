@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "23/06/2026 22:58:45",
-  "last_github_push": "23/06 22:58",
-  "last_github_push_ts": 1782269925.200078,
+  "ultimo_update": "23/06/2026 22:59:23",
+  "last_github_push": "23/06 22:59",
+  "last_github_push_ts": 1782269963.3238761,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -7067.9,
     "cumPnL_unified_usd": -7067.9,
-    "unrealisedPnl": 23.02,
+    "unrealisedPnl": 25.01,
     "ts": "2026-06-14T20:22:14-0400",
     "progresso_vs_baseline_usd": -2482.52,
     "delta_vs_baseline": -943.9,
     "pnl_fenix_desde_baseline": -943.9,
-    "updated_at": "2026-06-23T22:58:20-04:00"
+    "updated_at": "2026-06-23T22:59:22-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_SHORT",
-    "markPrice": 62628.6,
-    "mark_price_atual": 62628.6,
-    "unrealised_pnl_usd": 23.02,
-    "unrealisedPnl": 23.02,
+    "markPrice": 62623.0,
+    "mark_price_atual": 62623.0,
+    "unrealised_pnl_usd": 25.01,
+    "unrealisedPnl": 25.01,
     "be_price": 62646.2643299,
     "liq_price": 64876.6,
     "tp2_target_estrutural": 59081.0,
-    "last_update": "2026-06-23T22:58:20-04:00",
-    "ts_snapshot": "2026-06-23T22:58:20-04:00"
+    "last_update": "2026-06-23T22:59:23-04:00",
+    "ts_snapshot": "2026-06-23T22:59:23-04:00"
   },
   "trades_recentes": [
     {
@@ -115,7 +115,7 @@
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-06-19_WAVE_C_C3_DOWN_em_curso_C32_estendeu_acima_63397_topo_C2_67276_mark63535_alvo_57499_49680_SHORT_user_babysit_SL_only_v1",
     "boot_ts": "2026-06-23T20:03:55-04:00",
-    "ultimo_update": "2026-06-23T09:40:55-04:00",
+    "ultimo_update": "2026-06-23T22:58:55-04:00",
     "status": "ACTIVE",
     "mark_at_boot": 63535.44,
     "mark_now": 63535.44,
