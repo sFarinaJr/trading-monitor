@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "23/06/2026 22:39:18",
-  "last_github_push": "23/06 22:39",
-  "last_github_push_ts": 1782268758.82775,
+  "ultimo_update": "23/06/2026 22:40:18",
+  "last_github_push": "23/06 22:40",
+  "last_github_push_ts": 1782268818.214218,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -16,7 +16,7 @@
     "progresso_vs_baseline_usd": -2478.05,
     "delta_vs_baseline": -939.43,
     "pnl_fenix_desde_baseline": -939.43,
-    "updated_at": "2026-06-23T22:39:18-04:00"
+    "updated_at": "2026-06-23T22:40:17-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -48,7 +48,7 @@
     "liq_price": null,
     "tp2_target_estrutural": null,
     "last_update": "2026-06-22T08:01:19-04:00",
-    "ts_snapshot": "2026-06-23T22:39:18-04:00"
+    "ts_snapshot": "2026-06-23T22:40:18-04:00"
   },
   "trades_recentes": [
     {
@@ -154,6 +154,17 @@
       }
     },
     "setups_pre_armados": [
+      {
+        "nome": "SHORT_CONT_C33_DECREE",
+        "lado": "SHORT",
+        "entry": 62670.0,
+        "sl": 63500.0,
+        "tp1": 59081.0,
+        "tp2": 49680.0,
+        "tier": "T2",
+        "rr": 4.32,
+        "nota": "Continuacao C3-3 down · decree DECRETADO TOPO 63113 (sub-topo) · SL acima do topo decretado (nao C-2 65643) viabiliza T2 · user-autorizado LEI #3 · timing=momentum perdendo forca (hist 15m topou +46->+23)"
+      },
       {
         "tipo": "SHORT_C3_continuacao",
         "lado": "SHORT",
