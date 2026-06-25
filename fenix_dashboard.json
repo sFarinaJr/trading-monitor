@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "25/06/2026 09:44:24",
-  "last_github_push": "25/06 09:44",
-  "last_github_push_ts": 1782395064.214008,
+  "ultimo_update": "25/06/2026 09:45:24",
+  "last_github_push": "25/06 09:45",
+  "last_github_push_ts": 1782395124.339284,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -7056.51,
     "cumPnL_unified_usd": -7056.51,
-    "unrealisedPnl": 10.12,
+    "unrealisedPnl": 10.19,
     "ts": "2026-06-25T08:55:00-04:00",
     "progresso_vs_baseline_usd": -2471.13,
     "delta_vs_baseline": -932.51,
     "pnl_fenix_desde_baseline": -932.51,
-    "updated_at": "2026-06-25T09:44:23-04:00"
+    "updated_at": "2026-06-25T09:45:23-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_SHORT",
-    "markPrice": 60200.2,
-    "mark_price_atual": 60200.2,
-    "unrealised_pnl_usd": 10.21,
-    "unrealisedPnl": 10.21,
+    "markPrice": 60202.9,
+    "mark_price_atual": 60202.9,
+    "unrealised_pnl_usd": 10.19,
+    "unrealisedPnl": 10.19,
     "be_price": 61154.19336864,
     "liq_price": 63353.5,
     "tp2_target_estrutural": 57499.0,
-    "last_update": "2026-06-25T09:44:24-04:00",
-    "ts_snapshot": "2026-06-25T09:44:24-04:00"
+    "last_update": "2026-06-25T09:45:24-04:00",
+    "ts_snapshot": "2026-06-25T09:45:24-04:00"
   },
   "trades_recentes": [
     {
@@ -135,7 +135,7 @@
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-06-25_WAVE_C_C3_DOWN_C33_cumpriu_alvo_59066_repique_em_curso_FLAT_reentrada_SHORT_armada_v1",
     "boot_ts": "2026-06-25T08:55:00-04:00",
-    "ultimo_update": "2026-06-25T09:43:07-04:00",
+    "ultimo_update": "2026-06-25T09:45:08-04:00",
     "status": "ACTIVE",
     "mark_at_boot": 61349.5,
     "mark_now": 61349.5,
@@ -235,7 +235,7 @@
   "execution_mode": "SEMI_AUTO",
   "manual_approval_required": true,
   "price_watch": {
-    "ts": "2026-06-25T09:43:07-04:00",
+    "ts": "2026-06-25T09:45:08-04:00",
     "levels": [
       {
         "price": 59065.8,
