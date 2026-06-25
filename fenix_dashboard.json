@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "25/06/2026 09:54:17",
+  "ultimo_update": "25/06/2026 09:54:42",
   "last_github_push": "25/06 09:54",
-  "last_github_push_ts": 1782395657.0541928,
+  "last_github_push_ts": 1782395682.92322,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -7056.51,
     "cumPnL_unified_usd": -7056.51,
-    "unrealisedPnl": 22.92,
+    "unrealisedPnl": 24.39,
     "ts": "2026-06-25T08:55:00-04:00",
     "progresso_vs_baseline_usd": -2471.13,
     "delta_vs_baseline": -932.51,
     "pnl_fenix_desde_baseline": -932.51,
-    "updated_at": "2026-06-25T09:53:38-04:00"
+    "updated_at": "2026-06-25T09:54:41-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_SHORT",
-    "markPrice": 58929.46,
-    "mark_price_atual": 58929.46,
-    "unrealised_pnl_usd": 22.92,
-    "unrealisedPnl": 22.92,
+    "markPrice": 58771.8,
+    "mark_price_atual": 58771.8,
+    "unrealised_pnl_usd": 24.5,
+    "unrealisedPnl": 24.5,
     "be_price": 61154.19336864,
     "liq_price": 63353.5,
     "tp2_target_estrutural": 57499.0,
-    "last_update": "2026-06-25T09:53:39-04:00",
-    "ts_snapshot": "2026-06-25T09:53:39-04:00"
+    "last_update": "2026-06-25T09:54:42-04:00",
+    "ts_snapshot": "2026-06-25T09:54:42-04:00"
   },
   "trades_recentes": [
     {
@@ -293,16 +293,6 @@
         "source": "espinha_fib_regions"
       },
       {
-        "price": 59081.0,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "C-1 low (suporte macro · base retracement C-2)",
-        "decisao_pre_armada": "SE perde C-1 low: C-3 confirmou resumir (rompeu o fundo da C-1). Camada2 FUNDO / continuacao short. AUTONOMA dentro da LEI.",
-        "active": true,
-        "triggered": false,
-        "source": "espinha_fib_regions"
-      },
-      {
         "price": 57498.9,
         "direction": "below",
         "tier": "alto",
@@ -378,16 +368,6 @@
         "tier": "medio",
         "reason": "EMA20 D (resistencia dinamica macro)",
         "decisao_pre_armada": "SE mark testa EMA20 D 64367: resistencia macro forte · zona de short premium se rejeitar (mas longe). Monitorar Camada2 TOPO. Tese intacta.",
-        "active": true,
-        "triggered": false,
-        "source": "opus_boot_25jun"
-      },
-      {
-        "price": 59065.8,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "C-1 low / alvo C3-3 CUMPRIDO (BOS se close abaixo)",
-        "decisao_pre_armada": "SE close 1H/4H < 59065.8 (BOS do fundo C-1 = C-3 resume direta): cenario B · ACORDAR Claude · validar e armar SHORT de continuacao no PULLBACK (NAO no break · anti-chase) SL 60700 alvo 57499->49680 T1. Se ja em SHORT = trail SL pra baixo.",
         "active": true,
         "triggered": false,
         "source": "opus_boot_25jun"
