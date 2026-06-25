@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "25/06/2026 17:04:39",
-  "last_github_push": "25/06 17:04",
-  "last_github_push_ts": 1782421479.229749,
+  "ultimo_update": "25/06/2026 17:05:41",
+  "last_github_push": "25/06 17:05",
+  "last_github_push_ts": 1782421541.7501,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -7056.56,
     "cumPnL_unified_usd": -7056.56,
-    "unrealisedPnl": 17.5,
+    "unrealisedPnl": 17.2,
     "ts": "2026-06-25T08:55:00-04:00",
     "progresso_vs_baseline_usd": -2471.18,
     "delta_vs_baseline": -932.56,
     "pnl_fenix_desde_baseline": -932.56,
-    "updated_at": "2026-06-25T17:04:38-04:00"
+    "updated_at": "2026-06-25T17:05:41-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_SHORT",
-    "markPrice": 59487.6,
-    "mark_price_atual": 59487.6,
-    "unrealised_pnl_usd": 17.34,
-    "unrealisedPnl": 17.34,
+    "markPrice": 59501.3,
+    "mark_price_atual": 59501.3,
+    "unrealised_pnl_usd": 17.2,
+    "unrealisedPnl": 17.2,
     "be_price": 61149.70655039,
     "liq_price": 63353.5,
     "tp2_target_estrutural": 57499.0,
-    "last_update": "2026-06-25T17:04:39-04:00",
-    "ts_snapshot": "2026-06-25T17:04:39-04:00"
+    "last_update": "2026-06-25T17:05:41-04:00",
+    "ts_snapshot": "2026-06-25T17:05:41-04:00"
   },
   "trades_recentes": [
     {
@@ -60,6 +60,16 @@
       "quantity": 0.356,
       "pnl_usd": 6.51,
       "pnl_percent": 0.1
+    },
+    {
+      "timestamp": "2026-06-20T10:19:54",
+      "symbol": "BTCUSDT",
+      "side": "LONG",
+      "entry_price": 63910.23,
+      "exit_price": 63300.0,
+      "quantity": 0.8,
+      "pnl_usd": -526.43,
+      "pnl_percent": -0.95
     },
     {
       "timestamp": "2026-06-20T01:13:56",
