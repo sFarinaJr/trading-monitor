@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "25/06/2026 09:29:09",
-  "last_github_push": "25/06 09:29",
-  "last_github_push_ts": 1782394149.8614411,
+  "ultimo_update": "25/06/2026 09:30:12",
+  "last_github_push": "25/06 09:30",
+  "last_github_push_ts": 1782394212.6243489,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -7056.51,
     "cumPnL_unified_usd": -7056.51,
-    "unrealisedPnl": 0.08,
+    "unrealisedPnl": 0,
     "ts": "2026-06-25T08:55:00-04:00",
     "progresso_vs_baseline_usd": -2471.13,
     "delta_vs_baseline": -932.51,
     "pnl_fenix_desde_baseline": -932.51,
-    "updated_at": "2026-06-25T09:29:09-04:00"
+    "updated_at": "2026-06-25T09:30:12-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -24,31 +24,10 @@
     "diff_usd": -932.51
   },
   "posicao_atual": {
-    "side": "SHORT",
-    "size": 0.01,
-    "qty": 0.01,
-    "avgPrice": 61221.5,
-    "avg_price": 61221.5,
-    "entry_price": 61221.5,
-    "stopLoss": 62410.0,
-    "stop_loss": 62410.0,
-    "takeProfit": 57499.0,
-    "take_profit": 57499.0,
-    "tp2": 57499.0,
-    "tp1": null,
-    "tp1_limit": null,
-    "tp1_pnl_lock": 0,
-    "tp1_realizado": false,
-    "status": "OPEN_SHORT",
-    "markPrice": 61213.5,
-    "mark_price_atual": 61213.5,
-    "unrealised_pnl_usd": 0.08,
-    "unrealisedPnl": 0.08,
-    "be_price": 61154.19336864,
-    "liq_price": 63353.5,
-    "tp2_target_estrutural": 57499.0,
-    "last_update": "2026-06-25T09:29:09-04:00",
-    "ts_snapshot": "2026-06-25T09:29:09-04:00"
+    "side": null,
+    "size": 0,
+    "qty": 0,
+    "status": "FLAT"
   },
   "trades_recentes": [
     {
@@ -133,7 +112,7 @@
     }
   ],
   "current_thesis": {
-    "thesis_id": "boot_d_close_2026-06-25_WAVE_C_C3_DOWN_C33_cumpriu_alvo_59066_repique_em_curso_FLAT_reentrada_SHORT_armada_v1",
+    "thesis_id": null,
     "boot_ts": "2026-06-25T08:55:00-04:00",
     "ultimo_update": "2026-06-25T09:04:28-04:00",
     "status": "ACTIVE",
@@ -143,104 +122,11 @@
       "direcao": "BEARISH",
       "score": 7.5
     },
-    "leitura_primaria_opus": "BOOT D-close 25/06 (RECUPERACAO · marker LEI #27 type=d_close de 24/06 20:00 nao completou · ~12h sem processar · refeito 08:55 com dados FRESCOS). So D-close (NAO W/M). MARK $61.349 · 24h -2,06% (prevPrice24h 62645) = QUEDA real, repique intra falhando. D-1 (24/06 candle estrutural): O62693.7 H63232.7 L59065.8 C61054.7 vol123k = candle BEAR -2,61%, MECHA INFERIOR enorme cravando o alvo C3-3 59065.8 EXATO e fechando 61054 (rejeicao do fundo = bounce tecnico). D-0 (25/06 em formacao): O61054 H61942 L60650 C~61349 vol37k = inside/repique fraco testando 61.9k e cedendo. CONTAGEM ADOTADA DA ESPINHA (NAO recontei · LEI #29 · tree recontou 08:53 hoje sozinho): WAVE C · C-1 TRAVADA 59081 (ancora) · C-2 corretiva TOPOU 67276 · ONDA DE TRABALHO C-3 DOWN. Sub-operavel: C3-1 (67276->62216 diagonal) TRAVADA · C3-2 (62216->65571 corretiva) TRAVADA · C3-3 (65571->59065.8 impulso) VIVA. EVENTO-CHAVE: a C3-3 ATINGIU o alvo minimo 59065.8 (= fundo C-1 · low 24/06 cravou exato) e agora REPICA. micro_viva 5-down onda-5 em formacao. Coracao: TOPO1H 07:00 (sfp+three_bar 2 votos) + repique 04:00->agora falhando (61942->61349). Multi-TF LIVE: D RSI 34.4 (oversold-ish · BBpos 0.16) · 4H RSI 41 bear · 1H RSI 48 MACD hist +96 (repique micro) · 15m RSI 46 MACD hist -46 (repique JA virando bear). Derivativos: funding ~zero levemente neg · OI 56.6k (posicoes novas na perna down) · L/S buy 0.62 (longs retail = combustivel down). POSICAO: FLAT (size 0 confirmado Bybit). Ultimo trade SHORT 0.356 @62693 fechado +$7,26 (24/06). VEREDITO: C-3 DOWN em curso, alvo minimo 59066 CUMPRIDO, em repique de respiro. Como o alvo minimo ja foi tocado, o R do proximo SHORT de continuacao mira 57499 (0.382A) -> 49680 (0.5A · ima). Reentrada SHORT a-favor no repique 62.1-62.4k com SL estrutural acima do cluster de topos 63.3k (anti-stop-hunt) e confirmacao MACD-hist virando + Camada2 TOPO. NAO chase a queda atual (mark abaixo da zona). MANDATO 25/06: 100% autonoma, ZERO perguntas, LEI #3 suspensa. LONG vetado (LEI #29).",
-    "cenarios_opus": {
-      "cenario_A_repique_ate_zona_reentrada_SHORT_PRIMARIO": {
-        "prob": 0.5,
-        "entry": 62200.0,
-        "sl": 63300.0,
-        "tp1": 59065.8,
-        "tp2": 57499.0,
-        "rr": 4.27,
-        "note": "PRIMARIO. C3-3 cumpriu alvo minimo 59066 -> repique corretivo de respiro sobe pra zona 62.1-62.4k (0.5-0.618 retr C3-3 65571->59066 = 62318 · + zona motor 62103-62765). Camada2 TOPO 5m / MACD-hist 15m+1H virando bear na zona = exaustao do repique -> REENTRADA SHORT de continuacao a-favor C-3 rumo 57499 (0.382A) -> 49680 (0.5A ima). SL estrutural 63300 (acima cluster topos 62950/63232 = anti-stop-hunt) · dist 1.77% · qty ~0.063 BTC T2. R:R TP2 4.27x. Dispara via confirmacao (NUNCA chase)."
-      },
-      "cenario_B_continuacao_down_direta_sem_repique_SECUNDARIO": {
-        "prob": 0.3,
-        "entry": "n/a (sem zona · nao chase)",
-        "sl": "n/a",
-        "tp1": 59065.8,
-        "tp2": 49680.0,
-        "rr": "alto",
-        "note": "SECUNDARIO. Repique morre cedo (15m MACD hist ja -46 · TOPO1H 07:00) e a C3-3 estende/ a proxima perna engata SEM repicar ate 62k -> perde 59065.8 em close (BOS do fundo C-1) -> continuacao direta rumo 57499->49680. NAO chase a market (guard bloqueia + doutrina anti-chase). Se NAO tocar a zona de reentrada, FICA FLAT e captura via break<59065.8 com pullback. Paciencia."
-      },
-      "cenario_C_de_eleicao_ou_recount": {
-        "prob": 0.2,
-        "entry": "n/a",
-        "sl": "n/a",
-        "tp1": "n/a",
-        "tp2": "n/a",
-        "rr": "n/a",
-        "note": "Repique forte recupera muito: close 4H/1H acima 64.4-65.6k enfraquece C3-3 (mas C-3 macro segue ate close>67276). close>67276 DES-ELEGE C-3 (recount conservador). close>77733 RECOUNT onda. Invalida macro TOTAL so close D>82811. Residual. So aqui reavaliar a tese."
-      }
-    },
-    "setups_pre_armados": [
-      {
-        "nome": "PREFLIGHT_SHORT_teste_operacao_short",
-        "lado": "SHORT",
-        "entry": 61215.3,
-        "sl": 62410,
-        "tp1": 57499.0,
-        "tp2": 57499.0,
-        "tier": "T2",
-        "nota": "armado por fenix_entry_preflight.py (zona viva)"
-      },
-      {
-        "tipo": "REENTRADA_SHORT_C3_continuacao",
-        "lado": "SHORT",
-        "direcao": "SHORT",
-        "prioridade": "PRIMARIA",
-        "entry_zone": "62103-62434 (zona Elliott 0.5-0.618 retr C3-3 + zona motor)",
-        "entry": 62200.0,
-        "sl": 63300.0,
-        "tp1": 59065.8,
-        "tp2": 57499.0,
-        "rr": 4.27,
-        "qty_btc": 0.063,
-        "tier": "T2",
-        "macro_aligned": true,
-        "alert_only": true,
-        "auto_execute": false,
-        "zona": [
-          62103.0,
-          62434.0
-        ],
-        "fib_role": "continuacao C-3 no repique (0.5-0.618 retr C3-3 65571->59066)",
-        "fib_label": "reentrada SHORT 62103-62434",
-        "trigger": "SEMI-AUTO · SE mark repicar pra zona 62103-62434 + Camada2 TOPO 5m / MACD-hist 15m+1H virando bear (exaustao do repique): watcher ACORDA Claude · Claude valida 4 camadas (direcao SHORT a-favor C-3 + regime forte + zona Elliott + timing exaustao) e DISPARA via MCP (place_order Limit price=mark · SL 63300 embedded anti-stop-hunt acima cluster topos · TP2 57499 embedded). NUNCA chase a queda atual (mark 61349 abaixo da zona). qty 0.063 BTC T2 (risco ~6% equity · SL-dist 1.77%).",
-        "invalidacao": "close > 67276 de-elege C-3 (recount) · close > 82811 invalida macro · repique nao chega a zona = sem trade (fica FLAT · cenario B captura via break<59066)",
-        "razao_estrutural": "SHORT de continuacao a-favor do macro C-3 DOWN. A C3-3 cumpriu o alvo minimo 59066 e repica; reentrada na exaustao do repique mira 57499 (0.382A) -> 49680 (0.5A ima). SL estrutural 63300 ACIMA do cluster de topos 62950/63232 (anti-stop-hunt · NUNCA tight). Tier T2 a-favor da tendencia.",
-        "source": "opus_boot_25jun"
-      },
-      {
-        "tipo": "CONTINUACAO_DIRETA_break_59066",
-        "lado": "SHORT",
-        "direcao": "SHORT",
-        "prioridade": "SECUNDARIA",
-        "entry_zone": "pullback pos-break <59065.8 (NAO chase)",
-        "entry": 59000.0,
-        "sl": 60700.0,
-        "tp1": 57499.0,
-        "tp2": 49680.0,
-        "rr": 2.65,
-        "qty_btc": 0.04,
-        "tier": "T1",
-        "macro_aligned": true,
-        "alert_only": true,
-        "auto_execute": false,
-        "zona": [
-          58800.0,
-          59065.8
-        ],
-        "fib_role": "BOS do fundo C-1 · continuacao direta C-3",
-        "fib_label": "break C-1 low 59066",
-        "trigger": "SEMI-AUTO · SE close 1H/4H < 59065.8 (BOS do fundo C-1 = C-3 resume) + pullback que NAO recupera 59066: watcher acorda Claude · Claude valida e dispara SHORT no pullback (NAO no break impulsivo · anti-chase). SL 60700 acima do nivel rompido. Alvo 57499->49680.",
-        "invalidacao": "recupera 59066 em close (false break) · close>67276 macro",
-        "razao_estrutural": "Se o repique morrer cedo e a perna down continuar direta rompendo o fundo C-1 59066, capturar a continuacao no pullback (nao no break). Tier T1 (entrada mais arriscada · break ja consumiu parte do movimento).",
-        "source": "opus_boot_25jun"
-      }
-    ],
-    "ponto_nao_retorno": "BEAR MACRO invalida TOTAL: close D>82811 (topo B · +35%). DES-ELEICAO C-3: close>67276 (topo C-2 · +9,6%). RECOUNT onda: close>77733 (0.786 retr C-1 · +26,7%). Todos MUITO longe. Resistencias/zona repique reentrada: 61942 (topo D-0/repique) · 62150 (EMA20 4H) · 62318 (0.5 retr C3-3) · 62765 (0.236 motor) · 62841 (EMA9 D) · 62950 (topo surto 24/06) · 63232 (D-1 high · cluster topo) · 64367 (EMA20 D). Suportes/alvos down: 60650 (low D-0) · 59199 (S2 weekly) · 59065.8 (C-1 low / alvo C3-3 CUMPRIDO · BOS se close abaixo) · 57499 (0.382A · alvo C primario) · 49680 (0.5A · ima central) · 41861 (0.618A base).",
-    "proximo_marco": "Closes 1H/4H: vigiar (a) se o repique sobe pra zona reentrada 62.1-62.4k (arma SHORT na exaustao) ou (b) morre cedo e perde 59065.8 em close (BOS -> continuacao direta). PROXIMO D close 25/06 20:00 (marker LEI #27 normal). GESTAO: FLAT · reentrada SHORT armada (dispara via Camada2 TOPO + MACD-hist virando na zona · semi-auto: watcher acorda Claude · Claude valida+dispara MCP). NAO chase. LONG vetado (LEI #29). MANDATO 100% autonomo ZERO perguntas."
+    "leitura_primaria_opus": null,
+    "cenarios_opus": {},
+    "setups_pre_armados": [],
+    "ponto_nao_retorno": null,
+    "proximo_marco": null
   },
   "execution_mode": "SEMI_AUTO",
   "manual_approval_required": true,
