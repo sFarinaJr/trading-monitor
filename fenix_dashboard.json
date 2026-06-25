@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "25/06/2026 17:55:47",
-  "last_github_push": "25/06 17:55",
-  "last_github_push_ts": 1782424547.384172,
+  "ultimo_update": "25/06/2026 17:56:48",
+  "last_github_push": "25/06 17:56",
+  "last_github_push_ts": 1782424608.162008,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -7056.56,
     "cumPnL_unified_usd": -7056.56,
-    "unrealisedPnl": 12.12,
+    "unrealisedPnl": 12.58,
     "ts": "2026-06-25T08:55:00-04:00",
     "progresso_vs_baseline_usd": -2471.18,
     "delta_vs_baseline": -932.56,
     "pnl_fenix_desde_baseline": -932.56,
-    "updated_at": "2026-06-25T17:55:46-04:00"
+    "updated_at": "2026-06-25T17:56:47-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_SHORT",
-    "markPrice": 60009.81,
-    "mark_price_atual": 60009.81,
-    "unrealised_pnl_usd": 12.12,
-    "unrealisedPnl": 12.12,
+    "markPrice": 59963.6,
+    "mark_price_atual": 59963.6,
+    "unrealised_pnl_usd": 12.58,
+    "unrealisedPnl": 12.58,
     "be_price": 61149.70655039,
     "liq_price": 63353.5,
     "tp2_target_estrutural": 57499.0,
-    "last_update": "2026-06-25T17:55:47-04:00",
-    "ts_snapshot": "2026-06-25T17:55:47-04:00"
+    "last_update": "2026-06-25T17:56:48-04:00",
+    "ts_snapshot": "2026-06-25T17:56:48-04:00"
   },
   "trades_recentes": [
     {
@@ -145,7 +145,7 @@
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-06-25_WAVE_C_C3_DOWN_C33_cumpriu_alvo_59066_repique_em_curso_FLAT_reentrada_SHORT_armada_v1",
     "boot_ts": "2026-06-25T08:55:00-04:00",
-    "ultimo_update": "2026-06-25T17:50:37-04:00",
+    "ultimo_update": "2026-06-25T17:55:47-04:00",
     "status": "ACTIVE",
     "mark_at_boot": 61349.5,
     "mark_now": 61349.5,
@@ -189,22 +189,22 @@
         "lado": "SHORT",
         "direcao": "SHORT",
         "prioridade": "PRIMARIA",
-        "entry": 60562.1,
-        "sl": 61254.3,
+        "entry": 60610.8,
+        "sl": 61298.2,
         "tp1": 58042.6,
         "tp2": 49680.0,
-        "rr": 15.7,
+        "rr": 15.9,
         "qty_btc": 0.0,
         "tier": "T1",
         "macro_aligned": true,
         "alert_only": true,
         "zona": [
-          60416.3,
-          60707.9
+          60470.1,
+          60751.4
         ],
         "fib_role": "continuacao C-3 (pullback raso 0.236-0.382)",
-        "fib_label": "C-3 pullback 60416-60708",
-        "trigger": "ALERTA-ONLY · C-2 TRAVADA no topo 67276 (passado) · C-3 DOWN em curso. Zona de short de CONTINUAÇÃO no pullback raso 60416-60708 a-favor do macro DOWN. Camada2 TOPO/rejeição aqui = exaustão do repique → contexto p/ short C-3 (alvo 58043 C-1 low → 49680). NÃO reabrir short de retrace-C2 (topo passado). NÃO auto-executa (gestão = SL-only do short vigente).",
+        "fib_label": "C-3 pullback 60470-60751",
+        "trigger": "ALERTA-ONLY · C-2 TRAVADA no topo 67276 (passado) · C-3 DOWN em curso. Zona de short de CONTINUAÇÃO no pullback raso 60470-60751 a-favor do macro DOWN. Camada2 TOPO/rejeição aqui = exaustão do repique → contexto p/ short C-3 (alvo 58043 C-1 low → 49680). NÃO reabrir short de retrace-C2 (topo passado). NÃO auto-executa (gestão = SL-only do short vigente).",
         "invalidacao": "close > 61942 DESTRAVA a C-2 (volta contagem conservadora · C-2 ainda subindo) · close > 82811 invalida macro",
         "source": "espinha_c3_continuacao",
         "derivado_de": "tree.onda_de_trabalho.plano_trade.entrada_primaria (modo_c3)"
