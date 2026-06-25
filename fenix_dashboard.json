@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "25/06/2026 09:47:57",
-  "last_github_push": "25/06 09:47",
-  "last_github_push_ts": 1782395277.52753,
+  "ultimo_update": "25/06/2026 09:48:31",
+  "last_github_push": "25/06 09:48",
+  "last_github_push_ts": 1782395311.8359208,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -7056.51,
     "cumPnL_unified_usd": -7056.51,
-    "unrealisedPnl": 14.98,
+    "unrealisedPnl": 17.05,
     "ts": "2026-06-25T08:55:00-04:00",
     "progresso_vs_baseline_usd": -2471.13,
     "delta_vs_baseline": -932.51,
     "pnl_fenix_desde_baseline": -932.51,
-    "updated_at": "2026-06-25T09:47:29-04:00"
+    "updated_at": "2026-06-25T09:48:31-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_SHORT",
-    "markPrice": 59723.7,
-    "mark_price_atual": 59723.7,
-    "unrealised_pnl_usd": 14.98,
-    "unrealisedPnl": 14.98,
+    "markPrice": 59479.18,
+    "mark_price_atual": 59479.18,
+    "unrealised_pnl_usd": 17.42,
+    "unrealisedPnl": 17.42,
     "be_price": 61154.19336864,
     "liq_price": 63353.5,
     "tp2_target_estrutural": 57499.0,
-    "last_update": "2026-06-25T09:47:29-04:00",
-    "ts_snapshot": "2026-06-25T09:47:29-04:00"
+    "last_update": "2026-06-25T09:48:31-04:00",
+    "ts_snapshot": "2026-06-25T09:48:31-04:00"
   },
   "trades_recentes": [
     {
@@ -135,7 +135,7 @@
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-06-25_WAVE_C_C3_DOWN_C33_cumpriu_alvo_59066_repique_em_curso_FLAT_reentrada_SHORT_armada_v1",
     "boot_ts": "2026-06-25T08:55:00-04:00",
-    "ultimo_update": "2026-06-25T09:45:08-04:00",
+    "ultimo_update": "2026-06-25T09:48:12-04:00",
     "status": "ACTIVE",
     "mark_at_boot": 61349.5,
     "mark_now": 61349.5,
@@ -174,6 +174,39 @@
       }
     },
     "setups_pre_armados": [
+      {
+        "tipo": "SHORT_dualcountA_C3early",
+        "lado": "SHORT",
+        "direcao": "SHORT",
+        "prioridade": "ALTERNATIVA_A",
+        "entry": 61632.6,
+        "sl": 62128.1,
+        "tp1": 57498.9,
+        "tp2": 49680.0,
+        "rr": 24.1,
+        "qty_btc": 0.08,
+        "tier": "T2",
+        "macro_aligned": true,
+        "fib_role": "dual-count A (C-2 rasa topou 61942 retrace 12.1% -> C-3 cedo)",
+        "fib_label": "zona 61323-61942",
+        "trigger": "ALTERNATIVA do motor: zona 61323-61942 + Camada2 TOPO/rejeicao + confluencia>=2 -> SHORT. SL 62128.1 (topo C-2 real). close>61942 invalida (flip B).",
+        "invalidacao": "close > 61942 reabre a C-2 → ativa o cenário B (zona projetada)",
+        "ordem_pronta": {
+          "category": "linear",
+          "symbol": "BTCUSDT",
+          "side": "Sell",
+          "orderType": "Limit",
+          "price": "61632.6",
+          "qty": "0.080",
+          "orderLinkId": "fenix_short_dualA_ellstruct",
+          "stopLoss": "62128.1",
+          "takeProfit": "57498.9",
+          "tpslMode": "Partial",
+          "tpSize": "0.020"
+        },
+        "source": "espinha_dual_count_A",
+        "derivado_de": "tree.onda_de_trabalho.plano_trade.dual_count_alternativa"
+      },
       {
         "tipo": "REENTRADA_SHORT_C3_continuacao",
         "lado": "SHORT",
@@ -235,13 +268,23 @@
   "execution_mode": "SEMI_AUTO",
   "manual_approval_required": true,
   "price_watch": {
-    "ts": "2026-06-25T09:45:08-04:00",
+    "ts": "2026-06-25T09:48:12-04:00",
     "levels": [
       {
-        "price": 59065.8,
+        "price": 61632.6,
         "direction": "above",
         "tier": "alto",
-        "reason": "limite C-2 (des-eleicao C-2) · RECOUNT se romper",
+        "reason": "ALTERNATIVA_A SHORT · dual-count A (C-2 rasa topou 61942 retrace 12.1% -> C-3 cedo)",
+        "decisao_pre_armada": "SE mark na zona 61633 (dual-count A (C-2 rasa topou 61942 retrace 12.1% -> C-3 cedo)) + Camada2 TOPO 5m / rejeicao: SHORT ALTERNATIVA_A qty 0.080 SL 62128.1 TP1 57498.9. AUTONOMA executa ordem_pronta (8/8 guards) dentro da LEI.",
+        "active": true,
+        "triggered": false,
+        "source": "espinha_dual_count_A"
+      },
+      {
+        "price": 82811.0,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "limite C-2 (des-eleicao C) · RECOUNT se romper",
         "decisao_pre_armada": "SE close > este nivel: C-2 estourou o limite Fib · forcar RECOUNT Espinha (limpar lock tree.json). AUTONOMA re-valida dentro da LEI.",
         "active": true,
         "triggered": false,
@@ -263,6 +306,36 @@
         "tier": "alto",
         "reason": "C-1 low (suporte macro · base retracement C-2)",
         "decisao_pre_armada": "SE perde C-1 low: C-3 confirmou resumir (rompeu o fundo da C-1). Camada2 FUNDO / continuacao short. AUTONOMA dentro da LEI.",
+        "active": true,
+        "triggered": false,
+        "source": "espinha_fib_regions"
+      },
+      {
+        "price": 57498.9,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "alvo C primario (0.382×A)",
+        "decisao_pre_armada": "SE mark em 57499 (alvo C primario): zona de TP/parcial da onda C down. Camada2 FUNDO 5m aqui = exaustao -> avaliar parcial/saida. AUTONOMA dentro da LEI.",
+        "active": true,
+        "triggered": false,
+        "source": "espinha_fib_regions"
+      },
+      {
+        "price": 49680.0,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "alvo C central (ima) (0.500×A)",
+        "decisao_pre_armada": "SE mark em 49680 (alvo C central (ima)): zona de TP/parcial da onda C down. Camada2 FUNDO 5m aqui = exaustao -> avaliar parcial/saida. AUTONOMA dentro da LEI.",
+        "active": true,
+        "triggered": false,
+        "source": "espinha_fib_regions"
+      },
+      {
+        "price": 41861.1,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "alvo C base (0.618×A)",
+        "decisao_pre_armada": "SE mark em 41861 (alvo C base): zona de TP/parcial da onda C down. Camada2 FUNDO 5m aqui = exaustao -> avaliar parcial/saida. AUTONOMA dentro da LEI.",
         "active": true,
         "triggered": false,
         "source": "espinha_fib_regions"
