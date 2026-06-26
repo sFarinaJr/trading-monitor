@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "26/06/2026 11:02:16",
+  "ultimo_update": "26/06/2026 11:02:27",
   "last_github_push": "26/06 11:02",
-  "last_github_push_ts": 1782486136.820936,
+  "last_github_push_ts": 1782486147.594013,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -165,7 +165,7 @@
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-06-25_2000_WAVE_C_C3_DOWN_BOS_fundo_C1_59066_ROMPIDO_continuacao_resumiu_SHORT001_ativo_ADD_armado_v2",
     "boot_ts": "2026-06-25T20:07:49-04:00",
-    "ultimo_update": "2026-06-26T02:51:14-04:00",
+    "ultimo_update": "2026-06-26T11:02:20-04:00",
     "status": "ACTIVE",
     "mark_at_boot": 59767.0,
     "mark_now": 59767.0,
@@ -200,6 +200,16 @@
       }
     },
     "setups_pre_armados": [
+      {
+        "nome": "PREFLIGHT_SHORT_reentrada_short_exaustao_c3",
+        "lado": "SHORT",
+        "entry": 59657.3,
+        "sl": 61180,
+        "tp1": 49680.0,
+        "tp2": 49680.0,
+        "tier": "T2",
+        "nota": "armado por fenix_entry_preflight.py (zona viva)"
+      },
       {
         "nome": "PREFLIGHT_SHORT_short_exaustao_topo_c3",
         "lado": "SHORT",
