@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "26/06/2026 03:30:44",
-  "last_github_push": "26/06 03:30",
-  "last_github_push_ts": 1782459044.079576,
+  "ultimo_update": "26/06/2026 03:31:45",
+  "last_github_push": "26/06 03:31",
+  "last_github_push_ts": 1782459105.0826209,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -16,7 +16,7 @@
     "progresso_vs_baseline_usd": -2457.99,
     "delta_vs_baseline": -919.37,
     "pnl_fenix_desde_baseline": -919.37,
-    "updated_at": "2026-06-26T03:30:43-04:00"
+    "updated_at": "2026-06-26T03:31:44-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -209,16 +209,6 @@
         "tier": "alto",
         "reason": "PRIMARIA ADD SHORT · meio da zona repique C3-4 (0.382-0.5 retr perna C3-3)",
         "decisao_pre_armada": "SEMI-AUTO · SE mark repicar pra zona 60602-61150 + Camada2 TOPO 5m / MACD-hist 15m+1H virando bear: ACORDAR Claude. Claude valida 4 camadas (SHORT a-favor C-3 + regime BOS confirmado + zona Elliott + timing exaustao) e DISPARA ADD SHORT via MCP (Limit price=mark · SL 62050 embedded anti-stop-hunt · TP2 57499 embedded · qty 0.04 T2). Escala o SHORT 0.01 existente (mesma direcao). NUNCA chase.",
-        "active": true,
-        "triggered": false,
-        "source": "opus_boot_25jun_2000"
-      },
-      {
-        "price": 60602.0,
-        "direction": "above",
-        "tier": "alto",
-        "reason": "borda baixa zona ADD SHORT (0.382 retr perna C3-3)",
-        "decisao_pre_armada": "SEMI-AUTO · borda inferior da zona de ADD SHORT. Mesma decisao do 60900: exaustao do repique aqui = ADD SHORT de continuacao. SL 62050 acima swing topo 61942 (anti-stop-hunt). NAO entrar acima de 61150 sem reavaliar (vira retrace mais profundo).",
         "active": true,
         "triggered": false,
         "source": "opus_boot_25jun_2000"
