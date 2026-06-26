@@ -1,27 +1,27 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "25/06/2026 20:00:34",
-  "last_github_push": "25/06 20:00",
-  "last_github_push_ts": 1782432034.978467,
+  "ultimo_update": "25/06/2026 20:01:00",
+  "last_github_push": "25/06 20:01",
+  "last_github_push_ts": 1782432060.2857778,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
     "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
   },
   "saldo": {
-    "cum_realised_pnl": -7056.56,
-    "cumPnL_unified_usd": -7056.56,
-    "unrealisedPnl": 14.62,
+    "cum_realised_pnl": -7056.55,
+    "cumPnL_unified_usd": -7056.55,
+    "unrealisedPnl": 14.51,
     "ts": "2026-06-25T08:55:00-04:00",
-    "progresso_vs_baseline_usd": -2471.18,
-    "delta_vs_baseline": -932.56,
-    "pnl_fenix_desde_baseline": -932.56,
-    "updated_at": "2026-06-25T19:59:58-04:00"
+    "progresso_vs_baseline_usd": -2471.17,
+    "delta_vs_baseline": -932.55,
+    "pnl_fenix_desde_baseline": -932.55,
+    "updated_at": "2026-06-25T20:00:59-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
-    "current_pnl": -7056.56,
-    "diff_usd": -932.56
+    "current_pnl": -7056.55,
+    "diff_usd": -932.55
   },
   "posicao_atual": {
     "side": "SHORT",
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_SHORT",
-    "markPrice": 59759.19,
-    "mark_price_atual": 59759.19,
-    "unrealised_pnl_usd": 14.62,
-    "unrealisedPnl": 14.62,
-    "be_price": 61149.70655039,
+    "markPrice": 59770.4,
+    "mark_price_atual": 59770.4,
+    "unrealised_pnl_usd": 14.51,
+    "unrealisedPnl": 14.51,
+    "be_price": 61151.00397981,
     "liq_price": 63353.5,
     "tp2_target_estrutural": 57499.0,
-    "last_update": "2026-06-25T19:59:58-04:00",
-    "ts_snapshot": "2026-06-25T19:59:58-04:00"
+    "last_update": "2026-06-25T20:01:00-04:00",
+    "ts_snapshot": "2026-06-25T20:01:00-04:00"
   },
   "trades_recentes": [
     {
