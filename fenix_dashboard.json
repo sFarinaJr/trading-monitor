@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "25/06/2026 20:09:12",
-  "last_github_push": "25/06 20:09",
-  "last_github_push_ts": 1782432552.3998568,
+  "ultimo_update": "25/06/2026 20:10:13",
+  "last_github_push": "25/06 20:10",
+  "last_github_push_ts": 1782432613.330245,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -7056.55,
     "cumPnL_unified_usd": -7056.55,
-    "unrealisedPnl": 14.29,
+    "unrealisedPnl": 13.71,
     "ts": "2026-06-25T08:55:00-04:00",
     "progresso_vs_baseline_usd": -2471.17,
     "delta_vs_baseline": -932.55,
     "pnl_fenix_desde_baseline": -932.55,
-    "updated_at": "2026-06-25T20:09:11-04:00"
+    "updated_at": "2026-06-25T20:10:12-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_SHORT",
-    "markPrice": 59793.0,
-    "mark_price_atual": 59793.0,
-    "unrealised_pnl_usd": 14.29,
-    "unrealisedPnl": 14.29,
+    "markPrice": 59850.03,
+    "mark_price_atual": 59850.03,
+    "unrealised_pnl_usd": 13.71,
+    "unrealisedPnl": 13.71,
     "be_price": 61151.00397981,
     "liq_price": 63353.5,
     "tp2_target_estrutural": 57499.0,
-    "last_update": "2026-06-25T20:09:12-04:00",
-    "ts_snapshot": "2026-06-25T20:09:12-04:00"
+    "last_update": "2026-06-25T20:10:13-04:00",
+    "ts_snapshot": "2026-06-25T20:10:13-04:00"
   },
   "trades_recentes": [
     {
@@ -145,7 +145,7 @@
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-06-25_2000_WAVE_C_C3_DOWN_BOS_fundo_C1_59066_ROMPIDO_continuacao_resumiu_SHORT001_ativo_ADD_armado_v2",
     "boot_ts": "2026-06-25T20:07:49-04:00",
-    "ultimo_update": "2026-06-25T20:07:49-04:00",
+    "ultimo_update": "2026-06-25T20:09:27-04:00",
     "status": "ACTIVE",
     "mark_at_boot": 59767.0,
     "mark_now": 59767.0,
@@ -180,6 +180,31 @@
       }
     },
     "setups_pre_armados": [
+      {
+        "tipo": "SHORT_C3_continuacao",
+        "lado": "SHORT",
+        "direcao": "SHORT",
+        "prioridade": "PRIMARIA",
+        "entry": 60462.1,
+        "sl": 61164.0,
+        "tp1": 58042.6,
+        "tp2": 49680.0,
+        "rr": 15.4,
+        "qty_btc": 0.0,
+        "tier": "T1",
+        "macro_aligned": true,
+        "alert_only": true,
+        "zona": [
+          60305.7,
+          60618.4
+        ],
+        "fib_role": "continuacao C-3 (pullback raso 0.236-0.382)",
+        "fib_label": "C-3 pullback 60306-60618",
+        "trigger": "ALERTA-ONLY · C-2 TRAVADA no topo 67276 (passado) · C-3 DOWN em curso. Zona de short de CONTINUAÇÃO no pullback raso 60306-60618 a-favor do macro DOWN. Camada2 TOPO/rejeição aqui = exaustão do repique → contexto p/ short C-3 (alvo 58043 C-1 low → 49680). NÃO reabrir short de retrace-C2 (topo passado). NÃO auto-executa (gestão = SL-only do short vigente).",
+        "invalidacao": "close > 61942 DESTRAVA a C-2 (volta contagem conservadora · C-2 ainda subindo) · close > 82811 invalida macro",
+        "source": "espinha_c3_continuacao",
+        "derivado_de": "tree.onda_de_trabalho.plano_trade.entrada_primaria (modo_c3)"
+      },
       {
         "tipo": "GESTAO_SHORT_001_ativo_C3",
         "direcao": "SHORT",
@@ -274,24 +299,64 @@
   "execution_mode": "SEMI_AUTO",
   "manual_approval_required": true,
   "price_watch": {
-    "ts": "2026-06-25T20:04:20-04:00",
+    "ts": "2026-06-25T20:10:00-04:00",
     "levels": [
       {
-        "price": 60491.7,
+        "price": 60900.0,
         "direction": "above",
         "tier": "alto",
-        "reason": "PRIMARIA SHORT · continuacao C-3 (pullback raso 0.236-0.382)",
-        "decisao_pre_armada": "ALERTA-ONLY · SE mark na zona 60492 (continuacao C-3 (pullback raso 0.236-0.382)) + Camada2 TOPO 5m / rejeição: AVISAR Claude (contexto SHORT PRIMARIA · alvo 58042.6). NÃO auto-executa — gestão atual = SL-only do short vigente (mandato user). Claude julga, não dispara ordem.",
+        "reason": "PRIMARIA ADD SHORT · meio da zona repique C3-4 (0.382-0.5 retr perna C3-3)",
+        "decisao_pre_armada": "SEMI-AUTO · SE mark repicar pra zona 60602-61150 + Camada2 TOPO 5m / MACD-hist 15m+1H virando bear: ACORDAR Claude. Claude valida 4 camadas (SHORT a-favor C-3 + regime BOS confirmado + zona Elliott + timing exaustao) e DISPARA ADD SHORT via MCP (Limit price=mark · SL 62050 embedded anti-stop-hunt · TP2 57499 embedded · qty 0.04 T2). Escala o SHORT 0.01 existente (mesma direcao). NUNCA chase.",
         "active": true,
         "triggered": false,
-        "source": "espinha_c3_continuacao"
+        "source": "opus_boot_25jun_2000"
+      },
+      {
+        "price": 60602.0,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "borda baixa zona ADD SHORT (0.382 retr perna C3-3)",
+        "decisao_pre_armada": "SEMI-AUTO · borda inferior da zona de ADD SHORT. Mesma decisao do 60900: exaustao do repique aqui = ADD SHORT de continuacao. SL 62050 acima swing topo 61942 (anti-stop-hunt). NAO entrar acima de 61150 sem reavaliar (vira retrace mais profundo).",
+        "active": true,
+        "triggered": false,
+        "source": "opus_boot_25jun_2000"
+      },
+      {
+        "price": 61150.0,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "borda alta zona ADD SHORT (0.5 retr · zona SL=BE do short vigente)",
+        "decisao_pre_armada": "SEMI-AUTO · topo da zona ADD SHORT. ATENCAO: 61154 = SL=BE do SHORT 0.01 vigente. Se repique chega aqui sem virar = risco de stopar o short ativo em BE. Camada2 TOPO aqui = exaustao -> ADD SHORT (SL 62050). Acima de 61150 vira retrace profundo (0.618 = 62694) · reavaliar.",
+        "active": true,
+        "triggered": false,
+        "source": "opus_boot_25jun_2000"
       },
       {
         "price": 61942.3,
         "direction": "above",
         "tier": "alto",
-        "reason": "limite C-2 (des-eleicao C-3) · RECOUNT se romper",
-        "decisao_pre_armada": "SE close > este nivel: C-2 estourou o limite Fib · forcar RECOUNT Espinha (limpar lock tree.json). AUTONOMA re-valida dentro da LEI.",
+        "reason": "swing topo repique 24/06 (limite saudavel do repique C3-4)",
+        "decisao_pre_armada": "SE close 1H > 61942: repique virou retrace profundo (>0.5 da perna C3-3) · C3-4 estendendo. NAO ADD impulsivo · aguardar nova estrutura de topo. Tese C-3 macro intacta (longe de 67276). Acima daqui aproxima da de-eleicao.",
+        "active": true,
+        "triggered": false,
+        "source": "opus_boot_25jun_2000"
+      },
+      {
+        "price": 67276.0,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "topo C-2 · DES-ELEICAO C-3 (RECOUNT se romper em close)",
+        "decisao_pre_armada": "SE close > 67276: C-2 estourou o topo · de-elege C-3 · forcar RECOUNT Espinha (limpar lock tree.json). AUTONOMA re-valida dentro da LEI. (+12,5% · longe)",
+        "active": true,
+        "triggered": false,
+        "source": "espinha_fib_regions"
+      },
+      {
+        "price": 77733.0,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "0.786 retr C-1 · RECOUNT onda",
+        "decisao_pre_armada": "SE close > 77733: recount da onda (retrace profundo demais da C-1). skill fenix-analise-macro + RECOUNT. (+30% · muito longe)",
         "active": true,
         "triggered": false,
         "source": "espinha_fib_regions"
@@ -300,28 +365,28 @@
         "price": 82811.0,
         "direction": "above",
         "tier": "alto",
-        "reason": "INVALIDACAO TOTAL macro (close D)",
-        "decisao_pre_armada": "SE close D > este nivel: tese ABC bearish MORRE · skill fenix-analise-macro + RECOUNT. AUTONOMA re-valida/documenta dentro da LEI.",
+        "reason": "INVALIDACAO TOTAL macro (close D · topo B)",
+        "decisao_pre_armada": "SE close D > 82811: tese ABC bearish MORRE · skill fenix-analise-macro + RECOUNT total. AUTONOMA re-valida/documenta dentro da LEI. (+38% · muito longe)",
         "active": true,
         "triggered": false,
         "source": "espinha_fib_regions"
       },
       {
-        "price": 59081.0,
+        "price": 58042.6,
         "direction": "below",
         "tier": "alto",
-        "reason": "C-1 low (suporte macro · base retracement C-2)",
-        "decisao_pre_armada": "SE perde C-1 low: C-3 confirmou resumir (rompeu o fundo da C-1). Camada2 FUNDO / continuacao short. AUTONOMA dentro da LEI.",
+        "reason": "low D-0 · BOS se perde em close (continuacao direta)",
+        "decisao_pre_armada": "SE close 1H/4H < 58042 (perde low D-0 · C-3 estende direta sem repicar): cenario B · ACORDAR Claude · validar e armar SHORT de continuacao no PULLBACK (NAO no break · anti-chase) SL 60100 alvo 57499->49680 T1. Se ja em SHORT = trail SL pra baixo a-favor.",
         "active": true,
         "triggered": false,
-        "source": "espinha_fib_regions"
+        "source": "opus_boot_25jun_2000"
       },
       {
         "price": 57498.9,
         "direction": "below",
         "tier": "alto",
-        "reason": "alvo C primario (0.382×A)",
-        "decisao_pre_armada": "SE mark em 57499 (alvo C primario): zona de TP/parcial da onda C down. Camada2 FUNDO 5m aqui = exaustao -> avaliar parcial/saida. AUTONOMA dentro da LEI.",
+        "reason": "alvo C primario (0.382xA · = TP do short vigente · S1 D 57892 proximo)",
+        "decisao_pre_armada": "SE mark em 57499 (alvo C primario · TP do SHORT 0.01 vigente): zona de TP/parcial da onda C down. Camada2 FUNDO 5m aqui = exaustao -> avaliar parcial/saida (o SHORT 0.01 tem TP embedded aqui). Reavaliar continuacao rumo 49680. AUTONOMA dentro da LEI.",
         "active": true,
         "triggered": false,
         "source": "espinha_fib_regions"
@@ -330,8 +395,8 @@
         "price": 49680.0,
         "direction": "below",
         "tier": "alto",
-        "reason": "alvo C central (ima) (0.500×A)",
-        "decisao_pre_armada": "SE mark em 49680 (alvo C central (ima)): zona de TP/parcial da onda C down. Camada2 FUNDO 5m aqui = exaustao -> avaliar parcial/saida. AUTONOMA dentro da LEI.",
+        "reason": "alvo C central (ima · 0.500xA)",
+        "decisao_pre_armada": "SE mark em 49680 (alvo C central ima): zona de TP/parcial principal da onda C down. Camada2 FUNDO 5m aqui = exaustao -> avaliar parcial/saida. AUTONOMA dentro da LEI.",
         "active": true,
         "triggered": false,
         "source": "espinha_fib_regions"
@@ -339,62 +404,22 @@
       {
         "price": 41861.1,
         "direction": "below",
-        "tier": "alto",
-        "reason": "alvo C base (0.618×A)",
-        "decisao_pre_armada": "SE mark em 41861 (alvo C base): zona de TP/parcial da onda C down. Camada2 FUNDO 5m aqui = exaustao -> avaliar parcial/saida. AUTONOMA dentro da LEI.",
+        "tier": "medio",
+        "reason": "alvo C base (0.618xA)",
+        "decisao_pre_armada": "SE mark em 41861 (alvo C base): extremo · zona de TP final da onda C down. Camada2 FUNDO aqui = exaustao -> avaliar saida total. AUTONOMA dentro da LEI.",
         "active": true,
         "triggered": false,
         "source": "espinha_fib_regions"
       },
       {
-        "price": 62103.0,
-        "direction": "above",
-        "tier": "alto",
-        "reason": "borda baixa zona reentrada SHORT (0.5 retr C3-3)",
-        "decisao_pre_armada": "SEMI-AUTO · SE mark repicar pra zona 62103-62434 + Camada2 TOPO 5m / MACD-hist 15m+1H virando bear: ACORDAR Claude. Claude valida 4 camadas (direcao SHORT a-favor C-3 + regime forte + zona Elliott + timing exaustao) e DISPARA SHORT via MCP (Limit price=mark · SL 63300 embedded · TP2 57499 embedded · qty 0.063 T2). NUNCA chase.",
-        "active": true,
-        "triggered": false,
-        "source": "opus_boot_25jun"
-      },
-      {
-        "price": 62434.0,
-        "direction": "above",
-        "tier": "alto",
-        "reason": "borda alta zona reentrada SHORT (0.618 retr C3-3 / zona motor)",
-        "decisao_pre_armada": "SEMI-AUTO · topo da zona de reentrada SHORT. Mesma decisao do 62103: exaustao do repique aqui = SHORT de continuacao. SL 63300 acima cluster topos (anti-stop-hunt). NAO entrar acima de 62765 (vira retrace profundo · reavaliar).",
-        "active": true,
-        "triggered": false,
-        "source": "opus_boot_25jun"
-      },
-      {
-        "price": 62950.0,
-        "direction": "above",
-        "tier": "medio",
-        "reason": "topo surto 24/06 (cluster de topos / parede)",
-        "decisao_pre_armada": "SE mark cruza 62950 no repique: repique mais forte que o esperado · NAO short ainda (acima da zona ideal) · monitorar exaustao ate 63232 (D-1 high). Se rejeitar 62950-63232 com Camada2 TOPO = short tardio com SL 63500.",
-        "active": true,
-        "triggered": false,
-        "source": "opus_boot_25jun"
-      },
-      {
-        "price": 63232.0,
-        "direction": "above",
-        "tier": "medio",
-        "reason": "D-1 high (cluster topo · limite do repique saudavel)",
-        "decisao_pre_armada": "SE close 1H > 63232: repique virou retrace profundo (>0.618 C3-3) · C3-3 pode estar estendendo a correcao (C3-4). NAO short impulsivo · aguardar nova estrutura de topo. Tese C-3 macro intacta (longe de 67276).",
-        "active": true,
-        "triggered": false,
-        "source": "opus_boot_25jun"
-      },
-      {
-        "price": 64367.0,
+        "price": 63803.0,
         "direction": "above",
         "tier": "medio",
         "reason": "EMA20 D (resistencia dinamica macro)",
-        "decisao_pre_armada": "SE mark testa EMA20 D 64367: resistencia macro forte · zona de short premium se rejeitar (mas longe). Monitorar Camada2 TOPO. Tese intacta.",
+        "decisao_pre_armada": "SE mark testa EMA20 D 63803: resistencia macro forte · zona de short premium se rejeitar (mas longe). Monitorar Camada2 TOPO. Tese intacta.",
         "active": true,
         "triggered": false,
-        "source": "opus_boot_25jun"
+        "source": "opus_boot_25jun_2000"
       }
     ]
   },
