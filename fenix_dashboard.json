@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "25/06/2026 20:52:15",
-  "last_github_push": "25/06 20:52",
-  "last_github_push_ts": 1782435135.211173,
+  "ultimo_update": "25/06/2026 20:53:15",
+  "last_github_push": "25/06 20:53",
+  "last_github_push_ts": 1782435195.968589,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -7056.55,
     "cumPnL_unified_usd": -7056.55,
-    "unrealisedPnl": 14.58,
+    "unrealisedPnl": 14.85,
     "ts": "2026-06-25T08:55:00-04:00",
     "progresso_vs_baseline_usd": -2471.17,
     "delta_vs_baseline": -932.55,
     "pnl_fenix_desde_baseline": -932.55,
-    "updated_at": "2026-06-25T20:52:14-04:00"
+    "updated_at": "2026-06-25T20:53:15-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -30,8 +30,8 @@
     "avgPrice": 61221.5,
     "avg_price": 61221.5,
     "entry_price": 61221.5,
-    "stopLoss": 61154.2,
-    "stop_loss": 61154.2,
+    "stopLoss": null,
+    "stop_loss": null,
     "takeProfit": 57499.0,
     "take_profit": 57499.0,
     "tp2": 57499.0,
@@ -40,15 +40,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_SHORT",
-    "markPrice": 59764.0,
-    "mark_price_atual": 59764.0,
-    "unrealised_pnl_usd": 14.57,
-    "unrealisedPnl": 14.57,
+    "markPrice": 59736.16,
+    "mark_price_atual": 59736.16,
+    "unrealised_pnl_usd": 14.85,
+    "unrealisedPnl": 14.85,
     "be_price": 61151.00397981,
     "liq_price": 63353.5,
     "tp2_target_estrutural": 57499.0,
-    "last_update": "2026-06-25T20:52:15-04:00",
-    "ts_snapshot": "2026-06-25T20:52:15-04:00"
+    "last_update": "2026-06-25T20:53:15-04:00",
+    "ts_snapshot": "2026-06-25T20:53:15-04:00"
   },
   "trades_recentes": [
     {
@@ -299,14 +299,14 @@
   "execution_mode": "SEMI_AUTO",
   "manual_approval_required": true,
   "price_watch": {
-    "ts": "2026-06-25T20:31:02-04:00",
+    "ts": "2026-06-25T20:53:19-04:00",
     "levels": [
       {
-        "price": 61491.3,
+        "price": 60368.9,
         "direction": "above",
         "tier": "alto",
         "reason": "PRIMARIA SHORT · continuacao C-3 (pullback raso 0.236-0.382)",
-        "decisao_pre_armada": "ALERTA-ONLY · SE mark na zona 61491 (continuacao C-3 (pullback raso 0.236-0.382)) + Camada2 TOPO 5m / rejeição: AVISAR Claude (contexto SHORT PRIMARIA · alvo 58042.6). NÃO auto-executa — gestão atual = SL-only do short vigente (mandato user). Claude julga, não dispara ordem.",
+        "decisao_pre_armada": "ALERTA-ONLY · SE mark na zona 60369 (continuacao C-3 (pullback raso 0.236-0.382)) + Camada2 TOPO 5m / rejeição: AVISAR Claude (contexto SHORT PRIMARIA · alvo 58042.6). NÃO auto-executa — gestão atual = SL-only do short vigente (mandato user). Claude julga, não dispara ordem.",
         "active": true,
         "triggered": false,
         "source": "espinha_c3_continuacao"
