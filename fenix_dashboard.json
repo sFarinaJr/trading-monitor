@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "28/06/2026 18:01:46",
-  "last_github_push": "28/06 18:01",
-  "last_github_push_ts": 1782684106.139869,
+  "ultimo_update": "28/06/2026 18:02:43",
+  "last_github_push": "28/06 18:02",
+  "last_github_push_ts": 1782684163.935593,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -205,7 +205,7 @@
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-06-25_2000_WAVE_C_C3_DOWN_BOS_fundo_C1_59066_ROMPIDO_continuacao_resumiu_SHORT001_ativo_ADD_armado_v2",
     "boot_ts": "2026-06-27T20:04:00-04:00",
-    "ultimo_update": "2026-06-28T01:28:57-04:00",
+    "ultimo_update": "2026-06-28T18:01:58-04:00",
     "status": "ACTIVE",
     "mark_at_boot": 60006.0,
     "mark_now": 59767.0,
@@ -240,6 +240,16 @@
       }
     },
     "setups_pre_armados": [
+      {
+        "nome": "PREFLIGHT_SHORT_short_c33_retest_rejeicao",
+        "lado": "SHORT",
+        "entry": 59720.0,
+        "sl": 60980,
+        "tp1": 49680.0,
+        "tp2": 49680.0,
+        "tier": "T2",
+        "nota": "armado por fenix_entry_preflight.py (zona viva)"
+      },
       {
         "nome": "PREFLIGHT_SHORT_short_quebra_range_c33",
         "lado": "SHORT",
