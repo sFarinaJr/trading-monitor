@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "28/06/2026 01:28:53",
-  "last_github_push": "28/06 01:28",
-  "last_github_push_ts": 1782624533.9657862,
+  "ultimo_update": "28/06/2026 01:29:54",
+  "last_github_push": "28/06 01:29",
+  "last_github_push_ts": 1782624594.3325078,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -16,7 +16,7 @@
     "progresso_vs_baseline_usd": -2488.32,
     "delta_vs_baseline": -949.7,
     "pnl_fenix_desde_baseline": -949.7,
-    "updated_at": "2026-06-28T01:28:53-04:00"
+    "updated_at": "2026-06-28T01:29:53-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -48,7 +48,7 @@
     "liq_price": 62337.9,
     "tp2_target_estrutural": 49680.0,
     "last_update": "2026-06-27T18:36:39-04:00",
-    "ts_snapshot": "2026-06-28T01:28:53-04:00"
+    "ts_snapshot": "2026-06-28T01:29:54-04:00"
   },
   "trades_recentes": [
     {
@@ -195,7 +195,7 @@
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-06-25_2000_WAVE_C_C3_DOWN_BOS_fundo_C1_59066_ROMPIDO_continuacao_resumiu_SHORT001_ativo_ADD_armado_v2",
     "boot_ts": "2026-06-27T20:04:00-04:00",
-    "ultimo_update": "2026-06-27T20:01:48.596324-04:00",
+    "ultimo_update": "2026-06-28T01:28:57-04:00",
     "status": "ACTIVE",
     "mark_at_boot": 60006.0,
     "mark_now": 59767.0,
@@ -230,6 +230,16 @@
       }
     },
     "setups_pre_armados": [
+      {
+        "nome": "PREFLIGHT_SHORT_short_quebra_range_c33",
+        "lado": "SHORT",
+        "entry": 59826.8,
+        "sl": 61370,
+        "tp1": 49680.0,
+        "tp2": 49680.0,
+        "tier": "T2",
+        "nota": "armado por fenix_entry_preflight.py (zona viva)"
+      },
       {
         "nome": "PREFLIGHT_SHORT_reentrada_short_c35_quebra",
         "lado": "SHORT",
