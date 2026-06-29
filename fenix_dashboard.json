@@ -1,22 +1,17 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "29/06/2026 15:30:30",
-  "last_github_push": "29/06 15:30",
-  "last_github_push_ts": 1782761430.378349,
-  "baseline": {
-    "data": "2026-04-27",
-    "pnl_acumulado": -6124.0,
-    "metrica_oficial": "cumRealisedPnl da conta UNIFIED USDT na Bybit"
-  },
+  "ultimo_update": "29/06/2026 15:31:29",
+  "last_github_push": "29/06 15:31",
+  "last_github_push_ts": 1782761489.304833,
+  "baseline": null,
   "saldo": {
     "cum_realised_pnl": -7071.47,
     "cumPnL_unified_usd": -7071.47,
     "unrealisedPnl": 0.0,
-    "ts": "2026-06-25T08:55:00-04:00",
     "progresso_vs_baseline_usd": -2486.09,
     "delta_vs_baseline": -947.47,
     "pnl_fenix_desde_baseline": -947.47,
-    "updated_at": "2026-06-29T15:30:29-04:00"
+    "updated_at": "2026-06-29T15:31:28-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -27,28 +22,28 @@
     "side": "NONE",
     "size": 0,
     "qty": 0,
-    "avgPrice": 60438.8,
-    "avg_price": 60438.8,
-    "entry_price": 60438.8,
-    "stopLoss": 60372.3,
-    "stop_loss": 60372.3,
-    "takeProfit": 58042.0,
-    "take_profit": 58042.0,
-    "tp2": 58042.0,
+    "avgPrice": null,
+    "avg_price": null,
+    "entry_price": null,
+    "stopLoss": null,
+    "stop_loss": null,
+    "takeProfit": null,
+    "take_profit": null,
+    "tp2": null,
     "tp1": null,
     "tp1_limit": null,
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
-    "status": "OPEN_SHORT",
-    "markPrice": 60369.9,
-    "mark_price_atual": 60369.9,
+    "status": null,
+    "markPrice": null,
+    "mark_price_atual": null,
     "unrealised_pnl_usd": 0,
-    "unrealisedPnl": 5.51,
-    "be_price": 60393.4958173,
-    "liq_price": 62543.6,
-    "tp2_target_estrutural": 58042.0,
-    "last_update": "2026-06-29T15:24:30-04:00",
-    "ts_snapshot": "2026-06-29T15:30:30-04:00"
+    "unrealisedPnl": 0,
+    "be_price": null,
+    "liq_price": null,
+    "tp2_target_estrutural": null,
+    "last_update": null,
+    "ts_snapshot": "2026-06-29T15:31:29-04:00"
   },
   "trades_recentes": [
     {
@@ -334,8 +329,8 @@
     "ponto_nao_retorno": "BEAR MACRO invalida TOTAL: close D>82811 (topo B · +40%). DES-ELEICAO C-3: close>67276 (topo C-2 · +14%). RECOUNT onda: close>77733 (0.786 retr C-1 · +31%). Todos MUITO longe. Fundo C-1 59066 JA ROMPIDO em close D (BOS). Resistencias/zona repique ADD: 59644 (PP D) · 59819 (0.236 retr perna C3-3) · 60429 (R1 D) · 60602-61150 (zona ADD SHORT 0.382-0.5 retr) · 61241 (S1 weekly) · 61307 (R2 D) · 61942 (swing topo repique) · 63803 (EMA20 D). Suportes/alvos down: 58962 (low D-0) · 58766 (S1 D) · 58042 (low D-4 · BOS se perde em close) · 57982 (S2 D) · 57499 (0.382A · alvo C primario) · 57104 (S3 D) · 49680 (0.5A · ima central) · 41861 (0.618A base).",
     "proximo_marco": "Closes 1H/4H + proximo D close 29/06 20:00 UTC-4. Decide A (continuacao direta · perde 58042 em close -> SHORT no pullback rumo 57499) vs B (repique C3-4 ate 60,6-61,1k -> ADD SHORT na exaustao). Antes disso: monitorar Camada2 FUNDO 5m na zona 57,5-58,0k (alvo · exaustao -> parcial/saida se em SHORT) e Camada2 TOPO 5m + MACD-hist 15m/1H virando bear na zona 60,6-61,1k (gatilho ADD SHORT · semi-auto · watcher acorda Claude · NUNCA chase)."
   },
-  "execution_mode": "SEMI_AUTO",
-  "manual_approval_required": true,
+  "execution_mode": "AUTO",
+  "manual_approval_required": false,
   "price_watch": {
     "ts": "2026-06-28T20:42:00-04:00",
     "levels": [
