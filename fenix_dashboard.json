@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "29/06/2026 14:08:19",
+  "ultimo_update": "29/06/2026 14:08:57",
   "last_github_push": "29/06 14:08",
-  "last_github_push_ts": 1782756499.338361,
+  "last_github_push_ts": 1782756537.709028,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -11,12 +11,12 @@
   "saldo": {
     "cum_realised_pnl": -7074.08,
     "cumPnL_unified_usd": -7074.08,
-    "unrealisedPnl": 1.1,
+    "unrealisedPnl": 0,
     "ts": "2026-06-25T08:55:00-04:00",
     "progresso_vs_baseline_usd": -2488.7,
     "delta_vs_baseline": -950.08,
     "pnl_fenix_desde_baseline": -950.08,
-    "updated_at": "2026-06-29T14:07:55-04:00"
+    "updated_at": "2026-06-29T14:08:57-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -24,31 +24,10 @@
     "diff_usd": -950.08
   },
   "posicao_atual": {
-    "side": "SHORT",
-    "size": 0.08,
-    "qty": 0.08,
-    "avgPrice": 60438.8,
-    "avg_price": 60438.8,
-    "entry_price": 60438.8,
-    "stopLoss": 61230.0,
-    "stop_loss": 61230.0,
-    "takeProfit": 58042.0,
-    "take_profit": 58042.0,
-    "tp2": 58042.0,
-    "tp1": null,
-    "tp1_limit": null,
-    "tp1_pnl_lock": 0,
-    "tp1_realizado": false,
-    "status": "OPEN_SHORT",
-    "markPrice": 60425.01,
-    "mark_price_atual": 60425.01,
-    "unrealised_pnl_usd": 1.1,
-    "unrealisedPnl": 1.1,
-    "be_price": 60393.4958173,
-    "liq_price": 62543.6,
-    "tp2_target_estrutural": 58042.0,
-    "last_update": "2026-06-29T14:07:56-04:00",
-    "ts_snapshot": "2026-06-29T14:07:56-04:00"
+    "side": null,
+    "size": 0,
+    "qty": 0,
+    "status": "FLAT"
   },
   "trades_recentes": [
     {
@@ -193,7 +172,7 @@
     }
   ],
   "current_thesis": {
-    "thesis_id": "boot_d_close_2026-06-28_2000_WAVE_C_C3_DOWN_perna_resumiu_Wclose_FLAT",
+    "thesis_id": null,
     "boot_ts": "2026-06-28T20:41:30-04:00",
     "ultimo_update": "2026-06-29T13:35:51-04:00",
     "status": "FLAT",
@@ -203,136 +182,11 @@
       "direcao": "BEARISH",
       "score": 8.0
     },
-    "leitura_primaria_opus": "Onda C de baixa (Elliott zigzag ABC do topo 126.150) · sub-onda de trabalho C-3 DOWN em pleno curso. C-1 (82.811->59.081) impulso 5-down COMPLETA/travada · C-2 corretiva UP topou 67.276 (retrace raso 34.6% = favorece C forte). EMAs D bear-stacked muito acima do close · RSI D ~31 oversold mas SEM reversao (overbought/oversold-stays na onda impulsiva) · BBpos D colado na banda inferior. EVENTO-CHAVE: o fundo C-1 59.066 ja foi ROMPIDO em close D (BOS dia 25) e a perna RESUMIU · D-1 (27/06) fechou BEAR 59.550 e o D-0 (28/06) fez novo low 58.962. O D-close de 28/06 coincide com o fechamento SEMANAL = peso estrutural ELEVADO na tese bear. OI subindo na queda (56,6k->58,6k = short buildup) · L/S buy 0.63 (retail comprando a faca = combustivel squeeze). 1H/15m em repique fraco SEM forca (MACD-hist nao virou bear convincente · 15m esfriando). Proximo movimento: (a) continuacao direta · perde o low D-4 58.042 em close -> SHORT no pullback rumo 57.499 (50%); (b) repique corretivo (C3-4) sobe pra 60,6-61,1k e rejeita -> ADD SHORT a-favor na exaustao (35%); (c) repique forte recupera 67.276+ e de-elege a contagem (15% · so aqui reavaliar). LONG vetado em qualquer cenario (LEI #29).",
-    "cenarios_opus": {
-      "cenario_A_continuacao_pullback_perde_58042": {
-        "prob": 50,
-        "entry": 58800,
-        "sl": 60100,
-        "tp1": 57499,
-        "tp2": 49680,
-        "rr": 7.02,
-        "note": "PRIMARIO. Preco ja em 59,0k abaixo dos lows recentes · C-3 estende direto. Perde 58042 (low D-4) em close = continuacao -> SHORT no PULLBACK que NAO recupera 58042 (NAO no break · anti-chase) rumo 57499 (0.382A/S2 D 57982) -> 49680 (0.5A ima). SL 60100 acima do nivel rompido. T1."
-      },
-      "cenario_B_repique_C34_ADD_SHORT": {
-        "prob": 35,
-        "entry": 60900,
-        "sl": 62050,
-        "tp1": 58042,
-        "tp2": 57499,
-        "rr": 2.96,
-        "note": "SECUNDARIO. Repique corretivo C3-4 sobe pra 60.602-61.150 (cluster topos / 0.382-0.5 retr da perna C3-3 65571->58042). Camada2 TOPO 5m + MACD-hist 15m+1H virando bear na zona = exaustao -> ADD SHORT de continuacao a-favor rumo 57499->49680. SL 62050 estrutural acima do swing 61942 (anti-stop-hunt). Dispara via confirmacao (NUNCA chase)."
-      },
-      "cenario_C_de_eleicao_recount": {
-        "prob": 15,
-        "rr": null,
-        "note": "Repique forte recupera muito: close 1H/4H acima 61,9k enfraquece · close>67276 (topo C-2) DES-ELEGE C-3 (recount conservador) · close>77733 recount onda · close D>82811 invalida macro TOTAL (todos longe · +14%/+31%/+40%). Residual · so aqui reavaliar a tese. SEM ENTRADA."
-      }
-    },
-    "setups_pre_armados": [
-      {
-        "nome": "PREFLIGHT_SHORT_c3_topo_exaustao",
-        "lado": "SHORT",
-        "entry": 60456.5,
-        "sl": 61230,
-        "tp1": 58042.0,
-        "tp2": 58042.0,
-        "tier": "T2",
-        "nota": "armado por fenix_entry_preflight.py (zona viva)"
-      },
-      {
-        "nome": "PREFLIGHT_SHORT_c3_continuacao_lowerhigh",
-        "lado": "SHORT",
-        "entry": 59318.9,
-        "sl": 61220,
-        "tp1": 58042.0,
-        "tp2": 58042.0,
-        "tier": "T2",
-        "nota": "armado por fenix_entry_preflight.py (zona viva)"
-      },
-      {
-        "nome": "PREFLIGHT_SHORT_c3_topo1h_climax",
-        "lado": "SHORT",
-        "entry": 59988.2,
-        "sl": 61230,
-        "tp1": 58042.0,
-        "tp2": 58042.0,
-        "tier": "T2",
-        "nota": "armado por fenix_entry_preflight.py (zona viva)"
-      },
-      {
-        "nome": "PREFLIGHT_SHORT_short_c33_sub5_retest_topo",
-        "lado": "SHORT",
-        "entry": 59800.0,
-        "sl": 60980,
-        "tp1": 49680.0,
-        "tp2": 49680.0,
-        "tier": "T2",
-        "nota": "armado por fenix_entry_preflight.py (zona viva)"
-      },
-      {
-        "tipo": "CONTINUACAO_DIRETA_pullback_break_58042",
-        "direcao": "SHORT",
-        "lado": "SHORT",
-        "nome": "CONTINUACAO_DIRETA_pullback_break_58042",
-        "prioridade": "PRIMARIA",
-        "entry_zone": "pullback pos-break<58042 que nao recupera (NAO chase)",
-        "entry": 58800.0,
-        "entrada": 58800.0,
-        "sl": 60100.0,
-        "tp1": 57499.0,
-        "tp2": 49680.0,
-        "rr": 7.02,
-        "qty_btc": 0.03,
-        "tier": "T1",
-        "macro_aligned": true,
-        "auto_execute": false,
-        "alert_only": true,
-        "zona": [
-          58042.0,
-          58800.0
-        ],
-        "fib_role": "continuacao direta pos-BOS do low D-4",
-        "fib_label": "break low D-4 58042",
-        "gatilho": "pullback pos-break <58042 que nao recupera",
-        "trigger": "SEMI-AUTO · SE close 1H/4H < 58042 (perde low D-4 · C-3 estende direta) + pullback que NAO recupera 58042: watcher acorda Claude · Claude valida 4 camadas e dispara SHORT no pullback (NAO no break impulsivo · anti-chase). SL 60100 acima do nivel rompido. Alvo 57499->49680.",
-        "invalidacao": "recupera 58042 em close (false break) · close>67276 macro · repique sobe pra zona ADD (vira cenario B)",
-        "razao_estrutural": "PRIMARIA agora (preco 59,0k descendo). Se perna down continua direta rompendo low D-4 58042 sem retracar ate a zona ADD, capturar a continuacao no pullback (nao no break). Tier T1. Mira 57499 (0.382A/S2 D) -> 49680 (0.5A). R:R 7.02x.",
-        "source": "opus_boot_28jun_2000"
-      },
-      {
-        "tipo": "ADD_SHORT_C3_continuacao_repique",
-        "direcao": "SHORT",
-        "lado": "SHORT",
-        "nome": "ADD_SHORT_C3_continuacao_repique",
-        "prioridade": "SECUNDARIA",
-        "entry_zone": "60602-61150 (cluster topos · 0.382-0.5 retr perna C3-3 65571->58042)",
-        "entry": 60900.0,
-        "entrada": 60900.0,
-        "sl": 62050.0,
-        "tp1": 58042.0,
-        "tp2": 57499.0,
-        "rr": 2.96,
-        "qty_btc": 0.04,
-        "tier": "T2",
-        "macro_aligned": true,
-        "auto_execute": false,
-        "alert_only": true,
-        "zona": [
-          60602.0,
-          61150.0
-        ],
-        "fib_role": "ADD continuacao C-3 no repique (0.382-0.5 retr perna C3-3)",
-        "fib_label": "ADD SHORT 60602-61150",
-        "gatilho": "60602-61150 + Camada2 TOPO + MACD-hist virando bear",
-        "trigger": "SEMI-AUTO · SE mark repicar pra zona 60602-61150 + Camada2 TOPO 5m / MACD-hist 15m+1H virando bear (exaustao do repique C3-4): watcher ACORDA Claude · Claude valida 4 camadas (SHORT a-favor C-3 + regime BOS confirmado + zona Elliott + timing exaustao) e DISPARA SHORT via MCP (Limit price=mark · SL 62050 embedded anti-stop-hunt acima swing 61942 · TP2 57499 embedded · qty 0.04 T2). NUNCA chase a queda atual (mark 59064 abaixo da zona).",
-        "invalidacao": "close>67276 de-elege C-3 (recount) · close>82811 macro · repique nao chega a zona = sem ADD",
-        "razao_estrutural": "SECUNDARIA · ADD SHORT de continuacao a-favor do macro C-3 DOWN. Repique corretivo C3-4 sobe pra resistencia 60602-61150 (cluster topos + 0.382-0.5 retr); na exaustao = municao pra escalar a-favor rumo 57499 (0.382A) -> 49680 (0.5A). SL estrutural 62050 ACIMA do swing topo 61942 (anti-stop-hunt). Tier T2 a-favor. R:R 2.96x.",
-        "source": "opus_boot_28jun_2000"
-      }
-    ],
-    "ponto_nao_retorno": "BEAR MACRO invalida TOTAL: close D>82811 (topo B · +40%). DES-ELEICAO C-3: close>67276 (topo C-2 · +14%). RECOUNT onda: close>77733 (0.786 retr C-1 · +31%). Todos MUITO longe. Fundo C-1 59066 JA ROMPIDO em close D (BOS). Resistencias/zona repique ADD: 59644 (PP D) · 59819 (0.236 retr perna C3-3) · 60429 (R1 D) · 60602-61150 (zona ADD SHORT 0.382-0.5 retr) · 61241 (S1 weekly) · 61307 (R2 D) · 61942 (swing topo repique) · 63803 (EMA20 D). Suportes/alvos down: 58962 (low D-0) · 58766 (S1 D) · 58042 (low D-4 · BOS se perde em close) · 57982 (S2 D) · 57499 (0.382A · alvo C primario) · 57104 (S3 D) · 49680 (0.5A · ima central) · 41861 (0.618A base).",
-    "proximo_marco": "Closes 1H/4H + proximo D close 29/06 20:00 UTC-4. Decide A (continuacao direta · perde 58042 em close -> SHORT no pullback rumo 57499) vs B (repique C3-4 ate 60,6-61,1k -> ADD SHORT na exaustao). Antes disso: monitorar Camada2 FUNDO 5m na zona 57,5-58,0k (alvo · exaustao -> parcial/saida se em SHORT) e Camada2 TOPO 5m + MACD-hist 15m/1H virando bear na zona 60,6-61,1k (gatilho ADD SHORT · semi-auto · watcher acorda Claude · NUNCA chase)."
+    "leitura_primaria_opus": null,
+    "cenarios_opus": {},
+    "setups_pre_armados": [],
+    "ponto_nao_retorno": null,
+    "proximo_marco": null
   },
   "execution_mode": "SEMI_AUTO",
   "manual_approval_required": true,
