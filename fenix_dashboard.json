@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "28/06/2026 21:01:21",
-  "last_github_push": "28/06 21:01",
-  "last_github_push_ts": 1782694881.485257,
+  "ultimo_update": "28/06/2026 21:02:13",
+  "last_github_push": "28/06 21:02",
+  "last_github_push_ts": 1782694933.767384,
   "baseline": {
     "data": "2026-04-27",
     "pnl_acumulado": -6124.0,
@@ -16,7 +16,7 @@
     "progresso_vs_baseline_usd": -2488.78,
     "delta_vs_baseline": -950.16,
     "pnl_fenix_desde_baseline": -950.16,
-    "updated_at": "2026-06-28T21:01:14-04:00"
+    "updated_at": "2026-06-28T21:02:13-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -48,7 +48,7 @@
     "liq_price": null,
     "tp2_target_estrutural": null,
     "last_update": "2026-06-28T20:41:00-04:00",
-    "ts_snapshot": "2026-06-28T21:01:15-04:00"
+    "ts_snapshot": "2026-06-28T21:02:13-04:00"
   },
   "trades_recentes": [
     {
@@ -205,7 +205,7 @@
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-06-28_2000_WAVE_C_C3_DOWN_perna_resumiu_Wclose_FLAT",
     "boot_ts": "2026-06-28T20:41:30-04:00",
-    "ultimo_update": "2026-06-28T20:41:30-04:00",
+    "ultimo_update": "2026-06-28T21:01:52-04:00",
     "status": "FLAT",
     "mark_at_boot": 59064.1,
     "mark_now": 59064.1,
@@ -240,6 +240,16 @@
       }
     },
     "setups_pre_armados": [
+      {
+        "nome": "PREFLIGHT_SHORT_short_c33_sub5_retest_topo",
+        "lado": "SHORT",
+        "entry": 59800.0,
+        "sl": 60980,
+        "tp1": 49680.0,
+        "tp2": 49680.0,
+        "tier": "T2",
+        "nota": "armado por fenix_entry_preflight.py (zona viva)"
+      },
       {
         "tipo": "CONTINUACAO_DIRETA_pullback_break_58042",
         "direcao": "SHORT",
