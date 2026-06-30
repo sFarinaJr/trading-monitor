@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "30/06/2026 07:32:51",
-  "last_github_push": "30/06 07:32",
-  "last_github_push_ts": 1782819171.335451,
+  "ultimo_update": "30/06/2026 07:33:51",
+  "last_github_push": "30/06 07:33",
+  "last_github_push_ts": 1782819231.144491,
   "baseline": null,
   "saldo": {
     "cum_realised_pnl": -7071.47,
@@ -11,7 +11,7 @@
     "progresso_vs_baseline_usd": -2486.09,
     "delta_vs_baseline": -947.47,
     "pnl_fenix_desde_baseline": -947.47,
-    "updated_at": "2026-06-30T07:32:50-04:00"
+    "updated_at": "2026-06-30T07:33:50-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -43,7 +43,7 @@
     "liq_price": null,
     "tp2_target_estrutural": null,
     "last_update": null,
-    "ts_snapshot": "2026-06-30T07:32:51-04:00"
+    "ts_snapshot": "2026-06-30T07:33:51-04:00"
   },
   "trades_recentes": [
     {
@@ -342,15 +342,6 @@
         "tier": "alto",
         "reason": "0.618A · alvo C base",
         "decisao_pre_armada": "ALVO C BASE (extensao profunda). So se C estender muito. Referencia.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 59124.7,
-        "direction": "below",
-        "tier": "medio",
-        "reason": "S1 D (suporte intra)",
-        "decisao_pre_armada": "Suporte pivot intra-dia. Perde em fluxo -> caminho pra 58042 livre. Observar.",
         "active": true,
         "triggered": false
       },
