@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "30/06/2026 08:02:18",
-  "last_github_push": "30/06 08:02",
-  "last_github_push_ts": 1782820938.211126,
+  "ultimo_update": "30/06/2026 08:03:18",
+  "last_github_push": "30/06 08:03",
+  "last_github_push_ts": 1782820998.9446158,
   "baseline": null,
   "saldo": {
     "cum_realised_pnl": -7071.47,
@@ -11,7 +11,7 @@
     "progresso_vs_baseline_usd": -2486.09,
     "delta_vs_baseline": -947.47,
     "pnl_fenix_desde_baseline": -947.47,
-    "updated_at": "2026-06-30T08:02:17-04:00"
+    "updated_at": "2026-06-30T08:03:18-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -43,7 +43,7 @@
     "liq_price": null,
     "tp2_target_estrutural": null,
     "last_update": null,
-    "ts_snapshot": "2026-06-30T08:02:18-04:00"
+    "ts_snapshot": "2026-06-30T08:03:18-04:00"
   },
   "trades_recentes": [
     {
@@ -342,15 +342,6 @@
         "tier": "alto",
         "reason": "0.618A · alvo C base",
         "decisao_pre_armada": "ALVO C BASE (extensao profunda). So se C estender muito. Referencia.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 59065.8,
-        "direction": "below",
-        "tier": "medio",
-        "reason": "C-1 low / alvo C3-3 JA ROMPIDO em close D (BOS confirmado)",
-        "decisao_pre_armada": "BOS macro ja confirmado (rompido em close D dia 25). Referencia historica · suporte virou resistencia se reconquistado.",
         "active": true,
         "triggered": false
       }
