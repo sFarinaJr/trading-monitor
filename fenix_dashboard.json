@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "30/06/2026 21:12:12",
-  "last_github_push": "30/06 21:12",
-  "last_github_push_ts": 1782868332.625908,
+  "ultimo_update": "30/06/2026 21:13:09",
+  "last_github_push": "30/06 21:13",
+  "last_github_push_ts": 1782868389.965163,
   "baseline": null,
   "saldo": {
     "cum_realised_pnl": -7071.47,
@@ -11,7 +11,7 @@
     "progresso_vs_baseline_usd": -2486.09,
     "delta_vs_baseline": -947.47,
     "pnl_fenix_desde_baseline": -947.47,
-    "updated_at": "2026-06-30T21:12:09-04:00"
+    "updated_at": "2026-06-30T21:13:09-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -43,7 +43,7 @@
     "liq_price": null,
     "tp2_target_estrutural": null,
     "last_update": null,
-    "ts_snapshot": "2026-06-30T21:12:10-04:00"
+    "ts_snapshot": "2026-06-30T21:13:09-04:00"
   },
   "trades_recentes": [
     {
@@ -190,7 +190,7 @@
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-06-30_2000_WAVE_C_C3_DOWN_alvo58042_cravado_MonthClose_FLAT",
     "boot_ts": "2026-06-30T20:03:00-04:00",
-    "ultimo_update": "2026-06-30T20:03:00-04:00",
+    "ultimo_update": "2026-06-30T21:12:49-04:00",
     "status": "ATIVA",
     "mark_at_boot": 58636.0,
     "mark_now": 58636.0,
@@ -230,36 +230,29 @@
     },
     "setups_pre_armados": [
       {
-        "tipo": "SHORT_continuacao_C3_repique_reancorado",
-        "direcao": "SHORT",
+        "tipo": "SHORT_C3_continuacao",
         "lado": "SHORT",
-        "entry_zone": "59700-60400 (repique ate 0.382-0.236 retr da C-3 · novo LH abaixo de 60.775)",
-        "entry": 59730.0,
-        "sl": 60610.0,
-        "tp1": 58042.0,
-        "tp2": 57499.0,
-        "rr": 1.4,
-        "qty_btc": 0.05,
-        "tier": "T2",
-        "macro_aligned": true,
-        "invalidacao": "close 4H > 60.775 (nega o LH menor) OU recuperacao sustentada de 59.066",
-        "razao_estrutural": "A-favor da Wave C-3 DOWN. Este setup DESTRAVA o gargalo: exige o preco subir num repique (formar topo mais baixo que 60.775) pra o swing-high RESETAR e o SL ficar barato. So entao R:R viabiliza. Vender o topo do repique, nao o fundo. Timing = MACD-hist 1H/4H virar de bull->bear no topo (exaustao). SL estrutural acima do LH do repique + 0.6%."
-      },
-      {
-        "tipo": "SHORT_continuacao_direta_break_58042",
         "direcao": "SHORT",
-        "lado": "SHORT",
-        "entry_zone": "pullback pos-close<58.042 que nao recupera 58.042 (retest do rompimento)",
-        "entry": 57800.0,
-        "sl": 58850.0,
-        "tp1": 57499.0,
-        "tp2": 55664.0,
-        "rr": 1.75,
-        "qty_btc": 0.05,
-        "tier": "T2",
+        "prioridade": "PRIMARIA",
+        "entry": 60282.8,
+        "sl": 65643.1,
+        "tp1": 57803.9,
+        "tp2": 49680.0,
+        "rr": 2.0,
+        "qty_btc": 0.0,
+        "tier": "T1",
         "macro_aligned": true,
-        "invalidacao": "recupera e fecha 1H > 58.042 (rompimento falso)",
-        "razao_estrutural": "Se o coil 58.2-58.7 quebra pra baixo com close<58.042 e nao recupera, o rompimento gera um LH recem-formado (~58.850) que serve de SL barato -> R:R 1,75x viabiliza. A-favor da C-3. Alvo 57.499 (0.382xA) e depois 55.664 (S3) / 49.680. SAIDA: FASE-B defer BE+fees, trail estrutural (deixar correr a-favor do macro)."
+        "alert_only": true,
+        "zona": [
+          59724.1,
+          60841.4
+        ],
+        "fib_role": "continuacao C-3 (pullback raso 0.236-0.382)",
+        "fib_label": "C-3 pullback 59724-60841",
+        "trigger": "ALERTA-ONLY · C-2 TRAVADA no topo 67276 (passado) · C-3 DOWN em curso. Zona de short de CONTINUAÇÃO no pullback raso 59724-60841 a-favor do macro DOWN. Camada2 TOPO/rejeição aqui = exaustão do repique → contexto p/ short C-3 (alvo 57804 C-1 low → 49680). NÃO reabrir short de retrace-C2 (topo passado). NÃO auto-executa (gestão = SL-only do short vigente).",
+        "invalidacao": "close > 67276 DESTRAVA a C-2 (volta contagem conservadora · C-2 ainda subindo) · close > 82811 invalida macro",
+        "source": "espinha_c3_continuacao",
+        "derivado_de": "tree.onda_de_trabalho.plano_trade.entrada_primaria (modo_c3)"
       }
     ],
     "ponto_nao_retorno": "Macro: close D > 82.811 invalida a tese ABC-C down (recount). Reset C-3: close > 67.276 reabre C-2 (des-elege C-3). Intra/tatico: close 4H > 60.775 (swing-high atual) + recuperacao de 59.066 enfraquece a leitura de continuacao imediata e adia o SHORT a-favor.",
@@ -268,115 +261,77 @@
   "execution_mode": "AUTO",
   "manual_approval_required": false,
   "price_watch": {
-    "ts": "2026-06-30T20:03:00-04:00",
+    "ts": "2026-06-30T21:12:49-04:00",
     "levels": [
       {
-        "price": 58042.6,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "extremo C-3 / fundo C-2 · alvo cravado hoje (low 58.156,7)",
-        "decisao_pre_armada": "Close 1H<58.042 SEM recuperar = continuacao C-3 confirmada. Armar SHORT de continuacao (setup 2): entry retest 57.800, SL em LH recem-formado ~58.850, TP1 57.499, TP2 55.664. Re-validar R:R>=1,5 e params guard. NAO shortar o fundo em si · esperar o retest do rompimento.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 57499.0,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "0.382xA · alvo C primario",
-        "decisao_pre_armada": "Se atingido em posicao SHORT: FASE-B (defer BE+fees, trail estrutural) · deixar correr rumo a 55.664/49.680. Se FLAT: nao chase · alvo ja consumido, esperar repique pra reentrada.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 59066.0,
+        "price": 60282.8,
         "direction": "above",
         "tier": "alto",
-        "reason": "C-1 low virou resistencia · recuperacao sinaliza squeeze",
-        "decisao_pre_armada": "Close 4H>59.066 recuperado = repique/squeeze ganhando corpo (cenario C). NAO shortar aqui (meio do repique). Aguardar exaustao no topo do repique (0.236/0.382 retr 60.369/59.731) com MACD-hist virando -> ai arma SHORT setup 1 reancorado.",
+        "reason": "PRIMARIA SHORT · continuacao C-3 (pullback raso 0.236-0.382)",
+        "decisao_pre_armada": "ALERTA-ONLY · SE mark na zona 60283 (continuacao C-3 (pullback raso 0.236-0.382)) + Camada2 TOPO 5m / rejeição: AVISAR Claude (contexto SHORT PRIMARIA · alvo 57803.9). NÃO auto-executa — gestão atual = SL-only do short vigente (mandato user). Claude julga, não dispara ordem.",
         "active": true,
-        "triggered": false
-      },
-      {
-        "price": 59731.0,
-        "direction": "above",
-        "tier": "medio",
-        "reason": "0.382 retr C-3 · zona de exaustao de repique",
-        "decisao_pre_armada": "Zona de SHORT a-favor (setup 1) SE formar LH<60.775 e MACD-hist 1H/4H virar bull->bear (exaustao topo). SL acima do LH do repique +0,6%. Re-validar R:R>=1,5.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 60369.0,
-        "direction": "above",
-        "tier": "medio",
-        "reason": "0.236 retr C-3 · repique raso",
-        "decisao_pre_armada": "Limite superior da zona de repique tolerado. Acima disso o LH fica muito perto de 60.775 (swing-high) e enfraquece a leitura de continuacao imediata.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 60775.0,
-        "direction": "above",
-        "tier": "alto",
-        "reason": "swing_high_1H travado (gargalo) · topo da perna",
-        "decisao_pre_armada": "Close 4H>60.775 = LH da leitura de continuacao imediata quebrado. Reavaliar sub-estrutura C-3 (pode ser onda-4 de C maior estendendo). NAO short a-favor aqui. Aguardar recount/nova zona. Ainda NAO invalida macro.",
-        "active": true,
-        "triggered": false
+        "triggered": false,
+        "source": "espinha_c3_continuacao"
       },
       {
         "price": 67276.0,
         "direction": "above",
         "tier": "alto",
-        "reason": "RESET C-3 · limite C-2 travada",
-        "decisao_pre_armada": "Close>67.276 des-elege C-3 / reabre C-2. Disparar skill fenix-analise-macro (RECOUNT). Tese de continuacao imediata invalidada. Suspender setups SHORT ate nova contagem.",
+        "reason": "limite C-2 (des-eleicao C-3) · RECOUNT se romper",
+        "decisao_pre_armada": "SE close > este nivel: C-2 estourou o limite Fib · forcar RECOUNT Espinha (limpar lock tree.json). AUTONOMA re-valida dentro da LEI.",
         "active": true,
-        "triggered": false
+        "triggered": false,
+        "source": "espinha_fib_regions"
       },
       {
         "price": 82811.0,
         "direction": "above",
         "tier": "alto",
-        "reason": "INVALIDACAO MACRO TOTAL (topo B)",
-        "decisao_pre_armada": "Close>82.811 invalida a tese ABC-C DOWN inteira. RECOUNT total (skill fenix-analise-macro). Cenario improvavel a curto prazo.",
+        "reason": "INVALIDACAO TOTAL macro (close D)",
+        "decisao_pre_armada": "SE close D > este nivel: tese ABC bearish MORRE · skill fenix-analise-macro + RECOUNT. AUTONOMA re-valida/documenta dentro da LEI.",
         "active": true,
-        "triggered": false
+        "triggered": false,
+        "source": "espinha_fib_regions"
       },
       {
-        "price": 57757.0,
-        "direction": "below",
-        "tier": "medio",
-        "reason": "S1 pivot D",
-        "decisao_pre_armada": "Nivel intermediario no caminho pro alvo 57.499. Se em SHORT, manter trail estrutural. Se FLAT, referencia (nao gatilho).",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 56910.8,
-        "direction": "below",
-        "tier": "medio",
-        "reason": "S2 pivot D",
-        "decisao_pre_armada": "Suporte no caminho. Em SHORT: trail. FLAT: referencia.",
-        "active": true,
-        "triggered": false
-      },
-      {
-        "price": 55664.8,
+        "price": 59081.0,
         "direction": "below",
         "tier": "alto",
-        "reason": "S3 pivot D · alvo intermediario continuacao",
-        "decisao_pre_armada": "Se atingido em SHORT: avaliar parcial + trail apertado (proximo do 0.500xA 49.680 esta longe · mas 55.664 e alvo intermediario forte). FLAT: nao chase.",
+        "reason": "C-1 low (suporte macro · base retracement C-2)",
+        "decisao_pre_armada": "SE perde C-1 low: C-3 confirmou resumir (rompeu o fundo da C-1). Camada2 FUNDO / continuacao short. AUTONOMA dentro da LEI.",
         "active": true,
-        "triggered": false
+        "triggered": false,
+        "source": "espinha_fib_regions"
+      },
+      {
+        "price": 57498.9,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "alvo C primario (0.382×A)",
+        "decisao_pre_armada": "SE mark em 57499 (alvo C primario): zona de TP/parcial da onda C down. Camada2 FUNDO 5m aqui = exaustao -> avaliar parcial/saida. AUTONOMA dentro da LEI.",
+        "active": true,
+        "triggered": false,
+        "source": "espinha_fib_regions"
       },
       {
         "price": 49680.0,
         "direction": "below",
         "tier": "alto",
-        "reason": "0.500xA · alvo central (IMA) da C",
-        "decisao_pre_armada": "Alvo macro central. Em SHORT longo (trail estrutural): zona de realizacao majoritaria. FLAT: nao relevante curto prazo.",
+        "reason": "alvo C central (ima) (0.500×A)",
+        "decisao_pre_armada": "SE mark em 49680 (alvo C central (ima)): zona de TP/parcial da onda C down. Camada2 FUNDO 5m aqui = exaustao -> avaliar parcial/saida. AUTONOMA dentro da LEI.",
         "active": true,
-        "triggered": false
+        "triggered": false,
+        "source": "espinha_fib_regions"
+      },
+      {
+        "price": 41861.1,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "alvo C base (0.618×A)",
+        "decisao_pre_armada": "SE mark em 41861 (alvo C base): zona de TP/parcial da onda C down. Camada2 FUNDO 5m aqui = exaustao -> avaliar parcial/saida. AUTONOMA dentro da LEI.",
+        "active": true,
+        "triggered": false,
+        "source": "espinha_fib_regions"
       }
     ]
   },
