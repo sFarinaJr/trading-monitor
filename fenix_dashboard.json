@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "01/07/2026 08:49:08",
+  "ultimo_update": "01/07/2026 08:49:40",
   "last_github_push": "01/07 08:49",
-  "last_github_push_ts": 1782910148.765604,
+  "last_github_push_ts": 1782910180.287012,
   "baseline": null,
   "saldo": {
     "cum_realised_pnl": -7071.73,
