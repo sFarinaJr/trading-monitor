@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "01/07/2026 18:27:50",
-  "last_github_push": "01/07 18:27",
-  "last_github_push_ts": 1782944870.354572,
+  "ultimo_update": "01/07/2026 18:28:47",
+  "last_github_push": "01/07 18:28",
+  "last_github_push_ts": 1782944927.827135,
   "baseline": null,
   "saldo": {
     "cum_realised_pnl": -7083.06,
@@ -190,7 +190,7 @@
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-06-30_2000_WAVE_C_C3_DOWN_alvo58042_cravado_MonthClose_FLAT",
     "boot_ts": "2026-06-30T20:03:00-04:00",
-    "ultimo_update": "2026-07-01T11:24:36-04:00",
+    "ultimo_update": "2026-07-01T18:28:27-04:00",
     "status": "ATIVA",
     "mark_at_boot": 58636.0,
     "mark_now": 58636.0,
@@ -229,6 +229,16 @@
       }
     },
     "setups_pre_armados": [
+      {
+        "nome": "PREFLIGHT_SHORT_c3_3_continuacao",
+        "lado": "SHORT",
+        "entry": 60706.4,
+        "sl": 61790,
+        "tp1": 57755.0,
+        "tp2": 57755.0,
+        "tier": "T2",
+        "nota": "armado por fenix_entry_preflight.py (zona viva)"
+      },
       {
         "nome": "PREFLIGHT_SHORT_c3_topo_choch",
         "lado": "SHORT",
