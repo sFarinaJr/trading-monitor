@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "30/06/2026 23:39:47",
-  "last_github_push": "30/06 23:39",
-  "last_github_push_ts": 1782877187.370986,
+  "ultimo_update": "30/06/2026 23:40:40",
+  "last_github_push": "30/06 23:40",
+  "last_github_push_ts": 1782877240.801197,
   "baseline": null,
   "saldo": {
     "cum_realised_pnl": -7071.94,
@@ -169,7 +169,7 @@
   "current_thesis": {
     "thesis_id": null,
     "boot_ts": "2026-06-30T20:03:00-04:00",
-    "ultimo_update": "2026-06-30T23:29:55-04:00",
+    "ultimo_update": "2026-06-30T23:40:07-04:00",
     "status": "ATIVA",
     "mark_at_boot": 58636.0,
     "mark_now": 58636.0,
@@ -186,14 +186,14 @@
   "execution_mode": "AUTO",
   "manual_approval_required": false,
   "price_watch": {
-    "ts": "2026-06-30T23:29:55-04:00",
+    "ts": "2026-06-30T23:40:07-04:00",
     "levels": [
       {
-        "price": 60951.7,
+        "price": 61024.3,
         "direction": "above",
         "tier": "alto",
         "reason": "PRIMARIA SHORT · continuacao C-3 (pullback raso 0.236-0.382)",
-        "decisao_pre_armada": "ALERTA-ONLY · SE mark na zona 60952 (continuacao C-3 (pullback raso 0.236-0.382)) + Camada2 TOPO 5m / rejeição: AVISAR Claude (contexto SHORT PRIMARIA · alvo 57755.8). NÃO auto-executa — gestão atual = SL-only do short vigente (mandato user). Claude julga, não dispara ordem.",
+        "decisao_pre_armada": "ALERTA-ONLY · SE mark na zona 61024 (continuacao C-3 (pullback raso 0.236-0.382)) + Camada2 TOPO 5m / rejeição: AVISAR Claude (contexto SHORT PRIMARIA · alvo 57755.8). NÃO auto-executa — gestão atual = SL-only do short vigente (mandato user). Claude julga, não dispara ordem.",
         "active": true,
         "triggered": false,
         "source": "espinha_c3_continuacao"
@@ -214,6 +214,16 @@
         "tier": "alto",
         "reason": "INVALIDACAO TOTAL macro (close D)",
         "decisao_pre_armada": "SE close D > este nivel: tese ABC bearish MORRE · skill fenix-analise-macro + RECOUNT. AUTONOMA re-valida/documenta dentro da LEI.",
+        "active": true,
+        "triggered": false,
+        "source": "espinha_fib_regions"
+      },
+      {
+        "price": 59081.0,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "C-1 low (suporte macro · base retracement C-2)",
+        "decisao_pre_armada": "SE perde C-1 low: C-3 confirmou resumir (rompeu o fundo da C-1). Camada2 FUNDO / continuacao short. AUTONOMA dentro da LEI.",
         "active": true,
         "triggered": false,
         "source": "espinha_fib_regions"
