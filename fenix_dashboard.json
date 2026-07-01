@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "30/06/2026 22:45:46",
-  "last_github_push": "30/06 22:45",
-  "last_github_push_ts": 1782873946.266547,
+  "ultimo_update": "30/06/2026 22:46:47",
+  "last_github_push": "30/06 22:46",
+  "last_github_push_ts": 1782874007.045598,
   "baseline": null,
   "saldo": {
     "cum_realised_pnl": -7071.94,
@@ -11,7 +11,7 @@
     "progresso_vs_baseline_usd": -2486.56,
     "delta_vs_baseline": -947.94,
     "pnl_fenix_desde_baseline": -947.94,
-    "updated_at": "2026-06-30T22:45:45-04:00"
+    "updated_at": "2026-06-30T22:46:46-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -214,16 +214,6 @@
         "tier": "alto",
         "reason": "INVALIDACAO TOTAL macro (close D)",
         "decisao_pre_armada": "SE close D > este nivel: tese ABC bearish MORRE · skill fenix-analise-macro + RECOUNT. AUTONOMA re-valida/documenta dentro da LEI.",
-        "active": true,
-        "triggered": false,
-        "source": "espinha_fib_regions"
-      },
-      {
-        "price": 59081.0,
-        "direction": "below",
-        "tier": "alto",
-        "reason": "C-1 low (suporte macro · base retracement C-2)",
-        "decisao_pre_armada": "SE perde C-1 low: C-3 confirmou resumir (rompeu o fundo da C-1). Camada2 FUNDO / continuacao short. AUTONOMA dentro da LEI.",
         "active": true,
         "triggered": false,
         "source": "espinha_fib_regions"
