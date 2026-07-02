@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "02/07/2026 08:05:59",
-  "last_github_push": "02/07 08:05",
-  "last_github_push_ts": 1782993959.629088,
+  "ultimo_update": "02/07/2026 08:06:36",
+  "last_github_push": "02/07 08:06",
+  "last_github_push_ts": 1782993996.17377,
   "baseline": null,
   "saldo": {
     "cum_realised_pnl": -7083.94,
@@ -169,7 +169,7 @@
   "current_thesis": {
     "thesis_id": null,
     "boot_ts": "2026-07-01T20:03:08-04:00",
-    "ultimo_update": "2026-07-02T08:01:08-04:00",
+    "ultimo_update": "2026-07-02T08:06:18-04:00",
     "status": "ATIVA",
     "mark_at_boot": 58636.0,
     "mark_now": 58636.0,
@@ -186,14 +186,14 @@
   "execution_mode": "AUTO",
   "manual_approval_required": false,
   "price_watch": {
-    "ts": "2026-07-02T08:01:08-04:00",
+    "ts": "2026-07-02T08:06:18-04:00",
     "levels": [
       {
-        "price": 63150.3,
+        "price": 63146.6,
         "direction": "above",
         "tier": "alto",
         "reason": "PRIMARIA SHORT · continuacao C-3 (pullback raso 0.236-0.382)",
-        "decisao_pre_armada": "ALERTA-ONLY · SE mark na zona 63150 (continuacao C-3 (pullback raso 0.236-0.382)) + Camada2 TOPO 5m / rejeição: AVISAR Claude (contexto SHORT PRIMARIA · alvo 59081.4). NÃO auto-executa — gestão atual = SL-only do short vigente (mandato user). Claude julga, não dispara ordem.",
+        "decisao_pre_armada": "ALERTA-ONLY · SE mark na zona 63147 (continuacao C-3 (pullback raso 0.236-0.382)) + Camada2 TOPO 5m / rejeição: AVISAR Claude (contexto SHORT PRIMARIA · alvo 59081.4). NÃO auto-executa — gestão atual = SL-only do short vigente (mandato user). Claude julga, não dispara ordem.",
         "active": true,
         "triggered": false,
         "source": "espinha_c3_continuacao"
