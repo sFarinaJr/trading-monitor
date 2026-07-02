@@ -1,17 +1,17 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "02/07/2026 15:54:53",
-  "last_github_push": "02/07 15:54",
-  "last_github_push_ts": 1783022093.02684,
+  "ultimo_update": "02/07/2026 15:55:51",
+  "last_github_push": "02/07 15:55",
+  "last_github_push_ts": 1783022151.1820118,
   "baseline": null,
   "saldo": {
     "cum_realised_pnl": -7159.38,
     "cumPnL_unified_usd": -7159.38,
-    "unrealisedPnl": 0,
+    "unrealisedPnl": 13.69,
     "progresso_vs_baseline_usd": -2574.0,
     "delta_vs_baseline": -1035.38,
     "pnl_fenix_desde_baseline": -1035.38,
-    "updated_at": "2026-07-02T15:54:52-04:00"
+    "updated_at": "2026-07-02T15:55:50-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -19,10 +19,31 @@
     "diff_usd": -1035.38
   },
   "posicao_atual": {
-    "side": null,
-    "size": 0,
-    "qty": 0,
-    "status": "FLAT"
+    "side": "SHORT",
+    "size": 0.206,
+    "qty": 0.206,
+    "avgPrice": 61525.5,
+    "avg_price": 61525.5,
+    "entry_price": 61525.5,
+    "stopLoss": 62561.0,
+    "stop_loss": 62561.0,
+    "takeProfit": null,
+    "take_profit": null,
+    "tp2": null,
+    "tp1": null,
+    "tp1_limit": null,
+    "tp1_pnl_lock": 0,
+    "tp1_realizado": false,
+    "status": "OPEN_SHORT",
+    "markPrice": 61459.06,
+    "mark_price_atual": 61459.06,
+    "unrealised_pnl_usd": 13.69,
+    "unrealisedPnl": 13.69,
+    "be_price": 61461.53520777,
+    "liq_price": 63668.1,
+    "tp2_target_estrutural": null,
+    "last_update": "2026-07-02T15:55:51-04:00",
+    "ts_snapshot": "2026-07-02T15:55:51-04:00"
   },
   "trades_recentes": [
     {
@@ -177,7 +198,7 @@
     }
   ],
   "current_thesis": {
-    "thesis_id": null,
+    "thesis_id": "boot_d_close_2026-06-30_2000_WAVE_C_C3_DOWN_alvo58042_cravado_MonthClose_FLAT",
     "boot_ts": "2026-07-01T20:03:08-04:00",
     "ultimo_update": "2026-07-02T12:34:52-04:00",
     "status": "ATIVA",
@@ -187,11 +208,65 @@
       "direcao": "BEARISH",
       "score": 8
     },
-    "leitura_primaria_opus": null,
-    "cenarios_opus": {},
-    "setups_pre_armados": [],
-    "ponto_nao_retorno": null,
-    "proximo_marco": null
+    "leitura_primaria_opus": "A C-3 fez o trabalho hoje. O candle D-1 (29/06) foi um bear grande (range 3,47%, corpo 77%, close no low) que rompeu o suporte C-1 59.066 (Break of Structure) e cravou o alvo extremo da C-3 em 58.042 (low 58.156,7, a 0,20% do alvo). O D-0 de hoje e um doji de descanso no fundo (58.603->58.615). O fechamento de hoje e tambem fechamento MENSAL de junho: mes bear = peso estrutural elevado a favor da tese ABC-C down. A Espinha nao recontou: mantem C-3 DOWN com alvos 57.499 (0.382xA) > 49.680 (0.500xA · ima central) > 41.861 (0.618xA), invalidacao macro close>82.811 e reset C3 close>67.276. GARGALO OPERACIONAL DO DIA (registrado): a FÊNIX ficou FLAT a perna INTEIRA (60.7k->58.19k, -3,9%) porque o swing_high_1H fica travado num topo velho (~60.775) por ~20h -> SL estrutural preso la em cima -> R:R de todo short a-favor <1 (0,18-0,45x) -> params guard bloqueia. A DIRECAO acertou; a ENTRADA travou. Mesmo reancorando o SL num lower-high recente (59.247) o R:R fica 1,18x, ainda <1,5. IMPLICACAO: a entrada a-favor so viabiliza quando o swing-high resetar (formacao de novo topo de repique mais baixo) OU num BREAK estrutural que reancore o SL num LH proximo do preco (ex close<58.042 sem recuperar -> SL num LH recem-formado acima). No fundo (58.042) NAO se short (a-favor exige entrada mais alta perto de um SL barato). SAIDA ja resolvida a-favor pela regra 2 FASE-B (defer BE+fees, trail estrutural, deixar correr).",
+    "cenarios_opus": {
+      "A_repique_ate_topo_menor_depois_continua": {
+        "prob": 0.5,
+        "entry": 59730.0,
+        "sl": 60610.0,
+        "tp1": 58042.0,
+        "tp2": 57499.0,
+        "rr": 1.4,
+        "note": "Bounce sobe ate 0.382 retr da C-3 (59.731) / 0.236 (60.369) formando novo LH abaixo de 60.775, RSI 1H alivia, ai o swing-high RESETA num topo mais baixo -> SL barato -> R:R viabiliza SHORT a-favor. Cenario que DESTRAVA o gargalo."
+      },
+      "B_continuacao_direta_sem_repique_grande": {
+        "prob": 0.3,
+        "entry": 57800.0,
+        "sl": 58850.0,
+        "tp1": 57499.0,
+        "tp2": 55664.0,
+        "rr": 1.75,
+        "note": "Coil 58.2-58.7 quebra pra baixo, close<58.042 sem recuperar. SHORT de continuacao com SL num LH recem-formado (~58.850). Alvo 57.499 (0.382xA) e depois S3 55.664 / 49.680."
+      },
+      "C_squeeze_contra_L_S_066": {
+        "prob": 0.2,
+        "entry": null,
+        "sl": null,
+        "tp1": null,
+        "tp2": null,
+        "rr": null,
+        "note": "L/S ratio 0,66 buy (66% contas long apostando fundo) + OI +8% no D-close = combustivel de short-squeeze. Se recuperar 59.066 (C-1 low, agora resistencia) e fechar 4H acima, o repique estica ate 60.4-60.8k. Nao invalida a tese macro (so >67.276 reseta C3), mas adia a continuacao. Stand-by ate reancorar."
+      }
+    },
+    "setups_pre_armados": [
+      {
+        "tipo": "SHORT_C3_continuacao",
+        "lado": "SHORT",
+        "direcao": "SHORT",
+        "prioridade": "PRIMARIA",
+        "entry": 61437.9,
+        "sl": 62246.0,
+        "tp1": 59081.4,
+        "tp2": 49680.0,
+        "rr": 14.6,
+        "qty_btc": 0.0,
+        "tier": "T1",
+        "macro_aligned": true,
+        "alert_only": true,
+        "zona": [
+          61359.8,
+          61516.1
+        ],
+        "fib_role": "continuacao C-3 (pullback raso 0.236-0.382)",
+        "fib_label": "C-3 pullback 61360-61516",
+        "trigger": "ALERTA-ONLY · C-2 TRAVADA no topo 67276 (passado) · C-3 DOWN em curso. Zona de short de CONTINUAÇÃO no pullback raso 61360-61516 a-favor do macro DOWN. Camada2 TOPO/rejeição aqui = exaustão do repique → contexto p/ short C-3 (alvo 59081 C-1 low → 49680). NÃO reabrir short de retrace-C2 (topo passado). NÃO auto-executa (gestão = SL-only do short vigente).",
+        "invalidacao": "close > 67276 DESTRAVA a C-2 (volta contagem conservadora · C-2 ainda subindo) · close > 82811 invalida macro",
+        "source": "espinha_c3_continuacao",
+        "derivado_de": "tree.onda_de_trabalho.plano_trade.entrada_primaria (modo_c3)"
+      }
+    ],
+    "ponto_nao_retorno": "Macro: close D > 82.811 invalida a tese ABC-C down (recount). Reset C-3: close > 67.276 reabre C-2 (des-elege C-3). Intra/tatico: close 4H > 60.775 (swing-high atual) + recuperacao de 59.066 enfraquece a leitura de continuacao imediata e adia o SHORT a-favor.",
+    "proximo_marco": "Close 4H 22:00 UTC-4 (~2h) · valida se o coil 58.2-58.7 resolve pra cima (repique -> destrava gargalo via reset swing-high) ou pra baixo (close<58.042 -> continuacao C-3). Proximo close 1H 21:00."
   },
   "execution_mode": "AUTO",
   "manual_approval_required": false,
