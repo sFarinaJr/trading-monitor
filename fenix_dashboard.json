@@ -1,17 +1,17 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "02/07/2026 12:46:37",
-  "last_github_push": "02/07 12:46",
-  "last_github_push_ts": 1783010797.4556348,
+  "ultimo_update": "02/07/2026 12:47:19",
+  "last_github_push": "02/07 12:47",
+  "last_github_push_ts": 1783010839.4609091,
   "baseline": null,
   "saldo": {
     "cum_realised_pnl": -7159.38,
     "cumPnL_unified_usd": -7159.38,
-    "unrealisedPnl": 16.22,
+    "unrealisedPnl": 3.33,
     "progresso_vs_baseline_usd": -2574.0,
     "delta_vs_baseline": -1035.38,
     "pnl_fenix_desde_baseline": -1035.38,
-    "updated_at": "2026-07-02T12:46:22-04:00"
+    "updated_at": "2026-07-02T12:47:18-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -35,15 +35,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_SHORT",
-    "markPrice": 61446.75,
-    "mark_price_atual": 61446.75,
-    "unrealised_pnl_usd": 16.22,
-    "unrealisedPnl": 16.22,
+    "markPrice": 61509.34,
+    "mark_price_atual": 61509.34,
+    "unrealised_pnl_usd": 3.33,
+    "unrealisedPnl": 3.33,
     "be_price": 61461.53520777,
     "liq_price": 63668.1,
     "tp2_target_estrutural": null,
-    "last_update": "2026-07-02T12:46:23-04:00",
-    "ts_snapshot": "2026-07-02T12:46:23-04:00"
+    "last_update": "2026-07-02T12:47:19-04:00",
+    "ts_snapshot": "2026-07-02T12:47:19-04:00"
   },
   "trades_recentes": [
     {
@@ -273,16 +273,6 @@
   "price_watch": {
     "ts": "2026-07-02T12:34:52-04:00",
     "levels": [
-      {
-        "price": 61437.9,
-        "direction": "above",
-        "tier": "alto",
-        "reason": "PRIMARIA SHORT · continuacao C-3 (pullback raso 0.236-0.382)",
-        "decisao_pre_armada": "ALERTA-ONLY · SE mark na zona 61438 (continuacao C-3 (pullback raso 0.236-0.382)) + Camada2 TOPO 5m / rejeição: AVISAR Claude (contexto SHORT PRIMARIA · alvo 59081.4). NÃO auto-executa — gestão atual = SL-only do short vigente (mandato user). Claude julga, não dispara ordem.",
-        "active": true,
-        "triggered": false,
-        "source": "espinha_c3_continuacao"
-      },
       {
         "price": 67276.0,
         "direction": "above",
