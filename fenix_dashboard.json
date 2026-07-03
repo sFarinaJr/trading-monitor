@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "02/07/2026 20:01:54",
-  "last_github_push": "02/07 20:01",
-  "last_github_push_ts": 1783036914.46416,
+  "ultimo_update": "02/07/2026 20:02:48",
+  "last_github_push": "02/07 20:02",
+  "last_github_push_ts": 1783036968.202694,
   "baseline": null,
   "saldo": {
     "cum_realised_pnl": -7158.73,
@@ -199,7 +199,7 @@
   ],
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-06-30_2000_WAVE_C_C3_DOWN_alvo58042_cravado_MonthClose_FLAT",
-    "boot_ts": "2026-07-01T20:03:08-04:00",
+    "boot_ts": "2026-07-02T20:02:31-04:00",
     "ultimo_update": "2026-07-02T12:34:52-04:00",
     "status": "ATIVA",
     "mark_at_boot": 58636.0,
