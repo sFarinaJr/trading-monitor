@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "04/07/2026 19:15:30",
+  "ultimo_update": "04/07/2026 19:15:59",
   "last_github_push": "04/07 19:15",
-  "last_github_push_ts": 1783206930.3417332,
+  "last_github_push_ts": 1783206959.5846841,
   "baseline": null,
   "saldo": {
     "cum_realised_pnl": -7143.83,
@@ -179,7 +179,7 @@
   "current_thesis": {
     "thesis_id": null,
     "boot_ts": "2026-07-03T20:02:07-04:00",
-    "ultimo_update": "2026-07-04T15:31:35-04:00",
+    "ultimo_update": "2026-07-04T19:15:38-04:00",
     "status": "ATIVA",
     "mark_at_boot": 58636.0,
     "mark_now": 58636.0,
@@ -196,8 +196,18 @@
   "execution_mode": "AUTO",
   "manual_approval_required": false,
   "price_watch": {
-    "ts": "2026-07-04T15:31:35-04:00",
+    "ts": "2026-07-04T19:15:38-04:00",
     "levels": [
+      {
+        "price": 63109.9,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "PRIMARIA SHORT · continuacao C-3 (pullback raso 0.236-0.382)",
+        "decisao_pre_armada": "ALERTA-ONLY · SE mark na zona 63110 (continuacao C-3 (pullback raso 0.236-0.382)) + Camada2 TOPO 5m / rejeição: AVISAR Claude (contexto SHORT PRIMARIA · alvo 59081.4). NÃO auto-executa — gestão atual = SL-only do short vigente (mandato user). Claude julga, não dispara ordem.",
+        "active": true,
+        "triggered": false,
+        "source": "espinha_c3_continuacao"
+      },
       {
         "price": 67276.0,
         "direction": "above",
