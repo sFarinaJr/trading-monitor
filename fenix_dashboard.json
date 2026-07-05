@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "05/07/2026 18:34:11",
+  "ultimo_update": "05/07/2026 18:34:56",
   "last_github_push": "05/07 18:34",
-  "last_github_push_ts": 1783290851.982153,
+  "last_github_push_ts": 1783290896.50798,
   "baseline": null,
   "saldo": {
     "cum_realised_pnl": -7818.82,
@@ -200,7 +200,7 @@
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-06-30_2000_WAVE_C_C3_DOWN_alvo58042_cravado_MonthClose_FLAT",
     "boot_ts": "2026-07-04T20:02:54-04:00",
-    "ultimo_update": "2026-07-05T05:45:47-04:00",
+    "ultimo_update": "2026-07-05T18:34:54-04:00",
     "status": "ATIVA",
     "mark_at_boot": 58636.0,
     "mark_now": 58636.0,
@@ -244,22 +244,22 @@
         "lado": "SHORT",
         "direcao": "SHORT",
         "prioridade": "PRIMARIA",
-        "entry": 62717.1,
-        "sl": 63519.8,
+        "entry": 64751.8,
+        "sl": 65603.7,
         "tp1": 59081.4,
         "tp2": 49680.0,
-        "rr": 16.2,
+        "rr": 17.7,
         "qty_btc": 0.0,
         "tier": "T1",
         "macro_aligned": true,
         "alert_only": true,
         "zona": [
-          62639.7,
-          62794.5
+          64485.2,
+          65018.5
         ],
         "fib_role": "continuacao C-3 (pullback raso 0.236-0.382)",
-        "fib_label": "C-3 pullback 62640-62794",
-        "trigger": "ALERTA-ONLY · C-2 TRAVADA no topo 67276 (passado) · C-3 DOWN em curso. Zona de short de CONTINUAÇÃO no pullback raso 62640-62794 a-favor do macro DOWN. Camada2 TOPO/rejeição aqui = exaustão do repique → contexto p/ short C-3 (alvo 59081 C-1 low → 49680). NÃO reabrir short de retrace-C2 (topo passado). NÃO auto-executa (gestão = SL-only do short vigente).",
+        "fib_label": "C-3 pullback 64485-65018",
+        "trigger": "ALERTA-ONLY · C-2 TRAVADA no topo 67276 (passado) · C-3 DOWN em curso. Zona de short de CONTINUAÇÃO no pullback raso 64485-65018 a-favor do macro DOWN. Camada2 TOPO/rejeição aqui = exaustão do repique → contexto p/ short C-3 (alvo 59081 C-1 low → 49680). NÃO reabrir short de retrace-C2 (topo passado). NÃO auto-executa (gestão = SL-only do short vigente).",
         "invalidacao": "close > 67276 DESTRAVA a C-2 (volta contagem conservadora · C-2 ainda subindo) · close > 82811 invalida macro",
         "source": "espinha_c3_continuacao",
         "derivado_de": "tree.onda_de_trabalho.plano_trade.entrada_primaria (modo_c3)"
@@ -271,8 +271,18 @@
   "execution_mode": "AUTO",
   "manual_approval_required": false,
   "price_watch": {
-    "ts": "2026-07-05T05:45:47-04:00",
+    "ts": "2026-07-05T18:34:54-04:00",
     "levels": [
+      {
+        "price": 64751.8,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "PRIMARIA SHORT · continuacao C-3 (pullback raso 0.236-0.382)",
+        "decisao_pre_armada": "ALERTA-ONLY · SE mark na zona 64752 (continuacao C-3 (pullback raso 0.236-0.382)) + Camada2 TOPO 5m / rejeição: AVISAR Claude (contexto SHORT PRIMARIA · alvo 59081.4). NÃO auto-executa — gestão atual = SL-only do short vigente (mandato user). Claude julga, não dispara ordem.",
+        "active": true,
+        "triggered": false,
+        "source": "espinha_c3_continuacao"
+      },
       {
         "price": 67276.0,
         "direction": "above",
