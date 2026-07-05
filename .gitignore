@@ -1,7 +1,7 @@
 *
 !.gitignore
 !index.html
-!dashboard.html
+# dashboard.html · fora do ar a pedido do user 05/07 · NAO re-upar ate liberar (re-add !dashboard.html quando autorizar)
 !fenix.png
 !fenix_dashboard.json
 !README.md
