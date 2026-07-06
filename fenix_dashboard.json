@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "06/07/2026 19:51:18",
-  "last_github_push": "06/07 19:51",
-  "last_github_push_ts": 1783381878.753078,
+  "ultimo_update": "06/07/2026 19:52:12",
+  "last_github_push": "06/07 19:52",
+  "last_github_push_ts": 1783381932.689763,
   "baseline": null,
   "saldo": {
     "cum_realised_pnl": -7817.2,
@@ -11,7 +11,7 @@
     "progresso_vs_baseline_usd": -3231.82,
     "delta_vs_baseline": -1693.2,
     "pnl_fenix_desde_baseline": -1693.2,
-    "updated_at": "2026-07-06T19:51:18-04:00"
+    "updated_at": "2026-07-06T19:52:12-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -43,7 +43,7 @@
     "liq_price": null,
     "tp2_target_estrutural": null,
     "last_update": null,
-    "ts_snapshot": "2026-07-06T19:51:18-04:00"
+    "ts_snapshot": "2026-07-06T19:52:12-04:00"
   },
   "trades_recentes": [
     {
@@ -200,7 +200,7 @@
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-06-30_2000_WAVE_C_C3_DOWN_alvo58042_cravado_MonthClose_FLAT",
     "boot_ts": "2026-07-05T20:02:23-04:00",
-    "ultimo_update": "2026-07-06T19:46:18-04:00",
+    "ultimo_update": "2026-07-06T19:51:36-04:00",
     "status": "ATIVA",
     "mark_at_boot": 58636.0,
     "mark_now": 58636.0,
@@ -244,8 +244,8 @@
         "lado": "SHORT",
         "direcao": "SHORT",
         "prioridade": "PRIMARIA",
-        "entry": 65049.2,
-        "sl": 65872.1,
+        "entry": 65052.9,
+        "sl": 65875.4,
         "tp1": 59081.4,
         "tp2": 49680.0,
         "rr": 18.7,
@@ -254,12 +254,12 @@
         "macro_aligned": true,
         "alert_only": true,
         "zona": [
-          64814.0,
-          65284.5
+          64818.1,
+          65287.8
         ],
         "fib_role": "continuacao C-3 (pullback raso 0.236-0.382)",
-        "fib_label": "C-3 pullback 64814-65284",
-        "trigger": "ALERTA-ONLY · C-2 TRAVADA no topo 67276 (passado) · C-3 DOWN em curso. Zona de short de CONTINUAÇÃO no pullback raso 64814-65284 a-favor do macro DOWN. Camada2 TOPO/rejeição aqui = exaustão do repique → contexto p/ short C-3 (alvo 59081 C-1 low → 49680). NÃO reabrir short de retrace-C2 (topo passado). NÃO auto-executa (gestão = SL-only do short vigente).",
+        "fib_label": "C-3 pullback 64818-65288",
+        "trigger": "ALERTA-ONLY · C-2 TRAVADA no topo 67276 (passado) · C-3 DOWN em curso. Zona de short de CONTINUAÇÃO no pullback raso 64818-65288 a-favor do macro DOWN. Camada2 TOPO/rejeição aqui = exaustão do repique → contexto p/ short C-3 (alvo 59081 C-1 low → 49680). NÃO reabrir short de retrace-C2 (topo passado). NÃO auto-executa (gestão = SL-only do short vigente).",
         "invalidacao": "close > 67276 DESTRAVA a C-2 (volta contagem conservadora · C-2 ainda subindo) · close > 82811 invalida macro",
         "source": "espinha_c3_continuacao",
         "derivado_de": "tree.onda_de_trabalho.plano_trade.entrada_primaria (modo_c3)"
@@ -271,14 +271,14 @@
   "execution_mode": "AUTO",
   "manual_approval_required": false,
   "price_watch": {
-    "ts": "2026-07-06T19:46:18-04:00",
+    "ts": "2026-07-06T19:51:36-04:00",
     "levels": [
       {
-        "price": 65049.2,
+        "price": 65052.9,
         "direction": "above",
         "tier": "alto",
         "reason": "PRIMARIA SHORT · continuacao C-3 (pullback raso 0.236-0.382)",
-        "decisao_pre_armada": "ALERTA-ONLY · SE mark na zona 65049 (continuacao C-3 (pullback raso 0.236-0.382)) + Camada2 TOPO 5m / rejeição: AVISAR Claude (contexto SHORT PRIMARIA · alvo 59081.4). NÃO auto-executa — gestão atual = SL-only do short vigente (mandato user). Claude julga, não dispara ordem.",
+        "decisao_pre_armada": "ALERTA-ONLY · SE mark na zona 65053 (continuacao C-3 (pullback raso 0.236-0.382)) + Camada2 TOPO 5m / rejeição: AVISAR Claude (contexto SHORT PRIMARIA · alvo 59081.4). NÃO auto-executa — gestão atual = SL-only do short vigente (mandato user). Claude julga, não dispara ordem.",
         "active": true,
         "triggered": false,
         "source": "espinha_c3_continuacao"
