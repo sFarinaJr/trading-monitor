@@ -1,17 +1,17 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "08/07/2026 02:03:23",
-  "last_github_push": "08/07 02:03",
-  "last_github_push_ts": 1783490603.054749,
+  "ultimo_update": "08/07/2026 02:04:08",
+  "last_github_push": "08/07 02:04",
+  "last_github_push_ts": 1783490648.343198,
   "baseline": null,
   "saldo": {
     "cum_realised_pnl": -7826.75,
     "cumPnL_unified_usd": -7826.75,
-    "unrealisedPnl": 0.0,
+    "unrealisedPnl": 0,
     "progresso_vs_baseline_usd": -3241.37,
     "delta_vs_baseline": -1702.75,
     "pnl_fenix_desde_baseline": -1702.75,
-    "updated_at": "2026-07-08T02:03:11-04:00"
+    "updated_at": "2026-07-08T02:04:07-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -19,31 +19,10 @@
     "diff_usd": -1702.75
   },
   "posicao_atual": {
-    "side": "SHORT",
-    "size": 0.005,
-    "qty": 0.005,
-    "avgPrice": 62585.3,
-    "avg_price": 62585.3,
-    "entry_price": 62585.3,
-    "stopLoss": null,
-    "stop_loss": null,
-    "takeProfit": null,
-    "take_profit": null,
-    "tp2": null,
-    "tp1": null,
-    "tp1_limit": null,
-    "tp1_pnl_lock": 0,
-    "tp1_realizado": false,
-    "status": "OPEN_SHORT",
-    "markPrice": 62582.34,
-    "mark_price_atual": 62582.34,
-    "unrealised_pnl_usd": 0.01,
-    "unrealisedPnl": 0.01,
-    "be_price": 62538.38682724,
-    "liq_price": 64764.8,
-    "tp2_target_estrutural": null,
-    "last_update": "2026-07-08T02:03:13-04:00",
-    "ts_snapshot": "2026-07-08T02:03:13-04:00"
+    "side": null,
+    "size": 0,
+    "qty": 0,
+    "status": "FLAT"
   },
   "trades_recentes": [
     {
@@ -198,7 +177,7 @@
     }
   ],
   "current_thesis": {
-    "thesis_id": "boot_d_close_2026-07-07_2000_WAVE_C_C3-3_DOWN_topo64703_alvo59081_FLAT",
+    "thesis_id": null,
     "boot_ts": "2026-07-07T20:10:59-04:00",
     "ultimo_update": "2026-07-08T02:02:11-04:00",
     "status": "ATIVA",
@@ -208,71 +187,11 @@
       "direcao": "BEARISH",
       "score": 6
     },
-    "leitura_primaria_opus": "Correção ABC macro (zigzag) desde ,150 · onda C DOWN em curso · a Espinha (adotada) trava working C-3 DOWN conf alta e expõe a subonda operável C3-3 DOWN, ancorada no topo C3-2 ,703 decretado ontem. D-0 (07/07) fechou ,332 vermelho (-1,07% no dia) com pavio inferior longo (low ,635 recomprado) · preço acima da EMA20 D ,695 = bounce, mas 1W vermelho e macro bear intacto.\n\nEstado · 4H rolou o momentum (MACD-hist -75, re-engatou down) e rejeitou o teto ,234/,883, segurando ,635 · 1H/15m abaixo da EMA20, bearish intra. 2 exaustões de topo mid-range hoje (18:25 cont↑, 19:50 rev↓ @,390) julgadas STAND-BY (chop). Tendências 7-TF mistas · 4h/12h verde (bounce) vs 1W/macro vermelho = assinatura de repique dentro do downtrend.\n\nPróximo · (a) break ,635 + reteste = C3-3 confirma DOWN, flipa 4H, curto rumo ,081 (45%); (b) repique ,900-,200 rejeitado + camada-2 topo 5m + MACD-hist rolando = short-topo melhor R:R (35%); (c) range ,635-,303 persiste = chop, SEM ENTRADA (20%).",
-    "cenarios_opus": {
-      "cenario_A_breakdown_C3-3": {
-        "prob": 45,
-        "entry": 62500,
-        "sl": 63900,
-        "tp1": 62187,
-        "tp2": 59081,
-        "rr": 2.44,
-        "note": "close/break < ,635 (range low) → C3-3 confirma DOWN · flipa 4H (passa anti-chop) · short reteste rumo extremo C-3 ,081 (ext ,499)."
-      },
-      "cenario_B_rejeicao_topo": {
-        "prob": 35,
-        "entry": 64100,
-        "sl": 64774,
-        "tp1": 63780,
-        "tp2": 59081,
-        "rr": 7.45,
-        "note": "repique ,900-,200 rejeitado + camada-2 topo 5m + MACD-hist 4H rolando · sell-high near-SL (melhor R:R) · exige majors começando a rolar red."
-      },
-      "cenario_C_range_persiste": {
-        "prob": 20,
-        "rr": null,
-        "note": "segura ,635-,303 → chop continua · doutrina regime range = SEM ENTRADA · só break de borda gera trade."
-      }
-    },
-    "setups_pre_armados": [
-      {
-        "nome": "PREFLIGHT_SHORT_c33breakdown",
-        "lado": "SHORT",
-        "entry": 62585.3,
-        "sl": 64650.0,
-        "tp1": 59081.0,
-        "tp2": 59081.0,
-        "tier": "T2",
-        "nota": "armado por fenix_entry_preflight.py (zona viva)"
-      },
-      {
-        "tipo": "SHORT_C3_continuacao",
-        "lado": "SHORT",
-        "direcao": "SHORT",
-        "prioridade": "PRIMARIA",
-        "entry": 63178.1,
-        "sl": 64774.4,
-        "tp1": 59081.4,
-        "tp2": 49680.0,
-        "rr": 8.5,
-        "qty_btc": 0.0,
-        "tier": "T1",
-        "macro_aligned": true,
-        "alert_only": true,
-        "zona": [
-          63016.9,
-          63339.2
-        ],
-        "fib_role": "continuacao C-3 (pullback raso 0.236-0.382)",
-        "fib_label": "C-3 pullback 63017-63339",
-        "trigger": "ALERTA-ONLY · C-2 TRAVADA no topo 67276 (passado) · C-3 DOWN em curso. Zona de short de CONTINUAÇÃO no pullback raso 63017-63339 a-favor do macro DOWN. Camada2 TOPO/rejeição aqui = exaustão do repique → contexto p/ short C-3 (alvo 59081 C-1 low → 49680). NÃO reabrir short de retrace-C2 (topo passado). NÃO auto-executa (gestão = SL-only do short vigente).",
-        "invalidacao": "close > 67276 DESTRAVA a C-2 (volta contagem conservadora · C-2 ainda subindo) · close > 82811 invalida macro",
-        "source": "espinha_c3_continuacao",
-        "derivado_de": "tree.onda_de_trabalho.plano_trade.entrada_primaria (modo_c3)"
-      }
-    ],
+    "leitura_primaria_opus": null,
+    "cenarios_opus": {},
+    "setups_pre_armados": [],
     "ponto_nao_retorno": null,
-    "proximo_marco": "Close 4H 00:00 UTC-4 (~4h) · decide A (break ,635 → C3-3 confirma DOWN) vs C (segura range → chop). Antes · vigiar bordas ,635 / ,900-,200 · camada-2 topo 5m + MACD-hist 4H rolando = gatilho short imediato · NÃO caçar mid-range."
+    "proximo_marco": null
   },
   "execution_mode": "AUTO",
   "manual_approval_required": false,
