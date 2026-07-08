@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "08/07/2026 04:08:38",
-  "last_github_push": "08/07 04:08",
-  "last_github_push_ts": 1783498118.09759,
+  "ultimo_update": "08/07/2026 04:09:32",
+  "last_github_push": "08/07 04:09",
+  "last_github_push_ts": 1783498172.74738,
   "baseline": null,
   "saldo": {
     "cum_realised_pnl": -7826.74,
@@ -11,7 +11,7 @@
     "progresso_vs_baseline_usd": -3241.36,
     "delta_vs_baseline": -1702.74,
     "pnl_fenix_desde_baseline": -1702.74,
-    "updated_at": "2026-07-08T04:08:37-04:00"
+    "updated_at": "2026-07-08T04:09:32-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
