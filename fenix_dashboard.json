@@ -1,17 +1,17 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "08/07/2026 05:33:53",
-  "last_github_push": "08/07 05:33",
-  "last_github_push_ts": 1783503233.6162062,
+  "ultimo_update": "08/07/2026 05:34:49",
+  "last_github_push": "08/07 05:34",
+  "last_github_push_ts": 1783503289.1474502,
   "baseline": null,
   "saldo": {
     "cum_realised_pnl": -7826.74,
     "cumPnL_unified_usd": -7826.74,
-    "unrealisedPnl": 2.53,
+    "unrealisedPnl": 2.25,
     "progresso_vs_baseline_usd": -3241.36,
     "delta_vs_baseline": -1702.74,
     "pnl_fenix_desde_baseline": -1702.74,
-    "updated_at": "2026-07-08T05:33:53-04:00"
+    "updated_at": "2026-07-08T05:34:48-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -35,15 +35,15 @@
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
     "status": "OPEN_SHORT",
-    "markPrice": 62078.95,
-    "mark_price_atual": 62078.95,
-    "unrealised_pnl_usd": 2.53,
-    "unrealisedPnl": 2.53,
+    "markPrice": 62134.42,
+    "mark_price_atual": 62134.42,
+    "unrealised_pnl_usd": 2.25,
+    "unrealisedPnl": 2.25,
     "be_price": 62540.60702413,
     "liq_price": 68501.3,
     "tp2_target_estrutural": 59081.0,
-    "last_update": "2026-07-08T05:33:53-04:00",
-    "ts_snapshot": "2026-07-08T05:33:53-04:00"
+    "last_update": "2026-07-08T05:34:49-04:00",
+    "ts_snapshot": "2026-07-08T05:34:49-04:00"
   },
   "trades_recentes": [
     {
@@ -200,7 +200,7 @@
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-07-07_2000_WAVE_C_C3-3_DOWN_topo64703_alvo59081_FLAT",
     "boot_ts": "2026-07-07T20:10:59-04:00",
-    "ultimo_update": "2026-07-08T04:47:02-04:00",
+    "ultimo_update": "2026-07-08T05:34:44-04:00",
     "status": "ATIVA",
     "mark_at_boot": 63298.4,
     "mark_now": 63298.4,
@@ -240,22 +240,22 @@
         "lado": "SHORT",
         "direcao": "SHORT",
         "prioridade": "PRIMARIA",
-        "entry": 62711.8,
+        "entry": 62614.4,
         "sl": 64774.4,
         "tp1": 59081.4,
         "tp2": 49680.0,
-        "rr": 6.3,
+        "rr": 6.0,
         "qty_btc": 0.0,
         "tier": "T1",
         "macro_aligned": true,
         "alert_only": true,
         "zona": [
-          62501.4,
-          62922.2
+          62393.8,
+          62835.1
         ],
         "fib_role": "continuacao C-3 (pullback raso 0.236-0.382)",
-        "fib_label": "C-3 pullback 62501-62922",
-        "trigger": "ALERTA-ONLY · C-2 TRAVADA no topo 67276 (passado) · C-3 DOWN em curso. Zona de short de CONTINUAÇÃO no pullback raso 62501-62922 a-favor do macro DOWN. Camada2 TOPO/rejeição aqui = exaustão do repique → contexto p/ short C-3 (alvo 59081 C-1 low → 49680). NÃO reabrir short de retrace-C2 (topo passado). NÃO auto-executa (gestão = SL-only do short vigente).",
+        "fib_label": "C-3 pullback 62394-62835",
+        "trigger": "ALERTA-ONLY · C-2 TRAVADA no topo 67276 (passado) · C-3 DOWN em curso. Zona de short de CONTINUAÇÃO no pullback raso 62394-62835 a-favor do macro DOWN. Camada2 TOPO/rejeição aqui = exaustão do repique → contexto p/ short C-3 (alvo 59081 C-1 low → 49680). NÃO reabrir short de retrace-C2 (topo passado). NÃO auto-executa (gestão = SL-only do short vigente).",
         "invalidacao": "close > 67276 DESTRAVA a C-2 (volta contagem conservadora · C-2 ainda subindo) · close > 82811 invalida macro",
         "source": "espinha_c3_continuacao",
         "derivado_de": "tree.onda_de_trabalho.plano_trade.entrada_primaria (modo_c3)"
@@ -267,14 +267,14 @@
   "execution_mode": "AUTO",
   "manual_approval_required": false,
   "price_watch": {
-    "ts": "2026-07-08T04:47:02-04:00",
+    "ts": "2026-07-08T05:34:44-04:00",
     "levels": [
       {
-        "price": 62711.8,
+        "price": 62614.4,
         "direction": "above",
         "tier": "alto",
         "reason": "PRIMARIA SHORT · continuacao C-3 (pullback raso 0.236-0.382)",
-        "decisao_pre_armada": "ALERTA-ONLY · SE mark na zona 62712 (continuacao C-3 (pullback raso 0.236-0.382)) + Camada2 TOPO 5m / rejeição: AVISAR Claude (contexto SHORT PRIMARIA · alvo 59081.4). NÃO auto-executa — gestão atual = SL-only do short vigente (mandato user). Claude julga, não dispara ordem.",
+        "decisao_pre_armada": "ALERTA-ONLY · SE mark na zona 62614 (continuacao C-3 (pullback raso 0.236-0.382)) + Camada2 TOPO 5m / rejeição: AVISAR Claude (contexto SHORT PRIMARIA · alvo 59081.4). NÃO auto-executa — gestão atual = SL-only do short vigente (mandato user). Claude julga, não dispara ordem.",
         "active": true,
         "triggered": false,
         "source": "espinha_c3_continuacao"
