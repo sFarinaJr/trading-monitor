@@ -1,17 +1,17 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "09/07/2026 13:37:03",
+  "ultimo_update": "09/07/2026 13:37:57",
   "last_github_push": "09/07 13:37",
-  "last_github_push_ts": 1783618623.7497978,
+  "last_github_push_ts": 1783618677.782676,
   "baseline": null,
   "saldo": {
     "cum_realised_pnl": -7833.17,
     "cumPnL_unified_usd": -7833.17,
-    "unrealisedPnl": 0.38,
+    "unrealisedPnl": 0,
     "progresso_vs_baseline_usd": -3247.79,
     "delta_vs_baseline": -1709.17,
     "pnl_fenix_desde_baseline": -1709.17,
-    "updated_at": "2026-07-09T13:37:03-04:00"
+    "updated_at": "2026-07-09T13:37:57-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -19,31 +19,10 @@
     "diff_usd": -1709.17
   },
   "posicao_atual": {
-    "side": "SHORT",
-    "size": 0.016,
-    "qty": 0.016,
-    "avgPrice": 62834.1,
-    "avg_price": 62834.1,
-    "entry_price": 62834.1,
-    "stopLoss": 63340.0,
-    "stop_loss": 63340.0,
-    "takeProfit": 59081.0,
-    "take_profit": 59081.0,
-    "tp2": 59081.0,
-    "tp1": null,
-    "tp1_limit": null,
-    "tp1_pnl_lock": 0,
-    "tp1_realizado": false,
-    "status": "OPEN_SHORT",
-    "markPrice": 62810.2,
-    "mark_price_atual": 62810.2,
-    "unrealised_pnl_usd": 0.38,
-    "unrealisedPnl": 0.38,
-    "be_price": 62771.87056931,
-    "liq_price": 68773.6,
-    "tp2_target_estrutural": 59081.0,
-    "last_update": "2026-07-09T13:37:03-04:00",
-    "ts_snapshot": "2026-07-09T13:37:03-04:00"
+    "side": null,
+    "size": 0,
+    "qty": 0,
+    "status": "FLAT"
   },
   "trades_recentes": [
     {
@@ -198,7 +177,7 @@
     }
   ],
   "current_thesis": {
-    "thesis_id": "boot_d_close_2026-07-08_2000_WAVE_C_C3-3_DOWN_topo64703_alvo59081_SHORT_open",
+    "thesis_id": null,
     "boot_ts": "2026-07-08T20:07:20-04:00",
     "ultimo_update": "2026-07-09T02:51:52-04:00",
     "status": "ACTIVE",
@@ -208,109 +187,11 @@
       "direcao": "BEARISH",
       "score": 6
     },
-    "leitura_primaria_opus": "Downtrend macro D dentro de zigzag ABC desde o topo 126.150 (Espinha travada · conf alta). Onda C DOWN · working intermediario C-3 · operavel C3-3 impulsando do topo travado C3-2 64.703 (06/07). D-0 08/07 foi candle BEAR de continuacao (-1,7% · corpo cheio 63.332->62.256 · low 61.500 · vol 74,7k). EMAs D bear-stacked (EMA9 62.406 / EMA20 62.550 acima do close 62.184). RSI D 45 · 4H 45 · 1H 44 (sem oversold). OI +5,0% em 24h num dia de queda = shorts frescos entrando na descida (confirma continuacao). LSR 0,60 = 60% das contas LONG contra a tendencia (combustivel de queda). Estado atual · apos o impulso 64.703->61.500 o preco travou 8h no range 61.92-62.40 (volume secando · 1H de 959-1.640) = pausa/bandeira, nao reversao. Sondou o low 61.920 e recomprou (falso rompimento/stop-run) sem segurar. Coracao bateu bearish 9.0 multiplas vezes hoje (vies DOWN de fundo firme, a-favor). Proximo movimento · (a) break decisivo < 61.920 (idealmente < 61.500 sem recompra) retoma a C3-3 rumo a 59.081 -> 57.498 [55%]; (b) repique ao teto 62.7-63.1k (0.236 fib C3-2 = 63.063) rejeita com MACD-hist virando + Camada2 topo = short de continuacao na exaustao [30%]; (c) close 4H > 64.703 reseta a C3-3 / destrava a C-2 = stand-by contra macro [15%].",
-    "cenarios_opus": {
-      "cenario_A_continuacao_C3_3_down": {
-        "prob": 55,
-        "entry": 61900,
-        "sl": 62724,
-        "tp1": 60400,
-        "tp2": 59081,
-        "rr": 3.42,
-        "note": "break decisivo < 61.920 (chop low) / < 61.500 (D-0 low) sem recompra retoma a C3-3 · alvo C-1 low 59.081 -> ext 57.498"
-      },
-      "cenario_B_repique_exaustao_short": {
-        "prob": 30,
-        "entry": 62950,
-        "sl": 64000,
-        "tp1": 61500,
-        "tp2": 59081,
-        "rr": 3.68,
-        "note": "repique ao teto 62.7-63.1k (0.236 fib C3-2 = 63.063) rejeita + MACD-hist vira + Camada2 topo = short de continuacao na exaustao do repique"
-      },
-      "cenario_C_reset_up": {
-        "prob": 15,
-        "rr": null,
-        "note": "SEM ENTRADA · close 4H > 64.703 reseta a C3-3 (des-elege) · close > 67.276 destrava a C-2 · contra macro, stand-by ate recount"
-      }
-    },
-    "setups_pre_armados": [
-      {
-        "nome": "PREFLIGHT_SHORT_c33pullback",
-        "lado": "SHORT",
-        "entry": 62805.5,
-        "sl": 63340,
-        "tp1": 59081.0,
-        "tp2": 59081.0,
-        "tier": "T2",
-        "nota": "armado por fenix_entry_preflight.py (zona viva)"
-      },
-      {
-        "tipo": "SHORT_C3_continuacao_breakdown",
-        "prioridade": "PRIMARIA",
-        "entry": 61900,
-        "entry_zone": "break < 61.920 / 61.500",
-        "sl": 62724,
-        "tp1": 60400,
-        "tp2": 59081,
-        "rr": 3.42,
-        "qty_btc": 0.0,
-        "tier": "T2",
-        "macro_aligned": true,
-        "alert_only": true,
-        "invalidacao": "close 4H > 64.703 reseta C3-3 · close > 67.276 destrava C-2",
-        "razao_estrutural": "Retomada da C3-3 DOWN no break do chop (61.92-62.40) sem recompra · a-favor macro · alvo C-1 low 59.081 -> ext 57.498. ALERT-ONLY (anti-chop pode gate ate regime alinhar).",
-        "direcao": "SHORT",
-        "lado": "SHORT",
-        "nome": "SHORT_C3_continuacao_breakdown",
-        "entrada": 61900,
-        "gatilho": "break < 61.920 / 61.500"
-      },
-      {
-        "tipo": "SHORT_C3_repique_exaustao",
-        "prioridade": "SECUNDARIA",
-        "entry": 62950,
-        "entry_zone": "62.700-63.100 (0.236 fib C3-2)",
-        "sl": 64000,
-        "tp1": 61500,
-        "tp2": 59081,
-        "rr": 3.68,
-        "qty_btc": 0.0,
-        "tier": "T2",
-        "macro_aligned": true,
-        "alert_only": true,
-        "invalidacao": "close 4H > 64.703",
-        "razao_estrutural": "Short na exaustao do repique ao teto do chop · MACD-hist virando + Camada2 TOPO 5m fechado = timing · a-favor C-3 DOWN.",
-        "direcao": "SHORT",
-        "lado": "SHORT",
-        "nome": "SHORT_C3_repique_exaustao",
-        "entrada": 62950,
-        "gatilho": "62.700-63.100 (0.236 fib C3-2)"
-      },
-      {
-        "tipo": "GESTAO_SHORT_ativo_0.005",
-        "prioridade": "GESTAO",
-        "entry": 62585.3,
-        "entry_zone": "trade aberto 08/07 02:03",
-        "sl": 62460.1,
-        "tp1": "piso lucro armado (exc 1,66%)",
-        "tp2": 59081.0,
-        "rr": null,
-        "qty_btc": 0.005,
-        "tier": "GESTAO",
-        "macro_aligned": true,
-        "alert_only": false,
-        "invalidacao": "SL 62.460 (BE+taxas · lock +) · trail LEI12.1 aperta no swing",
-        "razao_estrutural": "SHORT cavalgando a C3-3 DOWN · SL no piso de lucro 62.460 · alvo estrutural 59.081 (C-1 low). Gestao = trail estrutural + piso · NAO fechar por impaciencia.",
-        "direcao": "SHORT",
-        "lado": "SHORT",
-        "nome": "GESTAO_SHORT_ativo_0.005",
-        "entrada": 62585.3,
-        "gatilho": "trade aberto 08/07 02:03"
-      }
-    ],
+    "leitura_primaria_opus": null,
+    "cenarios_opus": {},
+    "setups_pre_armados": [],
     "ponto_nao_retorno": null,
-    "proximo_marco": "Close 4H 00:00 UTC-4 (~4h) · decide A (rompe 61.920 -> continua DOWN 59.081) vs B (repique 62.7-63.1k -> short exaustao). Antes disso · monitorar break do chop 61.92-62.40 · close 1H < 61.920 sem recompra = gatilho de continuacao · SL da posicao segue no piso 62.460 (BE+taxas)."
+    "proximo_marco": null
   },
   "execution_mode": "AUTO",
   "manual_approval_required": false,
