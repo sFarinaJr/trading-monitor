@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "09/07/2026 11:10:22",
-  "last_github_push": "09/07 11:10",
-  "last_github_push_ts": 1783609822.372925,
+  "ultimo_update": "09/07/2026 11:11:18",
+  "last_github_push": "09/07 11:11",
+  "last_github_push_ts": 1783609878.080297,
   "baseline": null,
   "saldo": {
     "cum_realised_pnl": -7833.22,
@@ -11,7 +11,7 @@
     "progresso_vs_baseline_usd": -3247.84,
     "delta_vs_baseline": -1709.22,
     "pnl_fenix_desde_baseline": -1709.22,
-    "updated_at": "2026-07-09T11:10:21-04:00"
+    "updated_at": "2026-07-09T11:11:17-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -84,6 +84,16 @@
       "quantity": 0.809,
       "pnl_usd": -474.27,
       "pnl_percent": -0.85
+    },
+    {
+      "timestamp": "2026-07-03T02:40:01",
+      "symbol": "BTCUSDT",
+      "side": "LONG",
+      "entry_price": 61422.3,
+      "exit_price": 61600.0,
+      "quantity": 0.206,
+      "pnl_usd": 27.11,
+      "pnl_percent": 0.29
     },
     {
       "timestamp": "2026-07-02T22:36:41",
@@ -164,16 +174,6 @@
       "quantity": 0.743,
       "pnl_usd": -24.61,
       "pnl_percent": 0.03
-    },
-    {
-      "timestamp": "2026-06-29T01:34:31",
-      "symbol": "BTCUSDT",
-      "side": "SHORT",
-      "entry_price": 59800.0,
-      "exit_price": 59734.2,
-      "quantity": 0.05,
-      "pnl_usd": 1.05,
-      "pnl_percent": 0.11
     }
   ],
   "current_thesis": {
