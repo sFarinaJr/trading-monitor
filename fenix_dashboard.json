@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "09/07/2026 03:00:20",
-  "last_github_push": "09/07 03:00",
-  "last_github_push_ts": 1783580420.557536,
+  "ultimo_update": "09/07/2026 03:01:14",
+  "last_github_push": "09/07 03:01",
+  "last_github_push_ts": 1783580474.249611,
   "baseline": null,
   "saldo": {
     "cum_realised_pnl": -7833.28,
@@ -11,7 +11,7 @@
     "progresso_vs_baseline_usd": -3247.9,
     "delta_vs_baseline": -1709.28,
     "pnl_fenix_desde_baseline": -1709.28,
-    "updated_at": "2026-07-09T03:00:19-04:00"
+    "updated_at": "2026-07-09T03:01:13-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -204,16 +204,6 @@
         "tier": "alto",
         "reason": "D-0 low 08/07 · confirmacao de rompimento",
         "decisao_pre_armada": "SE mark < 61.500: rompeu o low do dia · C3-3 em marcha rumo a 59.081. AVISAR Claude · alvo primario a caminho. Gestao da posicao (trail LEI12.1).",
-        "active": true,
-        "triggered": false,
-        "source": "boot_08jul"
-      },
-      {
-        "price": 62950,
-        "direction": "above",
-        "tier": "alto",
-        "reason": "zona SHORT repique (0.236 fib C3-2 ~63.063)",
-        "decisao_pre_armada": "SE mark 62.700-63.100 + Camada2 TOPO 5m + MACD-hist virando: exaustao do repique = contexto short continuacao C-3 (alvo 59.081). AVISAR Claude · anti-chop pode gate. NAO auto-exec.",
         "active": true,
         "triggered": false,
         "source": "boot_08jul"
