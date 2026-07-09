@@ -1,51 +1,61 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "08/07/2026 21:09:23",
-  "last_github_push": "08/07 21:09",
-  "last_github_push_ts": 1783559363.003165,
+  "ultimo_update": "08/07/2026 21:10:20",
+  "last_github_push": "08/07 21:10",
+  "last_github_push_ts": 1783559420.235134,
   "baseline": null,
   "saldo": {
-    "cum_realised_pnl": -7826.69,
-    "cumPnL_unified_usd": -7826.69,
-    "unrealisedPnl": 1.55,
-    "progresso_vs_baseline_usd": -3241.31,
-    "delta_vs_baseline": -1702.69,
-    "pnl_fenix_desde_baseline": -1702.69,
-    "updated_at": "2026-07-08T21:09:22-04:00"
+    "cum_realised_pnl": -7826.26,
+    "cumPnL_unified_usd": -7826.26,
+    "unrealisedPnl": 0.0,
+    "progresso_vs_baseline_usd": -3240.88,
+    "delta_vs_baseline": -1702.26,
+    "pnl_fenix_desde_baseline": -1702.26,
+    "updated_at": "2026-07-08T21:10:19-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
-    "current_pnl": -7826.69,
-    "diff_usd": -1702.69
+    "current_pnl": -7826.26,
+    "diff_usd": -1702.26
   },
   "posicao_atual": {
-    "side": "SHORT",
-    "size": 0.005,
-    "qty": 0.005,
-    "avgPrice": 62585.3,
-    "avg_price": 62585.3,
-    "entry_price": 62585.3,
-    "stopLoss": 62460.1,
-    "stop_loss": 62460.1,
-    "takeProfit": 59081.0,
-    "take_profit": 59081.0,
-    "tp2": 59081.0,
+    "side": "NONE",
+    "size": 0,
+    "qty": 0,
+    "avgPrice": null,
+    "avg_price": null,
+    "entry_price": null,
+    "stopLoss": null,
+    "stop_loss": null,
+    "takeProfit": null,
+    "take_profit": null,
+    "tp2": null,
     "tp1": null,
     "tp1_limit": null,
     "tp1_pnl_lock": 0,
     "tp1_realizado": false,
-    "status": "OPEN_SHORT",
-    "markPrice": 62270.9,
-    "mark_price_atual": 62270.9,
-    "unrealised_pnl_usd": 1.57,
-    "unrealisedPnl": 1.57,
-    "be_price": 62550.1032672,
-    "liq_price": 68501.3,
-    "tp2_target_estrutural": 59081.0,
-    "last_update": "2026-07-08T21:09:22-04:00",
-    "ts_snapshot": "2026-07-08T21:09:22-04:00"
+    "status": null,
+    "markPrice": null,
+    "mark_price_atual": null,
+    "unrealised_pnl_usd": 0,
+    "unrealisedPnl": 0,
+    "be_price": null,
+    "liq_price": null,
+    "tp2_target_estrutural": null,
+    "last_update": null,
+    "ts_snapshot": "2026-07-08T21:10:20-04:00"
   },
   "trades_recentes": [
+    {
+      "timestamp": "2026-07-08T02:04:30",
+      "symbol": "BTCUSDT",
+      "side": "SHORT",
+      "entry_price": 62585.3,
+      "exit_price": 62463.2,
+      "quantity": 0.005,
+      "pnl_usd": 0.43,
+      "pnl_percent": 0.2
+    },
     {
       "timestamp": "2026-07-07T12:03:11",
       "symbol": "BTCUSDT",
@@ -185,16 +195,6 @@
       "quantity": 0.05,
       "pnl_usd": 24.85,
       "pnl_percent": 0.91
-    },
-    {
-      "timestamp": "2026-06-28T19:01:44",
-      "symbol": "BTCUSDT",
-      "side": "SHORT",
-      "entry_price": 59720.0,
-      "exit_price": 59258.5,
-      "quantity": 0.05,
-      "pnl_usd": 20.85,
-      "pnl_percent": 0.77
     }
   ],
   "current_thesis": {
@@ -323,16 +323,6 @@
         "tier": "alto",
         "reason": "D-0 low 08/07 · confirmacao de rompimento",
         "decisao_pre_armada": "SE mark < 61.500: rompeu o low do dia · C3-3 em marcha rumo a 59.081. AVISAR Claude · alvo primario a caminho. Gestao da posicao (trail LEI12.1).",
-        "active": true,
-        "triggered": false,
-        "source": "boot_08jul"
-      },
-      {
-        "price": 62400,
-        "direction": "above",
-        "tier": "medio",
-        "reason": "topo do chop 8h",
-        "decisao_pre_armada": "SE mark > 62.400: teste da borda alta do range · possivel repique ao 62.7-63.1k. AVISAR Claude · vigiar exaustao p/ short SECUNDARIA.",
         "active": true,
         "triggered": false,
         "source": "boot_08jul"
