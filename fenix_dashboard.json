@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "10/07/2026 03:44:28",
-  "last_github_push": "10/07 03:44",
-  "last_github_push_ts": 1783669468.5551739,
+  "ultimo_update": "10/07/2026 03:45:28",
+  "last_github_push": "10/07 03:45",
+  "last_github_push_ts": 1783669528.469459,
   "baseline": null,
   "saldo": {
     "cum_realised_pnl": -7841.93,
@@ -11,7 +11,7 @@
     "progresso_vs_baseline_usd": -3256.55,
     "delta_vs_baseline": -1717.93,
     "pnl_fenix_desde_baseline": -1717.93,
-    "updated_at": "2026-07-10T03:44:27-04:00"
+    "updated_at": "2026-07-10T03:45:27-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -43,7 +43,7 @@
     "liq_price": null,
     "tp2_target_estrutural": null,
     "last_update": null,
-    "ts_snapshot": "2026-07-10T03:44:28-04:00"
+    "ts_snapshot": "2026-07-10T03:45:28-04:00"
   },
   "trades_recentes": [
     {
@@ -200,7 +200,7 @@
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-07-09_2000_WAVE_C_C3-3_pullback0618_MAO_ESPERA_LONG_portao_1d",
     "boot_ts": "2026-07-09T20:15:33-04:00",
-    "ultimo_update": "2026-07-09T20:11:13-04:00",
+    "ultimo_update": "2026-07-10T03:45:20-04:00",
     "status": "FLAT_ESPERA",
     "mark_at_boot": 63177.2,
     "mark_now": 63177.2,
@@ -239,6 +239,31 @@
       }
     },
     "setups_pre_armados": [
+      {
+        "tipo": "SHORT_C3_continuacao",
+        "lado": "SHORT",
+        "direcao": "SHORT",
+        "prioridade": "PRIMARIA",
+        "entry": 64066.8,
+        "sl": 64774.4,
+        "tp1": 59081.4,
+        "tp2": 49680.0,
+        "rr": 20.3,
+        "qty_btc": 0.0,
+        "tier": "T1",
+        "macro_aligned": true,
+        "alert_only": true,
+        "zona": [
+          63999.5,
+          64134.0
+        ],
+        "fib_role": "continuacao C-3 (pullback raso 0.236-0.382)",
+        "fib_label": "C-3 pullback 64000-64134",
+        "trigger": "ALERTA-ONLY · C-2 TRAVADA no topo 67276 (passado) · C-3 DOWN em curso. Zona de short de CONTINUAÇÃO no pullback raso 64000-64134 a-favor do macro DOWN. Camada2 TOPO/rejeição aqui = exaustão do repique → contexto p/ short C-3 (alvo 59081 C-1 low → 49680). NÃO reabrir short de retrace-C2 (topo passado). NÃO auto-executa (gestão = SL-only do short vigente).",
+        "invalidacao": "close > 67276 DESTRAVA a C-2 (volta contagem conservadora · C-2 ainda subindo) · close > 82811 invalida macro",
+        "source": "espinha_c3_continuacao",
+        "derivado_de": "tree.onda_de_trabalho.plano_trade.entrada_primaria (modo_c3)"
+      },
       {
         "tipo": "LONG_TATICO_portao_1d",
         "nome": "LONG_TATICO_portao_1d",
@@ -312,8 +337,79 @@
   "execution_mode": "AUTO",
   "manual_approval_required": false,
   "price_watch": {
-    "ts": null,
-    "levels": []
+    "ts": "2026-07-10T03:45:20-04:00",
+    "levels": [
+      {
+        "price": 64066.8,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "PRIMARIA SHORT · continuacao C-3 (pullback raso 0.236-0.382)",
+        "decisao_pre_armada": "ALERTA-ONLY · SE mark na zona 64067 (continuacao C-3 (pullback raso 0.236-0.382)) + Camada2 TOPO 5m / rejeição: AVISAR Claude (contexto SHORT PRIMARIA · alvo 59081.4). NÃO auto-executa — gestão atual = SL-only do short vigente (mandato user). Claude julga, não dispara ordem.",
+        "active": true,
+        "triggered": false,
+        "source": "espinha_c3_continuacao"
+      },
+      {
+        "price": 67276.0,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "limite C-2 (des-eleicao C-3) · RECOUNT se romper",
+        "decisao_pre_armada": "SE close > este nivel: C-2 estourou o limite Fib · forcar RECOUNT Espinha (limpar lock tree.json). AUTONOMA re-valida dentro da LEI.",
+        "active": true,
+        "triggered": false,
+        "source": "espinha_fib_regions"
+      },
+      {
+        "price": 82811.0,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "INVALIDACAO TOTAL macro (close D)",
+        "decisao_pre_armada": "SE close D > este nivel: tese ABC bearish MORRE · skill fenix-analise-macro + RECOUNT. AUTONOMA re-valida/documenta dentro da LEI.",
+        "active": true,
+        "triggered": false,
+        "source": "espinha_fib_regions"
+      },
+      {
+        "price": 59081.0,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "C-1 low (suporte macro · base retracement C-2)",
+        "decisao_pre_armada": "SE perde C-1 low: C-3 confirmou resumir (rompeu o fundo da C-1). Camada2 FUNDO / continuacao short. AUTONOMA dentro da LEI.",
+        "active": true,
+        "triggered": false,
+        "source": "espinha_fib_regions"
+      },
+      {
+        "price": 57498.9,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "alvo C primario (0.382×A)",
+        "decisao_pre_armada": "SE mark em 57499 (alvo C primario): zona de TP/parcial da onda C down. Camada2 FUNDO 5m aqui = exaustao -> avaliar parcial/saida. AUTONOMA dentro da LEI.",
+        "active": true,
+        "triggered": false,
+        "source": "espinha_fib_regions"
+      },
+      {
+        "price": 49680.0,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "alvo C central (ima) (0.500×A)",
+        "decisao_pre_armada": "SE mark em 49680 (alvo C central (ima)): zona de TP/parcial da onda C down. Camada2 FUNDO 5m aqui = exaustao -> avaliar parcial/saida. AUTONOMA dentro da LEI.",
+        "active": true,
+        "triggered": false,
+        "source": "espinha_fib_regions"
+      },
+      {
+        "price": 41861.1,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "alvo C base (0.618×A)",
+        "decisao_pre_armada": "SE mark em 41861 (alvo C base): zona de TP/parcial da onda C down. Camada2 FUNDO 5m aqui = exaustao -> avaliar parcial/saida. AUTONOMA dentro da LEI.",
+        "active": true,
+        "triggered": false,
+        "source": "espinha_fib_regions"
+      }
+    ]
   },
   "monitor_url": "https://facts-programmes-hunter-arbor.trycloudflare.com"
 }
