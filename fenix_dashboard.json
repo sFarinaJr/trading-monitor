@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "10/07/2026 12:14:22",
-  "last_github_push": "10/07 12:14",
-  "last_github_push_ts": 1783700062.199311,
+  "ultimo_update": "10/07/2026 12:15:18",
+  "last_github_push": "10/07 12:15",
+  "last_github_push_ts": 1783700118.997406,
   "baseline": null,
   "saldo": {
     "cum_realised_pnl": -7841.93,
@@ -11,7 +11,7 @@
     "progresso_vs_baseline_usd": -3256.55,
     "delta_vs_baseline": -1717.93,
     "pnl_fenix_desde_baseline": -1717.93,
-    "updated_at": "2026-07-10T12:14:21-04:00"
+    "updated_at": "2026-07-10T12:15:18-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -43,7 +43,7 @@
     "liq_price": null,
     "tp2_target_estrutural": null,
     "last_update": null,
-    "ts_snapshot": "2026-07-10T12:14:22-04:00"
+    "ts_snapshot": "2026-07-10T12:15:18-04:00"
   },
   "trades_recentes": [
     {
@@ -200,7 +200,7 @@
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-07-09_2000_WAVE_C_C3-3_pullback0618_MAO_ESPERA_LONG_portao_1d",
     "boot_ts": "2026-07-09T20:15:33-04:00",
-    "ultimo_update": "2026-07-10T03:50:36-04:00",
+    "ultimo_update": "2026-07-10T12:15:01-04:00",
     "status": "FLAT_ESPERA",
     "mark_at_boot": 63177.2,
     "mark_now": 63177.2,
@@ -337,7 +337,7 @@
   "execution_mode": "AUTO",
   "manual_approval_required": false,
   "price_watch": {
-    "ts": "2026-07-10T03:50:36-04:00",
+    "ts": "2026-07-10T12:15:01-04:00",
     "levels": [
       {
         "price": 62489.8,
@@ -348,6 +348,16 @@
         "active": true,
         "triggered": false,
         "source": "espinha_c3_continuacao"
+      },
+      {
+        "price": 64703.2,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "grau operável · close > 64703 rompe o topo travado da C3-2 → reseta o grau operável (C",
+        "decisao_pre_armada": "SE mark nesta zona + Camada2 TOPO 5m (rejeicao): repique de QUALIDADE (excecao correnteza) -> avaliar SHORT continuacao da subonda viva via preflight (Claude julga). SE close 4H alem do nivel: RESET do grau operavel (a Espinha reconta sozinha · nao antecipar).",
+        "active": true,
+        "triggered": false,
+        "source": "espinha_fib_regions"
       },
       {
         "price": 67276.0,
