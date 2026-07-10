@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "09/07/2026 20:11:16",
-  "last_github_push": "09/07 20:11",
-  "last_github_push_ts": 1783642276.960112,
+  "ultimo_update": "09/07/2026 20:12:11",
+  "last_github_push": "09/07 20:12",
+  "last_github_push_ts": 1783642331.418096,
   "baseline": null,
   "saldo": {
     "cum_realised_pnl": -7841.93,
@@ -11,7 +11,7 @@
     "progresso_vs_baseline_usd": -3256.55,
     "delta_vs_baseline": -1717.93,
     "pnl_fenix_desde_baseline": -1717.93,
-    "updated_at": "2026-07-09T20:11:16-04:00"
+    "updated_at": "2026-07-09T20:12:10-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -43,7 +43,7 @@
     "liq_price": null,
     "tp2_target_estrutural": null,
     "last_update": null,
-    "ts_snapshot": "2026-07-09T20:11:16-04:00"
+    "ts_snapshot": "2026-07-09T20:12:11-04:00"
   },
   "trades_recentes": [
     {
@@ -258,7 +258,8 @@
         "alert_only": true,
         "gatilho": "PORTAO: close D 10/07 20:00 com lows >=61.500 (pivo LOW 1d k2 08/07 confirma) OU antes close 4H > 64.703 (reset Espinha)",
         "invalidacao": "close 1H < 61.516 mata o rally · low 1d < 61.500 mata o portao",
-        "razao_estrutural": "Estudo pivos HTF 9a (rally aninhado 1W vermelho + 12h verde · MFE mediano 4,5%/131h). LONG contra-macro SO via portao pivo 1d (LONG_TATICO destrava ZERO_LONG_BEAR/LEI29 · risco cap 3%). Alvos 66.017/66.241 (0.618) e 68.9. ENTRADA CONTINUA DECISAO DISCRICIONARIA do Claude (doutrina)."
+        "razao_estrutural": "Estudo pivos HTF 9a (rally aninhado 1W vermelho + 12h verde · MFE mediano 4,5%/131h). LONG contra-macro SO via portao pivo 1d (LONG_TATICO destrava ZERO_LONG_BEAR/LEI29 · risco cap 3%). Alvos 66.017/66.241 (0.618) e 68.9. ENTRADA CONTINUA DECISAO DISCRICIONARIA do Claude (doutrina).",
+        "source": "boot_0907_mao"
       },
       {
         "tipo": "SHORT_repique_discricionario_zona_batalha",
@@ -279,7 +280,8 @@
         "alert_only": true,
         "gatilho": "SO DISCRICIONARIO: exaustao camada_2 TOPO 5m FECHADO + MACD-hist 1H virando + FASE B liberada (apos 02:08) · correnteza CONTRA_RALLY veta Sell mecanico (gate #13)",
         "invalidacao": "close 4H > 64.703 (reset C3-3 · zona morre)",
-        "razao_estrutural": "A-favor macro C-3 DOWN · vender exaustao no topo da zona de batalha, nunca chasar. NAO auto-exec."
+        "razao_estrutural": "A-favor macro C-3 DOWN · vender exaustao no topo da zona de batalha, nunca chasar. NAO auto-exec.",
+        "source": "boot_0907_mao"
       },
       {
         "tipo": "SHORT_C3_retomada_break_61516",
@@ -300,7 +302,8 @@
         "alert_only": true,
         "gatilho": "close 1H < 61.516 SEM recompra (rally morto · C3-3 retoma) · SL estrutural final via preflight (swing 1H + 0.6%)",
         "invalidacao": "recupera e fecha 1H > 62.400",
-        "razao_estrutural": "Perda de 61.516 nega o portao e retoma a C3-3 DOWN rumo C-1 low 59.081 -> 57.498. Short volta elegivel pos-FASE B/nova exaustao."
+        "razao_estrutural": "Perda de 61.516 nega o portao e retoma a C3-3 DOWN rumo C-1 low 59.081 -> 57.498. Short volta elegivel pos-FASE B/nova exaustao.",
+        "source": "boot_0907_mao"
       }
     ],
     "ponto_nao_retorno": "macro: close D > 82.811 invalida C · intermediario: close > 67.276 destrava C-2 · operavel: close 4H > 64.703 reseta C3-3 · local: close 1H < 61.516 mata rally/portao",
