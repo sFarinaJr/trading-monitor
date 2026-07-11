@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "10/07/2026 20:15:54",
-  "last_github_push": "10/07 20:15",
-  "last_github_push_ts": 1783728954.340443,
+  "ultimo_update": "10/07/2026 20:16:50",
+  "last_github_push": "10/07 20:16",
+  "last_github_push_ts": 1783729010.913582,
   "baseline": null,
   "saldo": {
     "cum_realised_pnl": -7841.93,
@@ -11,7 +11,7 @@
     "progresso_vs_baseline_usd": -3256.55,
     "delta_vs_baseline": -1717.93,
     "pnl_fenix_desde_baseline": -1717.93,
-    "updated_at": "2026-07-10T20:15:53-04:00"
+    "updated_at": "2026-07-10T20:16:50-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -43,7 +43,7 @@
     "liq_price": null,
     "tp2_target_estrutural": null,
     "last_update": null,
-    "ts_snapshot": "2026-07-10T20:15:54-04:00"
+    "ts_snapshot": "2026-07-10T20:16:50-04:00"
   },
   "trades_recentes": [
     {
@@ -198,146 +198,115 @@
     }
   ],
   "current_thesis": {
-    "thesis_id": "boot_d_close_2026-07-09_2000_WAVE_C_C3-3_pullback0618_MAO_ESPERA_LONG_portao_1d",
-    "boot_ts": "2026-07-09T20:15:33-04:00",
-    "ultimo_update": "2026-07-10T14:05:29-04:00",
-    "status": "FLAT_ESPERA",
-    "mark_at_boot": 63177.2,
-    "mark_now": 63177.2,
+    "thesis_id": "boot_d_close_2026-07-10_2000_WAVE_C_C33_teto64703_MAO_ESPERA_LONG_portao_INATIVO",
+    "boot_ts": "2026-07-10T20:16:30-04:00",
+    "ultimo_update": "2026-07-10T20:16:30-04:00",
+    "status": "ATIVO",
+    "mark_at_boot": 64073.6,
+    "mark_now": 64073.6,
     "macro_bias_D": {
       "direcao": "BEARISH",
-      "score": 5
+      "score": 4
     },
-    "leitura_primaria_opus": "D-0 fechou BULL +1,51% (O 62.256 C 63.197 · H 63.480) — 3o dia de lows ascendentes desde 61.500, mas o rally parou EXATAMENTE na parede tripla: 0.618 do pullback C3-3 (63.479) + EMA200 4H (63.487) + proximidade R1 D. Estrutura D segue de LHs (64.703>64.303>63.744>63.480) sobre lows planos 61.3-61.7 = triangulo descendente; liquidez (poça) abaixo dos equal lows. OI caiu 4,8% nas 24h enquanto preco subiu = SHORT-COVERING, nao new-money: combustivel esgotavel, coerente com contra-rally. Funding +0,007% neutro. Macro bear intacto (preco < EMA50 D 65.345 e << EMA200 D 74.891). Decisao: NADA mecanico. FASE B trava Sell ate 02:08, correnteza veta short mecanico, LEI #29 veta LONG — a MAO esta em ESPERA_LONG aguardando o portao 1d (close D 10/07 20:00 com lows segurando 61.500) ou reset 4H > 64.703. Perder 61.516 devolve a C3-3 DOWN e o short fica elegivel de novo.",
+    "leitura_primaria_opus": "Macro C DOWN intacta (topo 82.811 · invalidação distante) · C-3 DOWN de 67.276 · working C3-3 DOWN do topo travado 64.703 rumo 59.081. MAS a perna down (64.703→61.272) foi devolvida em 99,8% — o high do D-0 (64.688) parou 15 pts do gatilho de reset. D fechou BULL +1,5% (C 64.141) acima das EMA9/20 D (63.147/62.905) · MACD-hist D +607 subindo · vol 75% MA20 (rally sem euforia de volume).\n\nEstrutura local virou bull: 3 fundos ascendentes diários + CHoCH 4H (rompeu 63.480) + bear-engulf de 07/07 NEGADO (close acima do corpo). OI 24h +4,1% com preço +1,5% = dinheiro novo nos longs (lastro), funding +0,01% moderado (sem euforia), L/S 0,57 long-lean. Preço ACIMA do value area 14d (POC 60.0k · VAH ~63.0k) = aceitação acima ou over-extension — o teto 64.69-64.70 decide.\n\n(A 40%) close 4H > 64.703 → reset C3-3 na Espinha · rally estende R1 64.923 / ext 1.272 65.555 / R1W 65.816 · SEM chase — reavaliar com a tese re-ancorada. (B 35%) rejeição no teto (equal highs + LTB) → pullback 63.470-63.100 (0.382-0.5 + EMA20 4H + S1) · stand-by enquanto dots verdes. (C 25%) close 1H < 62.891 → retomada C3-3 down rumo 61.500/61.272 e 59.081 · correnteza flipando destrava o SHORT estrutural (setups 1/2).",
     "cenarios_opus": {
-      "A_rally_estende_zona_batalha": {
-        "prob": 0.4,
+      "cenario_A_rompe_teto_reset": {
+        "prob": 40,
         "entry": null,
         "sl": null,
         "tp1": null,
         "tp2": null,
         "rr": null,
-        "note": "Short-covering leva a 64.26-64.70 (LH+topo travado+R2 D 64.594). BATALHA: rejeicao com exaustao = short discricionario (setup 2 · pos 02:08) · close 4H > 64.703 = reset C3-3 e MAO flip LONG_TATICO elegivel."
+        "note": "close 4H > 64.703 → Espinha reseta C3-3 (recount do sub-grau · C-3/macro C intactas até 67.276) · alvos acima: R1 64.923 · ext1.272 65.555 · R1W 65.816 · SEM ENTRADA no rompimento (chase proibido · portão inativo) · aguardar tese re-ancorada + pullback"
       },
-      "B_portao_1d_confirma": {
-        "prob": 0.35,
-        "entry": 62900,
-        "sl": 61131,
-        "tp1": 66017,
-        "tp2": 68900,
-        "rr": 1.76,
-        "note": "Close D 10/07 20:00 com lows >= 61.500 confirma pivo LOW 1d k2 · MAO flip LONG_TATICO (cap 3%) · entrada em pullback pos-confirmacao · alvos 66.017/66.241/68.9 · invalida 61.516."
+      "cenario_B_rejeicao_teto_pullback": {
+        "prob": 35,
+        "entry": 64100,
+        "sl": 65091,
+        "tp1": 63780,
+        "tp2": 61500,
+        "rr": 2.62,
+        "note": "rejeição nos equal highs 64.688/64.703 (LTB + supply) → pullback 63.470-63.100 · SHORT do setup 1 SÓ SE correnteza flipar (dots 4h+12h 🔴) + MACD-hist 4H virando · senão stand-by"
       },
-      "C_perde_61516": {
-        "prob": 0.25,
-        "entry": 61450,
-        "sl": 62500,
-        "tp1": 60410,
+      "cenario_C_breakdown_retomada_C33": {
+        "prob": 25,
+        "entry": 63100,
+        "sl": 63850,
+        "tp1": 62785,
         "tp2": 59081,
-        "rr": 2.26,
-        "note": "Close 1H < 61.516 mata rally e portao · C3-3 DOWN retoma rumo 59.081/57.498 · short elegivel pos-FASE B (02:08) ou nova exaustao camada_2."
+        "rr": 5.36,
+        "note": "close 1H < 62.891 (low D-0 + micro-LTA) → retomada C3-3 rumo 61.500/61.272 e extremo C-3 59.081 · SHORT no reteste da quebra (setup 2) com correnteza flipada · nunca chase"
       }
     },
     "setups_pre_armados": [
       {
-        "tipo": "SHORT_C3_continuacao",
-        "lado": "SHORT",
-        "direcao": "SHORT",
-        "prioridade": "PRIMARIA",
-        "entry": 62489.8,
-        "sl": 64774.4,
-        "tp1": 59081.4,
-        "tp2": 49680.0,
-        "rr": 5.6,
-        "qty_btc": 0.0,
-        "tier": "T1",
+        "tipo": "SHORT_continuacao_C33_reteste_teto",
+        "source": "boot_1007",
+        "entry_zone": "63.900-64.400",
+        "entry": 64100,
+        "sl": 65091.0,
+        "tp1": 63779.5,
+        "tp2": 61500,
+        "rr": 2.62,
+        "qty_btc": 0.011,
+        "tier": "T2",
         "macro_aligned": true,
-        "alert_only": true,
-        "zona": [
-          62256.0,
-          62723.6
-        ],
-        "fib_role": "continuacao C-3 (pullback raso 0.236-0.382)",
-        "fib_label": "C-3 pullback 62256-62724",
-        "trigger": "ALERTA-ONLY · C-2 TRAVADA no topo 67276 (passado) · C-3 DOWN em curso. Zona de short de CONTINUAÇÃO no pullback raso 62256-62724 a-favor do macro DOWN. Camada2 TOPO/rejeição aqui = exaustão do repique → contexto p/ short C-3 (alvo 59081 C-1 low → 49680). NÃO reabrir short de retrace-C2 (topo passado). NÃO auto-executa (gestão = SL-only do short vigente).",
-        "invalidacao": "close > 67276 DESTRAVA a C-2 (volta contagem conservadora · C-2 ainda subindo) · close > 82811 invalida macro",
-        "source": "espinha_c3_continuacao",
-        "derivado_de": "tree.onda_de_trabalho.plano_trade.entrada_primaria (modo_c3)"
+        "gatilho": "CONDICIONAL · correnteza sai de CONTRA_RALLY (dots 4h+12h 🔴) + rejeição no teto 64.69-64.70 com MACD-hist 4H virando down · NUNCA short com dots verdes (veto absoluto)",
+        "invalidacao": "close 4H > 64.703 (reset C3-3 · Espinha recount)",
+        "razao_estrutural": "a-favor macro C/C-3/C3-3 DOWN · teto = topo travado C3-2 + equal highs 64.688/64.703 + LTB 67.276→64.703 · SL estrutural além do swing (64.703×1.006) · TP2 fundo do range · alvo estendido 59.081",
+        "direcao": "SHORT",
+        "lado": "SHORT",
+        "nome": "SHORT_continuacao_C33_reteste_teto",
+        "entrada": 64100
       },
       {
-        "tipo": "LONG_TATICO_portao_1d",
-        "nome": "LONG_TATICO_portao_1d",
-        "prioridade": "PRIMARIA_CONDICIONAL",
+        "tipo": "SHORT_breakdown_retomada_C33",
+        "source": "boot_1007",
+        "entry_zone": "reteste 63.000-63.300 pós-quebra",
+        "entry": 63100,
+        "sl": 63850.0,
+        "tp1": 62784.5,
+        "tp2": 59081,
+        "rr": 5.36,
+        "qty_btc": 0.015,
+        "tier": "T2",
+        "macro_aligned": true,
+        "gatilho": "CONDICIONAL · close 1H < 62.891 (low D-0) + correnteza flip (dots 🔴) · entra no RETESTE da quebra, nunca chase",
+        "invalidacao": "reclaim close 1H > 63.500 pós-quebra (fake breakdown)",
+        "razao_estrutural": "retomada da C3-3 down · quebra da micro-LTA (4 toques) + low D-0 · alvo estrutural extremo C-3 59.081 (1º alvo 61.272 pivô) · SL acima do LH pós-quebra (dist 1,19% ≤ cap 1,5%)",
+        "direcao": "SHORT",
+        "lado": "SHORT",
+        "nome": "SHORT_breakdown_retomada_C33",
+        "entrada": 63100
+      },
+      {
+        "tipo": "LONG_TATICO_pullback_pos_portao",
+        "source": "boot_1007",
+        "entry_zone": "63.100-63.470 (0.382-0.5 retr + EMA20 4H + S1)",
+        "entry": 63300,
+        "sl": 62514.0,
+        "tp1": 63616.5,
+        "tp2": 65555,
+        "rr": 2.87,
+        "qty_btc": 0.007,
+        "tier": "T1",
+        "macro_aligned": false,
+        "gatilho": "CONDICIONAL MÃO · SÓ se portão pivô 1d k2 LIMPO confirmar (mao.side=LONG_TATICO · hoje INATIVO · faltam ≥2 closes D de estrutura) + pullback na zona + MACD-hist 1H virando up",
+        "invalidacao": "close 1H < 62.891 antes do portão abrir · ou mao != LONG_TATICO",
+        "razao_estrutural": "contra-macro Elliott-ancorado (rally com lastro OI +4,1%) · zona 0.382-0.5 da perna 61.500→64.688 + EMA20 4H 63.442 + S1 63.125 · SL abaixo do low D-0 62.891×0.994 · R:R 2,87 ≥ 2,5 contratrend · risco capado 2,5%×throttle 0,5→floor 1,5%",
         "direcao": "LONG",
         "lado": "LONG",
-        "entry_zone": "62.600-63.300 (pullback pos-confirmacao do portao · reancorar no gatilho)",
-        "entry": 62900,
-        "entrada": 62900,
-        "sl": 61131,
-        "tp1": 66017,
-        "tp2": 68900,
-        "rr": 1.76,
-        "qty_btc": 0.0,
-        "tier": "TATICO_cap3pct",
-        "macro_aligned": false,
-        "alert_only": true,
-        "gatilho": "PORTAO: close D 10/07 20:00 com lows >=61.500 (pivo LOW 1d k2 08/07 confirma) OU antes close 4H > 64.703 (reset Espinha)",
-        "invalidacao": "close 1H < 61.516 mata o rally · low 1d < 61.500 mata o portao",
-        "razao_estrutural": "Estudo pivos HTF 9a (rally aninhado 1W vermelho + 12h verde · MFE mediano 4,5%/131h). LONG contra-macro SO via portao pivo 1d (LONG_TATICO destrava ZERO_LONG_BEAR/LEI29 · risco cap 3%). Alvos 66.017/66.241 (0.618) e 68.9. ENTRADA CONTINUA DECISAO DISCRICIONARIA do Claude (doutrina).",
-        "source": "boot_0907_mao"
-      },
-      {
-        "tipo": "SHORT_repique_discricionario_zona_batalha",
-        "nome": "SHORT_repique_discricionario",
-        "prioridade": "SECUNDARIA",
-        "direcao": "SHORT",
-        "lado": "SHORT",
-        "entry_zone": "64.260-64.700 (LH 64.303 + topo travado C3-2 64.703 + R2 D 64.594)",
-        "entry": 64400,
-        "entrada": 64400,
-        "sl": 65091,
-        "tp1": 63101,
-        "tp2": 59081,
-        "rr": 4.2,
-        "qty_btc": 0.0,
-        "tier": "T2",
-        "macro_aligned": true,
-        "alert_only": true,
-        "gatilho": "SO DISCRICIONARIO: exaustao camada_2 TOPO 5m FECHADO + MACD-hist 1H virando + FASE B liberada (apos 02:08) · correnteza CONTRA_RALLY veta Sell mecanico (gate #13)",
-        "invalidacao": "close 4H > 64.703 (reset C3-3 · zona morre)",
-        "razao_estrutural": "A-favor macro C-3 DOWN · vender exaustao no topo da zona de batalha, nunca chasar. NAO auto-exec.",
-        "source": "boot_0907_mao"
-      },
-      {
-        "tipo": "SHORT_C3_retomada_break_61516",
-        "nome": "SHORT_C3_retomada",
-        "prioridade": "TERCIARIA_CONDICIONAL",
-        "direcao": "SHORT",
-        "lado": "SHORT",
-        "entry_zone": "61.300-61.600 (retest do rompimento)",
-        "entry": 61450,
-        "entrada": 61450,
-        "sl": 62500,
-        "tp1": 60410,
-        "tp2": 59081,
-        "rr": 2.26,
-        "qty_btc": 0.0,
-        "tier": "T2",
-        "macro_aligned": true,
-        "alert_only": true,
-        "gatilho": "close 1H < 61.516 SEM recompra (rally morto · C3-3 retoma) · SL estrutural final via preflight (swing 1H + 0.6%)",
-        "invalidacao": "recupera e fecha 1H > 62.400",
-        "razao_estrutural": "Perda de 61.516 nega o portao e retoma a C3-3 DOWN rumo C-1 low 59.081 -> 57.498. Short volta elegivel pos-FASE B/nova exaustao.",
-        "source": "boot_0907_mao"
+        "nome": "LONG_TATICO_pullback_pos_portao",
+        "entrada": 63300
       }
     ],
-    "ponto_nao_retorno": "macro: close D > 82.811 invalida C · intermediario: close > 67.276 destrava C-2 · operavel: close 4H > 64.703 reseta C3-3 · local: close 1H < 61.516 mata rally/portao",
-    "proximo_marco": "PORTAO PIVO 1d: close D 10/07 20:00 (lows precisam segurar 61.500) · antes: closes 4H 00:00/04:00/08:00... (reset se >64.703) · FASE B Sell libera 02:08"
+    "ponto_nao_retorno": null,
+    "proximo_marco": "Close 4H 00:00 (~4h) · decide A (close > 64.703 = reset C3-3 · rally estende 64.923/65.555) vs B (rejeição no teto → pullback 63.1-63.5). Antes disso · vigiar dots 4h/12h (flip 🔴 = veto correnteza sai · destrava SHORT estrutural) e 62.891 (quebra 1H = cenário C · retomada down)."
   },
   "execution_mode": "AUTO",
   "manual_approval_required": false,
   "price_watch": {
-    "ts": "2026-07-10T14:05:29-04:00",
+    "ts": "2026-07-10T20:16:30-04:00",
     "levels": [
       {
         "price": 62489.8,
@@ -418,6 +387,56 @@
         "active": true,
         "triggered": false,
         "source": "espinha_fib_regions"
+      },
+      {
+        "price": 62891.0,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "low D-0 10/07 + micro-LTA · quebra 1H abre retomada C3-3 (cenário C)",
+        "decisao_pre_armada": "ALERTA · SE close 1H < 62.891: cenário C ativo · avaliar SHORT no RETESTE 63.0-63.3 (setup 2) SÓ com correnteza flipada (dots 🔴) · NUNCA chase · Claude julga",
+        "active": true,
+        "triggered": false,
+        "source": "boot_1007"
+      },
+      {
+        "price": 61500.0,
+        "direction": "below",
+        "tier": "alto",
+        "reason": "fundo do range / low 08/07 · quebra confirma C3-3 down rumo 59.081",
+        "decisao_pre_armada": "ALERTA · SE close 1H < 61.500: C3-3 down confirmada · gestão de short aberto = trail estrutural · sem posição = avaliar reteste",
+        "active": true,
+        "triggered": false,
+        "source": "boot_1007"
+      },
+      {
+        "price": 64923.0,
+        "direction": "above",
+        "tier": "medio",
+        "reason": "R1 pivot D · 1º alvo pós-reset do teto",
+        "decisao_pre_armada": "INFORMATIVO · pós-reset C3-3 · marcar extensão do rally · sem ação",
+        "active": true,
+        "triggered": false,
+        "source": "boot_1007"
+      },
+      {
+        "price": 65816.0,
+        "direction": "above",
+        "tier": "medio",
+        "reason": "R1 pivot Weekly · alvo estendido do rally",
+        "decisao_pre_armada": "INFORMATIVO · alvo estendido · sem ação",
+        "active": true,
+        "triggered": false,
+        "source": "boot_1007"
+      },
+      {
+        "price": 63125.0,
+        "direction": "below",
+        "tier": "medio",
+        "reason": "S1 D + 0.5 retr da perna up + EMA20 4H · zona pullback",
+        "decisao_pre_armada": "ALERTA · SE mark na zona 63.1-63.5: zona do setup 3 (LONG tático) — SÓ se mao.side==LONG_TATICO (portão) · senão observar reação",
+        "active": true,
+        "triggered": false,
+        "source": "boot_1007"
       }
     ]
   },
