@@ -1,17 +1,17 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "13/07/2026 11:05:41",
-  "last_github_push": "13/07 11:05",
-  "last_github_push_ts": 1783955141.609029,
+  "ultimo_update": "13/07/2026 11:06:13",
+  "last_github_push": "13/07 11:06",
+  "last_github_push_ts": 1783955173.8952231,
   "baseline": null,
   "saldo": {
     "cum_realised_pnl": -7842.06,
     "cumPnL_unified_usd": -7842.06,
-    "unrealisedPnl": 0.09,
+    "unrealisedPnl": 0,
     "progresso_vs_baseline_usd": -3256.68,
     "delta_vs_baseline": -1718.06,
     "pnl_fenix_desde_baseline": -1718.06,
-    "updated_at": "2026-07-13T11:05:18-04:00"
+    "updated_at": "2026-07-13T11:06:13-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -19,31 +19,10 @@
     "diff_usd": -1718.06
   },
   "posicao_atual": {
-    "side": "SHORT",
-    "size": 0.01,
-    "qty": 0.01,
-    "avgPrice": 62702.9,
-    "avg_price": 62702.9,
-    "entry_price": 62702.9,
-    "stopLoss": 64890.0,
-    "stop_loss": 64890.0,
-    "takeProfit": 59081.0,
-    "take_profit": 59081.0,
-    "tp2": 59081.0,
-    "tp1": null,
-    "tp1_limit": null,
-    "tp1_pnl_lock": 0,
-    "tp1_realizado": false,
-    "status": "OPEN_SHORT",
-    "markPrice": 62693.52,
-    "mark_price_atual": 62693.52,
-    "unrealised_pnl_usd": 0.09,
-    "unrealisedPnl": 0.09,
-    "be_price": 62655.89867572,
-    "liq_price": 68630.0,
-    "tp2_target_estrutural": 59081.0,
-    "last_update": "2026-07-13T11:05:18-04:00",
-    "ts_snapshot": "2026-07-13T11:05:18-04:00"
+    "side": null,
+    "size": 0,
+    "qty": 0,
+    "status": "FLAT"
   },
   "trades_recentes": [
     {
@@ -198,7 +177,7 @@
     }
   ],
   "current_thesis": {
-    "thesis_id": "boot_d_close_2026-07-10_2000_WAVE_C_C33_teto64703_MAO_ESPERA_LONG_portao_INATIVO",
+    "thesis_id": null,
     "boot_ts": "2026-07-12T20:02:31-04:00",
     "ultimo_update": "2026-07-13T10:49:20-04:00",
     "status": "ATIVO",
@@ -208,135 +187,11 @@
       "direcao": "BEARISH",
       "score": 4
     },
-    "leitura_primaria_opus": "Macro C DOWN intacta (topo 82.811 · invalidação distante) · C-3 DOWN de 67.276 · working C3-3 DOWN do topo travado 64.703 rumo 59.081. MAS a perna down (64.703→61.272) foi devolvida em 99,8% — o high do D-0 (64.688) parou 15 pts do gatilho de reset. D fechou BULL +1,5% (C 64.141) acima das EMA9/20 D (63.147/62.905) · MACD-hist D +607 subindo · vol 75% MA20 (rally sem euforia de volume).\n\nEstrutura local virou bull: 3 fundos ascendentes diários + CHoCH 4H (rompeu 63.480) + bear-engulf de 07/07 NEGADO (close acima do corpo). OI 24h +4,1% com preço +1,5% = dinheiro novo nos longs (lastro), funding +0,01% moderado (sem euforia), L/S 0,57 long-lean. Preço ACIMA do value area 14d (POC 60.0k · VAH ~63.0k) = aceitação acima ou over-extension — o teto 64.69-64.70 decide.\n\n(A 40%) close 4H > 64.703 → reset C3-3 na Espinha · rally estende R1 64.923 / ext 1.272 65.555 / R1W 65.816 · SEM chase — reavaliar com a tese re-ancorada. (B 35%) rejeição no teto (equal highs + LTB) → pullback 63.470-63.100 (0.382-0.5 + EMA20 4H + S1) · stand-by enquanto dots verdes. (C 25%) close 1H < 62.891 → retomada C3-3 down rumo 61.500/61.272 e 59.081 · correnteza flipando destrava o SHORT estrutural (setups 1/2).",
-    "cenarios_opus": {
-      "cenario_A_rompe_teto_reset": {
-        "prob": 40,
-        "entry": null,
-        "sl": null,
-        "tp1": null,
-        "tp2": null,
-        "rr": null,
-        "note": "close 4H > 64.703 → Espinha reseta C3-3 (recount do sub-grau · C-3/macro C intactas até 67.276) · alvos acima: R1 64.923 · ext1.272 65.555 · R1W 65.816 · SEM ENTRADA no rompimento (chase proibido · portão inativo) · aguardar tese re-ancorada + pullback"
-      },
-      "cenario_B_rejeicao_teto_pullback": {
-        "prob": 35,
-        "entry": 64100,
-        "sl": 65091,
-        "tp1": 63780,
-        "tp2": 61500,
-        "rr": 2.62,
-        "note": "rejeição nos equal highs 64.688/64.703 (LTB + supply) → pullback 63.470-63.100 · SHORT do setup 1 SÓ SE correnteza flipar (dots 4h+12h 🔴) + MACD-hist 4H virando · senão stand-by"
-      },
-      "cenario_C_breakdown_retomada_C33": {
-        "prob": 25,
-        "entry": 63100,
-        "sl": 63850,
-        "tp1": 62785,
-        "tp2": 59081,
-        "rr": 5.36,
-        "note": "close 1H < 62.891 (low D-0 + micro-LTA) → retomada C3-3 rumo 61.500/61.272 e extremo C-3 59.081 · SHORT no reteste da quebra (setup 2) com correnteza flipada · nunca chase"
-      }
-    },
-    "setups_pre_armados": [
-      {
-        "nome": "PREFLIGHT_SHORT_c33_pullback",
-        "lado": "SHORT",
-        "entry": 62689.4,
-        "sl": 64890,
-        "tp1": 59081.0,
-        "tp2": 59081.0,
-        "tier": "T2",
-        "nota": "armado por fenix_entry_preflight.py (zona viva)"
-      },
-      {
-        "tipo": "SHORT_C3_continuacao",
-        "lado": "SHORT",
-        "direcao": "SHORT",
-        "prioridade": "PRIMARIA",
-        "entry": 62489.8,
-        "sl": 64774.4,
-        "tp1": 59081.4,
-        "tp2": 49680.0,
-        "rr": 5.6,
-        "qty_btc": 0.0,
-        "tier": "T1",
-        "macro_aligned": true,
-        "alert_only": true,
-        "zona": [
-          62256.0,
-          62723.6
-        ],
-        "fib_role": "continuacao C-3 (pullback raso 0.236-0.382)",
-        "fib_label": "C-3 pullback 62256-62724",
-        "trigger": "ALERTA-ONLY · C-2 TRAVADA no topo 67276 (passado) · C-3 DOWN em curso. Zona de short de CONTINUAÇÃO no pullback raso 62256-62724 a-favor do macro DOWN. Camada2 TOPO/rejeição aqui = exaustão do repique → contexto p/ short C-3 (alvo 59081 C-1 low → 49680). NÃO reabrir short de retrace-C2 (topo passado). NÃO auto-executa (gestão = SL-only do short vigente).",
-        "invalidacao": "close > 67276 DESTRAVA a C-2 (volta contagem conservadora · C-2 ainda subindo) · close > 82811 invalida macro",
-        "source": "espinha_c3_continuacao",
-        "derivado_de": "tree.onda_de_trabalho.plano_trade.entrada_primaria (modo_c3)"
-      },
-      {
-        "tipo": "SHORT_continuacao_C33_reteste_teto",
-        "source": "boot_1007",
-        "entry_zone": "63.900-64.400",
-        "entry": 64100,
-        "sl": 65091.0,
-        "tp1": 63779.5,
-        "tp2": 61500,
-        "rr": 2.62,
-        "qty_btc": 0.011,
-        "tier": "T2",
-        "macro_aligned": true,
-        "gatilho": "CONDICIONAL · correnteza sai de CONTRA_RALLY (dots 4h+12h 🔴) + rejeição no teto 64.69-64.70 com MACD-hist 4H virando down · NUNCA short com dots verdes (veto absoluto)",
-        "invalidacao": "close 4H > 64.703 (reset C3-3 · Espinha recount)",
-        "razao_estrutural": "a-favor macro C/C-3/C3-3 DOWN · teto = topo travado C3-2 + equal highs 64.688/64.703 + LTB 67.276→64.703 · SL estrutural além do swing (64.703×1.006) · TP2 fundo do range · alvo estendido 59.081",
-        "direcao": "SHORT",
-        "lado": "SHORT",
-        "nome": "SHORT_continuacao_C33_reteste_teto",
-        "entrada": 64100
-      },
-      {
-        "tipo": "SHORT_breakdown_retomada_C33",
-        "source": "boot_1007",
-        "entry_zone": "reteste 63.000-63.300 pós-quebra",
-        "entry": 63100,
-        "sl": 63850.0,
-        "tp1": 62784.5,
-        "tp2": 59081,
-        "rr": 5.36,
-        "qty_btc": 0.015,
-        "tier": "T2",
-        "macro_aligned": true,
-        "gatilho": "CONDICIONAL · close 1H < 62.891 (low D-0) + correnteza flip (dots 🔴) · entra no RETESTE da quebra, nunca chase",
-        "invalidacao": "reclaim close 1H > 63.500 pós-quebra (fake breakdown)",
-        "razao_estrutural": "retomada da C3-3 down · quebra da micro-LTA (4 toques) + low D-0 · alvo estrutural extremo C-3 59.081 (1º alvo 61.272 pivô) · SL acima do LH pós-quebra (dist 1,19% ≤ cap 1,5%)",
-        "direcao": "SHORT",
-        "lado": "SHORT",
-        "nome": "SHORT_breakdown_retomada_C33",
-        "entrada": 63100
-      },
-      {
-        "tipo": "LONG_TATICO_pullback_pos_portao",
-        "source": "boot_1007",
-        "entry_zone": "63.100-63.470 (0.382-0.5 retr + EMA20 4H + S1)",
-        "entry": 63300,
-        "sl": 62514.0,
-        "tp1": 63616.5,
-        "tp2": 65555,
-        "rr": 2.87,
-        "qty_btc": 0.007,
-        "tier": "T1",
-        "macro_aligned": false,
-        "gatilho": "CONDICIONAL MÃO · SÓ se portão pivô 1d k2 LIMPO confirmar (mao.side=LONG_TATICO · hoje INATIVO · faltam ≥2 closes D de estrutura) + pullback na zona + MACD-hist 1H virando up",
-        "invalidacao": "close 1H < 62.891 antes do portão abrir · ou mao != LONG_TATICO",
-        "razao_estrutural": "contra-macro Elliott-ancorado (rally com lastro OI +4,1%) · zona 0.382-0.5 da perna 61.500→64.688 + EMA20 4H 63.442 + S1 63.125 · SL abaixo do low D-0 62.891×0.994 · R:R 2,87 ≥ 2,5 contratrend · risco capado 2,5%×throttle 0,5→floor 1,5%",
-        "direcao": "LONG",
-        "lado": "LONG",
-        "nome": "LONG_TATICO_pullback_pos_portao",
-        "entrada": 63300
-      }
-    ],
+    "leitura_primaria_opus": null,
+    "cenarios_opus": {},
+    "setups_pre_armados": [],
     "ponto_nao_retorno": null,
-    "proximo_marco": "Close 4H 00:00 (~4h) · decide A (close > 64.703 = reset C3-3 · rally estende 64.923/65.555) vs B (rejeição no teto → pullback 63.1-63.5). Antes disso · vigiar dots 4h/12h (flip 🔴 = veto correnteza sai · destrava SHORT estrutural) e 62.891 (quebra 1H = cenário C · retomada down)."
+    "proximo_marco": null
   },
   "execution_mode": "AUTO",
   "manual_approval_required": false,
