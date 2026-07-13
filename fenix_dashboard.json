@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "12/07/2026 20:01:54",
-  "last_github_push": "12/07 20:01",
-  "last_github_push_ts": 1783900914.160086,
+  "ultimo_update": "12/07/2026 20:02:44",
+  "last_github_push": "12/07 20:02",
+  "last_github_push_ts": 1783900964.9585001,
   "baseline": null,
   "saldo": {
     "cum_realised_pnl": -7841.93,
@@ -199,7 +199,7 @@
   ],
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-07-10_2000_WAVE_C_C33_teto64703_MAO_ESPERA_LONG_portao_INATIVO",
-    "boot_ts": "2026-07-11T20:03:22-04:00",
+    "boot_ts": "2026-07-12T20:02:31-04:00",
     "ultimo_update": "2026-07-12T19:05:32-04:00",
     "status": "ATIVO",
     "mark_at_boot": 64073.6,
