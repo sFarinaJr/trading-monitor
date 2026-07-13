@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "13/07/2026 10:48:40",
-  "last_github_push": "13/07 10:48",
-  "last_github_push_ts": 1783954120.4584682,
+  "ultimo_update": "13/07/2026 10:49:36",
+  "last_github_push": "13/07 10:49",
+  "last_github_push_ts": 1783954176.116843,
   "baseline": null,
   "saldo": {
     "cum_realised_pnl": -7841.93,
@@ -11,7 +11,7 @@
     "progresso_vs_baseline_usd": -3256.55,
     "delta_vs_baseline": -1717.93,
     "pnl_fenix_desde_baseline": -1717.93,
-    "updated_at": "2026-07-13T10:48:39-04:00"
+    "updated_at": "2026-07-13T10:49:35-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -43,7 +43,7 @@
     "liq_price": null,
     "tp2_target_estrutural": null,
     "last_update": null,
-    "ts_snapshot": "2026-07-13T10:48:40-04:00"
+    "ts_snapshot": "2026-07-13T10:49:36-04:00"
   },
   "trades_recentes": [
     {
@@ -200,7 +200,7 @@
   "current_thesis": {
     "thesis_id": "boot_d_close_2026-07-10_2000_WAVE_C_C33_teto64703_MAO_ESPERA_LONG_portao_INATIVO",
     "boot_ts": "2026-07-12T20:02:31-04:00",
-    "ultimo_update": "2026-07-13T10:05:41-04:00",
+    "ultimo_update": "2026-07-13T10:49:20-04:00",
     "status": "ATIVO",
     "mark_at_boot": 64073.6,
     "mark_now": 64073.6,
@@ -239,6 +239,16 @@
       }
     },
     "setups_pre_armados": [
+      {
+        "nome": "PREFLIGHT_SHORT_c33_pullback",
+        "lado": "SHORT",
+        "entry": 62689.4,
+        "sl": 64890,
+        "tp1": 59081.0,
+        "tp2": 59081.0,
+        "tier": "T2",
+        "nota": "armado por fenix_entry_preflight.py (zona viva)"
+      },
       {
         "tipo": "SHORT_C3_continuacao",
         "lado": "SHORT",
