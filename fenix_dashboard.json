@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "15/07/2026 20:08:45",
-  "last_github_push": "15/07 20:08",
-  "last_github_push_ts": 1784160525.445552,
+  "ultimo_update": "15/07/2026 20:09:40",
+  "last_github_push": "15/07 20:09",
+  "last_github_push_ts": 1784160580.131496,
   "baseline": null,
   "saldo": {
     "cum_realised_pnl": -7867.21,
@@ -11,7 +11,7 @@
     "progresso_vs_baseline_usd": -3281.83,
     "delta_vs_baseline": -1743.21,
     "pnl_fenix_desde_baseline": -1743.21,
-    "updated_at": "2026-07-15T20:08:44-04:00"
+    "updated_at": "2026-07-15T20:09:39-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -43,7 +43,7 @@
     "liq_price": null,
     "tp2_target_estrutural": null,
     "last_update": null,
-    "ts_snapshot": "2026-07-15T20:08:45-04:00"
+    "ts_snapshot": "2026-07-15T20:09:40-04:00"
   },
   "trades_recentes": [
     {
@@ -198,36 +198,44 @@
     }
   ],
   "current_thesis": {
-    "thesis_id": "boot_d_close_2026-07-14_2000_WAVE_C_C33_teto65000_DISPUTA_MAO_ESPERA_LONG_portao_INATIVO",
-    "boot_ts": "2026-07-14T20:09:56-04:00",
-    "ultimo_update": "2026-07-15T20:01:03-04:00",
+    "thesis_id": "boot_d_close_2026-07-15_2000_WAVE_C_C33_DOWN_range647_650_MAO_LONG_TATICO_portao_ATIVO",
+    "boot_ts": "2026-07-15T20:09:14-04:00",
+    "ultimo_update": "2026-07-15T20:09:14-04:00",
     "status": "ATIVO",
-    "mark_at_boot": 65027.0,
-    "mark_now": 65027.0,
+    "mark_at_boot": 64798.4,
+    "mark_now": 64798.4,
     "macro_bias_D": {
       "direcao": "BEARISH",
       "score": 3
     },
-    "leitura_primaria_opus": "D-0 (14/07) fechou 65.013 (+4,34%), candle bull enorme (range 62.235→65.084, corpo quase-marubozu, close a $71 da máxima) que ENGOLIU o corpo bear de D-1 e fechou muito acima da máxima dele (64.412) — breakout de curto prazo. É a continuação do squeeze: +3,1% num 4H (vol 8x média) 62,8→65,08k. Preço ACIMA da EMA20 D (63.273) e EMA20 4H (63.679): o rebote deixou de ser mera correção rasa e virou empurrão com força.\n\nPORÉM o combustível é short-covering, não convicção nova: OI ~flat/levemente caindo no último 12h (56,57k→56,49k) enquanto o preço subiu 63,7→65k — a subida final não teve lastro de OI (dinheiro novo), é cobertura de short esgotável. Funding neutro-positivo (0,01%, sem euforia). L/S 1,31 (retail levemente long no topo). 4H esticadíssimo (RSI 65,5 · BB 0,90) e 1H overbought (RSI 76) · 15m MACD-hist achatando (+8,5) — momentum de topo enfraquecendo. Assinatura clássica de exaustão de squeeze.\n\nESTRUTURA no ponto de decisão: o 65.000 é a linha que separa dois mundos. Se sustentar/fechar 4H acima (esp. > 65.084), a Espinha reseta o grau operável DE NOVO (a C3-2 UP não terá topado, estende rumo a R1 65.816/65.986 → 66.960 até o limite 67.276 do C-3). Se rejeitar e voltar abaixo de 65.000, o C3-3 DOWN retoma rumo a S1 63.137 / 62.891 (1H) / range floor 61.272-61.500 / C-1 low 59.081 (alvo do C3-3). O macro C DOWN só morre com close D > 82.811 (irrelevante hoje).\n\nSTANCE: STAND-BY. MÃO = ESPERA_LONG (macro DOWN + correnteza CONTRA_RALLY + portão 1d INATIVO, pivô ref 61.272). Veto-correnteza ABSOLUTO barra short mecânico contra o rally local (sem exceção desde 10/07 — foi exatamente shortar contra essa correnteza que sangrou os 5 últimos trades: 4 losses/1 win, -50 líq). Long tático só com portão 1d confirmado (inativo). ZERO setup executável tonight — tudo ALERT_ONLY. FASE B expira neste D-close: amanhã nasce liberado.",
+    "leitura_primaria_opus": "D-0 fechou 64.717 (-0,46%) num candle BEAR de rejeição: high 65.566 tocou o teto exato da C3-2 re-derivada (65.555) e devolveu tudo, fechando no terço inferior. O dia inteiro pós-rejeição foi range 64.7-65.0 e o close saiu pelo piso (low 64.706 nas últimas horas). A tese da Espinha segue intacta: C3-3 DOWN em formação a partir do topo travado 65.555, alvo estrutural 59.081 (C-1 low). O pullback atual está RASO (mark entre 0.236 e 0.382 da perna viva) — corretivo saudável para continuação DOWN.\n\nO conflito segue o mesmo do dia 14: macro/semana vermelha (1W🔴, EMA20 D em 63.396 bem abaixo) contra rally local com lastro (4h/12h/1D 🟢, preço acima das EMAs 4H). A correnteza CONTRA_RALLY veta short mecânico sem exceção — 7 preflights NO-GO hoje foram disciplina correta, não perda. OI flat/caindo (~55,5k) diz que o rally 13/07 não está sendo re-alimentado com dinheiro novo; funding levemente positivo sem euforia; L/S 1,30 long-heavy é combustível contrário.\n\nNOVIDADE 20:03: o pivô LOW 1d 61.777,6 confirmou (k2) e o portão 1d ATIVOU → a MÃO flipou ESPERA_LONG → LONG_TATICO. Long tático contra-macro está LIBERADO (cap 3%), mas exige zona + timing (MACD-hist 1H virando up, hoje -83 ainda down) + preflight GO. Sem chase: o 1H ainda aponta pra baixo e o range quebrou o piso agora. Dois destravamentos possíveis: dots 4h/12h flipam 🔴 → short estrutural volta ao jogo; ou pullback comprador confirma → long tático pequeno rumo ao teto do range/R1.",
     "cenarios_opus": {
-      "A_reset_rally_estende": {
+      "A_c33_retoma_down": {
         "prob": 0.45,
-        "desc": "Close 4H/D SUSTENTA > 65.000 (esp. rompe 65.084): grau operável RESETA, C3-2 UP estende. Alvos R1 Weekly 65.816 → R1 D 65.986 → R2 66.960 até limite 67.276 (des-eleição C-3).",
-        "gatilho": "close 4H > 65.084",
-        "note": "ganhou probabilidade tonight — 4H+D fecharam acima de 65.000. Espinha reconta sozinha, não antecipar."
+        "entry": 64923.8,
+        "sl": 65627.3,
+        "tp1": 63137.8,
+        "tp2": 59081.4,
+        "rr": 8.3,
+        "note": "PRIMÁRIO · quebra sustentada do piso 64.706/64.449 + dots 4h/12h flipando 🔴 (correnteza sai) → short de continuação C3-3 no pullback raso · alvos S3 63.137 → 59.081. Enquanto dots verdes: NO-GO mecânico correto."
       },
-      "B_rejeicao_c33_retoma": {
-        "prob": 0.42,
-        "desc": "Rejeição no teto 65.000-65.084 (esticado 4H/1H + OI flat = squeeze exausto): C3-3 DOWN retoma. Alvos S1 63.137 → 62.891 (1H) → range floor 61.272-61.500 → C-1 low 59.081.",
-        "gatilho": "close 1H < 64.388 e perda de 62.891 confirma",
-        "sl_ref": "acima 65.084/topo",
-        "note": "só vira EXECUTÁVEL se correnteza sair (dots 4h/12h 🔴) — hoje vetado."
+      "B_pullback_comprador_long_tatico": {
+        "prob": 0.35,
+        "entry": 0,
+        "sl": 0,
+        "tp1": 65372.8,
+        "tp2": 65555.0,
+        "rr": 0,
+        "note": "MÃO LONG_TATICO (portão 1d ATIVO 20:03 · pivô 61.777,6) · bounce do suporte 64.449/S1 64.255 rumo R1 65.373/teto 65.555 · SÓ com zona armada pelo ciclo + MACD-hist 1H virando up + preflight GO · cap 3% sizing · NUNCA full size contra-macro."
       },
-      "C_recount_desellecao": {
-        "prob": 0.13,
-        "desc": "close > 67.276 des-elege C-3 (C-2 ainda subindo · recount conservador) · close D > 82.811 mata macro (far).",
-        "gatilho": "close > 67.276",
-        "note": "Espinha força RECOUNT autônomo."
+      "C_reset_grau_operavel": {
+        "prob": 0.2,
+        "entry": 0,
+        "sl": 0,
+        "tp1": 0,
+        "tp2": 0,
+        "rr": 0,
+        "note": "close 4H/1d > 65.555 rompe o topo travado da C3-2 → reset do grau operável (Espinha re-deriva) · close > 67.276 des-elege C-3 (RECOUNT) · rally estenderia R1 W 65.816 → 66.960."
       }
     },
     "setups_pre_armados": [
@@ -299,8 +307,8 @@
         "entrada": 63300
       }
     ],
-    "ponto_nao_retorno": null,
-    "proximo_marco": "Close 4H 00:00 (~4h): decide A (close sustentado > 65.000/65.084 = reset do grau · rally estende R1 65.816/65.986) vs B (rejeição no teto → C3-3 down retoma S1 63.137/62.891/59.081). Vigiar dots 4h/12h (flip 🔴 = veto correnteza sai · destrava SHORT estrutural) + o high 65.084."
+    "ponto_nao_retorno": "macro · close D > 82.811 INVALIDA a onda C (recount total) · intermediário · close > 67.276 des-elege C-3 (destrava C-2 · recount) · operável · close 4H/1d > 65.555 rompe o topo travado da C3-2 (reset do grau · re-derivação)",
+    "proximo_marco": "Close 4H 00:00 (~4h): decide A (piso 64.706/64.449 cede = C3-3 retoma rumo S1 64.255/63.137) vs B (bounce comprador = long tático se timing virar). Vigiar dots 4h/12h (flip 🔴 destrava SHORT estrutural) + MACD-hist 1H (virada up destrava LONG tático)."
   },
   "execution_mode": "AUTO",
   "manual_approval_required": false,
