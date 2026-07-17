@@ -1,17 +1,17 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "17/07/2026 10:48:17",
-  "last_github_push": "17/07 10:48",
-  "last_github_push_ts": 1784299697.352684,
+  "ultimo_update": "17/07/2026 10:49:12",
+  "last_github_push": "17/07 10:49",
+  "last_github_push_ts": 1784299752.310244,
   "baseline": null,
   "saldo": {
     "cum_realised_pnl": -7867.39,
     "cumPnL_unified_usd": -7867.39,
-    "unrealisedPnl": 0,
+    "unrealisedPnl": 1.02,
     "progresso_vs_baseline_usd": -3282.01,
     "delta_vs_baseline": -1743.39,
     "pnl_fenix_desde_baseline": -1743.39,
-    "updated_at": "2026-07-17T10:48:16-04:00"
+    "updated_at": "2026-07-17T10:49:11-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -19,10 +19,31 @@
     "diff_usd": -1743.39
   },
   "posicao_atual": {
-    "side": null,
-    "size": 0,
-    "qty": 0,
-    "status": "FLAT"
+    "side": "SHORT",
+    "size": 0.014,
+    "qty": 0.014,
+    "avgPrice": 63273.4,
+    "avg_price": 63273.4,
+    "entry_price": 63273.4,
+    "stopLoss": 64760.0,
+    "stop_loss": 64760.0,
+    "takeProfit": null,
+    "take_profit": null,
+    "tp2": null,
+    "tp1": null,
+    "tp1_limit": null,
+    "tp1_pnl_lock": 0,
+    "tp1_realizado": false,
+    "status": "OPEN_SHORT",
+    "markPrice": 63206.9,
+    "mark_price_atual": 63206.9,
+    "unrealised_pnl_usd": 0.93,
+    "unrealisedPnl": 0.93,
+    "be_price": 63225.97103593,
+    "liq_price": 65476.9,
+    "tp2_target_estrutural": null,
+    "last_update": "2026-07-17T10:49:12-04:00",
+    "ts_snapshot": "2026-07-17T10:49:12-04:00"
   },
   "trades_recentes": [
     {
@@ -177,7 +198,7 @@
     }
   ],
   "current_thesis": {
-    "thesis_id": null,
+    "thesis_id": "boot_d_close_2026-07-15_2000_WAVE_C_C33_DOWN_range647_650_MAO_LONG_TATICO_portao_ATIVO",
     "boot_ts": "2026-07-16T20:02:56-04:00",
     "ultimo_update": "2026-07-17T10:01:12-04:00",
     "status": "ATIVO",
@@ -187,11 +208,117 @@
       "direcao": "BEARISH",
       "score": 3
     },
-    "leitura_primaria_opus": null,
-    "cenarios_opus": {},
-    "setups_pre_armados": [],
-    "ponto_nao_retorno": null,
-    "proximo_marco": null
+    "leitura_primaria_opus": "D-0 fechou 64.717 (-0,46%) num candle BEAR de rejeição: high 65.566 tocou o teto exato da C3-2 re-derivada (65.555) e devolveu tudo, fechando no terço inferior. O dia inteiro pós-rejeição foi range 64.7-65.0 e o close saiu pelo piso (low 64.706 nas últimas horas). A tese da Espinha segue intacta: C3-3 DOWN em formação a partir do topo travado 65.555, alvo estrutural 59.081 (C-1 low). O pullback atual está RASO (mark entre 0.236 e 0.382 da perna viva) — corretivo saudável para continuação DOWN.\n\nO conflito segue o mesmo do dia 14: macro/semana vermelha (1W🔴, EMA20 D em 63.396 bem abaixo) contra rally local com lastro (4h/12h/1D 🟢, preço acima das EMAs 4H). A correnteza CONTRA_RALLY veta short mecânico sem exceção — 7 preflights NO-GO hoje foram disciplina correta, não perda. OI flat/caindo (~55,5k) diz que o rally 13/07 não está sendo re-alimentado com dinheiro novo; funding levemente positivo sem euforia; L/S 1,30 long-heavy é combustível contrário.\n\nNOVIDADE 20:03: o pivô LOW 1d 61.777,6 confirmou (k2) e o portão 1d ATIVOU → a MÃO flipou ESPERA_LONG → LONG_TATICO. Long tático contra-macro está LIBERADO (cap 3%), mas exige zona + timing (MACD-hist 1H virando up, hoje -83 ainda down) + preflight GO. Sem chase: o 1H ainda aponta pra baixo e o range quebrou o piso agora. Dois destravamentos possíveis: dots 4h/12h flipam 🔴 → short estrutural volta ao jogo; ou pullback comprador confirma → long tático pequeno rumo ao teto do range/R1.",
+    "cenarios_opus": {
+      "A_c33_retoma_down": {
+        "prob": 0.45,
+        "entry": 64923.8,
+        "sl": 65627.3,
+        "tp1": 63137.8,
+        "tp2": 59081.4,
+        "rr": 8.3,
+        "note": "PRIMÁRIO · quebra sustentada do piso 64.706/64.449 + dots 4h/12h flipando 🔴 (correnteza sai) → short de continuação C3-3 no pullback raso · alvos S3 63.137 → 59.081. Enquanto dots verdes: NO-GO mecânico correto."
+      },
+      "B_pullback_comprador_long_tatico": {
+        "prob": 0.35,
+        "entry": 0,
+        "sl": 0,
+        "tp1": 65372.8,
+        "tp2": 65555.0,
+        "rr": 0,
+        "note": "MÃO LONG_TATICO (portão 1d ATIVO 20:03 · pivô 61.777,6) · bounce do suporte 64.449/S1 64.255 rumo R1 65.373/teto 65.555 · SÓ com zona armada pelo ciclo + MACD-hist 1H virando up + preflight GO · cap 3% sizing · NUNCA full size contra-macro."
+      },
+      "C_reset_grau_operavel": {
+        "prob": 0.2,
+        "entry": 0,
+        "sl": 0,
+        "tp1": 0,
+        "tp2": 0,
+        "rr": 0,
+        "note": "close 4H/1d > 65.555 rompe o topo travado da C3-2 → reset do grau operável (Espinha re-deriva) · close > 67.276 des-elege C-3 (RECOUNT) · rally estenderia R1 W 65.816 → 66.960."
+      }
+    },
+    "setups_pre_armados": [
+      {
+        "nome": "PREFLIGHT_SHORT_c33_continuacao",
+        "lado": "SHORT",
+        "entry": 63273.4,
+        "sl": 64760,
+        "tp1": 59081.0,
+        "tp2": 59081.0,
+        "tier": "T2",
+        "nota": "armado por fenix_entry_preflight.py (zona viva)"
+      },
+      {
+        "tipo": "SHORT_C3_continuacao",
+        "lado": "SHORT",
+        "direcao": "SHORT",
+        "prioridade": "PRIMARIA",
+        "entry": 63446.2,
+        "sl": 65627.3,
+        "tp1": 59081.4,
+        "tp2": 49680.0,
+        "rr": 6.3,
+        "qty_btc": 0.0,
+        "tier": "T1",
+        "macro_aligned": true,
+        "alert_only": true,
+        "zona": [
+          63223.4,
+          63669.0
+        ],
+        "fib_role": "continuacao C-3 (pullback raso 0.236-0.382)",
+        "fib_label": "C-3 pullback 63223-63669",
+        "trigger": "ALERTA-ONLY · C-2 TRAVADA no topo 67276 (passado) · C-3 DOWN em curso. Zona de short de CONTINUAÇÃO no pullback raso 63223-63669 a-favor do macro DOWN. Camada2 TOPO/rejeição aqui = exaustão do repique → contexto p/ short C-3 (alvo 59081 C-1 low → 49680). NÃO reabrir short de retrace-C2 (topo passado). NÃO auto-executa (gestão = SL-only do short vigente).",
+        "invalidacao": "close > 67276 DESTRAVA a C-2 (volta contagem conservadora · C-2 ainda subindo) · close > 82811 invalida macro",
+        "source": "espinha_c3_continuacao",
+        "derivado_de": "tree.onda_de_trabalho.plano_trade.entrada_primaria (modo_c3)"
+      },
+      {
+        "tipo": "SHORT_reteste_teto_C33",
+        "lado": "SHORT",
+        "direcao": "SHORT",
+        "prioridade": "SECUNDARIA",
+        "entry": 64900,
+        "entry_zone": "64.700-65.084",
+        "sl": 65200.0,
+        "tp1": 63137.0,
+        "tp2": 59081.0,
+        "rr": 6.0,
+        "qty_btc": 0.0,
+        "tier": "T2",
+        "macro_aligned": true,
+        "alert_only": true,
+        "gatilho": "CONDICIONAL (NÃO exec hoje) · rejeição no teto 65.000-65.084 + MACD-hist 4H virando down + correnteza SAI (dots 4h+12h 🔴). NUNCA short com dots verdes (veto absoluto).",
+        "invalidacao": "close 4H > 65.084 (reset C3-3 · Espinha recount)",
+        "source": "boot_1407",
+        "nome": "SHORT_reteste_teto_C33",
+        "entrada": 64900
+      },
+      {
+        "tipo": "LONG_tatico_portao1d",
+        "lado": "LONG",
+        "direcao": "LONG",
+        "prioridade": "TERCIARIA",
+        "entry": 63300,
+        "entry_zone": "63.100-63.500",
+        "sl": 62700.0,
+        "tp1": 64100.0,
+        "tp2": 64700.0,
+        "rr": 1.3,
+        "qty_btc": 0.0,
+        "tier": "T1",
+        "macro_aligned": false,
+        "alert_only": true,
+        "gatilho": "CONDICIONAL (NÃO exec hoje) · SÓ se MÃO.side==LONG_TATICO (portão pivô 1d CONFIRMAR · hoje INATIVO, pivô ref 61.272). Pullback à zona 63.1-63.5 + reação. Contra-macro = cap T1/3% sizing.",
+        "invalidacao": "perde 61.272 (range floor)",
+        "source": "boot_1407",
+        "nome": "LONG_tatico_portao1d",
+        "entrada": 63300
+      }
+    ],
+    "ponto_nao_retorno": "macro · close D > 82.811 INVALIDA a onda C (recount total) · intermediário · close > 67.276 des-elege C-3 (destrava C-2 · recount) · operável · close 4H/1d > 65.555 rompe o topo travado da C3-2 (reset do grau · re-derivação)",
+    "proximo_marco": "Close 4H 00:00 (~4h): decide A (piso 64.706/64.449 cede = C3-3 retoma rumo S1 64.255/63.137) vs B (bounce comprador = long tático se timing virar). Vigiar dots 4h/12h (flip 🔴 destrava SHORT estrutural) + MACD-hist 1H (virada up destrava LONG tático)."
   },
   "execution_mode": "AUTO",
   "manual_approval_required": false,
