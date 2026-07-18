@@ -1,8 +1,8 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "18/07/2026 15:58:30",
-  "last_github_push": "18/07 15:58",
-  "last_github_push_ts": 1784404710.34014,
+  "ultimo_update": "18/07/2026 15:59:32",
+  "last_github_push": "18/07 15:59",
+  "last_github_push_ts": 1784404772.0056279,
   "baseline": null,
   "saldo": {
     "cum_realised_pnl": -7867.31,
@@ -11,7 +11,7 @@
     "progresso_vs_baseline_usd": -3281.93,
     "delta_vs_baseline": -1743.31,
     "pnl_fenix_desde_baseline": -1743.31,
-    "updated_at": "2026-07-18T15:58:29-04:00"
+    "updated_at": "2026-07-18T15:59:31-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
@@ -179,7 +179,7 @@
   "current_thesis": {
     "thesis_id": null,
     "boot_ts": "2026-07-17T20:07:22-04:00",
-    "ultimo_update": "2026-07-17T20:06:57-04:00",
+    "ultimo_update": "2026-07-18T15:58:36-04:00",
     "status": "ATIVO",
     "mark_at_boot": 64798.4,
     "mark_now": 64798.4,
@@ -196,25 +196,14 @@
   "execution_mode": "AUTO",
   "manual_approval_required": false,
   "price_watch": {
-    "ts": "2026-07-17T20:04:27-04:00",
+    "ts": "2026-07-18T15:58:36-04:00",
     "levels": [
       {
-        "price": 64902.0,
+        "price": 64465.2,
         "direction": "above",
         "tier": "alto",
-        "reason": "ADD SHORT 0.028 @ 0.786 · ORDEM USER 18/07 15:45 (reestrutura: dobro na zona correta da HABILIDADE grau-entrada)",
-        "decisao_pre_armada": "DECISAO PRE-ARMADA (user 15:45 · LEI#3 satisfeita por ordem explicita): mark >= 64902 -> Claude RODA fenix_entry_preflight.py --side Sell --qty 0.028 --entry mark --sl 65627 (ou max seguro abaixo da liq) --tp 59081 --tese grau_entrada_reestrutura_user. GO -> place_order IMEDIATO (params do helper). NO-GO por correnteza#13/antichop#12 (dots locais ainda verdes = topo fino nao formado) -> REPORTAR + rearmar: re-preflight a cada wake camada_2/topo/exaustao ou dots 4h/12h saindo do verde. Pos-fill: recalcular liq -> subir SL do combinado para 65627 se seguro (senao max abaixo da liq). NUNCA contornar guard.",
-        "active": true,
-        "triggered": false,
-        "source": "grau_entrada_add_user_1807",
-        "ts": 1784404173.037375
-      },
-      {
-        "price": 63445.4,
-        "direction": "above",
-        "tier": "alto",
-        "reason": "PRIMARIA SHORT · continuacao C-3 (pullback raso 0.236-0.382)",
-        "decisao_pre_armada": "ALERTA-ONLY · SE mark na zona 63445 (continuacao C-3 (pullback raso 0.236-0.382)) + Camada2 TOPO 5m / rejeição: AVISAR Claude (contexto SHORT PRIMARIA · alvo 59081.4). NÃO auto-executa — gestão atual = SL-only do short vigente (mandato user). Claude julga, não dispara ordem.",
+        "reason": "PRIMARIA SHORT · continuacao C-3 (banda profunda 0.5-0.786)",
+        "decisao_pre_armada": "ALERTA-ONLY · SE mark na zona 64465 (continuacao C-3 (banda profunda 0.5-0.786)) + Camada2 TOPO 5m / rejeição: AVISAR Claude (contexto SHORT PRIMARIA · alvo 59081.4). NÃO auto-executa — gestão atual = SL-only do short vigente (mandato user). Claude julga, não dispara ordem.",
         "active": true,
         "triggered": false,
         "source": "espinha_c3_continuacao"
@@ -288,6 +277,17 @@
         "active": true,
         "triggered": false,
         "source": "espinha_fib_regions"
+      },
+      {
+        "price": 64902.0,
+        "direction": "above",
+        "tier": "alto",
+        "reason": "ADD SHORT 0.028 @ 0.786 · ORDEM USER 18/07 15:45 (reestrutura: dobro na zona correta da HABILIDADE grau-entrada)",
+        "decisao_pre_armada": "DECISAO PRE-ARMADA (user 15:45 · LEI#3 satisfeita por ordem explicita): mark >= 64902 -> Claude RODA fenix_entry_preflight.py --side Sell --qty 0.028 --entry mark --sl 65627 (ou max seguro abaixo da liq) --tp 59081 --tese grau_entrada_reestrutura_user. GO -> place_order IMEDIATO (params do helper). NO-GO por correnteza#13/antichop#12 (dots locais ainda verdes = topo fino nao formado) -> REPORTAR + rearmar: re-preflight a cada wake camada_2/topo/exaustao ou dots 4h/12h saindo do verde. Pos-fill: recalcular liq -> subir SL do combinado para 65627 se seguro (senao max abaixo da liq). NUNCA contornar guard.",
+        "active": true,
+        "triggered": false,
+        "source": "grau_entrada_add_user_1807",
+        "ts": 1784404173.037375
       },
       {
         "price": 61500.0,
