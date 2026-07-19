@@ -1,22 +1,22 @@
 {
   "_doc": "Subset PÚBLICO de fenix_state.json · só campos renderizados pelo dashboard.html/monitor.html · gerado por dashboard_publisher.py",
-  "ultimo_update": "18/07/2026 20:08:28",
-  "last_github_push": "18/07 20:08",
-  "last_github_push_ts": 1784419708.012463,
+  "ultimo_update": "18/07/2026 22:57:21",
+  "last_github_push": "18/07 22:57",
+  "last_github_push_ts": 1784429841.441969,
   "baseline": null,
   "saldo": {
-    "cum_realised_pnl": -7867.28,
-    "cumPnL_unified_usd": -7867.28,
+    "cum_realised_pnl": -7867.64,
+    "cumPnL_unified_usd": -7867.64,
     "unrealisedPnl": 0,
-    "progresso_vs_baseline_usd": -3281.9,
-    "delta_vs_baseline": -1743.28,
-    "pnl_fenix_desde_baseline": -1743.28,
-    "updated_at": "2026-07-18T20:08:27-04:00"
+    "progresso_vs_baseline_usd": -3282.26,
+    "delta_vs_baseline": -1743.64,
+    "pnl_fenix_desde_baseline": -1743.64,
+    "updated_at": "2026-07-18T22:57:20-04:00"
   },
   "progresso_vs_baseline": {
     "baseline_pnl": -6124.0,
-    "current_pnl": -7867.28,
-    "diff_usd": -1743.28
+    "current_pnl": -7867.64,
+    "diff_usd": -1743.64
   },
   "posicao_atual": {
     "side": null,
@@ -179,13 +179,13 @@
   "current_thesis": {
     "thesis_id": null,
     "boot_ts": "2026-07-18T20:06:56-04:00",
-    "ultimo_update": "2026-07-18T16:00:10-04:00",
-    "status": "ATIVO",
-    "mark_at_boot": 64798.4,
-    "mark_now": 64798.4,
+    "ultimo_update": "2026-07-18T20:08:48-04:00",
+    "status": "ATIVA",
+    "mark_at_boot": 64824.5,
+    "mark_now": 64824.5,
     "macro_bias_D": {
       "direcao": "BEARISH",
-      "score": 3
+      "score": null
     },
     "leitura_primaria_opus": null,
     "cenarios_opus": {},
@@ -277,17 +277,6 @@
         "active": true,
         "triggered": false,
         "source": "espinha_fib_regions"
-      },
-      {
-        "price": 64902.0,
-        "direction": "above",
-        "tier": "alto",
-        "reason": "ADD SHORT 0.028 @ 0.786 · ORDEM USER 18/07 15:45 (reestrutura: dobro na zona correta da HABILIDADE grau-entrada)",
-        "decisao_pre_armada": "DECISAO PRE-ARMADA (user 15:45 · LEI#3 satisfeita por ordem explicita): mark >= 64902 -> Claude RODA fenix_entry_preflight.py --side Sell --qty 0.028 --entry mark --sl 65627 (ou max seguro abaixo da liq) --tp 59081 --tese grau_entrada_reestrutura_user. GO -> place_order IMEDIATO (params do helper). NO-GO por correnteza#13/antichop#12 (dots locais ainda verdes = topo fino nao formado) -> REPORTAR + rearmar: re-preflight a cada wake camada_2/topo/exaustao ou dots 4h/12h saindo do verde. Pos-fill: recalcular liq -> subir SL do combinado para 65627 se seguro (senao max abaixo da liq). NUNCA contornar guard.",
-        "active": true,
-        "triggered": false,
-        "source": "grau_entrada_add_user_1807",
-        "ts": 1784404173.037375
       },
       {
         "price": 61500.0,
